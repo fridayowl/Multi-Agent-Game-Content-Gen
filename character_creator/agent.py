@@ -408,48 +408,115 @@ class CreativeCharacterGenerator:
     
     async def _generate_fallback_unique_name(self, theme: str, existing_names: List[str], attempt: int) -> str:
         """Generate unique name using creative combinations"""
+        import time
+        cache_key = f"{theme}_{index}_{len(existing_names)}_{int(time.time() * 1000) % 10000}_{random.randint(1000, 9999)}"
         
+        # Try AI generation first (if available)
+        if AI_AVAILABLE:
+            try:
+                prompt = f"""Generate a completely unique and random character name for a {theme} setting.
+                
+                NEVER use these existing names: {', '.join(existing_names) if existing_names else 'None yet'}
+                
+                Requirements:
+                - Must be completely different and random
+                - Should fit {theme} theme perfectly  
+                - Include first and last name
+                - Be creative and unexpected
+                - Make it sound like a real person
+                
+                Return ONLY the name, nothing else."""
+                
+                response = await self._call_gemini(prompt)
+                if response and response.strip():
+                    name = response.strip().title()
+                    # Clean the name
+                    name = ' '.join(word for word in name.split() if word.isalpha())
+                    if name and name not in existing_names and len(name.split()) >= 2:
+                        return name
+            except Exception as e:
+                self.logger.warning(f"AI name generation failed: {e}")
+                
         # Creative name components by theme
         theme_components = {
-            'medieval': {
-                'prefixes': ['Ael', 'Bran', 'Cael', 'Dain', 'Eron', 'Fynn', 'Gwen', 'Hale', 'Iven', 'Jora', 'Kael', 'Lira', 'Mira', 'Nyx', 'Oren', 'Pax', 'Quinn', 'Rane', 'Sera', 'Thane', 'Ula', 'Vex', 'Wren', 'Xara', 'Yven', 'Zara'],
-                'suffixes': ['brook', 'vale', 'moor', 'fell', 'wick', 'ford', 'haven', 'marsh', 'ridge', 'stone', 'wood', 'field', 'hill', 'dale', 'thorn', 'gold', 'silver', 'iron', 'storm', 'ember', 'frost', 'flame', 'shadow', 'light']
-            },
-            'fantasy': {
-                'prefixes': ['Zephyr', 'Lycan', 'Mystral', 'Nexus', 'Orion', 'Phoenix', 'Quantum', 'Raven', 'Stellar', 'Tempest', 'Umbra', 'Vortex', 'Whisper', 'Xenith', 'Yggdra', 'Zenaida'],
-                'suffixes': ['whisper', 'dream', 'star', 'moon', 'sun', 'storm', 'wind', 'fire', 'water', 'earth', 'light', 'dark', 'void', 'crystal', 'magic', 'spell', 'rune', 'ward', 'blade', 'heart']
-            },
-            'spooky': {
-                'prefixes': ['Raven', 'Shadow', 'Dusk', 'Morn', 'Ashen', 'Grim', 'Hollow', 'Mist', 'Void', 'Wraith', 'Phantom', 'Shade', 'Ghost', 'Spirit', 'Banshee', 'Specter'],
-                'suffixes': ['moor', 'hollow', 'grave', 'bone', 'ash', 'mist', 'shadow', 'dark', 'gloom', 'fear', 'dread', 'doom', 'bane', 'curse', 'hex', 'spell', 'ward', 'veil', 'shroud', 'cloak']
-            },
-            'desert': {
-                'prefixes': ['Azar', 'Bahir', 'Cyrus', 'Darius', 'Esther', 'Farid', 'Golshan', 'Hassan', 'Iman', 'Jalal', 'Kaveh', 'Layla', 'Maryam', 'Nader', 'Omid', 'Parisa', 'Qasem', 'Reza', 'Shirin', 'Taher'],
-                'suffixes': ['sand', 'dune', 'oasis', 'mirage', 'sun', 'moon', 'star', 'wind', 'storm', 'gold', 'jewel', 'pearl', 'ruby', 'sapphire', 'emerald', 'diamond', 'crystal', 'flame', 'fire', 'light']
-            }
+        'medieval': {
+            'prefixes': [
+                'Ael', 'Bran', 'Cael', 'Dain', 'Eron', 'Fynn', 'Gwen', 'Hale', 'Iven', 'Jora', 
+                'Kael', 'Lira', 'Mira', 'Nyx', 'Oren', 'Pax', 'Quinn', 'Rane', 'Sera', 'Thane',
+                'Ula', 'Vex', 'Wren', 'Xara', 'Yven', 'Zara', 'Aldwin', 'Beren', 'Cedric', 'Dara',
+                'Elara', 'Finn', 'Gilda', 'Harren', 'Isla', 'Joren', 'Kyra', 'Leona', 'Magnus', 'Nora'
+            ],
+            'suffixes': [
+                'brook', 'vale', 'moor', 'fell', 'wick', 'ford', 'haven', 'marsh', 'ridge', 'stone',
+                'wood', 'field', 'hill', 'dale', 'thorn', 'gold', 'silver', 'iron', 'storm', 'ember',
+                'frost', 'flame', 'shadow', 'light', 'wind', 'star', 'moon', 'sun', 'oak', 'ash'
+            ]
+        },
+        'fantasy': {
+            'prefixes': [
+                'Zephyr', 'Lycan', 'Mystral', 'Nexus', 'Orion', 'Phoenix', 'Quantum', 'Raven',
+                'Stellar', 'Tempest', 'Umbra', 'Vortex', 'Whisper', 'Xenith', 'Yggdra', 'Zenaida',
+                'Aether', 'Blaze', 'Crystal', 'Dawn', 'Echo', 'Flux', 'Galaxy', 'Harmony'
+            ],
+            'suffixes': [
+                'whisper', 'dream', 'star', 'moon', 'sun', 'storm', 'wind', 'fire', 'water', 'earth',
+                'light', 'dark', 'void', 'crystal', 'magic', 'spell', 'rune', 'ward', 'blade', 'heart',
+                'soul', 'spirit', 'mist', 'glow', 'spark', 'ray', 'beam', 'wave'
+            ]
+        },
+        'spooky': {
+            'prefixes': [
+                'Raven', 'Shadow', 'Dusk', 'Morn', 'Ashen', 'Grim', 'Hollow', 'Mist', 'Void', 'Wraith',
+                'Phantom', 'Shade', 'Ghost', 'Spirit', 'Banshee', 'Specter', 'Mortimer', 'Edgar', 'Salem',
+                'Damien', 'Luciana', 'Cordelia', 'Ophelia', 'Barnabas', 'Cassius', 'Belladonna'
+            ],
+            'suffixes': [
+                'moor', 'hollow', 'grave', 'bone', 'ash', 'mist', 'shadow', 'dark', 'gloom', 'fear',
+                'dread', 'doom', 'bane', 'curse', 'hex', 'spell', 'ward', 'veil', 'shroud', 'cloak',
+                'thorn', 'black', 'night', 'crow', 'raven', 'wolf'
+            ]
+        },
+        'desert': {
+            'prefixes': [
+                'Azar', 'Bahir', 'Cyrus', 'Darius', 'Esther', 'Farid', 'Golshan', 'Hassan', 'Iman',
+                'Jalal', 'Kaveh', 'Layla', 'Maryam', 'Nader', 'Omid', 'Parisa', 'Qasem', 'Reza',
+                'Shirin', 'Taher', 'Yasmin', 'Zara', 'Amara', 'Sahar', 'Kamran', 'Soraya'
+            ],
+            'suffixes': [
+                'sand', 'dune', 'oasis', 'mirage', 'sun', 'moon', 'star', 'wind', 'storm', 'gold',
+                'jewel', 'pearl', 'ruby', 'sapphire', 'emerald', 'diamond', 'crystal', 'flame', 'fire',  
+                'light', 'dawn', 'sky', 'desert', 'oasis'
+            ]
+        }
         }
         
         components = theme_components.get(theme, theme_components['medieval'])
         
         # Generate unique combinations
-        max_attempts = 20
-        for i in range(max_attempts):
+        max_attempts = 50  
+        for attempt in range(max_attempts):
             prefix = random.choice(components['prefixes'])
             suffix = random.choice(components['suffixes'])
+        
+            # RANDOM modifiers for uniqueness
+            modifiers = ['', 'el', 'an', 'ia', 'us', 'en', 'ra', 'or', 'is', 'ar']
+            endings = ['', 'son', 'daughter', 'born', 'walker', 'keeper', 'finder', 'bearer', 'weaver', 'singer']
             
-            # Add uniqueness factors
-            uniqueness_modifier = ['', 'el', 'an', 'ia', 'us', 'en', 'ra'][attempt % 7]
+            first_modifier = random.choice(modifiers)
+            last_modifier = random.choice(endings)
             
-            first_name = prefix + uniqueness_modifier
-            last_name = suffix.title() + ['', 'son', 'daughter', 'born', 'walker'][i % 5]
+            # Create RANDOM combinations
+            first_name = prefix + first_modifier
+            last_name = suffix.title() + last_modifier
             
             full_name = f"{first_name} {last_name}"
-            
             if full_name not in existing_names:
                 return full_name
         
-        # Ultimate fallback
-        return f"Character{attempt + 1} Unique{int(time.time()) % 1000}"
+        timestamp = int(time.time() * 1000) % 10000
+        random_num = random.randint(100, 999)
+        fallback_prefix = random.choice(components['prefixes'])
+        return f"{fallback_prefix} Unique{timestamp}{random_num}"
     
     async def _generate_ai_unique_role(self, theme: str, buildings: List[Dict], 
                                      existing_roles: List[str], concept: str) -> str:
