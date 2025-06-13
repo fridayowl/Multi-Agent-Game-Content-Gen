@@ -1,0 +1,185 @@
+{
+  "character_name": "Garrett Ironforge",
+  "character_id": "npc_2_garrett_ironforge",
+  "dialogue_tree": [
+    {
+      "id": "greeting",
+      "text": "Hey there! Name's Garrett Ironforge. I'm the healer around these parts.",
+      "speaker": "Garrett Ironforge",
+      "options": [
+        {
+          "id": "greeting_opt1",
+          "text": "Tell me about yourself.",
+          "next_node_id": "personality_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "greeting_opt2",
+          "text": "What do you do here?",
+          "next_node_id": "role_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "greeting_opt3",
+          "text": "I'll be on my way.",
+          "next_node_id": "farewell",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "role_dialogue_0",
+      "text": "I work as a healer here in town.",
+      "speaker": "Garrett Ironforge",
+      "options": [
+        {
+          "id": "role_opt0_1",
+          "text": "That's interesting.",
+          "next_node_id": "personality_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "role_opt0_2",
+          "text": "Tell me more.",
+          "next_node_id": "role_detail_0",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "role_opt0_3",
+          "text": "I should go.",
+          "next_node_id": "farewell",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "personality_dialogue",
+      "text": "Every day is a gift! I try to make the most of each moment.",
+      "speaker": "Garrett Ironforge",
+      "options": [
+        {
+          "id": "personality_opt1",
+          "text": "That's a good philosophy.",
+          "next_node_id": "relationship_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "personality_opt2",
+          "text": "What else can you tell me?",
+          "next_node_id": "role_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "personality_opt3",
+          "text": "I should be going.",
+          "next_node_id": "farewell",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "relationship_dialogue_0",
+      "text": "Aldric Stoneheart? We're acquainted. Aldric Stoneheart and Garrett Ironforge know each other casually through town interactions.",
+      "speaker": "Garrett Ironforge",
+      "options": [
+        {
+          "id": "rel_opt0_1",
+          "text": "Tell me more about them.",
+          "next_node_id": "relationship_detail_0",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "rel_opt0_2",
+          "text": "I see.",
+          "next_node_id": "personality_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "rel_opt0_3",
+          "text": "Thanks for the information.",
+          "next_node_id": "farewell",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "relationship_dialogue_1",
+      "text": "Theron Grimhall is a dear friend of mine. Garrett Ironforge and Theron Grimhall became friends through their work in the community.",
+      "speaker": "Garrett Ironforge",
+      "options": [
+        {
+          "id": "rel_opt1_1",
+          "text": "Tell me more about them.",
+          "next_node_id": "relationship_detail_1",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "rel_opt1_2",
+          "text": "I see.",
+          "next_node_id": "personality_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "rel_opt1_3",
+          "text": "Thanks for the information.",
+          "next_node_id": "farewell",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "farewell",
+      "text": "See you around! Take care of yourself out there.",
+      "speaker": "Garrett Ironforge",
+      "options": [
+        {
+          "id": "farewell_opt1",
+          "text": "Goodbye.",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "farewell_opt2",
+          "text": "Thank you.",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": true,
+      "quest_related": false
+    }
+  ]
+}

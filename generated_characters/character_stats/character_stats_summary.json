@@ -1,0 +1,25 @@
+{
+  "character_count": 5,
+  "average_level": 7.0,
+  "level_distribution": {
+    "Aldric Stoneheart": 9,
+    "Mara Blackwood": 4,
+    "Garrett Ironforge": 7,
+    "Elena Brightblade": 7,
+    "Theron Grimhall": 8
+  },
+  "role_distribution": {
+    "Aldric Stoneheart": "guard",
+    "Mara Blackwood": "farmer",
+    "Garrett Ironforge": "healer",
+    "Elena Brightblade": "messenger",
+    "Theron Grimhall": "noble"
+  },
+  "stat_totals": {
+    "Aldric Stoneheart": 60,
+    "Mara Blackwood": 60,
+    "Garrett Ironforge": 60,
+    "Elena Brightblade": 60,
+    "Theron Grimhall": 60
+  }
+}

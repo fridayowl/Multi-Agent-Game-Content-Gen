@@ -1,0 +1,118 @@
+{
+  "generation_info": {
+    "timestamp": "\"2025-06-13T23:25:01.374846\"",
+    "theme": "medieval",
+    "world_size": [
+      0,
+      0
+    ],
+    "character_count": 5,
+    "ai_enhanced": false
+  },
+  "characters": {
+    "npc_0_aldric_stoneheart": {
+      "name": "Aldric Stoneheart",
+      "title": "Protector of the Realm",
+      "role": "guard",
+      "age": 42,
+      "location": "town center",
+      "personality_summary": "loyal, vigilant",
+      "level": 9,
+      "health": 179,
+      "relationship_count": 3,
+      "dialogue_nodes": 6,
+      "profile_file": "character_profiles/npc_0_aldric_stoneheart_profile.json",
+      "dialogue_file": "dialogue_trees/npc_0_aldric_stoneheart_dialogue.json"
+    },
+    "npc_1_mara_blackwood": {
+      "name": "Mara Blackwood",
+      "title": "the Farmer",
+      "role": "farmer",
+      "age": 25,
+      "location": "town center",
+      "personality_summary": "practical, hardworking",
+      "level": 4,
+      "health": 107,
+      "relationship_count": 3,
+      "dialogue_nodes": 6,
+      "profile_file": "character_profiles/npc_1_mara_blackwood_profile.json",
+      "dialogue_file": "dialogue_trees/npc_1_mara_blackwood_dialogue.json"
+    },
+    "npc_2_garrett_ironforge": {
+      "name": "Garrett Ironforge",
+      "title": "the Healer",
+      "role": "healer",
+      "age": 25,
+      "location": "town center",
+      "personality_summary": "cheerful, helpful",
+      "level": 7,
+      "health": 125,
+      "relationship_count": 3,
+      "dialogue_nodes": 6,
+      "profile_file": "character_profiles/npc_2_garrett_ironforge_profile.json",
+      "dialogue_file": "dialogue_trees/npc_2_garrett_ironforge_dialogue.json"
+    },
+    "npc_3_elena_brightblade": {
+      "name": "Elena Brightblade",
+      "title": "the Messenger",
+      "role": "messenger",
+      "age": 30,
+      "location": "town center",
+      "personality_summary": "friendly, proud",
+      "level": 7,
+      "health": 136,
+      "relationship_count": 3,
+      "dialogue_nodes": 6,
+      "profile_file": "character_profiles/npc_3_elena_brightblade_profile.json",
+      "dialogue_file": "dialogue_trees/npc_3_elena_brightblade_dialogue.json"
+    },
+    "npc_4_theron_grimhall": {
+      "name": "Theron Grimhall",
+      "title": "the Noble",
+      "role": "noble",
+      "age": 43,
+      "location": "town center",
+      "personality_summary": "serious, cautious",
+      "level": 8,
+      "health": 148,
+      "relationship_count": 4,
+      "dialogue_nodes": 6,
+      "profile_file": "character_profiles/npc_4_theron_grimhall_profile.json",
+      "dialogue_file": "dialogue_trees/npc_4_theron_grimhall_dialogue.json"
+    }
+  },
+  "relationships_summary": {
+    "total_relationships": 16,
+    "relationship_types": [
+      "acquaintance",
+      "rival",
+      "friend"
+    ],
+    "relationship_map_file": "relationship_maps/relationship_map.json"
+  },
+  "dialogue_summary": {
+    "total_dialogue_nodes": 30,
+    "average_nodes_per_character": 6.0,
+    "dialogue_types": [
+      "greeting",
+      "role_dialogue",
+      "personality_dialogue",
+      "relationship_dialogue",
+      "farewell"
+    ]
+  },
+  "stats_summary": {
+    "stats_file": "character_stats/character_stats_summary.json",
+    "average_level": 7.0,
+    "level_range": [
+      4,
+      9
+    ]
+  },
+  "integration_info": {
+    "unity_compatible": true,
+    "quest_system_ready": true,
+    "relationship_system_ready": true,
+    "dialogue_system_ready": true
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "id": "npc_2_garrett_ironforge",
+  "name": "Garrett Ironforge",
+  "title": "the Healer",
+  "description": "Garrett Ironforge is a youthful healer with a bright smile and animated gestures. They wear practical clothing suited to their work and carry themselves with helpful confidence.",
+  "backstory": "Garrett Ironforge has been working as a healer for several years. Their cheerful nature and improving their situation drive them to excel in their profession, though they occasionally worry about change.",
+  "personality": {
+    "primary_trait": "cheerful",
+    "secondary_trait": "helpful",
+    "motivation": "improving their situation",
+    "fear": "change",
+    "quirk": "speaks in rhymes when nervous",
+    "speech_pattern": "casual",
+    "alignment": "true neutral",
+    "mood": "cautious"
+  },
+  "stats": {
+    "level": 7,
+    "health": 125,
+    "strength": 10,
+    "intelligence": 10,
+    "charisma": 10,
+    "dexterity": 10,
+    "wisdom": 10,
+    "constitution": 10
+  },
+  "relationships": [
+    {
+      "target_character": "Aldric Stoneheart",
+      "relationship_type": "acquaintance",
+      "relationship_strength": -2,
+      "history": "Aldric Stoneheart and Garrett Ironforge know each other casually through town interactions.",
+      "current_status": "neutral"
+    },
+    {
+      "target_character": "Theron Grimhall",
+      "relationship_type": "friend",
+      "relationship_strength": 51,
+      "history": "Garrett Ironforge and Theron Grimhall became friends through their work in the community.",
+      "current_status": "close"
+    },
+    {
+      "target_character": "Elena Brightblade",
+      "relationship_type": "acquaintance",
+      "relationship_strength": 13,
+      "history": "Elena Brightblade and Garrett Ironforge know each other casually through town interactions.",
+      "current_status": "friendly"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "greeting",
+      "text": "Hey there! Name's Garrett Ironforge. I'm the healer around these parts.",
+      "speaker": "Garrett Ironforge",
+      "options": [
+        {
+          "id": "greeting_opt1",
+          "text": "Tell me about yourself.",
+          "next_node_id": "personality_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "greeting_opt2",
+          "text": "What do you do here?",
+          "next_node_id": "role_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "greeting_opt3",
+          "text": "I'll be on my way.",
+          "next_node_id": "farewell",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "role_dialogue_0",
+      "text": "I work as a healer here in town.",
+      "speaker": "Garrett Ironforge",
+      "options": [
+        {
+          "id": "role_opt0_1",
+          "text": "That's interesting.",
+          "next_node_id": "personality_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "role_opt0_2",
+          "text": "Tell me more.",
+          "next_node_id": "role_detail_0",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "role_opt0_3",
+          "text": "I should go.",
+          "next_node_id": "farewell",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "personality_dialogue",
+      "text": "Every day is a gift! I try to make the most of each moment.",
+      "speaker": "Garrett Ironforge",
+      "options": [
+        {
+          "id": "personality_opt1",
+          "text": "That's a good philosophy.",
+          "next_node_id": "relationship_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "personality_opt2",
+          "text": "What else can you tell me?",
+          "next_node_id": "role_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "personality_opt3",
+          "text": "I should be going.",
+          "next_node_id": "farewell",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "relationship_dialogue_0",
+      "text": "Aldric Stoneheart? We're acquainted. Aldric Stoneheart and Garrett Ironforge know each other casually through town interactions.",
+      "speaker": "Garrett Ironforge",
+      "options": [
+        {
+          "id": "rel_opt0_1",
+          "text": "Tell me more about them.",
+          "next_node_id": "relationship_detail_0",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "rel_opt0_2",
+          "text": "I see.",
+          "next_node_id": "personality_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "rel_opt0_3",
+          "text": "Thanks for the information.",
+          "next_node_id": "farewell",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "relationship_dialogue_1",
+      "text": "Theron Grimhall is a dear friend of mine. Garrett Ironforge and Theron Grimhall became friends through their work in the community.",
+      "speaker": "Garrett Ironforge",
+      "options": [
+        {
+          "id": "rel_opt1_1",
+          "text": "Tell me more about them.",
+          "next_node_id": "relationship_detail_1",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "rel_opt1_2",
+          "text": "I see.",
+          "next_node_id": "personality_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "rel_opt1_3",
+          "text": "Thanks for the information.",
+          "next_node_id": "farewell",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "farewell",
+      "text": "See you around! Take care of yourself out there.",
+      "speaker": "Garrett Ironforge",
+      "options": [
+        {
+          "id": "farewell_opt1",
+          "text": "Goodbye.",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "farewell_opt2",
+          "text": "Thank you.",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": true,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "personal belongings",
+    "coin purse",
+    "work tools"
+  ],
+  "location": "town center",
+  "role": "healer",
+  "quest_involvement": [],
+  "age": 25,
+  "appearance": "Garrett Ironforge has red hair and brown eyes, with a tall build typical of their profession.",
+  "voice_description": "uses everyday language and informal expressions"
+}

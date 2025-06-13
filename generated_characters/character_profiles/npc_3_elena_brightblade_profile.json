@@ -1,0 +1,242 @@
+{
+  "id": "npc_3_elena_brightblade",
+  "name": "Elena Brightblade",
+  "title": "the Messenger",
+  "description": "Elena Brightblade is a mature messenger with distinctive features. They wear practical clothing suited to their work and carry themselves with proud confidence.",
+  "backstory": "Elena Brightblade has been working as a messenger for several years. Their friendly nature and improving their situation drive them to excel in their profession, though they occasionally worry about change.",
+  "personality": {
+    "primary_trait": "friendly",
+    "secondary_trait": "proud",
+    "motivation": "improving their situation",
+    "fear": "change",
+    "quirk": "hums old songs",
+    "speech_pattern": "cheerful",
+    "alignment": "chaotic neutral",
+    "mood": "content"
+  },
+  "stats": {
+    "level": 7,
+    "health": 136,
+    "strength": 10,
+    "intelligence": 10,
+    "charisma": 10,
+    "dexterity": 10,
+    "wisdom": 10,
+    "constitution": 10
+  },
+  "relationships": [
+    {
+      "target_character": "Mara Blackwood",
+      "relationship_type": "friend",
+      "relationship_strength": 59,
+      "history": "Mara Blackwood and Elena Brightblade became friends through their work in the community.",
+      "current_status": "close"
+    },
+    {
+      "target_character": "Theron Grimhall",
+      "relationship_type": "rival",
+      "relationship_strength": -45,
+      "history": "Elena Brightblade and Theron Grimhall have competing interests that put them at odds.",
+      "current_status": "hostile"
+    },
+    {
+      "target_character": "Garrett Ironforge",
+      "relationship_type": "acquaintance",
+      "relationship_strength": 9,
+      "history": "Elena Brightblade and Garrett Ironforge know each other casually through town interactions.",
+      "current_status": "neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "greeting",
+      "text": "Welcome, welcome! I'm Elena Brightblade, the happiest messenger you'll ever meet!",
+      "speaker": "Elena Brightblade",
+      "options": [
+        {
+          "id": "greeting_opt1",
+          "text": "Tell me about yourself.",
+          "next_node_id": "personality_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "greeting_opt2",
+          "text": "What do you do here?",
+          "next_node_id": "role_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "greeting_opt3",
+          "text": "I'll be on my way.",
+          "next_node_id": "farewell",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "role_dialogue_0",
+      "text": "I work as a messenger here in town.",
+      "speaker": "Elena Brightblade",
+      "options": [
+        {
+          "id": "role_opt0_1",
+          "text": "That's interesting.",
+          "next_node_id": "personality_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "role_opt0_2",
+          "text": "Tell me more.",
+          "next_node_id": "role_detail_0",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "role_opt0_3",
+          "text": "I should go.",
+          "next_node_id": "farewell",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "personality_dialogue",
+      "text": "I suppose you could say I'm quite friendly.",
+      "speaker": "Elena Brightblade",
+      "options": [
+        {
+          "id": "personality_opt1",
+          "text": "That's a good philosophy.",
+          "next_node_id": "relationship_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "personality_opt2",
+          "text": "What else can you tell me?",
+          "next_node_id": "role_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "personality_opt3",
+          "text": "I should be going.",
+          "next_node_id": "farewell",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "relationship_dialogue_0",
+      "text": "Mara Blackwood is a dear friend of mine. Mara Blackwood and Elena Brightblade became friends through their work in the community.",
+      "speaker": "Elena Brightblade",
+      "options": [
+        {
+          "id": "rel_opt0_1",
+          "text": "Tell me more about them.",
+          "next_node_id": "relationship_detail_0",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "rel_opt0_2",
+          "text": "I see.",
+          "next_node_id": "personality_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "rel_opt0_3",
+          "text": "Thanks for the information.",
+          "next_node_id": "farewell",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "relationship_dialogue_1",
+      "text": "Theron Grimhall? We're acquainted. Elena Brightblade and Theron Grimhall have competing interests that put them at odds.",
+      "speaker": "Elena Brightblade",
+      "options": [
+        {
+          "id": "rel_opt1_1",
+          "text": "Tell me more about them.",
+          "next_node_id": "relationship_detail_1",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "rel_opt1_2",
+          "text": "I see.",
+          "next_node_id": "personality_dialogue",
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "rel_opt1_3",
+          "text": "Thanks for the information.",
+          "next_node_id": "farewell",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "farewell",
+      "text": "It was wonderful meeting you! Come back and visit soon!",
+      "speaker": "Elena Brightblade",
+      "options": [
+        {
+          "id": "farewell_opt1",
+          "text": "Goodbye.",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        },
+        {
+          "id": "farewell_opt2",
+          "text": "Thank you.",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": true,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "personal belongings",
+    "coin purse",
+    "work tools"
+  ],
+  "location": "town center",
+  "role": "messenger",
+  "quest_involvement": [],
+  "age": 30,
+  "appearance": "Elena Brightblade has brown hair and brown eyes, with a average build typical of their profession.",
+  "voice_description": "has a bright, animated speaking style"
+}
