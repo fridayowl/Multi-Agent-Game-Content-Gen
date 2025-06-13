@@ -1,0 +1,36 @@
+{
+  "session_info": {
+    "session_directory": "game_content_pipeline/20250613_183711_meivisal_gaem",
+    "timestamp": "2025-06-13T18:38:07.601207",
+    "pipeline_version": "1.0.0"
+  },
+  "execution_steps": [
+    {
+      "step": 1,
+      "name": "World Design",
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "name": "Asset Generation",
+      "status": "completed"
+    },
+    {
+      "step": 3,
+      "name": "Final Assembly",
+      "status": "completed"
+    }
+  ],
+  "world_stats": {
+    "theme": "medieval",
+    "buildings_generated": 10,
+    "features_generated": 75
+  },
+  "asset_stats": {
+    "total_assets": 86,
+    "buildings_count": 10,
+    "environment_count": 1,
+    "props_count": 75
+  },
+  "errors": []
+}

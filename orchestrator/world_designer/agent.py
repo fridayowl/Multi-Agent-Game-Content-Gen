@@ -893,6 +893,26 @@ def _calculate_complexity(buildings: List[Dict], paths: List[Dict]) -> float:
     
     return building_score + path_score + variety_bonus
 
+# Additional functions for ADK compatibility
+async def generate_world(prompt: str) -> Dict[str, Any]:
+    """
+    Generate world from prompt - wrapper for design_world_from_prompt
+    This method is expected by the quick_test.py
+    """
+    result = design_world_from_prompt(prompt)
+    if result["status"] == "success":
+        return result["world_spec"]
+    else:
+        raise Exception(f"World generation failed: {result.get('error', 'Unknown error')}")
+
+async def get_status() -> Dict[str, Any]:
+    """Get world designer status"""
+    return {
+        'status': 'ready',
+        'model': 'gemini-2.0-flash-exp',
+        'capabilities': ['world_design', 'procedural_generation', 'spatial_reasoning']
+    }
+
 # Create the ADK agent
 root_agent = Agent(
     name="world_designer",
@@ -911,7 +931,7 @@ You understand spatial relationships, environmental storytelling, game balance, 
 
 When you receive a world design request, call the design_world_from_prompt function with the user's prompt.""",
     description="AI agent that designs complete game worlds from text prompts using procedural generation and spatial reasoning",
-    tools=[design_world_from_prompt]
+    tools=[design_world_from_prompt, generate_world, get_status]
 )
 
 # Test function that can be run independently

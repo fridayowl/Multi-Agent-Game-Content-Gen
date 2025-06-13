@@ -1,0 +1,1180 @@
+{
+  "theme": "medieval",
+  "buildings": [
+    {
+      "type": "market",
+      "name": "market_20_20",
+      "file_path": null,
+      "position": {
+        "x": 20,
+        "y": 20,
+        "z": 0.0
+      },
+      "size": {
+        "width": 20,
+        "depth": 15,
+        "height": 4
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/building_market_20_20.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "house",
+      "name": "house_32.0_20.0",
+      "file_path": null,
+      "position": {
+        "x": 32.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "height": 5
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/building_house_32.0_20.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "tavern",
+      "name": "tavern_20.0_32.0",
+      "file_path": null,
+      "position": {
+        "x": 20.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "size": {
+        "width": 12,
+        "depth": 10,
+        "height": 6
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/building_tavern_20.0_32.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "blacksmith",
+      "name": "blacksmith_8.0_20.0",
+      "file_path": null,
+      "position": {
+        "x": 8.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 8,
+        "height": 6
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/building_blacksmith_8.0_20.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "house",
+      "name": "house_9.214182369019332_31.456867164713096",
+      "file_path": null,
+      "position": {
+        "x": 9.214182369019332,
+        "y": 31.456867164713096,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "height": 5
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/building_house_9.214182369019332_31.456867164713096.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "house",
+      "name": "house_29.331146683909942_9.522511718748303",
+      "file_path": null,
+      "position": {
+        "x": 29.331146683909942,
+        "y": 9.522511718748303,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "height": 5
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/building_house_29.331146683909942_9.522511718748303.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "house",
+      "name": "house_12.821561082534021_29.813388042627366",
+      "file_path": null,
+      "position": {
+        "x": 12.821561082534021,
+        "y": 29.813388042627366,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "height": 5
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/building_house_12.821561082534021_29.813388042627366.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "house",
+      "name": "house_9.849939772491684_30.587085546085937",
+      "file_path": null,
+      "position": {
+        "x": 9.849939772491684,
+        "y": 30.587085546085937,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "height": 5
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/building_house_9.849939772491684_30.587085546085937.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "house",
+      "name": "house_19.12635285181581_11.421043841472223",
+      "file_path": null,
+      "position": {
+        "x": 19.12635285181581,
+        "y": 11.421043841472223,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "height": 5
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/building_house_19.12635285181581_11.421043841472223.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "house",
+      "name": "house_29.552518195147886_34.09379454067451",
+      "file_path": null,
+      "position": {
+        "x": 29.552518195147886,
+        "y": 34.09379454067451,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "height": 5
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/building_house_29.552518195147886_34.09379454067451.py",
+      "status": "script_generated"
+    }
+  ],
+  "environment": [
+    {
+      "type": "terrain",
+      "name": "terrain",
+      "file_path": null,
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/terrain.py",
+      "status": "script_generated"
+    }
+  ],
+  "props": [
+    {
+      "type": "bush",
+      "name": "bush_13.0_0.0",
+      "file_path": null,
+      "position": {
+        "x": 13.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_13.0_0.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_14.0_0.0",
+      "file_path": null,
+      "position": {
+        "x": 14.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_14.0_0.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_13.0_1.0",
+      "file_path": null,
+      "position": {
+        "x": 13.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_13.0_1.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_17.0_1.0",
+      "file_path": null,
+      "position": {
+        "x": 17.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_17.0_1.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_37.0_1.0",
+      "file_path": null,
+      "position": {
+        "x": 37.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_37.0_1.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_1.0_2.0",
+      "file_path": null,
+      "position": {
+        "x": 1.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_1.0_2.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_28.0_2.0",
+      "file_path": null,
+      "position": {
+        "x": 28.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_28.0_2.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "rock",
+      "name": "rock_31.0_2.0",
+      "file_path": null,
+      "position": {
+        "x": 31.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_rock_31.0_2.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_0.0_3.0",
+      "file_path": null,
+      "position": {
+        "x": 0.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_0.0_3.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_7.0_3.0",
+      "file_path": null,
+      "position": {
+        "x": 7.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_7.0_3.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "well",
+      "name": "well_12.0_3.0",
+      "file_path": null,
+      "position": {
+        "x": 12.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_well_12.0_3.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_24.0_3.0",
+      "file_path": null,
+      "position": {
+        "x": 24.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_24.0_3.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_27.0_3.0",
+      "file_path": null,
+      "position": {
+        "x": 27.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_27.0_3.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_18.0_4.0",
+      "file_path": null,
+      "position": {
+        "x": 18.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_18.0_4.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_28.0_4.0",
+      "file_path": null,
+      "position": {
+        "x": 28.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_28.0_4.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_31.0_4.0",
+      "file_path": null,
+      "position": {
+        "x": 31.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_31.0_4.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_4.0_5.0",
+      "file_path": null,
+      "position": {
+        "x": 4.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_4.0_5.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_13.0_5.0",
+      "file_path": null,
+      "position": {
+        "x": 13.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_13.0_5.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_36.0_5.0",
+      "file_path": null,
+      "position": {
+        "x": 36.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_36.0_5.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "rock",
+      "name": "rock_13.0_7.0",
+      "file_path": null,
+      "position": {
+        "x": 13.0,
+        "y": 7.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_rock_13.0_7.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "rock",
+      "name": "rock_19.0_7.0",
+      "file_path": null,
+      "position": {
+        "x": 19.0,
+        "y": 7.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_rock_19.0_7.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "well",
+      "name": "well_7.0_9.0",
+      "file_path": null,
+      "position": {
+        "x": 7.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_well_7.0_9.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "rock",
+      "name": "rock_39.0_10.0",
+      "file_path": null,
+      "position": {
+        "x": 39.0,
+        "y": 10.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_rock_39.0_10.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_6.0_12.0",
+      "file_path": null,
+      "position": {
+        "x": 6.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_6.0_12.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_7.0_12.0",
+      "file_path": null,
+      "position": {
+        "x": 7.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_7.0_12.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_11.0_15.0",
+      "file_path": null,
+      "position": {
+        "x": 11.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_11.0_15.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_29.0_15.0",
+      "file_path": null,
+      "position": {
+        "x": 29.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_29.0_15.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_33.0_15.0",
+      "file_path": null,
+      "position": {
+        "x": 33.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_33.0_15.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_0.0_16.0",
+      "file_path": null,
+      "position": {
+        "x": 0.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_0.0_16.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "well",
+      "name": "well_12.0_16.0",
+      "file_path": null,
+      "position": {
+        "x": 12.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_well_12.0_16.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_20.0_16.0",
+      "file_path": null,
+      "position": {
+        "x": 20.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_20.0_16.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_35.0_16.0",
+      "file_path": null,
+      "position": {
+        "x": 35.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_35.0_16.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_36.0_16.0",
+      "file_path": null,
+      "position": {
+        "x": 36.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_36.0_16.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_4.0_17.0",
+      "file_path": null,
+      "position": {
+        "x": 4.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_4.0_17.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "rock",
+      "name": "rock_27.0_17.0",
+      "file_path": null,
+      "position": {
+        "x": 27.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_rock_27.0_17.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_37.0_18.0",
+      "file_path": null,
+      "position": {
+        "x": 37.0,
+        "y": 18.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_37.0_18.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_14.0_19.0",
+      "file_path": null,
+      "position": {
+        "x": 14.0,
+        "y": 19.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_14.0_19.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_24.0_19.0",
+      "file_path": null,
+      "position": {
+        "x": 24.0,
+        "y": 19.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_24.0_19.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "rock",
+      "name": "rock_2.0_20.0",
+      "file_path": null,
+      "position": {
+        "x": 2.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_rock_2.0_20.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_16.0_22.0",
+      "file_path": null,
+      "position": {
+        "x": 16.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_16.0_22.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "well",
+      "name": "well_24.0_22.0",
+      "file_path": null,
+      "position": {
+        "x": 24.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_well_24.0_22.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_28.0_22.0",
+      "file_path": null,
+      "position": {
+        "x": 28.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_28.0_22.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "rock",
+      "name": "rock_38.0_22.0",
+      "file_path": null,
+      "position": {
+        "x": 38.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_rock_38.0_22.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_1.0_23.0",
+      "file_path": null,
+      "position": {
+        "x": 1.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_1.0_23.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_5.0_23.0",
+      "file_path": null,
+      "position": {
+        "x": 5.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_5.0_23.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "well",
+      "name": "well_17.0_23.0",
+      "file_path": null,
+      "position": {
+        "x": 17.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_well_17.0_23.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_38.0_24.0",
+      "file_path": null,
+      "position": {
+        "x": 38.0,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_38.0_24.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_5.0_25.0",
+      "file_path": null,
+      "position": {
+        "x": 5.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_5.0_25.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "well",
+      "name": "well_6.0_25.0",
+      "file_path": null,
+      "position": {
+        "x": 6.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_well_6.0_25.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_7.0_25.0",
+      "file_path": null,
+      "position": {
+        "x": 7.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_7.0_25.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_17.0_25.0",
+      "file_path": null,
+      "position": {
+        "x": 17.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_17.0_25.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "well",
+      "name": "well_34.0_25.0",
+      "file_path": null,
+      "position": {
+        "x": 34.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_well_34.0_25.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "well",
+      "name": "well_7.0_26.0",
+      "file_path": null,
+      "position": {
+        "x": 7.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_well_7.0_26.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_23.0_26.0",
+      "file_path": null,
+      "position": {
+        "x": 23.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_23.0_26.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_4.0_27.0",
+      "file_path": null,
+      "position": {
+        "x": 4.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_4.0_27.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_17.0_27.0",
+      "file_path": null,
+      "position": {
+        "x": 17.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_17.0_27.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_22.0_27.0",
+      "file_path": null,
+      "position": {
+        "x": 22.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_22.0_27.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "well",
+      "name": "well_24.0_27.0",
+      "file_path": null,
+      "position": {
+        "x": 24.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_well_24.0_27.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "well",
+      "name": "well_32.0_27.0",
+      "file_path": null,
+      "position": {
+        "x": 32.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_well_32.0_27.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_35.0_27.0",
+      "file_path": null,
+      "position": {
+        "x": 35.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_35.0_27.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_21.0_28.0",
+      "file_path": null,
+      "position": {
+        "x": 21.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_21.0_28.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_29.0_29.0",
+      "file_path": null,
+      "position": {
+        "x": 29.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_29.0_29.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_25.0_30.0",
+      "file_path": null,
+      "position": {
+        "x": 25.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_25.0_30.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_3.0_32.0",
+      "file_path": null,
+      "position": {
+        "x": 3.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_3.0_32.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "well",
+      "name": "well_2.0_34.0",
+      "file_path": null,
+      "position": {
+        "x": 2.0,
+        "y": 34.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_well_2.0_34.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "rock",
+      "name": "rock_16.0_34.0",
+      "file_path": null,
+      "position": {
+        "x": 16.0,
+        "y": 34.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_rock_16.0_34.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_24.0_35.0",
+      "file_path": null,
+      "position": {
+        "x": 24.0,
+        "y": 35.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_flower_patch_24.0_35.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_0.0_36.0",
+      "file_path": null,
+      "position": {
+        "x": 0.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_0.0_36.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_7.0_37.0",
+      "file_path": null,
+      "position": {
+        "x": 7.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_7.0_37.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "rock",
+      "name": "rock_13.0_37.0",
+      "file_path": null,
+      "position": {
+        "x": 13.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_rock_13.0_37.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_19.0_37.0",
+      "file_path": null,
+      "position": {
+        "x": 19.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_19.0_37.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_36.0_37.0",
+      "file_path": null,
+      "position": {
+        "x": 36.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_oak_tree_36.0_37.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_4.0_38.0",
+      "file_path": null,
+      "position": {
+        "x": 4.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_4.0_38.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_9.0_38.0",
+      "file_path": null,
+      "position": {
+        "x": 9.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_9.0_38.0.py",
+      "status": "script_generated"
+    },
+    {
+      "type": "bush",
+      "name": "bush_33.0_38.0",
+      "file_path": null,
+      "position": {
+        "x": 33.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_183711_meivisal_gaem/assets/blender_scripts/prop_bush_33.0_38.0.py",
+      "status": "script_generated"
+    }
+  ],
+  "materials": {},
+  "output_directory": "game_content_pipeline/20250613_183711_meivisal_gaem/assets",
+  "generation_summary": {
+    "total_assets": 86,
+    "buildings_count": 10,
+    "environment_count": 1,
+    "props_count": 75
+  }
+}
