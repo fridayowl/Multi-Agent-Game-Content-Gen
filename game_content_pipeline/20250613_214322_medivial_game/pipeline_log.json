@@ -1,0 +1,38 @@
+{
+  "session_info": {
+    "session_directory": "game_content_pipeline/20250613_214322_medivial_game",
+    "timestamp": "2025-06-13T21:44:28.014304",
+    "pipeline_version": "1.0.0"
+  },
+  "execution_steps": [
+    {
+      "step": 1,
+      "name": "World Design",
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "name": "Asset Generation",
+      "status": "completed"
+    },
+    {
+      "step": 3,
+      "name": "Final Assembly",
+      "status": "completed"
+    }
+  ],
+  "world_stats": {
+    "theme": "medieval",
+    "buildings_generated": 7,
+    "features_generated": 83
+  },
+  "asset_stats": {
+    "total_assets": 91,
+    "buildings_count": 7,
+    "environment_count": 1,
+    "props_count": 83,
+    "textures_generated": 25,
+    "ai_variations": 0
+  },
+  "errors": []
+}
