@@ -1,0 +1,1702 @@
+{
+  "theme": "medieval",
+  "buildings": [
+    {
+      "type": "market",
+      "name": "market_20_20",
+      "file_path": null,
+      "position": {
+        "x": 20,
+        "y": 20,
+        "z": 0.0
+      },
+      "size": {
+        "width": 20,
+        "depth": 15,
+        "height": 4
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/building_market_20_20.py",
+      "ai_description": "",
+      "creative_variations": [],
+      "textures": {
+        "walls": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_6e71f99b.png",
+        "roof": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_de1d7562.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "house",
+      "name": "house_32.0_20.0",
+      "file_path": null,
+      "position": {
+        "x": 32.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "height": 5
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/building_house_32.0_20.0.py",
+      "ai_description": "",
+      "creative_variations": [],
+      "textures": {
+        "walls": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_4c39b5ed.png",
+        "roof": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_4c2f2196.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "tavern",
+      "name": "tavern_20.0_32.0",
+      "file_path": null,
+      "position": {
+        "x": 20.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "size": {
+        "width": 12,
+        "depth": 10,
+        "height": 6
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/building_tavern_20.0_32.0.py",
+      "ai_description": "",
+      "creative_variations": [],
+      "textures": {
+        "walls": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_874187e1.png",
+        "roof": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_8ceb7274.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "blacksmith",
+      "name": "blacksmith_8.0_20.0",
+      "file_path": null,
+      "position": {
+        "x": 8.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 8,
+        "height": 6
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/building_blacksmith_8.0_20.0.py",
+      "ai_description": "",
+      "creative_variations": [],
+      "textures": {
+        "walls": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_1e8e6849.png",
+        "metal": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/metal_medieval_4bee8049.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "house",
+      "name": "house_12.951540036035286_24.835832530356562",
+      "file_path": null,
+      "position": {
+        "x": 12.951540036035286,
+        "y": 24.835832530356562,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "height": 5
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/building_house_12.951540036035286_24.835832530356562.py",
+      "ai_description": "",
+      "creative_variations": [],
+      "textures": {
+        "walls": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_4c39b5ed.png",
+        "roof": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_4c2f2196.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "house",
+      "name": "house_25.681010512480427_17.480814896636154",
+      "file_path": null,
+      "position": {
+        "x": 25.681010512480427,
+        "y": 17.480814896636154,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "height": 5
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/building_house_25.681010512480427_17.480814896636154.py",
+      "ai_description": "",
+      "creative_variations": [],
+      "textures": {
+        "walls": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_4c39b5ed.png",
+        "roof": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_4c2f2196.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "house",
+      "name": "house_32.46256041501975_34.81781272783981",
+      "file_path": null,
+      "position": {
+        "x": 32.46256041501975,
+        "y": 34.81781272783981,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "height": 5
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/building_house_32.46256041501975_34.81781272783981.py",
+      "ai_description": "",
+      "creative_variations": [],
+      "textures": {
+        "walls": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_4c39b5ed.png",
+        "roof": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_4c2f2196.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "house",
+      "name": "house_27.74460387238897_25.701747378893323",
+      "file_path": null,
+      "position": {
+        "x": 27.74460387238897,
+        "y": 25.701747378893323,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "height": 5
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/building_house_27.74460387238897_25.701747378893323.py",
+      "ai_description": "",
+      "creative_variations": [],
+      "textures": {
+        "walls": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_4c39b5ed.png",
+        "roof": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_4c2f2196.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "house",
+      "name": "house_34.98515497368818_8.370182969093632",
+      "file_path": null,
+      "position": {
+        "x": 34.98515497368818,
+        "y": 8.370182969093632,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "height": 5
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/building_house_34.98515497368818_8.370182969093632.py",
+      "ai_description": "",
+      "creative_variations": [],
+      "textures": {
+        "walls": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_4c39b5ed.png",
+        "roof": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_4c2f2196.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "house",
+      "name": "house_22.357839184350603_13.313023327487848",
+      "file_path": null,
+      "position": {
+        "x": 22.357839184350603,
+        "y": 13.313023327487848,
+        "z": 0.0
+      },
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "height": 5
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/building_house_22.357839184350603_13.313023327487848.py",
+      "ai_description": "",
+      "creative_variations": [],
+      "textures": {
+        "walls": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_4c39b5ed.png",
+        "roof": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_4c2f2196.png"
+      },
+      "status": "script_only"
+    }
+  ],
+  "environment": [
+    {
+      "type": "terrain",
+      "name": "enhanced_terrain",
+      "file_path": null,
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/enhanced_terrain.py",
+      "textures": {
+        "grass": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_459765a5.png",
+        "dirt": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_2c2daa7e.png",
+        "stone": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_2df9eb03.png",
+        "water": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_34dc039f.png"
+      },
+      "status": "script_only"
+    }
+  ],
+  "props": [
+    {
+      "type": "rock",
+      "name": "rock_38.0_0.0",
+      "file_path": null,
+      "position": {
+        "x": 38.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_38.0_0.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_0.0_1.0",
+      "file_path": null,
+      "position": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_0.0_1.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_2.0_1.0",
+      "file_path": null,
+      "position": {
+        "x": 2.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_flower_patch_2.0_1.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_516ad02f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_36.0_1.0",
+      "file_path": null,
+      "position": {
+        "x": 36.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_flower_patch_36.0_1.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_516ad02f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_39.0_1.0",
+      "file_path": null,
+      "position": {
+        "x": 39.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_flower_patch_39.0_1.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_516ad02f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_11.0_2.0",
+      "file_path": null,
+      "position": {
+        "x": 11.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_11.0_2.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_29.0_3.0",
+      "file_path": null,
+      "position": {
+        "x": 29.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_29.0_3.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_37.0_3.0",
+      "file_path": null,
+      "position": {
+        "x": 37.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_37.0_3.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_17.0_4.0",
+      "file_path": null,
+      "position": {
+        "x": 17.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_17.0_4.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_38.0_4.0",
+      "file_path": null,
+      "position": {
+        "x": 38.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_38.0_4.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_24.0_5.0",
+      "file_path": null,
+      "position": {
+        "x": 24.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_24.0_5.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "well",
+      "name": "well_32.0_5.0",
+      "file_path": null,
+      "position": {
+        "x": 32.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_well_32.0_5.0.py",
+      "ai_description": "",
+      "textures": {
+        "stone": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_e10455c3.png",
+        "wood": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_94c27939.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_6.0_6.0",
+      "file_path": null,
+      "position": {
+        "x": 6.0,
+        "y": 6.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_6.0_6.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_31.0_7.0",
+      "file_path": null,
+      "position": {
+        "x": 31.0,
+        "y": 7.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_31.0_7.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_1.0_8.0",
+      "file_path": null,
+      "position": {
+        "x": 1.0,
+        "y": 8.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_1.0_8.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "well",
+      "name": "well_15.0_8.0",
+      "file_path": null,
+      "position": {
+        "x": 15.0,
+        "y": 8.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_well_15.0_8.0.py",
+      "ai_description": "",
+      "textures": {
+        "stone": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_e10455c3.png",
+        "wood": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_94c27939.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_19.0_8.0",
+      "file_path": null,
+      "position": {
+        "x": 19.0,
+        "y": 8.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_19.0_8.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_2.0_9.0",
+      "file_path": null,
+      "position": {
+        "x": 2.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_flower_patch_2.0_9.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_516ad02f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_17.0_9.0",
+      "file_path": null,
+      "position": {
+        "x": 17.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_flower_patch_17.0_9.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_516ad02f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_26.0_10.0",
+      "file_path": null,
+      "position": {
+        "x": 26.0,
+        "y": 10.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_26.0_10.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_15.0_11.0",
+      "file_path": null,
+      "position": {
+        "x": 15.0,
+        "y": 11.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_flower_patch_15.0_11.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_516ad02f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_28.0_11.0",
+      "file_path": null,
+      "position": {
+        "x": 28.0,
+        "y": 11.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_28.0_11.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_5.0_12.0",
+      "file_path": null,
+      "position": {
+        "x": 5.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_5.0_12.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_13.0_12.0",
+      "file_path": null,
+      "position": {
+        "x": 13.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_13.0_12.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_14.0_12.0",
+      "file_path": null,
+      "position": {
+        "x": 14.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_flower_patch_14.0_12.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_516ad02f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_16.0_12.0",
+      "file_path": null,
+      "position": {
+        "x": 16.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_16.0_12.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_1.0_13.0",
+      "file_path": null,
+      "position": {
+        "x": 1.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_1.0_13.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_14.0_13.0",
+      "file_path": null,
+      "position": {
+        "x": 14.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_14.0_13.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_29.0_13.0",
+      "file_path": null,
+      "position": {
+        "x": 29.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_29.0_13.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_33.0_13.0",
+      "file_path": null,
+      "position": {
+        "x": 33.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_33.0_13.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_5.0_14.0",
+      "file_path": null,
+      "position": {
+        "x": 5.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_5.0_14.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_8.0_14.0",
+      "file_path": null,
+      "position": {
+        "x": 8.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_8.0_14.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_33.0_14.0",
+      "file_path": null,
+      "position": {
+        "x": 33.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_33.0_14.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_36.0_14.0",
+      "file_path": null,
+      "position": {
+        "x": 36.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_36.0_14.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_7.0_15.0",
+      "file_path": null,
+      "position": {
+        "x": 7.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_7.0_15.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_12.0_15.0",
+      "file_path": null,
+      "position": {
+        "x": 12.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_12.0_15.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_15.0_15.0",
+      "file_path": null,
+      "position": {
+        "x": 15.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_15.0_15.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_18.0_15.0",
+      "file_path": null,
+      "position": {
+        "x": 18.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_18.0_15.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_13.0_16.0",
+      "file_path": null,
+      "position": {
+        "x": 13.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_flower_patch_13.0_16.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_516ad02f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_16.0_17.0",
+      "file_path": null,
+      "position": {
+        "x": 16.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_16.0_17.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "well",
+      "name": "well_17.0_17.0",
+      "file_path": null,
+      "position": {
+        "x": 17.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_well_17.0_17.0.py",
+      "ai_description": "",
+      "textures": {
+        "stone": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_e10455c3.png",
+        "wood": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_94c27939.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_37.0_17.0",
+      "file_path": null,
+      "position": {
+        "x": 37.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_flower_patch_37.0_17.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_516ad02f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "well",
+      "name": "well_16.0_20.0",
+      "file_path": null,
+      "position": {
+        "x": 16.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_well_16.0_20.0.py",
+      "ai_description": "",
+      "textures": {
+        "stone": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_e10455c3.png",
+        "wood": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_94c27939.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_39.0_21.0",
+      "file_path": null,
+      "position": {
+        "x": 39.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_39.0_21.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_36.0_22.0",
+      "file_path": null,
+      "position": {
+        "x": 36.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_36.0_22.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_39.0_22.0",
+      "file_path": null,
+      "position": {
+        "x": 39.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_39.0_22.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_2.0_23.0",
+      "file_path": null,
+      "position": {
+        "x": 2.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_2.0_23.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_3.0_25.0",
+      "file_path": null,
+      "position": {
+        "x": 3.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_3.0_25.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_39.0_25.0",
+      "file_path": null,
+      "position": {
+        "x": 39.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_39.0_25.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_9.0_26.0",
+      "file_path": null,
+      "position": {
+        "x": 9.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_flower_patch_9.0_26.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_516ad02f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_5.0_28.0",
+      "file_path": null,
+      "position": {
+        "x": 5.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_5.0_28.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_7.0_28.0",
+      "file_path": null,
+      "position": {
+        "x": 7.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_7.0_28.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_8.0_28.0",
+      "file_path": null,
+      "position": {
+        "x": 8.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_flower_patch_8.0_28.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_516ad02f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_33.0_29.0",
+      "file_path": null,
+      "position": {
+        "x": 33.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_flower_patch_33.0_29.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_516ad02f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_37.0_33.0",
+      "file_path": null,
+      "position": {
+        "x": 37.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_37.0_33.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_39.0_34.0",
+      "file_path": null,
+      "position": {
+        "x": 39.0,
+        "y": 34.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_39.0_34.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_14.0_35.0",
+      "file_path": null,
+      "position": {
+        "x": 14.0,
+        "y": 35.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_14.0_35.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "bush",
+      "name": "bush_17.0_36.0",
+      "file_path": null,
+      "position": {
+        "x": 17.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_bush_17.0_36.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_38.0_36.0",
+      "file_path": null,
+      "position": {
+        "x": 38.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_38.0_36.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_6.0_37.0",
+      "file_path": null,
+      "position": {
+        "x": 6.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_6.0_37.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "well",
+      "name": "well_19.0_37.0",
+      "file_path": null,
+      "position": {
+        "x": 19.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_well_19.0_37.0.py",
+      "ai_description": "",
+      "textures": {
+        "stone": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_e10455c3.png",
+        "wood": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_94c27939.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_21.0_37.0",
+      "file_path": null,
+      "position": {
+        "x": 21.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_21.0_37.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "flower_patch",
+      "name": "flower_patch_36.0_37.0",
+      "file_path": null,
+      "position": {
+        "x": 36.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_flower_patch_36.0_37.0.py",
+      "ai_description": "",
+      "textures": {
+        "foliage": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_516ad02f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "oak_tree",
+      "name": "oak_tree_37.0_37.0",
+      "file_path": null,
+      "position": {
+        "x": 37.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_oak_tree_37.0_37.0.py",
+      "ai_description": "",
+      "textures": {
+        "bark": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+        "leaves": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_2.0_38.0",
+      "file_path": null,
+      "position": {
+        "x": 2.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_2.0_38.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_8.0_38.0",
+      "file_path": null,
+      "position": {
+        "x": 8.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_8.0_38.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_13.0_38.0",
+      "file_path": null,
+      "position": {
+        "x": 13.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_13.0_38.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "well",
+      "name": "well_4.0_39.0",
+      "file_path": null,
+      "position": {
+        "x": 4.0,
+        "y": 39.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_well_4.0_39.0.py",
+      "ai_description": "",
+      "textures": {
+        "stone": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_e10455c3.png",
+        "wood": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_94c27939.png"
+      },
+      "status": "script_only"
+    },
+    {
+      "type": "rock",
+      "name": "rock_33.0_39.0",
+      "file_path": null,
+      "position": {
+        "x": 33.0,
+        "y": 39.0,
+        "z": 0.0
+      },
+      "theme": "medieval",
+      "script_path": "game_content_pipeline/20250613_192459_medivial_game/assets/blender_scripts/prop_rock_33.0_39.0.py",
+      "ai_description": "",
+      "textures": {
+        "surface": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png"
+      },
+      "status": "script_only"
+    }
+  ],
+  "materials": {
+    "wood": {
+      "diffuse_texture": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_572f59d7.png",
+      "material_type": "wood",
+      "theme": "medieval"
+    },
+    "stone": {
+      "diffuse_texture": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_e7cf69fe.png",
+      "material_type": "stone",
+      "theme": "medieval"
+    },
+    "metal": {
+      "diffuse_texture": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/metal_medieval_e18185a4.png",
+      "material_type": "metal",
+      "theme": "medieval"
+    },
+    "fabric": {
+      "diffuse_texture": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/fabric_medieval_9cbf5d61.png",
+      "material_type": "fabric",
+      "theme": "medieval"
+    },
+    "roof": {
+      "diffuse_texture": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_e024f0de.png",
+      "material_type": "roof",
+      "theme": "medieval"
+    },
+    "ground": {
+      "diffuse_texture": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_78222fee.png",
+      "material_type": "ground",
+      "theme": "medieval"
+    }
+  },
+  "textures": {
+    "6e71f99be4fc1af13870b7be653f8db0": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_6e71f99b.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "de1d75621a4cccaf19d90214d21fc677": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_de1d7562.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "4c39b5edd5bf3e6177a1902ff182bd0d": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_4c39b5ed.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "4c2f21963b6f3b78a77f5574b374f883": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_4c2f2196.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "874187e1307159cb378827bc31b48264": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_874187e1.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "8ceb7274f3920df1b1df52745d536bd6": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_8ceb7274.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "1e8e6849d62fac8c4d028fe1c2eaa5c6": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_1e8e6849.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "4bee8049a5b94011964ecb56b3e5473f": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/metal_medieval_4bee8049.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "459765a51a701a8210c2e2605d193fbe": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_459765a5.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "2c2daa7eb837cc728d33b2829d03ad65": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_2c2daa7e.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "2df9eb0380023fe1d712472a2ab62e7a": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_2df9eb03.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "34dc039f83c1155df1e0791acc7c1bef": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_34dc039f.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "42e2299fee76fdda0492526b3a48786d": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_42e2299f.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "516ad02f1e28da92315fc1d552af4246": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_516ad02f.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "78e0ac7d462a47721b966d8d19f01548": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_78e0ac7d.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "8c4304ead9ec9c20901981a9e2f382bc": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_8c4304ea.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "d99bbc32264131e417de1d42869ec0e0": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_d99bbc32.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "e10455c3e315d4e72a33ea2b671b5b31": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_e10455c3.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "94c279398753b96b8a574e18a3411055": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_94c27939.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "572f59d7e42bca7f23568c625591eda6": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/wood_medieval_572f59d7.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "e7cf69feb581a3475222e23340aae826": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_e7cf69fe.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "e18185a45574fc52e0055f41d8bb2560": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/metal_medieval_e18185a4.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "9cbf5d61bd35c4a0bc07142ae753d783": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/fabric_medieval_9cbf5d61.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "e024f0de861b28036d0cdfc845a94978": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/stone_medieval_e024f0de.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    },
+    "78222fee6e73f0acb4c6214665cfd7c2": {
+      "path": "game_content_pipeline/20250613_192459_medivial_game/assets/textures/generic_medieval_78222fee.png",
+      "size": [
+        512,
+        512
+      ],
+      "format": "PNG"
+    }
+  },
+  "output_directory": "game_content_pipeline/20250613_192459_medivial_game/assets",
+  "ai_enhanced": true,
+  "generation_summary": {
+    "total_assets": 80,
+    "buildings_count": 10,
+    "environment_count": 1,
+    "props_count": 69,
+    "textures_generated": 25,
+    "ai_variations": 0
+  }
+}

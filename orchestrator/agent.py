@@ -18,7 +18,8 @@ from google.adk.agents import Agent
 
 # Import the sub-agents
 from .world_designer.agent import design_world_from_prompt, generate_world, get_status as world_status
-from .asset_generator.agent import AssetGeneratorAgent
+from .asset_generator.agent import CreativeAssetGeneratorAgent as AssetGeneratorAgent
+
 
 @dataclass
 class PipelineResult:
