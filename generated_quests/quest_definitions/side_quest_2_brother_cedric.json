@@ -1,0 +1,54 @@
+{
+  "id": "side_quest_2_brother_cedric",
+  "title": "Personal Favor",
+  "description": "Brother Cedric needs help with a personal matter.",
+  "summary": "Help Brother Cedric with personal favor",
+  "giver_npc": "Brother Cedric",
+  "objectives": [
+    {
+      "id": "side_quest_2_obj_1",
+      "description": "Listen to the problem",
+      "type": "talk_to_npc",
+      "target": "Brother Cedric",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "side_quest_2_obj_2",
+      "description": "Help solve it",
+      "type": "talk_to_npc",
+      "target": "Brother Cedric",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "side_quest_2_obj_3",
+      "description": "Return for thanks",
+      "type": "talk_to_npc",
+      "target": "Brother Cedric",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    }
+  ],
+  "rewards": {
+    "experience": 50,
+    "gold": 25,
+    "items": [
+      "Thank You Gift"
+    ],
+    "relationship_changes": null
+  },
+  "prerequisites": null,
+  "level_requirement": 1,
+  "estimated_duration": "15-30 minutes",
+  "quest_type": "side",
+  "interconnected_quests": [
+    "main_quest_1_sir_edwin",
+    "side_quest_1_sir_edwin",
+    "side_quest_4_sister_aldric"
+  ],
+  "narrative_importance": "low"
+}

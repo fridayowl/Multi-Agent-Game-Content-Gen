@@ -1,0 +1,95 @@
+{
+  "id": "master_dara_661ec640_2",
+  "name": "Master Dara",
+  "title": "The Fierce Blacksmith",
+  "description": "A 48-year-old Blacksmith with a fierce nature.",
+  "backstory": "Master Dara has worked as a Blacksmith for many years.",
+  "personality": {
+    "primary_trait": "Fierce",
+    "secondary_trait": "Curious",
+    "motivation": "To seek knowledge",
+    "fear": "Failure",
+    "quirk": "Collects unusual items",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 8,
+    "health": 84,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Sir Edwin",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 4,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Master Brenna",
+      "relationship_type": "Rival",
+      "relationship_strength": 7,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "master dara_greeting",
+      "text": "Greetings! I'm Master Dara, the local Blacksmith.",
+      "speaker": "Master Dara",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "master dara_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "master dara_role",
+      "text": "As a Blacksmith, I to seek knowledge.",
+      "speaker": "Master Dara",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Hammer",
+    "Tongs",
+    "Iron ingots",
+    "Leather pouch"
+  ],
+  "location": "blacksmith",
+  "role": "Blacksmith",
+  "quest_involvement": [],
+  "age": 48,
+  "appearance": "A 48-year-old Blacksmith with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "9bde24ed-5288-4564-91a1-2d2492fb1584"
+}

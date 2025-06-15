@@ -1,0 +1,39 @@
+{
+  "character_name": "Master Dara",
+  "dialogue_tree": [
+    {
+      "id": "master dara_greeting",
+      "text": "Greetings! I'm Master Dara, the local Blacksmith.",
+      "speaker": "Master Dara",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "master dara_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "master dara_role",
+      "text": "As a Blacksmith, I to seek knowledge.",
+      "speaker": "Master Dara",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "status": "success",
+  "character_count": 5,
+  "output_directory": "generated_characters",
+  "manifest_file": "generated_characters/character_manifest.json",
+  "ai_enhanced": false,
+  "fallback_generation": true,
+  "characters": [
+    {
+      "id": "sir_edwin_661ec640_0",
+      "name": "Sir Edwin",
+      "title": "The Inventive Resident",
+      "description": "A 33-year-old Resident with a inventive nature.",
+      "backstory": "Sir Edwin has worked as a Resident for many years.",
+      "personality": {
+        "primary_trait": "Inventive",
+        "secondary_trait": "Mysterious",
+        "motivation": "To protect others",
+        "fear": "Being misunderstood",
+        "quirk": "Always carries a lucky charm",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 1,
+        "health": 63,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Brother Cedric",
+          "relationship_type": "Colleague",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Master Dara",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 4,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "sir edwin_greeting",
+          "text": "Greetings! I'm Sir Edwin, the local Resident.",
+          "speaker": "Sir Edwin",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "sir edwin_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "sir edwin_role",
+          "text": "As a Resident, I to protect others.",
+          "speaker": "Sir Edwin",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "house",
+      "role": "Resident",
+      "quest_involvement": [],
+      "age": 33,
+      "appearance": "A 33-year-old Resident with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "0afb1c97-86f2-457b-92fa-187d6237dfe2"
+    },
+    {
+      "id": "brother_cedric_661ec640_1",
+      "name": "Brother Cedric",
+      "title": "The Honest Herbalist",
+      "description": "A 37-year-old Herbalist with a honest nature.",
+      "backstory": "Brother Cedric has worked as a Herbalist for many years.",
+      "personality": {
+        "primary_trait": "Honest",
+        "secondary_trait": "Patient",
+        "motivation": "To protect others",
+        "fear": "The unknown",
+        "quirk": "Never sits still",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 1,
+        "health": 63,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Sir Edwin",
+          "relationship_type": "Colleague",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sister Aldric",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "brother cedric_greeting",
+          "text": "Greetings! I'm Brother Cedric, the local Herbalist.",
+          "speaker": "Brother Cedric",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "brother cedric_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "brother cedric_role",
+          "text": "As a Herbalist, I to protect others.",
+          "speaker": "Brother Cedric",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "market",
+      "role": "Herbalist",
+      "quest_involvement": [],
+      "age": 37,
+      "appearance": "A 37-year-old Herbalist with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "4f55ca4f-ecab-4ca7-966c-481bdee66ab8"
+    },
+    {
+      "id": "master_dara_661ec640_2",
+      "name": "Master Dara",
+      "title": "The Fierce Blacksmith",
+      "description": "A 48-year-old Blacksmith with a fierce nature.",
+      "backstory": "Master Dara has worked as a Blacksmith for many years.",
+      "personality": {
+        "primary_trait": "Fierce",
+        "secondary_trait": "Curious",
+        "motivation": "To seek knowledge",
+        "fear": "Failure",
+        "quirk": "Collects unusual items",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 8,
+        "health": 84,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Sir Edwin",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 4,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Master Brenna",
+          "relationship_type": "Rival",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "master dara_greeting",
+          "text": "Greetings! I'm Master Dara, the local Blacksmith.",
+          "speaker": "Master Dara",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "master dara_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "master dara_role",
+          "text": "As a Blacksmith, I to seek knowledge.",
+          "speaker": "Master Dara",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Hammer",
+        "Tongs",
+        "Iron ingots",
+        "Leather pouch"
+      ],
+      "location": "blacksmith",
+      "role": "Blacksmith",
+      "quest_involvement": [],
+      "age": 48,
+      "appearance": "A 48-year-old Blacksmith with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "9bde24ed-5288-4564-91a1-2d2492fb1584"
+    },
+    {
+      "id": "sister_aldric_661ec640_3",
+      "name": "Sister Aldric",
+      "title": "The Gentle Noble",
+      "description": "A 59-year-old Noble with a gentle nature.",
+      "backstory": "Sister Aldric has worked as a Noble for many years.",
+      "personality": {
+        "primary_trait": "Gentle",
+        "secondary_trait": "Optimistic",
+        "motivation": "To build something lasting",
+        "fear": "Being alone",
+        "quirk": "Collects unusual items",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 7,
+        "health": 81,
+        "strength": 11,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 14,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Brother Cedric",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Master Brenna",
+          "relationship_type": "Colleague",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "sister aldric_greeting",
+          "text": "Greetings! I'm Sister Aldric, the local Noble.",
+          "speaker": "Sister Aldric",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "sister aldric_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "sister aldric_role",
+          "text": "As a Noble, I to build something lasting.",
+          "speaker": "Sister Aldric",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "house",
+      "role": "Noble",
+      "quest_involvement": [],
+      "age": 59,
+      "appearance": "A 59-year-old Noble with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "9f96ded4-17bc-4db8-a843-271b2f40e8a7"
+    },
+    {
+      "id": "master_brenna_661ec640_4",
+      "name": "Master Brenna",
+      "title": "The Clever Family Head",
+      "description": "A 53-year-old Family Head with a clever nature.",
+      "backstory": "Master Brenna has worked as a Family Head for many years.",
+      "personality": {
+        "primary_trait": "Clever",
+        "secondary_trait": "Practical",
+        "motivation": "To find adventure",
+        "fear": "Being alone",
+        "quirk": "Always carries a lucky charm",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 5,
+        "health": 75,
+        "strength": 11,
+        "intelligence": 14,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 14,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Master Dara",
+          "relationship_type": "Rival",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sister Aldric",
+          "relationship_type": "Colleague",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "master brenna_greeting",
+          "text": "Greetings! I'm Master Brenna, the local Family Head.",
+          "speaker": "Master Brenna",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "master brenna_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "master brenna_role",
+          "text": "As a Family Head, I to find adventure.",
+          "speaker": "Master Brenna",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "tavern",
+      "role": "Family Head",
+      "quest_involvement": [],
+      "age": 53,
+      "appearance": "A 53-year-old Family Head with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "8d4cc4f8-47c4-4b1d-8d49-8ed4de94d6c5"
+    }
+  ]
+}

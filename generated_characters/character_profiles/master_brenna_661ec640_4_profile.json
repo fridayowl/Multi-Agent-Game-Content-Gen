@@ -1,0 +1,93 @@
+{
+  "id": "master_brenna_661ec640_4",
+  "name": "Master Brenna",
+  "title": "The Clever Family Head",
+  "description": "A 53-year-old Family Head with a clever nature.",
+  "backstory": "Master Brenna has worked as a Family Head for many years.",
+  "personality": {
+    "primary_trait": "Clever",
+    "secondary_trait": "Practical",
+    "motivation": "To find adventure",
+    "fear": "Being alone",
+    "quirk": "Always carries a lucky charm",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 5,
+    "health": 75,
+    "strength": 11,
+    "intelligence": 14,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 14,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Master Dara",
+      "relationship_type": "Rival",
+      "relationship_strength": 7,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sister Aldric",
+      "relationship_type": "Colleague",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "master brenna_greeting",
+      "text": "Greetings! I'm Master Brenna, the local Family Head.",
+      "speaker": "Master Brenna",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "master brenna_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "master brenna_role",
+      "text": "As a Family Head, I to find adventure.",
+      "speaker": "Master Brenna",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "tavern",
+  "role": "Family Head",
+  "quest_involvement": [],
+  "age": 53,
+  "appearance": "A 53-year-old Family Head with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "8d4cc4f8-47c4-4b1d-8d49-8ed4de94d6c5"
+}
