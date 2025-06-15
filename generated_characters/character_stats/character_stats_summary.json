@@ -1,25 +1,36 @@
 {
-  "character_count": 5,
-  "average_level": 7.0,
+  "generation_stats": {
+    "total_characters": 5,
+    "average_age": 39.8,
+    "total_relationships": 10,
+    "total_dialogue_nodes": 10,
+    "unique_roles": 5,
+    "unique_locations": 4
+  },
+  "uniqueness_metrics": {
+    "name_uniqueness": 1.0,
+    "personality_uniqueness": 1.0,
+    "role_uniqueness": 1.0
+  },
   "level_distribution": {
-    "Aldric Stoneheart": 9,
-    "Mara Blackwood": 4,
-    "Garrett Ironforge": 7,
-    "Elena Brightblade": 7,
-    "Theron Grimhall": 8
+    "Lady Gareth": 4,
+    "Sister Fiona": 8,
+    "Sir Edwin": 5,
+    "Lady Dara": 6,
+    "Sir Cedric": 3
   },
   "role_distribution": {
-    "Aldric Stoneheart": "guard",
-    "Mara Blackwood": "farmer",
-    "Garrett Ironforge": "healer",
-    "Elena Brightblade": "messenger",
-    "Theron Grimhall": "noble"
+    "Lady Gareth": "Servant",
+    "Sister Fiona": "Resident",
+    "Sir Edwin": "Herbalist",
+    "Lady Dara": "Blacksmith",
+    "Sir Cedric": "Bartender"
   },
-  "stat_totals": {
-    "Aldric Stoneheart": 60,
-    "Mara Blackwood": 60,
-    "Garrett Ironforge": 60,
-    "Elena Brightblade": 60,
-    "Theron Grimhall": 60
+  "personality_distribution": {
+    "Lady Gareth": "Brave",
+    "Sister Fiona": "Honest",
+    "Sir Edwin": "Compassionate",
+    "Lady Dara": "Determined",
+    "Sir Cedric": "Fierce"
   }
 }

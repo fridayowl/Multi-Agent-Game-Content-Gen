@@ -1,144 +1,82 @@
 {
-  "Aldric Stoneheart": {
-    "relationships": [
-      {
-        "target_character": "Garrett Ironforge",
-        "relationship_type": "acquaintance",
-        "relationship_strength": -5,
-        "history": "Aldric Stoneheart and Garrett Ironforge know each other casually through town interactions.",
-        "current_status": "neutral"
-      },
-      {
-        "target_character": "Mara Blackwood",
-        "relationship_type": "acquaintance",
-        "relationship_strength": 19,
-        "history": "Aldric Stoneheart and Mara Blackwood know each other casually through town interactions.",
-        "current_status": "friendly"
-      },
-      {
-        "target_character": "Theron Grimhall",
-        "relationship_type": "rival",
-        "relationship_strength": -21,
-        "history": "Theron Grimhall and Aldric Stoneheart have competing interests that put them at odds.",
-        "current_status": "strained"
-      }
-    ],
-    "role": "guard",
-    "location": "town center"
-  },
-  "Mara Blackwood": {
-    "relationships": [
-      {
-        "target_character": "Aldric Stoneheart",
-        "relationship_type": "acquaintance",
-        "relationship_strength": 9,
-        "history": "Aldric Stoneheart and Mara Blackwood know each other casually through town interactions.",
-        "current_status": "neutral"
-      },
-      {
-        "target_character": "Theron Grimhall",
-        "relationship_type": "friend",
-        "relationship_strength": 67,
-        "history": "Mara Blackwood and Theron Grimhall became friends through their work in the community.",
-        "current_status": "close"
-      },
-      {
-        "target_character": "Elena Brightblade",
-        "relationship_type": "friend",
-        "relationship_strength": 60,
-        "history": "Mara Blackwood and Elena Brightblade became friends through their work in the community.",
-        "current_status": "close"
-      }
-    ],
-    "role": "farmer",
-    "location": "town center"
-  },
-  "Garrett Ironforge": {
-    "relationships": [
-      {
-        "target_character": "Aldric Stoneheart",
-        "relationship_type": "acquaintance",
-        "relationship_strength": -2,
-        "history": "Aldric Stoneheart and Garrett Ironforge know each other casually through town interactions.",
-        "current_status": "neutral"
-      },
-      {
-        "target_character": "Theron Grimhall",
-        "relationship_type": "friend",
-        "relationship_strength": 51,
-        "history": "Garrett Ironforge and Theron Grimhall became friends through their work in the community.",
-        "current_status": "close"
-      },
-      {
-        "target_character": "Elena Brightblade",
-        "relationship_type": "acquaintance",
-        "relationship_strength": 13,
-        "history": "Elena Brightblade and Garrett Ironforge know each other casually through town interactions.",
-        "current_status": "friendly"
-      }
-    ],
-    "role": "healer",
-    "location": "town center"
-  },
-  "Elena Brightblade": {
-    "relationships": [
-      {
-        "target_character": "Mara Blackwood",
-        "relationship_type": "friend",
-        "relationship_strength": 59,
-        "history": "Mara Blackwood and Elena Brightblade became friends through their work in the community.",
-        "current_status": "close"
-      },
-      {
-        "target_character": "Theron Grimhall",
-        "relationship_type": "rival",
-        "relationship_strength": -45,
-        "history": "Elena Brightblade and Theron Grimhall have competing interests that put them at odds.",
-        "current_status": "hostile"
-      },
-      {
-        "target_character": "Garrett Ironforge",
-        "relationship_type": "acquaintance",
-        "relationship_strength": 9,
-        "history": "Elena Brightblade and Garrett Ironforge know each other casually through town interactions.",
-        "current_status": "neutral"
-      }
-    ],
-    "role": "messenger",
-    "location": "town center"
-  },
-  "Theron Grimhall": {
-    "relationships": [
-      {
-        "target_character": "Mara Blackwood",
-        "relationship_type": "friend",
-        "relationship_strength": 77,
-        "history": "Mara Blackwood and Theron Grimhall became friends through their work in the community.",
-        "current_status": "very close"
-      },
-      {
-        "target_character": "Garrett Ironforge",
-        "relationship_type": "friend",
-        "relationship_strength": 48,
-        "history": "Garrett Ironforge and Theron Grimhall became friends through their work in the community.",
-        "current_status": "close"
-      },
-      {
-        "target_character": "Elena Brightblade",
-        "relationship_type": "rival",
-        "relationship_strength": -44,
-        "history": "Elena Brightblade and Theron Grimhall have competing interests that put them at odds.",
-        "current_status": "hostile"
-      },
-      {
-        "target_character": "Aldric Stoneheart",
-        "relationship_type": "rival",
-        "relationship_strength": -28,
-        "history": "Theron Grimhall and Aldric Stoneheart have competing interests that put them at odds.",
-        "current_status": "strained"
-      }
-    ],
-    "role": "noble",
-    "location": "town center"
-  }
+  "Lady Gareth": [
+    {
+      "target_character": "Sister Fiona",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sir Edwin",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Lady Dara",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Sister Fiona": [
+    {
+      "target_character": "Lady Gareth",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Sir Edwin": [
+    {
+      "target_character": "Lady Gareth",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Lady Dara",
+      "relationship_type": "Friend",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Lady Dara": [
+    {
+      "target_character": "Lady Gareth",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sir Edwin",
+      "relationship_type": "Friend",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sir Cedric",
+      "relationship_type": "Friend",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Sir Cedric": [
+    {
+      "target_character": "Lady Dara",
+      "relationship_type": "Friend",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ]
 }

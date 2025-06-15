@@ -1,0 +1,86 @@
+{
+  "id": "sister_fiona_55fb4b3f_1",
+  "name": "Sister Fiona",
+  "title": "The Honest Resident",
+  "description": "A 43-year-old Resident with a honest nature.",
+  "backstory": "Sister Fiona has worked as a Resident for many years.",
+  "personality": {
+    "primary_trait": "Honest",
+    "secondary_trait": "Ambitious",
+    "motivation": "To protect others",
+    "fear": "Being misunderstood",
+    "quirk": "Collects unusual items",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 8,
+    "health": 84,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Lady Gareth",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "sister fiona_greeting",
+      "text": "Greetings! I'm Sister Fiona, the local Resident.",
+      "speaker": "Sister Fiona",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sister fiona_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sister fiona_role",
+      "text": "As a Resident, I to protect others.",
+      "speaker": "Sister Fiona",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "house",
+  "role": "Resident",
+  "quest_involvement": [],
+  "age": 43,
+  "appearance": "A 43-year-old Resident with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "812d7b69-9997-4e48-9f09-19f9979fe562"
+}

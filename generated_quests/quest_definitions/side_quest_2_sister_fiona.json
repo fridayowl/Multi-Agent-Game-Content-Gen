@@ -1,0 +1,53 @@
+{
+  "id": "side_quest_2_sister_fiona",
+  "title": "Personal Favor",
+  "description": "Sister Fiona needs help with a personal matter.",
+  "summary": "Help Sister Fiona with personal favor",
+  "giver_npc": "Sister Fiona",
+  "objectives": [
+    {
+      "id": "side_quest_2_obj_1",
+      "description": "Listen to the problem",
+      "type": "talk_to_npc",
+      "target": "Sister Fiona",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "side_quest_2_obj_2",
+      "description": "Help solve it",
+      "type": "talk_to_npc",
+      "target": "Sister Fiona",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "side_quest_2_obj_3",
+      "description": "Return for thanks",
+      "type": "talk_to_npc",
+      "target": "Sister Fiona",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    }
+  ],
+  "rewards": {
+    "experience": 50,
+    "gold": 25,
+    "items": [
+      "Thank You Gift"
+    ],
+    "relationship_changes": null
+  },
+  "prerequisites": null,
+  "level_requirement": 1,
+  "estimated_duration": "15-30 minutes",
+  "quest_type": "side",
+  "interconnected_quests": [
+    "main_quest_1_lady_gareth",
+    "side_quest_1_lady_gareth"
+  ],
+  "narrative_importance": "low"
+}

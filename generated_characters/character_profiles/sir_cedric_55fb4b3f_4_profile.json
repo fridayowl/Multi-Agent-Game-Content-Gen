@@ -1,0 +1,86 @@
+{
+  "id": "sir_cedric_55fb4b3f_4",
+  "name": "Sir Cedric",
+  "title": "The Fierce Bartender",
+  "description": "A 41-year-old Bartender with a fierce nature.",
+  "backstory": "Sir Cedric has worked as a Bartender for many years.",
+  "personality": {
+    "primary_trait": "Fierce",
+    "secondary_trait": "Mysterious",
+    "motivation": "To protect others",
+    "fear": "Being alone",
+    "quirk": "Never sits still",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 3,
+    "health": 69,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Lady Dara",
+      "relationship_type": "Friend",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "sir cedric_greeting",
+      "text": "Greetings! I'm Sir Cedric, the local Bartender.",
+      "speaker": "Sir Cedric",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sir cedric_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sir cedric_role",
+      "text": "As a Bartender, I to protect others.",
+      "speaker": "Sir Cedric",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "tavern",
+  "role": "Bartender",
+  "quest_involvement": [],
+  "age": 41,
+  "appearance": "A 41-year-old Bartender with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "5ab303c7-a72c-4764-8c46-e3fca4c06a30"
+}

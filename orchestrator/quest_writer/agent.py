@@ -83,11 +83,12 @@ class AIQuestWriter:
         self.quest_chains = {}
         self.npc_quest_involvement = {}
         
-        # Initialize AI
-        self._initialize_ai()
-        
+        # Initialize logging FIRST
         logging.basicConfig(level=logging.INFO)
         self.logger = logging.getLogger(__name__)
+        
+        # Initialize AI AFTER logger is ready
+        self._initialize_ai()
     
     def _initialize_ai(self):
         """Initialize AI for quest generation"""
@@ -214,7 +215,7 @@ class AIQuestWriter:
         char_role = character.get('role', 'villager')
         personality = character.get('personality', {})
         
-        if AI_AVAILABLE:
+        if AI_AVAILABLE and hasattr(self, 'gemini_model'):
             try:
                 assessment_prompt = f"""Analyze this NPC's quest-giving potential in a {theme} game:
                 
@@ -363,7 +364,7 @@ class AIQuestWriter:
         npc_role = npc_data['role']
         potential_themes = npc_data['quest_potential'].get('quest_themes', [])
         
-        if AI_AVAILABLE:
+        if AI_AVAILABLE and hasattr(self, 'gemini_model'):
             quest_data = await self._generate_ai_main_quest(npc_data, theme, quest_number)
             if quest_data:
                 return self._build_quest_from_ai_data(quest_data, npc_name, 'main')
@@ -502,7 +503,7 @@ class AIQuestWriter:
         npc_name = npc_data['character']['name']
         quest_types = npc_data['quest_potential'].get('suitable_quest_types', ['fetch'])
         
-        if AI_AVAILABLE:
+        if AI_AVAILABLE and hasattr(self, 'gemini_model'):
             quest_data = await self._generate_ai_side_quest(npc_data, theme)
             if quest_data:
                 return self._build_quest_from_ai_data(quest_data, npc_name, 'side')
@@ -792,7 +793,7 @@ class AIQuestWriter:
         npc_name = npc_data['character']['name']
         personality = npc_data['character']['personality']
         
-        if AI_AVAILABLE:
+        if AI_AVAILABLE and hasattr(self, 'gemini_model'):
             ai_dialogue = await self._generate_ai_quest_dialogue(quest, npc_data)
             if ai_dialogue:
                 return ai_dialogue
@@ -811,7 +812,7 @@ class AIQuestWriter:
         Description: {quest.description}
         NPC: {npc['name']} ({npc['role']})
         Personality: {npc['personality']['primary_trait']}, {npc['personality']['secondary_trait']}
-        Speech Pattern: {npc['personality']['speech_pattern']}
+        Speech Pattern: {npc['personality'].get('speech_pattern', 'normal')}
         
         Create dialogue for:
         1. Quest Introduction (when player first talks to NPC)
@@ -978,7 +979,7 @@ class AIQuestWriter:
                 'theme': theme,
                 'world_size': world_spec.get('size', (0, 0)),
                 'quest_count': len(quests),
-                'ai_enhanced': AI_AVAILABLE
+                'ai_enhanced': AI_AVAILABLE and hasattr(self, 'gemini_model')
             },
             'quest_summary': {
                 'total_quests': len(quests),
@@ -1026,7 +1027,7 @@ class AIQuestWriter:
     
     async def _call_gemini(self, prompt: str) -> Optional[str]:
         """Call Gemini AI for quest generation"""
-        if not AI_AVAILABLE:
+        if not AI_AVAILABLE or not hasattr(self, 'gemini_model'):
             return None
         
         try:
@@ -1040,7 +1041,7 @@ class AIQuestWriter:
         """Get quest writer status"""
         return {
             'status': 'ready',
-            'ai_available': AI_AVAILABLE,
+            'ai_available': AI_AVAILABLE and hasattr(self, 'gemini_model'),
             'output_directory': str(self.output_dir),
             'generated_quests': len(self.generated_quests),
             'npc_involvement': len(self.npc_quest_involvement),
@@ -1054,9 +1055,9 @@ class AIQuestWriter:
                 'npc_integration'
             ],
             'ai_features': {
-                'quest_narrative_generation': AI_AVAILABLE,
-                'dialogue_creation': AI_AVAILABLE,
-                'objective_planning': AI_AVAILABLE,
+                'quest_narrative_generation': AI_AVAILABLE and hasattr(self, 'gemini_model'),
+                'dialogue_creation': AI_AVAILABLE and hasattr(self, 'gemini_model'),
+                'objective_planning': AI_AVAILABLE and hasattr(self, 'gemini_model'),
                 'reward_calculation': True
             }
         }

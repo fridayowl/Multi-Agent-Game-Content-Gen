@@ -1,0 +1,102 @@
+{
+  "id": "lady_dara_55fb4b3f_3",
+  "name": "Lady Dara",
+  "title": "The Determined Blacksmith",
+  "description": "A 55-year-old Blacksmith with a determined nature.",
+  "backstory": "Lady Dara has worked as a Blacksmith for many years.",
+  "personality": {
+    "primary_trait": "Determined",
+    "secondary_trait": "Optimistic",
+    "motivation": "To find adventure",
+    "fear": "Being misunderstood",
+    "quirk": "Collects unusual items",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 6,
+    "health": 78,
+    "strength": 11,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 14,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Lady Gareth",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sir Edwin",
+      "relationship_type": "Friend",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sir Cedric",
+      "relationship_type": "Friend",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "lady dara_greeting",
+      "text": "Greetings! I'm Lady Dara, the local Blacksmith.",
+      "speaker": "Lady Dara",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "lady dara_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "lady dara_role",
+      "text": "As a Blacksmith, I to find adventure.",
+      "speaker": "Lady Dara",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Hammer",
+    "Tongs",
+    "Iron ingots",
+    "Leather pouch"
+  ],
+  "location": "blacksmith",
+  "role": "Blacksmith",
+  "quest_involvement": [],
+  "age": 55,
+  "appearance": "A 55-year-old Blacksmith with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "87ee1620-66db-48a7-8673-b186371b44d6"
+}

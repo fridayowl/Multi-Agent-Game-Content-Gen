@@ -1,0 +1,93 @@
+{
+  "id": "sir_edwin_55fb4b3f_2",
+  "name": "Sir Edwin",
+  "title": "The Compassionate Herbalist",
+  "description": "A 34-year-old Herbalist with a compassionate nature.",
+  "backstory": "Sir Edwin has worked as a Herbalist for many years.",
+  "personality": {
+    "primary_trait": "Compassionate",
+    "secondary_trait": "Practical",
+    "motivation": "To seek knowledge",
+    "fear": "Losing control",
+    "quirk": "Always carries a lucky charm",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 5,
+    "health": 75,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Lady Gareth",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Lady Dara",
+      "relationship_type": "Friend",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "sir edwin_greeting",
+      "text": "Greetings! I'm Sir Edwin, the local Herbalist.",
+      "speaker": "Sir Edwin",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sir edwin_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sir edwin_role",
+      "text": "As a Herbalist, I to seek knowledge.",
+      "speaker": "Sir Edwin",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "tavern",
+  "role": "Herbalist",
+  "quest_involvement": [],
+  "age": 34,
+  "appearance": "A 34-year-old Herbalist with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "abc7a8d0-c5e0-4cd2-a6a2-3a722da6d341"
+}
