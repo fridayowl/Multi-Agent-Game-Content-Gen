@@ -2477,7 +2477,34 @@ print("🎯 AI-Creative Terrain Generation Script Complete!")
         material_score = len(self.material_library) * 1
         
         return texture_score + variation_score + material_score
-    
+    async def get_status(self) -> Dict[str, Any]:
+        """Get AI Creative Asset Generator status"""
+        return {
+            'status': 'ready',
+            'ai_available': AI_AVAILABLE,
+            'blender_available': BLENDER_AVAILABLE,
+            'creative_features': {
+                'ai_descriptions': AI_AVAILABLE,
+                'unique_textures': True,
+                'creative_variations': AI_AVAILABLE,
+                'procedural_diversity': True,
+                'ai_materials': AI_AVAILABLE
+            },
+            'version': 'AI Creative v2.0',
+            'output_directory': str(self.output_dir),
+            'texture_cache_size': len(self.texture_cache),
+            'creative_cache_size': len(self.creative_cache)
+        }
+    def _get_material_library_size(self) -> int:
+        """Get size of material library"""
+        return len(getattr(self, 'material_library', {}))
+    # Update the _calculate_creativity_score method to fix the material_library reference
+    def _calculate_creativity_score(self) -> float:
+        """Calculate overall creativity score"""
+        texture_score = len(self.texture_cache) * 2
+        variation_score = len(self.creative_cache) * 1.5
+        material_score = self._get_material_library_size() * 1
+        return texture_score + variation_score + material_score
     async def _call_gemini(self, prompt: str) -> Optional[str]:
         """Helper method to call Gemini AI"""
         if not AI_AVAILABLE:
