@@ -56,10 +56,17 @@ except ImportError:
 
 # Import the Unity Exporter (NEW!)
 try:
+    print("🔍 Attempting to import Unity Exporter...")
     from .unity_exporter.agent import export_unity_package, get_code_exporter_status
+    print("✅ Unity Exporter imports successful")
     UNITY_EXPORTER_AVAILABLE = True
-except ImportError:
-    print("⚠️ Unity Exporter not available - using fallback")
+except ImportError as e:
+    print(f"❌ ImportError in Unity Exporter: {e}")
+    print(f"📍 Error details: {e.__class__.__name__}: {str(e)}")
+    UNITY_EXPORTER_AVAILABLE = False
+except Exception as e:
+    print(f"❌ General error in Unity Exporter: {e}")
+    print(f"📍 Error details: {e.__class__.__name__}: {str(e)}")
     UNITY_EXPORTER_AVAILABLE = False
 
 @dataclass
