@@ -1,0 +1,129 @@
+{
+  "generation_info": {
+    "timestamp": "2025-06-16T00:19:42.736739",
+    "theme": "medieval",
+    "world_size": [
+      40,
+      40
+    ],
+    "character_count": 5,
+    "ai_enhanced": false,
+    "creativity_level": "maximum",
+    "uniqueness_guaranteed": true,
+    "session_id": "661ec640"
+  },
+  "uniqueness_metrics": {
+    "name_uniqueness": 1.0,
+    "personality_uniqueness": 1.0,
+    "role_uniqueness": 1.0
+  },
+  "characters": {
+    "sir_edwin_661ec640_0": {
+      "name": "Sir Edwin",
+      "title": "The Inventive Resident",
+      "role": "Resident",
+      "age": 33,
+      "location": "house",
+      "personality_summary": "Inventive, Mysterious",
+      "motivation": "To protect others",
+      "secret": "Has an interesting past",
+      "level": 1,
+      "health": 63,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "0afb1c97-86f2-457b-92fa-187d6237dfe2",
+      "profile_file": "character_profiles/sir_edwin_661ec640_0_profile.json",
+      "dialogue_file": "dialogue_trees/sir_edwin_661ec640_0_dialogue.json"
+    },
+    "brother_cedric_661ec640_1": {
+      "name": "Brother Cedric",
+      "title": "The Honest Herbalist",
+      "role": "Herbalist",
+      "age": 37,
+      "location": "market",
+      "personality_summary": "Honest, Patient",
+      "motivation": "To protect others",
+      "secret": "Has an interesting past",
+      "level": 1,
+      "health": 63,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "4f55ca4f-ecab-4ca7-966c-481bdee66ab8",
+      "profile_file": "character_profiles/brother_cedric_661ec640_1_profile.json",
+      "dialogue_file": "dialogue_trees/brother_cedric_661ec640_1_dialogue.json"
+    },
+    "master_dara_661ec640_2": {
+      "name": "Master Dara",
+      "title": "The Fierce Blacksmith",
+      "role": "Blacksmith",
+      "age": 48,
+      "location": "blacksmith",
+      "personality_summary": "Fierce, Curious",
+      "motivation": "To seek knowledge",
+      "secret": "Has an interesting past",
+      "level": 8,
+      "health": 84,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "9bde24ed-5288-4564-91a1-2d2492fb1584",
+      "profile_file": "character_profiles/master_dara_661ec640_2_profile.json",
+      "dialogue_file": "dialogue_trees/master_dara_661ec640_2_dialogue.json"
+    },
+    "sister_aldric_661ec640_3": {
+      "name": "Sister Aldric",
+      "title": "The Gentle Noble",
+      "role": "Noble",
+      "age": 59,
+      "location": "house",
+      "personality_summary": "Gentle, Optimistic",
+      "motivation": "To build something lasting",
+      "secret": "Has an interesting past",
+      "level": 7,
+      "health": 81,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "9f96ded4-17bc-4db8-a843-271b2f40e8a7",
+      "profile_file": "character_profiles/sister_aldric_661ec640_3_profile.json",
+      "dialogue_file": "dialogue_trees/sister_aldric_661ec640_3_dialogue.json"
+    },
+    "master_brenna_661ec640_4": {
+      "name": "Master Brenna",
+      "title": "The Clever Family Head",
+      "role": "Family Head",
+      "age": 53,
+      "location": "tavern",
+      "personality_summary": "Clever, Practical",
+      "motivation": "To find adventure",
+      "secret": "Has an interesting past",
+      "level": 5,
+      "health": 75,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "8d4cc4f8-47c4-4b1d-8d49-8ed4de94d6c5",
+      "profile_file": "character_profiles/master_brenna_661ec640_4_profile.json",
+      "dialogue_file": "dialogue_trees/master_brenna_661ec640_4_dialogue.json"
+    }
+  },
+  "relationships_summary": {
+    "total_relationships": 10,
+    "relationship_types": [
+      "Neighbor",
+      "Acquaintance",
+      "Rival",
+      "Colleague"
+    ],
+    "relationship_map_file": "relationship_maps/relationship_map.json"
+  },
+  "dialogue_summary": {
+    "total_dialogue_nodes": 10,
+    "average_nodes_per_character": 2.0,
+    "ai_generated": false
+  },
+  "integration_info": {
+    "unity_compatible": true,
+    "quest_system_ready": true,
+    "relationship_system_ready": true,
+    "dialogue_system_ready": true,
+    "ai_creativity_verified": false
+  }
+}

@@ -1,7 +1,7 @@
 {
   "generation_info": {
-    "timestamp": "2025-06-16T00:19:42.740667",
-    "theme": "medieval",
+    "timestamp": "2025-06-16T20:18:27.922598",
+    "theme": "spooky",
     "world_size": [
       40,
       40
@@ -19,28 +19,28 @@
     "estimated_playtime": "2 hours 34 minutes"
   },
   "npc_involvement": {
-    "Sir Edwin": [
-      "main_quest_1_sir_edwin",
-      "side_quest_1_sir_edwin"
+    "Lady Fiona": [
+      "main_quest_1_lady_fiona",
+      "side_quest_1_lady_fiona"
     ],
-    "Brother Cedric": [
-      "main_quest_2_brother_cedric",
-      "side_quest_2_brother_cedric"
+    "Sir Dara": [
+      "main_quest_2_sir_dara",
+      "side_quest_2_sir_dara"
     ],
-    "Master Dara": [
-      "side_quest_3_master_dara"
+    "Brother Brenna": [
+      "side_quest_3_brother_brenna"
     ],
-    "Sister Aldric": [
-      "side_quest_4_sister_aldric"
+    "Sister Brenna": [
+      "side_quest_4_sister_brenna"
     ],
-    "Master Brenna": [
-      "side_quest_5_master_brenna"
+    "Brother Fiona": [
+      "side_quest_5_brother_fiona"
     ]
   },
   "quests": {
-    "main_quest_1_sir_edwin": {
+    "main_quest_1_lady_fiona": {
       "title": "The Village Crisis",
-      "giver_npc": "Sir Edwin",
+      "giver_npc": "Lady Fiona",
       "type": "main",
       "level_requirement": 1,
       "objectives_count": 4,
@@ -53,11 +53,11 @@
       },
       "estimated_duration": "15-30 minutes",
       "narrative_importance": "high",
-      "quest_file": "quest_definitions/main_quest_1_sir_edwin.json"
+      "quest_file": "quest_definitions/main_quest_1_lady_fiona.json"
     },
-    "main_quest_2_brother_cedric": {
+    "main_quest_2_sir_dara": {
       "title": "Ancient Secrets",
-      "giver_npc": "Brother Cedric",
+      "giver_npc": "Sir Dara",
       "type": "main",
       "level_requirement": 2,
       "objectives_count": 4,
@@ -68,11 +68,11 @@
       },
       "estimated_duration": "15-30 minutes",
       "narrative_importance": "high",
-      "quest_file": "quest_definitions/main_quest_2_brother_cedric.json"
+      "quest_file": "quest_definitions/main_quest_2_sir_dara.json"
     },
-    "side_quest_1_sir_edwin": {
+    "side_quest_1_lady_fiona": {
       "title": "Personal Favor",
-      "giver_npc": "Sir Edwin",
+      "giver_npc": "Lady Fiona",
       "type": "side",
       "level_requirement": 1,
       "objectives_count": 3,
@@ -85,11 +85,11 @@
       },
       "estimated_duration": "15-30 minutes",
       "narrative_importance": "low",
-      "quest_file": "quest_definitions/side_quest_1_sir_edwin.json"
+      "quest_file": "quest_definitions/side_quest_1_lady_fiona.json"
     },
-    "side_quest_2_brother_cedric": {
+    "side_quest_2_sir_dara": {
       "title": "Personal Favor",
-      "giver_npc": "Brother Cedric",
+      "giver_npc": "Sir Dara",
       "type": "side",
       "level_requirement": 1,
       "objectives_count": 3,
@@ -102,11 +102,11 @@
       },
       "estimated_duration": "15-30 minutes",
       "narrative_importance": "low",
-      "quest_file": "quest_definitions/side_quest_2_brother_cedric.json"
+      "quest_file": "quest_definitions/side_quest_2_sir_dara.json"
     },
-    "side_quest_3_master_dara": {
+    "side_quest_3_brother_brenna": {
       "title": "Personal Favor",
-      "giver_npc": "Master Dara",
+      "giver_npc": "Brother Brenna",
       "type": "side",
       "level_requirement": 1,
       "objectives_count": 3,
@@ -119,11 +119,11 @@
       },
       "estimated_duration": "15-30 minutes",
       "narrative_importance": "low",
-      "quest_file": "quest_definitions/side_quest_3_master_dara.json"
+      "quest_file": "quest_definitions/side_quest_3_brother_brenna.json"
     },
-    "side_quest_4_sister_aldric": {
+    "side_quest_4_sister_brenna": {
       "title": "Personal Favor",
-      "giver_npc": "Sister Aldric",
+      "giver_npc": "Sister Brenna",
       "type": "side",
       "level_requirement": 1,
       "objectives_count": 3,
@@ -136,11 +136,11 @@
       },
       "estimated_duration": "15-30 minutes",
       "narrative_importance": "low",
-      "quest_file": "quest_definitions/side_quest_4_sister_aldric.json"
+      "quest_file": "quest_definitions/side_quest_4_sister_brenna.json"
     },
-    "side_quest_5_master_brenna": {
+    "side_quest_5_brother_fiona": {
       "title": "Personal Favor",
-      "giver_npc": "Master Brenna",
+      "giver_npc": "Brother Fiona",
       "type": "side",
       "level_requirement": 1,
       "objectives_count": 3,
@@ -153,7 +153,7 @@
       },
       "estimated_duration": "15-30 minutes",
       "narrative_importance": "low",
-      "quest_file": "quest_definitions/side_quest_5_master_brenna.json"
+      "quest_file": "quest_definitions/side_quest_5_brother_fiona.json"
     }
   },
   "integration_info": {

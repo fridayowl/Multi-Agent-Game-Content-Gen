@@ -1,10 +1,10 @@
 {
-  "main_quest_1_sir_edwin": {
-    "quest_id": "main_quest_1_sir_edwin",
-    "npc_name": "Sir Edwin",
+  "main_quest_1_lady_fiona": {
+    "quest_id": "main_quest_1_lady_fiona",
+    "npc_name": "Lady Fiona",
     "dialogue_nodes": {
       "introduction": {
-        "text": "I have a problem that needs solving. Sir Edwin needs help resolving a crisis that threatens the village.",
+        "text": "I have a problem that needs solving. Lady Fiona needs help resolving a crisis that threatens the village.",
         "options": [
           {
             "text": "I'll help you.",
@@ -48,12 +48,12 @@
       }
     }
   },
-  "main_quest_2_brother_cedric": {
-    "quest_id": "main_quest_2_brother_cedric",
-    "npc_name": "Brother Cedric",
+  "main_quest_2_sir_dara": {
+    "quest_id": "main_quest_2_sir_dara",
+    "npc_name": "Sir Dara",
     "dialogue_nodes": {
       "introduction": {
-        "text": "I have a problem that needs solving. Brother Cedric has discovered something that could change everything.",
+        "text": "I have a problem that needs solving. Sir Dara has discovered something that could change everything.",
         "options": [
           {
             "text": "I'll help you.",
@@ -97,12 +97,12 @@
       }
     }
   },
-  "side_quest_1_sir_edwin": {
-    "quest_id": "side_quest_1_sir_edwin",
-    "npc_name": "Sir Edwin",
+  "side_quest_1_lady_fiona": {
+    "quest_id": "side_quest_1_lady_fiona",
+    "npc_name": "Lady Fiona",
     "dialogue_nodes": {
       "introduction": {
-        "text": "I have a problem that needs solving. Sir Edwin needs help with a personal matter.",
+        "text": "I have a problem that needs solving. Lady Fiona needs help with a personal matter.",
         "options": [
           {
             "text": "I'll help you.",
@@ -146,12 +146,12 @@
       }
     }
   },
-  "side_quest_2_brother_cedric": {
-    "quest_id": "side_quest_2_brother_cedric",
-    "npc_name": "Brother Cedric",
+  "side_quest_2_sir_dara": {
+    "quest_id": "side_quest_2_sir_dara",
+    "npc_name": "Sir Dara",
     "dialogue_nodes": {
       "introduction": {
-        "text": "I have a problem that needs solving. Brother Cedric needs help with a personal matter.",
+        "text": "I have a problem that needs solving. Sir Dara needs help with a personal matter.",
         "options": [
           {
             "text": "I'll help you.",
@@ -195,12 +195,12 @@
       }
     }
   },
-  "side_quest_3_master_dara": {
-    "quest_id": "side_quest_3_master_dara",
-    "npc_name": "Master Dara",
+  "side_quest_3_brother_brenna": {
+    "quest_id": "side_quest_3_brother_brenna",
+    "npc_name": "Brother Brenna",
     "dialogue_nodes": {
       "introduction": {
-        "text": "I have a problem that needs solving. Master Dara needs help with a personal matter.",
+        "text": "I have a problem that needs solving. Brother Brenna needs help with a personal matter.",
         "options": [
           {
             "text": "I'll help you.",
@@ -244,12 +244,12 @@
       }
     }
   },
-  "side_quest_4_sister_aldric": {
-    "quest_id": "side_quest_4_sister_aldric",
-    "npc_name": "Sister Aldric",
+  "side_quest_4_sister_brenna": {
+    "quest_id": "side_quest_4_sister_brenna",
+    "npc_name": "Sister Brenna",
     "dialogue_nodes": {
       "introduction": {
-        "text": "I have a problem that needs solving. Sister Aldric needs help with a personal matter.",
+        "text": "I have a problem that needs solving. Sister Brenna needs help with a personal matter.",
         "options": [
           {
             "text": "I'll help you.",
@@ -293,12 +293,12 @@
       }
     }
   },
-  "side_quest_5_master_brenna": {
-    "quest_id": "side_quest_5_master_brenna",
-    "npc_name": "Master Brenna",
+  "side_quest_5_brother_fiona": {
+    "quest_id": "side_quest_5_brother_fiona",
+    "npc_name": "Brother Fiona",
     "dialogue_nodes": {
       "introduction": {
-        "text": "I have a problem that needs solving. Master Brenna needs help with a personal matter.",
+        "text": "I have a problem that needs solving. Brother Fiona needs help with a personal matter.",
         "options": [
           {
             "text": "I'll help you.",

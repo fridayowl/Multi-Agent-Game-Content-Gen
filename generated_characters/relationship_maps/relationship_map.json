@@ -1,80 +1,80 @@
 {
-  "Sir Edwin": [
+  "Lady Fiona": [
     {
-      "target_character": "Brother Cedric",
-      "relationship_type": "Colleague",
-      "relationship_strength": 8,
-      "history": "They know each other through their work in town",
-      "current_status": "Neutral"
-    },
-    {
-      "target_character": "Master Dara",
+      "target_character": "Sir Dara",
       "relationship_type": "Acquaintance",
-      "relationship_strength": 4,
-      "history": "They know each other through their work in town",
-      "current_status": "Neutral"
-    }
-  ],
-  "Brother Cedric": [
-    {
-      "target_character": "Sir Edwin",
-      "relationship_type": "Colleague",
-      "relationship_strength": 8,
-      "history": "They know each other through their work in town",
-      "current_status": "Neutral"
-    },
-    {
-      "target_character": "Sister Aldric",
-      "relationship_type": "Neighbor",
-      "relationship_strength": 5,
-      "history": "They know each other through their work in town",
-      "current_status": "Neutral"
-    }
-  ],
-  "Master Dara": [
-    {
-      "target_character": "Sir Edwin",
-      "relationship_type": "Acquaintance",
-      "relationship_strength": 4,
-      "history": "They know each other through their work in town",
-      "current_status": "Neutral"
-    },
-    {
-      "target_character": "Master Brenna",
-      "relationship_type": "Rival",
-      "relationship_strength": 7,
-      "history": "They know each other through their work in town",
-      "current_status": "Neutral"
-    }
-  ],
-  "Sister Aldric": [
-    {
-      "target_character": "Brother Cedric",
-      "relationship_type": "Neighbor",
       "relationship_strength": 5,
       "history": "They know each other through their work in town",
       "current_status": "Neutral"
     },
     {
-      "target_character": "Master Brenna",
+      "target_character": "Brother Brenna",
       "relationship_type": "Colleague",
-      "relationship_strength": 8,
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sister Brenna",
+      "relationship_type": "Friend",
+      "relationship_strength": 3,
       "history": "They know each other through their work in town",
       "current_status": "Neutral"
     }
   ],
-  "Master Brenna": [
+  "Sir Dara": [
     {
-      "target_character": "Master Dara",
-      "relationship_type": "Rival",
+      "target_character": "Lady Fiona",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Brother Fiona",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 7,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Brother Brenna": [
+    {
+      "target_character": "Lady Fiona",
+      "relationship_type": "Colleague",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Sister Brenna": [
+    {
+      "target_character": "Lady Fiona",
+      "relationship_type": "Friend",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Brother Fiona",
+      "relationship_type": "Ally",
+      "relationship_strength": 4,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Brother Fiona": [
+    {
+      "target_character": "Sir Dara",
+      "relationship_type": "Acquaintance",
       "relationship_strength": 7,
       "history": "They know each other through their work in town",
       "current_status": "Neutral"
     },
     {
-      "target_character": "Sister Aldric",
-      "relationship_type": "Colleague",
-      "relationship_strength": 8,
+      "target_character": "Sister Brenna",
+      "relationship_type": "Ally",
+      "relationship_strength": 4,
       "history": "They know each other through their work in town",
       "current_status": "Neutral"
     }

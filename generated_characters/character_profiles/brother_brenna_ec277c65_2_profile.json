@@ -1,0 +1,86 @@
+{
+  "id": "brother_brenna_ec277c65_2",
+  "name": "Brother Brenna",
+  "title": "The Jovial Herbalist",
+  "description": "A 54-year-old Herbalist with a jovial nature.",
+  "backstory": "Brother Brenna has worked as a Herbalist for many years.",
+  "personality": {
+    "primary_trait": "Jovial",
+    "secondary_trait": "Ambitious",
+    "motivation": "To find adventure",
+    "fear": "Losing control",
+    "quirk": "Collects unusual items",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 9,
+    "health": 87,
+    "strength": 11,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 14,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Lady Fiona",
+      "relationship_type": "Colleague",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "brother brenna_greeting",
+      "text": "Greetings! I'm Brother Brenna, the local Herbalist.",
+      "speaker": "Brother Brenna",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "brother brenna_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "brother brenna_role",
+      "text": "As a Herbalist, I to find adventure.",
+      "speaker": "Brother Brenna",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "tower",
+  "role": "Herbalist",
+  "quest_involvement": [],
+  "age": 54,
+  "appearance": "A 54-year-old Herbalist with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "dac8975b-8208-4572-bfec-b7e335088c00"
+}

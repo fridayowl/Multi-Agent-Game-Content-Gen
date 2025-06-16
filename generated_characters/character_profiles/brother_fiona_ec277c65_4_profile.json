@@ -1,0 +1,93 @@
+{
+  "id": "brother_fiona_ec277c65_4",
+  "name": "Brother Fiona",
+  "title": "The Clever Mage",
+  "description": "A 55-year-old Mage with a clever nature.",
+  "backstory": "Brother Fiona has worked as a Mage for many years.",
+  "personality": {
+    "primary_trait": "Clever",
+    "secondary_trait": "Cautious",
+    "motivation": "To build something lasting",
+    "fear": "Failure",
+    "quirk": "Always carries a lucky charm",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 5,
+    "health": 75,
+    "strength": 11,
+    "intelligence": 18,
+    "charisma": 13,
+    "dexterity": 12,
+    "wisdom": 16,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Sir Dara",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 7,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sister Brenna",
+      "relationship_type": "Ally",
+      "relationship_strength": 4,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "brother fiona_greeting",
+      "text": "Greetings! I'm Brother Fiona, the local Mage.",
+      "speaker": "Brother Fiona",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "brother fiona_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "brother fiona_role",
+      "text": "As a Mage, I to build something lasting.",
+      "speaker": "Brother Fiona",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "church",
+  "role": "Mage",
+  "quest_involvement": [],
+  "age": 55,
+  "appearance": "A 55-year-old Mage with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "51657e6d-6131-4b47-9742-db53d16bc320"
+}

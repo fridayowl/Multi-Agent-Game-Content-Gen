@@ -1,0 +1,72 @@
+{
+  "session_info": {
+    "session_directory": "complete_game_content/complete_game_20250616_021317_create_a_spooky_3d_game",
+    "timestamp": "2025-06-16T02:13:18.044271",
+    "pipeline_version": "3.1.0",
+    "complete_pipeline": true,
+    "balance_validated": true
+  },
+  "execution_steps": [
+    {
+      "step": 1,
+      "name": "World Design",
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "name": "AI Creative Asset Generation",
+      "status": "completed"
+    },
+    {
+      "step": 3,
+      "name": "Character Creation",
+      "status": "completed"
+    },
+    {
+      "step": 4,
+      "name": "Quest Generation",
+      "status": "completed"
+    },
+    {
+      "step": 5,
+      "name": "Balance Validation",
+      "status": "completed"
+    },
+    {
+      "step": 6,
+      "name": "Complete Final Assembly",
+      "status": "completed"
+    }
+  ],
+  "agent_performance": {
+    "world_designer": {
+      "available": true,
+      "successful": true
+    },
+    "asset_generator": {
+      "available": true,
+      "successful": true
+    },
+    "character_creator": {
+      "available": true,
+      "successful": true
+    },
+    "quest_writer": {
+      "available": true,
+      "successful": true
+    },
+    "balance_validator": {
+      "available": false,
+      "successful": true
+    }
+  },
+  "content_statistics": {
+    "world_buildings": 8,
+    "creative_assets": 81,
+    "generated_npcs": 5,
+    "total_quests": 7,
+    "narrative_connections": 0,
+    "balance_score": 0.6
+  },
+  "errors": []
+}

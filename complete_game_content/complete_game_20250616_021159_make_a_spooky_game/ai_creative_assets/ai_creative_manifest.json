@@ -1,0 +1,3150 @@
+{
+  "theme": "spooky",
+  "ai_generated": true,
+  "creative_features": {
+    "unique_designs": true,
+    "ai_textures": true,
+    "creative_variations": true,
+    "procedural_diversity": true
+  },
+  "buildings": [
+    {
+      "id": "house_0",
+      "type": "house",
+      "position": {
+        "x": 32.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "church_1",
+      "type": "church",
+      "position": {
+        "x": 14.000000000000002,
+        "y": 30.392304845413264,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky church",
+      "creative_variations": [
+        "Standard church",
+        "Enhanced church"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "tower_2",
+      "type": "tower",
+      "position": {
+        "x": 13.999999999999995,
+        "y": 9.60769515458674,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tower",
+      "creative_variations": [
+        "Standard tower",
+        "Enhanced tower"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_3",
+      "type": "house",
+      "position": {
+        "x": 31.259221499349962,
+        "y": 26.515893335519117,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_4",
+      "type": "house",
+      "position": {
+        "x": 6.678222565435583,
+        "y": 20.523187132356163,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_5",
+      "type": "house",
+      "position": {
+        "x": 30.86966885978063,
+        "y": 28.61051108802507,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    }
+  ],
+  "props": [
+    {
+      "id": "dead_tree_0_2.0_0.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 2.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "straight",
+        "canopy_shape": "sparse",
+        "branch_density": "medium",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2110293039039144,
+        "width_multiplier": 0.8589326639555094,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.323323051306439
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_11bdeb41.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_0_2.0_0.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "d32288a8"
+    },
+    {
+      "id": "tombstone_1_12.0_0.0",
+      "type": "tombstone",
+      "position": {
+        "x": 12.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "vibrant",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.252882777614561,
+        "width_multiplier": 0.8783895993628299,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.2015215521121062
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_78a28e73.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_1_12.0_0.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "0563c071"
+    },
+    {
+      "id": "raven_perch_2_1.0_1.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9920402420853854,
+        "width_multiplier": 0.9264181062098131,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.35164230612706127
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_6449be3f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_2_1.0_1.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "7e6ddec0"
+    },
+    {
+      "id": "tombstone_3_31.0_1.0",
+      "type": "tombstone",
+      "position": {
+        "x": 31.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0623910422540253,
+        "width_multiplier": 1.191216155468039,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.10640996144225763
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_7b757733.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_3_31.0_1.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "7216b4a0"
+    },
+    {
+      "id": "dead_tree_4_2.0_2.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 2.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "oval",
+        "branch_density": "medium",
+        "leaf_type": "none",
+        "seasonal_state": "autumn",
+        "bark_texture": "cracked",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3192972332588435,
+        "width_multiplier": 1.194457766821467,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.1799025068677988
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_4159ac7c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_4_2.0_2.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "edab9704"
+    },
+    {
+      "id": "raven_perch_5_3.0_2.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 3.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9692960591580355,
+        "width_multiplier": 0.9269965414660934,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.1396235778570773
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_e919967b.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_5_3.0_2.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "795bce14"
+    },
+    {
+      "id": "fog_patch_6_11.0_2.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 11.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.12593655191334,
+        "width_multiplier": 0.87167539642901,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.19555692545962527
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_11cb4b7c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_6_11.0_2.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "9a977eac"
+    },
+    {
+      "id": "tombstone_7_28.0_3.0",
+      "type": "tombstone",
+      "position": {
+        "x": 28.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "natural",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4838404972637895,
+        "width_multiplier": 1.1172600143425238,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.15728730711472544
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_57a07fd2.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_7_28.0_3.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "bf5fc1fb"
+    },
+    {
+      "id": "fog_patch_8_29.0_3.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 29.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "natural",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3485064922427124,
+        "width_multiplier": 0.8045375712105669,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.18148281400024316
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_59143c4e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_8_29.0_3.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "fb410b17"
+    },
+    {
+      "id": "tombstone_9_21.0_5.0",
+      "type": "tombstone",
+      "position": {
+        "x": 21.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9935103796961569,
+        "width_multiplier": 1.2087688552360443,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.22774481147674114
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_10a3c78a.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_9_21.0_5.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "2566eb87"
+    },
+    {
+      "id": "dead_tree_10_34.0_5.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 34.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "split",
+        "canopy_shape": "irregular",
+        "branch_density": "dense",
+        "leaf_type": "none",
+        "seasonal_state": "autumn",
+        "bark_texture": "cracked",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1659013424213973,
+        "width_multiplier": 0.8485433507006674,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.30399170171148215
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_37d31cb3.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_10_34.0_5.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "879fce10"
+    },
+    {
+      "id": "fog_patch_11_36.0_5.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 36.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8233622271720669,
+        "width_multiplier": 0.8029472572327809,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.2166570677187944
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_77df3911.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_11_36.0_5.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "ff5d4f93"
+    },
+    {
+      "id": "raven_perch_12_27.0_6.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 27.0,
+        "y": 6.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "weathered",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0740369632148101,
+        "width_multiplier": 1.266202637275798,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.29264566759395766
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_621edca9.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_12_27.0_6.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "13e0ca06"
+    },
+    {
+      "id": "tombstone_13_26.0_7.0",
+      "type": "tombstone",
+      "position": {
+        "x": 26.0,
+        "y": 7.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4991713458099358,
+        "width_multiplier": 1.2221831062103834,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.26796029511657316
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_87469046.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_13_26.0_7.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "10a9e2a8"
+    },
+    {
+      "id": "fog_patch_14_4.0_8.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 4.0,
+        "y": 8.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8594226373298424,
+        "width_multiplier": 0.8714732569013246,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.11564116738268963
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_bd32c4be.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_14_4.0_8.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "66874927"
+    },
+    {
+      "id": "raven_perch_15_21.0_8.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 21.0,
+        "y": 8.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "vibrant",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2283552076814657,
+        "width_multiplier": 1.1133100533819817,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.16588374326460265
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_ceb9ce07.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_15_21.0_8.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "f30926ec"
+    },
+    {
+      "id": "tombstone_16_6.0_9.0",
+      "type": "tombstone",
+      "position": {
+        "x": 6.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "weathered",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8521890634220641,
+        "width_multiplier": 0.8033778038217536,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.1590425399476275
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_9d48a42a.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_16_6.0_9.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "4df47ae0"
+    },
+    {
+      "id": "tombstone_17_29.0_9.0",
+      "type": "tombstone",
+      "position": {
+        "x": 29.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "natural",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.409998897197463,
+        "width_multiplier": 0.9416067905446556,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.2859445492005712
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_98114747.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_17_29.0_9.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "eed063fb"
+    },
+    {
+      "id": "dead_tree_18_6.0_11.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 6.0,
+        "y": 11.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "irregular",
+        "branch_density": "dense",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8249988921676525,
+        "width_multiplier": 0.969184682279888,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.33637398450480427
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_b8b36f26.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_18_6.0_11.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "b9a6509c"
+    },
+    {
+      "id": "tombstone_19_10.0_11.0",
+      "type": "tombstone",
+      "position": {
+        "x": 10.0,
+        "y": 11.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "natural",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8241882162129543,
+        "width_multiplier": 0.984187694794395,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.17659720061119516
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_c1d9577e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_19_10.0_11.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "f456e377"
+    },
+    {
+      "id": "raven_perch_20_34.0_11.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 34.0,
+        "y": 11.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8530796006658635,
+        "width_multiplier": 1.0350210069495671,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.2044501551468289
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_fc7177e0.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_20_34.0_11.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "3cd5f35b"
+    },
+    {
+      "id": "fog_patch_21_35.0_11.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 35.0,
+        "y": 11.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1493690384900639,
+        "width_multiplier": 0.8017433887924486,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.16123569618231895
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_d16fc422.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_21_35.0_11.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "02590984"
+    },
+    {
+      "id": "skeleton_22_6.0_13.0",
+      "type": "skeleton",
+      "position": {
+        "x": 6.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky skeleton with distinctive characteristics",
+      "creative_variations": [
+        "Standard skeleton",
+        "Enhanced skeleton"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.000599330799016,
+        "width_multiplier": 0.93849043955081,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3838794483775343
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_6b8d75ad.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_skeleton_22_6.0_13.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "7ed7f7f7"
+    },
+    {
+      "id": "dead_tree_23_17.0_13.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 17.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "straight",
+        "canopy_shape": "irregular",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "autumn",
+        "bark_texture": "cracked",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8958857235175388,
+        "width_multiplier": 0.9014586778224087,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.20577121789884706
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_1472490f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_23_17.0_13.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "7e0e0c13"
+    },
+    {
+      "id": "dead_tree_24_31.0_14.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 31.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "sparse",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8298630973400317,
+        "width_multiplier": 1.1376777059804994,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.15633278317516786
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_b2166ec1.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_24_31.0_14.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "de6de4f6"
+    },
+    {
+      "id": "tombstone_25_32.0_14.0",
+      "type": "tombstone",
+      "position": {
+        "x": 32.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8398415804037848,
+        "width_multiplier": 0.9420788677412933,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.13072106292981509
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_0f3b32a2.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_25_32.0_14.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "85e1d1b0"
+    },
+    {
+      "id": "dead_tree_26_2.0_15.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 2.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "split",
+        "canopy_shape": "sparse",
+        "branch_density": "dense",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0088599359600683,
+        "width_multiplier": 0.8926865450854913,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.2826547467228016
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_54dc8fe6.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_26_2.0_15.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "aa82cca3"
+    },
+    {
+      "id": "skeleton_27_9.0_15.0",
+      "type": "skeleton",
+      "position": {
+        "x": 9.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky skeleton with distinctive characteristics",
+      "creative_variations": [
+        "Standard skeleton",
+        "Enhanced skeleton"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0949880212080387,
+        "width_multiplier": 1.1255111850756823,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.15998077488197132
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_8982e7d6.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_skeleton_27_9.0_15.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "a0a9cb76"
+    },
+    {
+      "id": "tombstone_28_12.0_15.0",
+      "type": "tombstone",
+      "position": {
+        "x": 12.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9953743915214526,
+        "width_multiplier": 1.232371723466136,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.37673561787195964
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_9a8f081e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_28_12.0_15.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "7b269706"
+    },
+    {
+      "id": "raven_perch_29_13.0_15.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 13.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3518602280002008,
+        "width_multiplier": 0.9497306997134786,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3728539372667681
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_125dc7c2.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_29_13.0_15.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "18093b4f"
+    },
+    {
+      "id": "dead_tree_30_22.0_15.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 22.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "sparse",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0032445210815721,
+        "width_multiplier": 1.1569766601868776,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.29412718145678474
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_ca80cee5.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_30_22.0_15.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "de6de4f6"
+    },
+    {
+      "id": "raven_perch_31_10.0_16.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 10.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.130254064202591,
+        "width_multiplier": 1.2513855774449578,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.2182532858511465
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_caa6d263.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_31_10.0_16.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "6b4dcd93"
+    },
+    {
+      "id": "dead_tree_32_24.0_16.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 24.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "irregular",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4731338023343725,
+        "width_multiplier": 1.1342838781304967,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.10199853255851529
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_87c7581e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_32_24.0_16.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "d06188f5"
+    },
+    {
+      "id": "tombstone_33_2.0_17.0",
+      "type": "tombstone",
+      "position": {
+        "x": 2.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0488991154524228,
+        "width_multiplier": 0.9229241258869478,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.20801910662639034
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_d5fb6482.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_33_2.0_17.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "9d05a684"
+    },
+    {
+      "id": "fog_patch_34_24.0_17.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 24.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3287572325812422,
+        "width_multiplier": 1.1966438280863514,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3702935106669488
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_fbf46f42.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_34_24.0_17.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "bf575bd5"
+    },
+    {
+      "id": "fog_patch_35_36.0_17.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 36.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "natural",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2595680808755665,
+        "width_multiplier": 0.9367404942896222,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.2836959990486704
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_df535446.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_35_36.0_17.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "bc40c23f"
+    },
+    {
+      "id": "raven_perch_36_0.0_18.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 0.0,
+        "y": 18.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4244562683416846,
+        "width_multiplier": 1.05469761004277,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.18398295134097958
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_b371cfcf.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_36_0.0_18.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "6e885532"
+    },
+    {
+      "id": "dead_tree_37_19.0_18.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 19.0,
+        "y": 18.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "sparse",
+        "branch_density": "medium",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3253964038253971,
+        "width_multiplier": 0.9460418614307535,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.38966877046871984
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_050ad1e7.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_37_19.0_18.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "7d7c800e"
+    },
+    {
+      "id": "raven_perch_38_39.0_19.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 39.0,
+        "y": 19.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "natural",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8265575079731539,
+        "width_multiplier": 1.031496732896132,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.13484827097607624
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_084626b1.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_38_39.0_19.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "d569ce44"
+    },
+    {
+      "id": "dead_tree_39_2.0_20.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 2.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "split",
+        "canopy_shape": "sparse",
+        "branch_density": "medium",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1807654447800682,
+        "width_multiplier": 1.0043894028970475,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.2737920199337998
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_7f81394d.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_39_2.0_20.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "0fa9dc26"
+    },
+    {
+      "id": "dead_tree_40_11.0_20.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 11.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "split",
+        "canopy_shape": "irregular",
+        "branch_density": "dense",
+        "leaf_type": "none",
+        "seasonal_state": "autumn",
+        "bark_texture": "cracked",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8855173649591798,
+        "width_multiplier": 0.8559647866161715,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3490753729795688
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_1594cae6.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_40_11.0_20.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "d79dfce9"
+    },
+    {
+      "id": "raven_perch_41_13.0_21.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 13.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.463655391735186,
+        "width_multiplier": 1.1816554608228915,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.13455461142294065
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_f9afa563.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_41_13.0_21.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "a6169950"
+    },
+    {
+      "id": "fog_patch_42_21.0_21.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 21.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2519690148469786,
+        "width_multiplier": 0.9118767562490026,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.24215345231853416
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_8f2b23b0.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_42_21.0_21.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "729ca358"
+    },
+    {
+      "id": "fog_patch_43_24.0_21.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 24.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0883933794032286,
+        "width_multiplier": 1.2501700271533789,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.1781649174018801
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_4911a200.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_43_24.0_21.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "a8be2983"
+    },
+    {
+      "id": "raven_perch_44_36.0_21.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 36.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2813798632601079,
+        "width_multiplier": 0.9637643892793561,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.37336246576594345
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_891bb1c3.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_44_36.0_21.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "f2531088"
+    },
+    {
+      "id": "fog_patch_45_37.0_21.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 37.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4954486264459579,
+        "width_multiplier": 1.2283201675631703,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.14559704986526
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_fec806d1.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_45_37.0_21.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "4edcd89a"
+    },
+    {
+      "id": "raven_perch_46_0.0_22.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 0.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "weathered",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2442785706229622,
+        "width_multiplier": 1.1538142019715254,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.18217878232573936
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_bf4573d7.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_46_0.0_22.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "df740d09"
+    },
+    {
+      "id": "dead_tree_47_18.0_23.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 18.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "split",
+        "canopy_shape": "oval",
+        "branch_density": "dense",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0632247145327616,
+        "width_multiplier": 1.2654530383999945,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.297939164308407
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_896cdbb6.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_47_18.0_23.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "67909733"
+    },
+    {
+      "id": "fog_patch_48_37.0_23.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 37.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1130165389726117,
+        "width_multiplier": 0.9703349078219516,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.1693736197180294
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_7925deee.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_48_37.0_23.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "daf0d3bd"
+    },
+    {
+      "id": "raven_perch_49_26.0_24.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 26.0,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1024363737084997,
+        "width_multiplier": 0.8205687193177758,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.18200760638973373
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_e1c5af78.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_49_26.0_24.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "5c81cd01"
+    },
+    {
+      "id": "tombstone_50_36.0_24.0",
+      "type": "tombstone",
+      "position": {
+        "x": 36.0,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9189433718227468,
+        "width_multiplier": 0.8565988473802278,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.10574082318906815
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_6c54e178.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_50_36.0_24.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "54082f9c"
+    },
+    {
+      "id": "dead_tree_51_3.0_25.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 3.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "sparse",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8055257667150857,
+        "width_multiplier": 0.8378397335852344,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.1975839464936362
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_55d07626.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_51_3.0_25.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "9939cabd"
+    },
+    {
+      "id": "tombstone_52_9.0_25.0",
+      "type": "tombstone",
+      "position": {
+        "x": 9.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.17778974891387,
+        "width_multiplier": 1.1302733198256452,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.17258732472192456
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_bc2087a6.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_52_9.0_25.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "74a4ca6e"
+    },
+    {
+      "id": "fog_patch_53_4.0_26.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 4.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0691821663357677,
+        "width_multiplier": 1.0051062287540415,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.3518244704402249
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_ca9f0578.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_53_4.0_26.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "a9d18864"
+    },
+    {
+      "id": "raven_perch_54_13.0_26.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 13.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8781349199565749,
+        "width_multiplier": 1.1902634034008888,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.17096546102708354
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_6109787f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_54_13.0_26.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "7de7b09b"
+    },
+    {
+      "id": "fog_patch_55_22.0_26.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 22.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.022713084108816,
+        "width_multiplier": 0.8033302786369849,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.1058088699031824
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_6574d9af.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_55_22.0_26.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "90435611"
+    },
+    {
+      "id": "skeleton_56_25.0_26.0",
+      "type": "skeleton",
+      "position": {
+        "x": 25.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky skeleton with distinctive characteristics",
+      "creative_variations": [
+        "Standard skeleton",
+        "Enhanced skeleton"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.060554646938666,
+        "width_multiplier": 0.8904974044457896,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.36623157425682185
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_f7772075.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_skeleton_56_25.0_26.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "4d197c08"
+    },
+    {
+      "id": "dead_tree_57_39.0_26.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 39.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "split",
+        "canopy_shape": "oval",
+        "branch_density": "medium",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.929660712847371,
+        "width_multiplier": 1.1475703931322239,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.12039371293494272
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_d3aeb76b.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_57_39.0_26.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "3b0e541c"
+    },
+    {
+      "id": "skeleton_58_6.0_27.0",
+      "type": "skeleton",
+      "position": {
+        "x": 6.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky skeleton with distinctive characteristics",
+      "creative_variations": [
+        "Standard skeleton",
+        "Enhanced skeleton"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8635414902672874,
+        "width_multiplier": 0.9899711220608634,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3235013647988445
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_59e1aff9.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_skeleton_58_6.0_27.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "ada9a2e4"
+    },
+    {
+      "id": "raven_perch_59_39.0_28.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 39.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "natural",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3373268630823423,
+        "width_multiplier": 1.0840596763304664,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.33237954014929405
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_38a21217.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_59_39.0_28.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "f2378531"
+    },
+    {
+      "id": "tombstone_60_1.0_29.0",
+      "type": "tombstone",
+      "position": {
+        "x": 1.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.451759933925934,
+        "width_multiplier": 1.1673012282790654,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.29535237740652254
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_14fecbc3.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_60_1.0_29.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "58fc7817"
+    },
+    {
+      "id": "raven_perch_61_2.0_29.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 2.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1107345432062354,
+        "width_multiplier": 1.1000185749467222,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3368622874805315
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_5aad51ac.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_61_2.0_29.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "b3a2b864"
+    },
+    {
+      "id": "dead_tree_62_5.0_29.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 5.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "round",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4403777429410975,
+        "width_multiplier": 1.166823728610547,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.32438494610010193
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_bac5a2c3.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_62_5.0_29.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "12e2cd00"
+    },
+    {
+      "id": "raven_perch_63_7.0_29.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 7.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9612926132203047,
+        "width_multiplier": 1.1788720376871882,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.19241902919455878
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_9704a43d.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_63_7.0_29.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "e8f2cfbd"
+    },
+    {
+      "id": "dead_tree_64_10.0_29.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 10.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "split",
+        "canopy_shape": "round",
+        "branch_density": "dense",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1062796590360908,
+        "width_multiplier": 1.0159532957485937,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.1553339627015538
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_71651dfe.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_64_10.0_29.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "c8a8aee1"
+    },
+    {
+      "id": "raven_perch_65_26.0_29.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 26.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1181105468554948,
+        "width_multiplier": 1.186416379360435,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.33825161794918723
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_657970fd.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_65_26.0_29.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "192cd55c"
+    },
+    {
+      "id": "dead_tree_66_4.0_30.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 4.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "sparse",
+        "branch_density": "medium",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2423728867107189,
+        "width_multiplier": 1.215048911560074,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.2212485887659871
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_24cac0a6.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_66_4.0_30.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "1cb0d057"
+    },
+    {
+      "id": "raven_perch_67_25.0_31.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 25.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "natural",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.151907407016931,
+        "width_multiplier": 0.9667624573767342,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.25974065485898046
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_7523598b.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_67_25.0_31.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "aafe073e"
+    },
+    {
+      "id": "dead_tree_68_20.0_32.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 20.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "round",
+        "branch_density": "medium",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.127235952088293,
+        "width_multiplier": 0.9496742746809965,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.2668986622050433
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_64c3a6de.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_68_20.0_32.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "f2f31d3b"
+    },
+    {
+      "id": "raven_perch_69_26.0_32.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 26.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "natural",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.113209123702145,
+        "width_multiplier": 0.9394143180716723,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3907183554710396
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_7dde21f1.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_69_26.0_32.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "c0522102"
+    },
+    {
+      "id": "fog_patch_70_0.0_33.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 0.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2803484409901884,
+        "width_multiplier": 0.9330523858947366,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.23427364215185761
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_0c45a7aa.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_70_0.0_33.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "eee4ab23"
+    },
+    {
+      "id": "tombstone_71_22.0_33.0",
+      "type": "tombstone",
+      "position": {
+        "x": 22.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.91223039724284,
+        "width_multiplier": 1.1298153706126288,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.18038194193888568
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_6d83c20a.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_71_22.0_33.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "d9c2e0f8"
+    },
+    {
+      "id": "fog_patch_72_33.0_33.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 33.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "vibrant",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2222042653049068,
+        "width_multiplier": 1.161324128070898,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.35734230531617106
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_f4500ee9.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_72_33.0_33.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "038954dc"
+    },
+    {
+      "id": "raven_perch_73_23.0_34.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 23.0,
+        "y": 34.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4877427546984592,
+        "width_multiplier": 1.1656702619241823,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.3483651505917904
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_5cb35a56.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_73_23.0_34.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "14b2b738"
+    },
+    {
+      "id": "fog_patch_74_28.0_34.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 28.0,
+        "y": 34.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "natural",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8226748946501989,
+        "width_multiplier": 1.2238769442512463,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.14954540541562777
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_11fc003c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_74_28.0_34.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "b7f10ff4"
+    },
+    {
+      "id": "tombstone_75_33.0_34.0",
+      "type": "tombstone",
+      "position": {
+        "x": 33.0,
+        "y": 34.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3927222452449834,
+        "width_multiplier": 0.9959122291913604,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.1284440928922973
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_37f041de.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_75_33.0_34.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "31d38f95"
+    },
+    {
+      "id": "skeleton_76_16.0_35.0",
+      "type": "skeleton",
+      "position": {
+        "x": 16.0,
+        "y": 35.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky skeleton with distinctive characteristics",
+      "creative_variations": [
+        "Standard skeleton",
+        "Enhanced skeleton"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2039201566227664,
+        "width_multiplier": 0.8475182305367499,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.1394785411656122
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_e46c23f0.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_skeleton_76_16.0_35.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "b7a8457a"
+    },
+    {
+      "id": "tombstone_77_33.0_35.0",
+      "type": "tombstone",
+      "position": {
+        "x": 33.0,
+        "y": 35.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.242460282153059,
+        "width_multiplier": 0.9099328987606263,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.13368018212703622
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_1844b234.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_77_33.0_35.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "90bac36e"
+    },
+    {
+      "id": "fog_patch_78_15.0_36.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 15.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0409605710506922,
+        "width_multiplier": 0.82437118638651,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.2738568853650568
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_de589a7c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_78_15.0_36.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "e728e489"
+    },
+    {
+      "id": "skeleton_79_27.0_36.0",
+      "type": "skeleton",
+      "position": {
+        "x": 27.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky skeleton with distinctive characteristics",
+      "creative_variations": [
+        "Standard skeleton",
+        "Enhanced skeleton"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4245509434047605,
+        "width_multiplier": 1.181180182869591,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3056379566941656
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_0a28c2c2.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_skeleton_79_27.0_36.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "597de728"
+    },
+    {
+      "id": "raven_perch_80_33.0_36.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 33.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3998547573278053,
+        "width_multiplier": 0.8056672401631091,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.25235478665594846
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_6e0ffaa7.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_80_33.0_36.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "8d007a69"
+    },
+    {
+      "id": "fog_patch_81_4.0_37.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 4.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "natural",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.891338913694908,
+        "width_multiplier": 0.9335714949158925,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.11801486244446639
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_1389415f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_81_4.0_37.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "fb410b17"
+    },
+    {
+      "id": "dead_tree_82_6.0_37.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 6.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "split",
+        "canopy_shape": "irregular",
+        "branch_density": "medium",
+        "leaf_type": "none",
+        "seasonal_state": "autumn",
+        "bark_texture": "cracked",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.16169147459153,
+        "width_multiplier": 1.1986219462901482,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.19069402640877953
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_98de2bf6.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_82_6.0_37.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "a39f45b5"
+    },
+    {
+      "id": "raven_perch_83_8.0_37.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 8.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3881375012384898,
+        "width_multiplier": 1.1361206897493035,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.1794832246736658
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_00f3dbeb.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_raven_perch_83_8.0_37.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "48b85190"
+    },
+    {
+      "id": "tombstone_84_11.0_37.0",
+      "type": "tombstone",
+      "position": {
+        "x": 11.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4185662995395723,
+        "width_multiplier": 0.8287045508988378,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.13614820080929835
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_696509f4.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_84_11.0_37.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "770b4314"
+    },
+    {
+      "id": "tombstone_85_28.0_37.0",
+      "type": "tombstone",
+      "position": {
+        "x": 28.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4995866092951033,
+        "width_multiplier": 1.0710224368168024,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.16115592546111018
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_05f13a1e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_tombstone_85_28.0_37.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "c5bbccf7"
+    },
+    {
+      "id": "fog_patch_86_1.0_38.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 1.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.037645145549385,
+        "width_multiplier": 1.2210794660139976,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.28651312007183327
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/generic_spooky_41bebb40.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_fog_patch_86_1.0_38.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "0dc37dcc"
+    },
+    {
+      "id": "dead_tree_87_24.0_38.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 24.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "round",
+        "branch_density": "medium",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.495508794598118,
+        "width_multiplier": 1.2036763835912478,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.1302343273352696
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/ai_textures/wood_spooky_3ff06fbd.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets/blender_scripts/ai_prop_dead_tree_87_24.0_38.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "90c4f3db"
+    }
+  ],
+  "environment": [],
+  "ai_materials": {},
+  "generation_summary": {
+    "total_creative_assets": 94,
+    "unique_textures_generated": 88,
+    "ai_variations_created": 12,
+    "creative_complexity_score": 176.0,
+    "buildings_count": 6,
+    "props_count": 88,
+    "environment_count": 0
+  },
+  "output_directory": "complete_game_content/complete_game_20250616_021159_make_a_spooky_game/ai_creative_assets"
+}

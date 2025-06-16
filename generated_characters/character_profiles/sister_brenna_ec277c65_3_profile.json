@@ -1,0 +1,93 @@
+{
+  "id": "sister_brenna_ec277c65_3",
+  "name": "Sister Brenna",
+  "title": "The Eccentric Family Head",
+  "description": "A 40-year-old Family Head with a eccentric nature.",
+  "backstory": "Sister Brenna has worked as a Family Head for many years.",
+  "personality": {
+    "primary_trait": "Eccentric",
+    "secondary_trait": "Practical",
+    "motivation": "To seek knowledge",
+    "fear": "Failure",
+    "quirk": "Always hums while working",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 4,
+    "health": 72,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Lady Fiona",
+      "relationship_type": "Friend",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Brother Fiona",
+      "relationship_type": "Ally",
+      "relationship_strength": 4,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "sister brenna_greeting",
+      "text": "Greetings! I'm Sister Brenna, the local Family Head.",
+      "speaker": "Sister Brenna",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sister brenna_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sister brenna_role",
+      "text": "As a Family Head, I to seek knowledge.",
+      "speaker": "Sister Brenna",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "house",
+  "role": "Family Head",
+  "quest_involvement": [],
+  "age": 40,
+  "appearance": "A 40-year-old Family Head with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "023a1175-4de7-4f52-b743-674229b2f812"
+}

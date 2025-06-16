@@ -1,0 +1,491 @@
+{
+  "status": "success",
+  "character_count": 5,
+  "output_directory": "generated_characters",
+  "manifest_file": "generated_characters/character_manifest.json",
+  "ai_enhanced": false,
+  "fallback_generation": true,
+  "characters": [
+    {
+      "id": "brother_dara_497b2fd4_0",
+      "name": "Brother Dara",
+      "title": "The Inventive Resident",
+      "description": "A 34-year-old Resident with a inventive nature.",
+      "backstory": "Brother Dara has worked as a Resident for many years.",
+      "personality": {
+        "primary_trait": "Inventive",
+        "secondary_trait": "Practical",
+        "motivation": "To seek knowledge",
+        "fear": "Being misunderstood",
+        "quirk": "Collects unusual items",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 4,
+        "health": 72,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Lady Hilda",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sir Dara",
+          "relationship_type": "Ally",
+          "relationship_strength": 6,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "brother dara_greeting",
+          "text": "Greetings! I'm Brother Dara, the local Resident.",
+          "speaker": "Brother Dara",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "brother dara_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "brother dara_role",
+          "text": "As a Resident, I to seek knowledge.",
+          "speaker": "Brother Dara",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "house",
+      "role": "Resident",
+      "quest_involvement": [],
+      "age": 34,
+      "appearance": "A 34-year-old Resident with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "11059358-2eac-42f3-b884-67b5a22bd545"
+    },
+    {
+      "id": "brother_aldric_497b2fd4_1",
+      "name": "Brother Aldric",
+      "title": "The Jovial Servant",
+      "description": "A 25-year-old Servant with a jovial nature.",
+      "backstory": "Brother Aldric has worked as a Servant for many years.",
+      "personality": {
+        "primary_trait": "Jovial",
+        "secondary_trait": "Curious",
+        "motivation": "To build something lasting",
+        "fear": "The unknown",
+        "quirk": "Always carries a lucky charm",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 7,
+        "health": 81,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Lady Hilda",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Fiona",
+          "relationship_type": "Colleague",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "brother aldric_greeting",
+          "text": "Greetings! I'm Brother Aldric, the local Servant.",
+          "speaker": "Brother Aldric",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "brother aldric_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "brother aldric_role",
+          "text": "As a Servant, I to build something lasting.",
+          "speaker": "Brother Aldric",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "church",
+      "role": "Servant",
+      "quest_involvement": [],
+      "age": 25,
+      "appearance": "A 25-year-old Servant with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "f39eaaa9-4606-4217-a6b1-e2bf329b7c9c"
+    },
+    {
+      "id": "lady_hilda_497b2fd4_2",
+      "name": "Lady Hilda",
+      "title": "The Determined Family Head",
+      "description": "A 37-year-old Family Head with a determined nature.",
+      "backstory": "Lady Hilda has worked as a Family Head for many years.",
+      "personality": {
+        "primary_trait": "Determined",
+        "secondary_trait": "Practical",
+        "motivation": "To protect others",
+        "fear": "Losing control",
+        "quirk": "Always carries a lucky charm",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 6,
+        "health": 78,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Brother Dara",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Brother Aldric",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Fiona",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "lady hilda_greeting",
+          "text": "Greetings! I'm Lady Hilda, the local Family Head.",
+          "speaker": "Lady Hilda",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "lady hilda_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "lady hilda_role",
+          "text": "As a Family Head, I to protect others.",
+          "speaker": "Lady Hilda",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "tower",
+      "role": "Family Head",
+      "quest_involvement": [],
+      "age": 37,
+      "appearance": "A 37-year-old Family Head with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "997071fa-6ea3-4680-91d2-e0a14e92f4d2"
+    },
+    {
+      "id": "lady_fiona_497b2fd4_3",
+      "name": "Lady Fiona",
+      "title": "The Gentle Noble",
+      "description": "A 42-year-old Noble with a gentle nature.",
+      "backstory": "Lady Fiona has worked as a Noble for many years.",
+      "personality": {
+        "primary_trait": "Gentle",
+        "secondary_trait": "Ambitious",
+        "motivation": "To build something lasting",
+        "fear": "Being alone",
+        "quirk": "Speaks to animals",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 10,
+        "health": 90,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Brother Aldric",
+          "relationship_type": "Colleague",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Hilda",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sir Dara",
+          "relationship_type": "Colleague",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "lady fiona_greeting",
+          "text": "Greetings! I'm Lady Fiona, the local Noble.",
+          "speaker": "Lady Fiona",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "lady fiona_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "lady fiona_role",
+          "text": "As a Noble, I to build something lasting.",
+          "speaker": "Lady Fiona",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "house",
+      "role": "Noble",
+      "quest_involvement": [],
+      "age": 42,
+      "appearance": "A 42-year-old Noble with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "ae1a50fc-086f-47d6-be46-70afb824796b"
+    },
+    {
+      "id": "sir_dara_497b2fd4_4",
+      "name": "Sir Dara",
+      "title": "The Fierce Temple Guard",
+      "description": "A 43-year-old Temple Guard with a fierce nature.",
+      "backstory": "Sir Dara has worked as a Temple Guard for many years.",
+      "personality": {
+        "primary_trait": "Fierce",
+        "secondary_trait": "Mysterious",
+        "motivation": "To discover truth",
+        "fear": "Losing control",
+        "quirk": "Speaks to animals",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 2,
+        "health": 66,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Brother Dara",
+          "relationship_type": "Ally",
+          "relationship_strength": 6,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Fiona",
+          "relationship_type": "Colleague",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "sir dara_greeting",
+          "text": "Greetings! I'm Sir Dara, the local Temple Guard.",
+          "speaker": "Sir Dara",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "sir dara_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "sir dara_role",
+          "text": "As a Temple Guard, I to discover truth.",
+          "speaker": "Sir Dara",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Sword",
+        "Shield",
+        "City watch badge",
+        "Leather pouch"
+      ],
+      "location": "church",
+      "role": "Temple Guard",
+      "quest_involvement": [],
+      "age": 43,
+      "appearance": "A 43-year-old Temple Guard with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "77e88185-eb12-4602-b207-6738b7c55e06"
+    }
+  ]
+}

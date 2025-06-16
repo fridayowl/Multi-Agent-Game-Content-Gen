@@ -1,0 +1,941 @@
+{
+  "quests": [
+    {
+      "id": "main_quest_1_lady_fiona",
+      "title": "The Village Crisis",
+      "description": "Lady Fiona needs help resolving a crisis that threatens the village.",
+      "summary": "Help Lady Fiona with the village crisis",
+      "giver_npc": "Lady Fiona",
+      "objectives": [
+        {
+          "id": "main_quest_1_obj_1",
+          "description": "Investigate the problem",
+          "type": "investigate",
+          "target": "location",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "main_quest_1_obj_2",
+          "description": "Gather information from villagers",
+          "type": "investigate",
+          "target": "location",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "main_quest_1_obj_3",
+          "description": "Find a solution",
+          "type": "investigate",
+          "target": "location",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "main_quest_1_obj_4",
+          "description": "Report back",
+          "type": "investigate",
+          "target": "Lady Fiona",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        }
+      ],
+      "rewards": {
+        "experience": 100,
+        "gold": 50,
+        "items": [
+          "Quest Item 1"
+        ],
+        "relationship_changes": null
+      },
+      "prerequisites": null,
+      "level_requirement": 1,
+      "estimated_duration": "15-30 minutes",
+      "quest_type": "main",
+      "interconnected_quests": [
+        "main_quest_2_sir_dara",
+        "side_quest_2_sir_dara",
+        "side_quest_3_brother_brenna"
+      ],
+      "narrative_importance": "high"
+    },
+    {
+      "id": "main_quest_2_sir_dara",
+      "title": "Ancient Secrets",
+      "description": "Sir Dara has discovered something that could change everything.",
+      "summary": "Help Sir Dara with ancient secrets",
+      "giver_npc": "Sir Dara",
+      "objectives": [
+        {
+          "id": "main_quest_2_obj_1",
+          "description": "Learn about the discovery",
+          "type": "investigate",
+          "target": "location",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "main_quest_2_obj_2",
+          "description": "Search for more clues",
+          "type": "investigate",
+          "target": "location",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "main_quest_2_obj_3",
+          "description": "Uncover the truth",
+          "type": "investigate",
+          "target": "location",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "main_quest_2_obj_4",
+          "description": "Decide what to do",
+          "type": "investigate",
+          "target": "location",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        }
+      ],
+      "rewards": {
+        "experience": 200,
+        "gold": 100,
+        "items": [],
+        "relationship_changes": null
+      },
+      "prerequisites": [
+        "main_quest_1_lady_fiona"
+      ],
+      "level_requirement": 2,
+      "estimated_duration": "15-30 minutes",
+      "quest_type": "main",
+      "interconnected_quests": [
+        "main_quest_1_lady_fiona",
+        "side_quest_1_lady_fiona",
+        "side_quest_5_brother_fiona"
+      ],
+      "narrative_importance": "high"
+    },
+    {
+      "id": "side_quest_1_lady_fiona",
+      "title": "Personal Favor",
+      "description": "Lady Fiona needs help with a personal matter.",
+      "summary": "Help Lady Fiona with personal favor",
+      "giver_npc": "Lady Fiona",
+      "objectives": [
+        {
+          "id": "side_quest_1_obj_1",
+          "description": "Listen to the problem",
+          "type": "talk_to_npc",
+          "target": "Lady Fiona",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "side_quest_1_obj_2",
+          "description": "Help solve it",
+          "type": "talk_to_npc",
+          "target": "Lady Fiona",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "side_quest_1_obj_3",
+          "description": "Return for thanks",
+          "type": "talk_to_npc",
+          "target": "Lady Fiona",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        }
+      ],
+      "rewards": {
+        "experience": 50,
+        "gold": 25,
+        "items": [
+          "Thank You Gift"
+        ],
+        "relationship_changes": null
+      },
+      "prerequisites": null,
+      "level_requirement": 1,
+      "estimated_duration": "15-30 minutes",
+      "quest_type": "side",
+      "interconnected_quests": [
+        "main_quest_2_sir_dara",
+        "side_quest_2_sir_dara",
+        "side_quest_3_brother_brenna"
+      ],
+      "narrative_importance": "low"
+    },
+    {
+      "id": "side_quest_2_sir_dara",
+      "title": "Personal Favor",
+      "description": "Sir Dara needs help with a personal matter.",
+      "summary": "Help Sir Dara with personal favor",
+      "giver_npc": "Sir Dara",
+      "objectives": [
+        {
+          "id": "side_quest_2_obj_1",
+          "description": "Listen to the problem",
+          "type": "talk_to_npc",
+          "target": "Sir Dara",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "side_quest_2_obj_2",
+          "description": "Help solve it",
+          "type": "talk_to_npc",
+          "target": "Sir Dara",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "side_quest_2_obj_3",
+          "description": "Return for thanks",
+          "type": "talk_to_npc",
+          "target": "Sir Dara",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        }
+      ],
+      "rewards": {
+        "experience": 50,
+        "gold": 25,
+        "items": [
+          "Thank You Gift"
+        ],
+        "relationship_changes": null
+      },
+      "prerequisites": null,
+      "level_requirement": 1,
+      "estimated_duration": "15-30 minutes",
+      "quest_type": "side",
+      "interconnected_quests": [
+        "main_quest_1_lady_fiona",
+        "side_quest_1_lady_fiona",
+        "side_quest_5_brother_fiona"
+      ],
+      "narrative_importance": "low"
+    },
+    {
+      "id": "side_quest_3_brother_brenna",
+      "title": "Personal Favor",
+      "description": "Brother Brenna needs help with a personal matter.",
+      "summary": "Help Brother Brenna with personal favor",
+      "giver_npc": "Brother Brenna",
+      "objectives": [
+        {
+          "id": "side_quest_3_obj_1",
+          "description": "Listen to the problem",
+          "type": "talk_to_npc",
+          "target": "Brother Brenna",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "side_quest_3_obj_2",
+          "description": "Help solve it",
+          "type": "talk_to_npc",
+          "target": "Brother Brenna",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "side_quest_3_obj_3",
+          "description": "Return for thanks",
+          "type": "talk_to_npc",
+          "target": "Brother Brenna",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        }
+      ],
+      "rewards": {
+        "experience": 50,
+        "gold": 25,
+        "items": [
+          "Thank You Gift"
+        ],
+        "relationship_changes": null
+      },
+      "prerequisites": null,
+      "level_requirement": 1,
+      "estimated_duration": "15-30 minutes",
+      "quest_type": "side",
+      "interconnected_quests": [
+        "main_quest_1_lady_fiona",
+        "side_quest_1_lady_fiona"
+      ],
+      "narrative_importance": "low"
+    },
+    {
+      "id": "side_quest_4_sister_brenna",
+      "title": "Personal Favor",
+      "description": "Sister Brenna needs help with a personal matter.",
+      "summary": "Help Sister Brenna with personal favor",
+      "giver_npc": "Sister Brenna",
+      "objectives": [
+        {
+          "id": "side_quest_4_obj_1",
+          "description": "Listen to the problem",
+          "type": "talk_to_npc",
+          "target": "Sister Brenna",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "side_quest_4_obj_2",
+          "description": "Help solve it",
+          "type": "talk_to_npc",
+          "target": "Sister Brenna",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "side_quest_4_obj_3",
+          "description": "Return for thanks",
+          "type": "talk_to_npc",
+          "target": "Sister Brenna",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        }
+      ],
+      "rewards": {
+        "experience": 50,
+        "gold": 25,
+        "items": [
+          "Thank You Gift"
+        ],
+        "relationship_changes": null
+      },
+      "prerequisites": null,
+      "level_requirement": 1,
+      "estimated_duration": "15-30 minutes",
+      "quest_type": "side",
+      "interconnected_quests": [
+        "main_quest_1_lady_fiona",
+        "side_quest_1_lady_fiona",
+        "side_quest_5_brother_fiona"
+      ],
+      "narrative_importance": "low"
+    },
+    {
+      "id": "side_quest_5_brother_fiona",
+      "title": "Personal Favor",
+      "description": "Brother Fiona needs help with a personal matter.",
+      "summary": "Help Brother Fiona with personal favor",
+      "giver_npc": "Brother Fiona",
+      "objectives": [
+        {
+          "id": "side_quest_5_obj_1",
+          "description": "Listen to the problem",
+          "type": "talk_to_npc",
+          "target": "Brother Fiona",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "side_quest_5_obj_2",
+          "description": "Help solve it",
+          "type": "talk_to_npc",
+          "target": "Brother Fiona",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "side_quest_5_obj_3",
+          "description": "Return for thanks",
+          "type": "talk_to_npc",
+          "target": "Brother Fiona",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        }
+      ],
+      "rewards": {
+        "experience": 50,
+        "gold": 25,
+        "items": [
+          "Thank You Gift"
+        ],
+        "relationship_changes": null
+      },
+      "prerequisites": null,
+      "level_requirement": 1,
+      "estimated_duration": "15-30 minutes",
+      "quest_type": "side",
+      "interconnected_quests": [
+        "main_quest_2_sir_dara",
+        "side_quest_2_sir_dara",
+        "side_quest_4_sister_brenna"
+      ],
+      "narrative_importance": "low"
+    }
+  ],
+  "quest_dialogues": {
+    "main_quest_1_lady_fiona": {
+      "quest_id": "main_quest_1_lady_fiona",
+      "npc_name": "Lady Fiona",
+      "dialogue_nodes": {
+        "introduction": {
+          "text": "I have a problem that needs solving. Lady Fiona needs help resolving a crisis that threatens the village.",
+          "options": [
+            {
+              "text": "I'll help you.",
+              "next": "acceptance"
+            },
+            {
+              "text": "Tell me more.",
+              "next": "details"
+            },
+            {
+              "text": "I'm not interested.",
+              "next": "decline"
+            }
+          ]
+        },
+        "acceptance": {
+          "text": "Thank you! I knew I could count on you.",
+          "options": [
+            {
+              "text": "What exactly do I need to do?",
+              "next": "objectives"
+            },
+            {
+              "text": "I'll get started right away.",
+              "next": "farewell"
+            }
+          ]
+        },
+        "completion": {
+          "text": "Excellent work! Here's your reward: 100 XP and 50 gold.",
+          "options": [
+            {
+              "text": "Thank you.",
+              "next": "farewell"
+            },
+            {
+              "text": "Happy to help.",
+              "next": "farewell"
+            }
+          ]
+        }
+      }
+    },
+    "main_quest_2_sir_dara": {
+      "quest_id": "main_quest_2_sir_dara",
+      "npc_name": "Sir Dara",
+      "dialogue_nodes": {
+        "introduction": {
+          "text": "I have a problem that needs solving. Sir Dara has discovered something that could change everything.",
+          "options": [
+            {
+              "text": "I'll help you.",
+              "next": "acceptance"
+            },
+            {
+              "text": "Tell me more.",
+              "next": "details"
+            },
+            {
+              "text": "I'm not interested.",
+              "next": "decline"
+            }
+          ]
+        },
+        "acceptance": {
+          "text": "Thank you! I knew I could count on you.",
+          "options": [
+            {
+              "text": "What exactly do I need to do?",
+              "next": "objectives"
+            },
+            {
+              "text": "I'll get started right away.",
+              "next": "farewell"
+            }
+          ]
+        },
+        "completion": {
+          "text": "Excellent work! Here's your reward: 200 XP and 100 gold.",
+          "options": [
+            {
+              "text": "Thank you.",
+              "next": "farewell"
+            },
+            {
+              "text": "Happy to help.",
+              "next": "farewell"
+            }
+          ]
+        }
+      }
+    },
+    "side_quest_1_lady_fiona": {
+      "quest_id": "side_quest_1_lady_fiona",
+      "npc_name": "Lady Fiona",
+      "dialogue_nodes": {
+        "introduction": {
+          "text": "I have a problem that needs solving. Lady Fiona needs help with a personal matter.",
+          "options": [
+            {
+              "text": "I'll help you.",
+              "next": "acceptance"
+            },
+            {
+              "text": "Tell me more.",
+              "next": "details"
+            },
+            {
+              "text": "I'm not interested.",
+              "next": "decline"
+            }
+          ]
+        },
+        "acceptance": {
+          "text": "Thank you! I knew I could count on you.",
+          "options": [
+            {
+              "text": "What exactly do I need to do?",
+              "next": "objectives"
+            },
+            {
+              "text": "I'll get started right away.",
+              "next": "farewell"
+            }
+          ]
+        },
+        "completion": {
+          "text": "Excellent work! Here's your reward: 50 XP and 25 gold.",
+          "options": [
+            {
+              "text": "Thank you.",
+              "next": "farewell"
+            },
+            {
+              "text": "Happy to help.",
+              "next": "farewell"
+            }
+          ]
+        }
+      }
+    },
+    "side_quest_2_sir_dara": {
+      "quest_id": "side_quest_2_sir_dara",
+      "npc_name": "Sir Dara",
+      "dialogue_nodes": {
+        "introduction": {
+          "text": "I have a problem that needs solving. Sir Dara needs help with a personal matter.",
+          "options": [
+            {
+              "text": "I'll help you.",
+              "next": "acceptance"
+            },
+            {
+              "text": "Tell me more.",
+              "next": "details"
+            },
+            {
+              "text": "I'm not interested.",
+              "next": "decline"
+            }
+          ]
+        },
+        "acceptance": {
+          "text": "Thank you! I knew I could count on you.",
+          "options": [
+            {
+              "text": "What exactly do I need to do?",
+              "next": "objectives"
+            },
+            {
+              "text": "I'll get started right away.",
+              "next": "farewell"
+            }
+          ]
+        },
+        "completion": {
+          "text": "Excellent work! Here's your reward: 50 XP and 25 gold.",
+          "options": [
+            {
+              "text": "Thank you.",
+              "next": "farewell"
+            },
+            {
+              "text": "Happy to help.",
+              "next": "farewell"
+            }
+          ]
+        }
+      }
+    },
+    "side_quest_3_brother_brenna": {
+      "quest_id": "side_quest_3_brother_brenna",
+      "npc_name": "Brother Brenna",
+      "dialogue_nodes": {
+        "introduction": {
+          "text": "I have a problem that needs solving. Brother Brenna needs help with a personal matter.",
+          "options": [
+            {
+              "text": "I'll help you.",
+              "next": "acceptance"
+            },
+            {
+              "text": "Tell me more.",
+              "next": "details"
+            },
+            {
+              "text": "I'm not interested.",
+              "next": "decline"
+            }
+          ]
+        },
+        "acceptance": {
+          "text": "Thank you! I knew I could count on you.",
+          "options": [
+            {
+              "text": "What exactly do I need to do?",
+              "next": "objectives"
+            },
+            {
+              "text": "I'll get started right away.",
+              "next": "farewell"
+            }
+          ]
+        },
+        "completion": {
+          "text": "Excellent work! Here's your reward: 50 XP and 25 gold.",
+          "options": [
+            {
+              "text": "Thank you.",
+              "next": "farewell"
+            },
+            {
+              "text": "Happy to help.",
+              "next": "farewell"
+            }
+          ]
+        }
+      }
+    },
+    "side_quest_4_sister_brenna": {
+      "quest_id": "side_quest_4_sister_brenna",
+      "npc_name": "Sister Brenna",
+      "dialogue_nodes": {
+        "introduction": {
+          "text": "I have a problem that needs solving. Sister Brenna needs help with a personal matter.",
+          "options": [
+            {
+              "text": "I'll help you.",
+              "next": "acceptance"
+            },
+            {
+              "text": "Tell me more.",
+              "next": "details"
+            },
+            {
+              "text": "I'm not interested.",
+              "next": "decline"
+            }
+          ]
+        },
+        "acceptance": {
+          "text": "Thank you! I knew I could count on you.",
+          "options": [
+            {
+              "text": "What exactly do I need to do?",
+              "next": "objectives"
+            },
+            {
+              "text": "I'll get started right away.",
+              "next": "farewell"
+            }
+          ]
+        },
+        "completion": {
+          "text": "Excellent work! Here's your reward: 50 XP and 25 gold.",
+          "options": [
+            {
+              "text": "Thank you.",
+              "next": "farewell"
+            },
+            {
+              "text": "Happy to help.",
+              "next": "farewell"
+            }
+          ]
+        }
+      }
+    },
+    "side_quest_5_brother_fiona": {
+      "quest_id": "side_quest_5_brother_fiona",
+      "npc_name": "Brother Fiona",
+      "dialogue_nodes": {
+        "introduction": {
+          "text": "I have a problem that needs solving. Brother Fiona needs help with a personal matter.",
+          "options": [
+            {
+              "text": "I'll help you.",
+              "next": "acceptance"
+            },
+            {
+              "text": "Tell me more.",
+              "next": "details"
+            },
+            {
+              "text": "I'm not interested.",
+              "next": "decline"
+            }
+          ]
+        },
+        "acceptance": {
+          "text": "Thank you! I knew I could count on you.",
+          "options": [
+            {
+              "text": "What exactly do I need to do?",
+              "next": "objectives"
+            },
+            {
+              "text": "I'll get started right away.",
+              "next": "farewell"
+            }
+          ]
+        },
+        "completion": {
+          "text": "Excellent work! Here's your reward: 50 XP and 25 gold.",
+          "options": [
+            {
+              "text": "Thank you.",
+              "next": "farewell"
+            },
+            {
+              "text": "Happy to help.",
+              "next": "farewell"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "npc_involvement": {
+    "Lady Fiona": [
+      "main_quest_1_lady_fiona",
+      "side_quest_1_lady_fiona"
+    ],
+    "Sir Dara": [
+      "main_quest_2_sir_dara",
+      "side_quest_2_sir_dara"
+    ],
+    "Brother Brenna": [
+      "side_quest_3_brother_brenna"
+    ],
+    "Sister Brenna": [
+      "side_quest_4_sister_brenna"
+    ],
+    "Brother Fiona": [
+      "side_quest_5_brother_fiona"
+    ]
+  },
+  "generation_summary": {
+    "total_quests": 7,
+    "main_quests": 2,
+    "side_quests": 5,
+    "interconnected_count": 7,
+    "npcs_involved": 5,
+    "total_objectives": 23,
+    "estimated_playtime": "2 hours 34 minutes"
+  },
+  "theme": "spooky",
+  "quest_manifest": {
+    "generation_info": {
+      "timestamp": "2025-06-16T20:18:27.922598",
+      "theme": "spooky",
+      "world_size": [
+        40,
+        40
+      ],
+      "quest_count": 7,
+      "ai_enhanced": false
+    },
+    "quest_summary": {
+      "total_quests": 7,
+      "main_quests": 2,
+      "side_quests": 5,
+      "chain_quests": 0,
+      "interconnected_count": 7,
+      "total_objectives": 23,
+      "estimated_playtime": "2 hours 34 minutes"
+    },
+    "npc_involvement": {
+      "Lady Fiona": [
+        "main_quest_1_lady_fiona",
+        "side_quest_1_lady_fiona"
+      ],
+      "Sir Dara": [
+        "main_quest_2_sir_dara",
+        "side_quest_2_sir_dara"
+      ],
+      "Brother Brenna": [
+        "side_quest_3_brother_brenna"
+      ],
+      "Sister Brenna": [
+        "side_quest_4_sister_brenna"
+      ],
+      "Brother Fiona": [
+        "side_quest_5_brother_fiona"
+      ]
+    },
+    "quests": {
+      "main_quest_1_lady_fiona": {
+        "title": "The Village Crisis",
+        "giver_npc": "Lady Fiona",
+        "type": "main",
+        "level_requirement": 1,
+        "objectives_count": 4,
+        "rewards": {
+          "experience": 100,
+          "gold": 50,
+          "items": [
+            "Quest Item 1"
+          ]
+        },
+        "estimated_duration": "15-30 minutes",
+        "narrative_importance": "high",
+        "quest_file": "quest_definitions/main_quest_1_lady_fiona.json"
+      },
+      "main_quest_2_sir_dara": {
+        "title": "Ancient Secrets",
+        "giver_npc": "Sir Dara",
+        "type": "main",
+        "level_requirement": 2,
+        "objectives_count": 4,
+        "rewards": {
+          "experience": 200,
+          "gold": 100,
+          "items": []
+        },
+        "estimated_duration": "15-30 minutes",
+        "narrative_importance": "high",
+        "quest_file": "quest_definitions/main_quest_2_sir_dara.json"
+      },
+      "side_quest_1_lady_fiona": {
+        "title": "Personal Favor",
+        "giver_npc": "Lady Fiona",
+        "type": "side",
+        "level_requirement": 1,
+        "objectives_count": 3,
+        "rewards": {
+          "experience": 50,
+          "gold": 25,
+          "items": [
+            "Thank You Gift"
+          ]
+        },
+        "estimated_duration": "15-30 minutes",
+        "narrative_importance": "low",
+        "quest_file": "quest_definitions/side_quest_1_lady_fiona.json"
+      },
+      "side_quest_2_sir_dara": {
+        "title": "Personal Favor",
+        "giver_npc": "Sir Dara",
+        "type": "side",
+        "level_requirement": 1,
+        "objectives_count": 3,
+        "rewards": {
+          "experience": 50,
+          "gold": 25,
+          "items": [
+            "Thank You Gift"
+          ]
+        },
+        "estimated_duration": "15-30 minutes",
+        "narrative_importance": "low",
+        "quest_file": "quest_definitions/side_quest_2_sir_dara.json"
+      },
+      "side_quest_3_brother_brenna": {
+        "title": "Personal Favor",
+        "giver_npc": "Brother Brenna",
+        "type": "side",
+        "level_requirement": 1,
+        "objectives_count": 3,
+        "rewards": {
+          "experience": 50,
+          "gold": 25,
+          "items": [
+            "Thank You Gift"
+          ]
+        },
+        "estimated_duration": "15-30 minutes",
+        "narrative_importance": "low",
+        "quest_file": "quest_definitions/side_quest_3_brother_brenna.json"
+      },
+      "side_quest_4_sister_brenna": {
+        "title": "Personal Favor",
+        "giver_npc": "Sister Brenna",
+        "type": "side",
+        "level_requirement": 1,
+        "objectives_count": 3,
+        "rewards": {
+          "experience": 50,
+          "gold": 25,
+          "items": [
+            "Thank You Gift"
+          ]
+        },
+        "estimated_duration": "15-30 minutes",
+        "narrative_importance": "low",
+        "quest_file": "quest_definitions/side_quest_4_sister_brenna.json"
+      },
+      "side_quest_5_brother_fiona": {
+        "title": "Personal Favor",
+        "giver_npc": "Brother Fiona",
+        "type": "side",
+        "level_requirement": 1,
+        "objectives_count": 3,
+        "rewards": {
+          "experience": 50,
+          "gold": 25,
+          "items": [
+            "Thank You Gift"
+          ]
+        },
+        "estimated_duration": "15-30 minutes",
+        "narrative_importance": "low",
+        "quest_file": "quest_definitions/side_quest_5_brother_fiona.json"
+      }
+    },
+    "integration_info": {
+      "unity_compatible": true,
+      "dialogue_system_ready": true,
+      "objective_tracking_ready": true,
+      "reward_system_ready": true,
+      "character_integration": true
+    }
+  },
+  "output_directory": "generated_quests",
+  "status": "success"
+}

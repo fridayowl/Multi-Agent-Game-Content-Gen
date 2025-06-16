@@ -1,24 +1,24 @@
 {
-  "main_chain_main_quest_1_sir_edwin": {
+  "main_chain_main_quest_1_lady_fiona": {
     "type": "main",
     "quests": [
-      "main_quest_1_sir_edwin"
+      "main_quest_1_lady_fiona"
     ],
     "connected_quests": [
-      "main_quest_2_brother_cedric",
-      "side_quest_2_brother_cedric",
-      "side_quest_3_master_dara"
+      "main_quest_2_sir_dara",
+      "side_quest_2_sir_dara",
+      "side_quest_3_brother_brenna"
     ]
   },
-  "main_chain_main_quest_2_brother_cedric": {
+  "main_chain_main_quest_2_sir_dara": {
     "type": "main",
     "quests": [
-      "main_quest_2_brother_cedric"
+      "main_quest_2_sir_dara"
     ],
     "connected_quests": [
-      "main_quest_1_sir_edwin",
-      "side_quest_1_sir_edwin",
-      "side_quest_4_sister_aldric"
+      "main_quest_1_lady_fiona",
+      "side_quest_1_lady_fiona",
+      "side_quest_5_brother_fiona"
     ]
   }
 }

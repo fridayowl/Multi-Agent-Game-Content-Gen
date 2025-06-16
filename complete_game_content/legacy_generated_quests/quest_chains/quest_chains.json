@@ -1,0 +1,24 @@
+{
+  "main_chain_main_quest_1_sir_edwin": {
+    "type": "main",
+    "quests": [
+      "main_quest_1_sir_edwin"
+    ],
+    "connected_quests": [
+      "main_quest_2_brother_cedric",
+      "side_quest_2_brother_cedric",
+      "side_quest_3_master_dara"
+    ]
+  },
+  "main_chain_main_quest_2_brother_cedric": {
+    "type": "main",
+    "quests": [
+      "main_quest_2_brother_cedric"
+    ],
+    "connected_quests": [
+      "main_quest_1_sir_edwin",
+      "side_quest_1_sir_edwin",
+      "side_quest_4_sister_aldric"
+    ]
+  }
+}
