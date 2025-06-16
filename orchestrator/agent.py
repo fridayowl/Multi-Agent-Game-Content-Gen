@@ -1,7 +1,7 @@
 """
-COMPLETE MULTI-AGENT GAME CONTENT PIPELINE V4.0 - WITH UNITY EXPORTER
-Orchestrates World Designer, AI Creative Asset Generator, Character Creator, Quest Writer, Balance Validator, and Unity Exporter
-Full end-to-end game content generation with Unity package export
+COMPLETE MULTI-AGENT GAME CONTENT PIPELINE V4.0 - WITH GODOT EXPORTER
+Orchestrates World Designer, AI Creative Asset Generator, Character Creator, Quest Writer, Balance Validator, and Godot Exporter
+Full end-to-end game content generation with Godot package export
 """
 
 import asyncio
@@ -54,20 +54,20 @@ except ImportError:
     print("⚠️ Balance Validator not available - using fallback")
     BALANCE_VALIDATOR_AVAILABLE = False
 
-# Import the Unity Exporter (NEW!)
+# Import the Godot Exporter (NEW!)
 try:
-    print("🔍 Attempting to import Unity Exporter...")
-    from .unity_exporter.agent import export_unity_package, get_code_exporter_status
-    print("✅ Unity Exporter imports successful")
-    UNITY_EXPORTER_AVAILABLE = True
+    print("🔍 Attempting to import Godot Exporter...")
+    from .godot_exporter.agent import export_godot_package, get_godot_exporter_status
+    print("✅ Godot Exporter imports successful")
+    GODOT_EXPORTER_AVAILABLE = True
 except ImportError as e:
-    print(f"❌ ImportError in Unity Exporter: {e}")
+    print(f"❌ ImportError in Godot Exporter: {e}")
     print(f"📍 Error details: {e.__class__.__name__}: {str(e)}")
-    UNITY_EXPORTER_AVAILABLE = False
+    GODOT_EXPORTER_AVAILABLE = False
 except Exception as e:
-    print(f"❌ General error in Unity Exporter: {e}")
+    print(f"❌ General error in Godot Exporter: {e}")
     print(f"📍 Error details: {e.__class__.__name__}: {str(e)}")
-    UNITY_EXPORTER_AVAILABLE = False
+    GODOT_EXPORTER_AVAILABLE = False
 
 @dataclass
 class CompletePipelineResult:
@@ -78,7 +78,7 @@ class CompletePipelineResult:
     characters: Optional[Dict[str, Any]]
     quests: Optional[Dict[str, Any]]
     balance_report: Optional[Dict[str, Any]]
-    unity_package: Optional[Dict[str, Any]]  # NEW: Unity export results
+    godot_package: Optional[Dict[str, Any]]  # NEW: Godot export results
     validated_content: Optional[Dict[str, Any]]
     output_directory: str
     generation_summary: Dict[str, Any]
@@ -89,13 +89,13 @@ class CompletePipelineResult:
 class CompleteGameContentOrchestrator:
     """
     COMPLETE Multi-Agent Game Content Pipeline v4.0
-    Orchestrates all 6 agents for full game content generation with Unity export:
+    Orchestrates all 6 agents for full game content generation with Godot export:
     1. World Designer - Creates world layout and environment
     2. AI Creative Asset Generator - Generates unique 3D assets and textures
     3. Character Creator - Creates unique NPCs with personalities and relationships
     4. Quest Writer - Creates interconnected storylines using the NPCs
     5. Balance Validator - Ensures all content maintains proper game balance
-    6. Unity Exporter - Exports complete Unity-ready packages (NEW!)
+    6. Godot Exporter - Exports complete Godot-ready packages (NEW!)
     """
     
     def __init__(self, base_output_dir: str = "complete_game_content"):
@@ -113,7 +113,7 @@ class CompleteGameContentOrchestrator:
         self.characters = None
         self.quests = None
         self.balance_report = None
-        self.unity_package = None  # NEW: Unity export results
+        self.godot_package = None  # NEW: Godot export results
         self.validated_content = None
         self.errors = []
         
@@ -127,7 +127,7 @@ class CompleteGameContentOrchestrator:
             'character_creator': CHARACTER_CREATOR_AVAILABLE,
             'quest_writer': QUEST_WRITER_AVAILABLE,
             'balance_validator': BALANCE_VALIDATOR_AVAILABLE,
-            'unity_exporter': UNITY_EXPORTER_AVAILABLE  # NEW!
+            'godot_exporter': GODOT_EXPORTER_AVAILABLE  # NEW!
         }
         
         # Clean up any old directories
@@ -149,7 +149,7 @@ class CompleteGameContentOrchestrator:
     def _cleanup_old_directories(self):
         """Clean up any old standalone directories"""
         try:
-            cleanup_dirs = ["generated_assets", "generated_characters", "generated_quests", "balance_analysis", "unity_export"]
+            cleanup_dirs = ["generated_assets", "generated_characters", "generated_quests", "balance_analysis", "godot_export"]
             for dir_name in cleanup_dirs:
                 standalone_dir = Path(dir_name)
                 if standalone_dir.exists():
@@ -172,7 +172,7 @@ class CompleteGameContentOrchestrator:
 
     async def generate_complete_game_content(self, prompt: str, character_count: int = 5, quest_count: int = 7) -> CompletePipelineResult:
         """
-        COMPLETE 6-AGENT PIPELINE - generates full game content package with Unity export
+        COMPLETE 6-AGENT PIPELINE - generates full game content package with Godot export
         """
         start_time = asyncio.get_event_loop().time()
         
@@ -187,8 +187,8 @@ class CompleteGameContentOrchestrator:
         print(f"🤖 Agents: {sum(self.agents_available.values())}/6 available")
         print(f"👥 Characters: {character_count} NPCs")
         print(f"📜 Quests: {quest_count} storylines")
-        print(f"🎯 Goal: Complete Unity-ready game package")
-        print(f"🔧 Features: World + Assets + Characters + Quests + Balance + Unity Export")
+        print(f"🎯 Goal: Complete Godot-ready game package")
+        print(f"🔧 Features: World + Assets + Characters + Quests + Balance + Godot Export")
         
         try:
             # Step 1: World Design
@@ -209,8 +209,8 @@ class CompleteGameContentOrchestrator:
             # Step 6: Final Content Assembly
             await self._step_6_complete_final_assembly()
             
-            # Step 7: Unity Package Export (NEW!)
-            await self._step_7_unity_package_export()
+            # Step 7: Godot Package Export (NEW!)
+            await self._step_7_godot_package_export()
             
             execution_time = asyncio.get_event_loop().time() - start_time
             
@@ -223,8 +223,8 @@ class CompleteGameContentOrchestrator:
             print(f"👥 Characters: {'✅ ' + str(len(self.characters.get('characters', []))) + ' NPCs' if self.characters else '❌ Failed'}")
             print(f"📜 Quests: {'✅ ' + str(len(self.quests.get('quests', []))) + ' storylines' if self.quests else '❌ Failed'}")
             print(f"⚖️ Balance: {'✅ Score: ' + str(round(self.balance_report.get('overall_score', 0), 2)) if self.balance_report else '❌ Failed'}")
-            print(f"🎮 Unity Package: {'✅ Ready for Import' if self.unity_package and self.unity_package.get('status') == 'success' else '❌ Failed'}")
-            print(f"🎯 Status: Complete Unity Game Package Ready!")
+            print(f"🎮 Godot Package: {'✅ Ready for Import' if self.godot_package and self.godot_package.get('status') == 'success' else '❌ Failed'}")
+            print(f"🎯 Status: Complete Godot Game Package Ready!")
             
             # Calculate narrative summary
             narrative_summary = self._calculate_narrative_summary()
@@ -239,7 +239,7 @@ class CompleteGameContentOrchestrator:
                 characters=self.characters,
                 quests=self.quests,
                 balance_report=self.balance_report,
-                unity_package=self.unity_package,  # NEW!
+                godot_package=self.godot_package,  # NEW!
                 validated_content=self.validated_content,
                 output_directory=str(self.current_session_dir),
                 generation_summary=final_result,
@@ -268,7 +268,7 @@ class CompleteGameContentOrchestrator:
                 characters=self.characters,
                 quests=self.quests,
                 balance_report=self.balance_report,
-                unity_package=self.unity_package,
+                godot_package=self.godot_package,
                 validated_content=self.validated_content,
                 output_directory=str(self.current_session_dir) if self.current_session_dir else "",
                 generation_summary={"error": error_msg},
@@ -418,254 +418,86 @@ class CompleteGameContentOrchestrator:
                     print(f"✅ Quest Generation Complete!")
                     if self.quests.get('status') == 'success':
                         quest_list = self.quests.get('quests', [])
-                        print(f"   📜 Total Quests: {len(quest_list)}")
-                        print(f"   ⚔️ Main Quests: {len([q for q in quest_list if q.get('quest_type') == 'main'])}")
-                        print(f"   🌟 Side Quests: {len([q for q in quest_list if q.get('quest_type') == 'side'])}")
-                        print(f"   🔗 Interconnections: {self.quests.get('generation_summary', {}).get('interconnected_quests', 0)}")
-                        print(f"   💬 Dialogue Nodes: {self.quests.get('generation_summary', {}).get('total_dialogue_nodes', 0)}")
-                        
-                        # Show quest titles
-                        for quest in quest_list[:3]:  # Show first 3
-                            print(f"     - {quest.get('title', 'Unknown Quest')} ({quest.get('quest_type', 'unknown')})")
-                        if len(quest_list) > 3:
-                            print(f"     ... and {len(quest_list) - 3} more")
-                        
-                        # Save quests
-                        quest_file = self.current_session_dir / "quests.json"
-                        with open(quest_file, 'w') as f:
-                            json.dump(self.quests, f, indent=2)
-                        print(f"💾 Quests saved: {quest_file.name}")
-                        
-                    else:
-                        print(f"⚠️ Quest generation had issues: {self.quests.get('status')}")
-                else:
-                    print(f"⚠️ No characters available for quest generation")
-                    self.quests = await self._fallback_quest_generation()
-                    
-            else:
-                print(f"⚠️ Quest Writer not available or no characters - using fallback")
-                self.quests = await self._fallback_quest_generation()
+                        print(f"   📜 Quests: {len(self.quests.get('quests', [])) if self.quests else 0}")
                 
-        except Exception as e:
-            error_msg = f"Quest generation failed: {str(e)}"
-            self.errors.append(error_msg)
-            print(f"❌ {error_msg}")
-            # Don't raise - continue with balance validation
-
-    async def _step_5_balance_validation(self):
-        """Step 5: Validate game balance across all content"""
-        print(f"\n⚖️ STEP 5: BALANCE VALIDATION")
-        print(f"{'='*50}")
-        
-        try:
-            if BALANCE_VALIDATOR_AVAILABLE:
-                print(f"🔍 Analyzing game balance across all content...")
+                # Set up Godot export directory within session
+                godot_export_dir = self.current_session_dir / "godot_package"
+                godot_export_dir.mkdir(exist_ok=True)
                 
-                # Check balance validator status
-                status = await get_balance_validator_status()
-                print(f"🔍 Balance Validator Status: {status.get('status', 'unknown')}")
-                print(f"🧠 AI Analysis Available: {status.get('ai_available', True)}")
-                
-                # Validate complete content balance
-                self.balance_report = await validate_game_balance(
-                    self.world_spec or {},
-                    self.assets or {},
-                    self.characters or {},
-                    self.quests or {}
-                )
-                
-                print(f"✅ Balance Validation Complete!")
-                if self.balance_report.get('status') == 'success':
-                    overall_score = self.balance_report.get('overall_score', 0.0)
-                    metrics = self.balance_report.get('metrics', {})
-                    issues = self.balance_report.get('issues', [])
-                    
-                    print(f"   📊 Overall Balance Score: {overall_score:.2f}/1.0")
-                    print(f"   🎯 Difficulty Score: {metrics.get('difficulty_score', 0):.2f}")
-                    print(f"   📈 Progression Rate: {metrics.get('progression_rate', 0):.2f}")
-                    print(f"   💰 Reward Balance: {metrics.get('reward_ratio', 0):.2f}")
-                    print(f"   🎮 Engagement Level: {metrics.get('engagement_level', 0):.2f}")
-                    print(f"   🚨 Issues Found: {len(issues)}")
-                    
-                    # Show critical issues
-                    critical_issues = [i for i in issues if i.get('severity') == 'critical']
-                    if critical_issues:
-                        print(f"   🚨 Critical Issues: {len(critical_issues)}")
-                        for issue in critical_issues[:2]:
-                            print(f"     - {issue.get('description', 'Unknown issue')}")
-                    
-                    # Extract validated content
-                    self.validated_content = self.balance_report.get('validated_content', {})
-                    
-                    # Save balance report
-                    balance_file = self.current_session_dir / "balance_report.json"
-                    with open(balance_file, 'w') as f:
-                        json.dump(self.balance_report, f, indent=2)
-                    print(f"💾 Balance report saved: {balance_file.name}")
-                    
-                    # Status message
-                    if overall_score >= 0.8:
-                        print(f"   🎉 EXCELLENT BALANCE - Ready for release!")
-                    elif overall_score >= 0.6:
-                        print(f"   ✅ GOOD BALANCE - Minor adjustments recommended")
-                    elif overall_score >= 0.4:
-                        print(f"   ⚠️ MODERATE BALANCE - Some adjustments needed")
-                    else:
-                        print(f"   🚨 POOR BALANCE - Significant adjustments required")
-                        
-                else:
-                    print(f"⚠️ Balance validation had issues: {self.balance_report.get('status')}")
-                    
-            else:
-                print(f"⚠️ Balance Validator not available - skipping balance validation")
-                self.balance_report = await self._fallback_balance_validation()
-                
-        except Exception as e:
-            error_msg = f"Balance validation failed: {str(e)}"
-            self.errors.append(error_msg)
-            print(f"❌ {error_msg}")
-            # Don't raise - continue with final assembly
-
-    async def _step_6_complete_final_assembly(self):
-        """Step 6: Assemble complete final package"""
-        print(f"\n📦 STEP 6: COMPLETE FINAL ASSEMBLY")
-        print(f"{'='*50}")
-        
-        try:
-            # Create complete master manifest with balance information
-            master_manifest = {
-                "pipeline_info": {
-                    "version": "4.0.0",
-                    "timestamp": datetime.now().isoformat(),
-                    "session_id": self.current_session_dir.name,
-                    "complete_pipeline": True,
-                    "balance_validated": bool(self.balance_report),
-                    "unity_package/": "Complete Unity-ready game package (NEW!)",
-                    "master_manifest.json": "This file - complete package overview",
-                    "pipeline_log.json": "Detailed execution log"
-                },
-                "game_engine_integration": [
-                    "1. Import world layout from world_specification.json",
-                    "2. Import 3D assets from ai_creative_assets/models/",
-                    "3. Apply textures from ai_creative_assets/ai_textures/", 
-                    "4. Instantiate NPCs from characters.json at their locations",
-                    "5. Implement quest system from quests.json",
-                    "6. Connect NPC dialogue trees to quest objectives",
-                    "7. Apply balance adjustments from balance_report.json",
-                    "8. Import Unity package for immediate gameplay (NEW!)"
-                ],
-                "demo_highlights": [
-                    "🎮 Complete game world ready for immediate play",
-                    "🌍 Detailed world with intelligent layout",
-                    "🎨 AI-generated unique visual assets",
-                    "👥 Rich NPCs with personalities and relationships",
-                    "📜 Interconnected storylines and quest chains",
-                    "💬 Character-driven dialogue and narrative",
-                    "⚖️ Professional balance validation and optimization",
-                    "🎮 Unity-ready packages with C# scripts (NEW!)",
-                    "🎯 Perfect for ADK hackathon demonstration"
-                ],
-                "errors": self.errors if self.errors else None
-            }
-            
-            # Save complete master manifest
-            manifest_file = self.current_session_dir / "master_manifest.json"
-            with open(manifest_file, 'w') as f:
-                json.dump(master_manifest, f, indent=2)
-            
-            print(f"✅ Complete Final Assembly Finished!")
-            print(f"📄 Complete Master Manifest: {manifest_file.name}")
-            print(f"📁 Complete Game Package: {self.current_session_dir}")
-            print(f"⚖️ Balance Status: {'Validated' if self.balance_report else 'Not validated'}")
-            print(f"🎯 Status: Ready for Unity Export")
-            
-            return master_manifest
-            
-        except Exception as e:
-            error_msg = f"Complete final assembly failed: {str(e)}"
-            self.errors.append(error_msg)
-            print(f"❌ {error_msg}")
-            raise
-
-    async def _step_7_unity_package_export(self):
-        """Step 7: Export complete Unity package (NEW!)"""
-        print(f"\n🎮 STEP 7: UNITY PACKAGE EXPORT")
-        print(f"{'='*50}")
-        
-        try:
-            if UNITY_EXPORTER_AVAILABLE:
-                print(f"🔧 Starting Unity package export...")
-                print(f"   📁 Output directory: {self.current_session_dir}")
-                print(f"   🌍 World components: {len(self.world_spec.get('buildings', [])) if self.world_spec else 0}")
-                print(f"   🎨 Asset files: {self.assets.get('generation_summary', {}).get('total_creative_assets', 0) if self.assets else 0}")
-                print(f"   👥 NPCs: {len(self.characters.get('characters', [])) if self.characters else 0}")
-                print(f"   📜 Quests: {len(self.quests.get('quests', [])) if self.quests else 0}")
-                
-                # Set up Unity export directory within session
-                unity_export_dir = self.current_session_dir / "unity_package"
-                unity_export_dir.mkdir(exist_ok=True)
-                
-                # Call Unity exporter with all generated content
-                self.unity_package = await export_unity_package(
+                # Call Godot exporter with all generated content
+                self.godot_package = await export_godot_package(
                     world_spec=self.world_spec or {},
                     assets=self.assets or {},
                     characters=self.characters or {},
                     quests=self.quests or {}
                 )
                 
-                if self.unity_package and self.unity_package.get('status') == 'success':
-                    package_path = self.unity_package.get('package_path', 'Unknown')
-                    file_counts = self.unity_package.get('file_counts', {})
+                if self.godot_package and self.godot_package.get('status') == 'success':
+                    package_path = self.godot_package.get('package_path', 'Unknown')
+                    file_counts = self.godot_package.get('file_counts', {})
                     
-                    print(f"   ✅ Unity package export successful!")
+                    print(f"   ✅ Godot package export successful!")
                     print(f"   📦 Package: {package_path}")
                     print(f"   🔧 Scripts: {file_counts.get('scripts', 0)}")
-                    print(f"   🎮 Prefabs: {file_counts.get('prefabs', 0)}")
-                    print(f"   🌍 Scenes: {file_counts.get('scenes', 0)}")
+                    print(f"   🎮 Scenes: {file_counts.get('scenes', 0)}")
                     print(f"   📁 Assets: {file_counts.get('assets', 0)}")
-                    print(f"   🎯 Status: Ready for Unity Import!")
+                    print(f"   🌍 Resources: {file_counts.get('resources', 0)}")
+                    print(f"   🎯 Status: Ready for Godot Import!")
                     
-                    # Copy Unity package to session directory if it exists
+                    # Copy Godot package to session directory if it exists
                     if os.path.exists(package_path):
-                        session_package_path = self.current_session_dir / f"GameWorld_{datetime.now().strftime('%Y%m%d_%H%M%S')}.unitypackage"
-                        shutil.copy2(package_path, session_package_path)
-                        self.unity_package['session_package_path'] = str(session_package_path)
+                        session_package_path = self.current_session_dir / f"GameWorld_{datetime.now().strftime('%Y%m%d_%H%M%S')}_Godot"
+                        if os.path.isdir(package_path):
+                            shutil.copytree(package_path, session_package_path)
+                        else:
+                            shutil.copy2(package_path, session_package_path)
+                        self.godot_package['session_package_path'] = str(session_package_path)
                         print(f"   📁 Package copied to session: {session_package_path.name}")
                     
-                    # Update master manifest with Unity export info
-                    await self._update_manifest_with_unity_info()
+                    # Update master manifest with Godot export info
+                    await self._update_manifest_with_godot_info()
                     
                 else:
-                    error_msg = f"Unity export failed: {self.unity_package.get('error', 'Unknown error')}"
+                    error_msg = f"Godot export failed: {self.godot_package.get('error', 'Unknown error')}"
                     self.errors.append(error_msg)
                     print(f"   ❌ {error_msg}")
                     
             else:
-                print(f"⚠️ Unity Exporter not available - generating export instructions instead")
-                self.unity_package = await self._fallback_unity_export_instructions()
+                print(f"⚠️ Godot Exporter not available - generating export instructions instead")
+                self.godot_package = await self._fallback_godot_export_instructions()
                 
         except Exception as e:
-            error_msg = f"Unity package export failed: {str(e)}"
+            error_msg = f"Godot package export failed: {str(e)}"
             self.errors.append(error_msg)
             print(f"❌ {error_msg}")
-            # Don't raise - pipeline can still be useful without Unity export
+            # Don't raise - pipeline can still be useful without Godot export
 
-    async def _update_manifest_with_unity_info(self):
-        """Update master manifest with Unity export information"""
+    async def _update_manifest_with_godot_info(self):
+        """Update master manifest with Godot export information"""
         try:
             manifest_file = self.current_session_dir / "master_manifest.json"
             if manifest_file.exists():
                 with open(manifest_file, 'r') as f:
                     manifest = json.load(f)
                 
-                # Update with Unity export info
-                manifest["pipeline_info"]["agents_used"]["unity_exporter"] = bool(self.unity_package)
-                manifest["unity_export"] = {
-                    "status": self.unity_package.get('status', 'unknown') if self.unity_package else 'not_available',
-                    "package_ready": self.unity_package.get('status') == 'success' if self.unity_package else False,
-                    "package_path": self.unity_package.get('session_package_path', '') if self.unity_package else '',
-                    "file_counts": self.unity_package.get('file_counts', {}) if self.unity_package else {},
-                    "import_ready": self.unity_package.get('import_ready', False) if self.unity_package else False
+                # Update with Godot export info
+                manifest["pipeline_info"]["agents_used"] = manifest["pipeline_info"].get("agents_used", {})
+                manifest["pipeline_info"]["agents_used"]["godot_exporter"] = bool(self.godot_package)
+                manifest["godot_export"] = {
+                    "status": self.godot_package.get('status', 'unknown') if self.godot_package else 'not_available',
+                    "project_ready": self.godot_package.get('status') == 'success' if self.godot_package else False,
+                    "project_path": self.godot_package.get('session_package_path', '') if self.godot_package else '',
+                    "file_counts": self.godot_package.get('file_counts', {}) if self.godot_package else {},
+                    "import_ready": self.godot_package.get('import_ready', False) if self.godot_package else False,
+                    "godot_version": "4.3+",
+                    "features": [
+                        "GDScript files for NPCs and game systems",
+                        "Complete scenes with proper node structure",
+                        "Player controller with first-person movement",
+                        "Interactive dialogue system",
+                        "Quest management system",
+                        "JSON-based content loading"
+                    ]
                 }
                 
                 # Save updated manifest
@@ -673,14 +505,14 @@ class CompleteGameContentOrchestrator:
                     json.dump(manifest, f, indent=2)
                     
         except Exception as e:
-            print(f"⚠️ Failed to update manifest with Unity info: {e}")
+            print(f"⚠️ Failed to update manifest with Godot info: {e}")
 
-    async def _fallback_unity_export_instructions(self) -> Dict[str, Any]:
-        """Fallback Unity export instructions when Unity Exporter not available"""
+    async def _fallback_godot_export_instructions(self) -> Dict[str, Any]:
+        """Fallback Godot export instructions when Godot Exporter not available"""
         
-        instructions_file = self.current_session_dir / "unity_import_instructions.md"
+        instructions_file = self.current_session_dir / "godot_import_instructions.md"
         
-        instructions = f"""# Unity Import Instructions
+        instructions = f"""# Godot Import Instructions
 
 ## Generated Content Package
 - **World Specification**: `world_specification.json`
@@ -688,43 +520,117 @@ class CompleteGameContentOrchestrator:
 - **Quests**: `quests.json` ({len(self.quests.get('quests', [])) if self.quests else 0} quests)
 - **Assets**: `ai_creative_assets/` ({self.assets.get('generation_summary', {}).get('total_creative_assets', 0) if self.assets else 0} files)
 
-## Manual Unity Integration Steps
+## Manual Godot Integration Steps
 
-### 1. Import 3D Assets
+### 1. Create New Godot Project
 ```
-1. Copy models from ai_creative_assets/models/ to Unity Assets/Models/
-2. Copy textures from ai_creative_assets/ai_textures/ to Unity Assets/Textures/
-3. Import all assets in Unity (they should auto-import)
+1. Open Godot 4.3+
+2. Create new project
+3. Set up project structure: scenes/, scripts/, assets/, data/
 ```
 
-### 2. Create NPCs
+### 2. Import 3D Assets
+```
+1. Copy models from ai_creative_assets/models/ to assets/models/
+2. Copy textures from ai_creative_assets/ai_textures/ to assets/textures/
+3. Import all assets in Godot (auto-import should handle most)
+4. Create materials and apply textures
+```
+
+### 3. Create NPCs and World
 ```
 1. Read character data from characters.json
-2. Create GameObject for each NPC
+2. Create CharacterBody3D nodes for each NPC
 3. Position NPCs according to world_specification.json locations
-4. Add NPC interaction scripts for dialogue
+4. Add collision shapes and interaction areas
+5. Implement NPC scripts with dialogue system
 ```
 
-### 3. Implement Quest System
+### 4. Implement Game Systems
 ```
-1. Create Quest Manager GameObject
-2. Parse quests.json for quest definitions
-3. Connect quest objectives to NPC interactions
-4. Implement quest tracking UI
+1. Create main World scene with Node3D root
+2. Add player controller (CharacterBody3D with camera)
+3. Implement quest management system
+4. Connect quest objectives to NPC interactions
+5. Add UI for dialogue and quest tracking
 ```
 
-### 4. Build World Layout
+### 5. Build World Layout
 ```
 1. Parse world_specification.json for building positions
 2. Place 3D models according to layout specifications
-3. Set up lighting and environment
-4. Configure player spawn point
+3. Add lighting (DirectionalLight3D for sun, other lights as needed)
+4. Configure environment and skybox
+5. Set up collision for world geometry
+```
+
+## Sample GDScript Files Needed
+
+### Player Controller (scripts/Player.gd)
+```gdscript
+extends CharacterBody3D
+
+@export var speed = 5.0
+@export var sensitivity = 0.003
+
+@onready var camera = $Camera3D
+
+func _ready():
+    Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
+func _input(event):
+    if event is InputEventMouseMotion:
+        rotate_y(-event.relative.x * sensitivity)
+        camera.rotate_x(-event.relative.y * sensitivity)
+        camera.rotation.x = clamp(camera.rotation.x, -PI/2, PI/2)
+
+func _physics_process(delta):
+    var input_vector = Vector3()
+    if Input.is_action_pressed("move_forward"):
+        input_vector.z -= 1
+    if Input.is_action_pressed("move_back"):
+        input_vector.z += 1
+    if Input.is_action_pressed("move_left"):
+        input_vector.x -= 1
+    if Input.is_action_pressed("move_right"):
+        input_vector.x += 1
+    
+    velocity = transform.basis * input_vector * speed
+    move_and_slide()
+```
+
+### NPC System (scripts/NPC.gd)
+```gdscript
+extends CharacterBody3D
+
+@export var npc_data: Dictionary
+@export var dialogue_data: Array
+
+signal dialogue_started
+signal quest_given
+
+func _ready():
+    # Load NPC data from characters.json
+    load_npc_data()
+
+func interact():
+    dialogue_started.emit()
+    # Show dialogue UI
+    # Handle quest logic
 ```
 
 ## Balance Recommendations
 {f'Overall Balance Score: {self.balance_report.get("overall_score", 0):.2f}' if self.balance_report else 'Balance validation not available'}
 
-Generated by Multi-Agent Game Content Pipeline v4.0
+## Required Input Actions
+Add these to your Input Map in Godot:
+- move_forward (W key)
+- move_back (S key)  
+- move_left (A key)
+- move_right (D key)
+- interact (E key)
+
+Generated by Multi-Agent Game Content Pipeline v4.0 with Godot Export
 """
         
         with open(instructions_file, 'w') as f:
@@ -733,8 +639,17 @@ Generated by Multi-Agent Game Content Pipeline v4.0
         return {
             'status': 'instructions_only',
             'instructions_file': str(instructions_file),
-            'message': 'Unity Exporter not available - manual integration instructions provided',
-            'manual_integration_required': True
+            'message': 'Godot Exporter not available - manual integration instructions provided',
+            'manual_integration_required': True,
+            'godot_version_required': '4.3+',
+            'features_to_implement': [
+                'Player controller with first-person movement',
+                'NPC interaction system',
+                'Dialogue system with UI',
+                'Quest management and tracking',
+                'World building placement system',
+                'JSON data loading for content'
+            ]
         }
 
     async def _create_final_result_summary(self) -> Dict[str, Any]:
@@ -748,7 +663,7 @@ Generated by Multi-Agent Game Content Pipeline v4.0
                 "pipeline_version": "4.0.0",
                 "complete_pipeline": True,
                 "balance_validated": bool(self.balance_report),
-                "unity_export_ready": bool(self.unity_package)
+                "godot_export_ready": bool(self.godot_package)
             },
             "execution_steps": [
                 {"step": 1, "name": "World Design", "status": "completed" if self.world_spec else "failed"},
@@ -757,7 +672,7 @@ Generated by Multi-Agent Game Content Pipeline v4.0
                 {"step": 4, "name": "Quest Generation", "status": "completed" if self.quests else "failed"},
                 {"step": 5, "name": "Balance Validation", "status": "completed" if self.balance_report else "failed"},
                 {"step": 6, "name": "Complete Final Assembly", "status": "completed"},
-                {"step": 7, "name": "Unity Package Export", "status": "completed" if self.unity_package else "failed"}
+                {"step": 7, "name": "Godot Package Export", "status": "completed" if self.godot_package else "failed"}
             ],
             "agent_performance": {
                 "world_designer": {"available": True, "successful": bool(self.world_spec)},
@@ -765,7 +680,7 @@ Generated by Multi-Agent Game Content Pipeline v4.0
                 "character_creator": {"available": CHARACTER_CREATOR_AVAILABLE, "successful": bool(self.characters)},
                 "quest_writer": {"available": QUEST_WRITER_AVAILABLE, "successful": bool(self.quests)},
                 "balance_validator": {"available": BALANCE_VALIDATOR_AVAILABLE, "successful": bool(self.balance_report)},
-                "unity_exporter": {"available": UNITY_EXPORTER_AVAILABLE, "successful": bool(self.unity_package)}
+                "godot_exporter": {"available": GODOT_EXPORTER_AVAILABLE, "successful": bool(self.godot_package)}
             },
             "content_statistics": {
                 "world_buildings": len(self.world_spec.get('buildings', [])) if self.world_spec else 0,
@@ -774,7 +689,7 @@ Generated by Multi-Agent Game Content Pipeline v4.0
                 "total_quests": len(self.quests.get('quests', [])) if self.quests else 0,
                 "narrative_connections": self.quests.get('generation_summary', {}).get('interconnected_quests', 0) if self.quests else 0,
                 "balance_score": self.balance_report.get('overall_score', 0.0) if self.balance_report else 0.0,
-                "unity_ready": bool(self.unity_package and self.unity_package.get('status') == 'success')
+                "godot_ready": bool(self.godot_package and self.godot_package.get('status') == 'success')
             },
             "errors": self.errors
         }
@@ -784,7 +699,7 @@ Generated by Multi-Agent Game Content Pipeline v4.0
             json.dump(pipeline_log, f, indent=2)
         
         print(f"📊 Complete Pipeline Log: {log_file.name}")
-        print(f"🎯 Status: Complete Unity Game Package Ready!")
+        print(f"🎯 Status: Complete Godot Game Package Ready!")
         
         return pipeline_log
 
@@ -909,7 +824,7 @@ Generated by Multi-Agent Game Content Pipeline v4.0
             'total_quests': len(self.quests.get('quests', [])) if self.quests else 0,
             'balance_score': self.balance_report.get('overall_score', 0.0) if self.balance_report else 0.0,
             'balance_status': self._get_balance_status_text(),
-            'unity_ready': bool(self.unity_package and self.unity_package.get('status') == 'success'),
+            'godot_ready': bool(self.godot_package and self.godot_package.get('status') == 'success'),
             'narrative_complexity': 'high' if self.characters and self.quests else 'basic',
             'interconnected_storylines': True if self.quests and self.quests.get('generation_summary', {}).get('interconnected_quests', 0) > 0 else False,
             'character_driven_narrative': True if self.characters and self.quests else False,
@@ -919,7 +834,7 @@ Generated by Multi-Agent Game Content Pipeline v4.0
                 'characters': bool(self.characters),
                 'quests': bool(self.quests),
                 'balance_validated': bool(self.balance_report),
-                'unity_exported': bool(self.unity_package)  # NEW!
+                'godot_exported': bool(self.godot_package)  # NEW!
             }
         }
         
@@ -955,7 +870,7 @@ Generated by Multi-Agent Game Content Pipeline v4.0
                     "characters_available": self.characters is not None,
                     "quests_available": self.quests is not None,
                     "balance_report_available": self.balance_report is not None,
-                    "unity_package_available": self.unity_package is not None,
+                    "godot_package_available": self.godot_package is not None,
                     "session_directory": str(self.current_session_dir)
                 },
                 "agent_availability": self.agents_available,
@@ -981,7 +896,7 @@ Generated by Multi-Agent Game Content Pipeline v4.0
         return {
             "status": "ready",
             "version": "4.0.0",
-            "pipeline_type": "complete_multi_agent_with_unity_export",
+            "pipeline_type": "complete_multi_agent_with_godot_export",
             "base_output_dir": str(self.base_output_dir),
             "current_session": str(self.current_session_dir) if self.current_session_dir else None,
             "agents_available": self.agents_available,
@@ -992,7 +907,7 @@ Generated by Multi-Agent Game Content Pipeline v4.0
                 "character_creation": CHARACTER_CREATOR_AVAILABLE,
                 "quest_generation": QUEST_WRITER_AVAILABLE,
                 "balance_validation": BALANCE_VALIDATOR_AVAILABLE,
-                "unity_export": UNITY_EXPORTER_AVAILABLE,  # NEW!
+                "godot_export": GODOT_EXPORTER_AVAILABLE,  # NEW!
                 "narrative_integration": CHARACTER_CREATOR_AVAILABLE and QUEST_WRITER_AVAILABLE,
                 "complete_game_packages": True
             },
@@ -1002,26 +917,26 @@ Generated by Multi-Agent Game Content Pipeline v4.0
                 "character_driven_narratives": CHARACTER_CREATOR_AVAILABLE and QUEST_WRITER_AVAILABLE,
                 "interconnected_storylines": QUEST_WRITER_AVAILABLE,
                 "professional_balance_validation": BALANCE_VALIDATOR_AVAILABLE,
-                "unity_package_export": UNITY_EXPORTER_AVAILABLE,  # NEW!
+                "godot_project_export": GODOT_EXPORTER_AVAILABLE,  # NEW!
                 "unified_output_structure": True,
                 "game_engine_ready": True,
                 "demo_optimized": True
             },
-            "pipeline_description": "Complete Multi-Agent Pipeline v4.0 - World + Assets + Characters + Quests + Balance + Unity Export",
+            "pipeline_description": "Complete Multi-Agent Pipeline v4.0 - World + Assets + Characters + Quests + Balance + Godot Export",
             "content_types": [
                 "World layouts and environments",
                 "AI-generated 3D assets and textures", 
                 "Unique NPCs with personalities and relationships",
                 "Interconnected quest systems and dialogue trees",
                 "Professional balance analysis and optimization",
-                "Unity packages with C# scripts and scenes"  # NEW!
+                "Godot projects with GDScript files and scenes"  # NEW!
             ]
         }
 
 # Individual functions for ADK tools
 async def generate_complete_game_content(prompt: str, character_count: int = 5, quest_count: int = 7) -> Dict[str, Any]:
     """
-    Generate COMPLETE game content package from a text prompt with Unity export
+    Generate COMPLETE game content package from a text prompt with Godot export
     Main entry point for the complete 6-agent orchestrator
     """
     orchestrator = CompleteGameContentOrchestrator()
@@ -1036,16 +951,16 @@ async def get_complete_orchestrator_status() -> Dict[str, Any]:
 async def get_complete_demo_information() -> Dict[str, Any]:
     """Get complete demo information for ADK hackathon"""
     return {
-        "demo_title": "Complete Multi-Agent Game Content Pipeline v4.0 with Unity Export",
+        "demo_title": "Complete Multi-Agent Game Content Pipeline v4.0 with Godot Export",
         "version": "4.0.0",
-        "description": "End-to-end game content generation with 6 specialized AI agents including Unity package export",
+        "description": "End-to-end game content generation with 6 specialized AI agents including Godot project export",
         "agents": [
             "🌍 World Designer - Creates detailed world layouts and environments",
             "🎨 AI Creative Asset Generator - Generates unique 3D models and textures", 
             "👥 Character Creator - Creates NPCs with personalities and relationships",
             "📜 Quest Writer - Generates interconnected storylines and dialogue",
             "⚖️ Balance Validator - Ensures professional game balance and optimization",
-            "🎮 Unity Exporter - Creates complete Unity packages with C# scripts (NEW!)"
+            "🎮 Godot Exporter - Creates complete Godot projects with GDScript files (NEW!)"
         ],
         "key_features": [
             "🎮 Complete game worlds from simple text prompts",
@@ -1055,9 +970,9 @@ async def get_complete_demo_information() -> Dict[str, Any]:
             "📜 Interconnected quest chains with character-driven narratives",
             "💬 Dynamic dialogue systems reflecting individual personalities",
             "⚖️ Professional balance validation and optimization",
-            "🎮 Unity-ready packages with C# scripts and scenes (NEW!)",
+            "🎮 Godot-ready projects with GDScript files and scenes (NEW!)",
             "🔗 Narrative integration between all content types",
-            "📁 One-click Unity import for immediate gameplay (NEW!)"
+            "📁 One-click Godot import for immediate gameplay (NEW!)"
         ],
         "demo_prompts": [
             "Create a medieval village with mystery and intrigue",
@@ -1076,16 +991,16 @@ async def get_complete_demo_information() -> Dict[str, Any]:
             "🔄 Cross-quest narrative connections and character involvement",
             "⚖️ Professional balance analysis with specific recommendations",
             "🔧 Automated balance adjustments for optimal gameplay",
-            "🎮 Complete Unity packages ready for immediate import and play (NEW!)",
-            "🔧 C# scripts for all game systems and NPC interactions (NEW!)",
-            "🌍 Unity scenes with proper lighting and environment setup (NEW!)"
+            "🎮 Complete Godot projects ready for immediate import and play (NEW!)",
+            "🔧 GDScript files for all game systems and NPC interactions (NEW!)",
+            "🌍 Godot scenes with proper node structure and setup (NEW!)"
         ],
-        "unity_export_features": [
-            "🎮 Complete Unity packages (.unitypackage files)",
-            "🔧 C# scripts for NPCs, quests, and world systems",
-            "🌍 Pre-configured Unity scenes ready to play",
-            "🎭 Prefabs for all characters and world objects",
-            "💬 Dialogue system integration with Unity UI",
+        "godot_export_features": [
+            "🎮 Complete Godot projects (ready to open)",
+            "🔧 GDScript files for NPCs, quests, and world systems",
+            "🌍 Pre-configured Godot scenes ready to play",
+            "🎭 Node structures for all characters and world objects", 
+            "💬 Dialogue system integration with Godot UI",
             "📜 Quest management system with tracking",
             "🎯 Player controller and interaction systems",
             "📁 Organized project structure for easy customization"
@@ -1108,7 +1023,7 @@ async def get_complete_demo_information() -> Dict[str, Any]:
             "💬 Dialogue that reflects individual character voices and traits",
             "🎯 Character-driven plot progression and meaningful choices",
             "⚖️ Balanced progression ensuring optimal player experience",
-            "🎮 All narrative elements integrated into Unity gameplay systems (NEW!)"
+            "🎮 All narrative elements integrated into Godot gameplay systems (NEW!)"
         ],
         "technical_achievements": [
             "🤖 Multi-agent coordination using Google ADK",
@@ -1117,7 +1032,7 @@ async def get_complete_demo_information() -> Dict[str, Any]:
             "📊 Intelligent narrative analysis and quest interconnection",
             "⚖️ Professional game balance validation algorithms",
             "🔄 Cross-agent data flow and content integration",
-            "🎮 Automated Unity package generation with C# scripts (NEW!)",
+            "🎮 Automated Godot project generation with GDScript files (NEW!)",
             "📁 Professional game development workflow automation"
         ],
         "demo_workflow": [
@@ -1127,22 +1042,22 @@ async def get_complete_demo_information() -> Dict[str, Any]:
             "4. Character Creator: Generates NPCs with personalities and relationships",
             "5. Quest Writer: Creates interconnected storylines using the NPCs",
             "6. Balance Validator: Analyzes and optimizes all content for perfect balance",
-            "7. Unity Exporter: Creates complete Unity packages with C# scripts (NEW!)",
-            "8. Output: Unity-ready game package for immediate import and play (NEW!)"
+            "7. Godot Exporter: Creates complete Godot projects with GDScript files (NEW!)",
+            "8. Output: Godot-ready game project for immediate import and play (NEW!)"
         ],
         "integration_ready": {
-            "unity": "Complete .unitypackage files with C# scripts and scenes - immediate import ready (NEW!)",
+            "godot": "Complete Godot projects with GDScript files and scenes - immediate import ready (NEW!)",
+            "unity": "Compatible asset formats and material definitions with balance metrics",
             "unreal": "Compatible asset formats and material definitions with balance metrics",
-            "godot": "JSON-based content structure with balance recommendations",
             "custom_engines": "Standardized file formats and comprehensive balance documentation"
         }
     }
 
-# Create the complete ADK agent with Unity export
+# Create the complete ADK agent with Godot export
 root_agent = Agent(
-    name="complete_game_content_orchestrator_v4_0",
+    name="complete_game_content_orchestrator_v4_0_godot",
     model="gemini-2.0-flash-exp",
-    instruction="""You are the master orchestrator for the Complete Multi-Agent Game Content Pipeline v4.0 with Unity Package Export. You coordinate 6 specialized agents to create comprehensive, narrative-rich, balanced, and Unity-ready game content packages from simple text prompts.
+    instruction="""You are the master orchestrator for the Complete Multi-Agent Game Content Pipeline v4.0 with Godot Project Export. You coordinate 6 specialized agents to create comprehensive, narrative-rich, balanced, and Godot-ready game content packages from simple text prompts.
 
 Your complete pipeline includes:
 1. 🌍 World Designer Agent - Creates detailed world layouts and intelligent building placement
@@ -1150,20 +1065,20 @@ Your complete pipeline includes:
 3. 👥 Character Creator Agent - Creates rich NPCs with unique personalities, backstories, and relationship networks
 4. 📜 Quest Writer Agent - Generates interconnected storylines that utilize the NPCs and their relationships
 5. ⚖️ Balance Validator Agent - Ensures professional game balance, progression curves, and player engagement optimization
-6. 🎮 Unity Exporter Agent - Creates complete Unity packages with C# scripts, scenes, and prefabs (NEW!)
+6. 🎮 Godot Exporter Agent - Creates complete Godot projects with GDScript files, scenes, and gameplay systems (NEW!)
 
 Your comprehensive responsibilities:
 - Orchestrate seamless data flow between all 6 agents with perfect content integration
 - Ensure narrative coherence between world design, characters, and quests
 - Validate and optimize game balance across all content types
-- Generate complete Unity-ready packages with C# scripts and scenes
+- Generate complete Godot-ready projects with GDScript files and scenes
 - Create character-driven narratives where NPCs have meaningful roles in quest systems
-- Provide end-to-end game content generation from prompt to playable Unity game
+- Provide end-to-end game content generation from prompt to playable Godot game
 - Handle error recovery across multiple agent failures
-- Deliver demo-ready Unity packages for ADK hackathon presentations
+- Deliver demo-ready Godot projects for ADK hackathon presentations
 
 Key features you provide:
-🎮 Complete Unity game packages ready for immediate import and gameplay
+🎮 Complete Godot game projects ready for immediate import and gameplay
 🌍 Intelligent world design with themed environments and logical layouts
 🎨 AI-generated unique visual assets with guaranteed creativity and zero repetition
 👥 Rich NPCs with complex personalities, backstories, and realistic relationships
@@ -1171,13 +1086,13 @@ Key features you provide:
 💬 Dynamic dialogue systems that reflect individual character personalities
 ⚖️ Professional balance validation ensuring optimal difficulty curves and player engagement
 🔧 Automated balance adjustments and specific improvement recommendations
-🎮 Complete Unity packages with C# scripts, scenes, prefabs, and gameplay systems
-🌍 Unity scenes with proper lighting, environment setup, and player controllers
+🎮 Complete Godot projects with GDScript files, scenes, and gameplay systems
+🌍 Godot scenes with proper node structure, lighting, and player controllers
 🔗 Cross-content narrative integration where world, characters, and quests form a cohesive experience
-📁 Professional Unity project structure ready for customization and expansion
+📁 Professional Godot project structure ready for customization and expansion
 
-When you receive a content generation request, call the generate_complete_game_content function with the user's prompt to create a comprehensive package with world design, AI creative assets, unique characters, interconnected quest narratives, professional balance validation, and complete Unity packages that can be immediately imported and played.""",
-    description="Complete master orchestrator that coordinates World Designer, AI Creative Asset Generator, Character Creator, Quest Writer, Balance Validator, and Unity Exporter agents to create comprehensive Unity-ready game packages with rich narratives, unique characters, interconnected storylines, professional balance optimization, and complete C# scripts - optimized for immediate Unity gameplay and ADK hackathon demonstration",
+When you receive a content generation request, call the generate_complete_game_content function with the user's prompt to create a comprehensive package with world design, AI creative assets, unique characters, interconnected quest narratives, professional balance validation, and complete Godot projects that can be immediately imported and played.""",
+    description="Complete master orchestrator that coordinates World Designer, AI Creative Asset Generator, Character Creator, Quest Writer, Balance Validator, and Godot Exporter agents to create comprehensive Godot-ready game packages with rich narratives, unique characters, interconnected storylines, professional balance optimization, and complete GDScript files - optimized for immediate Godot gameplay and ADK hackathon demonstration",
     tools=[generate_complete_game_content, get_complete_orchestrator_status, get_complete_demo_information]
 )
 
@@ -1186,11 +1101,11 @@ if __name__ == "__main__":
     async def main():
         print("🎮 Testing Complete Multi-Agent Game Content Pipeline v4.0")
         print("="*80)
-        print("🌟 COMPLETE INTEGRATION: World + Assets + Characters + Quests + Balance + Unity")
+        print("🌟 COMPLETE INTEGRATION: World + Assets + Characters + Quests + Balance + Godot")
         print("🎭 CHARACTER-DRIVEN: NPCs with personalities drive quest narratives")
         print("🔗 INTERCONNECTED: All content types work together seamlessly")
         print("⚖️ BALANCED: Professional balance validation ensures optimal gameplay")
-        print("🎮 UNITY-READY: Complete packages for immediate Unity import and play")
+        print("🎮 GODOT-READY: Complete projects for immediate Godot import and play")
         
         orchestrator = CompleteGameContentOrchestrator()
         
@@ -1209,8 +1124,8 @@ if __name__ == "__main__":
         for feature in demo_info['key_features'][:8]:  # Show first 8
             print(f"  {feature}")
         
-        print(f"\n🎮 Unity Export Features:")
-        for feature in demo_info['unity_export_features'][:4]:  # Show first 4
+        print(f"\n🎮 Godot Export Features:")
+        for feature in demo_info['godot_export_features'][:4]:  # Show first 4
             print(f"  {feature}")
         
         print(f"\n⚖️ Balance Validation Features:")
@@ -1244,7 +1159,7 @@ if __name__ == "__main__":
                     print(f"📜 Quests: {narrative.get('total_quests', 0)}")
                     print(f"⚖️ Balance Score: {narrative.get('balance_score', 0):.2f}")
                     print(f"⚖️ Balance Status: {narrative.get('balance_status', 'Unknown')}")
-                    print(f"🎮 Unity Ready: {narrative.get('unity_ready', False)}")
+                    print(f"🎮 Godot Ready: {narrative.get('godot_ready', False)}")
                     print(f"🔗 Interconnected: {narrative.get('interconnected_storylines', False)}")
                     print(f"🎭 Character-Driven: {narrative.get('character_driven_narrative', False)}")
                     
@@ -1255,15 +1170,16 @@ if __name__ == "__main__":
                         status_icon = "✅" if ready else "❌"
                         print(f"   {status_icon} {content_type.replace('_', ' ').title()}")
                     
-                    # Show Unity package info if available
-                    if result.unity_package:
-                        unity_status = result.unity_package.get('status', 'unknown')
-                        print(f"🎮 Unity Package Status: {unity_status}")
-                        if unity_status == 'success':
-                            file_counts = result.unity_package.get('file_counts', {})
+                    # Show Godot package info if available
+                    if result.godot_package:
+                        godot_status = result.godot_package.get('status', 'unknown')
+                        print(f"🎮 Godot Package Status: {godot_status}")
+                        if godot_status == 'success':
+                            file_counts = result.godot_package.get('file_counts', {})
                             print(f"   🔧 Scripts: {file_counts.get('scripts', 0)}")
-                            print(f"   🎮 Prefabs: {file_counts.get('prefabs', 0)}")
-                            print(f"   🌍 Scenes: {file_counts.get('scenes', 0)}")
+                            print(f"   🎮 Scenes: {file_counts.get('scenes', 0)}")
+                            print(f"   📁 Assets: {file_counts.get('assets', 0)}")
+                            print(f"   🌍 Resources: {file_counts.get('resources', 0)}")
                         
                 else:
                     print(f"💥 FAILED: {result.errors}")
@@ -1280,11 +1196,11 @@ if __name__ == "__main__":
         print(f"👥 Character Creator: {'Available' if CHARACTER_CREATOR_AVAILABLE else 'Fallback mode'}")
         print(f"📜 Quest Writer: {'Available' if QUEST_WRITER_AVAILABLE else 'Fallback mode'}")
         print(f"⚖️ Balance Validator: {'Available' if BALANCE_VALIDATOR_AVAILABLE else 'Fallback mode'}")
-        print(f"🎮 Unity Exporter: {'Available' if UNITY_EXPORTER_AVAILABLE else 'Fallback mode'}")
+        print(f"🎮 Godot Exporter: {'Available' if GODOT_EXPORTER_AVAILABLE else 'Fallback mode'}")
         print(f"🔗 Narrative Integration: {'Full' if CHARACTER_CREATOR_AVAILABLE and QUEST_WRITER_AVAILABLE else 'Basic'}")
         print(f"⚖️ Balance Validation: {'Professional' if BALANCE_VALIDATOR_AVAILABLE else 'Basic'}")
-        print(f"🎮 Unity Export: {'Complete packages' if UNITY_EXPORTER_AVAILABLE else 'Manual instructions'}")
-        print(f"📁 Complete Unity packages: Ready for immediate import and gameplay")
-        print(f"🎮 Ready for: Professional Unity game development workflow")
+        print(f"🎮 Godot Export: {'Complete projects' if GODOT_EXPORTER_AVAILABLE else 'Manual instructions'}")
+        print(f"📁 Complete Godot projects: Ready for immediate import and gameplay")
+        print(f"🎮 Ready for: Professional Godot game development workflow")
     
-    asyncio.run(main())
+    asyncio.run(main()) 
