@@ -1,0 +1,93 @@
+{
+  "id": "sister_dara_12b5341c_4",
+  "name": "Sister Dara",
+  "title": "The Fierce Apprentice",
+  "description": "A 22-year-old Apprentice with a fierce nature.",
+  "backstory": "Sister Dara has worked as a Apprentice for many years.",
+  "personality": {
+    "primary_trait": "Fierce",
+    "secondary_trait": "Optimistic",
+    "motivation": "To protect others",
+    "fear": "Being alone",
+    "quirk": "Collects unusual items",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 6,
+    "health": 78,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 13,
+    "wisdom": 11,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Brother Cedric",
+      "relationship_type": "Ally",
+      "relationship_strength": 7,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Cedric 121",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 6,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "sister dara_greeting",
+      "text": "Greetings! I'm Sister Dara, the local Apprentice.",
+      "speaker": "Sister Dara",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sister dara_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sister dara_role",
+      "text": "As a Apprentice, I to protect others.",
+      "speaker": "Sister Dara",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "tavern",
+  "role": "Apprentice",
+  "quest_involvement": [],
+  "age": 22,
+  "appearance": "A 22-year-old Apprentice with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "0f4d1dee-e595-466e-b807-2e4a510ea8d9"
+}

@@ -1,0 +1,461 @@
+{
+  "status": "success",
+  "character_count": 5,
+  "output_directory": "generated_characters",
+  "manifest_file": "generated_characters/character_manifest.json",
+  "ai_enhanced": false,
+  "fallback_generation": true,
+  "characters": [
+    {
+      "id": "brother_cedric_12b5341c_0",
+      "name": "Brother Cedric",
+      "title": "The Compassionate Servant",
+      "description": "A 46-year-old Servant with a compassionate nature.",
+      "backstory": "Brother Cedric has worked as a Servant for many years.",
+      "personality": {
+        "primary_trait": "Compassionate",
+        "secondary_trait": "Energetic",
+        "motivation": "To protect others",
+        "fear": "Being misunderstood",
+        "quirk": "Collects unusual items",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 9,
+        "health": 87,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Master Aldric",
+          "relationship_type": "Colleague",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sister Dara",
+          "relationship_type": "Ally",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "brother cedric_greeting",
+          "text": "Greetings! I'm Brother Cedric, the local Servant.",
+          "speaker": "Brother Cedric",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "brother cedric_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "brother cedric_role",
+          "text": "As a Servant, I to protect others.",
+          "speaker": "Brother Cedric",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "market",
+      "role": "Servant",
+      "quest_involvement": [],
+      "age": 46,
+      "appearance": "A 46-year-old Servant with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "0e183d5d-e5a8-4f40-98de-953718c64ab9"
+    },
+    {
+      "id": "cedric_121_12b5341c_1",
+      "name": "Cedric 121",
+      "title": "The Jovial Family Head",
+      "description": "A 34-year-old Family Head with a jovial nature.",
+      "backstory": "Cedric 121 has worked as a Family Head for many years.",
+      "personality": {
+        "primary_trait": "Jovial",
+        "secondary_trait": "Ambitious",
+        "motivation": "To discover truth",
+        "fear": "The unknown",
+        "quirk": "Speaks to animals",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 1,
+        "health": 63,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Master Hilda",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sister Dara",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 6,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "cedric 121_greeting",
+          "text": "Greetings! I'm Cedric 121, the local Family Head.",
+          "speaker": "Cedric 121",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "cedric 121_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "cedric 121_role",
+          "text": "As a Family Head, I to discover truth.",
+          "speaker": "Cedric 121",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "house",
+      "role": "Family Head",
+      "quest_involvement": [],
+      "age": 34,
+      "appearance": "A 34-year-old Family Head with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "9488d563-5e0e-4d90-838c-3940e9c9f558"
+    },
+    {
+      "id": "master_aldric_12b5341c_2",
+      "name": "Master Aldric",
+      "title": "The Clever Resident",
+      "description": "A 34-year-old Resident with a clever nature.",
+      "backstory": "Master Aldric has worked as a Resident for many years.",
+      "personality": {
+        "primary_trait": "Clever",
+        "secondary_trait": "Mysterious",
+        "motivation": "To build something lasting",
+        "fear": "The unknown",
+        "quirk": "Always hums while working",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 1,
+        "health": 63,
+        "strength": 12,
+        "intelligence": 14,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Brother Cedric",
+          "relationship_type": "Colleague",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "master aldric_greeting",
+          "text": "Greetings! I'm Master Aldric, the local Resident.",
+          "speaker": "Master Aldric",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "master aldric_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "master aldric_role",
+          "text": "As a Resident, I to build something lasting.",
+          "speaker": "Master Aldric",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "house",
+      "role": "Resident",
+      "quest_involvement": [],
+      "age": 34,
+      "appearance": "A 34-year-old Resident with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "8eb39b6a-6a54-46c5-bd6b-4e8e45183053"
+    },
+    {
+      "id": "master_hilda_12b5341c_3",
+      "name": "Master Hilda",
+      "title": "The Brave Noble",
+      "description": "A 49-year-old Noble with a brave nature.",
+      "backstory": "Master Hilda has worked as a Noble for many years.",
+      "personality": {
+        "primary_trait": "Brave",
+        "secondary_trait": "Ambitious",
+        "motivation": "To protect others",
+        "fear": "The unknown",
+        "quirk": "Never sits still",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 4,
+        "health": 72,
+        "strength": 14,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Cedric 121",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "master hilda_greeting",
+          "text": "Greetings! I'm Master Hilda, the local Noble.",
+          "speaker": "Master Hilda",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "master hilda_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "master hilda_role",
+          "text": "As a Noble, I to protect others.",
+          "speaker": "Master Hilda",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "house",
+      "role": "Noble",
+      "quest_involvement": [],
+      "age": 49,
+      "appearance": "A 49-year-old Noble with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "da46b4da-abca-49ea-b1ca-46eb3b819524"
+    },
+    {
+      "id": "sister_dara_12b5341c_4",
+      "name": "Sister Dara",
+      "title": "The Fierce Apprentice",
+      "description": "A 22-year-old Apprentice with a fierce nature.",
+      "backstory": "Sister Dara has worked as a Apprentice for many years.",
+      "personality": {
+        "primary_trait": "Fierce",
+        "secondary_trait": "Optimistic",
+        "motivation": "To protect others",
+        "fear": "Being alone",
+        "quirk": "Collects unusual items",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 6,
+        "health": 78,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 13,
+        "wisdom": 11,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Brother Cedric",
+          "relationship_type": "Ally",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Cedric 121",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 6,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "sister dara_greeting",
+          "text": "Greetings! I'm Sister Dara, the local Apprentice.",
+          "speaker": "Sister Dara",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "sister dara_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "sister dara_role",
+          "text": "As a Apprentice, I to protect others.",
+          "speaker": "Sister Dara",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "tavern",
+      "role": "Apprentice",
+      "quest_involvement": [],
+      "age": 22,
+      "appearance": "A 22-year-old Apprentice with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "0f4d1dee-e595-466e-b807-2e4a510ea8d9"
+    }
+  ]
+}

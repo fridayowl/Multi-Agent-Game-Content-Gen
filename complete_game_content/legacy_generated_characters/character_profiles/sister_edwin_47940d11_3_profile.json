@@ -1,0 +1,95 @@
+{
+  "id": "sister_edwin_47940d11_3",
+  "name": "Sister Edwin",
+  "title": "The Jovial Scholar",
+  "description": "A 49-year-old Scholar with a jovial nature.",
+  "backstory": "Sister Edwin has worked as a Scholar for many years.",
+  "personality": {
+    "primary_trait": "Jovial",
+    "secondary_trait": "Ambitious",
+    "motivation": "To find adventure",
+    "fear": "Losing control",
+    "quirk": "Collects unusual items",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 9,
+    "health": 87,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Master Aldric",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sir Brenna",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 4,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "sister edwin_greeting",
+      "text": "Greetings! I'm Sister Edwin, the local Scholar.",
+      "speaker": "Sister Edwin",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sister edwin_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sister edwin_role",
+      "text": "As a Scholar, I to find adventure.",
+      "speaker": "Sister Edwin",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Books",
+    "Quill and ink",
+    "Research notes",
+    "Leather pouch"
+  ],
+  "location": "blacksmith",
+  "role": "Scholar",
+  "quest_involvement": [],
+  "age": 49,
+  "appearance": "A 49-year-old Scholar with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "c46b7ea4-4da8-401b-9702-007b4ecb13ef"
+}

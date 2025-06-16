@@ -1,0 +1,36 @@
+{
+  "generation_stats": {
+    "total_characters": 5,
+    "average_age": 37.0,
+    "total_relationships": 8,
+    "total_dialogue_nodes": 10,
+    "unique_roles": 5,
+    "unique_locations": 3
+  },
+  "uniqueness_metrics": {
+    "name_uniqueness": 1.0,
+    "personality_uniqueness": 1.0,
+    "role_uniqueness": 1.0
+  },
+  "level_distribution": {
+    "Brother Cedric": 9,
+    "Cedric 121": 1,
+    "Master Aldric": 1,
+    "Master Hilda": 4,
+    "Sister Dara": 6
+  },
+  "role_distribution": {
+    "Brother Cedric": "Servant",
+    "Cedric 121": "Family Head",
+    "Master Aldric": "Resident",
+    "Master Hilda": "Noble",
+    "Sister Dara": "Apprentice"
+  },
+  "personality_distribution": {
+    "Brother Cedric": "Compassionate",
+    "Cedric 121": "Jovial",
+    "Master Aldric": "Clever",
+    "Master Hilda": "Brave",
+    "Sister Dara": "Fierce"
+  }
+}

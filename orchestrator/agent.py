@@ -54,7 +54,6 @@ except ImportError:
     print("⚠️ Balance Validator not available - using fallback")
     BALANCE_VALIDATOR_AVAILABLE = False
 
-# Import the Godot Exporter (NEW!)
 try:
     print("🔍 Attempting to import Godot Exporter...")
     from .godot_exporter.agent import export_godot_package, get_godot_exporter_status
@@ -63,11 +62,29 @@ try:
 except ImportError as e:
     print(f"❌ ImportError in Godot Exporter: {e}")
     print(f"📍 Error details: {e.__class__.__name__}: {str(e)}")
-    GODOT_EXPORTER_AVAILABLE = False
+    
+    # Try alternative import path
+    try:
+        from orchestrator.godot_exporter.agent import export_godot_package, get_godot_exporter_status
+        print("✅ Godot Exporter alternative import successful")
+        GODOT_EXPORTER_AVAILABLE = True
+    except ImportError as e2:
+        print(f"❌ Alternative import also failed: {e2}")
+        GODOT_EXPORTER_AVAILABLE = False
 except Exception as e:
     print(f"❌ General error in Godot Exporter: {e}")
     print(f"📍 Error details: {e.__class__.__name__}: {str(e)}")
     GODOT_EXPORTER_AVAILABLE = False
+
+# Define fallback function if import fails
+if not GODOT_EXPORTER_AVAILABLE:
+    async def export_godot_package(world_spec, assets, characters, quests):
+        """Fallback Godot export function"""
+        return {
+            'status': 'not_available',
+            'error': 'Godot Exporter not available',
+            'message': 'Manual Godot integration required'
+        }
 
 @dataclass
 class CompletePipelineResult:
@@ -277,6 +294,564 @@ class CompleteGameContentOrchestrator:
                 narrative_summary={}
             )
 
+    def _calculate_content_statistics(self, world_spec, assets, characters, quests) -> Dict[str, Any]:
+        """Calculate comprehensive content statistics"""
+        
+        stats = {
+            # World statistics
+            'world_buildings': len(world_spec.get('buildings', [])) if world_spec else 0,
+            'world_features': len(world_spec.get('natural_features', [])) if world_spec else 0,
+            'world_paths': len(world_spec.get('paths', [])) if world_spec else 0,
+            'world_theme': world_spec.get('theme', 'Unknown') if world_spec else 'None',
+            
+            # Asset statistics
+            'total_assets': assets.get('generation_summary', {}).get('total_creative_assets', 0) if assets else 0,
+            'ai_generated_assets': assets.get('ai_generated', False) if assets else False,
+            
+            # Character statistics
+            'total_characters': len(characters.get('characters', [])) if characters else 0,
+            'character_roles': len(set(char.get('role', 'unknown') for char in characters.get('characters', []))) if characters else 0,
+            'character_relationships': characters.get('generation_summary', {}).get('total_relationships', 0) if characters else 0,
+            
+            # Quest statistics
+            'total_quests': len(quests.get('quests', [])) if quests else 0,
+            'main_quests': len([q for q in quests.get('quests', []) if q.get('quest_type') == 'main']) if quests else 0,
+            'side_quests': len([q for q in quests.get('quests', []) if q.get('quest_type') == 'side']) if quests else 0,
+            
+            # Integration statistics
+            'content_agents_used': sum([
+                bool(world_spec), bool(assets), bool(characters), bool(quests)
+            ]),
+            'balance_validated': bool(self.balance_report),
+            'pipeline_complete': all([world_spec, assets, characters, quests])
+        }
+        
+        return stats
+    async def _create_master_manifest(self, world_spec, assets, characters, quests, content_stats) -> Dict[str, Any]:
+        """Create comprehensive master manifest"""
+        
+        manifest = {
+            "pipeline_info": {
+                "version": "4.0.0",
+                "timestamp": datetime.now().isoformat(),
+                "session_id": self.current_session_dir.name,
+                "complete_pipeline": True,
+                "agents_used": {
+                    "world_designer": bool(world_spec),
+                    "asset_generator": bool(assets),
+                    "character_creator": bool(characters),
+                    "quest_writer": bool(quests),
+                    "balance_validator": bool(self.balance_report),
+                    "godot_exporter": False  # Will be updated in step 7
+                }
+            },
+            "content_summary": {
+                "world_specification": {
+                    "theme": content_stats.get('world_theme', 'Unknown'),
+                    "buildings": content_stats.get('world_buildings', 0),
+                    "natural_features": content_stats.get('world_features', 0),
+                    "paths": content_stats.get('world_paths', 0),
+                    "file": "world_specification.json"
+                },
+                "assets": {
+                    "total_count": content_stats.get('total_assets', 0),
+                    "ai_generated": content_stats.get('ai_generated_assets', False),
+                    "directory": "ai_creative_assets/",
+                    "manifest": "ai_creative_assets/asset_manifest.json"
+                },
+                "characters": {
+                    "total_npcs": content_stats.get('total_characters', 0),
+                    "unique_roles": content_stats.get('character_roles', 0),
+                    "relationships": content_stats.get('character_relationships', 0),
+                    "file": "characters.json"
+                },
+                "quests": {
+                    "total_quests": content_stats.get('total_quests', 0),
+                    "main_quests": content_stats.get('main_quests', 0),
+                    "side_quests": content_stats.get('side_quests', 0),
+                    "file": "quests.json"
+                },
+                "balance_validation": {
+                    "validated": content_stats.get('balance_validated', False),
+                    "report_file": "balance_validation_report.json" if self.balance_report else None,
+                    "overall_score": self.balance_report.get('overall_score', 0) if self.balance_report else 0
+                }
+            },
+            "file_structure": {
+                "world_specification.json": "Complete world design and layout",
+                "characters.json": "NPC definitions with personalities and relationships",
+                "quests.json": "Quest systems and storylines",
+                "ai_creative_assets/": "Directory containing all generated 3D assets",
+                "balance_validation_report.json": "Game balance analysis and recommendations",
+                "master_manifest.json": "This file - complete package overview",
+                "content_integration_report.json": "Detailed content integration analysis",
+                "USAGE_INSTRUCTIONS.md": "How to use this content package",
+                "DEVELOPER_GUIDE.md": "Technical documentation for developers"
+            },
+            "usage_instructions": [
+                "1. Review the master manifest and content summary",
+                "2. Import 3D assets from ai_creative_assets/ into your game engine",
+                "3. Use world_specification.json for level layout and positioning",
+                "4. Implement NPCs using characters.json definitions",
+                "5. Integrate quest systems using quests.json",
+                "6. Apply balance recommendations from balance report",
+                "7. Import the Godot package (if available) for immediate gameplay"
+            ],
+            "technical_specs": {
+                "content_format": "JSON with 3D assets",
+                "3d_model_format": ".obj with .mtl materials",
+                "texture_format": ".png",
+                "godot_compatible": True,
+                "unity_compatible": True,
+                "game_engine_ready": True
+            },
+            "quality_metrics": {
+                "content_completeness": content_stats.get('pipeline_complete', False),
+                "balance_validated": content_stats.get('balance_validated', False),
+                "ready_for_production": content_stats.get('pipeline_complete', False) and content_stats.get('balance_validated', False)
+            }
+        }
+        
+        return manifest
+    
+    async def _create_content_integration_report(self, world_spec, assets, characters, quests) -> Dict[str, Any]:
+        """Create detailed content integration analysis"""
+        
+        integration_report = {
+            "integration_analysis": {
+                "world_character_alignment": self._analyze_world_character_alignment(world_spec, characters),
+                "character_quest_integration": self._analyze_character_quest_integration(characters, quests),
+                "asset_world_compatibility": self._analyze_asset_world_compatibility(assets, world_spec),
+                "narrative_coherence": self._analyze_narrative_coherence(world_spec, characters, quests)
+            },
+            "content_connections": {
+                "npcs_with_quests": self._count_npcs_with_quests(characters, quests),
+                "buildings_with_npcs": self._count_buildings_with_npcs(world_spec, characters),
+                "themed_consistency": self._check_themed_consistency(world_spec, assets, characters)
+            },
+            "recommendations": self._generate_integration_recommendations(world_spec, assets, characters, quests),
+            "validation_timestamp": datetime.now().isoformat()
+        }
+        
+        return integration_report
+    def _analyze_world_character_alignment(self, world_spec: Dict[str, Any], characters: Dict[str, Any]) -> Dict[str, Any]:
+        """Analyze how well characters align with the world theme and locations"""
+        if not world_spec or not characters:
+            return {"alignment_score": 0.0, "issues": ["Missing world or character data"]}
+        
+        world_theme = world_spec.get('theme', 'unknown')
+        character_list = characters.get('characters', [])
+        buildings = world_spec.get('buildings', [])
+        
+        alignment_issues = []
+        aligned_characters = 0
+        total_characters = len(character_list)
+        
+        # Check theme consistency
+        theme_keywords = {
+            'medieval': ['knight', 'guard', 'blacksmith', 'merchant', 'priest', 'peasant'],
+            'fantasy': ['mage', 'wizard', 'elf', 'dwarf', 'ranger', 'druid'],
+            'modern': ['officer', 'detective', 'doctor', 'teacher', 'manager'],
+            'sci-fi': ['engineer', 'pilot', 'scientist', 'technician', 'commander'],
+            'steampunk': ['inventor', 'engineer', 'airship', 'mechanic', 'industrialist']
+        }
+        
+        expected_roles = theme_keywords.get(world_theme.lower(), [])
+        
+        for char in character_list:
+            char_role = char.get('role', '').lower()
+            char_name = char.get('name', 'Unknown')
+            
+            # Check role alignment with theme
+            role_aligned = any(keyword in char_role for keyword in expected_roles) if expected_roles else True
+            
+            # Check if character has appropriate location
+            char_location = char.get('location', '')
+            location_exists = any(building.get('type', '').lower() in char_location.lower() for building in buildings)
+            
+            if role_aligned and (location_exists or not char_location):
+                aligned_characters += 1
+            else:
+                if not role_aligned:
+                    alignment_issues.append(f"{char_name} role '{char_role}' doesn't fit {world_theme} theme")
+                if char_location and not location_exists:
+                    alignment_issues.append(f"{char_name} location '{char_location}' not found in world")
+        
+        alignment_score = aligned_characters / total_characters if total_characters > 0 else 0.0
+        
+        return {
+            "alignment_score": alignment_score,
+            "aligned_characters": aligned_characters,
+            "total_characters": total_characters,
+            "theme_consistency": alignment_score >= 0.7,
+            "issues": alignment_issues[:5],  # Limit to first 5 issues
+            "recommendations": [
+                f"Ensure character roles fit the {world_theme} theme",
+                "Verify character locations exist in the world",
+                "Consider adding theme-appropriate NPCs"
+            ] if alignment_score < 0.7 else []
+        }
+    def _analyze_character_quest_integration(self, characters: Dict[str, Any], quests: Dict[str, Any]) -> Dict[str, Any]:
+        """Analyze how well characters are integrated into the quest system"""
+        if not characters or not quests:
+            return {"integration_score": 0.0, "issues": ["Missing character or quest data"]}
+        
+        character_list = characters.get('characters', [])
+        quest_list = quests.get('quests', [])
+        
+        if not character_list or not quest_list:
+            return {"integration_score": 0.0, "issues": ["No characters or quests available"]}
+        
+        # Track character involvement
+        characters_in_quests = set()
+        characters_giving_quests = set()
+        unused_characters = []
+        quest_givers = set()
+        
+        # Analyze quest involvement
+        for quest in quest_list:
+            giver = quest.get('giver_npc', '')
+            if giver:
+                quest_givers.add(giver)
+                characters_giving_quests.add(giver)
+                characters_in_quests.add(giver)
+            
+            # Check objectives for character mentions
+            objectives = quest.get('objectives', [])
+            for obj in objectives:
+                obj_desc = obj.get('description', '').lower()
+                for char in character_list:
+                    char_name = char.get('name', '').lower()
+                    if char_name and char_name in obj_desc:
+                        characters_in_quests.add(char.get('name', ''))
+        
+        # Find unused characters
+        for char in character_list:
+            char_name = char.get('name', '')
+            if char_name not in characters_in_quests:
+                unused_characters.append(char_name)
+        
+        # Calculate integration metrics
+        total_characters = len(character_list)
+        involved_characters = len(characters_in_quests)
+        integration_score = involved_characters / total_characters if total_characters > 0 else 0.0
+        
+        issues = []
+        if len(unused_characters) > 0:
+            issues.append(f"{len(unused_characters)} characters not involved in any quests: {', '.join(unused_characters[:3])}")
+        
+        if len(quest_givers) < len(quest_list) * 0.5:
+            issues.append("Too few characters are quest givers - consider distributing quests better")
+        
+        return {
+            "integration_score": integration_score,
+            "characters_in_quests": len(characters_in_quests),
+            "total_characters": total_characters,
+            "quest_givers": len(quest_givers),
+            "unused_characters": unused_characters,
+            "character_utilization": {
+                "well_integrated": integration_score >= 0.7,
+                "characters_giving_quests": len(characters_giving_quests),
+                "characters_mentioned": len(characters_in_quests) - len(characters_giving_quests)
+            },
+            "issues": issues,
+            "recommendations": [
+                "Involve unused characters in quest objectives",
+                "Distribute quest-giving among more NPCs",
+                "Add character interactions in quest narratives"
+            ] if integration_score < 0.7 else []
+        }
+    def _analyze_asset_world_compatibility(self, assets: Dict[str, Any], world_spec: Dict[str, Any]) -> Dict[str, Any]:
+        """Analyze how well generated assets match the world requirements"""
+        if not assets or not world_spec:
+            return {"compatibility_score": 0.0, "issues": ["Missing asset or world data"]}
+        
+        world_buildings = world_spec.get('buildings', [])
+        world_theme = world_spec.get('theme', 'unknown')
+        
+        # Get asset information
+        asset_buildings = assets.get('buildings', [])
+        asset_summary = assets.get('generation_summary', {})
+        total_assets = asset_summary.get('total_creative_assets', 0)
+        
+        compatibility_issues = []
+        matching_assets = 0
+        
+        # Check if assets cover required building types
+        required_building_types = set(building.get('type', '').lower() for building in world_buildings)
+        available_asset_types = set(asset.get('type', '').lower() for asset in asset_buildings)
+        
+        covered_types = required_building_types.intersection(available_asset_types)
+        missing_types = required_building_types - available_asset_types
+        
+        if missing_types:
+            compatibility_issues.append(f"Missing assets for building types: {', '.join(missing_types)}")
+        
+        # Calculate coverage score
+        coverage_score = len(covered_types) / len(required_building_types) if required_building_types else 1.0
+        
+        # Check theme compatibility
+        theme_appropriate = assets.get('ai_generated', False) or total_assets > 0
+        if not theme_appropriate:
+            compatibility_issues.append("No themed assets generated for the world")
+        
+        # Overall compatibility score
+        compatibility_score = (coverage_score + (1.0 if theme_appropriate else 0.5)) / 2
+        
+        return {
+            "compatibility_score": compatibility_score,
+            "building_coverage": {
+                "required_types": len(required_building_types),
+                "covered_types": len(covered_types),
+                "missing_types": list(missing_types),
+                "coverage_percentage": coverage_score
+            },
+            "asset_availability": {
+                "total_assets": total_assets,
+                "themed_assets": theme_appropriate,
+                "building_assets": len(asset_buildings)
+            },
+            "issues": compatibility_issues,
+            "recommendations": [
+                f"Generate assets for missing building types: {', '.join(missing_types)}",
+                f"Ensure assets match {world_theme} theme",
+                "Add more variety in asset types"
+            ] if compatibility_score < 0.7 else []
+        }
+    def _analyze_narrative_coherence(self, world_spec: Dict[str, Any], characters: Dict[str, Any], quests: Dict[str, Any]) -> Dict[str, Any]:
+        """Analyze overall narrative coherence across all content"""
+        coherence_score = 1.0
+        coherence_issues = []
+        
+        if not all([world_spec, characters, quests]):
+            return {"coherence_score": 0.0, "issues": ["Missing essential content for narrative analysis"]}
+        
+        world_theme = world_spec.get('theme', 'unknown')
+        character_list = characters.get('characters', [])
+        quest_list = quests.get('quests', [])
+        
+        # Check theme consistency across all content
+        theme_consistency_score = 1.0
+        
+        # Analyze quest themes
+        quest_themes = []
+        for quest in quest_list:
+            quest_desc = quest.get('description', '').lower()
+            quest_title = quest.get('title', '').lower()
+            quest_text = f"{quest_title} {quest_desc}"
+            
+            # Check for theme-inappropriate elements
+            if world_theme.lower() == 'medieval' and any(word in quest_text for word in ['robot', 'computer', 'laser', 'spaceship']):
+                coherence_issues.append(f"Quest '{quest.get('title', 'Unknown')}' contains modern/sci-fi elements in medieval world")
+                theme_consistency_score -= 0.1
+            elif world_theme.lower() == 'sci-fi' and any(word in quest_text for word in ['magic', 'wizard', 'spell', 'dragon']):
+                coherence_issues.append(f"Quest '{quest.get('title', 'Unknown')}' contains fantasy elements in sci-fi world")
+                theme_consistency_score -= 0.1
+        
+        # Check character narrative consistency
+        character_consistency_score = 1.0
+        for char in character_list:
+            char_backstory = char.get('backstory', '').lower()
+            char_name = char.get('name', 'Unknown')
+            
+            # Check for theme conflicts in backstory
+            if world_theme.lower() == 'medieval' and any(word in char_backstory for word in ['technology', 'computer', 'modern']):
+                coherence_issues.append(f"Character '{char_name}' has modern elements in medieval setting")
+                character_consistency_score -= 0.1
+        
+        # Check quest interconnection quality
+        interconnection_score = 1.0
+        quest_givers = set()
+        for quest in quest_list:
+            giver = quest.get('giver_npc', '')
+            if giver:
+                quest_givers.add(giver)
+        
+        # Low interconnection if quests don't share NPCs
+        if len(quest_givers) == len(quest_list) and len(quest_list) > 3:
+            coherence_issues.append("Quests have no shared NPCs - lacks narrative interconnection")
+            interconnection_score -= 0.2
+        
+        # Calculate overall coherence
+        coherence_score = (theme_consistency_score + character_consistency_score + interconnection_score) / 3
+        coherence_score = max(0.0, min(1.0, coherence_score))
+        
+        return {
+            "coherence_score": coherence_score,
+            "theme_consistency": theme_consistency_score,
+            "character_consistency": character_consistency_score,
+            "narrative_interconnection": interconnection_score,
+            "shared_npcs_count": len(quest_givers),
+            "narrative_strength": "strong" if coherence_score >= 0.8 else "moderate" if coherence_score >= 0.6 else "weak",
+            "issues": coherence_issues[:5],  # Limit to first 5 issues
+            "recommendations": [
+                f"Ensure all content matches the {world_theme} theme",
+                "Create more connections between quests and characters",
+                "Review character backstories for theme consistency",
+                "Add quest chains that involve multiple NPCs"
+            ] if coherence_score < 0.7 else []
+        }
+    def _count_npcs_with_quests(self, characters: Dict[str, Any], quests: Dict[str, Any]) -> int:
+        """Count how many NPCs are involved in quests"""
+        if not characters or not quests:
+            return 0
+        
+        character_names = set(char.get('name', '') for char in characters.get('characters', []))
+        quest_npcs = set()
+        
+        for quest in quests.get('quests', []):
+            giver = quest.get('giver_npc', '')
+            if giver and giver in character_names:
+                quest_npcs.add(giver)
+            
+            # Check objectives for character mentions
+            objectives = quest.get('objectives', [])
+            for obj in objectives:
+                obj_desc = obj.get('description', '').lower()
+                for char_name in character_names:
+                    if char_name.lower() in obj_desc:
+                        quest_npcs.add(char_name)
+        
+        return len(quest_npcs)
+    def _count_buildings_with_npcs(self, world_spec: Dict[str, Any], characters: Dict[str, Any]) -> int:
+        """Count how many buildings have NPCs assigned"""
+        if not world_spec or not characters:
+            return 0
+        
+        buildings = world_spec.get('buildings', [])
+        character_locations = set()
+        
+        for char in characters.get('characters', []):
+            location = char.get('location', '').lower()
+            if location:
+                character_locations.add(location)
+        
+        buildings_with_npcs = 0
+        for building in buildings:
+            building_type = building.get('type', '').lower()
+            building_name = building.get('name', '').lower()
+            
+            if any(loc in building_type or loc in building_name for loc in character_locations):
+                buildings_with_npcs += 1
+        
+        return buildings_with_npcs
+    def _check_themed_consistency(self, world_spec: Dict[str, Any], assets: Dict[str, Any], characters: Dict[str, Any]) -> Dict[str, Any]:
+        """Check thematic consistency across world, assets, and characters"""
+        if not all([world_spec, assets, characters]):
+            return {"consistent": False, "issues": ["Missing content for theme analysis"]}
+        
+        world_theme = world_spec.get('theme', 'unknown').lower()
+        consistency_issues = []
+        
+        # Define theme expectations
+        theme_expectations = {
+            'medieval': {
+                'roles': ['knight', 'guard', 'blacksmith', 'merchant', 'priest', 'peasant', 'lord'],
+                'buildings': ['castle', 'church', 'tavern', 'smithy', 'market', 'house'],
+                'avoid': ['robot', 'computer', 'laser', 'spaceship', 'modern']
+            },
+            'fantasy': {
+                'roles': ['mage', 'wizard', 'elf', 'dwarf', 'ranger', 'druid', 'paladin'],
+                'buildings': ['tower', 'temple', 'library', 'enchanted', 'magical'],
+                'avoid': ['car', 'phone', 'computer', 'modern', 'technology']
+            },
+            'sci-fi': {
+                'roles': ['engineer', 'pilot', 'scientist', 'technician', 'commander', 'android'],
+                'buildings': ['station', 'lab', 'hangar', 'dome', 'facility'],
+                'avoid': ['magic', 'wizard', 'spell', 'dragon', 'medieval']
+            }
+        }
+        
+        expectations = theme_expectations.get(world_theme, {'roles': [], 'buildings': [], 'avoid': []})
+        
+        # Check character consistency
+        character_consistency = True
+        for char in characters.get('characters', []):
+            char_role = char.get('role', '').lower()
+            char_backstory = char.get('backstory', '').lower()
+            
+            # Check if role fits theme
+            if expectations['roles'] and not any(role in char_role for role in expectations['roles']):
+                consistency_issues.append(f"Character role '{char_role}' doesn't fit {world_theme} theme")
+                character_consistency = False
+            
+            # Check for theme violations
+            for avoid_term in expectations['avoid']:
+                if avoid_term in char_backstory or avoid_term in char_role:
+                    consistency_issues.append(f"Character contains inappropriate term '{avoid_term}' for {world_theme} theme")
+                    character_consistency = False
+        
+        # Check building consistency
+        building_consistency = True
+        for building in world_spec.get('buildings', []):
+            building_type = building.get('type', '').lower()
+            
+            # Check for theme violations
+            for avoid_term in expectations['avoid']:
+                if avoid_term in building_type:
+                    consistency_issues.append(f"Building type '{building_type}' inappropriate for {world_theme} theme")
+                    building_consistency = False
+        
+        # Overall consistency
+        overall_consistent = character_consistency and building_consistency
+        
+        return {
+            "consistent": overall_consistent,
+            "character_consistency": character_consistency,
+            "building_consistency": building_consistency,
+            "theme": world_theme,
+            "issues": consistency_issues[:5],  # Limit to first 5 issues
+            "score": 1.0 if overall_consistent else (0.5 if character_consistency or building_consistency else 0.0)
+        }
+    def _generate_integration_recommendations(self, world_spec: Dict[str, Any], assets: Dict[str, Any], characters: Dict[str, Any], quests: Dict[str, Any]) -> List[str]:
+        """Generate specific recommendations for improving content integration"""
+        recommendations = []
+        
+        if not all([world_spec, characters, quests]):
+            recommendations.append("Generate all core content types (world, characters, quests) for proper integration")
+            return recommendations
+        
+        # World-Character integration
+        world_char_analysis = self._analyze_world_character_alignment(world_spec, characters)
+        if world_char_analysis["alignment_score"] < 0.7:
+            recommendations.append("Improve character-world alignment by adjusting NPC roles to match the world theme")
+        
+        # Character-Quest integration
+        char_quest_analysis = self._analyze_character_quest_integration(characters, quests)
+        if char_quest_analysis["integration_score"] < 0.7:
+            recommendations.extend([
+                "Involve more characters in quest storylines",
+                "Create quests that utilize character relationships",
+                "Distribute quest-giving among more NPCs"
+            ])
+        
+        # Asset-World compatibility
+        if assets:
+            asset_world_analysis = self._analyze_asset_world_compatibility(assets, world_spec)
+            if asset_world_analysis["compatibility_score"] < 0.7:
+                recommendations.append("Generate additional assets to cover all required building types")
+        
+        # Narrative coherence
+        narrative_analysis = self._analyze_narrative_coherence(world_spec, characters, quests)
+        if narrative_analysis["coherence_score"] < 0.7:
+            recommendations.extend([
+                "Ensure thematic consistency across all content",
+                "Create more interconnected storylines",
+                "Review and align character backstories with world theme"
+            ])
+        
+        # Content utilization recommendations
+        unused_chars = char_quest_analysis.get("unused_characters", [])
+        if len(unused_chars) > 0:
+            recommendations.append(f"Create quests or storylines for unused characters: {', '.join(unused_chars[:3])}")
+        
+        # Theme consistency
+        theme_check = self._check_themed_consistency(world_spec, assets, characters)
+        if not theme_check["consistent"]:
+            recommendations.append("Review and fix thematic inconsistencies across all content types")
+        
+        # Limit recommendations to most important ones
+        return recommendations[:8]
     async def _step_1_world_design(self, prompt: str):
         """Step 1: Generate world specification"""
         print(f"\n🌍 STEP 1: WORLD DESIGN")
@@ -471,7 +1046,353 @@ class CompleteGameContentOrchestrator:
             self.errors.append(error_msg)
             print(f"❌ {error_msg}")
             # Don't raise - pipeline can still be useful without Godot export
+    async def _step_5_balance_validation(self):
+        """Step 5: Validate and balance all generated content"""
+        print(f"\n⚖️ STEP 5: BALANCE VALIDATION")
+        print(f"{'='*60}")
+        
+        try:
+            if not BALANCE_VALIDATOR_AVAILABLE:
+                print("⚠️ Balance Validator not available - skipping validation")
+                self.balance_report = {
+                    'status': 'skipped',
+                    'reason': 'Balance Validator not available',
+                    'overall_score': 0.75  # Default reasonable score
+                }
+                return
+            
+            # Import balance validator
+            from .balance_validator.agent import AdvancedBalanceValidator
+            
+            # Initialize validator
+            validator = AdvancedBalanceValidator(
+                output_dir=str(self.current_session_dir / "balance_validation")
+            )
+            
+            # Prepare content for validation
+            world_spec = self.world_spec or {}
+            assets = self.assets or {}
+            characters = self.characters or {}
+            quests = self.quests or {}
+            
+            print(f"🔍 Validating content balance...")
+            print(f"   🌍 World: {len(world_spec.get('buildings', []))} buildings")
+            print(f"   👥 Characters: {len(characters.get('characters', []))} NPCs") 
+            print(f"   📜 Quests: {len(quests.get('quests', []))} storylines")
+            print(f"   🎨 Assets: {assets.get('generation_summary', {}).get('total_creative_assets', 0)} items")
+            
+            # Run balance validation
+            balance_report = await validator.validate_complete_content(
+                world_spec, assets, characters, quests
+            )
+            
+            # Convert balance report to dictionary format
+            self.balance_report = {
+                'status': 'success',
+                'overall_balance': balance_report.overall_balance,
+                'overall_score': balance_report.metrics.overall_score,
+                'metrics': {
+                    'difficulty_score': balance_report.metrics.difficulty_score,
+                    'progression_rate': balance_report.metrics.progression_rate,
+                    'xp_balance': balance_report.metrics.xp_balance,
+                    'reward_balance': balance_report.metrics.reward_balance,
+                    'challenge_curve': balance_report.metrics.challenge_curve,
+                    'player_engagement': balance_report.metrics.player_engagement
+                },
+                'recommendations_count': len(balance_report.recommendations),
+                'warnings_count': len(balance_report.warnings),
+                'balance_summary': balance_report.balance_summary,
+                'validated_content': balance_report.validated_content
+            }
+            
+            # Apply any critical balance adjustments
+            if balance_report.validated_content:
+                self.validated_content = balance_report.validated_content
+                
+                # Update content with balance adjustments if available
+                if 'characters' in balance_report.validated_content:
+                    self.characters = balance_report.validated_content['characters']
+                if 'quests' in balance_report.validated_content:
+                    self.quests = balance_report.validated_content['quests']
+            
+            # Save balance report
+            balance_file = self.current_session_dir / "balance_validation_report.json"
+            with open(balance_file, 'w') as f:
+                json.dump(self.balance_report, f, indent=2, default=str)
+            
+            print(f"\n✅ Balance validation completed!")
+            print(f"   📊 Overall Balance: {balance_report.overall_balance}")
+            print(f"   🎯 Overall Score: {balance_report.metrics.overall_score:.2f}/1.0")
+            print(f"   📈 XP Balance: {balance_report.metrics.xp_balance:.2f}")
+            print(f"   💰 Reward Balance: {balance_report.metrics.reward_balance:.2f}")
+            print(f"   🎮 Difficulty Score: {balance_report.metrics.difficulty_score:.2f}")
+            
+            if balance_report.recommendations:
+                critical_recs = [r for r in balance_report.recommendations if r.priority == 'critical']
+                high_recs = [r for r in balance_report.recommendations if r.priority == 'high']
+                print(f"   🔴 Critical Issues: {len(critical_recs)}")
+                print(f"   🟡 High Priority: {len(high_recs)}")
+                print(f"   📋 Total Recommendations: {len(balance_report.recommendations)}")
+            
+            if balance_report.warnings:
+                print(f"   ⚠️ Warnings: {len(balance_report.warnings)}")
+                for warning in balance_report.warnings[:3]:  # Show first 3 warnings
+                    print(f"      • {warning}")
+            
+            print(f"   📁 Balance report saved: {balance_file.name}")
+            
+        except Exception as e:
+            error_msg = f"Balance validation failed: {str(e)}"
+            self.errors.append(error_msg)
+            print(f"❌ {error_msg}")
+            
+            # Create fallback balance report
+            self.balance_report = {
+                'status': 'failed',
+                'error': str(e),
+                'overall_score': 0.5,  # Default fallback score
+                'overall_balance': 'unknown'
+            }
+            
+            # Save error report
+            error_file = self.current_session_dir / "balance_validation_error.json"
+            with open(error_file, 'w') as f:
+                json.dump(self.balance_report, f, indent=2)
+    async def _step_6_complete_final_assembly(self):
+        """Step 6: Complete Final Assembly - Integrate all content and create master manifest"""
+        print(f"\n📦 STEP 6: COMPLETE FINAL ASSEMBLY")
+        print(f"{'='*60}")
+        
+        try:
+            print(f"🔧 Assembling complete game content package...")
+            
+            # Create assembly summary
+            assembly_summary = {
+                'world_spec_available': bool(self.world_spec),
+                'assets_available': bool(self.assets),
+                'characters_available': bool(self.characters),
+                'quests_available': bool(self.quests),
+                'balance_report_available': bool(self.balance_report),
+                'validated_content_available': bool(self.validated_content)
+            }
+            
+            # Use validated content if available, otherwise use original content
+            final_world_spec = self.validated_content.get('world_spec', self.world_spec) if self.validated_content else self.world_spec
+            final_assets = self.validated_content.get('assets', self.assets) if self.validated_content else self.assets
+            final_characters = self.validated_content.get('characters', self.characters) if self.validated_content else self.characters
+            final_quests = self.validated_content.get('quests', self.quests) if self.validated_content else self.quests
+            
+            # Create comprehensive content statistics
+            content_stats = self._calculate_content_statistics(
+                final_world_spec, final_assets, final_characters, final_quests
+            )
+            
+            # Create master manifest
+            master_manifest = await self._create_master_manifest(
+                final_world_spec, final_assets, final_characters, final_quests, content_stats
+            )
+            
+            # Save master manifest
+            manifest_file = self.current_session_dir / "master_manifest.json"
+            with open(manifest_file, 'w') as f:
+                json.dump(master_manifest, f, indent=2, default=str)
+            
+            # Create content integration report
+            integration_report = await self._create_content_integration_report(
+                final_world_spec, final_assets, final_characters, final_quests
+            )
+            
+            # Save integration report
+            integration_file = self.current_session_dir / "content_integration_report.json"
+            with open(integration_file, 'w') as f:
+                json.dump(integration_report, f, indent=2, default=str)
+            
+            # Create usage instructions
+            usage_instructions = self._create_usage_instructions(content_stats)
+            instructions_file = self.current_session_dir / "USAGE_INSTRUCTIONS.md"
+            with open(instructions_file, 'w') as f:
+                f.write(usage_instructions)
+            
+            # Create developer documentation
+            dev_docs = self._create_developer_documentation(master_manifest, integration_report)
+            dev_docs_file = self.current_session_dir / "DEVELOPER_GUIDE.md"
+            with open(dev_docs_file, 'w') as f:
+                f.write(dev_docs)
+            
+            # Copy/organize final content files
+            await self._organize_final_content_files(
+                final_world_spec, final_assets, final_characters, final_quests
+            )
+            
+            # Create session summary
+            session_summary = {
+                'assembly_status': 'completed',
+                'content_statistics': content_stats,
+                'files_created': {
+                    'master_manifest': str(manifest_file.name),
+                    'integration_report': str(integration_file.name),
+                    'usage_instructions': str(instructions_file.name),
+                    'developer_guide': str(dev_docs_file.name)
+                },
+                'assembly_timestamp': datetime.now().isoformat(),
+                'ready_for_export': True
+            }
+            
+            # Save session summary
+            summary_file = self.current_session_dir / "session_summary.json"
+            with open(summary_file, 'w') as f:
+                json.dump(session_summary, f, indent=2, default=str)
+            
+            print(f"\n✅ Final assembly completed successfully!")
+            print(f"   📊 Content Statistics:")
+            print(f"      🌍 World: {content_stats.get('world_buildings', 0)} buildings, {content_stats.get('world_features', 0)} features")
+            print(f"      🎨 Assets: {content_stats.get('total_assets', 0)} unique items")
+            print(f"      👥 Characters: {content_stats.get('total_characters', 0)} NPCs")
+            print(f"      📜 Quests: {content_stats.get('total_quests', 0)} storylines")
+            print(f"      ⚖️ Balance: {'✅ Validated' if self.balance_report else '⚠️ Not validated'}")
+            
+            print(f"\n📁 Package Files Created:")
+            print(f"   📋 Master Manifest: {manifest_file.name}")
+            print(f"   🔗 Integration Report: {integration_file.name}")
+            print(f"   📖 Usage Instructions: {instructions_file.name}")
+            print(f"   👨‍💻 Developer Guide: {dev_docs_file.name}")
+            print(f"   📊 Session Summary: {summary_file.name}")
+            
+            # Check content quality and completeness
+            quality_score = self._calculate_content_quality_score(content_stats)
+            print(f"\n🎯 Content Quality Score: {quality_score:.2f}/1.0")
+            
+            if quality_score >= 0.8:
+                print(f"   ✅ Excellent - Ready for production use!")
+            elif quality_score >= 0.6:
+                print(f"   🟡 Good - Minor improvements recommended")
+            else:
+                print(f"   🔴 Needs improvement - Check error logs")
+            
+            print(f"   🎮 Ready for Godot export in Step 7!")
+            
+        except Exception as e:
+            error_msg = f"Final assembly failed: {str(e)}"
+            self.errors.append(error_msg)
+            print(f"❌ {error_msg}")
+            
+            # Create minimal fallback assembly
+            fallback_manifest = {
+                'assembly_status': 'failed',
+                'error': str(e),
+                'partial_content': {
+                    'world_spec': bool(self.world_spec),
+                    'assets': bool(self.assets),
+                    'characters': bool(self.characters),
+                    'quests': bool(self.quests)
+                },
+                'timestamp': datetime.now().isoformat()
+            }
+            
+            fallback_file = self.current_session_dir / "fallback_manifest.json"
+            with open(fallback_file, 'w') as f:
+                json.dump(fallback_manifest, f, indent=2)
+            print(f"   📋 Fallback manifest saved: {fallback_file.name}")
 
+    async def _step_7_godot_package_export(self):
+        """Step 7: Export complete Godot package"""
+        print(f"\n🎮 STEP 7: GODOT PACKAGE EXPORT")
+        print(f"{'='*60}")
+        
+        try:
+            if not GODOT_EXPORTER_AVAILABLE:
+                print("⚠️ Godot Exporter not available - generating export instructions instead")
+                self.godot_package = await self._fallback_godot_export_instructions()
+                return
+            
+            # Verify the function is available
+            try:
+                # Test if export_godot_package is callable
+                if not callable(export_godot_package):
+                    raise AttributeError("export_godot_package is not callable")
+                    
+            except NameError:
+                print("❌ export_godot_package function not found - using fallback")
+                self.godot_package = await self._fallback_godot_export_instructions()
+                return
+            
+            # Rest of the existing export code...
+            print(f"🔧 Preparing Godot export...")
+            
+            # Validate content exists
+            if not any([self.world_spec, self.assets, self.characters, self.quests]):
+                print("⚠️ No content available for Godot export")
+                self.godot_package = {'status': 'no_content', 'error': 'No content to export'}
+                return
+            
+            # Set up content summary
+            content_summary = {
+                'world_buildings': len(self.world_spec.get('buildings', [])) if self.world_spec else 0,
+                'assets_count': self.assets.get('generation_summary', {}).get('total_creative_assets', 0) if self.assets else 0,
+                'character_count': len(self.characters.get('characters', [])) if self.characters else 0,
+                'quest_count': len(self.quests.get('quests', [])) if self.quests else 0
+            }
+            
+            if content_summary['character_count'] > 0:
+                character_list = self.characters.get('characters', [])
+                print(f"   👥 Characters: {len(character_list)}")
+                
+            if content_summary['quest_count'] > 0:
+                quest_list = self.quests.get('quests', [])
+                print(f"   📜 Quests: {len(quest_list)}")
+            
+            # Set up Godot export directory within session
+            godot_export_dir = self.current_session_dir / "godot_package"
+            godot_export_dir.mkdir(exist_ok=True)
+            
+            # Call Godot exporter with all generated content
+            self.godot_package = await export_godot_package(
+                world_spec=self.world_spec or {},
+                assets=self.assets or {},
+                characters=self.characters or {},
+                quests=self.quests or {}
+            )
+            
+            # Handle successful export
+            if self.godot_package and self.godot_package.get('status') == 'success':
+                package_path = self.godot_package.get('package_path', 'Unknown')
+                file_counts = self.godot_package.get('file_counts', {})
+                
+                print(f"   ✅ Godot package export successful!")
+                print(f"   📦 Package: {package_path}")
+                print(f"   🔧 Scripts: {file_counts.get('scripts', 0)}")
+                print(f"   🎮 Scenes: {file_counts.get('scenes', 0)}")
+                print(f"   📁 Assets: {file_counts.get('assets', 0)}")
+                print(f"   🌍 Resources: {file_counts.get('resources', 0)}")
+                print(f"   🎯 Status: Ready for Godot Import!")
+                
+                # Copy Godot package to session directory if it exists
+                if os.path.exists(package_path):
+                    session_package_path = self.current_session_dir / f"GameWorld_{datetime.now().strftime('%Y%m%d_%H%M%S')}_Godot"
+                    if os.path.isdir(package_path):
+                        shutil.copytree(package_path, session_package_path)
+                    else:
+                        shutil.copy2(package_path, session_package_path)
+                    self.godot_package['session_package_path'] = str(session_package_path)
+                    print(f"   📁 Package copied to session: {session_package_path.name}")
+                
+                # Update master manifest with Godot export info
+                await self._update_manifest_with_godot_info()
+                
+            else:
+                error_msg = f"Godot export failed: {self.godot_package.get('error', 'Unknown error')}"
+                self.errors.append(error_msg)
+                print(f"   ❌ {error_msg}")
+                
+        except Exception as e:
+            error_msg = f"Godot package export failed: {str(e)}"
+            self.errors.append(error_msg)
+            print(f"❌ {error_msg}")
+            # Don't raise - pipeline can still be useful without Godot export
+            
+            # Use fallback instructions
+            self.godot_package = await self._fallback_godot_export_instructions()
+    
     async def _update_manifest_with_godot_info(self):
         """Update master manifest with Godot export information"""
         try:

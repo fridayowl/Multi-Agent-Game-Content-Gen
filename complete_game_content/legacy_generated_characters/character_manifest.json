@@ -1,0 +1,128 @@
+{
+  "generation_info": {
+    "timestamp": "2025-06-17T03:17:51.298300",
+    "theme": "medieval",
+    "world_size": [
+      40,
+      40
+    ],
+    "character_count": 5,
+    "ai_enhanced": false,
+    "creativity_level": "maximum",
+    "uniqueness_guaranteed": true,
+    "session_id": "47940d11"
+  },
+  "uniqueness_metrics": {
+    "name_uniqueness": 1.0,
+    "personality_uniqueness": 1.0,
+    "role_uniqueness": 1.0
+  },
+  "characters": {
+    "master_aldric_47940d11_0": {
+      "name": "Master Aldric",
+      "title": "The Eccentric Resident",
+      "role": "Resident",
+      "age": 40,
+      "location": "house",
+      "personality_summary": "Eccentric, Mysterious",
+      "motivation": "To discover truth",
+      "secret": "Has an interesting past",
+      "level": 6,
+      "health": 78,
+      "relationship_count": 1,
+      "dialogue_nodes": 2,
+      "unique_id": "af129965-153a-4f3d-ab65-ea84c99e51bd",
+      "profile_file": "character_profiles/master_aldric_47940d11_0_profile.json",
+      "dialogue_file": "dialogue_trees/master_aldric_47940d11_0_dialogue.json"
+    },
+    "sir_brenna_47940d11_1": {
+      "name": "Sir Brenna",
+      "title": "The Gentle Apprentice",
+      "role": "Apprentice",
+      "age": 58,
+      "location": "market",
+      "personality_summary": "Gentle, Patient",
+      "motivation": "To build something lasting",
+      "secret": "Has an interesting past",
+      "level": 2,
+      "health": 66,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "661d37f5-a12a-4dbd-81ac-e28f55283b0e",
+      "profile_file": "character_profiles/sir_brenna_47940d11_1_profile.json",
+      "dialogue_file": "dialogue_trees/sir_brenna_47940d11_1_dialogue.json"
+    },
+    "sir_hilda_47940d11_2": {
+      "name": "Sir Hilda",
+      "title": "The Inventive Family Head",
+      "role": "Family Head",
+      "age": 50,
+      "location": "tavern",
+      "personality_summary": "Inventive, Curious",
+      "motivation": "To discover truth",
+      "secret": "Has an interesting past",
+      "level": 8,
+      "health": 84,
+      "relationship_count": 0,
+      "dialogue_nodes": 2,
+      "unique_id": "76458220-9ea7-4679-9116-5f10f5b67357",
+      "profile_file": "character_profiles/sir_hilda_47940d11_2_profile.json",
+      "dialogue_file": "dialogue_trees/sir_hilda_47940d11_2_dialogue.json"
+    },
+    "sister_edwin_47940d11_3": {
+      "name": "Sister Edwin",
+      "title": "The Jovial Scholar",
+      "role": "Scholar",
+      "age": 49,
+      "location": "blacksmith",
+      "personality_summary": "Jovial, Ambitious",
+      "motivation": "To find adventure",
+      "secret": "Has an interesting past",
+      "level": 9,
+      "health": 87,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "c46b7ea4-4da8-401b-9702-007b4ecb13ef",
+      "profile_file": "character_profiles/sister_edwin_47940d11_3_profile.json",
+      "dialogue_file": "dialogue_trees/sister_edwin_47940d11_3_dialogue.json"
+    },
+    "sir_fiona_47940d11_4": {
+      "name": "Sir Fiona",
+      "title": "The Determined Noble",
+      "role": "Noble",
+      "age": 20,
+      "location": "house",
+      "personality_summary": "Determined, Practical",
+      "motivation": "To build something lasting",
+      "secret": "Has an interesting past",
+      "level": 1,
+      "health": 63,
+      "relationship_count": 1,
+      "dialogue_nodes": 2,
+      "unique_id": "d4bcc604-c61a-426f-bab7-a75575639e2e",
+      "profile_file": "character_profiles/sir_fiona_47940d11_4_profile.json",
+      "dialogue_file": "dialogue_trees/sir_fiona_47940d11_4_dialogue.json"
+    }
+  },
+  "relationships_summary": {
+    "total_relationships": 6,
+    "relationship_types": [
+      "Friend",
+      "Neighbor",
+      "Acquaintance"
+    ],
+    "relationship_map_file": "relationship_maps/relationship_map.json"
+  },
+  "dialogue_summary": {
+    "total_dialogue_nodes": 10,
+    "average_nodes_per_character": 2.0,
+    "ai_generated": false
+  },
+  "integration_info": {
+    "unity_compatible": true,
+    "quest_system_ready": true,
+    "relationship_system_ready": true,
+    "dialogue_system_ready": true,
+    "ai_creativity_verified": false
+  }
+}

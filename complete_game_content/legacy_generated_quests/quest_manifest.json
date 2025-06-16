@@ -1,0 +1,166 @@
+{
+  "generation_info": {
+    "timestamp": "2025-06-17T03:17:51.301987",
+    "theme": "medieval",
+    "world_size": [
+      40,
+      40
+    ],
+    "quest_count": 7,
+    "ai_enhanced": false
+  },
+  "quest_summary": {
+    "total_quests": 7,
+    "main_quests": 2,
+    "side_quests": 5,
+    "chain_quests": 0,
+    "interconnected_count": 6,
+    "total_objectives": 23,
+    "estimated_playtime": "2 hours 34 minutes"
+  },
+  "npc_involvement": {
+    "Master Aldric": [
+      "main_quest_1_master_aldric",
+      "side_quest_1_master_aldric"
+    ],
+    "Sir Brenna": [
+      "main_quest_2_sir_brenna",
+      "side_quest_2_sir_brenna"
+    ],
+    "Sir Hilda": [
+      "side_quest_3_sir_hilda"
+    ],
+    "Sister Edwin": [
+      "side_quest_4_sister_edwin"
+    ],
+    "Sir Fiona": [
+      "side_quest_5_sir_fiona"
+    ]
+  },
+  "quests": {
+    "main_quest_1_master_aldric": {
+      "title": "The Village Crisis",
+      "giver_npc": "Master Aldric",
+      "type": "main",
+      "level_requirement": 1,
+      "objectives_count": 4,
+      "rewards": {
+        "experience": 100,
+        "gold": 50,
+        "items": [
+          "Quest Item 1"
+        ]
+      },
+      "estimated_duration": "15-30 minutes",
+      "narrative_importance": "high",
+      "quest_file": "quest_definitions/main_quest_1_master_aldric.json"
+    },
+    "main_quest_2_sir_brenna": {
+      "title": "Ancient Secrets",
+      "giver_npc": "Sir Brenna",
+      "type": "main",
+      "level_requirement": 2,
+      "objectives_count": 4,
+      "rewards": {
+        "experience": 200,
+        "gold": 100,
+        "items": []
+      },
+      "estimated_duration": "15-30 minutes",
+      "narrative_importance": "high",
+      "quest_file": "quest_definitions/main_quest_2_sir_brenna.json"
+    },
+    "side_quest_1_master_aldric": {
+      "title": "Personal Favor",
+      "giver_npc": "Master Aldric",
+      "type": "side",
+      "level_requirement": 1,
+      "objectives_count": 3,
+      "rewards": {
+        "experience": 50,
+        "gold": 25,
+        "items": [
+          "Thank You Gift"
+        ]
+      },
+      "estimated_duration": "15-30 minutes",
+      "narrative_importance": "low",
+      "quest_file": "quest_definitions/side_quest_1_master_aldric.json"
+    },
+    "side_quest_2_sir_brenna": {
+      "title": "Personal Favor",
+      "giver_npc": "Sir Brenna",
+      "type": "side",
+      "level_requirement": 1,
+      "objectives_count": 3,
+      "rewards": {
+        "experience": 50,
+        "gold": 25,
+        "items": [
+          "Thank You Gift"
+        ]
+      },
+      "estimated_duration": "15-30 minutes",
+      "narrative_importance": "low",
+      "quest_file": "quest_definitions/side_quest_2_sir_brenna.json"
+    },
+    "side_quest_3_sir_hilda": {
+      "title": "Personal Favor",
+      "giver_npc": "Sir Hilda",
+      "type": "side",
+      "level_requirement": 1,
+      "objectives_count": 3,
+      "rewards": {
+        "experience": 50,
+        "gold": 25,
+        "items": [
+          "Thank You Gift"
+        ]
+      },
+      "estimated_duration": "15-30 minutes",
+      "narrative_importance": "low",
+      "quest_file": "quest_definitions/side_quest_3_sir_hilda.json"
+    },
+    "side_quest_4_sister_edwin": {
+      "title": "Personal Favor",
+      "giver_npc": "Sister Edwin",
+      "type": "side",
+      "level_requirement": 1,
+      "objectives_count": 3,
+      "rewards": {
+        "experience": 50,
+        "gold": 25,
+        "items": [
+          "Thank You Gift"
+        ]
+      },
+      "estimated_duration": "15-30 minutes",
+      "narrative_importance": "low",
+      "quest_file": "quest_definitions/side_quest_4_sister_edwin.json"
+    },
+    "side_quest_5_sir_fiona": {
+      "title": "Personal Favor",
+      "giver_npc": "Sir Fiona",
+      "type": "side",
+      "level_requirement": 1,
+      "objectives_count": 3,
+      "rewards": {
+        "experience": 50,
+        "gold": 25,
+        "items": [
+          "Thank You Gift"
+        ]
+      },
+      "estimated_duration": "15-30 minutes",
+      "narrative_importance": "low",
+      "quest_file": "quest_definitions/side_quest_5_sir_fiona.json"
+    }
+  },
+  "integration_info": {
+    "unity_compatible": true,
+    "dialogue_system_ready": true,
+    "objective_tracking_ready": true,
+    "reward_system_ready": true,
+    "character_integration": true
+  }
+}

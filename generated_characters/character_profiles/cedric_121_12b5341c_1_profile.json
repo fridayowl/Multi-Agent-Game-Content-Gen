@@ -1,0 +1,93 @@
+{
+  "id": "cedric_121_12b5341c_1",
+  "name": "Cedric 121",
+  "title": "The Jovial Family Head",
+  "description": "A 34-year-old Family Head with a jovial nature.",
+  "backstory": "Cedric 121 has worked as a Family Head for many years.",
+  "personality": {
+    "primary_trait": "Jovial",
+    "secondary_trait": "Ambitious",
+    "motivation": "To discover truth",
+    "fear": "The unknown",
+    "quirk": "Speaks to animals",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 1,
+    "health": 63,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Master Hilda",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sister Dara",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 6,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "cedric 121_greeting",
+      "text": "Greetings! I'm Cedric 121, the local Family Head.",
+      "speaker": "Cedric 121",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "cedric 121_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "cedric 121_role",
+      "text": "As a Family Head, I to discover truth.",
+      "speaker": "Cedric 121",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "house",
+  "role": "Family Head",
+  "quest_involvement": [],
+  "age": 34,
+  "appearance": "A 34-year-old Family Head with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "9488d563-5e0e-4d90-838c-3940e9c9f558"
+}

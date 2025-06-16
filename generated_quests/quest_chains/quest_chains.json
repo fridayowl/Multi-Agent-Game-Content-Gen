@@ -1,0 +1,22 @@
+{
+  "main_chain_main_quest_1_brother_cedric": {
+    "type": "main",
+    "quests": [
+      "main_quest_1_brother_cedric"
+    ],
+    "connected_quests": [
+      "side_quest_3_master_aldric",
+      "side_quest_5_sister_dara"
+    ]
+  },
+  "main_chain_main_quest_2_cedric_121": {
+    "type": "main",
+    "quests": [
+      "main_quest_2_cedric_121"
+    ],
+    "connected_quests": [
+      "side_quest_4_master_hilda",
+      "side_quest_5_sister_dara"
+    ]
+  }
+}

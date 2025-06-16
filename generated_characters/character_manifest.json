@@ -1,0 +1,128 @@
+{
+  "generation_info": {
+    "timestamp": "2025-06-17T03:37:38.070512",
+    "theme": "medieval",
+    "world_size": [
+      40,
+      40
+    ],
+    "character_count": 5,
+    "ai_enhanced": false,
+    "creativity_level": "maximum",
+    "uniqueness_guaranteed": true,
+    "session_id": "12b5341c"
+  },
+  "uniqueness_metrics": {
+    "name_uniqueness": 1.0,
+    "personality_uniqueness": 1.0,
+    "role_uniqueness": 1.0
+  },
+  "characters": {
+    "brother_cedric_12b5341c_0": {
+      "name": "Brother Cedric",
+      "title": "The Compassionate Servant",
+      "role": "Servant",
+      "age": 46,
+      "location": "market",
+      "personality_summary": "Compassionate, Energetic",
+      "motivation": "To protect others",
+      "secret": "Has an interesting past",
+      "level": 9,
+      "health": 87,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "0e183d5d-e5a8-4f40-98de-953718c64ab9",
+      "profile_file": "character_profiles/brother_cedric_12b5341c_0_profile.json",
+      "dialogue_file": "dialogue_trees/brother_cedric_12b5341c_0_dialogue.json"
+    },
+    "cedric_121_12b5341c_1": {
+      "name": "Cedric 121",
+      "title": "The Jovial Family Head",
+      "role": "Family Head",
+      "age": 34,
+      "location": "house",
+      "personality_summary": "Jovial, Ambitious",
+      "motivation": "To discover truth",
+      "secret": "Has an interesting past",
+      "level": 1,
+      "health": 63,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "9488d563-5e0e-4d90-838c-3940e9c9f558",
+      "profile_file": "character_profiles/cedric_121_12b5341c_1_profile.json",
+      "dialogue_file": "dialogue_trees/cedric_121_12b5341c_1_dialogue.json"
+    },
+    "master_aldric_12b5341c_2": {
+      "name": "Master Aldric",
+      "title": "The Clever Resident",
+      "role": "Resident",
+      "age": 34,
+      "location": "house",
+      "personality_summary": "Clever, Mysterious",
+      "motivation": "To build something lasting",
+      "secret": "Has an interesting past",
+      "level": 1,
+      "health": 63,
+      "relationship_count": 1,
+      "dialogue_nodes": 2,
+      "unique_id": "8eb39b6a-6a54-46c5-bd6b-4e8e45183053",
+      "profile_file": "character_profiles/master_aldric_12b5341c_2_profile.json",
+      "dialogue_file": "dialogue_trees/master_aldric_12b5341c_2_dialogue.json"
+    },
+    "master_hilda_12b5341c_3": {
+      "name": "Master Hilda",
+      "title": "The Brave Noble",
+      "role": "Noble",
+      "age": 49,
+      "location": "house",
+      "personality_summary": "Brave, Ambitious",
+      "motivation": "To protect others",
+      "secret": "Has an interesting past",
+      "level": 4,
+      "health": 72,
+      "relationship_count": 1,
+      "dialogue_nodes": 2,
+      "unique_id": "da46b4da-abca-49ea-b1ca-46eb3b819524",
+      "profile_file": "character_profiles/master_hilda_12b5341c_3_profile.json",
+      "dialogue_file": "dialogue_trees/master_hilda_12b5341c_3_dialogue.json"
+    },
+    "sister_dara_12b5341c_4": {
+      "name": "Sister Dara",
+      "title": "The Fierce Apprentice",
+      "role": "Apprentice",
+      "age": 22,
+      "location": "tavern",
+      "personality_summary": "Fierce, Optimistic",
+      "motivation": "To protect others",
+      "secret": "Has an interesting past",
+      "level": 6,
+      "health": 78,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "0f4d1dee-e595-466e-b807-2e4a510ea8d9",
+      "profile_file": "character_profiles/sister_dara_12b5341c_4_profile.json",
+      "dialogue_file": "dialogue_trees/sister_dara_12b5341c_4_dialogue.json"
+    }
+  },
+  "relationships_summary": {
+    "total_relationships": 8,
+    "relationship_types": [
+      "Acquaintance",
+      "Ally",
+      "Colleague"
+    ],
+    "relationship_map_file": "relationship_maps/relationship_map.json"
+  },
+  "dialogue_summary": {
+    "total_dialogue_nodes": 10,
+    "average_nodes_per_character": 2.0,
+    "ai_generated": false
+  },
+  "integration_info": {
+    "unity_compatible": true,
+    "quest_system_ready": true,
+    "relationship_system_ready": true,
+    "dialogue_system_ready": true,
+    "ai_creativity_verified": false
+  }
+}

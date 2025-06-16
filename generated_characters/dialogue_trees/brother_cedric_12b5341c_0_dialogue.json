@@ -1,0 +1,39 @@
+{
+  "character_name": "Brother Cedric",
+  "dialogue_tree": [
+    {
+      "id": "brother cedric_greeting",
+      "text": "Greetings! I'm Brother Cedric, the local Servant.",
+      "speaker": "Brother Cedric",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "brother cedric_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "brother cedric_role",
+      "text": "As a Servant, I to protect others.",
+      "speaker": "Brother Cedric",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ]
+}

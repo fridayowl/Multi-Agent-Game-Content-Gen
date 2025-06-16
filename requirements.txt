@@ -8,3 +8,4 @@ asyncio>=3.4.3
 typing-extensions>=4.0.0
 bpy
 pillow 
+statistics

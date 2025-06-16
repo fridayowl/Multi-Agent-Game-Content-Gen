@@ -1,0 +1,68 @@
+{
+  "Brother Cedric": [
+    {
+      "target_character": "Master Aldric",
+      "relationship_type": "Colleague",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sister Dara",
+      "relationship_type": "Ally",
+      "relationship_strength": 7,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Cedric 121": [
+    {
+      "target_character": "Master Hilda",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sister Dara",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 6,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Master Aldric": [
+    {
+      "target_character": "Brother Cedric",
+      "relationship_type": "Colleague",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Master Hilda": [
+    {
+      "target_character": "Cedric 121",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Sister Dara": [
+    {
+      "target_character": "Brother Cedric",
+      "relationship_type": "Ally",
+      "relationship_strength": 7,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Cedric 121",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 6,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ]
+}

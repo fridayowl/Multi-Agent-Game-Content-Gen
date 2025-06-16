@@ -1,0 +1,86 @@
+{
+  "id": "sir_fiona_47940d11_4",
+  "name": "Sir Fiona",
+  "title": "The Determined Noble",
+  "description": "A 20-year-old Noble with a determined nature.",
+  "backstory": "Sir Fiona has worked as a Noble for many years.",
+  "personality": {
+    "primary_trait": "Determined",
+    "secondary_trait": "Practical",
+    "motivation": "To build something lasting",
+    "fear": "Losing control",
+    "quirk": "Speaks to animals",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 1,
+    "health": 63,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 13,
+    "wisdom": 11,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Sir Brenna",
+      "relationship_type": "Friend",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "sir fiona_greeting",
+      "text": "Greetings! I'm Sir Fiona, the local Noble.",
+      "speaker": "Sir Fiona",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sir fiona_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sir fiona_role",
+      "text": "As a Noble, I to build something lasting.",
+      "speaker": "Sir Fiona",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "house",
+  "role": "Noble",
+  "quest_involvement": [],
+  "age": 20,
+  "appearance": "A 20-year-old Noble with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "d4bcc604-c61a-426f-bab7-a75575639e2e"
+}

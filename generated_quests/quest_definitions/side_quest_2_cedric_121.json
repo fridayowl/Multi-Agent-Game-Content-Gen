@@ -1,0 +1,53 @@
+{
+  "id": "side_quest_2_cedric_121",
+  "title": "Personal Favor",
+  "description": "Cedric 121 needs help with a personal matter.",
+  "summary": "Help Cedric 121 with personal favor",
+  "giver_npc": "Cedric 121",
+  "objectives": [
+    {
+      "id": "side_quest_2_obj_1",
+      "description": "Listen to the problem",
+      "type": "talk_to_npc",
+      "target": "Cedric 121",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "side_quest_2_obj_2",
+      "description": "Help solve it",
+      "type": "talk_to_npc",
+      "target": "Cedric 121",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "side_quest_2_obj_3",
+      "description": "Return for thanks",
+      "type": "talk_to_npc",
+      "target": "Cedric 121",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    }
+  ],
+  "rewards": {
+    "experience": 50,
+    "gold": 25,
+    "items": [
+      "Thank You Gift"
+    ],
+    "relationship_changes": null
+  },
+  "prerequisites": null,
+  "level_requirement": 1,
+  "estimated_duration": "15-30 minutes",
+  "quest_type": "side",
+  "interconnected_quests": [
+    "side_quest_4_master_hilda",
+    "side_quest_5_sister_dara"
+  ],
+  "narrative_importance": "low"
+}

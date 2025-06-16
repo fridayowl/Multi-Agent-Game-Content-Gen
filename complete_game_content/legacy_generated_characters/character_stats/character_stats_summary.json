@@ -1,0 +1,36 @@
+{
+  "generation_stats": {
+    "total_characters": 5,
+    "average_age": 43.4,
+    "total_relationships": 6,
+    "total_dialogue_nodes": 10,
+    "unique_roles": 5,
+    "unique_locations": 4
+  },
+  "uniqueness_metrics": {
+    "name_uniqueness": 1.0,
+    "personality_uniqueness": 1.0,
+    "role_uniqueness": 1.0
+  },
+  "level_distribution": {
+    "Master Aldric": 6,
+    "Sir Brenna": 2,
+    "Sir Hilda": 8,
+    "Sister Edwin": 9,
+    "Sir Fiona": 1
+  },
+  "role_distribution": {
+    "Master Aldric": "Resident",
+    "Sir Brenna": "Apprentice",
+    "Sir Hilda": "Family Head",
+    "Sister Edwin": "Scholar",
+    "Sir Fiona": "Noble"
+  },
+  "personality_distribution": {
+    "Master Aldric": "Eccentric",
+    "Sir Brenna": "Gentle",
+    "Sir Hilda": "Inventive",
+    "Sister Edwin": "Jovial",
+    "Sir Fiona": "Determined"
+  }
+}

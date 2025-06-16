@@ -1,0 +1,461 @@
+{
+  "status": "success",
+  "character_count": 5,
+  "output_directory": "generated_characters",
+  "manifest_file": "generated_characters/character_manifest.json",
+  "ai_enhanced": false,
+  "fallback_generation": true,
+  "characters": [
+    {
+      "id": "sister_brenna_e4e2a477_0",
+      "name": "Sister Brenna",
+      "title": "The Determined Apprentice",
+      "description": "A 55-year-old Apprentice with a determined nature.",
+      "backstory": "Sister Brenna has worked as a Apprentice for many years.",
+      "personality": {
+        "primary_trait": "Determined",
+        "secondary_trait": "Energetic",
+        "motivation": "To discover truth",
+        "fear": "Being alone",
+        "quirk": "Always hums while working",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 5,
+        "health": 75,
+        "strength": 11,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 14,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Brother Gareth",
+          "relationship_type": "Ally",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Cedric",
+          "relationship_type": "Rival",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "sister brenna_greeting",
+          "text": "Greetings! I'm Sister Brenna, the local Apprentice.",
+          "speaker": "Sister Brenna",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "sister brenna_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "sister brenna_role",
+          "text": "As a Apprentice, I to discover truth.",
+          "speaker": "Sister Brenna",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "market",
+      "role": "Apprentice",
+      "quest_involvement": [],
+      "age": 55,
+      "appearance": "A 55-year-old Apprentice with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "7e18cf57-39bc-4349-a077-f15b5a328da6"
+    },
+    {
+      "id": "lady_hilda_e4e2a477_1",
+      "name": "Lady Hilda",
+      "title": "The Compassionate Resident",
+      "description": "A 26-year-old Resident with a compassionate nature.",
+      "backstory": "Lady Hilda has worked as a Resident for many years.",
+      "personality": {
+        "primary_trait": "Compassionate",
+        "secondary_trait": "Patient",
+        "motivation": "To build something lasting",
+        "fear": "Losing control",
+        "quirk": "Always carries a lucky charm",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 7,
+        "health": 81,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Lady Cedric",
+          "relationship_type": "Friend",
+          "relationship_strength": 4,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "lady hilda_greeting",
+          "text": "Greetings! I'm Lady Hilda, the local Resident.",
+          "speaker": "Lady Hilda",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "lady hilda_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "lady hilda_role",
+          "text": "As a Resident, I to build something lasting.",
+          "speaker": "Lady Hilda",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "house",
+      "role": "Resident",
+      "quest_involvement": [],
+      "age": 26,
+      "appearance": "A 26-year-old Resident with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "50b3d248-feb5-4c81-b6b5-8fc70ede8442"
+    },
+    {
+      "id": "brother_gareth_e4e2a477_2",
+      "name": "Brother Gareth",
+      "title": "The Jovial Noble",
+      "description": "A 30-year-old Noble with a jovial nature.",
+      "backstory": "Brother Gareth has worked as a Noble for many years.",
+      "personality": {
+        "primary_trait": "Jovial",
+        "secondary_trait": "Witty",
+        "motivation": "To build something lasting",
+        "fear": "Being misunderstood",
+        "quirk": "Speaks to animals",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 3,
+        "health": 69,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Sister Brenna",
+          "relationship_type": "Ally",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "brother gareth_greeting",
+          "text": "Greetings! I'm Brother Gareth, the local Noble.",
+          "speaker": "Brother Gareth",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "brother gareth_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "brother gareth_role",
+          "text": "As a Noble, I to build something lasting.",
+          "speaker": "Brother Gareth",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "house",
+      "role": "Noble",
+      "quest_involvement": [],
+      "age": 30,
+      "appearance": "A 30-year-old Noble with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "f50faede-c5fd-4ae1-a9f0-a97b1c0d12d3"
+    },
+    {
+      "id": "sister_fiona_e4e2a477_3",
+      "name": "Sister Fiona",
+      "title": "The Honest Bard",
+      "description": "A 48-year-old Bard with a honest nature.",
+      "backstory": "Sister Fiona has worked as a Bard for many years.",
+      "personality": {
+        "primary_trait": "Honest",
+        "secondary_trait": "Practical",
+        "motivation": "To find adventure",
+        "fear": "The unknown",
+        "quirk": "Collects unusual items",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 9,
+        "health": 87,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Lady Cedric",
+          "relationship_type": "Ally",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "sister fiona_greeting",
+          "text": "Greetings! I'm Sister Fiona, the local Bard.",
+          "speaker": "Sister Fiona",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "sister fiona_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "sister fiona_role",
+          "text": "As a Bard, I to find adventure.",
+          "speaker": "Sister Fiona",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "tavern",
+      "role": "Bard",
+      "quest_involvement": [],
+      "age": 48,
+      "appearance": "A 48-year-old Bard with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "63677ae9-1bb7-453e-89ad-8c6899ea6757"
+    },
+    {
+      "id": "lady_cedric_e4e2a477_4",
+      "name": "Lady Cedric",
+      "title": "The Clever Family Head",
+      "description": "A 20-year-old Family Head with a clever nature.",
+      "backstory": "Lady Cedric has worked as a Family Head for many years.",
+      "personality": {
+        "primary_trait": "Clever",
+        "secondary_trait": "Curious",
+        "motivation": "To protect others",
+        "fear": "Being misunderstood",
+        "quirk": "Always carries a lucky charm",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 6,
+        "health": 78,
+        "strength": 12,
+        "intelligence": 14,
+        "charisma": 12,
+        "dexterity": 13,
+        "wisdom": 11,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Sister Brenna",
+          "relationship_type": "Rival",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Hilda",
+          "relationship_type": "Friend",
+          "relationship_strength": 4,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sister Fiona",
+          "relationship_type": "Ally",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "lady cedric_greeting",
+          "text": "Greetings! I'm Lady Cedric, the local Family Head.",
+          "speaker": "Lady Cedric",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "lady cedric_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "lady cedric_role",
+          "text": "As a Family Head, I to protect others.",
+          "speaker": "Lady Cedric",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "blacksmith",
+      "role": "Family Head",
+      "quest_involvement": [],
+      "age": 20,
+      "appearance": "A 20-year-old Family Head with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "8a50b123-5150-4894-b0a2-77bb9320b3ad"
+    }
+  ]
+}

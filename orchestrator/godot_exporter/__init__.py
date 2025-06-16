@@ -1,8 +1,4 @@
-"""
-Godot Code Exporter Package
-Multi-agent game content pipeline Godot export functionality
-"""
-
+"""Godot Code Exporter Package"""
 from .agent import export_godot_package, get_godot_exporter_status, root_agent
 
 __version__ = "1.0.0"
