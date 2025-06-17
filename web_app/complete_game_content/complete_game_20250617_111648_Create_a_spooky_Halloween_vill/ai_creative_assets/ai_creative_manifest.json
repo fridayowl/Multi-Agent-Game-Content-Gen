@@ -1,0 +1,2995 @@
+{
+  "theme": "spooky",
+  "ai_generated": true,
+  "creative_features": {
+    "unique_designs": true,
+    "ai_textures": true,
+    "creative_variations": true,
+    "procedural_diversity": true
+  },
+  "buildings": [
+    {
+      "id": "house_0",
+      "type": "house",
+      "position": {
+        "x": 32.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "church_1",
+      "type": "church",
+      "position": {
+        "x": 14.000000000000002,
+        "y": 30.392304845413264,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky church",
+      "creative_variations": [
+        "Standard church",
+        "Enhanced church"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "tower_2",
+      "type": "tower",
+      "position": {
+        "x": 13.999999999999995,
+        "y": 9.60769515458674,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tower",
+      "creative_variations": [
+        "Standard tower",
+        "Enhanced tower"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_3",
+      "type": "house",
+      "position": {
+        "x": 5.818314089368377,
+        "y": 5.299490172155928,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_4",
+      "type": "house",
+      "position": {
+        "x": 6.38951095163387,
+        "y": 9.424941270225036,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_5",
+      "type": "house",
+      "position": {
+        "x": 24.46589456460918,
+        "y": 16.50845431355488,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_6",
+      "type": "house",
+      "position": {
+        "x": 13.96531699016665,
+        "y": 20.6278886342253,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_7",
+      "type": "house",
+      "position": {
+        "x": 13.546567256404337,
+        "y": 22.369482820988434,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_8",
+      "type": "house",
+      "position": {
+        "x": 32.93757126124985,
+        "y": 33.760830702426986,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    }
+  ],
+  "props": [
+    {
+      "id": "tombstone_0_1.0_0.0",
+      "type": "tombstone",
+      "position": {
+        "x": 1.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.853433810917823,
+        "width_multiplier": 1.2282603687602633,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.20301578326035194
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_3110887f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_0_1.0_0.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "fbfc070e"
+    },
+    {
+      "id": "dead_tree_1_2.0_0.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 2.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "round",
+        "branch_density": "dense",
+        "leaf_type": "none",
+        "seasonal_state": "autumn",
+        "bark_texture": "cracked",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8121376782609959,
+        "width_multiplier": 1.0553995099434568,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.19895066395012417
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_abda1257.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_1_2.0_0.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "55d72819"
+    },
+    {
+      "id": "dead_tree_2_6.0_0.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 6.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "sparse",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9727695562248163,
+        "width_multiplier": 0.9331168741119813,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.27700302125827525
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_e11634ad.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_2_6.0_0.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "aab0ea53"
+    },
+    {
+      "id": "fog_patch_3_11.0_0.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 11.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2595771832350415,
+        "width_multiplier": 1.1326999586489237,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.32318535381344016
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_9a41ce1a.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_3_11.0_0.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "17473c28"
+    },
+    {
+      "id": "dead_tree_4_15.0_0.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 15.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "oval",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "autumn",
+        "bark_texture": "cracked",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4178706103316387,
+        "width_multiplier": 0.8021586255959247,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.27724980621041717
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_4159ac7c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_4_15.0_0.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "57c4d31e"
+    },
+    {
+      "id": "dead_tree_5_31.0_1.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 31.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "round",
+        "branch_density": "dense",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0018641276559166,
+        "width_multiplier": 0.9710044730699239,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.1381698006789553
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_16d7d1ae.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_5_31.0_1.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "9dd78301"
+    },
+    {
+      "id": "tombstone_6_23.0_2.0",
+      "type": "tombstone",
+      "position": {
+        "x": 23.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "natural",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2947493346628778,
+        "width_multiplier": 0.8561607792016839,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.12827061826717928
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_bd7c7e8e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_6_23.0_2.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "0e55de33"
+    },
+    {
+      "id": "raven_perch_7_39.0_2.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 39.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.370668827967834,
+        "width_multiplier": 1.1841637105212697,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.2912999865992826
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_b2d4a61e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_7_39.0_2.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "5c81cd01"
+    },
+    {
+      "id": "raven_perch_8_23.0_3.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 23.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2008669254953137,
+        "width_multiplier": 0.978929653346131,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.24997662901144438
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_4c4e2d6f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_8_23.0_3.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "997ecc78"
+    },
+    {
+      "id": "fog_patch_9_11.0_5.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 11.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4081667462404863,
+        "width_multiplier": 1.1434420856439749,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.20345621909719047
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_610146ec.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_9_11.0_5.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "a8be2983"
+    },
+    {
+      "id": "raven_perch_10_15.0_5.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 15.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4508526704929716,
+        "width_multiplier": 1.2881654737386836,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.3212722374200845
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_745b9b75.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_10_15.0_5.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "aa541534"
+    },
+    {
+      "id": "dead_tree_11_20.0_5.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 20.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "straight",
+        "canopy_shape": "sparse",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9238909247436049,
+        "width_multiplier": 0.9182733696530365,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.3687260038525253
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_0b54df03.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_11_20.0_5.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "1c4760bf"
+    },
+    {
+      "id": "raven_perch_12_34.0_5.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 34.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.023584591681035,
+        "width_multiplier": 1.2653082450959388,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3839973153346339
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_621edca9.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_12_34.0_5.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "69820b21"
+    },
+    {
+      "id": "dead_tree_13_38.0_5.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 38.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "oval",
+        "branch_density": "dense",
+        "leaf_type": "none",
+        "seasonal_state": "autumn",
+        "bark_texture": "cracked",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8696117514415587,
+        "width_multiplier": 1.2944461543324786,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.26582447115921715
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_0f0b08fe.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_13_38.0_5.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "1297acf5"
+    },
+    {
+      "id": "raven_perch_14_10.0_6.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 10.0,
+        "y": 6.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9788488652269721,
+        "width_multiplier": 0.9200516458229187,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.12470203218919418
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_d648fcde.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_14_10.0_6.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "435a3ff7"
+    },
+    {
+      "id": "raven_perch_15_19.0_6.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 19.0,
+        "y": 6.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9530008474943202,
+        "width_multiplier": 1.0520606728700395,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.25136415987468563
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_ceb9ce07.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_15_19.0_6.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "f6770a99"
+    },
+    {
+      "id": "dead_tree_16_30.0_7.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 30.0,
+        "y": 7.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "round",
+        "branch_density": "dense",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8623300931275536,
+        "width_multiplier": 1.2118840643655717,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.32104962063859444
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_785d6e6c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_16_30.0_7.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "e8dcd9b6"
+    },
+    {
+      "id": "fog_patch_17_33.0_7.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 33.0,
+        "y": 7.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9348067069260824,
+        "width_multiplier": 1.1099068643509693,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.17090521239103051
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_f7bab7fa.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_17_33.0_7.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "cbfdcc58"
+    },
+    {
+      "id": "skeleton_18_38.0_8.0",
+      "type": "skeleton",
+      "position": {
+        "x": 38.0,
+        "y": 8.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky skeleton with distinctive characteristics",
+      "creative_variations": [
+        "Standard skeleton",
+        "Enhanced skeleton"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.991511055222186,
+        "width_multiplier": 0.8128306440540518,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.11709309103028809
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_321522ae.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_skeleton_18_38.0_8.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "4a0f424e"
+    },
+    {
+      "id": "raven_perch_19_23.0_10.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 23.0,
+        "y": 10.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.265492155310525,
+        "width_multiplier": 0.8354576540010825,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.3554182256784334
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_3ef0f0f6.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_19_23.0_10.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "0a47fb78"
+    },
+    {
+      "id": "raven_perch_20_24.0_10.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 24.0,
+        "y": 10.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "vibrant",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2565179815354786,
+        "width_multiplier": 1.1161110867938624,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3218280900474257
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_fc7177e0.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_20_24.0_10.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "bb80aba4"
+    },
+    {
+      "id": "tombstone_21_24.0_12.0",
+      "type": "tombstone",
+      "position": {
+        "x": 24.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "natural",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8408500241949912,
+        "width_multiplier": 1.0135866789853942,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3198023743349093
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_97745f7f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_21_24.0_12.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "86545048"
+    },
+    {
+      "id": "raven_perch_22_28.0_12.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 28.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "vibrant",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8319445892224437,
+        "width_multiplier": 0.8808736312469116,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.1794907607195006
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_a654db90.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_22_28.0_12.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "03070b98"
+    },
+    {
+      "id": "fog_patch_23_33.0_12.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 33.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4405861945842058,
+        "width_multiplier": 1.2417891193295643,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.2153153329250323
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_4d240c1b.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_23_33.0_12.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "ed2eccdd"
+    },
+    {
+      "id": "raven_perch_24_11.0_13.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 11.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.05338369218671,
+        "width_multiplier": 1.1854399829409472,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.17041178612573465
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_5fed69b7.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_24_11.0_13.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "764dcc4b"
+    },
+    {
+      "id": "tombstone_25_27.0_13.0",
+      "type": "tombstone",
+      "position": {
+        "x": 27.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4132817533141306,
+        "width_multiplier": 1.2001031085570375,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.34066561172211496
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_0f3b32a2.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_25_27.0_13.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "51c5ea37"
+    },
+    {
+      "id": "raven_perch_26_33.0_13.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 33.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0223198074203441,
+        "width_multiplier": 0.9266285093800531,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.10190624812747154
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_3d6c63dc.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_26_33.0_13.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "142677c9"
+    },
+    {
+      "id": "tombstone_27_4.0_14.0",
+      "type": "tombstone",
+      "position": {
+        "x": 4.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "natural",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8498432682861456,
+        "width_multiplier": 0.9737253125602707,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.11754395761617792
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_f88edec2.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_27_4.0_14.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "a69a6856"
+    },
+    {
+      "id": "dead_tree_28_11.0_14.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 11.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "round",
+        "branch_density": "dense",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8478093605195485,
+        "width_multiplier": 1.1630841247593406,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.21699172102639236
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_13c91bf4.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_28_11.0_14.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "bbf7bb5f"
+    },
+    {
+      "id": "fog_patch_29_16.0_14.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 16.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9434680476367387,
+        "width_multiplier": 0.8142080403777581,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3062684729766728
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_d2f2c515.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_29_16.0_14.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "17c1890f"
+    },
+    {
+      "id": "tombstone_30_19.0_14.0",
+      "type": "tombstone",
+      "position": {
+        "x": 19.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1510374665914747,
+        "width_multiplier": 1.1387755660141732,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.1164639450926446
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_ad6a7cfb.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_30_19.0_14.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "58fc7817"
+    },
+    {
+      "id": "dead_tree_31_38.0_14.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 38.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "irregular",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "autumn",
+        "bark_texture": "cracked",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4582897963509058,
+        "width_multiplier": 0.815331770709925,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3880017137732864
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_43ea9aa0.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_31_38.0_14.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "5643edb1"
+    },
+    {
+      "id": "fog_patch_32_3.0_15.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 3.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.168592874334378,
+        "width_multiplier": 1.0334662826460792,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.27236513665338247
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_285749e0.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_32_3.0_15.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "238d0bbc"
+    },
+    {
+      "id": "raven_perch_33_17.0_15.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 17.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4346409830756919,
+        "width_multiplier": 0.8790419123609097,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.368518758124982
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_2ea66a3e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_33_17.0_15.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "844a6e5d"
+    },
+    {
+      "id": "fog_patch_34_19.0_16.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 19.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3299902177622955,
+        "width_multiplier": 0.8582989619816643,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.2187999994696639
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_fbf46f42.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_34_19.0_16.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "9a723aa0"
+    },
+    {
+      "id": "tombstone_35_29.0_16.0",
+      "type": "tombstone",
+      "position": {
+        "x": 29.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.014125726362265,
+        "width_multiplier": 0.8654366908618129,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.2095463080852005
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_752fe0e1.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_35_29.0_16.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "d9eda94c"
+    },
+    {
+      "id": "fog_patch_36_35.0_16.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 35.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0048537523954004,
+        "width_multiplier": 1.1002148169082249,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3760708853375736
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_98a6367b.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_36_35.0_16.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "6295115d"
+    },
+    {
+      "id": "tombstone_37_10.0_17.0",
+      "type": "tombstone",
+      "position": {
+        "x": 10.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0967511364386215,
+        "width_multiplier": 1.1356888133322156,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.3307342026218629
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_21a97dfd.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_37_10.0_17.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "0d3e8379"
+    },
+    {
+      "id": "fog_patch_38_5.0_18.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 5.0,
+        "y": 18.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.277228693006539,
+        "width_multiplier": 1.1800670309931092,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3559367039938909
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_4229f62a.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_38_5.0_18.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "f82467ea"
+    },
+    {
+      "id": "dead_tree_39_28.0_19.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 28.0,
+        "y": 19.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "round",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3158292222197456,
+        "width_multiplier": 0.9947293386194735,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.1937550531166381
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_7f81394d.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_39_28.0_19.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "02251bb6"
+    },
+    {
+      "id": "fog_patch_40_19.0_20.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 19.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "natural",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.43616521891353,
+        "width_multiplier": 1.2160449451839193,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.19124264112422157
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_b0be2924.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_40_19.0_20.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "92a61451"
+    },
+    {
+      "id": "fog_patch_41_26.0_21.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 26.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4439196122161828,
+        "width_multiplier": 1.1741515770933164,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.35868197651735645
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_f99bd06d.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_41_26.0_21.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "ac2b0e59"
+    },
+    {
+      "id": "tombstone_42_28.0_21.0",
+      "type": "tombstone",
+      "position": {
+        "x": 28.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.37377540564295,
+        "width_multiplier": 1.0250628298792717,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.19982182290333045
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_f12ef2e0.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_42_28.0_21.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "39a1db50"
+    },
+    {
+      "id": "raven_perch_43_36.0_21.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 36.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "natural",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9339448039157081,
+        "width_multiplier": 1.20028544697967,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.3469463138715482
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_e889807b.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_43_36.0_21.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "5c51520c"
+    },
+    {
+      "id": "fog_patch_44_39.0_21.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 39.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4536682182717722,
+        "width_multiplier": 0.834234598584707,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.13855396177386325
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_aecaaf2e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_44_39.0_21.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "691ac630"
+    },
+    {
+      "id": "raven_perch_45_26.0_22.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 26.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.452213387664711,
+        "width_multiplier": 0.8259370547218721,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.18226392476340036
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_ca637d02.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_45_26.0_22.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "5e470aca"
+    },
+    {
+      "id": "dead_tree_46_1.0_23.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 1.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "round",
+        "branch_density": "medium",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8702718034146661,
+        "width_multiplier": 0.8560428923717465,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.2933052466093615
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_3dc4bcbd.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_46_1.0_23.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "dac3a8a5"
+    },
+    {
+      "id": "raven_perch_47_19.0_23.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 19.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4594205441187573,
+        "width_multiplier": 1.1370441961360336,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.14092245649172733
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_79fdbc3a.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_47_19.0_23.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "e8f2cfbd"
+    },
+    {
+      "id": "dead_tree_48_29.0_23.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 29.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "sparse",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1250593910378561,
+        "width_multiplier": 1.2798400082758086,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.23595665673968386
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_2729322a.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_48_29.0_23.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "006ad1cb"
+    },
+    {
+      "id": "dead_tree_49_39.0_24.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 39.0,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "straight",
+        "canopy_shape": "irregular",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "autumn",
+        "bark_texture": "cracked",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.407385540155425,
+        "width_multiplier": 1.0619457480389178,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.2077091308705568
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_69142787.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_49_39.0_24.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "f3abf496"
+    },
+    {
+      "id": "raven_perch_50_17.0_25.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 17.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.419821791870847,
+        "width_multiplier": 0.9174692848969609,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.26161102665796543
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_8957cd56.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_50_17.0_25.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "f6770a99"
+    },
+    {
+      "id": "dead_tree_51_35.0_25.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 35.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "sparse",
+        "branch_density": "medium",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1958987278958402,
+        "width_multiplier": 1.2237541168842103,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3702331656015643
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_55d07626.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_51_35.0_25.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "9dd35a5c"
+    },
+    {
+      "id": "fog_patch_52_28.0_26.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 28.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3304144619858016,
+        "width_multiplier": 1.1405080508180907,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.14873284067890752
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_aef1a907.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_52_28.0_26.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "007fc4df"
+    },
+    {
+      "id": "raven_perch_53_20.0_27.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 20.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8147656989150962,
+        "width_multiplier": 1.1717756825317232,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3293725159905359
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_ad84976c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_53_20.0_27.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "1d85d650"
+    },
+    {
+      "id": "tombstone_54_31.0_27.0",
+      "type": "tombstone",
+      "position": {
+        "x": 31.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2258226726924633,
+        "width_multiplier": 1.1485131664180495,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3232648607807076
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_8e484e2c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_54_31.0_27.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "253986ef"
+    },
+    {
+      "id": "fog_patch_55_35.0_27.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 35.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8829723143919911,
+        "width_multiplier": 1.1974245935859107,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.38793732306053863
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_6574d9af.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_55_35.0_27.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "b4c39b7b"
+    },
+    {
+      "id": "dead_tree_56_38.0_27.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 38.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "round",
+        "branch_density": "dense",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3670311510677395,
+        "width_multiplier": 1.0605209669150382,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.20036712822768216
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_fa1e24b9.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_56_38.0_27.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "bebfca1f"
+    },
+    {
+      "id": "dead_tree_57_36.0_28.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 36.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "split",
+        "canopy_shape": "oval",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "autumn",
+        "bark_texture": "cracked",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.457478692851601,
+        "width_multiplier": 1.119633087618492,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3639800597658587
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_d3aeb76b.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_57_36.0_28.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "5e8ea4b2"
+    },
+    {
+      "id": "fog_patch_58_37.0_28.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 37.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.221869536167444,
+        "width_multiplier": 1.1905967996282345,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.1319217443074826
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_1bf87e21.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_58_37.0_28.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "7d3afe22"
+    },
+    {
+      "id": "fog_patch_59_33.0_29.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 33.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2520244746535807,
+        "width_multiplier": 0.9379689239028394,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.3909736187288392
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_f286a92a.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_59_33.0_29.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "82e6c570"
+    },
+    {
+      "id": "dead_tree_60_34.0_29.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 34.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "split",
+        "canopy_shape": "round",
+        "branch_density": "dense",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9894783280670059,
+        "width_multiplier": 1.1147274824407223,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.2629690007780353
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_f3589928.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_60_34.0_29.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "a6352d3c"
+    },
+    {
+      "id": "tombstone_61_3.0_30.0",
+      "type": "tombstone",
+      "position": {
+        "x": 3.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.431270063485123,
+        "width_multiplier": 1.2929750982042003,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.2439733341645255
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_12a0f33c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_61_3.0_30.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "cc60e7b0"
+    },
+    {
+      "id": "dead_tree_62_24.0_30.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 24.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "oval",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.46793177678852,
+        "width_multiplier": 0.8115084318415844,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.15554438291954398
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_bac5a2c3.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_62_24.0_30.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "9b343ccd"
+    },
+    {
+      "id": "dead_tree_63_18.0_31.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 18.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "irregular",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9936107359667822,
+        "width_multiplier": 0.9709647992349745,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.3974930591376509
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_c3dcb488.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_63_18.0_31.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "5679a53f"
+    },
+    {
+      "id": "tombstone_64_20.0_31.0",
+      "type": "tombstone",
+      "position": {
+        "x": 20.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "natural",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.101198661168065,
+        "width_multiplier": 1.1379063076785048,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.13696126985647472
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_06c0de4b.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_64_20.0_31.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "6ec54339"
+    },
+    {
+      "id": "fog_patch_65_28.0_31.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 28.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3869972824191001,
+        "width_multiplier": 0.8899987796091713,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.1872614866717939
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_40a8750a.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_65_28.0_31.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "35fed048"
+    },
+    {
+      "id": "tombstone_66_29.0_31.0",
+      "type": "tombstone",
+      "position": {
+        "x": 29.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "natural",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3190527695835663,
+        "width_multiplier": 1.1629343254893703,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.27546288720087053
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_6add2b5e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_66_29.0_31.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "13fe8a3b"
+    },
+    {
+      "id": "tombstone_67_4.0_32.0",
+      "type": "tombstone",
+      "position": {
+        "x": 4.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9656575042008249,
+        "width_multiplier": 0.9811133288478746,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.23839971687578956
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_0e2b6238.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_67_4.0_32.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "1709fc73"
+    },
+    {
+      "id": "dead_tree_68_6.0_32.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 6.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "split",
+        "canopy_shape": "round",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "dead",
+        "bark_texture": "cracked",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.385371985663923,
+        "width_multiplier": 1.133250251374942,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.16503555372207396
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_64c3a6de.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_68_6.0_32.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "4e424e7d"
+    },
+    {
+      "id": "tombstone_69_18.0_32.0",
+      "type": "tombstone",
+      "position": {
+        "x": 18.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9186454434756973,
+        "width_multiplier": 0.987053385337566,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.253293396884017
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_315957f0.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_69_18.0_32.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "81a3e7de"
+    },
+    {
+      "id": "skeleton_70_37.0_32.0",
+      "type": "skeleton",
+      "position": {
+        "x": 37.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky skeleton with distinctive characteristics",
+      "creative_variations": [
+        "Standard skeleton",
+        "Enhanced skeleton"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1747926281435173,
+        "width_multiplier": 0.825892640580973,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.303453490142768
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_0d5d71c2.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_skeleton_70_37.0_32.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "3fde8778"
+    },
+    {
+      "id": "dead_tree_71_25.0_33.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 25.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "irregular",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2346229563797966,
+        "width_multiplier": 0.9287290444514027,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.2437223738508569
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_44c9432b.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_71_25.0_33.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "ea55d106"
+    },
+    {
+      "id": "raven_perch_72_26.0_33.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 26.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9104783174203872,
+        "width_multiplier": 0.8995605481256621,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.17015087468733364
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_41e7d1f4.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_72_26.0_33.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "61f61aa8"
+    },
+    {
+      "id": "raven_perch_73_0.0_34.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 0.0,
+        "y": 34.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "vibrant",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2469756647476908,
+        "width_multiplier": 0.9370761068287272,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.32129766441881585
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_5cb35a56.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_73_0.0_34.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "667dfbb3"
+    },
+    {
+      "id": "dead_tree_74_1.0_34.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 1.0,
+        "y": 34.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "irregular",
+        "branch_density": "sparse",
+        "leaf_type": "none",
+        "seasonal_state": "autumn",
+        "bark_texture": "cracked",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.442861306148418,
+        "width_multiplier": 1.229752611723638,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.308479756895892
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_553aa6d2.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_74_1.0_34.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "e8f7061d"
+    },
+    {
+      "id": "dead_tree_75_4.0_35.0",
+      "type": "dead_tree",
+      "position": {
+        "x": 4.0,
+        "y": 35.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky dead_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard dead_tree",
+        "Enhanced dead_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "split",
+        "canopy_shape": "oval",
+        "branch_density": "medium",
+        "leaf_type": "none",
+        "seasonal_state": "withered",
+        "bark_texture": "cracked",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8988176757926543,
+        "width_multiplier": 0.9500829158523504,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.2191005754522262
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/wood_spooky_0228151b.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_dead_tree_75_4.0_35.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "4932f202"
+    },
+    {
+      "id": "raven_perch_76_14.0_35.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 14.0,
+        "y": 35.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4299477575871464,
+        "width_multiplier": 1.189904387619775,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.32925166222701685
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_71c0b512.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_76_14.0_35.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "d2f61ef8"
+    },
+    {
+      "id": "raven_perch_77_16.0_35.0",
+      "type": "raven_perch",
+      "position": {
+        "x": 16.0,
+        "y": 35.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky raven_perch with distinctive characteristics",
+      "creative_variations": [
+        "Standard raven_perch",
+        "Enhanced raven_perch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "weathered",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4728574699670072,
+        "width_multiplier": 0.855556426544968,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.34089149672719954
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_a4b260a3.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_raven_perch_77_16.0_35.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "5810c76a"
+    },
+    {
+      "id": "fog_patch_78_15.0_36.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 15.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8464592817343535,
+        "width_multiplier": 0.9406586630790819,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.21832683333781044
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_de589a7c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_78_15.0_36.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "8634d4db"
+    },
+    {
+      "id": "fog_patch_79_29.0_37.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 29.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4522913987165427,
+        "width_multiplier": 1.0665629834200936,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.35900788856743293
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_0489dfba.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_79_29.0_37.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "6070ca70"
+    },
+    {
+      "id": "tombstone_80_28.0_38.0",
+      "type": "tombstone",
+      "position": {
+        "x": 28.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky tombstone with distinctive characteristics",
+      "creative_variations": [
+        "Standard tombstone",
+        "Enhanced tombstone"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "natural",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1073338458264088,
+        "width_multiplier": 1.0870615227465654,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.38703385430767545
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_0fd9ccf2.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_tombstone_80_28.0_38.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "f9fcdf94"
+    },
+    {
+      "id": "fog_patch_81_21.0_39.0",
+      "type": "fog_patch",
+      "position": {
+        "x": 21.0,
+        "y": 39.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique spooky fog_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard fog_patch",
+        "Enhanced fog_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.012251103023606,
+        "width_multiplier": 1.2704129169376872,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.13484446697701702
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/ai_textures/generic_spooky_1389415f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets/blender_scripts/ai_prop_fog_patch_81_21.0_39.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "047a04e3"
+    }
+  ],
+  "environment": [],
+  "ai_materials": {},
+  "generation_summary": {
+    "total_creative_assets": 91,
+    "unique_textures_generated": 82,
+    "ai_variations_created": 18,
+    "creative_complexity_score": 164.0,
+    "buildings_count": 9,
+    "props_count": 82,
+    "environment_count": 0
+  },
+  "output_directory": "complete_game_content/complete_game_20250617_111648_Create_a_spooky_Halloween_vill/ai_creative_assets"
+}

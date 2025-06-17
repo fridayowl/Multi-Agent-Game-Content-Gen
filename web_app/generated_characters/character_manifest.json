@@ -1,0 +1,128 @@
+{
+  "generation_info": {
+    "timestamp": "2025-06-17T11:16:48.475813",
+    "theme": "spooky",
+    "world_size": [
+      40,
+      40
+    ],
+    "character_count": 5,
+    "ai_enhanced": false,
+    "creativity_level": "maximum",
+    "uniqueness_guaranteed": true,
+    "session_id": "f8aeae2a"
+  },
+  "uniqueness_metrics": {
+    "name_uniqueness": 1.0,
+    "personality_uniqueness": 1.0,
+    "role_uniqueness": 1.0
+  },
+  "characters": {
+    "brother_gareth_f8aeae2a_0": {
+      "name": "Brother Gareth",
+      "title": "The Determined Servant",
+      "role": "Servant",
+      "age": 56,
+      "location": "house",
+      "personality_summary": "Determined, Loyal",
+      "motivation": "To seek knowledge",
+      "secret": "Has an interesting past",
+      "level": 7,
+      "health": 81,
+      "relationship_count": 3,
+      "dialogue_nodes": 2,
+      "unique_id": "d4379788-4128-45b7-92c9-f91aac27b80b",
+      "profile_file": "character_profiles/brother_gareth_f8aeae2a_0_profile.json",
+      "dialogue_file": "dialogue_trees/brother_gareth_f8aeae2a_0_dialogue.json"
+    },
+    "sister_fiona_f8aeae2a_1": {
+      "name": "Sister Fiona",
+      "title": "The Gentle Family Head",
+      "role": "Family Head",
+      "age": 48,
+      "location": "church",
+      "personality_summary": "Gentle, Loyal",
+      "motivation": "To find adventure",
+      "secret": "Has an interesting past",
+      "level": 6,
+      "health": 78,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "9676c297-32bf-4159-b347-c43508c93c98",
+      "profile_file": "character_profiles/sister_fiona_f8aeae2a_1_profile.json",
+      "dialogue_file": "dialogue_trees/sister_fiona_f8aeae2a_1_dialogue.json"
+    },
+    "master_gareth_f8aeae2a_2": {
+      "name": "Master Gareth",
+      "title": "The Brave Resident",
+      "role": "Resident",
+      "age": 40,
+      "location": "house",
+      "personality_summary": "Brave, Optimistic",
+      "motivation": "To seek knowledge",
+      "secret": "Has an interesting past",
+      "level": 7,
+      "health": 81,
+      "relationship_count": 1,
+      "dialogue_nodes": 2,
+      "unique_id": "a794ab9f-432a-4fd3-9ccc-1d6514e0dbdb",
+      "profile_file": "character_profiles/master_gareth_f8aeae2a_2_profile.json",
+      "dialogue_file": "dialogue_trees/master_gareth_f8aeae2a_2_dialogue.json"
+    },
+    "lady_gareth_f8aeae2a_3": {
+      "name": "Lady Gareth",
+      "title": "The Clever Noble",
+      "role": "Noble",
+      "age": 27,
+      "location": "house",
+      "personality_summary": "Clever, Curious",
+      "motivation": "To discover truth",
+      "secret": "Has an interesting past",
+      "level": 7,
+      "health": 81,
+      "relationship_count": 1,
+      "dialogue_nodes": 2,
+      "unique_id": "0efadada-e258-4d7b-beb7-a413aa47e20c",
+      "profile_file": "character_profiles/lady_gareth_f8aeae2a_3_profile.json",
+      "dialogue_file": "dialogue_trees/lady_gareth_f8aeae2a_3_dialogue.json"
+    },
+    "sir_gareth_f8aeae2a_4": {
+      "name": "Sir Gareth",
+      "title": "The Jovial Healer",
+      "role": "Healer",
+      "age": 37,
+      "location": "church",
+      "personality_summary": "Jovial, Cautious",
+      "motivation": "To seek knowledge",
+      "secret": "Has an interesting past",
+      "level": 7,
+      "health": 81,
+      "relationship_count": 1,
+      "dialogue_nodes": 2,
+      "unique_id": "61dd4432-21fd-4eac-b9dc-f66befbf092f",
+      "profile_file": "character_profiles/sir_gareth_f8aeae2a_4_profile.json",
+      "dialogue_file": "dialogue_trees/sir_gareth_f8aeae2a_4_dialogue.json"
+    }
+  },
+  "relationships_summary": {
+    "total_relationships": 8,
+    "relationship_types": [
+      "Friend",
+      "Neighbor",
+      "Acquaintance"
+    ],
+    "relationship_map_file": "relationship_maps/relationship_map.json"
+  },
+  "dialogue_summary": {
+    "total_dialogue_nodes": 10,
+    "average_nodes_per_character": 2.0,
+    "ai_generated": false
+  },
+  "integration_info": {
+    "unity_compatible": true,
+    "quest_system_ready": true,
+    "relationship_system_ready": true,
+    "dialogue_system_ready": true,
+    "ai_creativity_verified": false
+  }
+}

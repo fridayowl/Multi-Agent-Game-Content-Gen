@@ -1,0 +1,86 @@
+{
+  "id": "lady_gareth_f8aeae2a_3",
+  "name": "Lady Gareth",
+  "title": "The Clever Noble",
+  "description": "A 27-year-old Noble with a clever nature.",
+  "backstory": "Lady Gareth has worked as a Noble for many years.",
+  "personality": {
+    "primary_trait": "Clever",
+    "secondary_trait": "Curious",
+    "motivation": "To discover truth",
+    "fear": "Being misunderstood",
+    "quirk": "Never sits still",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 7,
+    "health": 81,
+    "strength": 12,
+    "intelligence": 14,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Sister Fiona",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 4,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "lady gareth_greeting",
+      "text": "Greetings! I'm Lady Gareth, the local Noble.",
+      "speaker": "Lady Gareth",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "lady gareth_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "lady gareth_role",
+      "text": "As a Noble, I to discover truth.",
+      "speaker": "Lady Gareth",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "house",
+  "role": "Noble",
+  "quest_involvement": [],
+  "age": 27,
+  "appearance": "A 27-year-old Noble with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "0efadada-e258-4d7b-beb7-a413aa47e20c"
+}

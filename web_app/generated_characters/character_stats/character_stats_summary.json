@@ -1,0 +1,36 @@
+{
+  "generation_stats": {
+    "total_characters": 5,
+    "average_age": 41.6,
+    "total_relationships": 8,
+    "total_dialogue_nodes": 10,
+    "unique_roles": 5,
+    "unique_locations": 2
+  },
+  "uniqueness_metrics": {
+    "name_uniqueness": 1.0,
+    "personality_uniqueness": 1.0,
+    "role_uniqueness": 1.0
+  },
+  "level_distribution": {
+    "Brother Gareth": 7,
+    "Sister Fiona": 6,
+    "Master Gareth": 7,
+    "Lady Gareth": 7,
+    "Sir Gareth": 7
+  },
+  "role_distribution": {
+    "Brother Gareth": "Servant",
+    "Sister Fiona": "Family Head",
+    "Master Gareth": "Resident",
+    "Lady Gareth": "Noble",
+    "Sir Gareth": "Healer"
+  },
+  "personality_distribution": {
+    "Brother Gareth": "Determined",
+    "Sister Fiona": "Gentle",
+    "Master Gareth": "Brave",
+    "Lady Gareth": "Clever",
+    "Sir Gareth": "Jovial"
+  }
+}

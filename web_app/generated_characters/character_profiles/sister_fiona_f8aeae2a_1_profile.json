@@ -1,0 +1,93 @@
+{
+  "id": "sister_fiona_f8aeae2a_1",
+  "name": "Sister Fiona",
+  "title": "The Gentle Family Head",
+  "description": "A 48-year-old Family Head with a gentle nature.",
+  "backstory": "Sister Fiona has worked as a Family Head for many years.",
+  "personality": {
+    "primary_trait": "Gentle",
+    "secondary_trait": "Loyal",
+    "motivation": "To find adventure",
+    "fear": "Being misunderstood",
+    "quirk": "Speaks to animals",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 6,
+    "health": 78,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Brother Gareth",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Lady Gareth",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 4,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "sister fiona_greeting",
+      "text": "Greetings! I'm Sister Fiona, the local Family Head.",
+      "speaker": "Sister Fiona",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sister fiona_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sister fiona_role",
+      "text": "As a Family Head, I to find adventure.",
+      "speaker": "Sister Fiona",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "church",
+  "role": "Family Head",
+  "quest_involvement": [],
+  "age": 48,
+  "appearance": "A 48-year-old Family Head with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "9676c297-32bf-4159-b347-c43508c93c98"
+}

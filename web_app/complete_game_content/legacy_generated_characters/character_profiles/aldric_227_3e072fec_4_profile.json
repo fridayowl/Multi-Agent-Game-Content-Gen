@@ -1,0 +1,93 @@
+{
+  "id": "aldric_227_3e072fec_4",
+  "name": "Aldric 227",
+  "title": "The Honest Servant",
+  "description": "A 36-year-old Servant with a honest nature.",
+  "backstory": "Aldric 227 has worked as a Servant for many years.",
+  "personality": {
+    "primary_trait": "Honest",
+    "secondary_trait": "Practical",
+    "motivation": "To discover truth",
+    "fear": "Being misunderstood",
+    "quirk": "Speaks to animals",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 4,
+    "health": 72,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Master Aldric",
+      "relationship_type": "Rival",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sister Brenna",
+      "relationship_type": "Rival",
+      "relationship_strength": 6,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "aldric 227_greeting",
+      "text": "Greetings! I'm Aldric 227, the local Servant.",
+      "speaker": "Aldric 227",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "aldric 227_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "aldric 227_role",
+      "text": "As a Servant, I to discover truth.",
+      "speaker": "Aldric 227",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "blacksmith",
+  "role": "Servant",
+  "quest_involvement": [],
+  "age": 36,
+  "appearance": "A 36-year-old Servant with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "06d7fa51-5025-4e7d-ab79-963430746f69"
+}

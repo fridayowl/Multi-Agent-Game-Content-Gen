@@ -1,0 +1,21 @@
+{
+  "main_chain_main_quest_1_brother_gareth": {
+    "type": "main",
+    "quests": [
+      "main_quest_1_brother_gareth"
+    ],
+    "connected_quests": [
+      "main_quest_2_sister_fiona"
+    ]
+  },
+  "main_chain_main_quest_2_sister_fiona": {
+    "type": "main",
+    "quests": [
+      "main_quest_2_sister_fiona"
+    ],
+    "connected_quests": [
+      "main_quest_1_brother_gareth",
+      "side_quest_1_brother_gareth"
+    ]
+  }
+}

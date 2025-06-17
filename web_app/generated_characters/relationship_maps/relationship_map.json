@@ -1,0 +1,68 @@
+{
+  "Brother Gareth": [
+    {
+      "target_character": "Sister Fiona",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Master Gareth",
+      "relationship_type": "Friend",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sir Gareth",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 4,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Sister Fiona": [
+    {
+      "target_character": "Brother Gareth",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Lady Gareth",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 4,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Master Gareth": [
+    {
+      "target_character": "Brother Gareth",
+      "relationship_type": "Friend",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Lady Gareth": [
+    {
+      "target_character": "Sister Fiona",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 4,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Sir Gareth": [
+    {
+      "target_character": "Brother Gareth",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 4,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ]
+}

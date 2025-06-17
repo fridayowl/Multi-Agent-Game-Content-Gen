@@ -1,0 +1,99 @@
+{
+  "integration_analysis": {
+    "world_character_alignment": {
+      "alignment_score": 0.0,
+      "aligned_characters": 0,
+      "total_characters": 5,
+      "theme_consistency": false,
+      "issues": [
+        "Master Aldric role 'noble' doesn't fit medieval theme",
+        "Sir Dara role 'bartender' doesn't fit medieval theme",
+        "Master Brenna role 'innkeeper' doesn't fit medieval theme",
+        "Sister Brenna role 'scholar' doesn't fit medieval theme",
+        "Aldric 227 role 'servant' doesn't fit medieval theme"
+      ],
+      "recommendations": [
+        "Ensure character roles fit the medieval theme",
+        "Verify character locations exist in the world",
+        "Consider adding theme-appropriate NPCs"
+      ]
+    },
+    "character_quest_integration": {
+      "integration_score": 0.4,
+      "characters_in_quests": 2,
+      "total_characters": 5,
+      "quest_givers": 2,
+      "unused_characters": [
+        "Master Brenna",
+        "Sister Brenna",
+        "Aldric 227"
+      ],
+      "character_utilization": {
+        "well_integrated": false,
+        "characters_giving_quests": 2,
+        "characters_mentioned": 0
+      },
+      "issues": [
+        "3 characters not involved in any quests: Master Brenna, Sister Brenna, Aldric 227"
+      ],
+      "recommendations": [
+        "Involve unused characters in quest objectives",
+        "Distribute quest-giving among more NPCs",
+        "Add character interactions in quest narratives"
+      ]
+    },
+    "asset_world_compatibility": {
+      "compatibility_score": 1.0,
+      "building_coverage": {
+        "required_types": 4,
+        "covered_types": 4,
+        "missing_types": [],
+        "coverage_percentage": 1.0
+      },
+      "asset_availability": {
+        "total_assets": 92,
+        "themed_assets": true,
+        "building_assets": 8
+      },
+      "issues": [],
+      "recommendations": []
+    },
+    "narrative_coherence": {
+      "coherence_score": 1.0,
+      "theme_consistency": 1.0,
+      "character_consistency": 1.0,
+      "narrative_interconnection": 1.0,
+      "shared_npcs_count": 2,
+      "narrative_strength": "strong",
+      "issues": [],
+      "recommendations": []
+    }
+  },
+  "content_connections": {
+    "npcs_with_quests": 2,
+    "buildings_with_npcs": 8,
+    "themed_consistency": {
+      "consistent": false,
+      "character_consistency": false,
+      "building_consistency": true,
+      "theme": "medieval",
+      "issues": [
+        "Character role 'noble' doesn't fit medieval theme",
+        "Character role 'bartender' doesn't fit medieval theme",
+        "Character role 'innkeeper' doesn't fit medieval theme",
+        "Character role 'scholar' doesn't fit medieval theme",
+        "Character role 'servant' doesn't fit medieval theme"
+      ],
+      "score": 0.5
+    }
+  },
+  "recommendations": [
+    "Improve character-world alignment by adjusting NPC roles to match the world theme",
+    "Involve more characters in quest storylines",
+    "Create quests that utilize character relationships",
+    "Distribute quest-giving among more NPCs",
+    "Create quests or storylines for unused characters: Master Brenna, Sister Brenna, Aldric 227",
+    "Review and fix thematic inconsistencies across all content types"
+  ],
+  "validation_timestamp": "2025-06-17T11:16:05.210846"
+}

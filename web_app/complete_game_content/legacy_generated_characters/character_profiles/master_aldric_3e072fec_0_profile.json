@@ -1,0 +1,86 @@
+{
+  "id": "master_aldric_3e072fec_0",
+  "name": "Master Aldric",
+  "title": "The Brave Noble",
+  "description": "A 55-year-old Noble with a brave nature.",
+  "backstory": "Master Aldric has worked as a Noble for many years.",
+  "personality": {
+    "primary_trait": "Brave",
+    "secondary_trait": "Witty",
+    "motivation": "To discover truth",
+    "fear": "Losing control",
+    "quirk": "Always carries a lucky charm",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 9,
+    "health": 87,
+    "strength": 13,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 14,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Aldric 227",
+      "relationship_type": "Rival",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "master aldric_greeting",
+      "text": "Greetings! I'm Master Aldric, the local Noble.",
+      "speaker": "Master Aldric",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "master aldric_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "master aldric_role",
+      "text": "As a Noble, I to discover truth.",
+      "speaker": "Master Aldric",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "house",
+  "role": "Noble",
+  "quest_involvement": [],
+  "age": 55,
+  "appearance": "A 55-year-old Noble with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "dcdf7def-95a3-4da0-9c23-8a0211ffb428"
+}

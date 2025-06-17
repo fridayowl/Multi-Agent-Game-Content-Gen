@@ -1,0 +1,3084 @@
+{
+  "theme": "medieval",
+  "ai_generated": true,
+  "creative_features": {
+    "unique_designs": true,
+    "ai_textures": true,
+    "creative_variations": true,
+    "procedural_diversity": true
+  },
+  "buildings": [
+    {
+      "id": "market_0",
+      "type": "market",
+      "position": {
+        "x": 20,
+        "y": 20,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval market",
+      "creative_variations": [
+        "Standard market",
+        "Enhanced market"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_1",
+      "type": "house",
+      "position": {
+        "x": 32.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "tavern_2",
+      "type": "tavern",
+      "position": {
+        "x": 20.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval tavern",
+      "creative_variations": [
+        "Standard tavern",
+        "Enhanced tavern"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "blacksmith_3",
+      "type": "blacksmith",
+      "position": {
+        "x": 8.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval blacksmith",
+      "creative_variations": [
+        "Standard blacksmith",
+        "Enhanced blacksmith"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_4",
+      "type": "house",
+      "position": {
+        "x": 30.48085071742762,
+        "y": 11.015602004119764,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_5",
+      "type": "house",
+      "position": {
+        "x": 29.891696036258942,
+        "y": 26.077635487985695,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_6",
+      "type": "house",
+      "position": {
+        "x": 12.059568833495039,
+        "y": 29.14380908348299,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_7",
+      "type": "house",
+      "position": {
+        "x": 20.714980291043734,
+        "y": 10.504399713942771,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    }
+  ],
+  "props": [
+    {
+      "id": "rock_0_26.0_0.0",
+      "type": "rock",
+      "position": {
+        "x": 26.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard rock",
+        "Enhanced rock"
+      ],
+      "style_parameters": {
+        "shape": "crystalline",
+        "surface": "cracked",
+        "size_category": "medium",
+        "formation": "cluster",
+        "weathering": "fresh",
+        "mineral_type": "granite"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.7093450498669533,
+        "width_multiplier": 1.7059359898812678,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.21048625172653926
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_e0710e6e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_rock_0_26.0_0.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "3cb33970"
+    },
+    {
+      "id": "rock_1_7.0_1.0",
+      "type": "rock",
+      "position": {
+        "x": 7.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard rock",
+        "Enhanced rock"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "surface": "smooth",
+        "size_category": "small",
+        "formation": "outcrop",
+        "weathering": "fresh",
+        "mineral_type": "sandstone"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.032676797069066,
+        "width_multiplier": 0.9510580202054995,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.27882642161762394
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_af7d5311.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_rock_1_7.0_1.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "ebab89f0"
+    },
+    {
+      "id": "flower_patch_2_22.0_1.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 22.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0259859769277868,
+        "width_multiplier": 1.1340686828568223,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.1885362371596606
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_94f225b6.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_2_22.0_1.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "5be41887"
+    },
+    {
+      "id": "bush_3_23.0_1.0",
+      "type": "bush",
+      "position": {
+        "x": 23.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "density": "sparse",
+        "leaf_size": "small",
+        "flowering": "summer",
+        "berry_type": "purple",
+        "thorns": "light"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0725782691099885,
+        "width_multiplier": 0.9494759029737665,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.3543783514164808
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_24510cc8.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_3_23.0_1.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "3dee6f31"
+    },
+    {
+      "id": "bush_4_35.0_1.0",
+      "type": "bush",
+      "position": {
+        "x": 35.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "upright",
+        "density": "sparse",
+        "leaf_size": "large",
+        "flowering": "spring",
+        "berry_type": "black",
+        "thorns": "heavy"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0456848961287424,
+        "width_multiplier": 0.8053881066138817,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.13082336903788291
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_809dede7.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_4_35.0_1.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "88f81829"
+    },
+    {
+      "id": "bush_5_37.0_1.0",
+      "type": "bush",
+      "position": {
+        "x": 37.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "upright",
+        "density": "thick",
+        "leaf_size": "medium",
+        "flowering": "spring",
+        "berry_type": "none",
+        "thorns": "none"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.23848952502559,
+        "width_multiplier": 0.9654227836183777,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.25287739843551305
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_ec12561c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_5_37.0_1.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "253443e1"
+    },
+    {
+      "id": "rock_6_9.0_2.0",
+      "type": "rock",
+      "position": {
+        "x": 9.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard rock",
+        "Enhanced rock"
+      ],
+      "style_parameters": {
+        "shape": "flat",
+        "surface": "rough",
+        "size_category": "boulder",
+        "formation": "outcrop",
+        "weathering": "ancient",
+        "mineral_type": "basalt"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.6310698718847547,
+        "width_multiplier": 1.5047924332324514,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.3825415078045721
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_7e7fbc7b.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_rock_6_9.0_2.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "120dc79b"
+    },
+    {
+      "id": "oak_tree_7_17.0_2.0",
+      "type": "oak_tree",
+      "position": {
+        "x": 17.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval oak_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard oak_tree",
+        "Enhanced oak_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "irregular",
+        "branch_density": "medium",
+        "leaf_type": "broad",
+        "seasonal_state": "winter",
+        "bark_texture": "scarred",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.6302029353448209,
+        "width_multiplier": 1.2423950141640114,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.13714462234533317
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/wood_medieval_474f1eb6.png",
+        "leaves": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_05760190.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_oak_tree_7_17.0_2.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "352f6026"
+    },
+    {
+      "id": "oak_tree_8_18.0_2.0",
+      "type": "oak_tree",
+      "position": {
+        "x": 18.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval oak_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard oak_tree",
+        "Enhanced oak_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "straight",
+        "canopy_shape": "sparse",
+        "branch_density": "dense",
+        "leaf_type": "broad",
+        "seasonal_state": "winter",
+        "bark_texture": "deeply_furrowed",
+        "height_variation": "ancient"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4533548009062904,
+        "width_multiplier": 0.8352453409376983,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.2208274295010597
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/wood_medieval_93a2a212.png",
+        "leaves": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_67801b15.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_oak_tree_8_18.0_2.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "d271ca38"
+    },
+    {
+      "id": "flower_patch_9_20.0_2.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 20.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8474298450409453,
+        "width_multiplier": 0.9782672164335477,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.38554343114140144
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_a255e309.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_9_20.0_2.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "21d3e8cc"
+    },
+    {
+      "id": "oak_tree_10_30.0_2.0",
+      "type": "oak_tree",
+      "position": {
+        "x": 30.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval oak_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard oak_tree",
+        "Enhanced oak_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "straight",
+        "canopy_shape": "irregular",
+        "branch_density": "sparse",
+        "leaf_type": "broad",
+        "seasonal_state": "autumn",
+        "bark_texture": "rough",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.336022432452491,
+        "width_multiplier": 1.0203464284437993,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.18267863098580053
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/wood_medieval_8c7e983d.png",
+        "leaves": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_190950b9.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_oak_tree_10_30.0_2.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "9b3b00ee"
+    },
+    {
+      "id": "bush_11_38.0_2.0",
+      "type": "bush",
+      "position": {
+        "x": 38.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "oval",
+        "density": "sparse",
+        "leaf_size": "small",
+        "flowering": "spring",
+        "berry_type": "none",
+        "thorns": "light"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2198496502241036,
+        "width_multiplier": 0.8335460206425274,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.19893233141803204
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_680e1d52.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_11_38.0_2.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "e1d205cc"
+    },
+    {
+      "id": "bush_12_39.0_2.0",
+      "type": "bush",
+      "position": {
+        "x": 39.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "oval",
+        "density": "overgrown",
+        "leaf_size": "medium",
+        "flowering": "none",
+        "berry_type": "red",
+        "thorns": "heavy"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9339830432832326,
+        "width_multiplier": 0.9957608359811703,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.17532613602102093
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_2ec32ab9.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_12_39.0_2.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "b4f7b161"
+    },
+    {
+      "id": "well_13_2.0_3.0",
+      "type": "well",
+      "position": {
+        "x": 2.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval well with distinctive characteristics",
+      "creative_variations": [
+        "Standard well",
+        "Enhanced well"
+      ],
+      "style_parameters": {
+        "construction": "brick",
+        "roof_style": "tiled",
+        "bucket_system": "crank",
+        "water_level": "medium",
+        "decoration": "painted",
+        "age": "new"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4666332772502062,
+        "width_multiplier": 0.8025028463078903,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.31569360542550284
+      },
+      "unique_textures": {
+        "stone": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_237250df.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_well_13_2.0_3.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "4f8c1475"
+    },
+    {
+      "id": "flower_patch_14_21.0_3.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 21.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.349035379183361,
+        "width_multiplier": 1.2073596152522292,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.33009062564850555
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_620f7fae.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_14_21.0_3.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "a7a96545"
+    },
+    {
+      "id": "bush_15_30.0_3.0",
+      "type": "bush",
+      "position": {
+        "x": 30.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "oval",
+        "density": "thick",
+        "leaf_size": "large",
+        "flowering": "spring",
+        "berry_type": "red",
+        "thorns": "light"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1465949916971094,
+        "width_multiplier": 1.0944982592129595,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.2927842584705812
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_cf926b9f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_15_30.0_3.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "12d0fa50"
+    },
+    {
+      "id": "rock_16_34.0_3.0",
+      "type": "rock",
+      "position": {
+        "x": 34.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard rock",
+        "Enhanced rock"
+      ],
+      "style_parameters": {
+        "shape": "rounded",
+        "surface": "smooth",
+        "size_category": "large",
+        "formation": "single",
+        "weathering": "eroded",
+        "mineral_type": "limestone"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.974599346873391,
+        "width_multiplier": 1.3016573097097335,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.1062736059347305
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_fe751f99.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_rock_16_34.0_3.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "a6749299"
+    },
+    {
+      "id": "oak_tree_17_32.0_4.0",
+      "type": "oak_tree",
+      "position": {
+        "x": 32.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval oak_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard oak_tree",
+        "Enhanced oak_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "irregular",
+        "branch_density": "medium",
+        "leaf_type": "broad",
+        "seasonal_state": "spring",
+        "bark_texture": "deeply_furrowed",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.7837802127160138,
+        "width_multiplier": 0.955723611403092,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.22144128493896068
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/wood_medieval_e4d0ae83.png",
+        "leaves": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_ed2da42d.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_oak_tree_17_32.0_4.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "2c6dd41b"
+    },
+    {
+      "id": "well_18_28.0_5.0",
+      "type": "well",
+      "position": {
+        "x": 28.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval well with distinctive characteristics",
+      "creative_variations": [
+        "Standard well",
+        "Enhanced well"
+      ],
+      "style_parameters": {
+        "construction": "brick",
+        "roof_style": "thatched",
+        "bucket_system": "chain",
+        "water_level": "dry",
+        "decoration": "plain",
+        "age": "crumbling"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4605199238327125,
+        "width_multiplier": 1.2523705028015515,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.24897426781574403
+      },
+      "unique_textures": {
+        "stone": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_24bf7a88.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_well_18_28.0_5.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "6856225d"
+    },
+    {
+      "id": "rock_19_0.0_6.0",
+      "type": "rock",
+      "position": {
+        "x": 0.0,
+        "y": 6.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard rock",
+        "Enhanced rock"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "surface": "smooth",
+        "size_category": "boulder",
+        "formation": "pile",
+        "weathering": "fresh",
+        "mineral_type": "basalt"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0727294527894913,
+        "width_multiplier": 0.9205559772848031,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.26493923687803256
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_07306b68.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_rock_19_0.0_6.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "6f9a110e"
+    },
+    {
+      "id": "bush_20_23.0_6.0",
+      "type": "bush",
+      "position": {
+        "x": 23.0,
+        "y": 6.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "density": "thick",
+        "leaf_size": "large",
+        "flowering": "none",
+        "berry_type": "none",
+        "thorns": "none"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8766434313830207,
+        "width_multiplier": 0.9515092979346566,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.2048664761702149
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_416b3fa9.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_20_23.0_6.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "acc40d22"
+    },
+    {
+      "id": "rock_21_1.0_7.0",
+      "type": "rock",
+      "position": {
+        "x": 1.0,
+        "y": 7.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard rock",
+        "Enhanced rock"
+      ],
+      "style_parameters": {
+        "shape": "rounded",
+        "surface": "rough",
+        "size_category": "boulder",
+        "formation": "cluster",
+        "weathering": "ancient",
+        "mineral_type": "limestone"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8073285917345512,
+        "width_multiplier": 1.0299165988822958,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.17453496734519358
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_4785a8e1.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_rock_21_1.0_7.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "a35a3c17"
+    },
+    {
+      "id": "flower_patch_22_13.0_7.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 13.0,
+        "y": 7.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1125739576171985,
+        "width_multiplier": 0.9353950320848938,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.33386698908718093
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_92910b35.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_22_13.0_7.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "92e8df5e"
+    },
+    {
+      "id": "oak_tree_23_11.0_8.0",
+      "type": "oak_tree",
+      "position": {
+        "x": 11.0,
+        "y": 8.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval oak_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard oak_tree",
+        "Enhanced oak_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "oval",
+        "branch_density": "medium",
+        "leaf_type": "broad",
+        "seasonal_state": "summer",
+        "bark_texture": "scarred",
+        "height_variation": "ancient"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 2.008562975238183,
+        "width_multiplier": 1.0675885532991138,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.12440550711304424
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/wood_medieval_eeb9f9dc.png",
+        "leaves": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_082de6a2.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_oak_tree_23_11.0_8.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "8fd45830"
+    },
+    {
+      "id": "bush_24_17.0_8.0",
+      "type": "bush",
+      "position": {
+        "x": 17.0,
+        "y": 8.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "oval",
+        "density": "medium",
+        "leaf_size": "large",
+        "flowering": "spring",
+        "berry_type": "purple",
+        "thorns": "none"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4942908540596616,
+        "width_multiplier": 1.1490511513530566,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.20788880568262552
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_877917ce.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_24_17.0_8.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "1174671c"
+    },
+    {
+      "id": "flower_patch_25_11.0_9.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 11.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2241971385131052,
+        "width_multiplier": 0.8392559075402994,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.3914457870509557
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_41cb2a26.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_25_11.0_9.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "85f20e4b"
+    },
+    {
+      "id": "flower_patch_26_35.0_9.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 35.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "vibrant",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2205868967246118,
+        "width_multiplier": 0.9261764173016342,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.11550190145198437
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_aaf9e3b3.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_26_35.0_9.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "22ead201"
+    },
+    {
+      "id": "bush_27_14.0_10.0",
+      "type": "bush",
+      "position": {
+        "x": 14.0,
+        "y": 10.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "upright",
+        "density": "sparse",
+        "leaf_size": "medium",
+        "flowering": "spring",
+        "berry_type": "none",
+        "thorns": "light"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2886304103126696,
+        "width_multiplier": 1.2695681792284843,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.2719815726583837
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_86f4e322.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_27_14.0_10.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "4a2b93fa"
+    },
+    {
+      "id": "flower_patch_28_16.0_10.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 16.0,
+        "y": 10.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4566892082715461,
+        "width_multiplier": 0.9881086822914764,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.2279655311915127
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_43b0c75f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_28_16.0_10.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "980d31b6"
+    },
+    {
+      "id": "flower_patch_29_5.0_11.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 5.0,
+        "y": 11.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0031770895159817,
+        "width_multiplier": 0.806034798926264,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.14043037538440226
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_95e300b5.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_29_5.0_11.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "1f05cf4b"
+    },
+    {
+      "id": "well_30_2.0_12.0",
+      "type": "well",
+      "position": {
+        "x": 2.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval well with distinctive characteristics",
+      "creative_variations": [
+        "Standard well",
+        "Enhanced well"
+      ],
+      "style_parameters": {
+        "construction": "brick",
+        "roof_style": "thatched",
+        "bucket_system": "pulley",
+        "water_level": "medium",
+        "decoration": "ivy_covered",
+        "age": "ancient"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8156843878931637,
+        "width_multiplier": 1.0936359577981487,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.17762497281717954
+      },
+      "unique_textures": {
+        "stone": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_8a077c13.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_well_30_2.0_12.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "070a566f"
+    },
+    {
+      "id": "bush_31_14.0_12.0",
+      "type": "bush",
+      "position": {
+        "x": 14.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "upright",
+        "density": "medium",
+        "leaf_size": "large",
+        "flowering": "spring",
+        "berry_type": "black",
+        "thorns": "none"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8917199236102238,
+        "width_multiplier": 1.291767838706398,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.18120305982807142
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_bd3567eb.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_31_14.0_12.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "04adfbee"
+    },
+    {
+      "id": "flower_patch_32_17.0_12.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 17.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2879167442928208,
+        "width_multiplier": 1.0417592429260738,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.23603761288851818
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_4b18e578.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_32_17.0_12.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "bec77dc4"
+    },
+    {
+      "id": "oak_tree_33_13.0_13.0",
+      "type": "oak_tree",
+      "position": {
+        "x": 13.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval oak_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard oak_tree",
+        "Enhanced oak_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "split",
+        "canopy_shape": "irregular",
+        "branch_density": "dense",
+        "leaf_type": "broad",
+        "seasonal_state": "summer",
+        "bark_texture": "rough",
+        "height_variation": "ancient"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 2.0993226367526385,
+        "width_multiplier": 1.1964704315928625,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.21045564242169273
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/wood_medieval_583d952a.png",
+        "leaves": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_07c11bad.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_oak_tree_33_13.0_13.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "0c1cfe53"
+    },
+    {
+      "id": "bush_34_36.0_14.0",
+      "type": "bush",
+      "position": {
+        "x": 36.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "spreading",
+        "density": "sparse",
+        "leaf_size": "small",
+        "flowering": "none",
+        "berry_type": "none",
+        "thorns": "none"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.091672266703037,
+        "width_multiplier": 0.8760201577811786,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.2936533987006795
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_263f5490.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_34_36.0_14.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "839ffbe0"
+    },
+    {
+      "id": "rock_35_7.0_15.0",
+      "type": "rock",
+      "position": {
+        "x": 7.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard rock",
+        "Enhanced rock"
+      ],
+      "style_parameters": {
+        "shape": "rounded",
+        "surface": "cracked",
+        "size_category": "small",
+        "formation": "outcrop",
+        "weathering": "ancient",
+        "mineral_type": "limestone"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.5150366477902529,
+        "width_multiplier": 0.9613129438412972,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.3984674807435734
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_c16140b7.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_rock_35_7.0_15.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "299c9c48"
+    },
+    {
+      "id": "flower_patch_36_11.0_16.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 11.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9500998973155341,
+        "width_multiplier": 0.976272854585177,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.32858678313618345
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_a53e7055.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_36_11.0_16.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "bd2a6bfc"
+    },
+    {
+      "id": "rock_37_13.0_16.0",
+      "type": "rock",
+      "position": {
+        "x": 13.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard rock",
+        "Enhanced rock"
+      ],
+      "style_parameters": {
+        "shape": "rounded",
+        "surface": "mossy",
+        "size_category": "large",
+        "formation": "cluster",
+        "weathering": "eroded",
+        "mineral_type": "sandstone"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1424837476938354,
+        "width_multiplier": 1.1189169302790567,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.16137553252375827
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_7fff76de.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_rock_37_13.0_16.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "8c15c1e0"
+    },
+    {
+      "id": "flower_patch_38_25.0_16.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 25.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2351977568668846,
+        "width_multiplier": 0.8288020322127985,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.36383066772723915
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_02a7ba32.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_38_25.0_16.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "8dc0b9b7"
+    },
+    {
+      "id": "flower_patch_39_2.0_17.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 2.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2850056271368249,
+        "width_multiplier": 0.8477923943294626,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3102044810157035
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_7e150463.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_39_2.0_17.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "951a4d05"
+    },
+    {
+      "id": "flower_patch_40_39.0_17.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 39.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0853321307843855,
+        "width_multiplier": 0.8880365217807966,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.2933889853491246
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_8806fc27.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_40_39.0_17.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "85afe1d3"
+    },
+    {
+      "id": "bush_41_3.0_18.0",
+      "type": "bush",
+      "position": {
+        "x": 3.0,
+        "y": 18.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "upright",
+        "density": "thick",
+        "leaf_size": "large",
+        "flowering": "year_round",
+        "berry_type": "none",
+        "thorns": "heavy"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3657178008109667,
+        "width_multiplier": 0.9552722809887326,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.34069269112399225
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_a0e5a3b2.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_41_3.0_18.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "c5114099"
+    },
+    {
+      "id": "bush_42_0.0_20.0",
+      "type": "bush",
+      "position": {
+        "x": 0.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "density": "medium",
+        "leaf_size": "large",
+        "flowering": "none",
+        "berry_type": "none",
+        "thorns": "light"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1523278720922434,
+        "width_multiplier": 1.2917841266861971,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.22193597555791297
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_6e1cf667.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_42_0.0_20.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "36c50df8"
+    },
+    {
+      "id": "oak_tree_43_3.0_21.0",
+      "type": "oak_tree",
+      "position": {
+        "x": 3.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval oak_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard oak_tree",
+        "Enhanced oak_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "sparse",
+        "branch_density": "sparse",
+        "leaf_type": "broad",
+        "seasonal_state": "spring",
+        "bark_texture": "deeply_furrowed",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.6844524042778088,
+        "width_multiplier": 1.0856069319486084,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.11831775247758564
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/wood_medieval_d6342538.png",
+        "leaves": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_63e4f784.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_oak_tree_43_3.0_21.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "d017a041"
+    },
+    {
+      "id": "rock_44_15.0_21.0",
+      "type": "rock",
+      "position": {
+        "x": 15.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard rock",
+        "Enhanced rock"
+      ],
+      "style_parameters": {
+        "shape": "rounded",
+        "surface": "mossy",
+        "size_category": "small",
+        "formation": "outcrop",
+        "weathering": "weathered",
+        "mineral_type": "granite"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1778337685068156,
+        "width_multiplier": 0.9891355543320428,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.11087583036167772
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_a6f5320d.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_rock_44_15.0_21.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "878a304a"
+    },
+    {
+      "id": "flower_patch_45_26.0_23.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 26.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "vibrant",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8460501119209357,
+        "width_multiplier": 0.8218101111962752,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.29875751847888266
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_22efb0fc.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_45_26.0_23.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "b0470d0c"
+    },
+    {
+      "id": "flower_patch_46_27.0_23.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 27.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3820142466605072,
+        "width_multiplier": 1.2730372743456408,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3417666820527556
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_0ae3c7cf.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_46_27.0_23.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "5be2eaff"
+    },
+    {
+      "id": "flower_patch_47_4.0_24.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 4.0,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9674979361110326,
+        "width_multiplier": 1.2421841082445093,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.18391523568142537
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_3efb7d3a.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_47_4.0_24.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "3a8dfaf6"
+    },
+    {
+      "id": "bush_48_14.0_24.0",
+      "type": "bush",
+      "position": {
+        "x": 14.0,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "upright",
+        "density": "sparse",
+        "leaf_size": "large",
+        "flowering": "summer",
+        "berry_type": "blue",
+        "thorns": "light"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8700589163423421,
+        "width_multiplier": 1.2664181622537771,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.26174489165525616
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_3fd84bbb.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_48_14.0_24.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "25f2fde5"
+    },
+    {
+      "id": "oak_tree_49_19.0_25.0",
+      "type": "oak_tree",
+      "position": {
+        "x": 19.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval oak_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard oak_tree",
+        "Enhanced oak_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "split",
+        "canopy_shape": "sparse",
+        "branch_density": "dense",
+        "leaf_type": "broad",
+        "seasonal_state": "spring",
+        "bark_texture": "scarred",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2265843625896566,
+        "width_multiplier": 0.8911958787993098,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.33635552828229476
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/wood_medieval_8d0cb4d7.png",
+        "leaves": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_76d82a04.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_oak_tree_49_19.0_25.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "0a7b8b45"
+    },
+    {
+      "id": "rock_50_0.0_26.0",
+      "type": "rock",
+      "position": {
+        "x": 0.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard rock",
+        "Enhanced rock"
+      ],
+      "style_parameters": {
+        "shape": "crystalline",
+        "surface": "mossy",
+        "size_category": "small",
+        "formation": "pile",
+        "weathering": "weathered",
+        "mineral_type": "basalt"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.5201284794991028,
+        "width_multiplier": 0.8468418698246022,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.14831753471147027
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_1c4e6994.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_rock_50_0.0_26.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "0ddbed06"
+    },
+    {
+      "id": "flower_patch_51_6.0_26.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 6.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1591413232988859,
+        "width_multiplier": 1.173323109818145,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.20651971492606389
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_c9664d10.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_51_6.0_26.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "6c8cbd01"
+    },
+    {
+      "id": "flower_patch_52_3.0_27.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 3.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.153747617734802,
+        "width_multiplier": 1.2269270006480693,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.287864437116747
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_2773d6ac.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_52_3.0_27.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "85f20e4b"
+    },
+    {
+      "id": "flower_patch_53_4.0_27.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 4.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4500868326069227,
+        "width_multiplier": 1.2830137293976769,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.39767301337023264
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_ca0fa3f8.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_53_4.0_27.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "600e68bd"
+    },
+    {
+      "id": "oak_tree_54_5.0_27.0",
+      "type": "oak_tree",
+      "position": {
+        "x": 5.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval oak_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard oak_tree",
+        "Enhanced oak_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "round",
+        "branch_density": "dense",
+        "leaf_type": "broad",
+        "seasonal_state": "winter",
+        "bark_texture": "scarred",
+        "height_variation": "ancient"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 2.1690081860157346,
+        "width_multiplier": 0.8135939618122975,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.2939780705465279
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/wood_medieval_d0c0ec7e.png",
+        "leaves": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_0c8b2bef.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_oak_tree_54_5.0_27.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "718e088a"
+    },
+    {
+      "id": "oak_tree_55_22.0_27.0",
+      "type": "oak_tree",
+      "position": {
+        "x": 22.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval oak_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard oak_tree",
+        "Enhanced oak_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "irregular",
+        "branch_density": "medium",
+        "leaf_type": "broad",
+        "seasonal_state": "summer",
+        "bark_texture": "deeply_furrowed",
+        "height_variation": "ancient"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.76571572577003,
+        "width_multiplier": 1.2606886142178684,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.34202722619333914
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/wood_medieval_8b6a2501.png",
+        "leaves": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_5ceb6636.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_oak_tree_55_22.0_27.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "e1c79cd8"
+    },
+    {
+      "id": "rock_56_1.0_28.0",
+      "type": "rock",
+      "position": {
+        "x": 1.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard rock",
+        "Enhanced rock"
+      ],
+      "style_parameters": {
+        "shape": "crystalline",
+        "surface": "rough",
+        "size_category": "small",
+        "formation": "pile",
+        "weathering": "weathered",
+        "mineral_type": "sandstone"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.5571712372173037,
+        "width_multiplier": 0.9494411986193692,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.17004376966489373
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_0c027be6.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_rock_56_1.0_28.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "023e6f9c"
+    },
+    {
+      "id": "flower_patch_57_6.0_28.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 6.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1904280960718798,
+        "width_multiplier": 1.0828917620407976,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.21997855750014916
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_fab5caa7.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_57_6.0_28.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "c89832f9"
+    },
+    {
+      "id": "flower_patch_58_26.0_28.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 26.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "natural",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3433141968732436,
+        "width_multiplier": 1.2187003228083468,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.15691282987568578
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_2d072af4.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_58_26.0_28.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "9fd0cc5a"
+    },
+    {
+      "id": "flower_patch_59_35.0_28.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 35.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "natural",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1096558960353144,
+        "width_multiplier": 1.0897800017961545,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.13254844342040747
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_77dfb0cd.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_59_35.0_28.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "f30967e2"
+    },
+    {
+      "id": "flower_patch_60_35.0_29.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 35.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "natural",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8749572286533552,
+        "width_multiplier": 0.9362968139672858,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.15310819566583306
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_8275ac23.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_60_35.0_29.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "14237f41"
+    },
+    {
+      "id": "oak_tree_61_1.0_30.0",
+      "type": "oak_tree",
+      "position": {
+        "x": 1.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval oak_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard oak_tree",
+        "Enhanced oak_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "twisted",
+        "canopy_shape": "sparse",
+        "branch_density": "medium",
+        "leaf_type": "broad",
+        "seasonal_state": "spring",
+        "bark_texture": "deeply_furrowed",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.8249449623074354,
+        "width_multiplier": 1.2249990294001347,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.18663977436933277
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/wood_medieval_b0ab552d.png",
+        "leaves": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_cbebb87c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_oak_tree_61_1.0_30.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "2e7475dc"
+    },
+    {
+      "id": "bush_62_4.0_30.0",
+      "type": "bush",
+      "position": {
+        "x": 4.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "upright",
+        "density": "overgrown",
+        "leaf_size": "small",
+        "flowering": "year_round",
+        "berry_type": "black",
+        "thorns": "none"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8205411929461578,
+        "width_multiplier": 0.8191141329348856,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.3358880694750389
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_01989a81.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_62_4.0_30.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "e5807a7a"
+    },
+    {
+      "id": "oak_tree_63_0.0_31.0",
+      "type": "oak_tree",
+      "position": {
+        "x": 0.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval oak_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard oak_tree",
+        "Enhanced oak_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "straight",
+        "canopy_shape": "round",
+        "branch_density": "medium",
+        "leaf_type": "broad",
+        "seasonal_state": "summer",
+        "bark_texture": "deeply_furrowed",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 2.390802166255587,
+        "width_multiplier": 0.9943359442165153,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.17094612436032108
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/wood_medieval_3138d65a.png",
+        "leaves": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_8c7bb35d.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_oak_tree_63_0.0_31.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "a921cf7c"
+    },
+    {
+      "id": "flower_patch_64_1.0_31.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 1.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "natural",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.452320256441917,
+        "width_multiplier": 0.9717757427195017,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.3297690493470037
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_6953d256.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_64_1.0_31.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "8dcf019b"
+    },
+    {
+      "id": "flower_patch_65_26.0_31.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 26.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8326353259994259,
+        "width_multiplier": 0.8032596716117031,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.13231805218464093
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_6a2ff27d.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_65_26.0_31.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "21aa8a2a"
+    },
+    {
+      "id": "oak_tree_66_3.0_32.0",
+      "type": "oak_tree",
+      "position": {
+        "x": 3.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval oak_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard oak_tree",
+        "Enhanced oak_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "straight",
+        "canopy_shape": "irregular",
+        "branch_density": "dense",
+        "leaf_type": "broad",
+        "seasonal_state": "autumn",
+        "bark_texture": "rough",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.8837948870172565,
+        "width_multiplier": 1.2811074617318325,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.26292758185532683
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/wood_medieval_d8e84fdf.png",
+        "leaves": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_ee4e58e5.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_oak_tree_66_3.0_32.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "8c519289"
+    },
+    {
+      "id": "flower_patch_67_4.0_32.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 4.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "vibrant",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0662012593939365,
+        "width_multiplier": 1.092286314561546,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.12150006505179756
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_b9259aa9.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_67_4.0_32.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "2a01b959"
+    },
+    {
+      "id": "bush_68_15.0_32.0",
+      "type": "bush",
+      "position": {
+        "x": 15.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "upright",
+        "density": "sparse",
+        "leaf_size": "large",
+        "flowering": "year_round",
+        "berry_type": "red",
+        "thorns": "none"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8589397796704642,
+        "width_multiplier": 1.2499272670412742,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.1681921848341319
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_316bd703.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_68_15.0_32.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "64b2895d"
+    },
+    {
+      "id": "bush_69_24.0_32.0",
+      "type": "bush",
+      "position": {
+        "x": 24.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "upright",
+        "density": "overgrown",
+        "leaf_size": "small",
+        "flowering": "spring",
+        "berry_type": "blue",
+        "thorns": "heavy"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.304640634375752,
+        "width_multiplier": 1.05060724111595,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.1900361365120825
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_31b422c2.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_69_24.0_32.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "8d8a8090"
+    },
+    {
+      "id": "flower_patch_70_3.0_33.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 3.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "natural",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2931392008896836,
+        "width_multiplier": 1.2292464998160615,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.11740003118175674
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_4c3169b4.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_70_3.0_33.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "8a5f1e2e"
+    },
+    {
+      "id": "bush_71_36.0_33.0",
+      "type": "bush",
+      "position": {
+        "x": 36.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "oval",
+        "density": "sparse",
+        "leaf_size": "large",
+        "flowering": "none",
+        "berry_type": "none",
+        "thorns": "light"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9330672023773318,
+        "width_multiplier": 1.2585323752371076,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.17797699954784102
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_a2cd9e8c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_71_36.0_33.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "77d0653b"
+    },
+    {
+      "id": "oak_tree_72_38.0_33.0",
+      "type": "oak_tree",
+      "position": {
+        "x": 38.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval oak_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard oak_tree",
+        "Enhanced oak_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "split",
+        "canopy_shape": "oval",
+        "branch_density": "dense",
+        "leaf_type": "broad",
+        "seasonal_state": "summer",
+        "bark_texture": "deeply_furrowed",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3622530481470663,
+        "width_multiplier": 1.0405118821041226,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.21093896265039594
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/wood_medieval_42adaa09.png",
+        "leaves": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_225505fa.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_oak_tree_72_38.0_33.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "1b311203"
+    },
+    {
+      "id": "rock_73_4.0_34.0",
+      "type": "rock",
+      "position": {
+        "x": 4.0,
+        "y": 34.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard rock",
+        "Enhanced rock"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "surface": "smooth",
+        "size_category": "small",
+        "formation": "outcrop",
+        "weathering": "ancient",
+        "mineral_type": "basalt"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0243743183888792,
+        "width_multiplier": 1.3526775223235668,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.22546754616485995
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_efcf5c66.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_rock_73_4.0_34.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "09608744"
+    },
+    {
+      "id": "rock_74_29.0_34.0",
+      "type": "rock",
+      "position": {
+        "x": 29.0,
+        "y": 34.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard rock",
+        "Enhanced rock"
+      ],
+      "style_parameters": {
+        "shape": "flat",
+        "surface": "rough",
+        "size_category": "boulder",
+        "formation": "pile",
+        "weathering": "eroded",
+        "mineral_type": "granite"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.620518538073686,
+        "width_multiplier": 1.2268710073589733,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.12368818602745753
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_1bc90494.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_rock_74_29.0_34.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "2488d3cb"
+    },
+    {
+      "id": "flower_patch_75_29.0_36.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 29.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4958326998244602,
+        "width_multiplier": 0.8107103032333076,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3178013116969425
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_a24a6f79.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_75_29.0_36.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "ba1790d9"
+    },
+    {
+      "id": "rock_76_0.0_37.0",
+      "type": "rock",
+      "position": {
+        "x": 0.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard rock",
+        "Enhanced rock"
+      ],
+      "style_parameters": {
+        "shape": "flat",
+        "surface": "smooth",
+        "size_category": "small",
+        "formation": "pile",
+        "weathering": "eroded",
+        "mineral_type": "granite"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.759520856544686,
+        "width_multiplier": 1.3462208586775768,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.1598198716416114
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_be4d4344.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_rock_76_0.0_37.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "ca7ec4da"
+    },
+    {
+      "id": "oak_tree_77_2.0_37.0",
+      "type": "oak_tree",
+      "position": {
+        "x": 2.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval oak_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard oak_tree",
+        "Enhanced oak_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "gnarled",
+        "canopy_shape": "round",
+        "branch_density": "dense",
+        "leaf_type": "broad",
+        "seasonal_state": "summer",
+        "bark_texture": "deeply_furrowed",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 2.1168705139980446,
+        "width_multiplier": 1.133795479186883,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.12553693691837153
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/wood_medieval_f36e9e66.png",
+        "leaves": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_246637de.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_oak_tree_77_2.0_37.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "515f66ee"
+    },
+    {
+      "id": "rock_78_4.0_38.0",
+      "type": "rock",
+      "position": {
+        "x": 4.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard rock",
+        "Enhanced rock"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "surface": "cracked",
+        "size_category": "large",
+        "formation": "cluster",
+        "weathering": "ancient",
+        "mineral_type": "granite"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.7817216122516759,
+        "width_multiplier": 1.3142157413835422,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.21360637089836296
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/stone_medieval_de7d937f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_rock_78_4.0_38.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "480d9bc6"
+    },
+    {
+      "id": "flower_patch_79_9.0_38.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 9.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9019288678970421,
+        "width_multiplier": 1.2724591370541665,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.3929097923088285
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_54fe31ef.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_79_9.0_38.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "5b0a79f1"
+    },
+    {
+      "id": "flower_patch_80_21.0_38.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 21.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8869621217252561,
+        "width_multiplier": 1.0722294632383047,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.1353919756504999
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_b2af74dd.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_80_21.0_38.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "99968732"
+    },
+    {
+      "id": "flower_patch_81_34.0_38.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 34.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "natural",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1342950681441106,
+        "width_multiplier": 1.1932408088264972,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.1973878038688796
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_70085979.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_81_34.0_38.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "fb65e305"
+    },
+    {
+      "id": "bush_82_6.0_39.0",
+      "type": "bush",
+      "position": {
+        "x": 6.0,
+        "y": 39.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval bush with distinctive characteristics",
+      "creative_variations": [
+        "Standard bush",
+        "Enhanced bush"
+      ],
+      "style_parameters": {
+        "shape": "upright",
+        "density": "sparse",
+        "leaf_size": "small",
+        "flowering": "year_round",
+        "berry_type": "black",
+        "thorns": "none"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4968589850436227,
+        "width_multiplier": 1.1683718420539702,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.37547357770290246
+      },
+      "unique_textures": {
+        "foliage": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/foliage_medieval_af355e9a.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_bush_82_6.0_39.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "abdb0e3c"
+    },
+    {
+      "id": "flower_patch_83_33.0_39.0",
+      "type": "flower_patch",
+      "position": {
+        "x": 33.0,
+        "y": 39.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique medieval flower_patch with distinctive characteristics",
+      "creative_variations": [
+        "Standard flower_patch",
+        "Enhanced flower_patch"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2978601215925272,
+        "width_multiplier": 1.247954815822263,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.18475095240655787
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/ai_textures/generic_medieval_4b9db407.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets/blender_scripts/ai_prop_flower_patch_83_33.0_39.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "59baf049"
+    }
+  ],
+  "environment": [],
+  "ai_materials": {},
+  "generation_summary": {
+    "total_creative_assets": 92,
+    "unique_textures_generated": 99,
+    "ai_variations_created": 16,
+    "creative_complexity_score": 198.0,
+    "buildings_count": 8,
+    "props_count": 84,
+    "environment_count": 0
+  },
+  "output_directory": "complete_game_content/complete_game_20250617_111604_create_a_medivial_game/ai_creative_assets"
+}

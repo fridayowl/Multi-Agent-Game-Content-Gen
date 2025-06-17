@@ -1,0 +1,59 @@
+{
+  "id": "main_quest_2_sir_dara",
+  "title": "Ancient Secrets",
+  "description": "Sir Dara has discovered something that could change everything.",
+  "summary": "Help Sir Dara with ancient secrets",
+  "giver_npc": "Sir Dara",
+  "objectives": [
+    {
+      "id": "main_quest_2_obj_1",
+      "description": "Learn about the discovery",
+      "type": "investigate",
+      "target": "location",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "main_quest_2_obj_2",
+      "description": "Search for more clues",
+      "type": "investigate",
+      "target": "location",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "main_quest_2_obj_3",
+      "description": "Uncover the truth",
+      "type": "investigate",
+      "target": "location",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "main_quest_2_obj_4",
+      "description": "Decide what to do",
+      "type": "investigate",
+      "target": "location",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    }
+  ],
+  "rewards": {
+    "experience": 200,
+    "gold": 100,
+    "items": [],
+    "relationship_changes": null
+  },
+  "prerequisites": [
+    "main_quest_1_master_aldric"
+  ],
+  "level_requirement": 2,
+  "estimated_duration": "15-30 minutes",
+  "quest_type": "main",
+  "interconnected_quests": [],
+  "narrative_importance": "high"
+}

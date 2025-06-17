@@ -1,0 +1,127 @@
+{
+  "generation_info": {
+    "timestamp": "2025-06-17T11:16:05.184292",
+    "theme": "medieval",
+    "world_size": [
+      40,
+      40
+    ],
+    "character_count": 5,
+    "ai_enhanced": false,
+    "creativity_level": "maximum",
+    "uniqueness_guaranteed": true,
+    "session_id": "3e072fec"
+  },
+  "uniqueness_metrics": {
+    "name_uniqueness": 1.0,
+    "personality_uniqueness": 1.0,
+    "role_uniqueness": 1.0
+  },
+  "characters": {
+    "master_aldric_3e072fec_0": {
+      "name": "Master Aldric",
+      "title": "The Brave Noble",
+      "role": "Noble",
+      "age": 55,
+      "location": "house",
+      "personality_summary": "Brave, Witty",
+      "motivation": "To discover truth",
+      "secret": "Has an interesting past",
+      "level": 9,
+      "health": 87,
+      "relationship_count": 1,
+      "dialogue_nodes": 2,
+      "unique_id": "dcdf7def-95a3-4da0-9c23-8a0211ffb428",
+      "profile_file": "character_profiles/master_aldric_3e072fec_0_profile.json",
+      "dialogue_file": "dialogue_trees/master_aldric_3e072fec_0_dialogue.json"
+    },
+    "sir_dara_3e072fec_1": {
+      "name": "Sir Dara",
+      "title": "The Fierce Bartender",
+      "role": "Bartender",
+      "age": 52,
+      "location": "tavern",
+      "personality_summary": "Fierce, Cautious",
+      "motivation": "To discover truth",
+      "secret": "Has an interesting past",
+      "level": 8,
+      "health": 84,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "c64ead6c-3300-442e-a800-7d6a3a4f6893",
+      "profile_file": "character_profiles/sir_dara_3e072fec_1_profile.json",
+      "dialogue_file": "dialogue_trees/sir_dara_3e072fec_1_dialogue.json"
+    },
+    "master_brenna_3e072fec_2": {
+      "name": "Master Brenna",
+      "title": "The Compassionate Innkeeper",
+      "role": "Innkeeper",
+      "age": 51,
+      "location": "tavern",
+      "personality_summary": "Compassionate, Curious",
+      "motivation": "To build something lasting",
+      "secret": "Has an interesting past",
+      "level": 1,
+      "health": 63,
+      "relationship_count": 1,
+      "dialogue_nodes": 2,
+      "unique_id": "0f7056f5-f5c3-46ed-8feb-afd6c30da51b",
+      "profile_file": "character_profiles/master_brenna_3e072fec_2_profile.json",
+      "dialogue_file": "dialogue_trees/master_brenna_3e072fec_2_dialogue.json"
+    },
+    "sister_brenna_3e072fec_3": {
+      "name": "Sister Brenna",
+      "title": "The Determined Scholar",
+      "role": "Scholar",
+      "age": 32,
+      "location": "market",
+      "personality_summary": "Determined, Practical",
+      "motivation": "To discover truth",
+      "secret": "Has an interesting past",
+      "level": 5,
+      "health": 75,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "4332f8ff-d0a2-4911-ba62-15f421032f35",
+      "profile_file": "character_profiles/sister_brenna_3e072fec_3_profile.json",
+      "dialogue_file": "dialogue_trees/sister_brenna_3e072fec_3_dialogue.json"
+    },
+    "aldric_227_3e072fec_4": {
+      "name": "Aldric 227",
+      "title": "The Honest Servant",
+      "role": "Servant",
+      "age": 36,
+      "location": "blacksmith",
+      "personality_summary": "Honest, Practical",
+      "motivation": "To discover truth",
+      "secret": "Has an interesting past",
+      "level": 4,
+      "health": 72,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "06d7fa51-5025-4e7d-ab79-963430746f69",
+      "profile_file": "character_profiles/aldric_227_3e072fec_4_profile.json",
+      "dialogue_file": "dialogue_trees/aldric_227_3e072fec_4_dialogue.json"
+    }
+  },
+  "relationships_summary": {
+    "total_relationships": 8,
+    "relationship_types": [
+      "Neighbor",
+      "Rival"
+    ],
+    "relationship_map_file": "relationship_maps/relationship_map.json"
+  },
+  "dialogue_summary": {
+    "total_dialogue_nodes": 10,
+    "average_nodes_per_character": 2.0,
+    "ai_generated": false
+  },
+  "integration_info": {
+    "unity_compatible": true,
+    "quest_system_ready": true,
+    "relationship_system_ready": true,
+    "dialogue_system_ready": true,
+    "ai_creativity_verified": false
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "generation_stats": {
+    "total_characters": 5,
+    "average_age": 45.2,
+    "total_relationships": 8,
+    "total_dialogue_nodes": 10,
+    "unique_roles": 5,
+    "unique_locations": 4
+  },
+  "uniqueness_metrics": {
+    "name_uniqueness": 1.0,
+    "personality_uniqueness": 1.0,
+    "role_uniqueness": 1.0
+  },
+  "level_distribution": {
+    "Master Aldric": 9,
+    "Sir Dara": 8,
+    "Master Brenna": 1,
+    "Sister Brenna": 5,
+    "Aldric 227": 4
+  },
+  "role_distribution": {
+    "Master Aldric": "Noble",
+    "Sir Dara": "Bartender",
+    "Master Brenna": "Innkeeper",
+    "Sister Brenna": "Scholar",
+    "Aldric 227": "Servant"
+  },
+  "personality_distribution": {
+    "Master Aldric": "Brave",
+    "Sir Dara": "Fierce",
+    "Master Brenna": "Compassionate",
+    "Sister Brenna": "Determined",
+    "Aldric 227": "Honest"
+  }
+}

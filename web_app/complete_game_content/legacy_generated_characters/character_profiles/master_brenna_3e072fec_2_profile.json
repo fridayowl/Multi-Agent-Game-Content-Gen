@@ -1,0 +1,86 @@
+{
+  "id": "master_brenna_3e072fec_2",
+  "name": "Master Brenna",
+  "title": "The Compassionate Innkeeper",
+  "description": "A 51-year-old Innkeeper with a compassionate nature.",
+  "backstory": "Master Brenna has worked as a Innkeeper for many years.",
+  "personality": {
+    "primary_trait": "Compassionate",
+    "secondary_trait": "Curious",
+    "motivation": "To build something lasting",
+    "fear": "Losing control",
+    "quirk": "Never sits still",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 1,
+    "health": 63,
+    "strength": 11,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 14,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Sir Dara",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 6,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "master brenna_greeting",
+      "text": "Greetings! I'm Master Brenna, the local Innkeeper.",
+      "speaker": "Master Brenna",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "master brenna_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "master brenna_role",
+      "text": "As a Innkeeper, I to build something lasting.",
+      "speaker": "Master Brenna",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "tavern",
+  "role": "Innkeeper",
+  "quest_involvement": [],
+  "age": 51,
+  "appearance": "A 51-year-old Innkeeper with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "0f7056f5-f5c3-46ed-8feb-afd6c30da51b"
+}
