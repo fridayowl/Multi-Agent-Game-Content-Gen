@@ -1295,28 +1295,26 @@ class CompleteGameContentOrchestrator:
             print(f"   📋 Fallback manifest saved: {fallback_file.name}")
 
     async def _step_7_godot_package_export(self):
-        """Step 7: Export complete Godot package"""
+        """Step 7: Export complete Godot package - FIXED VERSION"""
         print(f"\n🎮 STEP 7: GODOT PACKAGE EXPORT")
         print(f"{'='*60}")
         
         try:
+            # Check if Godot exporter is available
             if not GODOT_EXPORTER_AVAILABLE:
-                print("⚠️ Godot Exporterq not available - generating export instructions instead")
+                print("⚠️ Godot Exporter not available - generating export instructions instead")
                 self.godot_package = await self._fallback_godot_export_instructions()
                 return
             
             # Verify the function is available
             try:
-                # Test if export_godot_package is callable
                 if not callable(export_godot_package):
                     raise AttributeError("export_godot_package is not callable")
-                    
             except NameError:
                 print("❌ export_godot_package function not found - using fallback")
                 self.godot_package = await self._fallback_godot_export_instructions()
                 return
             
-            # Rest of the existing export code...
             print(f"🔧 Preparing Godot export...")
             
             # Validate content exists
@@ -1325,7 +1323,7 @@ class CompleteGameContentOrchestrator:
                 self.godot_package = {'status': 'no_content', 'error': 'No content to export'}
                 return
             
-            # Set up content summary
+            # Set up content summary for logging
             content_summary = {
                 'world_buildings': len(self.world_spec.get('buildings', [])) if self.world_spec else 0,
                 'assets_count': self.assets.get('generation_summary', {}).get('total_creative_assets', 0) if self.assets else 0,
@@ -1333,246 +1331,270 @@ class CompleteGameContentOrchestrator:
                 'quest_count': len(self.quests.get('quests', [])) if self.quests else 0
             }
             
-            if content_summary['character_count'] > 0:
-                character_list = self.characters.get('characters', [])
-                print(f"   👥 Characters: {len(character_list)}")
-                
-            if content_summary['quest_count'] > 0:
-                quest_list = self.quests.get('quests', [])
-                print(f"   📜 Quests: {len(quest_list)}")
+            print(f"   📊 Content summary:")
+            print(f"   🌍 World buildings: {content_summary['world_buildings']}")
+            print(f"   🎨 Assets: {content_summary['assets_count']}")
+            print(f"   👥 Characters: {content_summary['character_count']}")
+            print(f"   📜 Quests: {content_summary['quest_count']}")
             
             # Set up Godot export directory within session
             godot_export_dir = self.current_session_dir / "godot_package"
             godot_export_dir.mkdir(exist_ok=True)
             
-            # Call Godot exporter with all generated content
-            self.godot_package = await export_godot_package(
-                world_spec=self.world_spec or {},
-                assets=self.assets or {},
-                characters=self.characters or {},
-                quests=self.quests or {}
-            )
+            # Generate project name from timestamp
+            project_timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+            project_name = f"GeneratedGame_{project_timestamp}"
             
-            # Handle successful export
-            if self.godot_package and self.godot_package.get('status') == 'success':
-                package_path = self.godot_package.get('package_path', 'Unknown')
-                file_counts = self.godot_package.get('file_counts', {})
+            # Call Godot exporter with proper error handling
+            try:
+                print(f"   🚀 Launching Godot export...")
+                self.godot_package = await export_godot_package(
+                    world_spec=self.world_spec or {},
+                    assets=self.assets or {},
+                    characters=self.characters or {},
+                    quests=self.quests or {},
+                    project_name=project_name
+                )
                 
-                print(f"   ✅ Godot package export successful!")
-                print(f"   📦 Package: {package_path}")
-                print(f"   🔧 Scripts: {file_counts.get('scripts', 0)}")
-                print(f"   🎮 Scenes: {file_counts.get('scenes', 0)}")
-                print(f"   📁 Assets: {file_counts.get('assets', 0)}")
-                print(f"   🌍 Resources: {file_counts.get('resources', 0)}")
-                print(f"   🎯 Status: Ready for Godot Import!")
-                
-                # Copy Godot package to session directory if it exists
-                if os.path.exists(package_path):
-                    session_package_path = self.current_session_dir / f"GameWorld_{datetime.now().strftime('%Y%m%d_%H%M%S')}_Godot"
-                    if os.path.isdir(package_path):
-                        shutil.copytree(package_path, session_package_path)
-                    else:
-                        shutil.copy2(package_path, session_package_path)
-                    self.godot_package['session_package_path'] = str(session_package_path)
-                    print(f"   📁 Package copied to session: {session_package_path.name}")
-                
-                # Update master manifest with Godot export info
-                await self._update_manifest_with_godot_info()
-                
-            else:
-                error_msg = f"Godot export failed: {self.godot_package.get('error', 'Unknown error')}"
-                self.errors.append(error_msg)
-                print(f"   ❌ {error_msg}")
+                # Enhanced result handling
+                if self.godot_package and self.godot_package.get('status') in ['success', 'partial_success']:
+                    package_path = self.godot_package.get('project_path', 'Unknown')
+                    file_counts = self.godot_package.get('file_counts', {})
+                    
+                    print(f"   ✅ Godot package export {'completed with warnings' if self.godot_package.get('status') == 'partial_success' else 'successful'}!")
+                    print(f"   📦 Project path: {package_path}")
+                    print(f"   🔧 Scripts: {file_counts.get('scripts', 0)}")
+                    print(f"   🎮 Scenes: {file_counts.get('scenes', 0)}")
+                    print(f"   📁 Resources: {file_counts.get('resources', 0)}")
+                    print(f"   🎨 Assets: {file_counts.get('assets', 0)}")
+                    print(f"   🎯 Status: Ready for Godot Import!")
+                    
+                    # Show any warnings
+                    if self.godot_package.get('error'):
+                        print(f"   ⚠️ Warnings: {self.godot_package.get('error')}")
+                    
+                    # Copy Godot package to session directory if it exists
+                    if package_path and Path(package_path).exists():
+                        session_package_path = self.current_session_dir / f"GameWorld_{datetime.now().strftime('%Y%m%d_%H%M%S')}_Godot"
+                        try:
+                            if Path(package_path).is_dir():
+                                shutil.copytree(package_path, session_package_path)
+                            else:
+                                shutil.copy2(package_path, session_package_path)
+                            self.godot_package['session_package_path'] = str(session_package_path)
+                            print(f"   📁 Package copied to session: {session_package_path.name}")
+                        except Exception as copy_error:
+                            print(f"   ⚠️ Could not copy package to session: {copy_error}")
+                    
+                    # Update master manifest with Godot export info
+                    await self._update_manifest_with_godot_info()
+                    
+                else:
+                    # Handle export failure
+                    error_msg = self.godot_package.get('error', 'Unknown error') if self.godot_package else 'Export returned None'
+                    print(f"   ❌ Godot export failed: {error_msg}")
+                    
+                    # Try recovery
+                    print(f"   🔄 Attempting export recovery...")
+                    try:
+                        from .godot_exporter.agent import recover_from_failed_export
+                        recovery_result = await recover_from_failed_export(self.godot_package or {})
+                        
+                        if recovery_result.get('recovered'):
+                            print(f"   ✅ Export recovery successful!")
+                            self.godot_package = recovery_result
+                        else:
+                            print(f"   ❌ Recovery also failed")
+                            self.errors.append(f"Godot export failed: {error_msg}")
+                            # Use fallback instructions
+                            self.godot_package = await self._fallback_godot_export_instructions()
+                            
+                    except ImportError:
+                        print(f"   ⚠️ Recovery function not available")
+                        self.errors.append(f"Godot export failed: {error_msg}")
+                        self.godot_package = await self._fallback_godot_export_instructions()
+                    
+            except Exception as export_error:
+                print(f"   ❌ Export process error: {export_error}")
+                self.errors.append(f"Godot export process failed: {str(export_error)}")
+                # Use fallback instructions
+                self.godot_package = await self._fallback_godot_export_instructions()
                 
         except Exception as e:
             error_msg = f"Godot package export failed: {str(e)}"
             self.errors.append(error_msg)
             print(f"❌ {error_msg}")
-            # Don't raise - pipeline can still be useful without Godot export
             
+            # Don't raise - pipeline can still be useful without Godot export
             # Use fallback instructions
-            self.godot_package = await self._fallback_godot_export_instructions()
-    
+            try:
+                self.godot_package = await self._fallback_godot_export_instructions()
+            except Exception as fallback_error:
+                print(f"❌ Even fallback failed: {fallback_error}")
+                self.godot_package = {
+                    'status': 'failed',
+                    'error': f'Complete export failure: {str(e)}',
+                    'fallback_failed': True
+                }
+
     async def _update_manifest_with_godot_info(self):
-        """Update master manifest with Godot export information"""
+        """Update master manifest with Godot export information - FIXED VERSION"""
+        
         try:
+            if not self.godot_package:
+                return
+                
+            # Read existing manifest if it exists
             manifest_file = self.current_session_dir / "master_manifest.json"
             if manifest_file.exists():
-                with open(manifest_file, 'r') as f:
-                    manifest = json.load(f)
-                
-                # Update with Godot export info
-                manifest["pipeline_info"]["agents_used"] = manifest["pipeline_info"].get("agents_used", {})
-                manifest["pipeline_info"]["agents_used"]["godot_exporter"] = bool(self.godot_package)
-                manifest["godot_export"] = {
-                    "status": self.godot_package.get('status', 'unknown') if self.godot_package else 'not_available',
-                    "project_ready": self.godot_package.get('status') == 'success' if self.godot_package else False,
-                    "project_path": self.godot_package.get('session_package_path', '') if self.godot_package else '',
-                    "file_counts": self.godot_package.get('file_counts', {}) if self.godot_package else {},
-                    "import_ready": self.godot_package.get('import_ready', False) if self.godot_package else False,
-                    "godot_version": "4.3+",
-                    "features": [
-                        "GDScript files for NPCs and game systems",
-                        "Complete scenes with proper node structure",
-                        "Player controller with first-person movement",
-                        "Interactive dialogue system",
-                        "Quest management system",
-                        "JSON-based content loading"
-                    ]
+                try:
+                    with open(manifest_file, 'r') as f:
+                        master_manifest = json.load(f)
+                except (json.JSONDecodeError, IOError) as e:
+                    print(f"   ⚠️ Could not read existing manifest: {e}")
+                    master_manifest = {}
+            else:
+                master_manifest = {}
+            
+            # Add Godot export information
+            godot_info = {
+                'godot_export': {
+                    'status': self.godot_package.get('status', 'unknown'),
+                    'project_path': self.godot_package.get('project_path', ''),
+                    'session_package_path': self.godot_package.get('session_package_path', ''),
+                    'import_ready': self.godot_package.get('import_ready', False),
+                    'file_counts': self.godot_package.get('file_counts', {}),
+                    'export_timestamp': datetime.now().isoformat()
                 }
+            }
+            
+            # Add error info if present
+            if self.godot_package.get('error'):
+                godot_info['godot_export']['error'] = self.godot_package.get('error')
                 
-                # Save updated manifest
-                with open(manifest_file, 'w') as f:
-                    json.dump(manifest, f, indent=2)
-                    
+            if self.godot_package.get('recovered'):
+                godot_info['godot_export']['recovered'] = True
+                
+            # Merge with existing manifest
+            master_manifest.update(godot_info)
+            
+            # Save updated manifest
+            with open(manifest_file, 'w') as f:
+                json.dump(master_manifest, f, indent=2, default=str)
+                
+            print(f"   📋 Updated master manifest with Godot export info")
+            
         except Exception as e:
-            print(f"⚠️ Failed to update manifest with Godot info: {e}")
+            print(f"   ⚠️ Could not update manifest: {e}")
 
-    async def _fallback_godot_export_instructions(self) -> Dict[str, Any]:
-        """Fallback Godot export instructions when Godot Exporter not available"""
+    async def _fallback_godot_export_instructions(self):
+        """Enhanced fallback instructions when Godot exporter is not available"""
         
-        instructions_file = self.current_session_dir / "godot_import_instructions.md"
-        
-        instructions = f"""# Godot Import Instructions
+        try:
+            # Create enhanced fallback instructions
+            instructions = {
+                'status': 'instructions_only',
+                'message': 'Godot Exporter not available - manual integration required',
+                'godot_version_required': '4.3+',
+                'manual_steps': [
+                    '1. Create new Godot 4.3+ project',
+                    '2. Copy the project.godot configuration provided',
+                    '3. Create the directory structure: scenes/, scripts/, resources/, data/, assets/',
+                    '4. Import the generated JSON data files from the pipeline',
+                    '5. Create basic scenes using the world specification',
+                    '6. Add player controller and movement scripts',
+                    '7. Implement NPC interaction system',
+                    '8. Add quest management system',
+                    '9. Load character and quest data from JSON files'
+                ],
+                'generated_content_available': {
+                    'world_spec': bool(self.world_spec),
+                    'assets': bool(self.assets),
+                    'characters': bool(self.characters),
+                    'quests': bool(self.quests)
+                },
+                'integration_priority': [
+                    'Player movement and camera control',
+                    'World building placement',
+                    'NPC dialogue system', 
+                    'Quest tracking and management',
+                    'Asset loading and display'
+                ]
+            }
+            
+            # Save instructions to file
+            instructions_file = self.current_session_dir / "godot_integration_instructions.json"
+            with open(instructions_file, 'w') as f:
+                json.dump(instructions, f, indent=2, default=str)
+            
+            # Create basic project.godot content
+            project_godot_content = '''[application]
 
-## Generated Content Package
-- **World Specification**: `world_specification.json`
-- **Characters**: `characters.json` ({len(self.characters.get('characters', [])) if self.characters else 0} NPCs)
-- **Quests**: `quests.json` ({len(self.quests.get('quests', [])) if self.quests else 0} quests)
-- **Assets**: `ai_creative_assets/` ({self.assets.get('generation_summary', {}).get('total_creative_assets', 0) if self.assets else 0} files)
+    config/name="Generated Game World"
+    run/main_scene="res://scenes/World.tscn"
+    config/features=PackedStringArray("4.4", "Forward Plus")
 
-## Manual Godot Integration Steps
+    [input]
 
-### 1. Create New Godot Project
-```
-1. Open Godot 4.3+
-2. Create new project
-3. Set up project structure: scenes/, scripts/, assets/, data/
-```
+    interact={
+    "deadzone": 0.5,
+    "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":69,"key_label":0,"unicode":101,"echo":false,"script":null)]
+    }
 
-### 2. Import 3D Assets
-```
-1. Copy models from ai_creative_assets/models/ to assets/models/
-2. Copy textures from ai_creative_assets/ai_textures/ to assets/textures/
-3. Import all assets in Godot (auto-import should handle most)
-4. Create materials and apply textures
-```
+    move_left={
+    "deadzone": 0.5,
+    "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"key_label":0,"unicode":97,"echo":false,"script":null)]
+    }
 
-### 3. Create NPCs and World
-```
-1. Read character data from characters.json
-2. Create CharacterBody3D nodes for each NPC
-3. Position NPCs according to world_specification.json locations
-4. Add collision shapes and interaction areas
-5. Implement NPC scripts with dialogue system
-```
+    move_right={
+    "deadzone": 0.5,
+    "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"echo":false,"script":null)]
+    }
 
-### 4. Implement Game Systems
-```
-1. Create main World scene with Node3D root
-2. Add player controller (CharacterBody3D with camera)
-3. Implement quest management system
-4. Connect quest objectives to NPC interactions
-5. Add UI for dialogue and quest tracking
-```
+    move_forward={
+    "deadzone": 0.5,
+    "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"key_label":0,"unicode":119,"echo":false,"script":null)]
+    }
 
-### 5. Build World Layout
-```
-1. Parse world_specification.json for building positions
-2. Place 3D models according to layout specifications
-3. Add lighting (DirectionalLight3D for sun, other lights as needed)
-4. Configure environment and skybox
-5. Set up collision for world geometry
-```
+    move_backward={
+    "deadzone": 0.5,
+    "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"key_label":0,"unicode":115,"echo":false,"script":null)]
+    }
 
-## Sample GDScript Files Needed
+    [rendering]
 
-### Player Controller (scripts/Player.gd)
-```gdscript
-extends CharacterBody3D
+    renderer/rendering_method="gl_compatibility"
+    renderer/rendering_method.mobile="gl_compatibility"
 
-@export var speed = 5.0
-@export var sensitivity = 0.003
+    [layer_names]
 
-@onready var camera = $Camera3D
-
-func _ready():
-    Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-
-func _input(event):
-    if event is InputEventMouseMotion:
-        rotate_y(-event.relative.x * sensitivity)
-        camera.rotate_x(-event.relative.y * sensitivity)
-        camera.rotation.x = clamp(camera.rotation.x, -PI/2, PI/2)
-
-func _physics_process(delta):
-    var input_vector = Vector3()
-    if Input.is_action_pressed("move_forward"):
-        input_vector.z -= 1
-    if Input.is_action_pressed("move_back"):
-        input_vector.z += 1
-    if Input.is_action_pressed("move_left"):
-        input_vector.x -= 1
-    if Input.is_action_pressed("move_right"):
-        input_vector.x += 1
-    
-    velocity = transform.basis * input_vector * speed
-    move_and_slide()
-```
-
-### NPC System (scripts/NPC.gd)
-```gdscript
-extends CharacterBody3D
-
-@export var npc_data: Dictionary
-@export var dialogue_data: Array
-
-signal dialogue_started
-signal quest_given
-
-func _ready():
-    # Load NPC data from characters.json
-    load_npc_data()
-
-func interact():
-    dialogue_started.emit()
-    # Show dialogue UI
-    # Handle quest logic
-```
-
-## Balance Recommendations
-{f'Overall Balance Score: {self.balance_report.get("overall_score", 0):.2f}' if self.balance_report else 'Balance validation not available'}
-
-## Required Input Actions
-Add these to your Input Map in Godot:
-- move_forward (W key)
-- move_back (S key)  
-- move_left (A key)
-- move_right (D key)
-- interact (E key)
-
-Generated by Multi-Agent Game Content Pipeline v4.0 with Godot Export
-"""
-        
-        with open(instructions_file, 'w') as f:
-            f.write(instructions)
-        
-        return {
-            'status': 'instructions_only',
-            'instructions_file': str(instructions_file),
-            'message': 'Godot Exporter not available - manual integration instructions provided',
-            'manual_integration_required': True,
-            'godot_version_required': '4.3+',
-            'features_to_implement': [
-                'Player controller with first-person movement',
-                'NPC interaction system',
-                'Dialogue system with UI',
-                'Quest management and tracking',
-                'World building placement system',
-                'JSON data loading for content'
-            ]
-        }
-
+    3d_physics/layer_1="World"
+    3d_physics/layer_2="Player"
+    3d_physics/layer_3="NPCs"
+    3d_physics/layer_4="Buildings"
+    3d_physics/layer_5="Interactables"
+    '''
+            
+            project_file = self.current_session_dir / "project.godot"
+            with open(project_file, 'w') as f:
+                f.write(project_godot_content)
+            
+            instructions['project_godot_file'] = str(project_file)
+            instructions['instructions_file'] = str(instructions_file)
+            
+            print(f"   📋 Created fallback integration instructions")
+            print(f"   📁 Instructions saved: {instructions_file.name}")
+            print(f"   🔧 Project config saved: project.godot")
+            
+            return instructions
+            
+        except Exception as e:
+            print(f"   ❌ Failed to create fallback instructions: {e}")
+            return {
+                'status': 'failed',
+                'error': f'Could not create fallback instructions: {str(e)}',
+                'message': 'Manual Godot integration required - check pipeline output for content files'
+            }
     async def _create_final_result_summary(self) -> Dict[str, Any]:
         """Create final result summary"""
         
