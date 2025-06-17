@@ -37,7 +37,7 @@ class GodotProjectBuilder:
         project_settings = GodotProjectSettings(
             name=project_name,
             main_scene="res://scenes/World.tscn",
-            features=["4.3"]
+            features=["4.4"]
         )
         
         # Generate project.godot content

@@ -63,6 +63,7 @@ class GodotExporter:
             # Step 3: Generate scripts
             try:
                 self.logger.info("📝 Step 3: Generating scripts...")
+                
                 if world_spec:
                     world_scripts = await self.script_generator.generate_world_scripts(world_spec)
                     self.exported_scripts.extend(world_scripts)
@@ -239,7 +240,7 @@ class GodotExporter:
 
 config/name="{project_name}"
 run/main_scene="res://scenes/World.tscn"
-config/features=PackedStringArray(["4.3"])
+config/features=PackedStringArray("4.4", "Forward Plus")
 
 [input]
 
@@ -298,7 +299,7 @@ renderer/rendering_method.mobile="gl_compatibility"
             
             return GodotExportManifest(
                 project_name=project_name,
-                godot_version="4.3",
+                godot_version="4.4",
                 export_timestamp=datetime.now().isoformat(),
                 content_summary=content_summary,
                 file_structure=file_structure,
@@ -393,7 +394,7 @@ renderer/rendering_method.mobile="gl_compatibility"
 Generated Godot project from multi-agent pipeline.
 
 ## Import Instructions:
-1. Open Godot 4.3+
+1. Open Godot 4.4+
 2. Import this project directory
 3. Open the main scene to start exploring
 

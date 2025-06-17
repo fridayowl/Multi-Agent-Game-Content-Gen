@@ -18,6 +18,38 @@ class GodotScriptGenerator:
         self.logger = logger
         self.scripts_dir = dirs['scripts_dir']
     
+    # ADD THE MISSING METHOD THAT THE EXPORTER EXPECTS
+    async def generate_world_scripts(self, world_spec: Dict[str, Any]) -> List[str]:
+        """Generate world-related scripts"""
+        script_files = []
+        
+        # Create world manager script
+        world_manager = await self._create_world_manager_script()
+        script_files.append(world_manager)
+        
+        # Create environment-specific scripts if needed
+        if world_spec and 'theme' in world_spec:
+            theme_script = await self._create_theme_specific_script(world_spec['theme'])
+            if theme_script:
+                script_files.append(theme_script)
+        
+        self.logger.info(f"   ✅ Created {len(script_files)} world scripts")
+        return script_files
+    
+    # ADD ALIAS METHODS THAT THE EXPORTER EXPECTS
+    async def generate_character_scripts(self, characters: Dict[str, Any]) -> List[str]:
+        """Alias for export_character_scripts - for compatibility"""
+        return await self.export_character_scripts(characters)
+    
+    async def generate_quest_scripts(self, quests: Dict[str, Any]) -> List[str]:
+        """Alias for export_quest_scripts - for compatibility"""
+        return await self.export_quest_scripts(quests)
+    
+    async def generate_game_management_scripts(self) -> List[str]:
+        """Alias for export_game_management_scripts - for compatibility"""
+        return await self.export_game_management_scripts()
+    
+    # EXISTING METHODS (keeping them as they are)
     async def export_character_scripts(self, characters: Dict[str, Any]) -> List[str]:
         """Export character-related scripts"""
         script_files = []
@@ -76,6 +108,58 @@ class GodotScriptGenerator:
         
         self.logger.info(f"   ✅ Created {len(script_files)} game management scripts")
         return script_files
+    
+    # ADD THE NEW THEME-SPECIFIC SCRIPT METHOD
+    async def _create_theme_specific_script(self, theme: str) -> str:
+        """Create theme-specific environment script"""
+        
+        content = f'''extends Node
+
+# Theme-specific script for: {theme}
+class_name {theme.capitalize()}Environment
+
+func _ready():
+    setup_{theme}_environment()
+
+func setup_{theme}_environment():
+    # Theme-specific setup
+    match "{theme}":
+        "medieval":
+            setup_medieval_atmosphere()
+        "cyberpunk":
+            setup_cyberpunk_atmosphere()
+        "fantasy":
+            setup_fantasy_atmosphere()
+        "steampunk":
+            setup_steampunk_atmosphere()
+        _:
+            setup_default_atmosphere()
+
+func setup_medieval_atmosphere():
+    print("Setting up medieval atmosphere...")
+    # Add torches, medieval music, etc.
+
+func setup_cyberpunk_atmosphere():
+    print("Setting up cyberpunk atmosphere...")
+    # Add neon lights, electronic music, etc.
+
+func setup_fantasy_atmosphere():
+    print("Setting up fantasy atmosphere...")
+    # Add magical effects, fantasy music, etc.
+
+func setup_steampunk_atmosphere():
+    print("Setting up steampunk atmosphere...")
+    # Add steam effects, mechanical sounds, etc.
+
+func setup_default_atmosphere():
+    print("Setting up default atmosphere...")
+'''
+        
+        script_file = self.scripts_dir / f"{theme.capitalize()}Environment.gd"
+        with open(script_file, 'w') as f:
+            f.write(content)
+        
+        return f"{theme.capitalize()}Environment.gd"
     
     async def _create_world_manager_script(self) -> str:
         """Create world manager script"""

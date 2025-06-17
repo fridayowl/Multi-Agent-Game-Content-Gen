@@ -1495,9 +1495,9 @@ class CompleteGameContentOrchestrator:
             instructions = {
                 'status': 'instructions_only',
                 'message': 'Godot Exporter not available - manual integration required',
-                'godot_version_required': '4.3+',
+                'godot_version_required': '4.4+',
                 'manual_steps': [
-                    '1. Create new Godot 4.3+ project',
+                    '1. Create new Godot 4.4+ project',
                     '2. Copy the project.godot configuration provided',
                     '3. Create the directory structure: scenes/, scripts/, resources/, data/, assets/',
                     '4. Import the generated JSON data files from the pipeline',
