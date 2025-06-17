@@ -304,6 +304,26 @@
             transform: none;
         }
 
+        /* Load Game Data Button */
+        .load-data-btn {
+            background: linear-gradient(135deg, rgba(120, 219, 255, 0.3), rgba(76, 175, 80, 0.3));
+            color: #e0e0e0;
+            border: 1px solid rgba(120, 219, 255, 0.5);
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            margin-left: 15px;
+        }
+
+        .load-data-btn:hover {
+            background: linear-gradient(135deg, rgba(120, 219, 255, 0.5), rgba(76, 175, 80, 0.5));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(120, 219, 255, 0.3);
+        }
+
         .progress-section {
             display: none;
             margin: 40px 0;
@@ -918,6 +938,9 @@
                 <button class="generate-btn" id="generateBtn" onclick="startGeneration()">
                     ⚡ GENERATE GODOT GAME PACKAGE
                 </button>
+                <button class="load-data-btn" id="loadDataBtn" onclick="loadExistingGameData()">
+                    📊 LOAD LATEST GAME DATA
+                </button>
             </div>
 
             <div class="progress-section" id="progressSection">
@@ -1111,6 +1134,53 @@
             event.target.classList.add('active');
         }
 
+        // NEW FUNCTION: Load existing game data
+        async function loadExistingGameData() {
+            console.log('🔍 Loading existing game data...');
+
+            try {
+                const response = await fetch('/api/game-data');
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                console.log('📊 Loaded game data:', data);
+
+                if (data.error) {
+                    console.warn('⚠️ API returned error:', data.error);
+                }
+
+                // Show the generation details section
+                document.getElementById('progressSection').style.display = 'block';
+                document.getElementById('generationDetails').style.display = 'block';
+
+                // Update all sections with loaded data
+                updateGenerationDetails(data);
+
+                // Update stats if available
+                if (data.stats) {
+                    updateStatsDisplay(data.stats);
+                }
+
+                // Show success message
+                const btn = document.getElementById('loadDataBtn');
+                const originalText = btn.textContent;
+                btn.textContent = '✅ DATA LOADED';
+                btn.style.background = 'rgba(76, 175, 80, 0.5)';
+
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.style.background = '';
+                }, 3000);
+
+            } catch (error) {
+                console.error('❌ Error loading game data:', error);
+                alert(`❌ Failed to load game data: ${error.message}`);
+            }
+        }
+
         function updateGenerationDetails(details) {
             if (!details) return;
 
@@ -1126,10 +1196,19 @@
             updateFilesDetails(details.files);
         }
 
+        function updateStatsDisplay(stats) {
+            if (stats.npc_count) {
+                document.getElementById('npcCount').textContent = `${stats.npc_count} unique characters with AI personalities`;
+            }
+            if (stats.quest_count) {
+                document.getElementById('questCount').textContent = `${stats.quest_count} interconnected storylines with branching paths`;
+            }
+        }
+
         function updateWorldDetails(worldData) {
             const container = document.getElementById('worldOverview');
             if (!worldData) {
-                container.innerHTML = '<p>World generation in progress...</p>';
+                container.innerHTML = '<p>No world data available. Try generating a new game or check if files exist.</p>';
                 return;
             }
 
@@ -1170,7 +1249,7 @@
         function updateAssetsDetails(assetsData) {
             const container = document.getElementById('assetsOverview');
             if (!assetsData) {
-                container.innerHTML = '<p>Assets generation in progress...</p>';
+                container.innerHTML = '<p>No assets data available. Try generating a new game or check if files exist.</p>';
                 return;
             }
 
@@ -1226,7 +1305,7 @@
         function updateCharactersDetails(charactersData) {
             const container = document.getElementById('charactersOverview');
             if (!charactersData) {
-                container.innerHTML = '<p>Characters generation in progress...</p>';
+                container.innerHTML = '<p>No characters data available. Try generating a new game or check if files exist.</p>';
                 return;
             }
 
@@ -1256,7 +1335,7 @@
         function updateQuestsDetails(questsData) {
             const container = document.getElementById('questsOverview');
             if (!questsData) {
-                container.innerHTML = '<p>Quests generation in progress...</p>';
+                container.innerHTML = '<p>No quests data available. Try generating a new game or check if files exist.</p>';
                 return;
             }
 
@@ -1290,7 +1369,7 @@
         function updateFilesDetails(filesData) {
             const container = document.getElementById('filesOverview');
             if (!filesData || !Array.isArray(filesData)) {
-                container.innerHTML = '<p>File structure will be available after generation...</p>';
+                container.innerHTML = '<p>No file structure available. Files will be generated during the creation process.</p>';
                 return;
             }
 
@@ -1458,9 +1537,11 @@
 
                     // Update stats if available
                     if (data.stats) {
-                        document.getElementById('npcCount').textContent = `${data.stats.npc_count || 5} unique characters with AI personalities`;
-                        document.getElementById('questCount').textContent = `${data.stats.quest_count || 3} interconnected storylines with branching paths`;
+                        updateStatsDisplay(data.stats);
                     }
+
+                    // Load the complete game data after generation
+                    setTimeout(loadExistingGameData, 1000);
 
                     showResults();
                     resetGeneration();
@@ -1600,10 +1681,16 @@
             // Start FPS counter
             setInterval(updateFPS, 1000);
 
+            // Try to load existing game data on page load
+            loadExistingGameData();
+
             // Add keyboard shortcuts
             document.addEventListener('keydown', function (e) {
                 if (e.ctrlKey && e.key === 'Enter') {
                     startGeneration();
+                } else if (e.ctrlKey && e.key === 'l') {
+                    e.preventDefault();
+                    loadExistingGameData();
                 }
             });
 
@@ -1630,6 +1717,7 @@
 
             console.log('🎮 AI Game Generator initialized successfully!');
             console.log('💡 Tip: Use Ctrl+Enter to start generation');
+            console.log('💡 Tip: Use Ctrl+L to load existing game data');
         });
 
         // Add some gaming easter eggs

@@ -153,6 +153,75 @@ def get_progress(generation_id):
     
     return jsonify(response_data)
 
+@app.route('/api/game-data')
+def get_game_data():
+    """Get the latest generated game data for UI display"""
+    try:
+        # Find the most recent completed generation
+        latest_job = None
+        for job in generation_jobs.values():
+            if job.status == 'completed' and job.generation_details:
+                if latest_job is None or job.created_at > latest_job.created_at:
+                    latest_job = job
+        
+        # If no completed job found, try loading from filesystem
+        if not latest_job:
+            latest_session_dir = find_latest_session_directory()
+            if latest_session_dir:
+                # Create a temporary job to load the data
+                temp_job = GenerationJob("temp", "")
+                load_generation_details(latest_session_dir, temp_job)
+                
+                return jsonify({
+                    'world': temp_job.generation_details.get('world'),
+                    'assets': temp_job.generation_details.get('assets'),
+                    'characters': temp_job.generation_details.get('characters'),
+                    'quests': temp_job.generation_details.get('quests'),
+                    'files': temp_job.generation_details.get('files', []),
+                    'stats': {
+                        'world_buildings': len(temp_job.generation_details.get('world', {}).get('buildings', [])),
+                        'total_assets': temp_job.generation_details.get('assets', {}).get('total_count', 0),
+                        'npc_count': temp_job.generation_details.get('characters', {}).get('total_count', 0),
+                        'quest_count': temp_job.generation_details.get('quests', {}).get('total_count', 0)
+                    }
+                })
+        
+        # Return data from the latest completed job
+        return jsonify({
+            'world': latest_job.generation_details.get('world'),
+            'assets': latest_job.generation_details.get('assets'),
+            'characters': latest_job.generation_details.get('characters'),
+            'quests': latest_job.generation_details.get('quests'),
+            'files': latest_job.generation_details.get('files', []),
+            'stats': {
+                'world_buildings': len(latest_job.generation_details.get('world', {}).get('buildings', [])),
+                'total_assets': latest_job.generation_details.get('assets', {}).get('total_count', 0),
+                'npc_count': latest_job.generation_details.get('characters', {}).get('total_count', 0),
+                'quest_count': latest_job.generation_details.get('quests', {}).get('total_count', 0)
+            }
+        })
+        
+    except Exception as e:
+        print(f"❌ Error loading game data: {e}")
+        import traceback
+        traceback.print_exc()
+        
+        # Return mock data if real data fails to load
+        return jsonify({
+            'error': str(e),
+            'world': create_mock_world_data(),
+            'assets': create_mock_assets_data(),
+            'characters': create_mock_characters_data(),
+            'quests': create_mock_quests_data(),
+            'files': [],
+            'stats': {
+                'world_buildings': 8,
+                'total_assets': 47,
+                'npc_count': 5,
+                'quest_count': 3
+            }
+        })
+
 @app.route('/api/download/<generation_id>')
 def download_package(generation_id):
     """Download the generated Godot package"""
@@ -189,6 +258,25 @@ def download_package(generation_id):
         as_attachment=True,
         download_name=f'GodotGameWorld_{generation_id[:8]}.zip'
     )
+
+def find_latest_session_directory() -> Path:
+    """Find the most recent session directory"""
+    try:
+        if not GENERATED_FOLDER.exists():
+            return None
+        
+        session_dirs = [d for d in GENERATED_FOLDER.iterdir() if d.is_dir()]
+        if not session_dirs:
+            return None
+        
+        # Find most recent directory
+        latest_dir = max(session_dirs, key=lambda p: p.stat().st_mtime)
+        print(f"📂 Found latest session directory: {latest_dir}")
+        return latest_dir
+        
+    except Exception as e:
+        print(f"❌ Error finding latest session: {e}")
+        return None
 
 def load_generation_details(session_dir: Path, job: GenerationJob):
     """Load detailed generation information from files"""
@@ -449,6 +537,200 @@ def categorize_file(file_path: Path) -> str:
         return 'Documentation'
     else:
         return 'Other'
+
+def create_mock_world_data():
+    """Create mock world data for display when real data isn't available"""
+    return {
+        'theme': 'Medieval Village',
+        'description': 'A charming medieval village with cobblestone streets, market square, and surrounding countryside. Features traditional architecture and peaceful atmosphere.',
+        'size': [40, 40],
+        'buildings': [
+            {'name': 'Market Square', 'type': 'market', 'position': [20, 15], 'description': 'Central trading hub'},
+            {'name': 'Village Inn', 'type': 'tavern', 'position': [18, 12], 'description': 'Cozy inn for travelers'},
+            {'name': 'Blacksmith', 'type': 'blacksmith', 'position': [22, 18], 'description': 'Weapon and armor crafting'},
+            {'name': 'Village Church', 'type': 'church', 'position': [25, 20], 'description': 'Peaceful place of worship'},
+            {'name': 'Town Hall', 'type': 'hall', 'position': [20, 22], 'description': 'Administrative center'},
+            {'name': 'Guard Tower', 'type': 'tower', 'position': [15, 25], 'description': 'Village protection'},
+            {'name': 'Windmill', 'type': 'windmill', 'position': [30, 10], 'description': 'Grain processing'},
+            {'name': 'Stable', 'type': 'stable', 'position': [12, 15], 'description': 'Horse care and storage'}
+        ],
+        'natural_features': [
+            'Ancient Oak Grove',
+            'Village Well',
+            'Cobblestone Paths',
+            'Garden Plots',
+            'Stone Bridge',
+            'Small Creek'
+        ],
+        'paths': [
+            {'start': [10, 10], 'end': [30, 30], 'type': 'main_road'},
+            {'start': [15, 5], 'end': [25, 35], 'type': 'side_path'}
+        ],
+        'environment_type': 'Temperate',
+        'mood': 'Peaceful and welcoming'
+    }
+
+def create_mock_assets_data():
+    """Create mock assets data for display"""
+    return {
+        'total_count': 47,
+        'categories': {
+            'buildings': [
+                {'name': 'Medieval House', 'file': 'house_01.obj', 'description': 'Traditional stone house', 'type': 'obj'},
+                {'name': 'Market Stall', 'file': 'market_stall.obj', 'description': 'Wooden trading stall', 'type': 'obj'},
+                {'name': 'Guard Tower', 'file': 'tower.obj', 'description': 'Stone defensive tower', 'type': 'obj'},
+                {'name': 'Village Well', 'file': 'well.obj', 'description': 'Stone water well', 'type': 'obj'}
+            ],
+            'props': [
+                {'name': 'Wooden Barrel', 'file': 'barrel.obj', 'description': 'Storage barrel', 'type': 'obj'},
+                {'name': 'Market Cart', 'file': 'cart.obj', 'description': 'Merchant\'s cart', 'type': 'obj'},
+                {'name': 'Anvil', 'file': 'anvil.obj', 'description': 'Blacksmith anvil', 'type': 'obj'},
+                {'name': 'Wooden Crate', 'file': 'crate.obj', 'description': 'Storage container', 'type': 'obj'},
+                {'name': 'Street Lamp', 'file': 'lamp.obj', 'description': 'Village lighting', 'type': 'obj'}
+            ],
+            'environment': [
+                {'name': 'Ancient Oak', 'file': 'oak_tree.obj', 'description': 'Large oak tree', 'type': 'obj'},
+                {'name': 'Stone Path', 'file': 'path_stone.obj', 'description': 'Cobblestone walkway', 'type': 'obj'},
+                {'name': 'Flower Bed', 'file': 'flowers.obj', 'description': 'Colorful garden', 'type': 'obj'},
+                {'name': 'Village Fence', 'file': 'fence.obj', 'description': 'Wooden boundary', 'type': 'obj'}
+            ],
+            'textures': [
+                {'name': 'Stone Wall', 'file': 'stone_wall.png', 'description': 'Medieval stone texture', 'type': 'png'},
+                {'name': 'Wood Planks', 'file': 'wood_planks.png', 'description': 'Weathered wood texture', 'type': 'png'},
+                {'name': 'Cobblestone', 'file': 'cobblestone.png', 'description': 'Path texture', 'type': 'png'}
+            ],
+            'materials': [
+                {'name': 'Stone Material', 'file': 'stone.mat', 'description': 'Stone material definition', 'type': 'mat'},
+                {'name': 'Wood Material', 'file': 'wood.mat', 'description': 'Wood material definition', 'type': 'mat'}
+            ]
+        },
+        'blender_files': [
+            'generate_medieval_buildings.py',
+            'create_village_props.py',
+            'environment_generator.py'
+        ],
+        'model_files': [
+            'buildings/house_01.obj',
+            'buildings/market_stall.obj',
+            'props/barrel.obj',
+            'props/cart.obj',
+            'environment/oak_tree.obj'
+        ]
+    }
+
+def create_mock_characters_data():
+    """Create mock characters data for display"""
+    return {
+        'total_count': 5,
+        'npcs': [
+            {
+                'name': 'Elder Thomas',
+                'role': 'Village Elder',
+                'personality': 'Wise and patient',
+                'background': 'Former knight turned village leader',
+                'location': 'Town Hall',
+                'age': 'Elderly',
+                'appearance': 'Gray beard, kind eyes, simple robes',
+                'relationships': ['Friend of Blacksmith Kane', 'Mentor to Guard Captain'],
+                'dialogue_style': 'Formal but warm',
+                'quests_involved': ['Village Troubles', 'The Missing Artifact']
+            },
+            {
+                'name': 'Merchant Sarah',
+                'role': 'Market Trader',
+                'personality': 'Cheerful and business-minded',
+                'background': 'Traveling merchant who settled in the village',
+                'location': 'Market Square',
+                'age': 'Adult',
+                'appearance': 'Colorful clothing, friendly smile',
+                'relationships': ['Business partner with Blacksmith Kane'],
+                'dialogue_style': 'Enthusiastic and chatty',
+                'quests_involved': ['Supply Run', 'Market Day']
+            },
+            {
+                'name': 'Blacksmith Kane',
+                'role': 'Village Blacksmith',
+                'personality': 'Gruff but reliable',
+                'background': 'Master craftsman with decades of experience',
+                'location': 'Blacksmith Shop',
+                'age': 'Middle-aged',
+                'appearance': 'Strong build, leather apron, calloused hands',
+                'relationships': ['Friend of Elder Thomas', 'Business partner with Merchant Sarah'],
+                'dialogue_style': 'Direct and practical',
+                'quests_involved': ['Broken Tools', 'The Special Order']
+            },
+            {
+                'name': 'Innkeeper Mary',
+                'role': 'Village Innkeeper',
+                'personality': 'Motherly and caring',
+                'background': 'Long-time village resident, knows everyone',
+                'location': 'Village Inn',
+                'age': 'Middle-aged',
+                'appearance': 'Warm smile, comfortable clothing',
+                'relationships': ['Friend to all villagers'],
+                'dialogue_style': 'Warm and nurturing',
+                'quests_involved': ['Lost Traveler', 'Inn Supplies']
+            },
+            {
+                'name': 'Guard Captain Rex',
+                'role': 'Village Guard',
+                'personality': 'Dutiful and protective',
+                'background': 'Young guard trained by Elder Thomas',
+                'location': 'Guard Tower',
+                'age': 'Young Adult',
+                'appearance': 'Armor and sword, determined expression',
+                'relationships': ['Student of Elder Thomas'],
+                'dialogue_style': 'Respectful and earnest',
+                'quests_involved': ['Patrol Duty', 'Strange Sounds']
+            }
+        ]
+    }
+
+def create_mock_quests_data():
+    """Create mock quests data for display"""
+    return {
+        'total_count': 3,
+        'main_quests': 1,
+        'side_quests': 2,
+        'quest_list': [
+            {
+                'title': 'The Missing Artifact',
+                'type': 'main',
+                'description': 'An ancient artifact has gone missing from the village shrine, and strange things have been happening ever since.',
+                'objective': 'Investigate the missing artifact and restore peace to the village',
+                'giver': 'Elder Thomas',
+                'location': 'Town Hall',
+                'rewards': ['Village Recognition', 'Ancient Knowledge', '100 Gold'],
+                'requirements': ['Speak to all villagers', 'Search the shrine'],
+                'difficulty': 'Hard',
+                'estimated_time': '45 minutes'
+            },
+            {
+                'title': 'Supply Run',
+                'type': 'side',
+                'description': 'Merchant Sarah needs someone to collect supplies from the neighboring village before the market day.',
+                'objective': 'Travel to neighboring village and collect merchant supplies',
+                'giver': 'Merchant Sarah',
+                'location': 'Market Square',
+                'rewards': ['Trading Discount', '50 Gold', 'Merchant\'s Favor'],
+                'requirements': ['Own transportation', 'Basic combat skills'],
+                'difficulty': 'Medium',
+                'estimated_time': '20 minutes'
+            },
+            {
+                'title': 'Broken Tools',
+                'type': 'side',
+                'description': 'The village\'s farming tools have been breaking unusually often. Blacksmith Kane suspects something is wrong with the metal.',
+                'objective': 'Investigate the source of the defective metal and fix the problem',
+                'giver': 'Blacksmith Kane',
+                'location': 'Blacksmith Shop',
+                'rewards': ['Improved Tools', '30 Gold', 'Blacksmith Skills'],
+                'requirements': ['Basic crafting knowledge'],
+                'difficulty': 'Easy',
+                'estimated_time': '15 minutes'
+            }
+        ]
+    }
 
 def find_godot_package(generation_id: str) -> Path:
     """Find the Godot package for this generation"""
@@ -714,6 +996,18 @@ def api_docs():
                     'download_url': 'string (when completed)'
                 }
             },
+            'GET /api/game-data': {
+                'description': 'Get detailed game data for UI display',
+                'response': {
+                    'world': 'object (world specification with buildings, features, etc.)',
+                    'assets': 'object (3D models, textures, materials)',
+                    'characters': 'object (NPCs with personalities and relationships)',
+                    'quests': 'object (storylines and objectives)',
+                    'files': 'array (generated file structure)',
+                    'stats': 'object (summary statistics)',
+                    'error': 'string (if data loading fails)'
+                }
+            },
             'GET /api/download/{id}': {
                 'description': 'Download generated Godot package',
                 'response': 'file download (.zip containing Godot project)'
@@ -762,3 +1056,4 @@ if __name__ == '__main__':
         debug=True,
         threaded=True
     )
+                
