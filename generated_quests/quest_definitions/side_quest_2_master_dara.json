@@ -1,0 +1,53 @@
+{
+  "id": "side_quest_2_master_dara",
+  "title": "Personal Favor",
+  "description": "Master Dara needs help with a personal matter.",
+  "summary": "Help Master Dara with personal favor",
+  "giver_npc": "Master Dara",
+  "objectives": [
+    {
+      "id": "side_quest_2_obj_1",
+      "description": "Listen to the problem",
+      "type": "talk_to_npc",
+      "target": "Master Dara",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "side_quest_2_obj_2",
+      "description": "Help solve it",
+      "type": "talk_to_npc",
+      "target": "Master Dara",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "side_quest_2_obj_3",
+      "description": "Return for thanks",
+      "type": "talk_to_npc",
+      "target": "Master Dara",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    }
+  ],
+  "rewards": {
+    "experience": 50,
+    "gold": 25,
+    "items": [
+      "Thank You Gift"
+    ],
+    "relationship_changes": null
+  },
+  "prerequisites": null,
+  "level_requirement": 1,
+  "estimated_duration": "15-30 minutes",
+  "quest_type": "side",
+  "interconnected_quests": [
+    "main_quest_1_sister_brenna",
+    "side_quest_1_sister_brenna"
+  ],
+  "narrative_importance": "low"
+}

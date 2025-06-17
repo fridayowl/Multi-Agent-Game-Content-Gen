@@ -83,21 +83,157 @@ class GodotProjectSettings:
     name: str
     main_scene: str
     features: List[str]
-    rendering_method: str = "gl_compatibility"
-    
-    def to_dict(self) -> Dict[str, Any]:
-        return {
-            'application': {
-                'config/name': self.name,
-                'run/main_scene': self.main_scene,
-                'config/features': self.features
-            },
-            'rendering': {
-                'renderer/rendering_method': self.rendering_method,
-                'renderer/rendering_method.mobile': self.rendering_method
-            }
-        }
+    description: str = ""
+    version: str = "1.0"
 
+# Godot Node Templates
+GODOT_NODE_TEMPLATES = {
+    'player': {
+        'type': 'CharacterBody3D',
+        'properties': {
+            'script': 'res://scripts/Player.gd'
+        },
+        'children': [
+            {'name': 'MeshInstance3D', 'type': 'MeshInstance3D'},
+            {'name': 'CollisionShape3D', 'type': 'CollisionShape3D'},
+            {'name': 'Camera3D', 'type': 'Camera3D'}
+        ]
+    },
+    'npc': {
+        'type': 'CharacterBody3D',
+        'properties': {
+            'script': 'res://scripts/NPC.gd'
+        },
+        'children': [
+            {'name': 'MeshInstance3D', 'type': 'MeshInstance3D'},
+            {'name': 'CollisionShape3D', 'type': 'CollisionShape3D'},
+            {'name': 'InteractionArea', 'type': 'Area3D'}
+        ]
+    },
+    'building': {
+        'type': 'StaticBody3D',
+        'properties': {},
+        'children': [
+            {'name': 'MeshInstance3D', 'type': 'MeshInstance3D'},
+            {'name': 'CollisionShape3D', 'type': 'CollisionShape3D'}
+        ]
+    }
+}
+
+# GDScript Templates
+GDSCRIPT_TEMPLATES = {
+    'player_controller': '''extends CharacterBody3D
+
+const SPEED = 5.0
+const JUMP_VELOCITY = 4.5
+var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+
+@onready var camera = $Camera3D
+var mouse_sensitivity = 0.002
+
+func _ready():
+    Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
+func _input(event):
+    if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+        rotate_y(-event.relative.x * mouse_sensitivity)
+        camera.rotate_x(-event.relative.y * mouse_sensitivity)
+        camera.rotation.x = clamp(camera.rotation.x, -PI/2, PI/2)
+
+func _physics_process(delta):
+    if not is_on_floor():
+        velocity.y -= gravity * delta
+    
+    if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+        velocity.y = JUMP_VELOCITY
+    
+    var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
+    var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+    if direction:
+        velocity.x = direction.x * SPEED
+        velocity.z = direction.z * SPEED
+    else:
+        velocity.x = move_toward(velocity.x, 0, SPEED)
+        velocity.z = move_toward(velocity.z, 0, SPEED)
+    
+    move_and_slide()
+''',
+    
+    'npc_controller': '''extends CharacterBody3D
+
+@export var npc_name: String = "NPC"
+@export var dialogue_lines: Array[String] = []
+@onready var interaction_area = $InteractionArea
+
+func _ready():
+    interaction_area.body_entered.connect(_on_player_entered)
+    interaction_area.body_exited.connect(_on_player_exited)
+
+func _on_player_entered(body):
+    if body.name == "Player":
+        print("Press E to talk to " + npc_name)
+
+func _on_player_exited(body):
+    if body.name == "Player":
+        print("")
+
+func interact():
+    if dialogue_lines.size() > 0:
+        var line = dialogue_lines[randi() % dialogue_lines.size()]
+        print(npc_name + ": " + line)
+''',
+
+    'world_manager': '''extends Node
+
+var npcs = []
+var quests = []
+var world_data = {}
+
+func _ready():
+    load_world_data()
+    setup_npcs()
+    setup_quests()
+
+func load_world_data():
+    var file_path = "res://data/world_specification.json"
+    if FileAccess.file_exists(file_path):
+        var file = FileAccess.open(file_path, FileAccess.READ)
+        var json_string = file.get_as_text()
+        file.close()
+        var json = JSON.new()
+        var result = json.parse(json_string)
+        if result == OK:
+            world_data = json.data
+
+func setup_npcs():
+    var file_path = "res://data/characters.json"
+    if FileAccess.file_exists(file_path):
+        var file = FileAccess.open(file_path, FileAccess.READ)
+        var json_string = file.get_as_text()
+        file.close()
+        var json = JSON.new()
+        var result = json.parse(json_string)
+        if result == OK:
+            var characters_data = json.data
+            if "characters" in characters_data:
+                for character in characters_data["characters"]:
+                    print("Loaded NPC: " + str(character.get("name", "Unknown")))
+
+func setup_quests():
+    var file_path = "res://data/quests.json"
+    if FileAccess.file_exists(file_path):
+        var file = FileAccess.open(file_path, FileAccess.READ)
+        var json_string = file.get_as_text()
+        file.close()
+        var json = JSON.new()
+        var result = json.parse(json_string)
+        if result == OK:
+            var quests_data = json.data
+            if "quests" in quests_data:
+                for quest in quests_data["quests"]:
+                    print("Loaded Quest: " + str(quest.get("title", "Unknown")))
+'''
+}
 # Common node types and their default properties
 GODOT_NODE_TEMPLATES = {
     'Node3D': {

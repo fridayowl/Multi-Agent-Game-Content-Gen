@@ -48,7 +48,7 @@ except ImportError:
 
 # Import the Balance Validator
 try:
-    from .balance_validator.agent import validate_game_balance, get_balance_validator_status
+    from .balance_validator.agent import validate_content_balance, get_balance_validator_status
     BALANCE_VALIDATOR_AVAILABLE = True
 except ImportError:
     print("⚠️ Balance Validator not available - using fallback")
@@ -1301,7 +1301,7 @@ class CompleteGameContentOrchestrator:
         
         try:
             if not GODOT_EXPORTER_AVAILABLE:
-                print("⚠️ Godot Exporter not available - generating export instructions instead")
+                print("⚠️ Godot Exporterq not available - generating export instructions instead")
                 self.godot_package = await self._fallback_godot_export_instructions()
                 return
             

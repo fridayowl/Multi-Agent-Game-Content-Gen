@@ -1,11 +1,11 @@
 {
   "generation_stats": {
     "total_characters": 5,
-    "average_age": 37.0,
-    "total_relationships": 8,
+    "average_age": 37.6,
+    "total_relationships": 2,
     "total_dialogue_nodes": 10,
     "unique_roles": 5,
-    "unique_locations": 3
+    "unique_locations": 4
   },
   "uniqueness_metrics": {
     "name_uniqueness": 1.0,
@@ -13,24 +13,24 @@
     "role_uniqueness": 1.0
   },
   "level_distribution": {
-    "Brother Cedric": 9,
-    "Cedric 121": 1,
-    "Master Aldric": 1,
-    "Master Hilda": 4,
-    "Sister Dara": 6
+    "Sister Brenna": 1,
+    "Master Dara": 6,
+    "Sir Gareth": 10,
+    "Lady Cedric": 10,
+    "Brother Brenna": 5
   },
   "role_distribution": {
-    "Brother Cedric": "Servant",
-    "Cedric 121": "Family Head",
-    "Master Aldric": "Resident",
-    "Master Hilda": "Noble",
-    "Sister Dara": "Apprentice"
+    "Sister Brenna": "Servant",
+    "Master Dara": "Noble",
+    "Sir Gareth": "Scholar",
+    "Lady Cedric": "Family Head",
+    "Brother Brenna": "Innkeeper"
   },
   "personality_distribution": {
-    "Brother Cedric": "Compassionate",
-    "Cedric 121": "Jovial",
-    "Master Aldric": "Clever",
-    "Master Hilda": "Brave",
-    "Sister Dara": "Fierce"
+    "Sister Brenna": "Clever",
+    "Master Dara": "Compassionate",
+    "Sir Gareth": "Determined",
+    "Lady Cedric": "Jovial",
+    "Brother Brenna": "Fierce"
   }
 }

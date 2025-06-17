@@ -1,0 +1,78 @@
+{
+  "id": "brother_brenna_54cb8805_4",
+  "name": "Brother Brenna",
+  "title": "The Fierce Innkeeper",
+  "description": "A 51-year-old Innkeeper with a fierce nature.",
+  "backstory": "Brother Brenna has worked as a Innkeeper for many years.",
+  "personality": {
+    "primary_trait": "Fierce",
+    "secondary_trait": "Loyal",
+    "motivation": "To protect others",
+    "fear": "Being misunderstood",
+    "quirk": "Never sits still",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 5,
+    "health": 75,
+    "strength": 11,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 14,
+    "constitution": 12
+  },
+  "relationships": [],
+  "dialogue_tree": [
+    {
+      "id": "brother brenna_greeting",
+      "text": "Greetings! I'm Brother Brenna, the local Innkeeper.",
+      "speaker": "Brother Brenna",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "brother brenna_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "brother brenna_role",
+      "text": "As a Innkeeper, I to protect others.",
+      "speaker": "Brother Brenna",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "tavern",
+  "role": "Innkeeper",
+  "quest_involvement": [],
+  "age": 51,
+  "appearance": "A 51-year-old Innkeeper with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "aebd06f5-4466-4ee8-a64d-7f806c8a2e1d"
+}

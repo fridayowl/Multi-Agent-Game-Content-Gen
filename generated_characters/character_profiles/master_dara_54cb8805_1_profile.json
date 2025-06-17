@@ -1,0 +1,86 @@
+{
+  "id": "master_dara_54cb8805_1",
+  "name": "Master Dara",
+  "title": "The Compassionate Noble",
+  "description": "A 52-year-old Noble with a compassionate nature.",
+  "backstory": "Master Dara has worked as a Noble for many years.",
+  "personality": {
+    "primary_trait": "Compassionate",
+    "secondary_trait": "Optimistic",
+    "motivation": "To protect others",
+    "fear": "Being alone",
+    "quirk": "Speaks to animals",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 6,
+    "health": 78,
+    "strength": 11,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 14,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Sister Brenna",
+      "relationship_type": "Ally",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "master dara_greeting",
+      "text": "Greetings! I'm Master Dara, the local Noble.",
+      "speaker": "Master Dara",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "master dara_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "master dara_role",
+      "text": "As a Noble, I to protect others.",
+      "speaker": "Master Dara",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "house",
+  "role": "Noble",
+  "quest_involvement": [],
+  "age": 52,
+  "appearance": "A 52-year-old Noble with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "541805e0-9e68-4a76-82e5-827636ad12f3"
+}

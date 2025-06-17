@@ -1,0 +1,50 @@
+{
+  "id": "side_quest_3_sir_gareth",
+  "title": "Personal Favor",
+  "description": "Sir Gareth needs help with a personal matter.",
+  "summary": "Help Sir Gareth with personal favor",
+  "giver_npc": "Sir Gareth",
+  "objectives": [
+    {
+      "id": "side_quest_3_obj_1",
+      "description": "Listen to the problem",
+      "type": "talk_to_npc",
+      "target": "Sir Gareth",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "side_quest_3_obj_2",
+      "description": "Help solve it",
+      "type": "talk_to_npc",
+      "target": "Sir Gareth",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "side_quest_3_obj_3",
+      "description": "Return for thanks",
+      "type": "talk_to_npc",
+      "target": "Sir Gareth",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    }
+  ],
+  "rewards": {
+    "experience": 50,
+    "gold": 25,
+    "items": [
+      "Thank You Gift"
+    ],
+    "relationship_changes": null
+  },
+  "prerequisites": null,
+  "level_requirement": 1,
+  "estimated_duration": "15-30 minutes",
+  "quest_type": "side",
+  "interconnected_quests": [],
+  "narrative_importance": "low"
+}

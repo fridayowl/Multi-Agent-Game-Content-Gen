@@ -1,6 +1,6 @@
 {
   "generation_info": {
-    "timestamp": "2025-06-17T03:37:38.070512",
+    "timestamp": "2025-06-17T04:51:08.733953",
     "theme": "medieval",
     "world_size": [
       40,
@@ -10,7 +10,7 @@
     "ai_enhanced": false,
     "creativity_level": "maximum",
     "uniqueness_guaranteed": true,
-    "session_id": "12b5341c"
+    "session_id": "54cb8805"
   },
   "uniqueness_metrics": {
     "name_uniqueness": 1.0,
@@ -18,98 +18,96 @@
     "role_uniqueness": 1.0
   },
   "characters": {
-    "brother_cedric_12b5341c_0": {
-      "name": "Brother Cedric",
-      "title": "The Compassionate Servant",
+    "sister_brenna_54cb8805_0": {
+      "name": "Sister Brenna",
+      "title": "The Clever Servant",
       "role": "Servant",
-      "age": 46,
+      "age": 29,
       "location": "market",
-      "personality_summary": "Compassionate, Energetic",
-      "motivation": "To protect others",
-      "secret": "Has an interesting past",
-      "level": 9,
-      "health": 87,
-      "relationship_count": 2,
-      "dialogue_nodes": 2,
-      "unique_id": "0e183d5d-e5a8-4f40-98de-953718c64ab9",
-      "profile_file": "character_profiles/brother_cedric_12b5341c_0_profile.json",
-      "dialogue_file": "dialogue_trees/brother_cedric_12b5341c_0_dialogue.json"
-    },
-    "cedric_121_12b5341c_1": {
-      "name": "Cedric 121",
-      "title": "The Jovial Family Head",
-      "role": "Family Head",
-      "age": 34,
-      "location": "house",
-      "personality_summary": "Jovial, Ambitious",
-      "motivation": "To discover truth",
-      "secret": "Has an interesting past",
-      "level": 1,
-      "health": 63,
-      "relationship_count": 2,
-      "dialogue_nodes": 2,
-      "unique_id": "9488d563-5e0e-4d90-838c-3940e9c9f558",
-      "profile_file": "character_profiles/cedric_121_12b5341c_1_profile.json",
-      "dialogue_file": "dialogue_trees/cedric_121_12b5341c_1_dialogue.json"
-    },
-    "master_aldric_12b5341c_2": {
-      "name": "Master Aldric",
-      "title": "The Clever Resident",
-      "role": "Resident",
-      "age": 34,
-      "location": "house",
-      "personality_summary": "Clever, Mysterious",
+      "personality_summary": "Clever, Witty",
       "motivation": "To build something lasting",
       "secret": "Has an interesting past",
       "level": 1,
       "health": 63,
       "relationship_count": 1,
       "dialogue_nodes": 2,
-      "unique_id": "8eb39b6a-6a54-46c5-bd6b-4e8e45183053",
-      "profile_file": "character_profiles/master_aldric_12b5341c_2_profile.json",
-      "dialogue_file": "dialogue_trees/master_aldric_12b5341c_2_dialogue.json"
+      "unique_id": "b89c2e80-d99f-4368-be84-a8228e0c88ba",
+      "profile_file": "character_profiles/sister_brenna_54cb8805_0_profile.json",
+      "dialogue_file": "dialogue_trees/sister_brenna_54cb8805_0_dialogue.json"
     },
-    "master_hilda_12b5341c_3": {
-      "name": "Master Hilda",
-      "title": "The Brave Noble",
+    "master_dara_54cb8805_1": {
+      "name": "Master Dara",
+      "title": "The Compassionate Noble",
       "role": "Noble",
-      "age": 49,
+      "age": 52,
       "location": "house",
-      "personality_summary": "Brave, Ambitious",
-      "motivation": "To protect others",
-      "secret": "Has an interesting past",
-      "level": 4,
-      "health": 72,
-      "relationship_count": 1,
-      "dialogue_nodes": 2,
-      "unique_id": "da46b4da-abca-49ea-b1ca-46eb3b819524",
-      "profile_file": "character_profiles/master_hilda_12b5341c_3_profile.json",
-      "dialogue_file": "dialogue_trees/master_hilda_12b5341c_3_dialogue.json"
-    },
-    "sister_dara_12b5341c_4": {
-      "name": "Sister Dara",
-      "title": "The Fierce Apprentice",
-      "role": "Apprentice",
-      "age": 22,
-      "location": "tavern",
-      "personality_summary": "Fierce, Optimistic",
+      "personality_summary": "Compassionate, Optimistic",
       "motivation": "To protect others",
       "secret": "Has an interesting past",
       "level": 6,
       "health": 78,
-      "relationship_count": 2,
+      "relationship_count": 1,
       "dialogue_nodes": 2,
-      "unique_id": "0f4d1dee-e595-466e-b807-2e4a510ea8d9",
-      "profile_file": "character_profiles/sister_dara_12b5341c_4_profile.json",
-      "dialogue_file": "dialogue_trees/sister_dara_12b5341c_4_dialogue.json"
+      "unique_id": "541805e0-9e68-4a76-82e5-827636ad12f3",
+      "profile_file": "character_profiles/master_dara_54cb8805_1_profile.json",
+      "dialogue_file": "dialogue_trees/master_dara_54cb8805_1_dialogue.json"
+    },
+    "sir_gareth_54cb8805_2": {
+      "name": "Sir Gareth",
+      "title": "The Determined Scholar",
+      "role": "Scholar",
+      "age": 26,
+      "location": "tavern",
+      "personality_summary": "Determined, Loyal",
+      "motivation": "To build something lasting",
+      "secret": "Has an interesting past",
+      "level": 10,
+      "health": 90,
+      "relationship_count": 0,
+      "dialogue_nodes": 2,
+      "unique_id": "b1c76fca-1338-43ae-bab0-d97d9a90b513",
+      "profile_file": "character_profiles/sir_gareth_54cb8805_2_profile.json",
+      "dialogue_file": "dialogue_trees/sir_gareth_54cb8805_2_dialogue.json"
+    },
+    "lady_cedric_54cb8805_3": {
+      "name": "Lady Cedric",
+      "title": "The Jovial Family Head",
+      "role": "Family Head",
+      "age": 30,
+      "location": "blacksmith",
+      "personality_summary": "Jovial, Practical",
+      "motivation": "To protect others",
+      "secret": "Has an interesting past",
+      "level": 10,
+      "health": 90,
+      "relationship_count": 0,
+      "dialogue_nodes": 2,
+      "unique_id": "33924a43-0c5f-424d-a28a-235c4d1b8464",
+      "profile_file": "character_profiles/lady_cedric_54cb8805_3_profile.json",
+      "dialogue_file": "dialogue_trees/lady_cedric_54cb8805_3_dialogue.json"
+    },
+    "brother_brenna_54cb8805_4": {
+      "name": "Brother Brenna",
+      "title": "The Fierce Innkeeper",
+      "role": "Innkeeper",
+      "age": 51,
+      "location": "tavern",
+      "personality_summary": "Fierce, Loyal",
+      "motivation": "To protect others",
+      "secret": "Has an interesting past",
+      "level": 5,
+      "health": 75,
+      "relationship_count": 0,
+      "dialogue_nodes": 2,
+      "unique_id": "aebd06f5-4466-4ee8-a64d-7f806c8a2e1d",
+      "profile_file": "character_profiles/brother_brenna_54cb8805_4_profile.json",
+      "dialogue_file": "dialogue_trees/brother_brenna_54cb8805_4_dialogue.json"
     }
   },
   "relationships_summary": {
-    "total_relationships": 8,
+    "total_relationships": 2,
     "relationship_types": [
-      "Acquaintance",
-      "Ally",
-      "Colleague"
+      "Ally"
     ],
     "relationship_map_file": "relationship_maps/relationship_map.json"
   },

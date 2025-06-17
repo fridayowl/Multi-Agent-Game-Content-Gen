@@ -1,0 +1,78 @@
+{
+  "id": "lady_cedric_54cb8805_3",
+  "name": "Lady Cedric",
+  "title": "The Jovial Family Head",
+  "description": "A 30-year-old Family Head with a jovial nature.",
+  "backstory": "Lady Cedric has worked as a Family Head for many years.",
+  "personality": {
+    "primary_trait": "Jovial",
+    "secondary_trait": "Practical",
+    "motivation": "To protect others",
+    "fear": "Being alone",
+    "quirk": "Collects unusual items",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 10,
+    "health": 90,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [],
+  "dialogue_tree": [
+    {
+      "id": "lady cedric_greeting",
+      "text": "Greetings! I'm Lady Cedric, the local Family Head.",
+      "speaker": "Lady Cedric",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "lady cedric_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "lady cedric_role",
+      "text": "As a Family Head, I to protect others.",
+      "speaker": "Lady Cedric",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "blacksmith",
+  "role": "Family Head",
+  "quest_involvement": [],
+  "age": 30,
+  "appearance": "A 30-year-old Family Head with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "33924a43-0c5f-424d-a28a-235c4d1b8464"
+}

@@ -9,7 +9,7 @@ import json
 import logging
 from pathlib import Path
 from typing import Dict, Any
-from ..core import GodotProjectSettings
+from ..core.data_types import GodotProjectSettings
 
 class GodotProjectBuilder:
     """Handles Godot project structure creation"""

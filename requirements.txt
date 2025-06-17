@@ -9,3 +9,5 @@ typing-extensions>=4.0.0
 bpy
 pillow 
 statistics
+logging 
+datetime

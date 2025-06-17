@@ -8,20 +8,29 @@ Coordinates all export modules to create complete Godot packages
 from typing import Dict, Any
 from google.adk.agents import Agent
 
-# Import the main exporter class
+# Import the main exporter class - FIXED: Using the correct class name
 from .core.exporter import GodotCodeExporter
 
 # ADK Agent Functions
-async def export_godot_package(world_spec: Dict[str, Any], 
-                              assets: Dict[str, Any], 
-                              characters: Dict[str, Any], 
-                              quests: Dict[str, Any]) -> Dict[str, Any]:
+async def export_godot_package(world_spec: Dict[str, Any],
+                               assets: Dict[str, Any],
+                               characters: Dict[str, Any],
+                               quests: Dict[str, Any]) -> Dict[str, Any]:
     """Export complete Godot package - main entry point"""
+    # FIXED: Using the correct class name and method signature
     exporter = GodotCodeExporter()
-    return await exporter.export_complete_package(world_spec, assets, characters, quests)
+    
+    # Call the method with the correct parameters (no project_name needed)
+    return await exporter.export_complete_package(
+        world_spec=world_spec,
+        assets=assets,
+        characters=characters,
+        quests=quests
+    )
 
 async def get_godot_exporter_status() -> Dict[str, Any]:
     """Get Godot exporter status"""
+    # FIXED: Using the correct class name
     exporter = GodotCodeExporter()
     return await exporter.get_status()
 
