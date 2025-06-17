@@ -260,16 +260,21 @@ def get_game_data():
 
 @app.route('/api/download/<generation_id>')
 def download_package(generation_id):
-    """Download the generated Godot package"""
+    """Download the generated Godot package - FIXED VERSION"""
     job = generation_jobs.get(generation_id)
     
-    if not job or job.status != 'completed':
-        return jsonify({'error': 'Package not ready'}), 400
+    if not job:
+        print(f"❌ No job found for generation: {generation_id}")
+        return jsonify({'error': 'Generation not found'}), 404
+    
+    if job.status != 'completed':
+        print(f"❌ Job not completed. Status: {job.status}")
+        return jsonify({'error': f'Package not ready. Status: {job.status}'}), 400
     
     print(f"🔍 Download request for generation: {generation_id}")
     print(f"📁 Looking in: {GENERATED_FOLDER}")
     
-    # List what's actually in the generated content folder
+    # List what's actually in the generated content folder for debugging
     if GENERATED_FOLDER.exists():
         print(f"📂 Contents of {GENERATED_FOLDER}:")
         for item in GENERATED_FOLDER.rglob('*'):
@@ -279,21 +284,46 @@ def download_package(generation_id):
                 print(f"  📁 {item}/")
     else:
         print(f"❌ Generated content folder doesn't exist: {GENERATED_FOLDER}")
+        return jsonify({'error': 'Generated content folder not found'}), 500
     
     # Find the package
     package_path = find_godot_package(generation_id)
     
     if not package_path or not package_path.exists():
         print(f"❌ No package found for generation {generation_id}")
-        return jsonify({'error': 'Package file not found'}), 404
+        
+        # Try to create a fallback package from any available content
+        try:
+            print(f"🔄 Attempting to create fallback package...")
+            # Find the most recent session directory
+            session_dirs = [d for d in GENERATED_FOLDER.iterdir() if d.is_dir()]
+            if session_dirs:
+                most_recent_session = max(session_dirs, key=lambda p: p.stat().st_mtime)
+                print(f"📁 Found recent session: {most_recent_session}")
+                package_path = create_package_from_directory(most_recent_session, generation_id)
+                
+                if package_path and package_path.exists():
+                    print(f"✅ Fallback package created successfully")
+                else:
+                    return jsonify({'error': 'Could not create package from available content'}), 500
+            else:
+                return jsonify({'error': 'No content available for packaging'}), 500
+                
+        except Exception as fallback_error:
+            print(f"❌ Fallback package creation failed: {fallback_error}")
+            return jsonify({'error': 'Package file not found and fallback failed'}), 404
     
     print(f"✅ Sending package: {package_path}")
     
-    return send_file(
-        package_path,
-        as_attachment=True,
-        download_name=f'GodotGameWorld_{generation_id[:8]}.zip'
-    )
+    try:
+        return send_file(
+            package_path,
+            as_attachment=True,
+            download_name=f'GodotGameWorld_{generation_id[:8]}.zip'
+        )
+    except Exception as send_error:
+        print(f"❌ Error sending file: {send_error}")
+        return jsonify({'error': f'Failed to send package: {str(send_error)}'}), 500
 
 def find_latest_session_directory() -> Path:
     """Find the most recent session directory"""
@@ -768,8 +798,9 @@ def create_mock_quests_data():
         ]
     }
 
+
 def find_godot_package(generation_id: str) -> Path:
-    """Find the Godot package for this generation"""
+    """Find the Godot package for this generation - DYNAMIC VERSION"""
     try:
         # Check multiple possible locations
         possible_locations = [
@@ -778,8 +809,8 @@ def find_godot_package(generation_id: str) -> Path:
             Path.cwd() / 'generated_content',
             PROJECT_ROOT / 'godot_export',
             Path.cwd() / 'godot_export',
-            PROJECT_ROOT / 'godot_export' / 'GodotProject',
-            Path.cwd() / 'godot_export' / 'GodotProject'
+            PROJECT_ROOT / 'godot_exports',  # Your actual folder
+            Path.cwd() / 'godot_exports'     # Your actual folder
         ]
         
         for location in possible_locations:
@@ -787,35 +818,75 @@ def find_godot_package(generation_id: str) -> Path:
             if location.exists():
                 print(f"✅ Location exists: {location}")
                 
-                # Look for Godot projects (folders with project.godot)
-                godot_projects = list(location.rglob('project.godot'))
-                if godot_projects:
-                    most_recent = max(godot_projects, key=lambda p: p.stat().st_mtime)
-                    godot_project_dir = most_recent.parent
-                    print(f"✅ Found Godot project: {godot_project_dir}")
+                # Look for ANY GodotProject folder (with dynamic timestamp)
+                godot_project_patterns = [
+                    'GodotProject_*',           # GodotProject_20250618_023202
+                    'GodotProject*',            # Any variation
+                    '*GodotProject*'            # Any folder containing GodotProject
+                ]
+                
+                for pattern in godot_project_patterns:
+                    matching_dirs = list(location.glob(pattern))
+                    godot_dirs = [d for d in matching_dirs if d.is_dir()]
+                    
+                    if godot_dirs:
+                        # Get the most recent one (in case there are multiple)
+                        most_recent_godot = max(godot_dirs, key=lambda p: p.stat().st_mtime)
+                        print(f"✅ Found dynamic GodotProject: {most_recent_godot}")
+                        
+                        # Verify it has project.godot file
+                        if (most_recent_godot / 'project.godot').exists():
+                            print(f"✅ Verified Godot project with project.godot file")
+                            return create_package_from_godot(most_recent_godot, generation_id)
+                        else:
+                            print(f"⚠️ Found GodotProject folder but no project.godot file")
+                
+                # Look for project.godot files anywhere in this location
+                print(f"🔍 Searching for project.godot files in {location}")
+                godot_project_files = list(location.rglob('project.godot'))
+                if godot_project_files:
+                    # Get the most recent project.godot
+                    most_recent_project = max(godot_project_files, key=lambda p: p.stat().st_mtime)
+                    godot_project_dir = most_recent_project.parent
+                    print(f"✅ Found Godot project via project.godot: {godot_project_dir}")
                     return create_package_from_godot(godot_project_dir, generation_id)
                 
-                # Look for GodotProject directories specifically
-                godot_project_dirs = [d for d in location.rglob('*') if d.is_dir() and d.name == 'GodotProject']
-                if godot_project_dirs:
-                    most_recent_dir = max(godot_project_dirs, key=lambda p: p.stat().st_mtime)
-                    print(f"✅ Found GodotProject directory: {most_recent_dir}")
-                    return create_package_from_godot(most_recent_dir, generation_id)
-                
-                # Look for directories with Godot-like structure
+                # Look for directories with Godot-like structure (assets, scenes, scripts)
+                print(f"🔍 Searching for Godot-like structure in {location}")
                 for subdir in location.rglob('*'):
                     if subdir.is_dir():
-                        subdirs = [d.name for d in subdir.iterdir() if d.is_dir()]
-                        if any(name in subdirs for name in ['assets', 'scenes', 'scripts']):
-                            print(f"✅ Found Godot-like project structure: {subdir}")
-                            return create_package_from_godot(subdir, generation_id)
+                        try:
+                            subdirs = [d.name for d in subdir.iterdir() if d.is_dir()]
+                            # Check if it has typical Godot folders
+                            godot_folders = ['assets', 'scenes', 'scripts']
+                            if len([folder for folder in godot_folders if folder in subdirs]) >= 2:
+                                print(f"✅ Found Godot-like structure: {subdir}")
+                                print(f"   Contains folders: {[f for f in subdirs if f in godot_folders]}")
+                                return create_package_from_godot(subdir, generation_id)
+                        except (PermissionError, OSError):
+                            continue
                 
-                # Look for recent directories with content
-                recent_dirs = [d for d in location.rglob('*') if d.is_dir() and len(list(d.iterdir())) > 0]
-                if recent_dirs:
-                    most_recent_dir = max(recent_dirs, key=lambda p: p.stat().st_mtime)
-                    print(f"✅ Found recent content directory: {most_recent_dir}")
-                    return create_package_from_directory(most_recent_dir, generation_id)
+                # Fallback: any recent directory with content
+                print(f"🔍 Looking for any recent directories with content in {location}")
+                try:
+                    recent_dirs = []
+                    for item in location.rglob('*'):
+                        if item.is_dir():
+                            try:
+                                if len(list(item.iterdir())) > 0:  # Has content
+                                    recent_dirs.append(item)
+                            except (PermissionError, OSError):
+                                continue
+                    
+                    if recent_dirs:
+                        most_recent_dir = max(recent_dirs, key=lambda p: p.stat().st_mtime)
+                        print(f"✅ Found recent content directory: {most_recent_dir}")
+                        return create_package_from_directory(most_recent_dir, generation_id)
+                except Exception as e:
+                    print(f"⚠️ Error scanning recent directories: {e}")
+                    
+            else:
+                print(f"❌ Location doesn't exist: {location}")
         
         print(f"❌ No packages found in any location")
         return None
@@ -826,14 +897,88 @@ def find_godot_package(generation_id: str) -> Path:
         traceback.print_exc()
         return None
 
+# BONUS: Add a helper function to find the latest Godot project specifically
+def find_latest_godot_project() -> Path:
+    """Find the most recent GodotProject folder"""
+    try:
+        godot_exports_dir = PROJECT_ROOT / 'godot_exports'
+        if not godot_exports_dir.exists():
+            print(f"❌ godot_exports directory doesn't exist: {godot_exports_dir}")
+            return None
+        
+        # Find all GodotProject_* directories
+        godot_projects = list(godot_exports_dir.glob('GodotProject_*'))
+        godot_projects = [d for d in godot_projects if d.is_dir()]
+        
+        if not godot_projects:
+            print(f"❌ No GodotProject_* directories found in {godot_exports_dir}")
+            return None
+        
+        # Get the most recent one
+        latest_project = max(godot_projects, key=lambda p: p.stat().st_mtime)
+        
+        # Verify it has project.godot
+        if (latest_project / 'project.godot').exists():
+            print(f"✅ Found latest Godot project: {latest_project}")
+            return latest_project
+        else:
+            print(f"⚠️ Latest project missing project.godot: {latest_project}")
+            return None
+            
+    except Exception as e:
+        print(f"❌ Error finding latest Godot project: {e}")
+        return None
+
+# ALTERNATIVE: Quick and direct approach for your specific case
+def find_godot_package_direct(generation_id: str) -> Path:
+    """Direct approach - look in godot_exports for any GodotProject folder"""
+    try:
+        # Direct path to your godot_exports folder
+        godot_exports_dir = PROJECT_ROOT / 'godot_exports'
+        
+        print(f"🔍 Looking directly in: {godot_exports_dir}")
+        
+        if godot_exports_dir.exists():
+            # Find any folder starting with GodotProject
+            godot_projects = list(godot_exports_dir.glob('GodotProject*'))
+            godot_projects = [d for d in godot_projects if d.is_dir()]
+            
+            if godot_projects:
+                # Use the most recent one
+                latest_godot = max(godot_projects, key=lambda p: p.stat().st_mtime)
+                print(f"✅ Found Godot project: {latest_godot}")
+                
+                # Create package from this directory
+                return create_package_from_godot(latest_godot, generation_id)
+            else:
+                print(f"❌ No GodotProject folders found in {godot_exports_dir}")
+        else:
+            print(f"❌ godot_exports directory doesn't exist: {godot_exports_dir}")
+        
+        return None
+        
+    except Exception as e:
+        print(f"❌ Error in direct search: {e}")
+        return None
+    
 def create_package_from_godot(godot_dir: Path, generation_id: str) -> Path:
-    """Create a downloadable package from Godot project"""
+    """Create a downloadable package from Godot project - FIXED VERSION"""
     try:
         package_name = f'GodotGameWorld_{generation_id[:8]}.zip'
         package_path = DOWNLOAD_FOLDER / package_name
         
         print(f"📦 Creating Godot package from: {godot_dir}")
         print(f"📥 Package will be saved as: {package_path}")
+        
+        # List what we're actually including in the package (THIS WAS MISSING)
+        print(f"📂 Contents to be packaged:")
+        for item in godot_dir.rglob('*'):
+            if item.is_file():
+                relative_path = item.relative_to(godot_dir)
+                print(f"  📄 {relative_path}")
+            elif item.is_dir() and item != godot_dir:
+                relative_path = item.relative_to(godot_dir)
+                print(f"  📁 {relative_path}/")
         
         # Create zip file of the entire godot project directory
         print(f"🗜️ Creating archive...")
@@ -856,7 +1001,7 @@ def create_package_from_godot(godot_dir: Path, generation_id: str) -> Path:
         return None
 
 def create_package_from_directory(content_dir: Path, generation_id: str) -> Path:
-    """Create a downloadable package from any content directory"""
+    """Create a downloadable package from any content directory - FIXED VERSION"""
     try:
         package_name = f'AIGameWorld_{generation_id[:8]}.zip'
         package_path = DOWNLOAD_FOLDER / package_name
@@ -864,16 +1009,69 @@ def create_package_from_directory(content_dir: Path, generation_id: str) -> Path
         print(f"📦 Creating package from: {content_dir}")
         print(f"📥 Package will be saved as: {package_path}")
         
+        # List what we're packaging for debugging
+        print(f"📂 Contents to be packaged:")
+        for item in content_dir.rglob('*'):
+            if item.is_file():
+                relative_path = item.relative_to(content_dir)
+                print(f"  📄 {relative_path}")
+        
         # Create zip file of the content directory
         shutil.make_archive(str(package_path.with_suffix('')), 'zip', str(content_dir))
         
-        print(f"✅ Package created successfully: {package_path}")
-        return package_path
+        # Verify package was created
+        if package_path.exists():
+            size_mb = package_path.stat().st_size / (1024 * 1024)
+            print(f"✅ Package created successfully: {package_path}")
+            print(f"📊 Package size: {size_mb:.2f} MB")
+            return package_path
+        else:
+            print(f"❌ Package creation failed - file doesn't exist")
+            return None
         
     except Exception as e:
         print(f"❌ Error creating package: {e}")
+        import traceback
+        traceback.print_exc()
         return None
-
+def create_package_from_godot(godot_dir: Path, generation_id: str) -> Path:
+    """Create a downloadable package from Godot project - FIXED VERSION"""
+    try:
+        package_name = f'GodotGameWorld_{generation_id[:8]}.zip'
+        package_path = DOWNLOAD_FOLDER / package_name
+        
+        print(f"📦 Creating Godot package from: {godot_dir}")
+        print(f"📥 Package will be saved as: {package_path}")
+        
+        # List what we're actually including in the package (THIS WAS MISSING)
+        print(f"📂 Contents to be packaged:")
+        for item in godot_dir.rglob('*'):
+            if item.is_file():
+                relative_path = item.relative_to(godot_dir)
+                print(f"  📄 {relative_path}")
+            elif item.is_dir() and item != godot_dir:
+                relative_path = item.relative_to(godot_dir)
+                print(f"  📁 {relative_path}/")
+        
+        # Create zip file of the entire godot project directory
+        print(f"🗜️ Creating archive...")
+        shutil.make_archive(str(package_path.with_suffix('')), 'zip', str(godot_dir))
+        
+        # Verify the created package
+        if package_path.exists():
+            size_mb = package_path.stat().st_size / (1024 * 1024)
+            print(f"✅ Godot package created successfully: {package_path}")
+            print(f"📊 Package size: {size_mb:.2f} MB")
+            return package_path
+        else:
+            print(f"❌ Package creation failed - file doesn't exist")
+            return None
+        
+    except Exception as e:
+        print(f"❌ Error creating Godot package: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
 def call_your_orchestrator(prompt: str):
     """Call your existing orchestrator class correctly"""
     try:
