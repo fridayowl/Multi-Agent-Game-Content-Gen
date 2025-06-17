@@ -625,55 +625,111 @@ def download_package(generation_id):
     if not job or job.status != 'completed':
         return jsonify({'error': 'Package not ready'}), 400
     
-    # Find the Unity package
+    print(f"🔍 Download request for generation: {generation_id}")
+    print(f"📁 Looking in: {GENERATED_FOLDER}")
+    
+    # List what's actually in the generated content folder
+    if GENERATED_FOLDER.exists():
+        print(f"📂 Contents of {GENERATED_FOLDER}:")
+        for item in GENERATED_FOLDER.rglob('*'):
+            if item.is_file():
+                print(f"  📄 {item}")
+            elif item.is_dir():
+                print(f"  📁 {item}/")
+    else:
+        print(f"❌ Generated content folder doesn't exist: {GENERATED_FOLDER}")
+    
+    # Find the package
     package_path = find_unity_package(generation_id)
     
     if not package_path or not package_path.exists():
+        print(f"❌ No package found for generation {generation_id}")
         return jsonify({'error': 'Package file not found'}), 404
+    
+    print(f"✅ Sending package: {package_path}")
     
     return send_file(
         package_path,
         as_attachment=True,
-        download_name=f'AIGameWorld_{generation_id[:8]}.unitypackage'
+        download_name=f'AIGameWorld_{generation_id[:8]}.zip'
     )
 
 def find_unity_package(generation_id: str) -> Path:
-    """Find the Unity package for this generation"""
+    """Find the Unity/Godot package for this generation"""
     try:
-        # Look for Unity packages in generated content
+        # Look for packages in generated content
         if GENERATED_FOLDER.exists():
-            # Look for .unitypackage files
+            print(f"🔍 Looking for packages in: {GENERATED_FOLDER}")
+            
+            # Option 1: Look for .unitypackage files (Unity)
             package_files = list(GENERATED_FOLDER.rglob('*.unitypackage'))
             if package_files:
-                # Return the most recent one
+                print(f"✅ Found Unity package: {package_files[0]}")
                 return max(package_files, key=lambda p: p.stat().st_mtime)
             
-            # Also look for .godot files that might be renamed
-            godot_files = list(GENERATED_FOLDER.rglob('*.godot'))
-            if godot_files:
-                # Create a zip of the godot project as unity package
-                most_recent = max(godot_files, key=lambda p: p.stat().st_mtime)
-                return create_package_from_godot(most_recent.parent, generation_id)
+            # Option 2: Look for Godot projects (folders with project.godot)
+            godot_projects = list(GENERATED_FOLDER.rglob('project.godot'))
+            if godot_projects:
+                most_recent = max(godot_projects, key=lambda p: p.stat().st_mtime)
+                godot_project_dir = most_recent.parent
+                print(f"✅ Found Godot project: {godot_project_dir}")
+                return create_package_from_godot(godot_project_dir, generation_id)
+            
+            # Option 3: Look for any recent directories with game content
+            all_dirs = [d for d in GENERATED_FOLDER.rglob('*') if d.is_dir()]
+            if all_dirs:
+                # Find most recent directory
+                most_recent_dir = max(all_dirs, key=lambda p: p.stat().st_mtime)
+                print(f"✅ Found recent content directory: {most_recent_dir}")
+                return create_package_from_directory(most_recent_dir, generation_id)
+            
+            print(f"❌ No packages found in {GENERATED_FOLDER}")
+            
+        else:
+            print(f"❌ Generated content folder doesn't exist: {GENERATED_FOLDER}")
         
         return None
         
     except Exception as e:
-        print(f"Error finding package: {e}")
+        print(f"❌ Error finding package: {e}")
         return None
 
 def create_package_from_godot(godot_dir: Path, generation_id: str) -> Path:
     """Create a downloadable package from Godot project"""
     try:
-        package_name = f'AIGameWorld_{generation_id[:8]}.zip'
+        package_name = f'GodotGameWorld_{generation_id[:8]}.zip'
         package_path = DOWNLOAD_FOLDER / package_name
+        
+        print(f"📦 Creating Godot package from: {godot_dir}")
+        print(f"📥 Package will be saved as: {package_path}")
         
         # Create zip file of the godot project
         shutil.make_archive(str(package_path.with_suffix('')), 'zip', str(godot_dir))
         
+        print(f"✅ Godot package created successfully: {package_path}")
         return package_path
         
     except Exception as e:
-        print(f"Error creating package: {e}")
+        print(f"❌ Error creating Godot package: {e}")
+        return None
+
+def create_package_from_directory(content_dir: Path, generation_id: str) -> Path:
+    """Create a downloadable package from any content directory"""
+    try:
+        package_name = f'AIGameWorld_{generation_id[:8]}.zip'
+        package_path = DOWNLOAD_FOLDER / package_name
+        
+        print(f"📦 Creating package from: {content_dir}")
+        print(f"📥 Package will be saved as: {package_path}")
+        
+        # Create zip file of the content directory
+        shutil.make_archive(str(package_path.with_suffix('')), 'zip', str(content_dir))
+        
+        print(f"✅ Package created successfully: {package_path}")
+        return package_path
+        
+    except Exception as e:
+        print(f"❌ Error creating package: {e}")
         return None
 
 def call_your_orchestrator(prompt: str):
@@ -836,9 +892,9 @@ def api_docs():
 if __name__ == '__main__':
     print("🚀 AI Game Generator Web App Starting...")
     print("="*60)
-    print(f"🌐 Web Interface: http://localhost:5000")
-    print(f"📚 API Documentation: http://localhost:5000/api/docs") 
-    print(f"💚 Health Check: http://localhost:5000/health")
+    print(f"🌐 Web Interface: http://localhost:5001")
+    print(f"📚 API Documentation: http://localhost:5001/api/docs") 
+    print(f"💚 Health Check: http://localhost:5001/health")
     print(f"📁 Project Root: {PROJECT_ROOT}")
     print(f"📁 Generated Content: {GENERATED_FOLDER}")
     print("="*60)
