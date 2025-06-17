@@ -1,7 +1,7 @@
 {
   "generation_info": {
-    "timestamp": "2025-06-17T04:51:08.733953",
-    "theme": "medieval",
+    "timestamp": "2025-06-17T10:45:15.510709",
+    "theme": "spooky",
     "world_size": [
       40,
       40
@@ -10,7 +10,7 @@
     "ai_enhanced": false,
     "creativity_level": "maximum",
     "uniqueness_guaranteed": true,
-    "session_id": "54cb8805"
+    "session_id": "ee28da70"
   },
   "uniqueness_metrics": {
     "name_uniqueness": 1.0,
@@ -18,96 +18,98 @@
     "role_uniqueness": 1.0
   },
   "characters": {
-    "sister_brenna_54cb8805_0": {
-      "name": "Sister Brenna",
-      "title": "The Clever Servant",
-      "role": "Servant",
-      "age": 29,
-      "location": "market",
-      "personality_summary": "Clever, Witty",
-      "motivation": "To build something lasting",
-      "secret": "Has an interesting past",
-      "level": 1,
-      "health": 63,
-      "relationship_count": 1,
-      "dialogue_nodes": 2,
-      "unique_id": "b89c2e80-d99f-4368-be84-a8228e0c88ba",
-      "profile_file": "character_profiles/sister_brenna_54cb8805_0_profile.json",
-      "dialogue_file": "dialogue_trees/sister_brenna_54cb8805_0_dialogue.json"
-    },
-    "master_dara_54cb8805_1": {
-      "name": "Master Dara",
-      "title": "The Compassionate Noble",
-      "role": "Noble",
+    "sister_dara_ee28da70_0": {
+      "name": "Sister Dara",
+      "title": "The Honest Herbalist",
+      "role": "Herbalist",
       "age": 52,
       "location": "house",
-      "personality_summary": "Compassionate, Optimistic",
+      "personality_summary": "Honest, Mysterious",
+      "motivation": "To find adventure",
+      "secret": "Has an interesting past",
+      "level": 3,
+      "health": 69,
+      "relationship_count": 1,
+      "dialogue_nodes": 2,
+      "unique_id": "1504595f-0799-4beb-acef-95c69ece2e62",
+      "profile_file": "character_profiles/sister_dara_ee28da70_0_profile.json",
+      "dialogue_file": "dialogue_trees/sister_dara_ee28da70_0_dialogue.json"
+    },
+    "brother_aldric_ee28da70_1": {
+      "name": "Brother Aldric",
+      "title": "The Jovial Archer",
+      "role": "Archer",
+      "age": 36,
+      "location": "church",
+      "personality_summary": "Jovial, Ambitious",
+      "motivation": "To build something lasting",
+      "secret": "Has an interesting past",
+      "level": 9,
+      "health": 87,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "65caa0b8-3ebe-404c-9ba8-20609cd1d4af",
+      "profile_file": "character_profiles/brother_aldric_ee28da70_1_profile.json",
+      "dialogue_file": "dialogue_trees/brother_aldric_ee28da70_1_dialogue.json"
+    },
+    "aldric_517_ee28da70_2": {
+      "name": "Aldric 517",
+      "title": "The Gentle Servant",
+      "role": "Servant",
+      "age": 23,
+      "location": "tower",
+      "personality_summary": "Gentle, Energetic",
+      "motivation": "To build something lasting",
+      "secret": "Has an interesting past",
+      "level": 9,
+      "health": 87,
+      "relationship_count": 1,
+      "dialogue_nodes": 2,
+      "unique_id": "76aeae02-bf68-460e-8c01-5ccb704b44ee",
+      "profile_file": "character_profiles/aldric_517_ee28da70_2_profile.json",
+      "dialogue_file": "dialogue_trees/aldric_517_ee28da70_2_dialogue.json"
+    },
+    "sister_aldric_ee28da70_3": {
+      "name": "Sister Aldric",
+      "title": "The Eccentric Noble",
+      "role": "Noble",
+      "age": 45,
+      "location": "house",
+      "personality_summary": "Eccentric, Energetic",
       "motivation": "To protect others",
       "secret": "Has an interesting past",
       "level": 6,
       "health": 78,
       "relationship_count": 1,
       "dialogue_nodes": 2,
-      "unique_id": "541805e0-9e68-4a76-82e5-827636ad12f3",
-      "profile_file": "character_profiles/master_dara_54cb8805_1_profile.json",
-      "dialogue_file": "dialogue_trees/master_dara_54cb8805_1_dialogue.json"
+      "unique_id": "d7a392aa-37f4-4e51-8a15-be45f0ec12e9",
+      "profile_file": "character_profiles/sister_aldric_ee28da70_3_profile.json",
+      "dialogue_file": "dialogue_trees/sister_aldric_ee28da70_3_dialogue.json"
     },
-    "sir_gareth_54cb8805_2": {
-      "name": "Sir Gareth",
-      "title": "The Determined Scholar",
-      "role": "Scholar",
-      "age": 26,
-      "location": "tavern",
-      "personality_summary": "Determined, Loyal",
-      "motivation": "To build something lasting",
-      "secret": "Has an interesting past",
-      "level": 10,
-      "health": 90,
-      "relationship_count": 0,
-      "dialogue_nodes": 2,
-      "unique_id": "b1c76fca-1338-43ae-bab0-d97d9a90b513",
-      "profile_file": "character_profiles/sir_gareth_54cb8805_2_profile.json",
-      "dialogue_file": "dialogue_trees/sir_gareth_54cb8805_2_dialogue.json"
-    },
-    "lady_cedric_54cb8805_3": {
-      "name": "Lady Cedric",
-      "title": "The Jovial Family Head",
+    "brother_hilda_ee28da70_4": {
+      "name": "Brother Hilda",
+      "title": "The Clever Family Head",
       "role": "Family Head",
-      "age": 30,
-      "location": "blacksmith",
-      "personality_summary": "Jovial, Practical",
-      "motivation": "To protect others",
-      "secret": "Has an interesting past",
-      "level": 10,
-      "health": 90,
-      "relationship_count": 0,
-      "dialogue_nodes": 2,
-      "unique_id": "33924a43-0c5f-424d-a28a-235c4d1b8464",
-      "profile_file": "character_profiles/lady_cedric_54cb8805_3_profile.json",
-      "dialogue_file": "dialogue_trees/lady_cedric_54cb8805_3_dialogue.json"
-    },
-    "brother_brenna_54cb8805_4": {
-      "name": "Brother Brenna",
-      "title": "The Fierce Innkeeper",
-      "role": "Innkeeper",
-      "age": 51,
-      "location": "tavern",
-      "personality_summary": "Fierce, Loyal",
-      "motivation": "To protect others",
+      "age": 27,
+      "location": "church",
+      "personality_summary": "Clever, Practical",
+      "motivation": "To build something lasting",
       "secret": "Has an interesting past",
       "level": 5,
       "health": 75,
-      "relationship_count": 0,
+      "relationship_count": 3,
       "dialogue_nodes": 2,
-      "unique_id": "aebd06f5-4466-4ee8-a64d-7f806c8a2e1d",
-      "profile_file": "character_profiles/brother_brenna_54cb8805_4_profile.json",
-      "dialogue_file": "dialogue_trees/brother_brenna_54cb8805_4_dialogue.json"
+      "unique_id": "80851493-4b53-4ae6-8b1b-93c12837536f",
+      "profile_file": "character_profiles/brother_hilda_ee28da70_4_profile.json",
+      "dialogue_file": "dialogue_trees/brother_hilda_ee28da70_4_dialogue.json"
     }
   },
   "relationships_summary": {
-    "total_relationships": 2,
+    "total_relationships": 8,
     "relationship_types": [
-      "Ally"
+      "Colleague",
+      "Friend",
+      "Neighbor"
     ],
     "relationship_map_file": "relationship_maps/relationship_map.json"
   },

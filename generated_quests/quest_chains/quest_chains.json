@@ -1,22 +1,21 @@
 {
-  "main_chain_main_quest_1_sister_brenna": {
+  "main_chain_main_quest_1_sister_dara": {
     "type": "main",
     "quests": [
-      "main_quest_1_sister_brenna"
+      "main_quest_1_sister_dara"
     ],
     "connected_quests": [
-      "main_quest_2_master_dara",
-      "side_quest_2_master_dara"
+      "side_quest_5_brother_hilda"
     ]
   },
-  "main_chain_main_quest_2_master_dara": {
+  "main_chain_main_quest_2_brother_aldric": {
     "type": "main",
     "quests": [
-      "main_quest_2_master_dara"
+      "main_quest_2_brother_aldric"
     ],
     "connected_quests": [
-      "main_quest_1_sister_brenna",
-      "side_quest_1_sister_brenna"
+      "side_quest_3_aldric_517",
+      "side_quest_5_brother_hilda"
     ]
   }
 }

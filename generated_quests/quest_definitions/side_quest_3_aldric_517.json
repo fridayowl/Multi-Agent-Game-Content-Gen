@@ -1,0 +1,53 @@
+{
+  "id": "side_quest_3_aldric_517",
+  "title": "Personal Favor",
+  "description": "Aldric 517 needs help with a personal matter.",
+  "summary": "Help Aldric 517 with personal favor",
+  "giver_npc": "Aldric 517",
+  "objectives": [
+    {
+      "id": "side_quest_3_obj_1",
+      "description": "Listen to the problem",
+      "type": "talk_to_npc",
+      "target": "Aldric 517",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "side_quest_3_obj_2",
+      "description": "Help solve it",
+      "type": "talk_to_npc",
+      "target": "Aldric 517",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "side_quest_3_obj_3",
+      "description": "Return for thanks",
+      "type": "talk_to_npc",
+      "target": "Aldric 517",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    }
+  ],
+  "rewards": {
+    "experience": 50,
+    "gold": 25,
+    "items": [
+      "Thank You Gift"
+    ],
+    "relationship_changes": null
+  },
+  "prerequisites": null,
+  "level_requirement": 1,
+  "estimated_duration": "15-30 minutes",
+  "quest_type": "side",
+  "interconnected_quests": [
+    "main_quest_2_brother_aldric",
+    "side_quest_2_brother_aldric"
+  ],
+  "narrative_importance": "low"
+}

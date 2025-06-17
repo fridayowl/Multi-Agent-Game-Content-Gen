@@ -56,7 +56,7 @@ except ImportError:
 
 try:
     print("🔍 Attempting to import Godot Exporter...")
-    from .godot_exporter.agent import export_godot_package, get_godot_exporter_status
+    from .godot_exporter.agent import export_godot_package
     print("✅ Godot Exporter imports successful")
     GODOT_EXPORTER_AVAILABLE = True
 except ImportError as e:

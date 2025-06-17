@@ -1,10 +1,10 @@
 {
-  "main_quest_1_sister_brenna": {
-    "quest_id": "main_quest_1_sister_brenna",
-    "npc_name": "Sister Brenna",
+  "main_quest_1_sister_dara": {
+    "quest_id": "main_quest_1_sister_dara",
+    "npc_name": "Sister Dara",
     "dialogue_nodes": {
       "introduction": {
-        "text": "I have a problem that needs solving. Sister Brenna needs help resolving a crisis that threatens the village.",
+        "text": "I have a problem that needs solving. Sister Dara needs help resolving a crisis that threatens the village.",
         "options": [
           {
             "text": "I'll help you.",
@@ -48,12 +48,12 @@
       }
     }
   },
-  "main_quest_2_master_dara": {
-    "quest_id": "main_quest_2_master_dara",
-    "npc_name": "Master Dara",
+  "main_quest_2_brother_aldric": {
+    "quest_id": "main_quest_2_brother_aldric",
+    "npc_name": "Brother Aldric",
     "dialogue_nodes": {
       "introduction": {
-        "text": "I have a problem that needs solving. Master Dara has discovered something that could change everything.",
+        "text": "I have a problem that needs solving. Brother Aldric has discovered something that could change everything.",
         "options": [
           {
             "text": "I'll help you.",
@@ -97,12 +97,12 @@
       }
     }
   },
-  "side_quest_1_sister_brenna": {
-    "quest_id": "side_quest_1_sister_brenna",
-    "npc_name": "Sister Brenna",
+  "side_quest_1_sister_dara": {
+    "quest_id": "side_quest_1_sister_dara",
+    "npc_name": "Sister Dara",
     "dialogue_nodes": {
       "introduction": {
-        "text": "I have a problem that needs solving. Sister Brenna needs help with a personal matter.",
+        "text": "I have a problem that needs solving. Sister Dara needs help with a personal matter.",
         "options": [
           {
             "text": "I'll help you.",
@@ -146,12 +146,12 @@
       }
     }
   },
-  "side_quest_2_master_dara": {
-    "quest_id": "side_quest_2_master_dara",
-    "npc_name": "Master Dara",
+  "side_quest_2_brother_aldric": {
+    "quest_id": "side_quest_2_brother_aldric",
+    "npc_name": "Brother Aldric",
     "dialogue_nodes": {
       "introduction": {
-        "text": "I have a problem that needs solving. Master Dara needs help with a personal matter.",
+        "text": "I have a problem that needs solving. Brother Aldric needs help with a personal matter.",
         "options": [
           {
             "text": "I'll help you.",
@@ -195,12 +195,12 @@
       }
     }
   },
-  "side_quest_3_sir_gareth": {
-    "quest_id": "side_quest_3_sir_gareth",
-    "npc_name": "Sir Gareth",
+  "side_quest_3_aldric_517": {
+    "quest_id": "side_quest_3_aldric_517",
+    "npc_name": "Aldric 517",
     "dialogue_nodes": {
       "introduction": {
-        "text": "I have a problem that needs solving. Sir Gareth needs help with a personal matter.",
+        "text": "I have a problem that needs solving. Aldric 517 needs help with a personal matter.",
         "options": [
           {
             "text": "I'll help you.",
@@ -244,12 +244,12 @@
       }
     }
   },
-  "side_quest_4_lady_cedric": {
-    "quest_id": "side_quest_4_lady_cedric",
-    "npc_name": "Lady Cedric",
+  "side_quest_4_sister_aldric": {
+    "quest_id": "side_quest_4_sister_aldric",
+    "npc_name": "Sister Aldric",
     "dialogue_nodes": {
       "introduction": {
-        "text": "I have a problem that needs solving. Lady Cedric needs help with a personal matter.",
+        "text": "I have a problem that needs solving. Sister Aldric needs help with a personal matter.",
         "options": [
           {
             "text": "I'll help you.",
@@ -293,12 +293,12 @@
       }
     }
   },
-  "side_quest_5_brother_brenna": {
-    "quest_id": "side_quest_5_brother_brenna",
-    "npc_name": "Brother Brenna",
+  "side_quest_5_brother_hilda": {
+    "quest_id": "side_quest_5_brother_hilda",
+    "npc_name": "Brother Hilda",
     "dialogue_nodes": {
       "introduction": {
-        "text": "I have a problem that needs solving. Brother Brenna needs help with a personal matter.",
+        "text": "I have a problem that needs solving. Brother Hilda needs help with a personal matter.",
         "options": [
           {
             "text": "I'll help you.",

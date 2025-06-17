@@ -1,0 +1,86 @@
+{
+  "id": "sister_aldric_ee28da70_3",
+  "name": "Sister Aldric",
+  "title": "The Eccentric Noble",
+  "description": "A 45-year-old Noble with a eccentric nature.",
+  "backstory": "Sister Aldric has worked as a Noble for many years.",
+  "personality": {
+    "primary_trait": "Eccentric",
+    "secondary_trait": "Energetic",
+    "motivation": "To protect others",
+    "fear": "Being alone",
+    "quirk": "Always hums while working",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 6,
+    "health": 78,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Brother Hilda",
+      "relationship_type": "Friend",
+      "relationship_strength": 7,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "sister aldric_greeting",
+      "text": "Greetings! I'm Sister Aldric, the local Noble.",
+      "speaker": "Sister Aldric",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sister aldric_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sister aldric_role",
+      "text": "As a Noble, I to protect others.",
+      "speaker": "Sister Aldric",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "house",
+  "role": "Noble",
+  "quest_involvement": [],
+  "age": 45,
+  "appearance": "A 45-year-old Noble with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "d7a392aa-37f4-4e51-8a15-be45f0ec12e9"
+}

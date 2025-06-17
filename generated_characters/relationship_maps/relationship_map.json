@@ -1,23 +1,68 @@
 {
-  "Sister Brenna": [
+  "Sister Dara": [
     {
-      "target_character": "Master Dara",
-      "relationship_type": "Ally",
-      "relationship_strength": 3,
+      "target_character": "Brother Hilda",
+      "relationship_type": "Colleague",
+      "relationship_strength": 5,
       "history": "They know each other through their work in town",
       "current_status": "Neutral"
     }
   ],
-  "Master Dara": [
+  "Brother Aldric": [
     {
-      "target_character": "Sister Brenna",
-      "relationship_type": "Ally",
-      "relationship_strength": 3,
+      "target_character": "Aldric 517",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 4,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Brother Hilda",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 5,
       "history": "They know each other through their work in town",
       "current_status": "Neutral"
     }
   ],
-  "Sir Gareth": [],
-  "Lady Cedric": [],
-  "Brother Brenna": []
+  "Aldric 517": [
+    {
+      "target_character": "Brother Aldric",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 4,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Sister Aldric": [
+    {
+      "target_character": "Brother Hilda",
+      "relationship_type": "Friend",
+      "relationship_strength": 7,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Brother Hilda": [
+    {
+      "target_character": "Sister Dara",
+      "relationship_type": "Colleague",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Brother Aldric",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sister Aldric",
+      "relationship_type": "Friend",
+      "relationship_strength": 7,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ]
 }

@@ -1,0 +1,3516 @@
+{
+  "theme": "medieval",
+  "size": [
+    40,
+    40
+  ],
+  "terrain_map": [
+    [
+      "grass",
+      "grass",
+      "stone",
+      "dirt",
+      "stone",
+      "water",
+      "dirt",
+      "stone",
+      "dirt",
+      "grass",
+      "water",
+      "water",
+      "stone",
+      "dirt",
+      "dirt",
+      "dirt",
+      "water",
+      "dirt",
+      "dirt",
+      "water",
+      "dirt",
+      "grass",
+      "dirt",
+      "grass",
+      "stone",
+      "stone",
+      "grass",
+      "dirt",
+      "stone",
+      "stone",
+      "dirt",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "stone",
+      "grass",
+      "grass",
+      "dirt",
+      "grass"
+    ],
+    [
+      "grass",
+      "dirt",
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "water",
+      "dirt",
+      "grass",
+      "water",
+      "dirt",
+      "stone",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "water",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "stone",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "dirt",
+      "water",
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "dirt",
+      "grass",
+      "stone",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt"
+    ],
+    [
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "stone",
+      "stone",
+      "dirt",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "dirt",
+      "dirt",
+      "dirt",
+      "water",
+      "stone",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt"
+    ],
+    [
+      "water",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "water",
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "water",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "water",
+      "dirt",
+      "stone",
+      "grass",
+      "water",
+      "water",
+      "water",
+      "dirt",
+      "water",
+      "dirt",
+      "water",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "stone",
+      "stone",
+      "dirt",
+      "water",
+      "water",
+      "dirt"
+    ],
+    [
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "water",
+      "grass",
+      "dirt",
+      "stone",
+      "dirt",
+      "stone",
+      "stone",
+      "water",
+      "water",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "water",
+      "dirt",
+      "grass",
+      "water",
+      "dirt",
+      "water",
+      "grass",
+      "grass",
+      "dirt",
+      "water",
+      "grass",
+      "dirt",
+      "grass",
+      "water",
+      "water",
+      "water",
+      "water"
+    ],
+    [
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "water",
+      "dirt",
+      "grass",
+      "dirt",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "water",
+      "stone",
+      "stone",
+      "dirt",
+      "dirt",
+      "water",
+      "grass",
+      "stone",
+      "water"
+    ],
+    [
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "water",
+      "water",
+      "water",
+      "dirt",
+      "stone",
+      "stone",
+      "stone",
+      "grass",
+      "dirt",
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "water",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt"
+    ],
+    [
+      "grass",
+      "grass",
+      "water",
+      "grass",
+      "stone",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "stone",
+      "dirt",
+      "grass",
+      "stone",
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "dirt"
+    ],
+    [
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "water",
+      "dirt",
+      "grass",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "dirt",
+      "stone",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "stone",
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt"
+    ],
+    [
+      "water",
+      "water",
+      "stone",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "water",
+      "dirt",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "stone",
+      "dirt",
+      "water",
+      "water",
+      "dirt",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "dirt",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "dirt",
+      "dirt"
+    ],
+    [
+      "dirt",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "dirt",
+      "stone",
+      "dirt",
+      "dirt",
+      "water",
+      "grass",
+      "grass",
+      "water",
+      "dirt",
+      "stone",
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "water",
+      "stone",
+      "dirt",
+      "stone",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "water"
+    ],
+    [
+      "grass",
+      "grass",
+      "water",
+      "water",
+      "water",
+      "stone",
+      "stone",
+      "grass",
+      "stone",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "dirt",
+      "stone",
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "water",
+      "dirt",
+      "dirt",
+      "dirt"
+    ],
+    [
+      "water",
+      "grass",
+      "dirt",
+      "stone",
+      "stone",
+      "stone",
+      "stone",
+      "water",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "water",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "dirt",
+      "water",
+      "water"
+    ],
+    [
+      "stone",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "stone",
+      "dirt",
+      "grass",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "water",
+      "stone",
+      "dirt",
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "dirt"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "dirt",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "water",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "water",
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "grass",
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "stone"
+    ],
+    [
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "water",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "dirt",
+      "stone",
+      "water",
+      "grass",
+      "dirt",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "water"
+    ],
+    [
+      "grass",
+      "water",
+      "stone",
+      "grass",
+      "dirt",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "water",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "stone"
+    ],
+    [
+      "grass",
+      "dirt",
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "stone",
+      "grass"
+    ],
+    [
+      "grass",
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "stone",
+      "grass",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt"
+    ],
+    [
+      "water",
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "water",
+      "water",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "grass",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "grass",
+      "water",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "water",
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "water"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "dirt",
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "water",
+      "water",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "stone"
+    ],
+    [
+      "dirt",
+      "grass",
+      "stone",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "stone",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "stone"
+    ],
+    [
+      "dirt",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "grass",
+      "stone",
+      "stone",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "water",
+      "grass",
+      "stone",
+      "dirt"
+    ],
+    [
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "stone",
+      "stone",
+      "stone",
+      "grass",
+      "water",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "dirt",
+      "grass",
+      "water",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "water",
+      "grass",
+      "dirt",
+      "stone",
+      "stone",
+      "stone"
+    ],
+    [
+      "water",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "stone",
+      "stone",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "grass",
+      "stone",
+      "stone",
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "dirt",
+      "water",
+      "stone",
+      "water",
+      "dirt",
+      "dirt",
+      "stone"
+    ],
+    [
+      "dirt",
+      "grass",
+      "water",
+      "dirt",
+      "dirt",
+      "dirt",
+      "stone",
+      "stone",
+      "dirt",
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "water",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "stone",
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "water",
+      "grass"
+    ],
+    [
+      "stone",
+      "grass",
+      "grass",
+      "water",
+      "dirt",
+      "dirt",
+      "grass",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "grass",
+      "dirt",
+      "stone",
+      "dirt",
+      "grass",
+      "stone",
+      "stone",
+      "dirt",
+      "grass",
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "stone",
+      "stone",
+      "stone",
+      "grass",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "water"
+    ],
+    [
+      "dirt",
+      "water",
+      "water",
+      "water",
+      "dirt",
+      "stone",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "stone",
+      "stone",
+      "stone",
+      "stone",
+      "stone",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "water",
+      "stone",
+      "dirt",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "dirt",
+      "dirt",
+      "water",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "water",
+      "dirt",
+      "dirt",
+      "dirt",
+      "stone",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "stone",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "stone",
+      "grass",
+      "grass",
+      "stone",
+      "dirt",
+      "grass",
+      "grass"
+    ],
+    [
+      "water",
+      "grass",
+      "water",
+      "stone",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "stone",
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass"
+    ],
+    [
+      "stone",
+      "grass",
+      "grass",
+      "stone",
+      "dirt",
+      "water",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "stone",
+      "grass",
+      "water",
+      "stone",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass"
+    ],
+    [
+      "dirt",
+      "grass",
+      "stone",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "stone",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "stone",
+      "dirt",
+      "water",
+      "stone",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "stone",
+      "water",
+      "water",
+      "stone",
+      "stone",
+      "grass",
+      "water",
+      "stone",
+      "stone",
+      "grass",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "stone",
+      "grass",
+      "grass",
+      "stone"
+    ],
+    [
+      "dirt",
+      "water",
+      "grass",
+      "grass",
+      "dirt",
+      "water",
+      "water",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt",
+      "stone",
+      "grass",
+      "dirt",
+      "grass",
+      "dirt",
+      "grass",
+      "grass",
+      "stone",
+      "grass",
+      "water",
+      "water",
+      "dirt",
+      "water",
+      "grass",
+      "dirt",
+      "water",
+      "water",
+      "grass",
+      "water",
+      "grass",
+      "water",
+      "grass",
+      "dirt",
+      "dirt",
+      "grass",
+      "grass",
+      "water",
+      "grass"
+    ]
+  ],
+  "buildings": [
+    {
+      "id": "building_center",
+      "type": "market",
+      "position": {
+        "x": 20,
+        "y": 20,
+        "z": 0.0
+      },
+      "rotation": 0.0,
+      "scale": 1.2,
+      "properties": {
+        "importance": "high",
+        "central": true
+      }
+    },
+    {
+      "id": "building_1",
+      "type": "house",
+      "position": {
+        "x": 32.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "rotation": 180.0,
+      "scale": 1.0,
+      "properties": {
+        "importance": "normal"
+      }
+    },
+    {
+      "id": "building_2",
+      "type": "tavern",
+      "position": {
+        "x": 20.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "rotation": 270.0,
+      "scale": 1.0,
+      "properties": {
+        "importance": "high"
+      }
+    },
+    {
+      "id": "building_3",
+      "type": "blacksmith",
+      "position": {
+        "x": 8.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "rotation": 360.0,
+      "scale": 1.0,
+      "properties": {
+        "importance": "normal"
+      }
+    },
+    {
+      "id": "house_0",
+      "type": "house",
+      "position": {
+        "x": 7.573615257351279,
+        "y": 27.91886924975737,
+        "z": 0.0
+      },
+      "rotation": 25.508208834709208,
+      "scale": 0.8102046768093312,
+      "properties": {
+        "importance": "low",
+        "residential": true
+      }
+    },
+    {
+      "id": "house_1",
+      "type": "house",
+      "position": {
+        "x": 7.444239220233966,
+        "y": 31.671161005075163,
+        "z": 0.0
+      },
+      "rotation": 70.22324199611543,
+      "scale": 1.178949009589729,
+      "properties": {
+        "importance": "low",
+        "residential": true
+      }
+    },
+    {
+      "id": "house_2",
+      "type": "house",
+      "position": {
+        "x": 31.269779754043615,
+        "y": 26.22924784466608,
+        "z": 0.0
+      },
+      "rotation": 179.5774323795498,
+      "scale": 1.0361691312923393,
+      "properties": {
+        "importance": "low",
+        "residential": true
+      }
+    }
+  ],
+  "paths": [
+    {
+      "id": "main_path_0",
+      "start": {
+        "x": 20,
+        "y": 20,
+        "z": 0.0
+      },
+      "end": {
+        "x": 20.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "width": 3.0,
+      "surface_type": "cobblestone",
+      "properties": {
+        "type": "main_road",
+        "importance": "high"
+      }
+    },
+    {
+      "id": "side_path_1",
+      "start": {
+        "x": 32.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "end": {
+        "x": 20,
+        "y": 20,
+        "z": 0.0
+      },
+      "width": 2.0,
+      "surface_type": "dirt",
+      "properties": {
+        "type": "side_road",
+        "importance": "normal"
+      }
+    },
+    {
+      "id": "side_path_2",
+      "start": {
+        "x": 8.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "end": {
+        "x": 20,
+        "y": 20,
+        "z": 0.0
+      },
+      "width": 2.0,
+      "surface_type": "dirt",
+      "properties": {
+        "type": "side_road",
+        "importance": "normal"
+      }
+    },
+    {
+      "id": "side_path_3",
+      "start": {
+        "x": 7.573615257351279,
+        "y": 27.91886924975737,
+        "z": 0.0
+      },
+      "end": {
+        "x": 20.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "width": 2.0,
+      "surface_type": "dirt",
+      "properties": {
+        "type": "side_road",
+        "importance": "normal"
+      }
+    },
+    {
+      "id": "side_path_4",
+      "start": {
+        "x": 7.444239220233966,
+        "y": 31.671161005075163,
+        "z": 0.0
+      },
+      "end": {
+        "x": 20.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "width": 2.0,
+      "surface_type": "dirt",
+      "properties": {
+        "type": "side_road",
+        "importance": "normal"
+      }
+    },
+    {
+      "id": "side_path_5",
+      "start": {
+        "x": 31.269779754043615,
+        "y": 26.22924784466608,
+        "z": 0.0
+      },
+      "end": {
+        "x": 20.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "width": 2.0,
+      "surface_type": "dirt",
+      "properties": {
+        "type": "side_road",
+        "importance": "normal"
+      }
+    }
+  ],
+  "natural_features": [
+    {
+      "id": "feature_0",
+      "type": "rock",
+      "position": {
+        "x": 2.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "rotation": 27.339955852978175,
+      "scale": 1.2796050833396277,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_1",
+      "type": "well",
+      "position": {
+        "x": 3.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "rotation": 176.67923255501668,
+      "scale": 0.8707968118125902,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": true,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_2",
+      "type": "oak_tree",
+      "position": {
+        "x": 9.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "rotation": 121.27785013048852,
+      "scale": 0.8809200933968694,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_3",
+      "type": "bush",
+      "position": {
+        "x": 6.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "rotation": 253.40111966543324,
+      "scale": 1.226545079524619,
+      "properties": {
+        "terrain_type": "water",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_4",
+      "type": "rock",
+      "position": {
+        "x": 23.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "rotation": 123.38037179269564,
+      "scale": 0.7005680498439658,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_5",
+      "type": "rock",
+      "position": {
+        "x": 37.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "rotation": 43.726398549814235,
+      "scale": 1.0191999715097904,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_6",
+      "type": "bush",
+      "position": {
+        "x": 38.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "rotation": 199.9780238211217,
+      "scale": 0.8223145022004587,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_7",
+      "type": "flower_patch",
+      "position": {
+        "x": 8.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "rotation": 14.197203551811889,
+      "scale": 1.0494433407012496,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_8",
+      "type": "bush",
+      "position": {
+        "x": 17.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "rotation": 295.480152786334,
+      "scale": 0.7369157612374351,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_9",
+      "type": "rock",
+      "position": {
+        "x": 23.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "rotation": 346.2816780176587,
+      "scale": 1.0780597967881849,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_10",
+      "type": "rock",
+      "position": {
+        "x": 34.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "rotation": 59.82538408144117,
+      "scale": 0.9108991050394963,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_11",
+      "type": "rock",
+      "position": {
+        "x": 39.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "rotation": 9.392682997358449,
+      "scale": 0.9426867718862644,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_12",
+      "type": "bush",
+      "position": {
+        "x": 17.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "rotation": 38.424729516270034,
+      "scale": 0.904456645531727,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_13",
+      "type": "flower_patch",
+      "position": {
+        "x": 27.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "rotation": 314.8952863259069,
+      "scale": 1.27293340078931,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_14",
+      "type": "oak_tree",
+      "position": {
+        "x": 16.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "rotation": 170.57437547202866,
+      "scale": 1.2101759441885238,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_15",
+      "type": "bush",
+      "position": {
+        "x": 20.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "rotation": 76.93991114347511,
+      "scale": 0.8253090223965462,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_16",
+      "type": "well",
+      "position": {
+        "x": 25.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "rotation": 338.89253983068335,
+      "scale": 0.7812890271170073,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": true,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_17",
+      "type": "rock",
+      "position": {
+        "x": 31.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "rotation": 253.19719642175417,
+      "scale": 0.8229254595533319,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_18",
+      "type": "bush",
+      "position": {
+        "x": 39.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "rotation": 65.63778863533386,
+      "scale": 0.8205506150047968,
+      "properties": {
+        "terrain_type": "water",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_19",
+      "type": "bush",
+      "position": {
+        "x": 8.0,
+        "y": 6.0,
+        "z": 0.0
+      },
+      "rotation": 286.2562586815349,
+      "scale": 0.7799080077299588,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_20",
+      "type": "rock",
+      "position": {
+        "x": 0.0,
+        "y": 7.0,
+        "z": 0.0
+      },
+      "rotation": 95.47867063207251,
+      "scale": 0.9393000441058945,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_21",
+      "type": "rock",
+      "position": {
+        "x": 38.0,
+        "y": 7.0,
+        "z": 0.0
+      },
+      "rotation": 357.9211641007735,
+      "scale": 1.2694830362422738,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_22",
+      "type": "flower_patch",
+      "position": {
+        "x": 39.0,
+        "y": 8.0,
+        "z": 0.0
+      },
+      "rotation": 334.8146168961621,
+      "scale": 1.106788670638259,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_23",
+      "type": "flower_patch",
+      "position": {
+        "x": 16.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "rotation": 59.98522031769426,
+      "scale": 1.1322006602718218,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_24",
+      "type": "rock",
+      "position": {
+        "x": 21.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "rotation": 0.12759015020869402,
+      "scale": 0.8932358575328885,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_25",
+      "type": "flower_patch",
+      "position": {
+        "x": 22.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "rotation": 102.21069051496822,
+      "scale": 1.04709512176408,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_26",
+      "type": "rock",
+      "position": {
+        "x": 37.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "rotation": 27.245930222979517,
+      "scale": 1.2683340494784492,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_27",
+      "type": "flower_patch",
+      "position": {
+        "x": 13.0,
+        "y": 10.0,
+        "z": 0.0
+      },
+      "rotation": 182.6570443795005,
+      "scale": 0.9971132709925495,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_28",
+      "type": "flower_patch",
+      "position": {
+        "x": 23.0,
+        "y": 10.0,
+        "z": 0.0
+      },
+      "rotation": 206.4589570798485,
+      "scale": 1.1450584803666248,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_29",
+      "type": "rock",
+      "position": {
+        "x": 25.0,
+        "y": 10.0,
+        "z": 0.0
+      },
+      "rotation": 25.832007152369503,
+      "scale": 1.2027403681604096,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_30",
+      "type": "bush",
+      "position": {
+        "x": 37.0,
+        "y": 10.0,
+        "z": 0.0
+      },
+      "rotation": 311.64318174521355,
+      "scale": 1.181363422294967,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_31",
+      "type": "oak_tree",
+      "position": {
+        "x": 2.0,
+        "y": 11.0,
+        "z": 0.0
+      },
+      "rotation": 260.4162168482548,
+      "scale": 0.9839997029941931,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_32",
+      "type": "well",
+      "position": {
+        "x": 15.0,
+        "y": 11.0,
+        "z": 0.0
+      },
+      "rotation": 9.05817415678882,
+      "scale": 1.2811494406615216,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": true,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_33",
+      "type": "rock",
+      "position": {
+        "x": 39.0,
+        "y": 11.0,
+        "z": 0.0
+      },
+      "rotation": 296.40351357501436,
+      "scale": 1.1506177064564054,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_34",
+      "type": "oak_tree",
+      "position": {
+        "x": 16.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "rotation": 266.78550383030813,
+      "scale": 0.8841248214994052,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_35",
+      "type": "rock",
+      "position": {
+        "x": 24.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "rotation": 301.35733557576253,
+      "scale": 1.267887676496553,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_36",
+      "type": "well",
+      "position": {
+        "x": 1.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "rotation": 228.7687405026428,
+      "scale": 1.2027400490931162,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": true,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_37",
+      "type": "rock",
+      "position": {
+        "x": 16.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "rotation": 106.94594870782488,
+      "scale": 1.1819583837303518,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_38",
+      "type": "flower_patch",
+      "position": {
+        "x": 25.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "rotation": 335.6016572744055,
+      "scale": 0.8309146800885877,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_39",
+      "type": "flower_patch",
+      "position": {
+        "x": 29.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "rotation": 26.20127448496462,
+      "scale": 1.2450903582642718,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_40",
+      "type": "oak_tree",
+      "position": {
+        "x": 31.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "rotation": 249.3385440124232,
+      "scale": 1.1026980104806874,
+      "properties": {
+        "terrain_type": "water",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_41",
+      "type": "flower_patch",
+      "position": {
+        "x": 37.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "rotation": 22.221713452442774,
+      "scale": 0.9355395851740986,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_42",
+      "type": "well",
+      "position": {
+        "x": 21.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "rotation": 69.05661199679432,
+      "scale": 1.0148112090336947,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": true,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_43",
+      "type": "flower_patch",
+      "position": {
+        "x": 2.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "rotation": 77.94307897728186,
+      "scale": 1.0791741143389353,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_44",
+      "type": "well",
+      "position": {
+        "x": 14.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "rotation": 171.72397217532026,
+      "scale": 0.9822349334724418,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": true,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_45",
+      "type": "rock",
+      "position": {
+        "x": 34.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "rotation": 210.04090858474467,
+      "scale": 1.0553001930227994,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_46",
+      "type": "flower_patch",
+      "position": {
+        "x": 2.0,
+        "y": 18.0,
+        "z": 0.0
+      },
+      "rotation": 236.91558099561354,
+      "scale": 0.8151132417406004,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_47",
+      "type": "well",
+      "position": {
+        "x": 25.0,
+        "y": 18.0,
+        "z": 0.0
+      },
+      "rotation": 294.06013313698656,
+      "scale": 1.285729827775116,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": true,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_48",
+      "type": "bush",
+      "position": {
+        "x": 39.0,
+        "y": 18.0,
+        "z": 0.0
+      },
+      "rotation": 285.69112084783137,
+      "scale": 0.7079674125623164,
+      "properties": {
+        "terrain_type": "water",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_49",
+      "type": "rock",
+      "position": {
+        "x": 14.0,
+        "y": 19.0,
+        "z": 0.0
+      },
+      "rotation": 6.505839630913126,
+      "scale": 0.8467708718662381,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_50",
+      "type": "bush",
+      "position": {
+        "x": 16.0,
+        "y": 19.0,
+        "z": 0.0
+      },
+      "rotation": 111.55542710153462,
+      "scale": 1.2560930443742764,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_51",
+      "type": "oak_tree",
+      "position": {
+        "x": 28.0,
+        "y": 19.0,
+        "z": 0.0
+      },
+      "rotation": 109.77959207789124,
+      "scale": 1.1217190582286527,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_52",
+      "type": "rock",
+      "position": {
+        "x": 13.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "rotation": 141.39746162386123,
+      "scale": 1.2406709748548685,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_53",
+      "type": "well",
+      "position": {
+        "x": 28.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "rotation": 139.3619726632268,
+      "scale": 1.1758910141278653,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": true,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_54",
+      "type": "flower_patch",
+      "position": {
+        "x": 39.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "rotation": 206.74491016851618,
+      "scale": 1.2271147456677078,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_55",
+      "type": "rock",
+      "position": {
+        "x": 35.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "rotation": 159.24784655595025,
+      "scale": 0.9218529079035598,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_56",
+      "type": "bush",
+      "position": {
+        "x": 39.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "rotation": 287.52348327831476,
+      "scale": 1.1459630679586663,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_57",
+      "type": "flower_patch",
+      "position": {
+        "x": 13.0,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "rotation": 61.89351862416169,
+      "scale": 1.2561873860700485,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_58",
+      "type": "oak_tree",
+      "position": {
+        "x": 22.0,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "rotation": 224.58539599278612,
+      "scale": 0.9542868742081823,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_59",
+      "type": "bush",
+      "position": {
+        "x": 38.0,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "rotation": 72.43670206242432,
+      "scale": 1.0343442464153663,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_60",
+      "type": "rock",
+      "position": {
+        "x": 1.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "rotation": 96.56591724904716,
+      "scale": 0.7415564238292994,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_61",
+      "type": "oak_tree",
+      "position": {
+        "x": 0.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "rotation": 19.644163303867064,
+      "scale": 1.1014468659954466,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_62",
+      "type": "well",
+      "position": {
+        "x": 14.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "rotation": 296.82839478970084,
+      "scale": 0.8364389416476989,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": true,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_63",
+      "type": "flower_patch",
+      "position": {
+        "x": 23.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "rotation": 17.79821363032744,
+      "scale": 0.992584404875879,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_64",
+      "type": "flower_patch",
+      "position": {
+        "x": 13.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "rotation": 152.96999820153027,
+      "scale": 0.9074140975600173,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_65",
+      "type": "oak_tree",
+      "position": {
+        "x": 20.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "rotation": 293.5964826325036,
+      "scale": 1.2138436418214953,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_66",
+      "type": "flower_patch",
+      "position": {
+        "x": 21.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "rotation": 327.1520793575747,
+      "scale": 0.9034228158345962,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_67",
+      "type": "oak_tree",
+      "position": {
+        "x": 35.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "rotation": 197.59358214669055,
+      "scale": 0.9930052495608968,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_68",
+      "type": "oak_tree",
+      "position": {
+        "x": 16.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "rotation": 272.3202409681698,
+      "scale": 0.7253948114926112,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_69",
+      "type": "well",
+      "position": {
+        "x": 25.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "rotation": 258.79163341743623,
+      "scale": 1.11640390051778,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": true,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_70",
+      "type": "bush",
+      "position": {
+        "x": 13.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "rotation": 134.14730450447496,
+      "scale": 0.9617568978295996,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_71",
+      "type": "flower_patch",
+      "position": {
+        "x": 33.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "rotation": 274.76370409987555,
+      "scale": 1.1129751110665858,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_72",
+      "type": "bush",
+      "position": {
+        "x": 37.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "rotation": 258.9897209350239,
+      "scale": 0.9867791815858523,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_73",
+      "type": "bush",
+      "position": {
+        "x": 26.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "rotation": 252.93408657888952,
+      "scale": 1.1936196242266444,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_74",
+      "type": "oak_tree",
+      "position": {
+        "x": 37.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "rotation": 38.806859561776626,
+      "scale": 0.7263999549397184,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_75",
+      "type": "bush",
+      "position": {
+        "x": 0.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "rotation": 71.93389301310377,
+      "scale": 0.9186623664594,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_76",
+      "type": "flower_patch",
+      "position": {
+        "x": 38.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "rotation": 309.42983628491265,
+      "scale": 1.1755714341774122,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_77",
+      "type": "oak_tree",
+      "position": {
+        "x": 28.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "rotation": 190.660040068248,
+      "scale": 0.9516768208599187,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_78",
+      "type": "bush",
+      "position": {
+        "x": 32.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "rotation": 265.9349682774492,
+      "scale": 1.091169548015285,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_79",
+      "type": "bush",
+      "position": {
+        "x": 13.0,
+        "y": 34.0,
+        "z": 0.0
+      },
+      "rotation": 47.766028677068896,
+      "scale": 0.7159452695741447,
+      "properties": {
+        "terrain_type": "water",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_80",
+      "type": "bush",
+      "position": {
+        "x": 28.0,
+        "y": 34.0,
+        "z": 0.0
+      },
+      "rotation": 214.49202987722336,
+      "scale": 1.1811034573844583,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_81",
+      "type": "rock",
+      "position": {
+        "x": 14.0,
+        "y": 35.0,
+        "z": 0.0
+      },
+      "rotation": 119.63857490660101,
+      "scale": 0.7889616284950083,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_82",
+      "type": "bush",
+      "position": {
+        "x": 1.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "rotation": 205.2074683879472,
+      "scale": 0.9465509385658126,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_83",
+      "type": "flower_patch",
+      "position": {
+        "x": 11.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "rotation": 195.7175283187945,
+      "scale": 1.0853466431503334,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_84",
+      "type": "rock",
+      "position": {
+        "x": 20.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "rotation": 7.414059550721923,
+      "scale": 1.0331292823988334,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_85",
+      "type": "bush",
+      "position": {
+        "x": 27.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "rotation": 181.74394464748136,
+      "scale": 1.287216516190096,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_86",
+      "type": "oak_tree",
+      "position": {
+        "x": 13.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "rotation": 50.36455717804915,
+      "scale": 0.9000652843043988,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_87",
+      "type": "flower_patch",
+      "position": {
+        "x": 14.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "rotation": 79.75050348386311,
+      "scale": 0.816468419940063,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_88",
+      "type": "oak_tree",
+      "position": {
+        "x": 16.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "rotation": 19.77095123453884,
+      "scale": 0.9368195558376907,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_89",
+      "type": "well",
+      "position": {
+        "x": 38.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "rotation": 204.08935067308883,
+      "scale": 0.7292632850903171,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": true,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_90",
+      "type": "bush",
+      "position": {
+        "x": 39.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "rotation": 53.37735087474838,
+      "scale": 1.2982760013968357,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_91",
+      "type": "rock",
+      "position": {
+        "x": 0.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "rotation": 254.47454839838235,
+      "scale": 1.2750721829482208,
+      "properties": {
+        "terrain_type": "water",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_92",
+      "type": "rock",
+      "position": {
+        "x": 33.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "rotation": 255.44198234139324,
+      "scale": 0.9950614821689635,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_93",
+      "type": "bush",
+      "position": {
+        "x": 8.0,
+        "y": 39.0,
+        "z": 0.0
+      },
+      "rotation": 338.74801921585527,
+      "scale": 0.7003902158069167,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_94",
+      "type": "flower_patch",
+      "position": {
+        "x": 10.0,
+        "y": 39.0,
+        "z": 0.0
+      },
+      "rotation": 159.5155537878129,
+      "scale": 1.1115648460689438,
+      "properties": {
+        "terrain_type": "grass",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_95",
+      "type": "oak_tree",
+      "position": {
+        "x": 34.0,
+        "y": 39.0,
+        "z": 0.0
+      },
+      "rotation": 349.330872376194,
+      "scale": 0.8036454306842977,
+      "properties": {
+        "terrain_type": "dirt",
+        "interactive": false,
+        "decorative": true
+      }
+    }
+  ],
+  "spawn_points": [
+    {
+      "x": 3.041090604518409,
+      "y": 25.402754014214086,
+      "z": 0.0,
+      "type": "main_entrance",
+      "description": "Main entrance to settlement"
+    },
+    {
+      "x": 25,
+      "y": 25,
+      "z": 0.0,
+      "type": "secondary",
+      "description": "Near market"
+    }
+  ],
+  "boundaries": {
+    "min_x": 0,
+    "max_x": 40,
+    "min_y": 0,
+    "max_y": 40
+  },
+  "metadata": {
+    "analysis": {
+      "theme": "medieval",
+      "scope": "village",
+      "key_features": [
+        "house",
+        "tavern",
+        "blacksmith",
+        "market"
+      ],
+      "npc_count": 5,
+      "quest_count": 3,
+      "mood": "rustic",
+      "size": [
+        40,
+        40
+      ],
+      "environmental_story": "A peaceful farming community with a central market square where travelers rest",
+      "layout_type": "radial",
+      "gameplay_flow": {
+        "player_spawn_areas": [
+          "main_entrance",
+          "central_square"
+        ],
+        "quest_hubs": [
+          "house",
+          "tavern",
+          "blacksmith"
+        ],
+        "exploration_points": [
+          "outskirts",
+          "hidden_areas"
+        ],
+        "social_areas": [
+          "tavern",
+          "market",
+          "fountain"
+        ]
+      }
+    },
+    "layout_type": "radial",
+    "building_count": 7,
+    "complexity_score": 11.2,
+    "estimated_build_time": "110 minutes",
+    "validation_issues": [],
+    "validation_passed": true
+  }
+}

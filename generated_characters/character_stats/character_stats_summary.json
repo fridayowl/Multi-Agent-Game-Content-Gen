@@ -1,11 +1,11 @@
 {
   "generation_stats": {
     "total_characters": 5,
-    "average_age": 37.6,
-    "total_relationships": 2,
+    "average_age": 36.6,
+    "total_relationships": 8,
     "total_dialogue_nodes": 10,
     "unique_roles": 5,
-    "unique_locations": 4
+    "unique_locations": 3
   },
   "uniqueness_metrics": {
     "name_uniqueness": 1.0,
@@ -13,24 +13,24 @@
     "role_uniqueness": 1.0
   },
   "level_distribution": {
-    "Sister Brenna": 1,
-    "Master Dara": 6,
-    "Sir Gareth": 10,
-    "Lady Cedric": 10,
-    "Brother Brenna": 5
+    "Sister Dara": 3,
+    "Brother Aldric": 9,
+    "Aldric 517": 9,
+    "Sister Aldric": 6,
+    "Brother Hilda": 5
   },
   "role_distribution": {
-    "Sister Brenna": "Servant",
-    "Master Dara": "Noble",
-    "Sir Gareth": "Scholar",
-    "Lady Cedric": "Family Head",
-    "Brother Brenna": "Innkeeper"
+    "Sister Dara": "Herbalist",
+    "Brother Aldric": "Archer",
+    "Aldric 517": "Servant",
+    "Sister Aldric": "Noble",
+    "Brother Hilda": "Family Head"
   },
   "personality_distribution": {
-    "Sister Brenna": "Clever",
-    "Master Dara": "Compassionate",
-    "Sir Gareth": "Determined",
-    "Lady Cedric": "Jovial",
-    "Brother Brenna": "Fierce"
+    "Sister Dara": "Honest",
+    "Brother Aldric": "Jovial",
+    "Aldric 517": "Gentle",
+    "Sister Aldric": "Eccentric",
+    "Brother Hilda": "Clever"
   }
 }

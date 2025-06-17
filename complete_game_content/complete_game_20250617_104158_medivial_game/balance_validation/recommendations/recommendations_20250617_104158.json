@@ -1,0 +1,38 @@
+[
+  {
+    "category": "xp",
+    "target": "quest_rewards",
+    "current_value": 0.013087520498592976,
+    "recommended_value": "0.9-1.1 ratio",
+    "reason": "Increase quest XP rewards by 25%",
+    "priority": "high",
+    "impact": "Improves player progression pacing"
+  },
+  {
+    "category": "xp",
+    "target": "quest_rewards",
+    "current_value": 0.013087520498592976,
+    "recommended_value": "0.9-1.1 ratio",
+    "reason": "Add more side quests for additional XP",
+    "priority": "high",
+    "impact": "Improves player progression pacing"
+  },
+  {
+    "category": "rewards",
+    "target": "gold_rewards",
+    "current_value": 275,
+    "recommended_value": 630.0,
+    "reason": "Gold economy needs adjustment: increase_gold",
+    "priority": "medium",
+    "impact": "Balances in-game economy"
+  },
+  {
+    "category": "progression",
+    "target": "quest_distribution",
+    "current_value": 1,
+    "recommended_value": 3,
+    "reason": "Level 2 needs more quests",
+    "priority": "medium",
+    "impact": "Improves progression flow"
+  }
+]
