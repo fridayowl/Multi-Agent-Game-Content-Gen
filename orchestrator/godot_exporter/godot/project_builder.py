@@ -37,7 +37,7 @@ class GodotProjectBuilder:
         project_settings = GodotProjectSettings(
             name=project_name,
             main_scene="res://scenes/World.tscn",
-            features=["4.4"]
+            features=["4.4", "Forward Plus"]
         )
         
         # Generate project.godot content
@@ -105,8 +105,8 @@ jump={{
 
 [rendering]
 
-renderer/rendering_method="{settings.rendering_method}"
-renderer/rendering_method.mobile="{settings.rendering_method}"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
 
 [layer_names]
 
