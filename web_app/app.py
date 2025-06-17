@@ -72,7 +72,43 @@ class GenerationJob:
             'quests': None,
             'files': []
         }
-
+def clear_existing_generated_content():
+    """Clear all existing folders in generated_content directory"""
+    try:
+        if not GENERATED_FOLDER.exists():
+            print("📁 Generated content folder doesn't exist, creating...")
+            GENERATED_FOLDER.mkdir(exist_ok=True)
+            return
+            
+        print("🧹 Clearing existing content in generated_content folder...")
+        
+        # List all items before clearing
+        existing_items = list(GENERATED_FOLDER.iterdir())
+        if not existing_items:
+            print("📂 Generated content folder is already empty")
+            return
+            
+        print(f"🗑️ Found {len(existing_items)} existing items to clear:")
+        for item in existing_items:
+            print(f"   - {item.name}")
+        
+        # Remove all existing items
+        for item in existing_items:
+            try:
+                if item.is_dir():
+                    shutil.rmtree(item)
+                    print(f"✅ Removed directory: {item.name}")
+                else:
+                    item.unlink()
+                    print(f"✅ Removed file: {item.name}")
+            except Exception as e:
+                print(f"⚠️ Warning: Could not remove {item.name}: {e}")
+        
+        print("🎉 Successfully cleared existing generated content!")
+        
+    except Exception as e:
+        print(f"❌ Error clearing generated content: {e}")
+        # Don't raise the exception, just log it and continue
 @app.route('/')
 def index():
     """Serve the main web interface"""
@@ -90,7 +126,7 @@ def start_generation():
         
         if len(prompt) < 10:
             return jsonify({'error': 'Please provide a more detailed prompt (at least 10 characters)'}), 400
-        
+        clear_existing_generated_content()
         # Create new generation job
         generation_id = str(uuid.uuid4())
         job = GenerationJob(generation_id, prompt)
