@@ -3,6 +3,7 @@
 Complete Flask Web App for AI Game Generator
 Integrates with your existing multi-agent pipeline - GODOT VERSION
 HTML template separated into templates/index.html for easy customization
+Enhanced with detailed generation information display
 """
 
 import os
@@ -63,6 +64,14 @@ class GenerationJob:
         self.error = None
         self.result_data = None
         self.created_at = datetime.now()
+        # Enhanced data storage for detailed information
+        self.generation_details = {
+            'world': None,
+            'assets': None,
+            'characters': None,
+            'quests': None,
+            'files': []
+        }
 
 @app.route('/')
 def index():
@@ -109,7 +118,7 @@ def start_generation():
 
 @app.route('/api/progress/<generation_id>')
 def get_progress(generation_id):
-    """Get generation progress"""
+    """Get generation progress with detailed information"""
     job = generation_jobs.get(generation_id)
     
     if not job:
@@ -119,7 +128,8 @@ def get_progress(generation_id):
         'status': job.status,
         'progress': job.progress,
         'message': job.message,
-        'agents': job.agents
+        'agents': job.agents,
+        'generation_details': job.generation_details  # Include detailed information
     }
     
     if job.status == 'completed' and job.download_url:
@@ -180,6 +190,266 @@ def download_package(generation_id):
         download_name=f'GodotGameWorld_{generation_id[:8]}.zip'
     )
 
+def load_generation_details(session_dir: Path, job: GenerationJob):
+    """Load detailed generation information from files"""
+    try:
+        # Load world specification
+        world_file = session_dir / "world_specification.json"
+        if world_file.exists():
+            with open(world_file, 'r') as f:
+                world_data = json.load(f)
+                job.generation_details['world'] = extract_world_details(world_data)
+        
+        # Load asset information
+        asset_manifest = session_dir / "ai_creative_assets" / "ai_creative_manifest.json"
+        if asset_manifest.exists():
+            with open(asset_manifest, 'r') as f:
+                asset_data = json.load(f)
+                job.generation_details['assets'] = extract_asset_details(asset_data, session_dir)
+        elif session_dir.glob("assets"):
+            # Fallback to assets folder
+            assets_dir = session_dir / "assets"
+            if assets_dir.exists():
+                job.generation_details['assets'] = extract_asset_details_from_folder(assets_dir)
+        
+        # Load character information
+        characters_file = session_dir / "characters.json"
+        if characters_file.exists():
+            with open(characters_file, 'r') as f:
+                character_data = json.load(f)
+                job.generation_details['characters'] = extract_character_details(character_data)
+        
+        # Load quest information
+        quests_file = session_dir / "quests.json"
+        if quests_file.exists():
+            with open(quests_file, 'r') as f:
+                quest_data = json.load(f)
+                job.generation_details['quests'] = extract_quest_details(quest_data)
+        
+        # Load file structure
+        job.generation_details['files'] = extract_file_structure(session_dir)
+        
+        print(f"✅ Loaded generation details for {job.id}")
+        
+    except Exception as e:
+        print(f"❌ Error loading generation details: {e}")
+
+def extract_world_details(world_data: Dict[str, Any]) -> Dict[str, Any]:
+    """Extract world details for display"""
+    return {
+        'theme': world_data.get('theme', 'Unknown'),
+        'description': world_data.get('description', 'A generated game world'),
+        'size': world_data.get('size', [40, 40]),
+        'buildings': world_data.get('buildings', []),
+        'natural_features': world_data.get('natural_features', []),
+        'paths': world_data.get('paths', []),
+        'terrain': world_data.get('terrain_grid', []),
+        'environment_type': world_data.get('environment_type', 'Mixed'),
+        'mood': world_data.get('mood', 'Neutral')
+    }
+
+def extract_asset_details(asset_data: Dict[str, Any], session_dir: Path) -> Dict[str, Any]:
+    """Extract asset details for display"""
+    assets = {
+        'total_count': asset_data.get('total_assets', 0),
+        'categories': {
+            'buildings': [],
+            'props': [],
+            'environment': [],
+            'textures': [],
+            'materials': []
+        },
+        'blender_files': [],
+        'model_files': []
+    }
+    
+    # Extract asset categories
+    if 'assets' in asset_data:
+        for asset in asset_data['assets']:
+            category = asset.get('category', 'unknown')
+            if category in assets['categories']:
+                assets['categories'][category].append({
+                    'name': asset.get('name', 'Unknown'),
+                    'file': asset.get('filename', ''),
+                    'description': asset.get('description', ''),
+                    'type': asset.get('type', '')
+                })
+    
+    # Find Blender files
+    blender_dir = session_dir / "ai_creative_assets" / "blender_scripts"
+    if blender_dir.exists():
+        for blend_file in blender_dir.glob("*.py"):
+            assets['blender_files'].append(blend_file.name)
+    
+    # Find model files
+    models_dir = session_dir / "ai_creative_assets" / "models"
+    if models_dir.exists():
+        for model_file in models_dir.rglob("*.obj"):
+            assets['model_files'].append(str(model_file.relative_to(models_dir)))
+    
+    return assets
+
+def extract_asset_details_from_folder(assets_dir: Path) -> Dict[str, Any]:
+    """Extract asset details from folder structure (fallback)"""
+    assets = {
+        'total_count': 0,
+        'categories': {
+            'buildings': [],
+            'props': [],
+            'environment': [],
+            'textures': [],
+            'materials': []
+        },
+        'blender_files': [],
+        'model_files': []
+    }
+    
+    # Count files
+    model_files = list(assets_dir.rglob("*.obj"))
+    assets['total_count'] = len(model_files)
+    
+    # Find Blender files
+    for blend_file in assets_dir.rglob("*.py"):
+        assets['blender_files'].append(blend_file.name)
+    
+    # Find model files
+    for model_file in model_files:
+        relative_path = str(model_file.relative_to(assets_dir))
+        assets['model_files'].append(relative_path)
+        
+        # Categorize by folder name
+        parts = model_file.parts
+        if 'buildings' in parts:
+            assets['categories']['buildings'].append({
+                'name': model_file.stem,
+                'file': relative_path,
+                'description': f'3D building model',
+                'type': 'obj'
+            })
+        elif 'props' in parts:
+            assets['categories']['props'].append({
+                'name': model_file.stem,
+                'file': relative_path,
+                'description': f'3D prop model',
+                'type': 'obj'
+            })
+        else:
+            assets['categories']['environment'].append({
+                'name': model_file.stem,
+                'file': relative_path,
+                'description': f'3D environment model',
+                'type': 'obj'
+            })
+    
+    return assets
+
+def extract_character_details(character_data: Dict[str, Any]) -> Dict[str, Any]:
+    """Extract character details for display"""
+    characters = {
+        'total_count': 0,
+        'npcs': []
+    }
+    
+    if 'characters' in character_data:
+        character_list = character_data['characters']
+        characters['total_count'] = len(character_list)
+        
+        for char in character_list:
+            characters['npcs'].append({
+                'name': char.get('name', 'Unknown NPC'),
+                'role': char.get('role', 'Villager'),
+                'personality': char.get('personality', 'Friendly'),
+                'background': char.get('background', 'A mysterious individual'),
+                'location': char.get('location', 'Village'),
+                'age': char.get('age', 'Adult'),
+                'appearance': char.get('appearance', 'Average height'),
+                'relationships': char.get('relationships', []),
+                'dialogue_style': char.get('dialogue_style', 'Casual'),
+                'quests_involved': char.get('quests', [])
+            })
+    
+    return characters
+
+def extract_quest_details(quest_data: Dict[str, Any]) -> Dict[str, Any]:
+    """Extract quest details for display"""
+    quests = {
+        'total_count': 0,
+        'main_quests': 0,
+        'side_quests': 0,
+        'quest_list': []
+    }
+    
+    if 'quests' in quest_data:
+        quest_list = quest_data['quests']
+        quests['total_count'] = len(quest_list)
+        
+        for quest in quest_list:
+            quest_type = quest.get('type', 'side')
+            if quest_type == 'main':
+                quests['main_quests'] += 1
+            else:
+                quests['side_quests'] += 1
+            
+            quests['quest_list'].append({
+                'title': quest.get('title', 'Untitled Quest'),
+                'type': quest_type,
+                'description': quest.get('description', 'A mysterious task awaits'),
+                'objective': quest.get('objective', 'Complete the task'),
+                'giver': quest.get('quest_giver', 'Unknown'),
+                'location': quest.get('location', 'Village'),
+                'rewards': quest.get('rewards', []),
+                'requirements': quest.get('requirements', []),
+                'difficulty': quest.get('difficulty', 'Medium'),
+                'estimated_time': quest.get('estimated_time', '15 minutes')
+            })
+    
+    return quests
+
+def extract_file_structure(session_dir: Path) -> list:
+    """Extract file structure for display"""
+    files = []
+    
+    try:
+        for item in session_dir.rglob('*'):
+            if item.is_file():
+                relative_path = str(item.relative_to(session_dir))
+                file_info = {
+                    'name': item.name,
+                    'path': relative_path,
+                    'size': item.stat().st_size,
+                    'type': item.suffix.lower().lstrip('.') or 'file',
+                    'category': categorize_file(item)
+                }
+                files.append(file_info)
+    except Exception as e:
+        print(f"❌ Error extracting file structure: {e}")
+    
+    return files
+
+def categorize_file(file_path: Path) -> str:
+    """Categorize file based on extension and path"""
+    ext = file_path.suffix.lower()
+    path_str = str(file_path).lower()
+    
+    if ext in ['.obj', '.fbx', '.dae', '.gltf']:
+        return '3D Model'
+    elif ext in ['.png', '.jpg', '.jpeg', '.tiff']:
+        return 'Texture'
+    elif ext in ['.blend']:
+        return 'Blender File'
+    elif ext in ['.py']:
+        return 'Python Script'
+    elif ext in ['.json']:
+        return 'Data File'
+    elif ext in ['.gd', '.cs']:
+        return 'Game Script'
+    elif ext in ['.tscn', '.scene']:
+        return 'Game Scene'
+    elif ext in ['.md', '.txt']:
+        return 'Documentation'
+    else:
+        return 'Other'
+
 def find_godot_package(generation_id: str) -> Path:
     """Find the Godot package for this generation"""
     try:
@@ -190,7 +460,7 @@ def find_godot_package(generation_id: str) -> Path:
             Path.cwd() / 'generated_content',
             PROJECT_ROOT / 'godot_export',
             Path.cwd() / 'godot_export',
-            PROJECT_ROOT / 'godot_export' / 'GodotProject',  # Specific path from your file explorer
+            PROJECT_ROOT / 'godot_export' / 'GodotProject',
             Path.cwd() / 'godot_export' / 'GodotProject'
         ]
         
@@ -198,10 +468,6 @@ def find_godot_package(generation_id: str) -> Path:
             print(f"🔍 Checking location: {location}")
             if location.exists():
                 print(f"✅ Location exists: {location}")
-                
-                # List contents
-                contents = list(location.rglob('*'))
-                print(f"📂 Found {len(contents)} items in {location}")
                 
                 # Look for Godot projects (folders with project.godot)
                 godot_projects = list(location.rglob('project.godot'))
@@ -218,7 +484,7 @@ def find_godot_package(generation_id: str) -> Path:
                     print(f"✅ Found GodotProject directory: {most_recent_dir}")
                     return create_package_from_godot(most_recent_dir, generation_id)
                 
-                # Look for directories with Godot-like structure (has assets, scenes, scripts)
+                # Look for directories with Godot-like structure
                 for subdir in location.rglob('*'):
                     if subdir.is_dir():
                         subdirs = [d.name for d in subdir.iterdir() if d.is_dir()]
@@ -226,15 +492,12 @@ def find_godot_package(generation_id: str) -> Path:
                             print(f"✅ Found Godot-like project structure: {subdir}")
                             return create_package_from_godot(subdir, generation_id)
                 
-                # Look for any recent directories with content
+                # Look for recent directories with content
                 recent_dirs = [d for d in location.rglob('*') if d.is_dir() and len(list(d.iterdir())) > 0]
                 if recent_dirs:
                     most_recent_dir = max(recent_dirs, key=lambda p: p.stat().st_mtime)
                     print(f"✅ Found recent content directory: {most_recent_dir}")
                     return create_package_from_directory(most_recent_dir, generation_id)
-                    
-            else:
-                print(f"❌ Location doesn't exist: {location}")
         
         print(f"❌ No packages found in any location")
         return None
@@ -253,16 +516,6 @@ def create_package_from_godot(godot_dir: Path, generation_id: str) -> Path:
         
         print(f"📦 Creating Godot package from: {godot_dir}")
         print(f"📥 Package will be saved as: {package_path}")
-        
-        # List what we're actually including in the package
-        print(f"📂 Contents to be packaged:")
-        for item in godot_dir.rglob('*'):
-            if item.is_file():
-                relative_path = item.relative_to(godot_dir)
-                print(f"  📄 {relative_path}")
-            elif item.is_dir() and item != godot_dir:
-                relative_path = item.relative_to(godot_dir)
-                print(f"  📁 {relative_path}/")
         
         # Create zip file of the entire godot project directory
         print(f"🗜️ Creating archive...")
@@ -304,9 +557,7 @@ def create_package_from_directory(content_dir: Path, generation_id: str) -> Path
         return None
 
 def call_your_orchestrator(prompt: str):
-    """
-    Call your existing orchestrator class correctly
-    """
+    """Call your existing orchestrator class correctly"""
     try:
         print(f"🚀 Importing orchestrator...")
         
@@ -399,6 +650,14 @@ def run_generation_pipeline(generation_id: str, prompt: str):
             # Store the result
             job.result_data = result
             
+            # Load detailed generation information
+            # Find the most recent session directory
+            session_dirs = list(GENERATED_FOLDER.glob('*'))
+            if session_dirs:
+                most_recent_session = max(session_dirs, key=lambda p: p.stat().st_mtime)
+                print(f"📂 Loading details from: {most_recent_session}")
+                load_generation_details(most_recent_session, job)
+            
         finally:
             # Always change back to original directory
             os.chdir(original_cwd)
@@ -445,12 +704,13 @@ def api_docs():
                 'response': {'generation_id': 'string', 'status': 'string', 'message': 'string'}
             },
             'GET /api/progress/{id}': {
-                'description': 'Get generation progress and agent status',
+                'description': 'Get generation progress and agent status with detailed information',
                 'response': {
                     'status': 'string (starting|in_progress|completed|failed)',
                     'progress': 'number (0-100)',
                     'message': 'string',
                     'agents': 'object (agent statuses)',
+                    'generation_details': 'object (detailed generation information)',
                     'download_url': 'string (when completed)'
                 }
             },
@@ -462,21 +722,7 @@ def api_docs():
                 'description': 'Health check endpoint',
                 'response': {'status': 'healthy', 'timestamp': 'ISO string'}
             }
-        },
-        'example_prompts': [
-            'Create a spooky Halloween village with 5 NPCs and 3 interconnected quests',
-            'Generate a desert oasis trading post with merchants and treasure hunters',
-            'Build a medieval castle town with a blacksmith, tavern keeper, and royal guard',
-            'Create a cyberpunk city district with hackers, corporate agents, and underground rebels',
-            'Design a mystical forest with fairy NPCs and ancient tree spirits'
-        ],
-        'godot_features': [
-            'Complete Godot 4.3+ projects ready for import',
-            'GDScript files for player movement and NPC interaction',
-            'Scene files with proper node hierarchies',
-            'JSON data files for characters and quests',
-            'Documentation and setup instructions'
-        ]
+        }
     }
     return jsonify(docs)
 
