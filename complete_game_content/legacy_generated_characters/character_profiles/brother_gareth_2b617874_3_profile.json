@@ -1,0 +1,86 @@
+{
+  "id": "brother_gareth_2b617874_3",
+  "name": "Brother Gareth",
+  "title": "The Honest Family Head",
+  "description": "A 20-year-old Family Head with a honest nature.",
+  "backstory": "Brother Gareth has worked as a Family Head for many years.",
+  "personality": {
+    "primary_trait": "Honest",
+    "secondary_trait": "Ambitious",
+    "motivation": "To find adventure",
+    "fear": "The unknown",
+    "quirk": "Collects unusual items",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 3,
+    "health": 69,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 13,
+    "wisdom": 11,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Sister Aldric",
+      "relationship_type": "Ally",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "brother gareth_greeting",
+      "text": "Greetings! I'm Brother Gareth, the local Family Head.",
+      "speaker": "Brother Gareth",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "brother gareth_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "brother gareth_role",
+      "text": "As a Family Head, I to find adventure.",
+      "speaker": "Brother Gareth",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "house",
+  "role": "Family Head",
+  "quest_involvement": [],
+  "age": 20,
+  "appearance": "A 20-year-old Family Head with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "59956f8a-879e-4ad4-930c-bc23c166c587"
+}

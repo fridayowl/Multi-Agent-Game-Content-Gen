@@ -1,0 +1,39 @@
+{
+  "character_name": "Sister Gareth",
+  "dialogue_tree": [
+    {
+      "id": "sister gareth_greeting",
+      "text": "Greetings! I'm Sister Gareth, the local Archer.",
+      "speaker": "Sister Gareth",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sister gareth_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sister gareth_role",
+      "text": "As a Archer, I to protect others.",
+      "speaker": "Sister Gareth",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ]
+}

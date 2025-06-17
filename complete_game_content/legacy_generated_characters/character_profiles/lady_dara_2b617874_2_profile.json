@@ -1,0 +1,93 @@
+{
+  "id": "lady_dara_2b617874_2",
+  "name": "Lady Dara",
+  "title": "The Eccentric Knight",
+  "description": "A 40-year-old Knight with a eccentric nature.",
+  "backstory": "Lady Dara has worked as a Knight for many years.",
+  "personality": {
+    "primary_trait": "Eccentric",
+    "secondary_trait": "Energetic",
+    "motivation": "To protect others",
+    "fear": "The unknown",
+    "quirk": "Speaks to animals",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 2,
+    "health": 66,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Lady Hilda",
+      "relationship_type": "Rival",
+      "relationship_strength": 4,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sister Aldric",
+      "relationship_type": "Friend",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "lady dara_greeting",
+      "text": "Greetings! I'm Lady Dara, the local Knight.",
+      "speaker": "Lady Dara",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "lady dara_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "lady dara_role",
+      "text": "As a Knight, I to protect others.",
+      "speaker": "Lady Dara",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "shop",
+  "role": "Knight",
+  "quest_involvement": [],
+  "age": 40,
+  "appearance": "A 40-year-old Knight with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "831500e5-6afd-4706-ab35-a901f37cac9c"
+}

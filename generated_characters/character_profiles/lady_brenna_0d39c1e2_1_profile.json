@@ -1,0 +1,78 @@
+{
+  "id": "lady_brenna_0d39c1e2_1",
+  "name": "Lady Brenna",
+  "title": "The Brave Herbalist",
+  "description": "A 45-year-old Herbalist with a brave nature.",
+  "backstory": "Lady Brenna has worked as a Herbalist for many years.",
+  "personality": {
+    "primary_trait": "Brave",
+    "secondary_trait": "Mysterious",
+    "motivation": "To protect others",
+    "fear": "Being alone",
+    "quirk": "Always hums while working",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 5,
+    "health": 75,
+    "strength": 14,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [],
+  "dialogue_tree": [
+    {
+      "id": "lady brenna_greeting",
+      "text": "Greetings! I'm Lady Brenna, the local Herbalist.",
+      "speaker": "Lady Brenna",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "lady brenna_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "lady brenna_role",
+      "text": "As a Herbalist, I to protect others.",
+      "speaker": "Lady Brenna",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "shop",
+  "role": "Herbalist",
+  "quest_involvement": [],
+  "age": 45,
+  "appearance": "A 45-year-old Herbalist with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "97f97518-12b9-4415-8ed0-8a0a66ae775f"
+}

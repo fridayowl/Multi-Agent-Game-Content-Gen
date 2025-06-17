@@ -1,0 +1,50 @@
+{
+  "id": "side_quest_1_sir_edwin",
+  "title": "Personal Favor",
+  "description": "Sir Edwin needs help with a personal matter.",
+  "summary": "Help Sir Edwin with personal favor",
+  "giver_npc": "Sir Edwin",
+  "objectives": [
+    {
+      "id": "side_quest_1_obj_1",
+      "description": "Listen to the problem",
+      "type": "talk_to_npc",
+      "target": "Sir Edwin",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "side_quest_1_obj_2",
+      "description": "Help solve it",
+      "type": "talk_to_npc",
+      "target": "Sir Edwin",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    },
+    {
+      "id": "side_quest_1_obj_3",
+      "description": "Return for thanks",
+      "type": "talk_to_npc",
+      "target": "Sir Edwin",
+      "quantity": 1,
+      "optional": false,
+      "prerequisites": null
+    }
+  ],
+  "rewards": {
+    "experience": 50,
+    "gold": 25,
+    "items": [
+      "Thank You Gift"
+    ],
+    "relationship_changes": null
+  },
+  "prerequisites": null,
+  "level_requirement": 1,
+  "estimated_duration": "15-30 minutes",
+  "quest_type": "side",
+  "interconnected_quests": [],
+  "narrative_importance": "low"
+}

@@ -1,7 +1,7 @@
 {
   "generation_info": {
-    "timestamp": "2025-06-17T11:16:48.478128",
-    "theme": "spooky",
+    "timestamp": "2025-06-17T11:22:38.648804",
+    "theme": "desert",
     "world_size": [
       40,
       40
@@ -14,7 +14,7 @@
     "main_quests": 2,
     "side_quests": 1,
     "chain_quests": 0,
-    "interconnected_count": 3,
+    "interconnected_count": 0,
     "total_objectives": 11,
     "estimated_playtime": "1 hours 6 minutes"
   },
@@ -23,8 +23,8 @@
       "main_quest_1_brother_gareth",
       "side_quest_1_brother_gareth"
     ],
-    "Sister Fiona": [
-      "main_quest_2_sister_fiona"
+    "Master Aldric": [
+      "main_quest_2_master_aldric"
     ]
   },
   "quests": {
@@ -45,9 +45,9 @@
       "narrative_importance": "high",
       "quest_file": "quest_definitions/main_quest_1_brother_gareth.json"
     },
-    "main_quest_2_sister_fiona": {
+    "main_quest_2_master_aldric": {
       "title": "Ancient Secrets",
-      "giver_npc": "Sister Fiona",
+      "giver_npc": "Master Aldric",
       "type": "main",
       "level_requirement": 2,
       "objectives_count": 4,
@@ -58,7 +58,7 @@
       },
       "estimated_duration": "15-30 minutes",
       "narrative_importance": "high",
-      "quest_file": "quest_definitions/main_quest_2_sister_fiona.json"
+      "quest_file": "quest_definitions/main_quest_2_master_aldric.json"
     },
     "side_quest_1_brother_gareth": {
       "title": "Personal Favor",

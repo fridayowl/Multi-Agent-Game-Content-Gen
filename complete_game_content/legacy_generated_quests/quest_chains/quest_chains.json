@@ -1,0 +1,21 @@
+{
+  "main_chain_main_quest_1_lady_fiona": {
+    "type": "main",
+    "quests": [
+      "main_quest_1_lady_fiona"
+    ],
+    "connected_quests": [
+      "main_quest_2_lady_hilda"
+    ]
+  },
+  "main_chain_main_quest_2_lady_hilda": {
+    "type": "main",
+    "quests": [
+      "main_quest_2_lady_hilda"
+    ],
+    "connected_quests": [
+      "main_quest_1_lady_fiona",
+      "side_quest_1_lady_fiona"
+    ]
+  }
+}

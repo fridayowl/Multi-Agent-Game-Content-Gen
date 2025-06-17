@@ -4,18 +4,13 @@
     "quests": [
       "main_quest_1_brother_gareth"
     ],
-    "connected_quests": [
-      "main_quest_2_sister_fiona"
-    ]
+    "connected_quests": []
   },
-  "main_chain_main_quest_2_sister_fiona": {
+  "main_chain_main_quest_2_master_aldric": {
     "type": "main",
     "quests": [
-      "main_quest_2_sister_fiona"
+      "main_quest_2_master_aldric"
     ],
-    "connected_quests": [
-      "main_quest_1_brother_gareth",
-      "side_quest_1_brother_gareth"
-    ]
+    "connected_quests": []
   }
 }

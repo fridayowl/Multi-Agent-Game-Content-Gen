@@ -1,0 +1,39 @@
+{
+  "character_name": "Brother Gareth",
+  "dialogue_tree": [
+    {
+      "id": "brother gareth_greeting",
+      "text": "Greetings! I'm Brother Gareth, the local Knight.",
+      "speaker": "Brother Gareth",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "brother gareth_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "brother gareth_role",
+      "text": "As a Knight, I to find adventure.",
+      "speaker": "Brother Gareth",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ]
+}

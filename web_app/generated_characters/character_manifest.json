@@ -1,7 +1,7 @@
 {
   "generation_info": {
-    "timestamp": "2025-06-17T11:16:48.475813",
-    "theme": "spooky",
+    "timestamp": "2025-06-17T11:22:38.646294",
+    "theme": "desert",
     "world_size": [
       40,
       40
@@ -10,7 +10,7 @@
     "ai_enhanced": false,
     "creativity_level": "maximum",
     "uniqueness_guaranteed": true,
-    "session_id": "f8aeae2a"
+    "session_id": "4cc2d5ba"
   },
   "uniqueness_metrics": {
     "name_uniqueness": 1.0,
@@ -18,98 +18,98 @@
     "role_uniqueness": 1.0
   },
   "characters": {
-    "brother_gareth_f8aeae2a_0": {
+    "brother_gareth_4cc2d5ba_0": {
       "name": "Brother Gareth",
-      "title": "The Determined Servant",
-      "role": "Servant",
-      "age": 56,
-      "location": "house",
-      "personality_summary": "Determined, Loyal",
-      "motivation": "To seek knowledge",
-      "secret": "Has an interesting past",
-      "level": 7,
-      "health": 81,
-      "relationship_count": 3,
-      "dialogue_nodes": 2,
-      "unique_id": "d4379788-4128-45b7-92c9-f91aac27b80b",
-      "profile_file": "character_profiles/brother_gareth_f8aeae2a_0_profile.json",
-      "dialogue_file": "dialogue_trees/brother_gareth_f8aeae2a_0_dialogue.json"
-    },
-    "sister_fiona_f8aeae2a_1": {
-      "name": "Sister Fiona",
-      "title": "The Gentle Family Head",
-      "role": "Family Head",
-      "age": 48,
-      "location": "church",
-      "personality_summary": "Gentle, Loyal",
+      "title": "The Fierce Knight",
+      "role": "Knight",
+      "age": 54,
+      "location": "shop",
+      "personality_summary": "Fierce, Mysterious",
       "motivation": "To find adventure",
       "secret": "Has an interesting past",
-      "level": 6,
-      "health": 78,
-      "relationship_count": 2,
-      "dialogue_nodes": 2,
-      "unique_id": "9676c297-32bf-4159-b347-c43508c93c98",
-      "profile_file": "character_profiles/sister_fiona_f8aeae2a_1_profile.json",
-      "dialogue_file": "dialogue_trees/sister_fiona_f8aeae2a_1_dialogue.json"
-    },
-    "master_gareth_f8aeae2a_2": {
-      "name": "Master Gareth",
-      "title": "The Brave Resident",
-      "role": "Resident",
-      "age": 40,
-      "location": "house",
-      "personality_summary": "Brave, Optimistic",
-      "motivation": "To seek knowledge",
-      "secret": "Has an interesting past",
-      "level": 7,
-      "health": 81,
+      "level": 3,
+      "health": 69,
       "relationship_count": 1,
       "dialogue_nodes": 2,
-      "unique_id": "a794ab9f-432a-4fd3-9ccc-1d6514e0dbdb",
-      "profile_file": "character_profiles/master_gareth_f8aeae2a_2_profile.json",
-      "dialogue_file": "dialogue_trees/master_gareth_f8aeae2a_2_dialogue.json"
+      "unique_id": "aa90377f-c211-49dc-b5a5-e71e6f6f0516",
+      "profile_file": "character_profiles/brother_gareth_4cc2d5ba_0_profile.json",
+      "dialogue_file": "dialogue_trees/brother_gareth_4cc2d5ba_0_dialogue.json"
     },
-    "lady_gareth_f8aeae2a_3": {
-      "name": "Lady Gareth",
+    "master_aldric_4cc2d5ba_1": {
+      "name": "Master Aldric",
+      "title": "The Compassionate Family Head",
+      "role": "Family Head",
+      "age": 22,
+      "location": "house",
+      "personality_summary": "Compassionate, Curious",
+      "motivation": "To seek knowledge",
+      "secret": "Has an interesting past",
+      "level": 4,
+      "health": 72,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "87046a37-5bb1-4bee-bac3-8b399f5c7eef",
+      "profile_file": "character_profiles/master_aldric_4cc2d5ba_1_profile.json",
+      "dialogue_file": "dialogue_trees/master_aldric_4cc2d5ba_1_dialogue.json"
+    },
+    "sister_gareth_4cc2d5ba_2": {
+      "name": "Sister Gareth",
+      "title": "The Jovial Archer",
+      "role": "Archer",
+      "age": 25,
+      "location": "shop",
+      "personality_summary": "Jovial, Optimistic",
+      "motivation": "To protect others",
+      "secret": "Has an interesting past",
+      "level": 4,
+      "health": 72,
+      "relationship_count": 1,
+      "dialogue_nodes": 2,
+      "unique_id": "cfa2ef11-c139-411b-9873-1251f684f8b8",
+      "profile_file": "character_profiles/sister_gareth_4cc2d5ba_2_profile.json",
+      "dialogue_file": "dialogue_trees/sister_gareth_4cc2d5ba_2_dialogue.json"
+    },
+    "lady_fiona_4cc2d5ba_3": {
+      "name": "Lady Fiona",
       "title": "The Clever Noble",
       "role": "Noble",
-      "age": 27,
+      "age": 53,
       "location": "house",
       "personality_summary": "Clever, Curious",
       "motivation": "To discover truth",
       "secret": "Has an interesting past",
-      "level": 7,
-      "health": 81,
-      "relationship_count": 1,
+      "level": 3,
+      "health": 69,
+      "relationship_count": 0,
       "dialogue_nodes": 2,
-      "unique_id": "0efadada-e258-4d7b-beb7-a413aa47e20c",
-      "profile_file": "character_profiles/lady_gareth_f8aeae2a_3_profile.json",
-      "dialogue_file": "dialogue_trees/lady_gareth_f8aeae2a_3_dialogue.json"
+      "unique_id": "5ce9a388-88f8-474e-bc7a-9cbc46dd812e",
+      "profile_file": "character_profiles/lady_fiona_4cc2d5ba_3_profile.json",
+      "dialogue_file": "dialogue_trees/lady_fiona_4cc2d5ba_3_dialogue.json"
     },
-    "sir_gareth_f8aeae2a_4": {
-      "name": "Sir Gareth",
-      "title": "The Jovial Healer",
-      "role": "Healer",
-      "age": 37,
-      "location": "church",
-      "personality_summary": "Jovial, Cautious",
-      "motivation": "To seek knowledge",
+    "master_fiona_4cc2d5ba_4": {
+      "name": "Master Fiona",
+      "title": "The Inventive Scholar",
+      "role": "Scholar",
+      "age": 26,
+      "location": "shop",
+      "personality_summary": "Inventive, Loyal",
+      "motivation": "To protect others",
       "secret": "Has an interesting past",
-      "level": 7,
-      "health": 81,
-      "relationship_count": 1,
+      "level": 2,
+      "health": 66,
+      "relationship_count": 2,
       "dialogue_nodes": 2,
-      "unique_id": "61dd4432-21fd-4eac-b9dc-f66befbf092f",
-      "profile_file": "character_profiles/sir_gareth_f8aeae2a_4_profile.json",
-      "dialogue_file": "dialogue_trees/sir_gareth_f8aeae2a_4_dialogue.json"
+      "unique_id": "77bfd991-2457-432e-b4f6-0bb65e3dfeb8",
+      "profile_file": "character_profiles/master_fiona_4cc2d5ba_4_profile.json",
+      "dialogue_file": "dialogue_trees/master_fiona_4cc2d5ba_4_dialogue.json"
     }
   },
   "relationships_summary": {
-    "total_relationships": 8,
+    "total_relationships": 6,
     "relationship_types": [
-      "Friend",
-      "Neighbor",
-      "Acquaintance"
+      "Rival",
+      "Acquaintance",
+      "Neighbor"
     ],
     "relationship_map_file": "relationship_maps/relationship_map.json"
   },

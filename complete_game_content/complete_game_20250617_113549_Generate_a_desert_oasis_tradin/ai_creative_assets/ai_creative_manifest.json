@@ -1,0 +1,4089 @@
+{
+  "theme": "desert",
+  "ai_generated": true,
+  "creative_features": {
+    "unique_designs": true,
+    "ai_textures": true,
+    "creative_variations": true,
+    "procedural_diversity": true
+  },
+  "buildings": [
+    {
+      "id": "shop_0",
+      "type": "shop",
+      "position": {
+        "x": 32.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert shop",
+      "creative_variations": [
+        "Standard shop",
+        "Enhanced shop"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_1",
+      "type": "house",
+      "position": {
+        "x": 6.071624276132097,
+        "y": 34.108150093464516,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_2",
+      "type": "house",
+      "position": {
+        "x": 6.483528972072144,
+        "y": 18.09096466749172,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_3",
+      "type": "house",
+      "position": {
+        "x": 7.448605441639293,
+        "y": 6.29025263572232,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    },
+    {
+      "id": "house_4",
+      "type": "house",
+      "position": {
+        "x": 31.992117988957585,
+        "y": 9.093264082898635,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert house",
+      "creative_variations": [
+        "Standard house",
+        "Enhanced house"
+      ],
+      "creativity_score": 2
+    }
+  ],
+  "props": [
+    {
+      "id": "palm_tree_0_17.0_0.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 17.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "dense",
+        "leaf_type": "palm",
+        "seasonal_state": "winter",
+        "bark_texture": "rough",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1962372831795935,
+        "width_multiplier": 1.2887940305176708,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.22446565367969473
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_d5b4d193.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_d538d5db.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_0_17.0_0.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "912faffe"
+    },
+    {
+      "id": "sand_dune_1_36.0_0.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 36.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.034114442088125,
+        "width_multiplier": 1.172362016788802,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3306233926284805
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_db95eed4.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_1_36.0_0.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "1c6ed5bd"
+    },
+    {
+      "id": "cactus_2_12.0_1.0",
+      "type": "cactus",
+      "position": {
+        "x": 12.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.443816137456682,
+        "width_multiplier": 0.8091210325497041,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.1023103994200214
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_44f88216.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_2_12.0_1.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "543d6adb"
+    },
+    {
+      "id": "palm_tree_3_21.0_1.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 21.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "dense",
+        "leaf_type": "palm",
+        "seasonal_state": "winter",
+        "bark_texture": "scarred",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0060314240705956,
+        "width_multiplier": 1.2902958513255194,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.23151484077459247
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_4bd80fdc.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_21d7d631.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_3_21.0_1.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "f7024629"
+    },
+    {
+      "id": "cactus_4_23.0_2.0",
+      "type": "cactus",
+      "position": {
+        "x": 23.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "vibrant",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1575420826213607,
+        "width_multiplier": 1.2049534486083595,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.23241312672657383
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_0ad8481c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_4_23.0_2.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "d0b710c3"
+    },
+    {
+      "id": "sand_dune_5_37.0_2.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 37.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "natural",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3294036029992276,
+        "width_multiplier": 1.1650220767672108,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.24020988097153237
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_4f91dc71.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_5_37.0_2.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "0da930a5"
+    },
+    {
+      "id": "oasis_rock_6_10.0_3.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 10.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2359668693305217,
+        "width_multiplier": 1.2552791990156589,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.15124954727106588
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_4c03d371.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_6_10.0_3.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "2f7c29b3"
+    },
+    {
+      "id": "cactus_7_13.0_3.0",
+      "type": "cactus",
+      "position": {
+        "x": 13.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3093828497439102,
+        "width_multiplier": 1.0509675014907787,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.23784727011168186
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_0e8a832a.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_7_13.0_3.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "74e5e95d"
+    },
+    {
+      "id": "sand_dune_8_27.0_3.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 27.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4500819857968121,
+        "width_multiplier": 0.8729142858412209,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.12351494160304219
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_9ba459d5.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_8_27.0_3.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "fbe3cc09"
+    },
+    {
+      "id": "cactus_9_1.0_4.0",
+      "type": "cactus",
+      "position": {
+        "x": 1.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "natural",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4702545204820379,
+        "width_multiplier": 1.1733559886027394,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.3986816379384791
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_626411c8.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_9_1.0_4.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "8e97c786"
+    },
+    {
+      "id": "palm_tree_10_3.0_4.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 3.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "dense",
+        "leaf_type": "palm",
+        "seasonal_state": "summer",
+        "bark_texture": "smooth",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3997776318511412,
+        "width_multiplier": 0.8899228221008704,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.22667173157432255
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_f616dc5e.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_ca1c1eba.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_10_3.0_4.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "f79e80e3"
+    },
+    {
+      "id": "palm_tree_11_16.0_4.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 16.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "dense",
+        "leaf_type": "palm",
+        "seasonal_state": "winter",
+        "bark_texture": "smooth",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2048081884541908,
+        "width_multiplier": 1.2337939810514675,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.10421129223527026
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_1dd7cc2c.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_1a575c9f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_11_16.0_4.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "e45005f7"
+    },
+    {
+      "id": "palm_tree_12_37.0_4.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 37.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "medium",
+        "leaf_type": "palm",
+        "seasonal_state": "winter",
+        "bark_texture": "mossy",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0163410430313153,
+        "width_multiplier": 0.8230158358074111,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.3018185272205919
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_123fb8e7.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_1a87a6a5.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_12_37.0_4.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "4b638146"
+    },
+    {
+      "id": "cactus_13_2.0_5.0",
+      "type": "cactus",
+      "position": {
+        "x": 2.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.066774040853942,
+        "width_multiplier": 1.0244330125821537,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.1929087291319569
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_f524c664.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_13_2.0_5.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "f9187079"
+    },
+    {
+      "id": "desert_flower_14_19.0_5.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 19.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1554278939075613,
+        "width_multiplier": 1.2860925012438318,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3542708439557769
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_6ff16c15.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_14_19.0_5.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "3256db08"
+    },
+    {
+      "id": "palm_tree_15_34.0_5.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 34.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "dense",
+        "leaf_type": "palm",
+        "seasonal_state": "autumn",
+        "bark_texture": "mossy",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3096602980012433,
+        "width_multiplier": 1.0747943140923053,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.13536840775162495
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_87a1718d.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_2f2f4a29.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_15_34.0_5.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "b634ec3e"
+    },
+    {
+      "id": "cactus_16_16.0_6.0",
+      "type": "cactus",
+      "position": {
+        "x": 16.0,
+        "y": 6.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9663075936618398,
+        "width_multiplier": 0.9694156040930227,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.200164525581127
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_6360f7ef.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_16_16.0_6.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "ad9cb7ec"
+    },
+    {
+      "id": "desert_flower_17_14.0_7.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 14.0,
+        "y": 7.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.172408735661049,
+        "width_multiplier": 0.8898806432955575,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.22423954951506944
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_6075fd0c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_17_14.0_7.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "9d3d4f2a"
+    },
+    {
+      "id": "cactus_18_20.0_7.0",
+      "type": "cactus",
+      "position": {
+        "x": 20.0,
+        "y": 7.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9146189647309567,
+        "width_multiplier": 0.9822081875011508,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.3254956577927464
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_7ff09984.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_18_20.0_7.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "7c90d685"
+    },
+    {
+      "id": "desert_flower_19_0.0_8.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 0.0,
+        "y": 8.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1674460088336966,
+        "width_multiplier": 1.0292746528614178,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3734285408062651
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_f772ffba.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_19_0.0_8.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "82fa1e51"
+    },
+    {
+      "id": "cactus_20_16.0_8.0",
+      "type": "cactus",
+      "position": {
+        "x": 16.0,
+        "y": 8.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "natural",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1486549952509528,
+        "width_multiplier": 0.8251641618790877,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.24147661644405352
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_2408cc8f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_20_16.0_8.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "0fdcef67"
+    },
+    {
+      "id": "desert_flower_21_17.0_8.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 17.0,
+        "y": 8.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "natural",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1467147104763395,
+        "width_multiplier": 0.8748439971125029,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3235340863143942
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_4032ebb7.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_21_17.0_8.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "d4029034"
+    },
+    {
+      "id": "sand_dune_22_1.0_9.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 1.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.14040294637503,
+        "width_multiplier": 1.0630813362674565,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.3413358321659531
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_c97e9558.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_22_1.0_9.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "7b5b0a3a"
+    },
+    {
+      "id": "desert_flower_23_11.0_9.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 11.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0514485271386083,
+        "width_multiplier": 0.908896745884866,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3884727748548026
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_e252d307.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_23_11.0_9.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "db2a6489"
+    },
+    {
+      "id": "sand_dune_24_17.0_9.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 17.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8122579379407439,
+        "width_multiplier": 0.9054218228432818,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.2942590218965635
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_9229566e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_24_17.0_9.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "089c9b13"
+    },
+    {
+      "id": "cactus_25_26.0_9.0",
+      "type": "cactus",
+      "position": {
+        "x": 26.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.088990323158663,
+        "width_multiplier": 0.874760835406414,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.37409787500481995
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_987131a9.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_25_26.0_9.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "0e9f5113"
+    },
+    {
+      "id": "desert_flower_26_15.0_10.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 15.0,
+        "y": 10.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3790607363600258,
+        "width_multiplier": 1.1705934774822047,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.38966315317688205
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_a63d45f6.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_26_15.0_10.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "206fafe0"
+    },
+    {
+      "id": "palm_tree_27_26.0_10.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 26.0,
+        "y": 10.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "medium",
+        "leaf_type": "palm",
+        "seasonal_state": "spring",
+        "bark_texture": "mossy",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3223663574348228,
+        "width_multiplier": 0.946476074620402,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.28111534130982097
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_13ed5b1a.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_2d091684.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_27_26.0_10.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "6dc873f9"
+    },
+    {
+      "id": "oasis_rock_28_1.0_11.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 1.0,
+        "y": 11.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9199265552711792,
+        "width_multiplier": 1.2874882902027005,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3047025126815731
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_83609fcb.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_28_1.0_11.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "aeb4251f"
+    },
+    {
+      "id": "sand_dune_29_9.0_11.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 9.0,
+        "y": 11.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "natural",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1860922547991264,
+        "width_multiplier": 1.0020598585318683,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.14657131606155036
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_c2cfcd9e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_29_9.0_11.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "4c25bb0f"
+    },
+    {
+      "id": "cactus_30_2.0_12.0",
+      "type": "cactus",
+      "position": {
+        "x": 2.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "vibrant",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9768783722732574,
+        "width_multiplier": 1.0661288706410121,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.17300488684459414
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_15b05f47.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_30_2.0_12.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "144266ac"
+    },
+    {
+      "id": "desert_flower_31_4.0_12.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 4.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3378380008769413,
+        "width_multiplier": 0.9272178078107718,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.11914801602713664
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_5e39051f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_31_4.0_12.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "bf828a8d"
+    },
+    {
+      "id": "oasis_rock_32_13.0_12.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 13.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4593471986791338,
+        "width_multiplier": 1.2514372463547832,
+        "complexity": "simple",
+        "detail_count": 2,
+        "asymmetry_factor": 0.11597985523299986
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_49d4dc21.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_32_13.0_12.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "5f5a2c91"
+    },
+    {
+      "id": "palm_tree_33_8.0_13.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 8.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "dense",
+        "leaf_type": "palm",
+        "seasonal_state": "summer",
+        "bark_texture": "scarred",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3814560284499826,
+        "width_multiplier": 1.136778598157683,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.36095030582270593
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_f56264ad.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_be5640f5.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_33_8.0_13.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "c9ef2c67"
+    },
+    {
+      "id": "sand_dune_34_6.0_14.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 6.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3366805484965725,
+        "width_multiplier": 1.2193685248039248,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.2597255654622167
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_37b7c651.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_34_6.0_14.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "6df7f143"
+    },
+    {
+      "id": "sand_dune_35_26.0_14.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 26.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1738207356644663,
+        "width_multiplier": 1.101843771444412,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.16478881512379218
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_f15e2967.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_35_26.0_14.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "a5b2a3b1"
+    },
+    {
+      "id": "palm_tree_36_0.0_15.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 0.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "sparse",
+        "leaf_type": "palm",
+        "seasonal_state": "winter",
+        "bark_texture": "smooth",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.225008409429392,
+        "width_multiplier": 1.2333929844119509,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.22401114312957704
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_b740c871.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_438b43de.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_36_0.0_15.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "a7d4e5aa"
+    },
+    {
+      "id": "palm_tree_37_20.0_15.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 20.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "dense",
+        "leaf_type": "palm",
+        "seasonal_state": "autumn",
+        "bark_texture": "scarred",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2681067541447724,
+        "width_multiplier": 1.2991855870991629,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.31497899859265965
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_fca35b6b.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_97e7e591.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_37_20.0_15.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "a6fdfb7e"
+    },
+    {
+      "id": "cactus_38_24.0_15.0",
+      "type": "cactus",
+      "position": {
+        "x": 24.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "monochrome",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3024527520001663,
+        "width_multiplier": 1.1264604806563607,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.2705672178174332
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_4df89f50.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_38_24.0_15.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "0d88c6ac"
+    },
+    {
+      "id": "cactus_39_28.0_15.0",
+      "type": "cactus",
+      "position": {
+        "x": 28.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.104870244563913,
+        "width_multiplier": 1.1142786135801013,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.2955290829835846
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_226532fe.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_39_28.0_15.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "543d6adb"
+    },
+    {
+      "id": "oasis_rock_40_34.0_15.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 34.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1018906417351588,
+        "width_multiplier": 1.0727344244440469,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.15281311984109797
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_7ad85527.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_40_34.0_15.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "ef02adee"
+    },
+    {
+      "id": "sand_dune_41_3.0_16.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 3.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8869100985295095,
+        "width_multiplier": 0.8523719971447191,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.38185826513238863
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_06364403.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_41_3.0_16.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "2cc0e6ae"
+    },
+    {
+      "id": "oasis_rock_42_20.0_16.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 20.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8108640698632034,
+        "width_multiplier": 0.8138765452180181,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.28507972649379265
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_558d2cd1.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_42_20.0_16.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "8b3a741c"
+    },
+    {
+      "id": "oasis_rock_43_32.0_16.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 32.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8772064001869567,
+        "width_multiplier": 1.1426892997049265,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.2590904053286982
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_650206b9.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_43_32.0_16.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "bffd104b"
+    },
+    {
+      "id": "palm_tree_44_35.0_16.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 35.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "medium",
+        "leaf_type": "palm",
+        "seasonal_state": "summer",
+        "bark_texture": "smooth",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.829140880977873,
+        "width_multiplier": 0.94578055052084,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.20659687357072756
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_0b122ccc.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_fae74020.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_44_35.0_16.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "d5dadeea"
+    },
+    {
+      "id": "oasis_rock_45_21.0_17.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 21.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.22032033080969,
+        "width_multiplier": 0.9485842803872575,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.24111312111971764
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_7bf5cab9.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_45_21.0_17.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "ec6ffbfd"
+    },
+    {
+      "id": "oasis_rock_46_16.0_18.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 16.0,
+        "y": 18.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4956069133615646,
+        "width_multiplier": 1.2558215457103703,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.3272673173002243
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_a1f9a1cc.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_46_16.0_18.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "2a20ce35"
+    },
+    {
+      "id": "palm_tree_47_26.0_18.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 26.0,
+        "y": 18.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "medium",
+        "leaf_type": "palm",
+        "seasonal_state": "spring",
+        "bark_texture": "smooth",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0580265899036874,
+        "width_multiplier": 0.8505562335416226,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.32892131091122845
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_e654ee3f.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_72dbc199.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_47_26.0_18.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "7d74b700"
+    },
+    {
+      "id": "cactus_48_18.0_19.0",
+      "type": "cactus",
+      "position": {
+        "x": 18.0,
+        "y": 19.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.125920524184156,
+        "width_multiplier": 0.9851121165950336,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.30563156307800476
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_f1d2b9f8.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_48_18.0_19.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "b2526169"
+    },
+    {
+      "id": "desert_flower_49_23.0_19.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 23.0,
+        "y": 19.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4912761826097385,
+        "width_multiplier": 1.123460696925574,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.2191648870756729
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_8cff7b68.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_49_23.0_19.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "119f279f"
+    },
+    {
+      "id": "oasis_rock_50_25.0_19.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 25.0,
+        "y": 19.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9235382040332148,
+        "width_multiplier": 0.9176928106815047,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.39902446173924744
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_f797b281.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_50_25.0_19.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "db9a785d"
+    },
+    {
+      "id": "palm_tree_51_16.0_20.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 16.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "sparse",
+        "leaf_type": "palm",
+        "seasonal_state": "summer",
+        "bark_texture": "scarred",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9217369591066842,
+        "width_multiplier": 0.8219499915448674,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3069187493147927
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_1e3f23c5.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_ea8c9e43.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_51_16.0_20.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "dcff4cf9"
+    },
+    {
+      "id": "palm_tree_52_19.0_20.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 19.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "sparse",
+        "leaf_type": "palm",
+        "seasonal_state": "autumn",
+        "bark_texture": "smooth",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.271765880926101,
+        "width_multiplier": 0.9831730386193588,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.12795784825641213
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_b7e4deb9.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_8dbb022a.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_52_19.0_20.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "eda3778a"
+    },
+    {
+      "id": "sand_dune_53_37.0_20.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 37.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1458255660569896,
+        "width_multiplier": 0.857266759719492,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.20649435547967268
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_ce8685d0.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_53_37.0_20.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "d191d97c"
+    },
+    {
+      "id": "cactus_54_1.0_21.0",
+      "type": "cactus",
+      "position": {
+        "x": 1.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2538115277766622,
+        "width_multiplier": 1.1212330258484409,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.28643156297693534
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_c358c2a9.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_54_1.0_21.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "dc89341f"
+    },
+    {
+      "id": "sand_dune_55_17.0_21.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 17.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "monochrome",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3869144365860397,
+        "width_multiplier": 0.8717034431994648,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.3280827545734901
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_9c1b23a5.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_55_17.0_21.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "3b67f4fc"
+    },
+    {
+      "id": "cactus_56_24.0_21.0",
+      "type": "cactus",
+      "position": {
+        "x": 24.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "monochrome",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9423835607252233,
+        "width_multiplier": 1.1541738944623994,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.308645739141432
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_dae73a57.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_56_24.0_21.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "287462ce"
+    },
+    {
+      "id": "cactus_57_36.0_21.0",
+      "type": "cactus",
+      "position": {
+        "x": 36.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2095703026161755,
+        "width_multiplier": 1.0796938121817696,
+        "complexity": "complex",
+        "detail_count": 5,
+        "asymmetry_factor": 0.16535439331670032
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_c9103d6f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_57_36.0_21.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "34b3eaba"
+    },
+    {
+      "id": "palm_tree_58_11.0_22.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 11.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "sparse",
+        "leaf_type": "palm",
+        "seasonal_state": "summer",
+        "bark_texture": "scarred",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3380184135546096,
+        "width_multiplier": 1.0209135906801687,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.10763515799133591
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_e73e54e1.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_2582f90f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_58_11.0_22.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "dcff4cf9"
+    },
+    {
+      "id": "cactus_59_13.0_22.0",
+      "type": "cactus",
+      "position": {
+        "x": 13.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.289941639521166,
+        "width_multiplier": 1.0748618616347927,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.183550936294406
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_f5ff1d0c.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_59_13.0_22.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "0a47886e"
+    },
+    {
+      "id": "palm_tree_60_14.0_22.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 14.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "medium",
+        "leaf_type": "palm",
+        "seasonal_state": "summer",
+        "bark_texture": "rough",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0047828659488671,
+        "width_multiplier": 1.1443660163092584,
+        "complexity": "medium",
+        "detail_count": 2,
+        "asymmetry_factor": 0.31046036365048196
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_f898e8bf.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_6a28bf19.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_60_14.0_22.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "a7ac3d16"
+    },
+    {
+      "id": "desert_flower_61_21.0_22.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 21.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0254929822064351,
+        "width_multiplier": 1.0677571566642814,
+        "complexity": "complex",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3553421358400596
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_75c34fa5.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_61_21.0_22.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "1f30c675"
+    },
+    {
+      "id": "sand_dune_62_14.0_23.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 14.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8334728214178094,
+        "width_multiplier": 0.9652122514995589,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.33119325801074806
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_bd0719d2.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_62_14.0_23.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "089c9b13"
+    },
+    {
+      "id": "desert_flower_63_21.0_23.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 21.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.933839490407891,
+        "width_multiplier": 0.8620312260396725,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.28312615718138706
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_ca9fb2aa.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_63_21.0_23.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "00b4de6a"
+    },
+    {
+      "id": "desert_flower_64_36.0_23.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 36.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0418051451306585,
+        "width_multiplier": 0.8797988996712087,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.39313112600797717
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_bebd098e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_64_36.0_23.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "9b63f909"
+    },
+    {
+      "id": "cactus_65_10.0_24.0",
+      "type": "cactus",
+      "position": {
+        "x": 10.0,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3709598884091025,
+        "width_multiplier": 1.2409922618785283,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.18949450815028507
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_dc02eb21.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_65_10.0_24.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "7f1ba636"
+    },
+    {
+      "id": "palm_tree_66_21.0_24.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 21.0,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "sparse",
+        "leaf_type": "palm",
+        "seasonal_state": "autumn",
+        "bark_texture": "smooth",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1846157800918593,
+        "width_multiplier": 1.185822332418672,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.35490594479758863
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_141e6e7c.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_71146a62.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_66_21.0_24.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "eda3778a"
+    },
+    {
+      "id": "palm_tree_67_30.0_24.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 30.0,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "sparse",
+        "leaf_type": "palm",
+        "seasonal_state": "summer",
+        "bark_texture": "smooth",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8240739420906017,
+        "width_multiplier": 0.9796442827750245,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.39101562167147774
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_6fce44eb.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_95e9bfe0.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_67_30.0_24.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "72316629"
+    },
+    {
+      "id": "desert_flower_68_13.0_25.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 13.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3288463956015137,
+        "width_multiplier": 1.1901807593909135,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3988522752131407
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_069be1c2.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_68_13.0_25.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "b12e26f9"
+    },
+    {
+      "id": "oasis_rock_69_20.0_25.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 20.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "medium",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4163597501340972,
+        "width_multiplier": 1.0657224707283242,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.35338556391195364
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_f8609f24.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_69_20.0_25.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "4f2a850c"
+    },
+    {
+      "id": "sand_dune_70_28.0_25.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 28.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.831381474438412,
+        "width_multiplier": 0.8530184433736422,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.3341995730947913
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_ece415ac.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_70_28.0_25.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "3e09d218"
+    },
+    {
+      "id": "palm_tree_71_30.0_25.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 30.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "sparse",
+        "leaf_type": "palm",
+        "seasonal_state": "winter",
+        "bark_texture": "rough",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2082801183871434,
+        "width_multiplier": 1.1700550036974606,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.25826136345267314
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_0656d9e0.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_35572e9e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_71_30.0_25.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "4c5a3a1f"
+    },
+    {
+      "id": "sand_dune_72_2.0_26.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 2.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "weathered",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.244210003925911,
+        "width_multiplier": 1.277132216618346,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.19799089070488185
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_0b322093.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_72_2.0_26.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "6ae9ec7b"
+    },
+    {
+      "id": "oasis_rock_73_6.0_26.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 6.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.090819597841282,
+        "width_multiplier": 1.1753002814777926,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.13060578910887488
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_df84ad72.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_73_6.0_26.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "f06f00e0"
+    },
+    {
+      "id": "oasis_rock_74_30.0_26.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 30.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.450939541870271,
+        "width_multiplier": 1.183533251662895,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.30573462048707933
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_2cdb8240.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_74_30.0_26.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "3003f4f9"
+    },
+    {
+      "id": "cactus_75_31.0_26.0",
+      "type": "cactus",
+      "position": {
+        "x": 31.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "vibrant",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.376723298669629,
+        "width_multiplier": 1.1996439485166035,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.3521245204690324
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_f1023634.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_75_31.0_26.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "fee92315"
+    },
+    {
+      "id": "cactus_76_6.0_27.0",
+      "type": "cactus",
+      "position": {
+        "x": 6.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1261277197671629,
+        "width_multiplier": 0.9155355059592859,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.18516369654208573
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_071118af.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_76_6.0_27.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "4a672453"
+    },
+    {
+      "id": "oasis_rock_77_7.0_27.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 7.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1092753831622728,
+        "width_multiplier": 0.9359855728671946,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.2495056848523052
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_11b0c9dd.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_77_7.0_27.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "e052c99d"
+    },
+    {
+      "id": "palm_tree_78_23.0_27.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 23.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "dense",
+        "leaf_type": "palm",
+        "seasonal_state": "autumn",
+        "bark_texture": "rough",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3230684445667813,
+        "width_multiplier": 1.0344228375367814,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.39448782136273763
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_04acfa31.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_78f0c7fa.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_78_23.0_27.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "7f7a0644"
+    },
+    {
+      "id": "sand_dune_79_36.0_27.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 36.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1578558393283935,
+        "width_multiplier": 0.8241409803610369,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.2812126675651126
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_bed42b9b.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_79_36.0_27.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "27e610db"
+    },
+    {
+      "id": "oasis_rock_80_4.0_28.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 4.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3064587218143338,
+        "width_multiplier": 1.0631970000632156,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.20768970682935137
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_69d2f3c0.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_80_4.0_28.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "f7316e0d"
+    },
+    {
+      "id": "sand_dune_81_9.0_28.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 9.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9797325832790844,
+        "width_multiplier": 0.9138598983657092,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.14145272389974756
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_344a5f87.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_81_9.0_28.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "38a5c2f3"
+    },
+    {
+      "id": "desert_flower_82_17.0_28.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 17.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "weathered",
+        "color_scheme": "muted",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0383126044024207,
+        "width_multiplier": 1.2256894094285875,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.2132262802104309
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_0038bc5b.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_82_17.0_28.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "ca0cd2c7"
+    },
+    {
+      "id": "oasis_rock_83_18.0_28.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 18.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4268792890184883,
+        "width_multiplier": 0.9327768354961707,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.34935727246528725
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_e3d2fe2e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_83_18.0_28.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "1102dd04"
+    },
+    {
+      "id": "palm_tree_84_19.0_28.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 19.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "medium",
+        "leaf_type": "palm",
+        "seasonal_state": "summer",
+        "bark_texture": "mossy",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.475058320994577,
+        "width_multiplier": 1.155919840847196,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.1322172737946316
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_8df8d4b5.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_c623971a.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_84_19.0_28.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "b793e011"
+    },
+    {
+      "id": "cactus_85_33.0_28.0",
+      "type": "cactus",
+      "position": {
+        "x": 33.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9926607052860767,
+        "width_multiplier": 1.2542248153513298,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.3282344357089715
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_456424f8.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_85_33.0_28.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "9478b06c"
+    },
+    {
+      "id": "sand_dune_86_9.0_29.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 9.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "medium",
+        "texture": "weathered",
+        "color_scheme": "vibrant",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3434622603959911,
+        "width_multiplier": 1.121803660809054,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.28487372926052906
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_67d1bf3e.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_86_9.0_29.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "62349d7a"
+    },
+    {
+      "id": "sand_dune_87_22.0_29.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 22.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "weathered",
+        "color_scheme": "vibrant",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2137882486286187,
+        "width_multiplier": 1.0437561941366065,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.3282763674233147
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_1c8845c4.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_87_22.0_29.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "ee0d771d"
+    },
+    {
+      "id": "cactus_88_28.0_29.0",
+      "type": "cactus",
+      "position": {
+        "x": 28.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2475725441886132,
+        "width_multiplier": 1.02499841828927,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3621950480323659
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_5c9458d5.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_88_28.0_29.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "3d66da2f"
+    },
+    {
+      "id": "desert_flower_89_23.0_30.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 23.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8158644827882846,
+        "width_multiplier": 0.9363220688235003,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.39224076865624624
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_71cf9146.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_89_23.0_30.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "e272fed6"
+    },
+    {
+      "id": "oasis_rock_90_24.0_30.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 24.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "medium",
+        "texture": "smooth",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9935697412243206,
+        "width_multiplier": 1.171123175169018,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.152272436120107
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_2af3ab57.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_90_24.0_30.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "0d9a14c6"
+    },
+    {
+      "id": "palm_tree_91_34.0_30.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 34.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "sparse",
+        "leaf_type": "palm",
+        "seasonal_state": "winter",
+        "bark_texture": "mossy",
+        "height_variation": "dwarf"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9149560290632172,
+        "width_multiplier": 0.928129190523597,
+        "complexity": "medium",
+        "detail_count": 6,
+        "asymmetry_factor": 0.34216577448293156
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_36d10be8.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_3f9a91d4.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_91_34.0_30.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "8f685b2d"
+    },
+    {
+      "id": "cactus_92_36.0_30.0",
+      "type": "cactus",
+      "position": {
+        "x": 36.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3502864127340821,
+        "width_multiplier": 1.222560830873829,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.31004660211570934
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_02edb294.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_92_36.0_30.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "e8ce04bb"
+    },
+    {
+      "id": "cactus_93_2.0_31.0",
+      "type": "cactus",
+      "position": {
+        "x": 2.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0421123368506433,
+        "width_multiplier": 0.860408019478924,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.17575301994661496
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_dc0cbde5.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_93_2.0_31.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "296d8e90"
+    },
+    {
+      "id": "sand_dune_94_10.0_31.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 10.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "vibrant",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.198914619765004,
+        "width_multiplier": 0.9618036011833928,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.20391762325300705
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_238e4a06.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_94_10.0_31.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "70612c20"
+    },
+    {
+      "id": "desert_flower_95_29.0_31.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 29.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "natural",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0665995719285264,
+        "width_multiplier": 0.8476419884290298,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.328245532560901
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_49c86327.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_95_29.0_31.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "ffbc286c"
+    },
+    {
+      "id": "sand_dune_96_35.0_31.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 35.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "intricate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1925790267047132,
+        "width_multiplier": 1.1965150527147956,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.12362480232240988
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_f557deaf.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_96_35.0_31.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "707a8fdf"
+    },
+    {
+      "id": "desert_flower_97_38.0_31.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 38.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "natural",
+        "complexity": "simple"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4875096071469076,
+        "width_multiplier": 0.8824770996765335,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.3917442677138505
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_06b85de8.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_97_38.0_31.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "230fcc38"
+    },
+    {
+      "id": "desert_flower_98_17.0_32.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 17.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9639856848241422,
+        "width_multiplier": 1.2805444563952064,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.22627196930839003
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_7f418575.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_98_17.0_32.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "33bd8963"
+    },
+    {
+      "id": "palm_tree_99_35.0_32.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 35.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "medium",
+        "leaf_type": "palm",
+        "seasonal_state": "autumn",
+        "bark_texture": "mossy",
+        "height_variation": "normal"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.309808298933817,
+        "width_multiplier": 1.2158421957096839,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.10370772513337732
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_cd5a9591.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_b16f7552.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_99_35.0_32.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "62a2cee6"
+    },
+    {
+      "id": "oasis_rock_100_0.0_33.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 0.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "natural",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.14968451731267,
+        "width_multiplier": 0.8262076191016405,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.17208952794722074
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_2be7db82.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_100_0.0_33.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "21043670"
+    },
+    {
+      "id": "palm_tree_101_17.0_33.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 17.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "sparse",
+        "leaf_type": "palm",
+        "seasonal_state": "spring",
+        "bark_texture": "mossy",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.412792647901989,
+        "width_multiplier": 0.9872428785054035,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.2238847545972153
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_6f754975.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_c9d70fd6.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_101_17.0_33.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "4dd86913"
+    },
+    {
+      "id": "palm_tree_102_19.0_33.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 19.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "sparse",
+        "leaf_type": "palm",
+        "seasonal_state": "autumn",
+        "bark_texture": "smooth",
+        "height_variation": "tall"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0464289484362603,
+        "width_multiplier": 1.0340144467013925,
+        "complexity": "medium",
+        "detail_count": 3,
+        "asymmetry_factor": 0.16196629966378714
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_787ee753.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_cf77374f.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_102_19.0_33.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "95574bc4"
+    },
+    {
+      "id": "sand_dune_103_33.0_33.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 33.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "vibrant",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.4725273511502923,
+        "width_multiplier": 1.1224830888904995,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.23190600987278898
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_82517c51.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_103_33.0_33.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "1df7d064"
+    },
+    {
+      "id": "cactus_104_25.0_35.0",
+      "type": "cactus",
+      "position": {
+        "x": 25.0,
+        "y": 35.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.8128774714361658,
+        "width_multiplier": 0.950400681978089,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.2646860095631265
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_87f860af.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_104_25.0_35.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "62bfaf26"
+    },
+    {
+      "id": "oasis_rock_105_22.0_36.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 22.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3908195657060478,
+        "width_multiplier": 0.9911895700523576,
+        "complexity": "complex",
+        "detail_count": 2,
+        "asymmetry_factor": 0.1343535412470633
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_dee63267.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_105_22.0_36.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "5efdc54b"
+    },
+    {
+      "id": "desert_flower_106_37.0_36.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 37.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "organic",
+        "size": "large",
+        "texture": "rough",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.2630629878164734,
+        "width_multiplier": 0.8491607079511911,
+        "complexity": "complex",
+        "detail_count": 6,
+        "asymmetry_factor": 0.3153621731395423
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_cc16cb46.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_106_37.0_36.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "a3d3ae32"
+    },
+    {
+      "id": "oasis_rock_107_0.0_37.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 0.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "weathered",
+        "color_scheme": "monochrome",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.372061874903733,
+        "width_multiplier": 1.100286541034746,
+        "complexity": "medium",
+        "detail_count": 4,
+        "asymmetry_factor": 0.3752269888915212
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_24a832c8.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_107_0.0_37.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "a0320a61"
+    },
+    {
+      "id": "oasis_rock_108_26.0_37.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 26.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9966058809157138,
+        "width_multiplier": 1.152846124058383,
+        "complexity": "simple",
+        "detail_count": 3,
+        "asymmetry_factor": 0.24405291598214954
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_c049c479.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_108_26.0_37.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "da6537fa"
+    },
+    {
+      "id": "desert_flower_109_22.0_38.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 22.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.383211092519023,
+        "width_multiplier": 1.2086997578010086,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.11626187275871358
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_1618a46a.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_109_22.0_38.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "abbefc46"
+    },
+    {
+      "id": "cactus_110_32.0_38.0",
+      "type": "cactus",
+      "position": {
+        "x": 32.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert cactus with distinctive characteristics",
+      "creative_variations": [
+        "Standard cactus",
+        "Enhanced cactus"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "smooth",
+        "color_scheme": "muted",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 0.9857397529816379,
+        "width_multiplier": 1.2817928177326396,
+        "complexity": "simple",
+        "detail_count": 4,
+        "asymmetry_factor": 0.20708725975561035
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_0e145e27.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_cactus_110_32.0_38.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "a31c37e6"
+    },
+    {
+      "id": "sand_dune_111_33.0_38.0",
+      "type": "sand_dune",
+      "position": {
+        "x": 33.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert sand_dune with distinctive characteristics",
+      "creative_variations": [
+        "Standard sand_dune",
+        "Enhanced sand_dune"
+      ],
+      "style_parameters": {
+        "shape": "geometric",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.0757621118751044,
+        "width_multiplier": 1.2703562791007126,
+        "complexity": "simple",
+        "detail_count": 5,
+        "asymmetry_factor": 0.14677207838732126
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_0d00bc9d.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_sand_dune_111_33.0_38.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "c58291af"
+    },
+    {
+      "id": "desert_flower_112_7.0_39.0",
+      "type": "desert_flower",
+      "position": {
+        "x": 7.0,
+        "y": 39.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert desert_flower with distinctive characteristics",
+      "creative_variations": [
+        "Standard desert_flower",
+        "Enhanced desert_flower"
+      ],
+      "style_parameters": {
+        "shape": "angular",
+        "size": "small",
+        "texture": "detailed",
+        "color_scheme": "monochrome",
+        "complexity": "moderate"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.481682823707412,
+        "width_multiplier": 0.9727990979368373,
+        "complexity": "simple",
+        "detail_count": 6,
+        "asymmetry_factor": 0.22109227219958835
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_69177763.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_desert_flower_112_7.0_39.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "fc52fb9f"
+    },
+    {
+      "id": "palm_tree_113_27.0_39.0",
+      "type": "palm_tree",
+      "position": {
+        "x": 27.0,
+        "y": 39.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert palm_tree with distinctive characteristics",
+      "creative_variations": [
+        "Standard palm_tree",
+        "Enhanced palm_tree"
+      ],
+      "style_parameters": {
+        "trunk_style": "curved",
+        "canopy_shape": "palm_fronds",
+        "branch_density": "dense",
+        "leaf_type": "palm",
+        "seasonal_state": "spring",
+        "bark_texture": "scarred",
+        "height_variation": "giant"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.1328557225087375,
+        "width_multiplier": 1.0246794948921847,
+        "complexity": "complex",
+        "detail_count": 3,
+        "asymmetry_factor": 0.3013871437243767
+      },
+      "unique_textures": {
+        "bark": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/wood_desert_00e5f8f1.png",
+        "leaves": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/foliage_desert_6b16af93.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_palm_tree_113_27.0_39.0.py",
+      "creativity_score": 4,
+      "uniqueness_id": "0aed48ed"
+    },
+    {
+      "id": "oasis_rock_114_38.0_39.0",
+      "type": "oasis_rock",
+      "position": {
+        "x": 38.0,
+        "y": 39.0,
+        "z": 0.0
+      },
+      "ai_description": "A unique desert oasis_rock with distinctive characteristics",
+      "creative_variations": [
+        "Standard oasis_rock",
+        "Enhanced oasis_rock"
+      ],
+      "style_parameters": {
+        "shape": "round",
+        "size": "large",
+        "texture": "detailed",
+        "color_scheme": "muted",
+        "complexity": "complex"
+      },
+      "geometry_parameters": {
+        "height_multiplier": 1.3228876185151957,
+        "width_multiplier": 0.8097203562721149,
+        "complexity": "medium",
+        "detail_count": 5,
+        "asymmetry_factor": 0.14611401828165055
+      },
+      "unique_textures": {
+        "surface": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/ai_textures/generic_desert_bfdaf412.png"
+      },
+      "script_path": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets/blender_scripts/ai_prop_oasis_rock_114_38.0_39.0.py",
+      "creativity_score": 3,
+      "uniqueness_id": "10879ea9"
+    }
+  ],
+  "environment": [],
+  "ai_materials": {},
+  "generation_summary": {
+    "total_creative_assets": 120,
+    "unique_textures_generated": 141,
+    "ai_variations_created": 10,
+    "creative_complexity_score": 282.0,
+    "buildings_count": 5,
+    "props_count": 115,
+    "environment_count": 0
+  },
+  "output_directory": "complete_game_content/complete_game_20250617_113549_Generate_a_desert_oasis_tradin/ai_creative_assets"
+}

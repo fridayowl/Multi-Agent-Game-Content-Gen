@@ -1,0 +1,3742 @@
+{
+  "theme": "desert",
+  "size": [
+    40,
+    40
+  ],
+  "terrain_map": [
+    [
+      "sand",
+      "sand",
+      "stone",
+      "sand",
+      "water",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "water",
+      "stone",
+      "stone",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "water",
+      "sand",
+      "stone",
+      "stone",
+      "sand",
+      "water",
+      "sand",
+      "water",
+      "stone",
+      "sand",
+      "stone",
+      "sand",
+      "water",
+      "stone",
+      "water",
+      "water"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "sand",
+      "sand",
+      "stone",
+      "stone",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone"
+    ],
+    [
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "water",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "stone",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "stone",
+      "stone",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "stone",
+      "stone",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "stone",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "stone",
+      "stone",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "stone",
+      "sand",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "water",
+      "water",
+      "sand",
+      "sand",
+      "water",
+      "stone",
+      "water",
+      "water",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water"
+    ],
+    [
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "water",
+      "water",
+      "water",
+      "sand",
+      "sand",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "stone",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "water",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water"
+    ],
+    [
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "stone",
+      "sand",
+      "sand",
+      "stone",
+      "stone",
+      "water",
+      "sand",
+      "sand"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "water",
+      "stone",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "water",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "stone",
+      "stone",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "sand",
+      "water",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "sand",
+      "sand"
+    ],
+    [
+      "stone",
+      "water",
+      "water",
+      "water",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "sand",
+      "water",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "stone",
+      "water",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "stone",
+      "water",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "stone",
+      "water",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "water",
+      "sand",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "water",
+      "water",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "stone"
+    ],
+    [
+      "sand",
+      "sand",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "water",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "stone"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "stone"
+    ],
+    [
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "water",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand",
+      "sand"
+    ],
+    [
+      "water",
+      "water",
+      "stone",
+      "water",
+      "stone",
+      "sand",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "sand",
+      "sand",
+      "stone",
+      "water",
+      "sand",
+      "sand",
+      "water",
+      "water",
+      "water",
+      "stone",
+      "sand",
+      "water",
+      "water",
+      "stone",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "sand",
+      "sand",
+      "sand",
+      "water",
+      "stone",
+      "stone",
+      "sand",
+      "water",
+      "sand",
+      "sand",
+      "sand"
+    ]
+  ],
+  "buildings": [
+    {
+      "id": "building_0",
+      "type": "shop",
+      "position": {
+        "x": 32.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "rotation": 180.0,
+      "scale": 1.0,
+      "properties": {
+        "importance": "normal"
+      }
+    },
+    {
+      "id": "house_0",
+      "type": "house",
+      "position": {
+        "x": 6.071624276132097,
+        "y": 34.108150093464516,
+        "z": 0.0
+      },
+      "rotation": 120.00265921260265,
+      "scale": 0.8869600222523033,
+      "properties": {
+        "importance": "low",
+        "residential": true
+      }
+    },
+    {
+      "id": "house_1",
+      "type": "house",
+      "position": {
+        "x": 6.483528972072144,
+        "y": 18.09096466749172,
+        "z": 0.0
+      },
+      "rotation": 99.24373287931228,
+      "scale": 1.1847133247684907,
+      "properties": {
+        "importance": "low",
+        "residential": true
+      }
+    },
+    {
+      "id": "house_2",
+      "type": "house",
+      "position": {
+        "x": 7.448605441639293,
+        "y": 6.29025263572232,
+        "z": 0.0
+      },
+      "rotation": 48.01712215442256,
+      "scale": 0.9136065192146761,
+      "properties": {
+        "importance": "low",
+        "residential": true
+      }
+    },
+    {
+      "id": "house_3",
+      "type": "house",
+      "position": {
+        "x": 31.992117988957585,
+        "y": 9.093264082898635,
+        "z": 0.0
+      },
+      "rotation": 332.4287324512876,
+      "scale": 1.0605491254808972,
+      "properties": {
+        "importance": "low",
+        "residential": true
+      }
+    }
+  ],
+  "paths": [
+    {
+      "id": "side_path_0",
+      "start": {
+        "x": 6.071624276132097,
+        "y": 34.108150093464516,
+        "z": 0.0
+      },
+      "end": {
+        "x": 32.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "width": 2.0,
+      "surface_type": "dirt",
+      "properties": {
+        "type": "side_road",
+        "importance": "normal"
+      }
+    },
+    {
+      "id": "side_path_1",
+      "start": {
+        "x": 6.483528972072144,
+        "y": 18.09096466749172,
+        "z": 0.0
+      },
+      "end": {
+        "x": 32.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "width": 2.0,
+      "surface_type": "dirt",
+      "properties": {
+        "type": "side_road",
+        "importance": "normal"
+      }
+    },
+    {
+      "id": "side_path_2",
+      "start": {
+        "x": 7.448605441639293,
+        "y": 6.29025263572232,
+        "z": 0.0
+      },
+      "end": {
+        "x": 32.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "width": 2.0,
+      "surface_type": "dirt",
+      "properties": {
+        "type": "side_road",
+        "importance": "normal"
+      }
+    },
+    {
+      "id": "side_path_3",
+      "start": {
+        "x": 31.992117988957585,
+        "y": 9.093264082898635,
+        "z": 0.0
+      },
+      "end": {
+        "x": 32.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "width": 2.0,
+      "surface_type": "dirt",
+      "properties": {
+        "type": "side_road",
+        "importance": "normal"
+      }
+    }
+  ],
+  "natural_features": [
+    {
+      "id": "feature_0",
+      "type": "palm_tree",
+      "position": {
+        "x": 17.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "rotation": 258.28777560247585,
+      "scale": 1.0154589993556753,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_1",
+      "type": "sand_dune",
+      "position": {
+        "x": 36.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "rotation": 231.66916369438346,
+      "scale": 1.1884905110684998,
+      "properties": {
+        "terrain_type": "water",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_2",
+      "type": "cactus",
+      "position": {
+        "x": 12.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "rotation": 62.71138810858939,
+      "scale": 1.037985190375439,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_3",
+      "type": "palm_tree",
+      "position": {
+        "x": 21.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "rotation": 279.9523274571155,
+      "scale": 1.2316525251364654,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_4",
+      "type": "cactus",
+      "position": {
+        "x": 23.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "rotation": 162.89129559047737,
+      "scale": 0.8136247768997442,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_5",
+      "type": "sand_dune",
+      "position": {
+        "x": 37.0,
+        "y": 2.0,
+        "z": 0.0
+      },
+      "rotation": 313.86977831450866,
+      "scale": 1.224963714526698,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_6",
+      "type": "oasis_rock",
+      "position": {
+        "x": 10.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "rotation": 72.76246032522616,
+      "scale": 1.0055204736989398,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_7",
+      "type": "cactus",
+      "position": {
+        "x": 13.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "rotation": 6.897838076002536,
+      "scale": 0.7109790863981376,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_8",
+      "type": "sand_dune",
+      "position": {
+        "x": 27.0,
+        "y": 3.0,
+        "z": 0.0
+      },
+      "rotation": 79.75322156307439,
+      "scale": 1.003750906356448,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_9",
+      "type": "cactus",
+      "position": {
+        "x": 1.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "rotation": 127.10793765385714,
+      "scale": 0.7382918878519358,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_10",
+      "type": "palm_tree",
+      "position": {
+        "x": 3.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "rotation": 342.8621402210328,
+      "scale": 1.1193328612436266,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_11",
+      "type": "palm_tree",
+      "position": {
+        "x": 16.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "rotation": 91.85394943829246,
+      "scale": 1.1388645049537098,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_12",
+      "type": "palm_tree",
+      "position": {
+        "x": 37.0,
+        "y": 4.0,
+        "z": 0.0
+      },
+      "rotation": 11.863290122770946,
+      "scale": 0.7813137150827589,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_13",
+      "type": "cactus",
+      "position": {
+        "x": 2.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "rotation": 101.41701850373991,
+      "scale": 1.1954903344877201,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_14",
+      "type": "desert_flower",
+      "position": {
+        "x": 19.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "rotation": 27.698731371860394,
+      "scale": 0.7877363579197335,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_15",
+      "type": "palm_tree",
+      "position": {
+        "x": 34.0,
+        "y": 5.0,
+        "z": 0.0
+      },
+      "rotation": 113.96950279567497,
+      "scale": 0.8758909329150323,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_16",
+      "type": "cactus",
+      "position": {
+        "x": 16.0,
+        "y": 6.0,
+        "z": 0.0
+      },
+      "rotation": 333.68349076634144,
+      "scale": 0.9605645674618488,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_17",
+      "type": "desert_flower",
+      "position": {
+        "x": 14.0,
+        "y": 7.0,
+        "z": 0.0
+      },
+      "rotation": 108.85934302426872,
+      "scale": 0.9403289428143807,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_18",
+      "type": "cactus",
+      "position": {
+        "x": 20.0,
+        "y": 7.0,
+        "z": 0.0
+      },
+      "rotation": 99.33971570387695,
+      "scale": 0.8394720723913258,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_19",
+      "type": "desert_flower",
+      "position": {
+        "x": 0.0,
+        "y": 8.0,
+        "z": 0.0
+      },
+      "rotation": 109.65577341024719,
+      "scale": 1.271859152222067,
+      "properties": {
+        "terrain_type": "water",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_20",
+      "type": "cactus",
+      "position": {
+        "x": 16.0,
+        "y": 8.0,
+        "z": 0.0
+      },
+      "rotation": 322.68247459273846,
+      "scale": 0.9204794924853117,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_21",
+      "type": "desert_flower",
+      "position": {
+        "x": 17.0,
+        "y": 8.0,
+        "z": 0.0
+      },
+      "rotation": 337.2029607575246,
+      "scale": 1.2887462518071853,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_22",
+      "type": "sand_dune",
+      "position": {
+        "x": 1.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "rotation": 222.96513465775456,
+      "scale": 0.9280741033960103,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_23",
+      "type": "desert_flower",
+      "position": {
+        "x": 11.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "rotation": 302.5536503951909,
+      "scale": 1.2000633076516598,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_24",
+      "type": "sand_dune",
+      "position": {
+        "x": 17.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "rotation": 202.24492275794205,
+      "scale": 0.7558751924423079,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_25",
+      "type": "cactus",
+      "position": {
+        "x": 26.0,
+        "y": 9.0,
+        "z": 0.0
+      },
+      "rotation": 186.37174705981417,
+      "scale": 1.0810920814388576,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_26",
+      "type": "desert_flower",
+      "position": {
+        "x": 15.0,
+        "y": 10.0,
+        "z": 0.0
+      },
+      "rotation": 171.62279767470972,
+      "scale": 1.09925180299382,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_27",
+      "type": "palm_tree",
+      "position": {
+        "x": 26.0,
+        "y": 10.0,
+        "z": 0.0
+      },
+      "rotation": 11.650682576857697,
+      "scale": 0.7212055796690143,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_28",
+      "type": "oasis_rock",
+      "position": {
+        "x": 1.0,
+        "y": 11.0,
+        "z": 0.0
+      },
+      "rotation": 349.4792082430646,
+      "scale": 0.7641245249287061,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_29",
+      "type": "sand_dune",
+      "position": {
+        "x": 9.0,
+        "y": 11.0,
+        "z": 0.0
+      },
+      "rotation": 107.8216194242756,
+      "scale": 0.7223213409610563,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_30",
+      "type": "cactus",
+      "position": {
+        "x": 2.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "rotation": 264.49884061763265,
+      "scale": 1.0796066878658515,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_31",
+      "type": "desert_flower",
+      "position": {
+        "x": 4.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "rotation": 232.65070187262722,
+      "scale": 1.1868237060542968,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_32",
+      "type": "oasis_rock",
+      "position": {
+        "x": 13.0,
+        "y": 12.0,
+        "z": 0.0
+      },
+      "rotation": 335.18168533334625,
+      "scale": 1.1056611340536904,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_33",
+      "type": "palm_tree",
+      "position": {
+        "x": 8.0,
+        "y": 13.0,
+        "z": 0.0
+      },
+      "rotation": 293.74233135344576,
+      "scale": 0.8935276617321186,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_34",
+      "type": "sand_dune",
+      "position": {
+        "x": 6.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "rotation": 221.18204925357298,
+      "scale": 0.8110239769458566,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_35",
+      "type": "sand_dune",
+      "position": {
+        "x": 26.0,
+        "y": 14.0,
+        "z": 0.0
+      },
+      "rotation": 285.6423496066644,
+      "scale": 1.1264659385392588,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_36",
+      "type": "palm_tree",
+      "position": {
+        "x": 0.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "rotation": 231.91753745843934,
+      "scale": 0.9138592435158938,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_37",
+      "type": "palm_tree",
+      "position": {
+        "x": 20.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "rotation": 293.37342006129626,
+      "scale": 0.7122487112713712,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_38",
+      "type": "cactus",
+      "position": {
+        "x": 24.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "rotation": 161.59692129204572,
+      "scale": 0.955215153064831,
+      "properties": {
+        "terrain_type": "water",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_39",
+      "type": "cactus",
+      "position": {
+        "x": 28.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "rotation": 7.606829125248087,
+      "scale": 0.7576699912633554,
+      "properties": {
+        "terrain_type": "water",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_40",
+      "type": "oasis_rock",
+      "position": {
+        "x": 34.0,
+        "y": 15.0,
+        "z": 0.0
+      },
+      "rotation": 302.268358484591,
+      "scale": 0.9576121994322777,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_41",
+      "type": "sand_dune",
+      "position": {
+        "x": 3.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "rotation": 339.7208572697672,
+      "scale": 0.9287889544073904,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_42",
+      "type": "oasis_rock",
+      "position": {
+        "x": 20.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "rotation": 212.3221000320797,
+      "scale": 1.038928370699188,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_43",
+      "type": "oasis_rock",
+      "position": {
+        "x": 32.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "rotation": 31.250628192441955,
+      "scale": 1.197326578830166,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_44",
+      "type": "palm_tree",
+      "position": {
+        "x": 35.0,
+        "y": 16.0,
+        "z": 0.0
+      },
+      "rotation": 177.91576768915021,
+      "scale": 1.2224156167320124,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_45",
+      "type": "oasis_rock",
+      "position": {
+        "x": 21.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "rotation": 136.75666202677567,
+      "scale": 1.0628319637305905,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_46",
+      "type": "oasis_rock",
+      "position": {
+        "x": 16.0,
+        "y": 18.0,
+        "z": 0.0
+      },
+      "rotation": 78.50470254715252,
+      "scale": 0.7009814667782431,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_47",
+      "type": "palm_tree",
+      "position": {
+        "x": 26.0,
+        "y": 18.0,
+        "z": 0.0
+      },
+      "rotation": 350.29680489367894,
+      "scale": 1.2721694666125773,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_48",
+      "type": "cactus",
+      "position": {
+        "x": 18.0,
+        "y": 19.0,
+        "z": 0.0
+      },
+      "rotation": 351.3567483685091,
+      "scale": 0.8334707976191651,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_49",
+      "type": "desert_flower",
+      "position": {
+        "x": 23.0,
+        "y": 19.0,
+        "z": 0.0
+      },
+      "rotation": 348.4880429790988,
+      "scale": 0.9780658791861614,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_50",
+      "type": "oasis_rock",
+      "position": {
+        "x": 25.0,
+        "y": 19.0,
+        "z": 0.0
+      },
+      "rotation": 190.58961822388727,
+      "scale": 1.0859748247516205,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_51",
+      "type": "palm_tree",
+      "position": {
+        "x": 16.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "rotation": 243.7985693685833,
+      "scale": 0.8901798718477117,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_52",
+      "type": "palm_tree",
+      "position": {
+        "x": 19.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "rotation": 72.80704161830104,
+      "scale": 0.8025870927263568,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_53",
+      "type": "sand_dune",
+      "position": {
+        "x": 37.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "rotation": 93.70231918089647,
+      "scale": 0.9918935366780302,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_54",
+      "type": "cactus",
+      "position": {
+        "x": 1.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "rotation": 77.2820857419143,
+      "scale": 1.0717833541597197,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_55",
+      "type": "sand_dune",
+      "position": {
+        "x": 17.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "rotation": 179.26524137318077,
+      "scale": 0.9844654697237679,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_56",
+      "type": "cactus",
+      "position": {
+        "x": 24.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "rotation": 220.49167068664198,
+      "scale": 0.9595270778536368,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_57",
+      "type": "cactus",
+      "position": {
+        "x": 36.0,
+        "y": 21.0,
+        "z": 0.0
+      },
+      "rotation": 276.8711902406362,
+      "scale": 0.7507211550759526,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_58",
+      "type": "palm_tree",
+      "position": {
+        "x": 11.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "rotation": 317.4759305669998,
+      "scale": 1.1692223001922915,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_59",
+      "type": "cactus",
+      "position": {
+        "x": 13.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "rotation": 103.94545754201023,
+      "scale": 1.0264232520337706,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_60",
+      "type": "palm_tree",
+      "position": {
+        "x": 14.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "rotation": 198.13246696238593,
+      "scale": 0.7279389747213153,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_61",
+      "type": "desert_flower",
+      "position": {
+        "x": 21.0,
+        "y": 22.0,
+        "z": 0.0
+      },
+      "rotation": 182.12920693062858,
+      "scale": 1.288288044754638,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_62",
+      "type": "sand_dune",
+      "position": {
+        "x": 14.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "rotation": 238.5607911458074,
+      "scale": 0.803411169414068,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_63",
+      "type": "desert_flower",
+      "position": {
+        "x": 21.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "rotation": 104.15599058886518,
+      "scale": 0.8759243469918934,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_64",
+      "type": "desert_flower",
+      "position": {
+        "x": 36.0,
+        "y": 23.0,
+        "z": 0.0
+      },
+      "rotation": 320.2603583276605,
+      "scale": 1.0470217813449096,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_65",
+      "type": "cactus",
+      "position": {
+        "x": 10.0,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "rotation": 74.1820086192048,
+      "scale": 1.1942305500282593,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_66",
+      "type": "palm_tree",
+      "position": {
+        "x": 21.0,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "rotation": 31.8578107280534,
+      "scale": 0.9804054938787874,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_67",
+      "type": "palm_tree",
+      "position": {
+        "x": 30.0,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "rotation": 237.71565557978238,
+      "scale": 0.9818410898508402,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_68",
+      "type": "desert_flower",
+      "position": {
+        "x": 13.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "rotation": 303.21063113353785,
+      "scale": 0.9717510031136928,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_69",
+      "type": "oasis_rock",
+      "position": {
+        "x": 20.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "rotation": 32.7086926744562,
+      "scale": 1.2918234544683007,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_70",
+      "type": "sand_dune",
+      "position": {
+        "x": 28.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "rotation": 105.33962930135316,
+      "scale": 0.7283051790739337,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_71",
+      "type": "palm_tree",
+      "position": {
+        "x": 30.0,
+        "y": 25.0,
+        "z": 0.0
+      },
+      "rotation": 53.983581817433645,
+      "scale": 1.095724513595386,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_72",
+      "type": "sand_dune",
+      "position": {
+        "x": 2.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "rotation": 176.06474674803627,
+      "scale": 1.0204984242841413,
+      "properties": {
+        "terrain_type": "water",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_73",
+      "type": "oasis_rock",
+      "position": {
+        "x": 6.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "rotation": 258.56354237845096,
+      "scale": 0.9677884121935452,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_74",
+      "type": "oasis_rock",
+      "position": {
+        "x": 30.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "rotation": 243.28695594762263,
+      "scale": 1.2572801477365387,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_75",
+      "type": "cactus",
+      "position": {
+        "x": 31.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "rotation": 283.4232906142907,
+      "scale": 1.1947211690716562,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_76",
+      "type": "cactus",
+      "position": {
+        "x": 6.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "rotation": 197.76235290182802,
+      "scale": 1.2260399602717404,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_77",
+      "type": "oasis_rock",
+      "position": {
+        "x": 7.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "rotation": 176.22994344945994,
+      "scale": 0.7159336775894419,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_78",
+      "type": "palm_tree",
+      "position": {
+        "x": 23.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "rotation": 148.54100570532884,
+      "scale": 1.1431112464608917,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_79",
+      "type": "sand_dune",
+      "position": {
+        "x": 36.0,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "rotation": 304.9108611742477,
+      "scale": 0.7904648096284137,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_80",
+      "type": "oasis_rock",
+      "position": {
+        "x": 4.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "rotation": 242.29431204687376,
+      "scale": 0.873353284301672,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_81",
+      "type": "sand_dune",
+      "position": {
+        "x": 9.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "rotation": 155.5546001089452,
+      "scale": 1.2943005241532513,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_82",
+      "type": "desert_flower",
+      "position": {
+        "x": 17.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "rotation": 330.3170583290428,
+      "scale": 0.8170261101675342,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_83",
+      "type": "oasis_rock",
+      "position": {
+        "x": 18.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "rotation": 359.64822344010344,
+      "scale": 0.7231680931720859,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_84",
+      "type": "palm_tree",
+      "position": {
+        "x": 19.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "rotation": 76.67637239470811,
+      "scale": 0.9077560105585546,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_85",
+      "type": "cactus",
+      "position": {
+        "x": 33.0,
+        "y": 28.0,
+        "z": 0.0
+      },
+      "rotation": 357.78541996061995,
+      "scale": 0.9795312853304698,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_86",
+      "type": "sand_dune",
+      "position": {
+        "x": 9.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "rotation": 143.4721589843626,
+      "scale": 0.7364350742019175,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_87",
+      "type": "sand_dune",
+      "position": {
+        "x": 22.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "rotation": 188.74246421909103,
+      "scale": 1.2369979672439344,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_88",
+      "type": "cactus",
+      "position": {
+        "x": 28.0,
+        "y": 29.0,
+        "z": 0.0
+      },
+      "rotation": 265.0570669696663,
+      "scale": 1.0999384334940683,
+      "properties": {
+        "terrain_type": "stone",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_89",
+      "type": "desert_flower",
+      "position": {
+        "x": 23.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "rotation": 36.58643994383883,
+      "scale": 0.8742066584444473,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_90",
+      "type": "oasis_rock",
+      "position": {
+        "x": 24.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "rotation": 198.9462369522418,
+      "scale": 0.7742120692843275,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_91",
+      "type": "palm_tree",
+      "position": {
+        "x": 34.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "rotation": 164.55720929282487,
+      "scale": 1.2385026032371742,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_92",
+      "type": "cactus",
+      "position": {
+        "x": 36.0,
+        "y": 30.0,
+        "z": 0.0
+      },
+      "rotation": 51.29583147762231,
+      "scale": 0.8546896360590444,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_93",
+      "type": "cactus",
+      "position": {
+        "x": 2.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "rotation": 324.87092472326833,
+      "scale": 1.0541678135784782,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_94",
+      "type": "sand_dune",
+      "position": {
+        "x": 10.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "rotation": 213.85175364736082,
+      "scale": 1.1369931551505776,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_95",
+      "type": "desert_flower",
+      "position": {
+        "x": 29.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "rotation": 240.01160386625577,
+      "scale": 1.0626544907478677,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_96",
+      "type": "sand_dune",
+      "position": {
+        "x": 35.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "rotation": 287.54039807487294,
+      "scale": 0.8108312879403581,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_97",
+      "type": "desert_flower",
+      "position": {
+        "x": 38.0,
+        "y": 31.0,
+        "z": 0.0
+      },
+      "rotation": 133.45199697796815,
+      "scale": 1.1268063370048498,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_98",
+      "type": "desert_flower",
+      "position": {
+        "x": 17.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "rotation": 160.37138287640497,
+      "scale": 0.9454424546262084,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_99",
+      "type": "palm_tree",
+      "position": {
+        "x": 35.0,
+        "y": 32.0,
+        "z": 0.0
+      },
+      "rotation": 170.52868793451853,
+      "scale": 1.1486496807546167,
+      "properties": {
+        "terrain_type": "water",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_100",
+      "type": "oasis_rock",
+      "position": {
+        "x": 0.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "rotation": 335.70840311140637,
+      "scale": 1.0124481269253631,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_101",
+      "type": "palm_tree",
+      "position": {
+        "x": 17.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "rotation": 265.6797657728254,
+      "scale": 0.8173665240571679,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_102",
+      "type": "palm_tree",
+      "position": {
+        "x": 19.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "rotation": 339.2437677462033,
+      "scale": 1.288681150989861,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_103",
+      "type": "sand_dune",
+      "position": {
+        "x": 33.0,
+        "y": 33.0,
+        "z": 0.0
+      },
+      "rotation": 210.53019258506333,
+      "scale": 1.0927133791876151,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_104",
+      "type": "cactus",
+      "position": {
+        "x": 25.0,
+        "y": 35.0,
+        "z": 0.0
+      },
+      "rotation": 319.9370548903187,
+      "scale": 0.8347623264853001,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_105",
+      "type": "oasis_rock",
+      "position": {
+        "x": 22.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "rotation": 219.45389329834077,
+      "scale": 0.9602825221567832,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_106",
+      "type": "desert_flower",
+      "position": {
+        "x": 37.0,
+        "y": 36.0,
+        "z": 0.0
+      },
+      "rotation": 195.68440673986953,
+      "scale": 1.2840483143576336,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_107",
+      "type": "oasis_rock",
+      "position": {
+        "x": 0.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "rotation": 15.596064991714425,
+      "scale": 0.936133876279413,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_108",
+      "type": "oasis_rock",
+      "position": {
+        "x": 26.0,
+        "y": 37.0,
+        "z": 0.0
+      },
+      "rotation": 330.4550429429939,
+      "scale": 0.7910407218114456,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_109",
+      "type": "desert_flower",
+      "position": {
+        "x": 22.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "rotation": 195.57074377951506,
+      "scale": 0.715800902682215,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_110",
+      "type": "cactus",
+      "position": {
+        "x": 32.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "rotation": 130.45358225352882,
+      "scale": 0.9438767437680295,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_111",
+      "type": "sand_dune",
+      "position": {
+        "x": 33.0,
+        "y": 38.0,
+        "z": 0.0
+      },
+      "rotation": 333.94786826949763,
+      "scale": 0.88443041174512,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_112",
+      "type": "desert_flower",
+      "position": {
+        "x": 7.0,
+        "y": 39.0,
+        "z": 0.0
+      },
+      "rotation": 196.28332366520223,
+      "scale": 1.0230447495265593,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_113",
+      "type": "palm_tree",
+      "position": {
+        "x": 27.0,
+        "y": 39.0,
+        "z": 0.0
+      },
+      "rotation": 294.8546948079043,
+      "scale": 1.2631587332215535,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    },
+    {
+      "id": "feature_114",
+      "type": "oasis_rock",
+      "position": {
+        "x": 38.0,
+        "y": 39.0,
+        "z": 0.0
+      },
+      "rotation": 226.70352836952802,
+      "scale": 1.1601174078717607,
+      "properties": {
+        "terrain_type": "sand",
+        "interactive": false,
+        "decorative": true
+      }
+    }
+  ],
+  "spawn_points": [
+    {
+      "x": 1.799175335760225,
+      "y": 17.516526295915437,
+      "z": 0.0,
+      "type": "main_entrance",
+      "description": "Main entrance to settlement"
+    }
+  ],
+  "boundaries": {
+    "min_x": 0,
+    "max_x": 40,
+    "min_y": 0,
+    "max_y": 40
+  },
+  "metadata": {
+    "analysis": {
+      "theme": "desert",
+      "scope": "village",
+      "key_features": [
+        "shop"
+      ],
+      "npc_count": 5,
+      "quest_count": 3,
+      "mood": "mysterious",
+      "size": [
+        40,
+        40
+      ],
+      "environmental_story": "An oasis trading post where merchants gather to exchange exotic goods",
+      "layout_type": "radial",
+      "gameplay_flow": {
+        "player_spawn_areas": [
+          "main_entrance",
+          "central_square"
+        ],
+        "quest_hubs": [
+          "shop"
+        ],
+        "exploration_points": [
+          "outskirts",
+          "hidden_areas"
+        ],
+        "social_areas": [
+          "tavern",
+          "market",
+          "fountain"
+        ]
+      }
+    },
+    "layout_type": "radial",
+    "building_count": 5,
+    "complexity_score": 7.6,
+    "estimated_build_time": "125 minutes",
+    "validation_issues": [],
+    "validation_passed": true
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "generation_info": {
+    "timestamp": "2025-06-17T11:39:28.795381",
+    "theme": "desert",
+    "world_size": [
+      40,
+      40
+    ],
+    "character_count": 5,
+    "ai_enhanced": false,
+    "creativity_level": "maximum",
+    "uniqueness_guaranteed": true,
+    "session_id": "0d39c1e2"
+  },
+  "uniqueness_metrics": {
+    "name_uniqueness": 1.0,
+    "personality_uniqueness": 1.0,
+    "role_uniqueness": 1.0
+  },
+  "characters": {
+    "sir_edwin_0d39c1e2_0": {
+      "name": "Sir Edwin",
+      "title": "The Compassionate Resident",
+      "role": "Resident",
+      "age": 22,
+      "location": "house",
+      "personality_summary": "Compassionate, Cautious",
+      "motivation": "To build something lasting",
+      "secret": "Has an interesting past",
+      "level": 5,
+      "health": 75,
+      "relationship_count": 1,
+      "dialogue_nodes": 2,
+      "unique_id": "b5a430f6-4771-48fe-9b84-1132ca39d72a",
+      "profile_file": "character_profiles/sir_edwin_0d39c1e2_0_profile.json",
+      "dialogue_file": "dialogue_trees/sir_edwin_0d39c1e2_0_dialogue.json"
+    },
+    "lady_brenna_0d39c1e2_1": {
+      "name": "Lady Brenna",
+      "title": "The Brave Herbalist",
+      "role": "Herbalist",
+      "age": 45,
+      "location": "shop",
+      "personality_summary": "Brave, Mysterious",
+      "motivation": "To protect others",
+      "secret": "Has an interesting past",
+      "level": 5,
+      "health": 75,
+      "relationship_count": 0,
+      "dialogue_nodes": 2,
+      "unique_id": "97f97518-12b9-4415-8ed0-8a0a66ae775f",
+      "profile_file": "character_profiles/lady_brenna_0d39c1e2_1_profile.json",
+      "dialogue_file": "dialogue_trees/lady_brenna_0d39c1e2_1_dialogue.json"
+    },
+    "sister_fiona_0d39c1e2_2": {
+      "name": "Sister Fiona",
+      "title": "The Jovial Shopkeeper",
+      "role": "Shopkeeper",
+      "age": 31,
+      "location": "shop",
+      "personality_summary": "Jovial, Loyal",
+      "motivation": "To discover truth",
+      "secret": "Has an interesting past",
+      "level": 4,
+      "health": 72,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "c5c80191-2ce9-4a68-a32d-95078083ca69",
+      "profile_file": "character_profiles/sister_fiona_0d39c1e2_2_profile.json",
+      "dialogue_file": "dialogue_trees/sister_fiona_0d39c1e2_2_dialogue.json"
+    },
+    "sir_brenna_0d39c1e2_3": {
+      "name": "Sir Brenna",
+      "title": "The Gentle Family Head",
+      "role": "Family Head",
+      "age": 58,
+      "location": "house",
+      "personality_summary": "Gentle, Optimistic",
+      "motivation": "To build something lasting",
+      "secret": "Has an interesting past",
+      "level": 9,
+      "health": 87,
+      "relationship_count": 0,
+      "dialogue_nodes": 2,
+      "unique_id": "309d0f7b-6c2f-409d-832c-100b3de99db9",
+      "profile_file": "character_profiles/sir_brenna_0d39c1e2_3_profile.json",
+      "dialogue_file": "dialogue_trees/sir_brenna_0d39c1e2_3_dialogue.json"
+    },
+    "brother_edwin_0d39c1e2_4": {
+      "name": "Brother Edwin",
+      "title": "The Fierce Clerk",
+      "role": "Clerk",
+      "age": 31,
+      "location": "shop",
+      "personality_summary": "Fierce, Ambitious",
+      "motivation": "To find adventure",
+      "secret": "Has an interesting past",
+      "level": 9,
+      "health": 87,
+      "relationship_count": 1,
+      "dialogue_nodes": 2,
+      "unique_id": "14027a03-2981-4fd3-962d-935385b89a43",
+      "profile_file": "character_profiles/brother_edwin_0d39c1e2_4_profile.json",
+      "dialogue_file": "dialogue_trees/brother_edwin_0d39c1e2_4_dialogue.json"
+    }
+  },
+  "relationships_summary": {
+    "total_relationships": 4,
+    "relationship_types": [
+      "Neighbor",
+      "Rival"
+    ],
+    "relationship_map_file": "relationship_maps/relationship_map.json"
+  },
+  "dialogue_summary": {
+    "total_dialogue_nodes": 10,
+    "average_nodes_per_character": 2.0,
+    "ai_generated": false
+  },
+  "integration_info": {
+    "unity_compatible": true,
+    "quest_system_ready": true,
+    "relationship_system_ready": true,
+    "dialogue_system_ready": true,
+    "ai_creativity_verified": false
+  }
+}

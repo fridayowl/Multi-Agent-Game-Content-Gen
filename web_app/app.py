@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Complete Flask Web App for AI Game Generator
-Integrates with your existing multi-agent pipeline
+Integrates with your existing multi-agent pipeline - GODOT VERSION
 """
 
 import os
@@ -25,6 +25,9 @@ CORS(app)
 PROJECT_ROOT = Path(__file__).parent.parent
 GENERATED_FOLDER = PROJECT_ROOT / 'generated_content'
 DOWNLOAD_FOLDER = Path(__file__).parent / 'downloads'
+
+# Create directories if they don't exist
+GENERATED_FOLDER.mkdir(exist_ok=True)
 DOWNLOAD_FOLDER.mkdir(exist_ok=True)
 
 # Add project to Python path
@@ -60,7 +63,7 @@ HTML_TEMPLATE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Game Generator - Create Unity Games from Text</title>
+    <title>AI Game Generator - Create Godot Games from Text</title>
     <style>
         * {
             margin: 0;
@@ -299,7 +302,7 @@ HTML_TEMPLATE = """
     <div class="container">
         <div class="header">
             <h1>🎮 AI Game Generator</h1>
-            <p>Create complete Unity game worlds from simple text descriptions</p>
+            <p>Create complete Godot game worlds from simple text descriptions</p>
         </div>
 
         <div class="main-content">
@@ -323,7 +326,7 @@ HTML_TEMPLATE = """
 
             <div class="generate-section">
                 <button class="generate-btn" id="generateBtn" onclick="startGeneration()">
-                    ✨ Generate Unity Game Package
+                    ✨ Generate Godot Game Package
                 </button>
             </div>
 
@@ -356,8 +359,8 @@ HTML_TEMPLATE = """
                         <p>Balancing gameplay mechanics...</p>
                     </div>
                     <div class="agent-card" id="agent-export">
-                        <h4>📦 Unity Exporter</h4>
-                        <p>Creating Unity package...</p>
+                        <h4>📦 Godot Exporter</h4>
+                        <p>Creating Godot package...</p>
                     </div>
                 </div>
             </div>
@@ -365,9 +368,9 @@ HTML_TEMPLATE = """
             <div class="results-section" id="resultsSection">
                 <div class="download-card">
                     <h3>🎉 Your Game Is Ready!</h3>
-                    <p>Your Unity game package has been generated successfully</p>
+                    <p>Your Godot game package has been generated successfully</p>
                     <button class="download-btn" id="downloadBtn" onclick="downloadPackage()">
-                        📥 Download Unity Package
+                        📥 Download Godot Package
                     </button>
                 </div>
                 
@@ -522,7 +525,7 @@ HTML_TEMPLATE = """
 
         function resetUI() {
             document.getElementById('generateBtn').disabled = false;
-            document.getElementById('generateBtn').textContent = '✨ Generate Unity Game Package';
+            document.getElementById('generateBtn').textContent = '✨ Generate Godot Game Package';
             generationInProgress = false;
         }
 
@@ -619,7 +622,7 @@ def get_progress(generation_id):
 
 @app.route('/api/download/<generation_id>')
 def download_package(generation_id):
-    """Download the generated Unity package"""
+    """Download the generated Godot package"""
     job = generation_jobs.get(generation_id)
     
     if not job or job.status != 'completed':
@@ -651,47 +654,72 @@ def download_package(generation_id):
     return send_file(
         package_path,
         as_attachment=True,
-        download_name=f'AIGameWorld_{generation_id[:8]}.zip'
+        download_name=f'GodotGameWorld_{generation_id[:8]}.zip'
     )
 
 def find_unity_package(generation_id: str) -> Path:
-    """Find the Unity/Godot package for this generation"""
+    """Find the Godot package for this generation"""
     try:
-        # Look for packages in generated content
-        if GENERATED_FOLDER.exists():
-            print(f"🔍 Looking for packages in: {GENERATED_FOLDER}")
-            
-            # Option 1: Look for .unitypackage files (Unity)
-            package_files = list(GENERATED_FOLDER.rglob('*.unitypackage'))
-            if package_files:
-                print(f"✅ Found Unity package: {package_files[0]}")
-                return max(package_files, key=lambda p: p.stat().st_mtime)
-            
-            # Option 2: Look for Godot projects (folders with project.godot)
-            godot_projects = list(GENERATED_FOLDER.rglob('project.godot'))
-            if godot_projects:
-                most_recent = max(godot_projects, key=lambda p: p.stat().st_mtime)
-                godot_project_dir = most_recent.parent
-                print(f"✅ Found Godot project: {godot_project_dir}")
-                return create_package_from_godot(godot_project_dir, generation_id)
-            
-            # Option 3: Look for any recent directories with game content
-            all_dirs = [d for d in GENERATED_FOLDER.rglob('*') if d.is_dir()]
-            if all_dirs:
-                # Find most recent directory
-                most_recent_dir = max(all_dirs, key=lambda p: p.stat().st_mtime)
-                print(f"✅ Found recent content directory: {most_recent_dir}")
-                return create_package_from_directory(most_recent_dir, generation_id)
-            
-            print(f"❌ No packages found in {GENERATED_FOLDER}")
-            
-        else:
-            print(f"❌ Generated content folder doesn't exist: {GENERATED_FOLDER}")
+        # Check multiple possible locations
+        possible_locations = [
+            GENERATED_FOLDER,
+            PROJECT_ROOT / 'generated_content',
+            Path.cwd() / 'generated_content',
+            PROJECT_ROOT / 'godot_export',
+            Path.cwd() / 'godot_export',
+            PROJECT_ROOT / 'godot_export' / 'GodotProject',  # Specific path from your file explorer
+            Path.cwd() / 'godot_export' / 'GodotProject'
+        ]
         
+        for location in possible_locations:
+            print(f"🔍 Checking location: {location}")
+            if location.exists():
+                print(f"✅ Location exists: {location}")
+                
+                # List contents
+                contents = list(location.rglob('*'))
+                print(f"📂 Found {len(contents)} items in {location}")
+                
+                # Look for Godot projects (folders with project.godot)
+                godot_projects = list(location.rglob('project.godot'))
+                if godot_projects:
+                    most_recent = max(godot_projects, key=lambda p: p.stat().st_mtime)
+                    godot_project_dir = most_recent.parent
+                    print(f"✅ Found Godot project: {godot_project_dir}")
+                    return create_package_from_godot(godot_project_dir, generation_id)
+                
+                # Look for GodotProject directories specifically
+                godot_project_dirs = [d for d in location.rglob('*') if d.is_dir() and d.name == 'GodotProject']
+                if godot_project_dirs:
+                    most_recent_dir = max(godot_project_dirs, key=lambda p: p.stat().st_mtime)
+                    print(f"✅ Found GodotProject directory: {most_recent_dir}")
+                    return create_package_from_godot(most_recent_dir, generation_id)
+                
+                # Look for directories with Godot-like structure (has assets, scenes, scripts)
+                for subdir in location.rglob('*'):
+                    if subdir.is_dir():
+                        subdirs = [d.name for d in subdir.iterdir() if d.is_dir()]
+                        if any(name in subdirs for name in ['assets', 'scenes', 'scripts']):
+                            print(f"✅ Found Godot-like project structure: {subdir}")
+                            return create_package_from_godot(subdir, generation_id)
+                
+                # Look for any recent directories with content
+                recent_dirs = [d for d in location.rglob('*') if d.is_dir() and len(list(d.iterdir())) > 0]
+                if recent_dirs:
+                    most_recent_dir = max(recent_dirs, key=lambda p: p.stat().st_mtime)
+                    print(f"✅ Found recent content directory: {most_recent_dir}")
+                    return create_package_from_directory(most_recent_dir, generation_id)
+                    
+            else:
+                print(f"❌ Location doesn't exist: {location}")
+        
+        print(f"❌ No packages found in any location")
         return None
         
     except Exception as e:
         print(f"❌ Error finding package: {e}")
+        import traceback
+        traceback.print_exc()
         return None
 
 def create_package_from_godot(godot_dir: Path, generation_id: str) -> Path:
@@ -703,14 +731,34 @@ def create_package_from_godot(godot_dir: Path, generation_id: str) -> Path:
         print(f"📦 Creating Godot package from: {godot_dir}")
         print(f"📥 Package will be saved as: {package_path}")
         
-        # Create zip file of the godot project
+        # List what we're actually including in the package
+        print(f"📂 Contents to be packaged:")
+        for item in godot_dir.rglob('*'):
+            if item.is_file():
+                relative_path = item.relative_to(godot_dir)
+                print(f"  📄 {relative_path}")
+            elif item.is_dir() and item != godot_dir:
+                relative_path = item.relative_to(godot_dir)
+                print(f"  📁 {relative_path}/")
+        
+        # Create zip file of the entire godot project directory
+        print(f"🗜️ Creating archive...")
         shutil.make_archive(str(package_path.with_suffix('')), 'zip', str(godot_dir))
         
-        print(f"✅ Godot package created successfully: {package_path}")
-        return package_path
+        # Verify the created package
+        if package_path.exists():
+            size_mb = package_path.stat().st_size / (1024 * 1024)
+            print(f"✅ Godot package created successfully: {package_path}")
+            print(f"📊 Package size: {size_mb:.2f} MB")
+            return package_path
+        else:
+            print(f"❌ Package creation failed - file doesn't exist")
+            return None
         
     except Exception as e:
         print(f"❌ Error creating Godot package: {e}")
+        import traceback
+        traceback.print_exc()
         return None
 
 def create_package_from_directory(content_dir: Path, generation_id: str) -> Path:
@@ -795,7 +843,7 @@ def run_generation_pipeline(generation_id: str, prompt: str):
             ('characters', 'Character Creator', 'Creating NPCs and personalities...', 45),
             ('quests', 'Quest Writer', 'Writing storylines and dialogue...', 60),
             ('balance', 'Balance Validator', 'Balancing gameplay mechanics...', 75),
-            ('export', 'Unity Exporter', 'Creating Unity package...', 85)
+            ('export', 'Godot Exporter', 'Creating Godot package...', 85)
         ]
         
         # Update each agent status gradually
@@ -816,11 +864,21 @@ def run_generation_pipeline(generation_id: str, prompt: str):
         job.message = 'Running AI pipeline...'
         job.progress = 90
         
-        # Call your orchestrator
-        result = call_your_orchestrator(prompt)
-        
-        # Store the result
-        job.result_data = result
+        # Change to the project root directory for orchestrator
+        original_cwd = os.getcwd()
+        try:
+            os.chdir(PROJECT_ROOT)
+            print(f"📁 Changed to project root: {PROJECT_ROOT}")
+            
+            # Call your orchestrator
+            result = call_your_orchestrator(prompt)
+            
+            # Store the result
+            job.result_data = result
+            
+        finally:
+            # Always change back to original directory
+            os.chdir(original_cwd)
         
         # Mark as completed
         job.status = 'completed'
@@ -853,11 +911,12 @@ def health_check():
 @app.route('/api/docs')
 def api_docs():
     docs = {
-        'title': 'AI Game Generator API',
+        'title': 'AI Game Generator API - Godot Edition',
         'version': '1.0.0',
+        'description': 'Generate complete Godot game worlds from text descriptions',
         'endpoints': {
             'POST /api/generate': {
-                'description': 'Start game generation from text prompt',
+                'description': 'Start Godot game generation from text prompt',
                 'body': {'prompt': 'string (required)'},
                 'response': {'generation_id': 'string', 'status': 'string', 'message': 'string'}
             },
@@ -872,8 +931,8 @@ def api_docs():
                 }
             },
             'GET /api/download/{id}': {
-                'description': 'Download generated Unity package',
-                'response': 'file download (.unitypackage or .zip)'
+                'description': 'Download generated Godot package',
+                'response': 'file download (.zip containing Godot project)'
             },
             'GET /health': {
                 'description': 'Health check endpoint',
@@ -884,7 +943,15 @@ def api_docs():
             'Create a spooky Halloween village with 5 NPCs and 3 interconnected quests',
             'Generate a desert oasis trading post with merchants and treasure hunters',
             'Build a medieval castle town with a blacksmith, tavern keeper, and royal guard',
-            'Create a cyberpunk city district with hackers, corporate agents, and underground rebels'
+            'Create a cyberpunk city district with hackers, corporate agents, and underground rebels',
+            'Design a mystical forest with fairy NPCs and ancient tree spirits'
+        ],
+        'godot_features': [
+            'Complete Godot 4.3+ projects ready for import',
+            'GDScript files for player movement and NPC interaction',
+            'Scene files with proper node hierarchies',
+            'JSON data files for characters and quests',
+            'Documentation and setup instructions'
         ]
     }
     return jsonify(docs)
@@ -907,7 +974,7 @@ if __name__ == '__main__':
         print(f"⚠️ Orchestrator import failed: {e}")
         print("💡 The web app will still run, but generation may fail")
     
-    print("\n🎮 Ready to generate amazing game worlds!")
+    print("\n🎮 Ready to generate amazing Godot game worlds!")
     
     # Run the Flask app
     app.run(

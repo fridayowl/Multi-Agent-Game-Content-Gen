@@ -1,0 +1,475 @@
+{
+  "status": "success",
+  "character_count": 5,
+  "output_directory": "generated_characters",
+  "manifest_file": "generated_characters/character_manifest.json",
+  "ai_enhanced": false,
+  "fallback_generation": true,
+  "characters": [
+    {
+      "id": "lady_fiona_2b617874_0",
+      "name": "Lady Fiona",
+      "title": "The Jovial Trader",
+      "description": "A 36-year-old Trader with a jovial nature.",
+      "backstory": "Lady Fiona has worked as a Trader for many years.",
+      "personality": {
+        "primary_trait": "Jovial",
+        "secondary_trait": "Energetic",
+        "motivation": "To build something lasting",
+        "fear": "Being misunderstood",
+        "quirk": "Never sits still",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 6,
+        "health": 78,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Lady Hilda",
+          "relationship_type": "Friend",
+          "relationship_strength": 4,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sister Aldric",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "lady fiona_greeting",
+          "text": "Greetings! I'm Lady Fiona, the local Trader.",
+          "speaker": "Lady Fiona",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "lady fiona_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "lady fiona_role",
+          "text": "As a Trader, I to build something lasting.",
+          "speaker": "Lady Fiona",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "shop",
+      "role": "Trader",
+      "quest_involvement": [],
+      "age": 36,
+      "appearance": "A 36-year-old Trader with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "8d2bb6fa-42b2-4e00-91c6-a1dcf1234669"
+    },
+    {
+      "id": "lady_hilda_2b617874_1",
+      "name": "Lady Hilda",
+      "title": "The Gentle Resident",
+      "description": "A 44-year-old Resident with a gentle nature.",
+      "backstory": "Lady Hilda has worked as a Resident for many years.",
+      "personality": {
+        "primary_trait": "Gentle",
+        "secondary_trait": "Loyal",
+        "motivation": "To seek knowledge",
+        "fear": "The unknown",
+        "quirk": "Never sits still",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 9,
+        "health": 87,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Lady Fiona",
+          "relationship_type": "Friend",
+          "relationship_strength": 4,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Dara",
+          "relationship_type": "Rival",
+          "relationship_strength": 4,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "lady hilda_greeting",
+          "text": "Greetings! I'm Lady Hilda, the local Resident.",
+          "speaker": "Lady Hilda",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "lady hilda_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "lady hilda_role",
+          "text": "As a Resident, I to seek knowledge.",
+          "speaker": "Lady Hilda",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "house",
+      "role": "Resident",
+      "quest_involvement": [],
+      "age": 44,
+      "appearance": "A 44-year-old Resident with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "5841614f-c02f-46f8-9036-0db276cea30c"
+    },
+    {
+      "id": "lady_dara_2b617874_2",
+      "name": "Lady Dara",
+      "title": "The Eccentric Knight",
+      "description": "A 40-year-old Knight with a eccentric nature.",
+      "backstory": "Lady Dara has worked as a Knight for many years.",
+      "personality": {
+        "primary_trait": "Eccentric",
+        "secondary_trait": "Energetic",
+        "motivation": "To protect others",
+        "fear": "The unknown",
+        "quirk": "Speaks to animals",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 2,
+        "health": 66,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Lady Hilda",
+          "relationship_type": "Rival",
+          "relationship_strength": 4,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sister Aldric",
+          "relationship_type": "Friend",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "lady dara_greeting",
+          "text": "Greetings! I'm Lady Dara, the local Knight.",
+          "speaker": "Lady Dara",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "lady dara_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "lady dara_role",
+          "text": "As a Knight, I to protect others.",
+          "speaker": "Lady Dara",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "shop",
+      "role": "Knight",
+      "quest_involvement": [],
+      "age": 40,
+      "appearance": "A 40-year-old Knight with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "831500e5-6afd-4706-ab35-a901f37cac9c"
+    },
+    {
+      "id": "brother_gareth_2b617874_3",
+      "name": "Brother Gareth",
+      "title": "The Honest Family Head",
+      "description": "A 20-year-old Family Head with a honest nature.",
+      "backstory": "Brother Gareth has worked as a Family Head for many years.",
+      "personality": {
+        "primary_trait": "Honest",
+        "secondary_trait": "Ambitious",
+        "motivation": "To find adventure",
+        "fear": "The unknown",
+        "quirk": "Collects unusual items",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 3,
+        "health": 69,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 13,
+        "wisdom": 11,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Sister Aldric",
+          "relationship_type": "Ally",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "brother gareth_greeting",
+          "text": "Greetings! I'm Brother Gareth, the local Family Head.",
+          "speaker": "Brother Gareth",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "brother gareth_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "brother gareth_role",
+          "text": "As a Family Head, I to find adventure.",
+          "speaker": "Brother Gareth",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "house",
+      "role": "Family Head",
+      "quest_involvement": [],
+      "age": 20,
+      "appearance": "A 20-year-old Family Head with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "59956f8a-879e-4ad4-930c-bc23c166c587"
+    },
+    {
+      "id": "sister_aldric_2b617874_4",
+      "name": "Sister Aldric",
+      "title": "The Inventive Servant",
+      "description": "A 42-year-old Servant with a inventive nature.",
+      "backstory": "Sister Aldric has worked as a Servant for many years.",
+      "personality": {
+        "primary_trait": "Inventive",
+        "secondary_trait": "Mysterious",
+        "motivation": "To protect others",
+        "fear": "Losing control",
+        "quirk": "Collects unusual items",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 1,
+        "health": 63,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Lady Fiona",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Dara",
+          "relationship_type": "Friend",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Brother Gareth",
+          "relationship_type": "Ally",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "sister aldric_greeting",
+          "text": "Greetings! I'm Sister Aldric, the local Servant.",
+          "speaker": "Sister Aldric",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "sister aldric_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "sister aldric_role",
+          "text": "As a Servant, I to protect others.",
+          "speaker": "Sister Aldric",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "shop",
+      "role": "Servant",
+      "quest_involvement": [],
+      "age": 42,
+      "appearance": "A 42-year-old Servant with distinctive features.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "7adb2324-c906-4276-8c92-128a7cff31e2"
+    }
+  ]
+}

@@ -54,8 +54,6 @@
   "level_requirement": 1,
   "estimated_duration": "15-30 minutes",
   "quest_type": "main",
-  "interconnected_quests": [
-    "main_quest_2_sister_fiona"
-  ],
+  "interconnected_quests": [],
   "narrative_importance": "high"
 }

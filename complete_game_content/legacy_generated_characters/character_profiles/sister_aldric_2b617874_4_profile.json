@@ -1,0 +1,100 @@
+{
+  "id": "sister_aldric_2b617874_4",
+  "name": "Sister Aldric",
+  "title": "The Inventive Servant",
+  "description": "A 42-year-old Servant with a inventive nature.",
+  "backstory": "Sister Aldric has worked as a Servant for many years.",
+  "personality": {
+    "primary_trait": "Inventive",
+    "secondary_trait": "Mysterious",
+    "motivation": "To protect others",
+    "fear": "Losing control",
+    "quirk": "Collects unusual items",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 1,
+    "health": 63,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Lady Fiona",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 7,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Lady Dara",
+      "relationship_type": "Friend",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Brother Gareth",
+      "relationship_type": "Ally",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "sister aldric_greeting",
+      "text": "Greetings! I'm Sister Aldric, the local Servant.",
+      "speaker": "Sister Aldric",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sister aldric_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sister aldric_role",
+      "text": "As a Servant, I to protect others.",
+      "speaker": "Sister Aldric",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "shop",
+  "role": "Servant",
+  "quest_involvement": [],
+  "age": 42,
+  "appearance": "A 42-year-old Servant with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "7adb2324-c906-4276-8c92-128a7cff31e2"
+}

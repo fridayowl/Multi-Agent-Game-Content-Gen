@@ -48,12 +48,12 @@
       }
     }
   },
-  "main_quest_2_sister_fiona": {
-    "quest_id": "main_quest_2_sister_fiona",
-    "npc_name": "Sister Fiona",
+  "main_quest_2_master_aldric": {
+    "quest_id": "main_quest_2_master_aldric",
+    "npc_name": "Master Aldric",
     "dialogue_nodes": {
       "introduction": {
-        "text": "I have a problem that needs solving. Sister Fiona has discovered something that could change everything.",
+        "text": "I have a problem that needs solving. Master Aldric has discovered something that could change everything.",
         "options": [
           {
             "text": "I'll help you.",

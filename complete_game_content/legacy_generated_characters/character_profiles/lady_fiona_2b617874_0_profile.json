@@ -1,0 +1,93 @@
+{
+  "id": "lady_fiona_2b617874_0",
+  "name": "Lady Fiona",
+  "title": "The Jovial Trader",
+  "description": "A 36-year-old Trader with a jovial nature.",
+  "backstory": "Lady Fiona has worked as a Trader for many years.",
+  "personality": {
+    "primary_trait": "Jovial",
+    "secondary_trait": "Energetic",
+    "motivation": "To build something lasting",
+    "fear": "Being misunderstood",
+    "quirk": "Never sits still",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 6,
+    "health": 78,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Lady Hilda",
+      "relationship_type": "Friend",
+      "relationship_strength": 4,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sister Aldric",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 7,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "lady fiona_greeting",
+      "text": "Greetings! I'm Lady Fiona, the local Trader.",
+      "speaker": "Lady Fiona",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "lady fiona_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "lady fiona_role",
+      "text": "As a Trader, I to build something lasting.",
+      "speaker": "Lady Fiona",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "shop",
+  "role": "Trader",
+  "quest_involvement": [],
+  "age": 36,
+  "appearance": "A 36-year-old Trader with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "8d2bb6fa-42b2-4e00-91c6-a1dcf1234669"
+}

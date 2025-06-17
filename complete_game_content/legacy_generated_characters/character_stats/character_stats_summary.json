@@ -1,0 +1,36 @@
+{
+  "generation_stats": {
+    "total_characters": 5,
+    "average_age": 36.4,
+    "total_relationships": 10,
+    "total_dialogue_nodes": 10,
+    "unique_roles": 5,
+    "unique_locations": 2
+  },
+  "uniqueness_metrics": {
+    "name_uniqueness": 1.0,
+    "personality_uniqueness": 1.0,
+    "role_uniqueness": 1.0
+  },
+  "level_distribution": {
+    "Lady Fiona": 6,
+    "Lady Hilda": 9,
+    "Lady Dara": 2,
+    "Brother Gareth": 3,
+    "Sister Aldric": 1
+  },
+  "role_distribution": {
+    "Lady Fiona": "Trader",
+    "Lady Hilda": "Resident",
+    "Lady Dara": "Knight",
+    "Brother Gareth": "Family Head",
+    "Sister Aldric": "Servant"
+  },
+  "personality_distribution": {
+    "Lady Fiona": "Jovial",
+    "Lady Hilda": "Gentle",
+    "Lady Dara": "Eccentric",
+    "Brother Gareth": "Honest",
+    "Sister Aldric": "Inventive"
+  }
+}

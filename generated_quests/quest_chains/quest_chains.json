@@ -1,0 +1,16 @@
+{
+  "main_chain_main_quest_1_sir_edwin": {
+    "type": "main",
+    "quests": [
+      "main_quest_1_sir_edwin"
+    ],
+    "connected_quests": []
+  },
+  "main_chain_main_quest_2_lady_brenna": {
+    "type": "main",
+    "quests": [
+      "main_quest_2_lady_brenna"
+    ],
+    "connected_quests": []
+  }
+}

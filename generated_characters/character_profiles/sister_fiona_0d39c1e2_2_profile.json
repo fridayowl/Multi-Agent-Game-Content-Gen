@@ -1,0 +1,93 @@
+{
+  "id": "sister_fiona_0d39c1e2_2",
+  "name": "Sister Fiona",
+  "title": "The Jovial Shopkeeper",
+  "description": "A 31-year-old Shopkeeper with a jovial nature.",
+  "backstory": "Sister Fiona has worked as a Shopkeeper for many years.",
+  "personality": {
+    "primary_trait": "Jovial",
+    "secondary_trait": "Loyal",
+    "motivation": "To discover truth",
+    "fear": "Failure",
+    "quirk": "Always hums while working",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 4,
+    "health": 72,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Sir Edwin",
+      "relationship_type": "Rival",
+      "relationship_strength": 6,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Brother Edwin",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "sister fiona_greeting",
+      "text": "Greetings! I'm Sister Fiona, the local Shopkeeper.",
+      "speaker": "Sister Fiona",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sister fiona_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sister fiona_role",
+      "text": "As a Shopkeeper, I to discover truth.",
+      "speaker": "Sister Fiona",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "shop",
+  "role": "Shopkeeper",
+  "quest_involvement": [],
+  "age": 31,
+  "appearance": "A 31-year-old Shopkeeper with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "c5c80191-2ce9-4a68-a32d-95078083ca69"
+}

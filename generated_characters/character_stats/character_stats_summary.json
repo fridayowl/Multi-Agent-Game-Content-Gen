@@ -1,0 +1,36 @@
+{
+  "generation_stats": {
+    "total_characters": 5,
+    "average_age": 37.4,
+    "total_relationships": 4,
+    "total_dialogue_nodes": 10,
+    "unique_roles": 5,
+    "unique_locations": 2
+  },
+  "uniqueness_metrics": {
+    "name_uniqueness": 1.0,
+    "personality_uniqueness": 1.0,
+    "role_uniqueness": 1.0
+  },
+  "level_distribution": {
+    "Sir Edwin": 5,
+    "Lady Brenna": 5,
+    "Sister Fiona": 4,
+    "Sir Brenna": 9,
+    "Brother Edwin": 9
+  },
+  "role_distribution": {
+    "Sir Edwin": "Resident",
+    "Lady Brenna": "Herbalist",
+    "Sister Fiona": "Shopkeeper",
+    "Sir Brenna": "Family Head",
+    "Brother Edwin": "Clerk"
+  },
+  "personality_distribution": {
+    "Sir Edwin": "Compassionate",
+    "Lady Brenna": "Brave",
+    "Sister Fiona": "Jovial",
+    "Sir Brenna": "Gentle",
+    "Brother Edwin": "Fierce"
+  }
+}

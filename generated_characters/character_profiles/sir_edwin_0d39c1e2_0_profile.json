@@ -1,0 +1,86 @@
+{
+  "id": "sir_edwin_0d39c1e2_0",
+  "name": "Sir Edwin",
+  "title": "The Compassionate Resident",
+  "description": "A 22-year-old Resident with a compassionate nature.",
+  "backstory": "Sir Edwin has worked as a Resident for many years.",
+  "personality": {
+    "primary_trait": "Compassionate",
+    "secondary_trait": "Cautious",
+    "motivation": "To build something lasting",
+    "fear": "Being alone",
+    "quirk": "Collects unusual items",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 5,
+    "health": 75,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 13,
+    "wisdom": 11,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Sister Fiona",
+      "relationship_type": "Rival",
+      "relationship_strength": 6,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "sir edwin_greeting",
+      "text": "Greetings! I'm Sir Edwin, the local Resident.",
+      "speaker": "Sir Edwin",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sir edwin_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sir edwin_role",
+      "text": "As a Resident, I to build something lasting.",
+      "speaker": "Sir Edwin",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "house",
+  "role": "Resident",
+  "quest_involvement": [],
+  "age": 22,
+  "appearance": "A 22-year-old Resident with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "b5a430f6-4771-48fe-9b84-1132ca39d72a"
+}
