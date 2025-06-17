@@ -1,8 +1,8 @@
 {
   "generation_stats": {
     "total_characters": 5,
-    "average_age": 37.4,
-    "total_relationships": 4,
+    "average_age": 45.0,
+    "total_relationships": 12,
     "total_dialogue_nodes": 10,
     "unique_roles": 5,
     "unique_locations": 2
@@ -13,24 +13,24 @@
     "role_uniqueness": 1.0
   },
   "level_distribution": {
-    "Sir Edwin": 5,
-    "Lady Brenna": 5,
-    "Sister Fiona": 4,
-    "Sir Brenna": 9,
-    "Brother Edwin": 9
+    "Master Brenna": 2,
+    "Sister Hilda": 2,
+    "Sir Aldric": 4,
+    "Sister Aldric": 10,
+    "Sir Gareth": 6
   },
   "role_distribution": {
-    "Sir Edwin": "Resident",
-    "Lady Brenna": "Herbalist",
-    "Sister Fiona": "Shopkeeper",
-    "Sir Brenna": "Family Head",
-    "Brother Edwin": "Clerk"
+    "Master Brenna": "Herbalist",
+    "Sister Hilda": "Clerk",
+    "Sir Aldric": "Noble",
+    "Sister Aldric": "Trader",
+    "Sir Gareth": "Family Head"
   },
   "personality_distribution": {
-    "Sir Edwin": "Compassionate",
-    "Lady Brenna": "Brave",
-    "Sister Fiona": "Jovial",
-    "Sir Brenna": "Gentle",
-    "Brother Edwin": "Fierce"
+    "Master Brenna": "Honest",
+    "Sister Hilda": "Clever",
+    "Sir Aldric": "Gentle",
+    "Sister Aldric": "Compassionate",
+    "Sir Gareth": "Jovial"
   }
 }

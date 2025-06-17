@@ -1,0 +1,39 @@
+{
+  "character_name": "Sir Aldric",
+  "dialogue_tree": [
+    {
+      "id": "sir aldric_greeting",
+      "text": "Greetings! I'm Sir Aldric, the local Noble.",
+      "speaker": "Sir Aldric",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sir aldric_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sir aldric_role",
+      "text": "As a Noble, I to discover truth.",
+      "speaker": "Sir Aldric",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "sir_aldric_623e6415_2",
+  "name": "Sir Aldric",
+  "title": "The Gentle Noble",
+  "description": "A 56-year-old Noble with a gentle nature.",
+  "backstory": "Sir Aldric has worked as a Noble for many years.",
+  "personality": {
+    "primary_trait": "Gentle",
+    "secondary_trait": "Witty",
+    "motivation": "To discover truth",
+    "fear": "The unknown",
+    "quirk": "Speaks to animals",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 4,
+    "health": 72,
+    "strength": 11,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 14,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Sister Hilda",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sir Gareth",
+      "relationship_type": "Friend",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "sir aldric_greeting",
+      "text": "Greetings! I'm Sir Aldric, the local Noble.",
+      "speaker": "Sir Aldric",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sir aldric_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sir aldric_role",
+      "text": "As a Noble, I to discover truth.",
+      "speaker": "Sir Aldric",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "house",
+  "role": "Noble",
+  "quest_involvement": [],
+  "age": 56,
+  "appearance": "A 56-year-old Noble with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "cde8777f-82f3-4122-abae-e0ccd26014b4"
+}

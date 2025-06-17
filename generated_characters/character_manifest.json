@@ -1,6 +1,6 @@
 {
   "generation_info": {
-    "timestamp": "2025-06-17T11:39:28.795381",
+    "timestamp": "2025-06-17T16:34:25.703527",
     "theme": "desert",
     "world_size": [
       40,
@@ -10,7 +10,7 @@
     "ai_enhanced": false,
     "creativity_level": "maximum",
     "uniqueness_guaranteed": true,
-    "session_id": "0d39c1e2"
+    "session_id": "623e6415"
   },
   "uniqueness_metrics": {
     "name_uniqueness": 1.0,
@@ -18,97 +18,98 @@
     "role_uniqueness": 1.0
   },
   "characters": {
-    "sir_edwin_0d39c1e2_0": {
-      "name": "Sir Edwin",
-      "title": "The Compassionate Resident",
-      "role": "Resident",
-      "age": 22,
-      "location": "house",
-      "personality_summary": "Compassionate, Cautious",
-      "motivation": "To build something lasting",
-      "secret": "Has an interesting past",
-      "level": 5,
-      "health": 75,
-      "relationship_count": 1,
-      "dialogue_nodes": 2,
-      "unique_id": "b5a430f6-4771-48fe-9b84-1132ca39d72a",
-      "profile_file": "character_profiles/sir_edwin_0d39c1e2_0_profile.json",
-      "dialogue_file": "dialogue_trees/sir_edwin_0d39c1e2_0_dialogue.json"
-    },
-    "lady_brenna_0d39c1e2_1": {
-      "name": "Lady Brenna",
-      "title": "The Brave Herbalist",
+    "master_brenna_623e6415_0": {
+      "name": "Master Brenna",
+      "title": "The Honest Herbalist",
       "role": "Herbalist",
-      "age": 45,
+      "age": 24,
       "location": "shop",
-      "personality_summary": "Brave, Mysterious",
-      "motivation": "To protect others",
+      "personality_summary": "Honest, Ambitious",
+      "motivation": "To seek knowledge",
       "secret": "Has an interesting past",
-      "level": 5,
-      "health": 75,
-      "relationship_count": 0,
+      "level": 2,
+      "health": 66,
+      "relationship_count": 2,
       "dialogue_nodes": 2,
-      "unique_id": "97f97518-12b9-4415-8ed0-8a0a66ae775f",
-      "profile_file": "character_profiles/lady_brenna_0d39c1e2_1_profile.json",
-      "dialogue_file": "dialogue_trees/lady_brenna_0d39c1e2_1_dialogue.json"
+      "unique_id": "a0340c7f-a886-4c9c-ac2e-9199f2f25e21",
+      "profile_file": "character_profiles/master_brenna_623e6415_0_profile.json",
+      "dialogue_file": "dialogue_trees/master_brenna_623e6415_0_dialogue.json"
     },
-    "sister_fiona_0d39c1e2_2": {
-      "name": "Sister Fiona",
-      "title": "The Jovial Shopkeeper",
-      "role": "Shopkeeper",
-      "age": 31,
-      "location": "shop",
-      "personality_summary": "Jovial, Loyal",
+    "sister_hilda_623e6415_1": {
+      "name": "Sister Hilda",
+      "title": "The Clever Clerk",
+      "role": "Clerk",
+      "age": 48,
+      "location": "house",
+      "personality_summary": "Clever, Mysterious",
+      "motivation": "To find adventure",
+      "secret": "Has an interesting past",
+      "level": 2,
+      "health": 66,
+      "relationship_count": 2,
+      "dialogue_nodes": 2,
+      "unique_id": "38d117ce-c7d9-4195-8a60-4acf1160fdce",
+      "profile_file": "character_profiles/sister_hilda_623e6415_1_profile.json",
+      "dialogue_file": "dialogue_trees/sister_hilda_623e6415_1_dialogue.json"
+    },
+    "sir_aldric_623e6415_2": {
+      "name": "Sir Aldric",
+      "title": "The Gentle Noble",
+      "role": "Noble",
+      "age": 56,
+      "location": "house",
+      "personality_summary": "Gentle, Witty",
       "motivation": "To discover truth",
       "secret": "Has an interesting past",
       "level": 4,
       "health": 72,
       "relationship_count": 2,
       "dialogue_nodes": 2,
-      "unique_id": "c5c80191-2ce9-4a68-a32d-95078083ca69",
-      "profile_file": "character_profiles/sister_fiona_0d39c1e2_2_profile.json",
-      "dialogue_file": "dialogue_trees/sister_fiona_0d39c1e2_2_dialogue.json"
+      "unique_id": "cde8777f-82f3-4122-abae-e0ccd26014b4",
+      "profile_file": "character_profiles/sir_aldric_623e6415_2_profile.json",
+      "dialogue_file": "dialogue_trees/sir_aldric_623e6415_2_dialogue.json"
     },
-    "sir_brenna_0d39c1e2_3": {
-      "name": "Sir Brenna",
-      "title": "The Gentle Family Head",
-      "role": "Family Head",
-      "age": 58,
-      "location": "house",
-      "personality_summary": "Gentle, Optimistic",
-      "motivation": "To build something lasting",
-      "secret": "Has an interesting past",
-      "level": 9,
-      "health": 87,
-      "relationship_count": 0,
-      "dialogue_nodes": 2,
-      "unique_id": "309d0f7b-6c2f-409d-832c-100b3de99db9",
-      "profile_file": "character_profiles/sir_brenna_0d39c1e2_3_profile.json",
-      "dialogue_file": "dialogue_trees/sir_brenna_0d39c1e2_3_dialogue.json"
-    },
-    "brother_edwin_0d39c1e2_4": {
-      "name": "Brother Edwin",
-      "title": "The Fierce Clerk",
-      "role": "Clerk",
-      "age": 31,
+    "sister_aldric_623e6415_3": {
+      "name": "Sister Aldric",
+      "title": "The Compassionate Trader",
+      "role": "Trader",
+      "age": 56,
       "location": "shop",
-      "personality_summary": "Fierce, Ambitious",
-      "motivation": "To find adventure",
+      "personality_summary": "Compassionate, Patient",
+      "motivation": "To protect others",
       "secret": "Has an interesting past",
-      "level": 9,
-      "health": 87,
-      "relationship_count": 1,
+      "level": 10,
+      "health": 90,
+      "relationship_count": 2,
       "dialogue_nodes": 2,
-      "unique_id": "14027a03-2981-4fd3-962d-935385b89a43",
-      "profile_file": "character_profiles/brother_edwin_0d39c1e2_4_profile.json",
-      "dialogue_file": "dialogue_trees/brother_edwin_0d39c1e2_4_dialogue.json"
+      "unique_id": "3b535d85-bbc6-4b5f-ad28-7fe656ca0045",
+      "profile_file": "character_profiles/sister_aldric_623e6415_3_profile.json",
+      "dialogue_file": "dialogue_trees/sister_aldric_623e6415_3_dialogue.json"
+    },
+    "sir_gareth_623e6415_4": {
+      "name": "Sir Gareth",
+      "title": "The Jovial Family Head",
+      "role": "Family Head",
+      "age": 41,
+      "location": "shop",
+      "personality_summary": "Jovial, Patient",
+      "motivation": "To protect others",
+      "secret": "Has an interesting past",
+      "level": 6,
+      "health": 78,
+      "relationship_count": 4,
+      "dialogue_nodes": 2,
+      "unique_id": "1fac4206-3346-4542-b8f1-371fb901db02",
+      "profile_file": "character_profiles/sir_gareth_623e6415_4_profile.json",
+      "dialogue_file": "dialogue_trees/sir_gareth_623e6415_4_dialogue.json"
     }
   },
   "relationships_summary": {
-    "total_relationships": 4,
+    "total_relationships": 12,
     "relationship_types": [
+      "Acquaintance",
       "Neighbor",
-      "Rival"
+      "Friend"
     ],
     "relationship_map_file": "relationship_maps/relationship_map.json"
   },

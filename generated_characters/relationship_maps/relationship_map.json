@@ -1,36 +1,94 @@
 {
-  "Sir Edwin": [
+  "Master Brenna": [
     {
-      "target_character": "Sister Fiona",
-      "relationship_type": "Rival",
-      "relationship_strength": 6,
-      "history": "They know each other through their work in town",
-      "current_status": "Neutral"
-    }
-  ],
-  "Lady Brenna": [],
-  "Sister Fiona": [
-    {
-      "target_character": "Sir Edwin",
-      "relationship_type": "Rival",
+      "target_character": "Sister Aldric",
+      "relationship_type": "Friend",
       "relationship_strength": 6,
       "history": "They know each other through their work in town",
       "current_status": "Neutral"
     },
     {
-      "target_character": "Brother Edwin",
+      "target_character": "Sir Gareth",
       "relationship_type": "Neighbor",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Sister Hilda": [
+    {
+      "target_character": "Sir Aldric",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sir Gareth",
+      "relationship_type": "Acquaintance",
       "relationship_strength": 8,
       "history": "They know each other through their work in town",
       "current_status": "Neutral"
     }
   ],
-  "Sir Brenna": [],
-  "Brother Edwin": [
+  "Sir Aldric": [
     {
-      "target_character": "Sister Fiona",
+      "target_character": "Sister Hilda",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sir Gareth",
+      "relationship_type": "Friend",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Sister Aldric": [
+    {
+      "target_character": "Master Brenna",
+      "relationship_type": "Friend",
+      "relationship_strength": 6,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sir Gareth",
       "relationship_type": "Neighbor",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "Sir Gareth": [
+    {
+      "target_character": "Master Brenna",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sister Hilda",
+      "relationship_type": "Acquaintance",
       "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sir Aldric",
+      "relationship_type": "Friend",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sister Aldric",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 5,
       "history": "They know each other through their work in town",
       "current_status": "Neutral"
     }

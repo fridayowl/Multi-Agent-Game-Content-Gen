@@ -1,0 +1,430 @@
+{
+  "quests": [
+    {
+      "id": "main_quest_1_master_brenna",
+      "title": "The Village Crisis",
+      "description": "Master Brenna needs help resolving a crisis that threatens the village.",
+      "summary": "Help Master Brenna with the village crisis",
+      "giver_npc": "Master Brenna",
+      "objectives": [
+        {
+          "id": "main_quest_1_obj_1",
+          "description": "Investigate the problem",
+          "type": "investigate",
+          "target": "location",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "main_quest_1_obj_2",
+          "description": "Gather information from villagers",
+          "type": "investigate",
+          "target": "location",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "main_quest_1_obj_3",
+          "description": "Find a solution",
+          "type": "investigate",
+          "target": "location",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "main_quest_1_obj_4",
+          "description": "Report back",
+          "type": "investigate",
+          "target": "Master Brenna",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        }
+      ],
+      "rewards": {
+        "experience": 156,
+        "gold": 65,
+        "items": [
+          "Quest Item 1"
+        ],
+        "relationship_changes": null
+      },
+      "prerequisites": null,
+      "level_requirement": 1,
+      "estimated_duration": "15-30 minutes",
+      "quest_type": "main",
+      "interconnected_quests": [],
+      "narrative_importance": "high"
+    },
+    {
+      "id": "main_quest_2_sister_hilda",
+      "title": "Ancient Secrets",
+      "description": "Sister Hilda has discovered something that could change everything.",
+      "summary": "Help Sister Hilda with ancient secrets",
+      "giver_npc": "Sister Hilda",
+      "objectives": [
+        {
+          "id": "main_quest_2_obj_1",
+          "description": "Learn about the discovery",
+          "type": "investigate",
+          "target": "location",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "main_quest_2_obj_2",
+          "description": "Search for more clues",
+          "type": "investigate",
+          "target": "location",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "main_quest_2_obj_3",
+          "description": "Uncover the truth",
+          "type": "investigate",
+          "target": "location",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "main_quest_2_obj_4",
+          "description": "Decide what to do",
+          "type": "investigate",
+          "target": "location",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        }
+      ],
+      "rewards": {
+        "experience": 312,
+        "gold": 130,
+        "items": [],
+        "relationship_changes": null
+      },
+      "prerequisites": [
+        "main_quest_1_master_brenna"
+      ],
+      "level_requirement": 2,
+      "estimated_duration": "15-30 minutes",
+      "quest_type": "main",
+      "interconnected_quests": [],
+      "narrative_importance": "high"
+    },
+    {
+      "id": "side_quest_1_master_brenna",
+      "title": "Personal Favor",
+      "description": "Master Brenna needs help with a personal matter.",
+      "summary": "Help Master Brenna with personal favor",
+      "giver_npc": "Master Brenna",
+      "objectives": [
+        {
+          "id": "side_quest_1_obj_1",
+          "description": "Listen to the problem",
+          "type": "talk_to_npc",
+          "target": "Master Brenna",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "side_quest_1_obj_2",
+          "description": "Help solve it",
+          "type": "talk_to_npc",
+          "target": "Master Brenna",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        },
+        {
+          "id": "side_quest_1_obj_3",
+          "description": "Return for thanks",
+          "type": "talk_to_npc",
+          "target": "Master Brenna",
+          "quantity": 1,
+          "optional": false,
+          "prerequisites": null
+        }
+      ],
+      "rewards": {
+        "experience": 77,
+        "gold": 32,
+        "items": [
+          "Thank You Gift"
+        ],
+        "relationship_changes": null
+      },
+      "prerequisites": null,
+      "level_requirement": 1,
+      "estimated_duration": "15-30 minutes",
+      "quest_type": "side",
+      "interconnected_quests": [],
+      "narrative_importance": "low"
+    }
+  ],
+  "quest_dialogues": {
+    "main_quest_1_master_brenna": {
+      "quest_id": "main_quest_1_master_brenna",
+      "npc_name": "Master Brenna",
+      "dialogue_nodes": {
+        "introduction": {
+          "text": "I have a problem that needs solving. Master Brenna needs help resolving a crisis that threatens the village.",
+          "options": [
+            {
+              "text": "I'll help you.",
+              "next": "acceptance"
+            },
+            {
+              "text": "Tell me more.",
+              "next": "details"
+            },
+            {
+              "text": "I'm not interested.",
+              "next": "decline"
+            }
+          ]
+        },
+        "acceptance": {
+          "text": "Thank you! I knew I could count on you.",
+          "options": [
+            {
+              "text": "What exactly do I need to do?",
+              "next": "objectives"
+            },
+            {
+              "text": "I'll get started right away.",
+              "next": "farewell"
+            }
+          ]
+        },
+        "completion": {
+          "text": "Excellent work! Here's your reward: 100 XP and 50 gold.",
+          "options": [
+            {
+              "text": "Thank you.",
+              "next": "farewell"
+            },
+            {
+              "text": "Happy to help.",
+              "next": "farewell"
+            }
+          ]
+        }
+      }
+    },
+    "main_quest_2_sister_hilda": {
+      "quest_id": "main_quest_2_sister_hilda",
+      "npc_name": "Sister Hilda",
+      "dialogue_nodes": {
+        "introduction": {
+          "text": "I have a problem that needs solving. Sister Hilda has discovered something that could change everything.",
+          "options": [
+            {
+              "text": "I'll help you.",
+              "next": "acceptance"
+            },
+            {
+              "text": "Tell me more.",
+              "next": "details"
+            },
+            {
+              "text": "I'm not interested.",
+              "next": "decline"
+            }
+          ]
+        },
+        "acceptance": {
+          "text": "Thank you! I knew I could count on you.",
+          "options": [
+            {
+              "text": "What exactly do I need to do?",
+              "next": "objectives"
+            },
+            {
+              "text": "I'll get started right away.",
+              "next": "farewell"
+            }
+          ]
+        },
+        "completion": {
+          "text": "Excellent work! Here's your reward: 200 XP and 100 gold.",
+          "options": [
+            {
+              "text": "Thank you.",
+              "next": "farewell"
+            },
+            {
+              "text": "Happy to help.",
+              "next": "farewell"
+            }
+          ]
+        }
+      }
+    },
+    "side_quest_1_master_brenna": {
+      "quest_id": "side_quest_1_master_brenna",
+      "npc_name": "Master Brenna",
+      "dialogue_nodes": {
+        "introduction": {
+          "text": "I have a problem that needs solving. Master Brenna needs help with a personal matter.",
+          "options": [
+            {
+              "text": "I'll help you.",
+              "next": "acceptance"
+            },
+            {
+              "text": "Tell me more.",
+              "next": "details"
+            },
+            {
+              "text": "I'm not interested.",
+              "next": "decline"
+            }
+          ]
+        },
+        "acceptance": {
+          "text": "Thank you! I knew I could count on you.",
+          "options": [
+            {
+              "text": "What exactly do I need to do?",
+              "next": "objectives"
+            },
+            {
+              "text": "I'll get started right away.",
+              "next": "farewell"
+            }
+          ]
+        },
+        "completion": {
+          "text": "Excellent work! Here's your reward: 50 XP and 25 gold.",
+          "options": [
+            {
+              "text": "Thank you.",
+              "next": "farewell"
+            },
+            {
+              "text": "Happy to help.",
+              "next": "farewell"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "npc_involvement": {
+    "Master Brenna": [
+      "main_quest_1_master_brenna",
+      "side_quest_1_master_brenna"
+    ],
+    "Sister Hilda": [
+      "main_quest_2_sister_hilda"
+    ]
+  },
+  "generation_summary": {
+    "total_quests": 3,
+    "main_quests": 2,
+    "side_quests": 1,
+    "interconnected_count": 0,
+    "npcs_involved": 2,
+    "total_objectives": 11,
+    "estimated_playtime": "1 hours 6 minutes"
+  },
+  "theme": "desert",
+  "quest_manifest": {
+    "generation_info": {
+      "timestamp": "2025-06-17T16:34:25.707315",
+      "theme": "desert",
+      "world_size": [
+        40,
+        40
+      ],
+      "quest_count": 3,
+      "ai_enhanced": false
+    },
+    "quest_summary": {
+      "total_quests": 3,
+      "main_quests": 2,
+      "side_quests": 1,
+      "chain_quests": 0,
+      "interconnected_count": 0,
+      "total_objectives": 11,
+      "estimated_playtime": "1 hours 6 minutes"
+    },
+    "npc_involvement": {
+      "Master Brenna": [
+        "main_quest_1_master_brenna",
+        "side_quest_1_master_brenna"
+      ],
+      "Sister Hilda": [
+        "main_quest_2_sister_hilda"
+      ]
+    },
+    "quests": {
+      "main_quest_1_master_brenna": {
+        "title": "The Village Crisis",
+        "giver_npc": "Master Brenna",
+        "type": "main",
+        "level_requirement": 1,
+        "objectives_count": 4,
+        "rewards": {
+          "experience": 100,
+          "gold": 50,
+          "items": [
+            "Quest Item 1"
+          ]
+        },
+        "estimated_duration": "15-30 minutes",
+        "narrative_importance": "high",
+        "quest_file": "quest_definitions/main_quest_1_master_brenna.json"
+      },
+      "main_quest_2_sister_hilda": {
+        "title": "Ancient Secrets",
+        "giver_npc": "Sister Hilda",
+        "type": "main",
+        "level_requirement": 2,
+        "objectives_count": 4,
+        "rewards": {
+          "experience": 200,
+          "gold": 100,
+          "items": []
+        },
+        "estimated_duration": "15-30 minutes",
+        "narrative_importance": "high",
+        "quest_file": "quest_definitions/main_quest_2_sister_hilda.json"
+      },
+      "side_quest_1_master_brenna": {
+        "title": "Personal Favor",
+        "giver_npc": "Master Brenna",
+        "type": "side",
+        "level_requirement": 1,
+        "objectives_count": 3,
+        "rewards": {
+          "experience": 50,
+          "gold": 25,
+          "items": [
+            "Thank You Gift"
+          ]
+        },
+        "estimated_duration": "15-30 minutes",
+        "narrative_importance": "low",
+        "quest_file": "quest_definitions/side_quest_1_master_brenna.json"
+      }
+    },
+    "integration_info": {
+      "unity_compatible": true,
+      "dialogue_system_ready": true,
+      "objective_tracking_ready": true,
+      "reward_system_ready": true,
+      "character_integration": true
+    }
+  },
+  "output_directory": "generated_quests",
+  "status": "success"
+}

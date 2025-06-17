@@ -1,0 +1,93 @@
+{
+  "id": "sister_hilda_623e6415_1",
+  "name": "Sister Hilda",
+  "title": "The Clever Clerk",
+  "description": "A 48-year-old Clerk with a clever nature.",
+  "backstory": "Sister Hilda has worked as a Clerk for many years.",
+  "personality": {
+    "primary_trait": "Clever",
+    "secondary_trait": "Mysterious",
+    "motivation": "To find adventure",
+    "fear": "Failure",
+    "quirk": "Speaks to animals",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 2,
+    "health": 66,
+    "strength": 12,
+    "intelligence": 14,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Sir Aldric",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sir Gareth",
+      "relationship_type": "Acquaintance",
+      "relationship_strength": 8,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "sister hilda_greeting",
+      "text": "Greetings! I'm Sister Hilda, the local Clerk.",
+      "speaker": "Sister Hilda",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sister hilda_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sister hilda_role",
+      "text": "As a Clerk, I to find adventure.",
+      "speaker": "Sister Hilda",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "house",
+  "role": "Clerk",
+  "quest_involvement": [],
+  "age": 48,
+  "appearance": "A 48-year-old Clerk with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "38d117ce-c7d9-4195-8a60-4acf1160fdce"
+}

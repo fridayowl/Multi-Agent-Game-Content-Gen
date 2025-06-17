@@ -1,15 +1,15 @@
 {
-  "main_chain_main_quest_1_sir_edwin": {
+  "main_chain_main_quest_1_master_brenna": {
     "type": "main",
     "quests": [
-      "main_quest_1_sir_edwin"
+      "main_quest_1_master_brenna"
     ],
     "connected_quests": []
   },
-  "main_chain_main_quest_2_lady_brenna": {
+  "main_chain_main_quest_2_sister_hilda": {
     "type": "main",
     "quests": [
-      "main_quest_2_lady_brenna"
+      "main_quest_2_sister_hilda"
     ],
     "connected_quests": []
   }

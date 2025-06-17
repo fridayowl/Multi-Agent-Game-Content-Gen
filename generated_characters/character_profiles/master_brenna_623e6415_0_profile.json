@@ -1,0 +1,93 @@
+{
+  "id": "master_brenna_623e6415_0",
+  "name": "Master Brenna",
+  "title": "The Honest Herbalist",
+  "description": "A 24-year-old Herbalist with a honest nature.",
+  "backstory": "Master Brenna has worked as a Herbalist for many years.",
+  "personality": {
+    "primary_trait": "Honest",
+    "secondary_trait": "Ambitious",
+    "motivation": "To seek knowledge",
+    "fear": "Being alone",
+    "quirk": "Collects unusual items",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 2,
+    "health": 66,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 13,
+    "wisdom": 11,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Sister Aldric",
+      "relationship_type": "Friend",
+      "relationship_strength": 6,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sir Gareth",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 3,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "master brenna_greeting",
+      "text": "Greetings! I'm Master Brenna, the local Herbalist.",
+      "speaker": "Master Brenna",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "master brenna_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "master brenna_role",
+      "text": "As a Herbalist, I to seek knowledge.",
+      "speaker": "Master Brenna",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "shop",
+  "role": "Herbalist",
+  "quest_involvement": [],
+  "age": 24,
+  "appearance": "A 24-year-old Herbalist with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "a0340c7f-a886-4c9c-ac2e-9199f2f25e21"
+}

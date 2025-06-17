@@ -1,0 +1,39 @@
+{
+  "character_name": "Sir Gareth",
+  "dialogue_tree": [
+    {
+      "id": "sir gareth_greeting",
+      "text": "Greetings! I'm Sir Gareth, the local Family Head.",
+      "speaker": "Sir Gareth",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sir gareth_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sir gareth_role",
+      "text": "As a Family Head, I to protect others.",
+      "speaker": "Sir Gareth",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ]
+}

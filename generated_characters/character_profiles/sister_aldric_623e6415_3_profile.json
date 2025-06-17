@@ -1,0 +1,93 @@
+{
+  "id": "sister_aldric_623e6415_3",
+  "name": "Sister Aldric",
+  "title": "The Compassionate Trader",
+  "description": "A 56-year-old Trader with a compassionate nature.",
+  "backstory": "Sister Aldric has worked as a Trader for many years.",
+  "personality": {
+    "primary_trait": "Compassionate",
+    "secondary_trait": "Patient",
+    "motivation": "To protect others",
+    "fear": "Being alone",
+    "quirk": "Always carries a lucky charm",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+  },
+  "stats": {
+    "level": 10,
+    "health": 90,
+    "strength": 11,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 14,
+    "constitution": 12
+  },
+  "relationships": [
+    {
+      "target_character": "Master Brenna",
+      "relationship_type": "Friend",
+      "relationship_strength": 6,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    },
+    {
+      "target_character": "Sir Gareth",
+      "relationship_type": "Neighbor",
+      "relationship_strength": 5,
+      "history": "They know each other through their work in town",
+      "current_status": "Neutral"
+    }
+  ],
+  "dialogue_tree": [
+    {
+      "id": "sister aldric_greeting",
+      "text": "Greetings! I'm Sister Aldric, the local Trader.",
+      "speaker": "Sister Aldric",
+      "options": [
+        {
+          "id": "greeting_continue",
+          "text": "Tell me about your work",
+          "next_node_id": "sister aldric_role",
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": true,
+      "is_farewell": false,
+      "quest_related": false
+    },
+    {
+      "id": "sister aldric_role",
+      "text": "As a Trader, I to protect others.",
+      "speaker": "Sister Aldric",
+      "options": [
+        {
+          "id": "role_continue",
+          "text": "That's interesting",
+          "next_node_id": null,
+          "conditions": [],
+          "effects": []
+        }
+      ],
+      "is_greeting": false,
+      "is_farewell": false,
+      "quest_related": false
+    }
+  ],
+  "inventory": [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+  ],
+  "location": "shop",
+  "role": "Trader",
+  "quest_involvement": [],
+  "age": 56,
+  "appearance": "A 56-year-old Trader with distinctive features.",
+  "voice_description": "Speaks with confidence",
+  "unique_id": "3b535d85-bbc6-4b5f-ad28-7fe656ca0045"
+}

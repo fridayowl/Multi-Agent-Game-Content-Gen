@@ -1,6 +1,6 @@
 {
   "generation_info": {
-    "timestamp": "2025-06-17T11:39:28.797675",
+    "timestamp": "2025-06-17T16:34:25.707315",
     "theme": "desert",
     "world_size": [
       40,
@@ -19,18 +19,18 @@
     "estimated_playtime": "1 hours 6 minutes"
   },
   "npc_involvement": {
-    "Sir Edwin": [
-      "main_quest_1_sir_edwin",
-      "side_quest_1_sir_edwin"
+    "Master Brenna": [
+      "main_quest_1_master_brenna",
+      "side_quest_1_master_brenna"
     ],
-    "Lady Brenna": [
-      "main_quest_2_lady_brenna"
+    "Sister Hilda": [
+      "main_quest_2_sister_hilda"
     ]
   },
   "quests": {
-    "main_quest_1_sir_edwin": {
+    "main_quest_1_master_brenna": {
       "title": "The Village Crisis",
-      "giver_npc": "Sir Edwin",
+      "giver_npc": "Master Brenna",
       "type": "main",
       "level_requirement": 1,
       "objectives_count": 4,
@@ -43,11 +43,11 @@
       },
       "estimated_duration": "15-30 minutes",
       "narrative_importance": "high",
-      "quest_file": "quest_definitions/main_quest_1_sir_edwin.json"
+      "quest_file": "quest_definitions/main_quest_1_master_brenna.json"
     },
-    "main_quest_2_lady_brenna": {
+    "main_quest_2_sister_hilda": {
       "title": "Ancient Secrets",
-      "giver_npc": "Lady Brenna",
+      "giver_npc": "Sister Hilda",
       "type": "main",
       "level_requirement": 2,
       "objectives_count": 4,
@@ -58,11 +58,11 @@
       },
       "estimated_duration": "15-30 minutes",
       "narrative_importance": "high",
-      "quest_file": "quest_definitions/main_quest_2_lady_brenna.json"
+      "quest_file": "quest_definitions/main_quest_2_sister_hilda.json"
     },
-    "side_quest_1_sir_edwin": {
+    "side_quest_1_master_brenna": {
       "title": "Personal Favor",
-      "giver_npc": "Sir Edwin",
+      "giver_npc": "Master Brenna",
       "type": "side",
       "level_requirement": 1,
       "objectives_count": 3,
@@ -75,7 +75,7 @@
       },
       "estimated_duration": "15-30 minutes",
       "narrative_importance": "low",
-      "quest_file": "quest_definitions/side_quest_1_sir_edwin.json"
+      "quest_file": "quest_definitions/side_quest_1_master_brenna.json"
     }
   },
   "integration_info": {
