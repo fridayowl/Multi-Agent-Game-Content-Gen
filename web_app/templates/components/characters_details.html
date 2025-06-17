@@ -1,0 +1,329 @@
+<!-- File: web_app/templates/components/characters_details.html -->
+<div class="detail-card characters-card">
+    <div class="card-header" onclick="toggleDetailCard('characters-details-full')">
+        <h3><span class="icon">👥</span> Characters & Relationships</h3>
+        <div class="expand-btn">▼</div>
+    </div>
+
+    <div class="card-content collapsed" id="characters-details-full">
+        <div class="characters-overview">
+            <div class="character-stats">
+                <div class="stat-box">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Total NPCs</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Relationships</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">847</div>
+                    <div class="stat-label">Dialogue Lines</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Personality Traits</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relationship-graph-section">
+            <h4>🕸️ Character Relationship Network</h4>
+            <div class="graph-container">
+                <svg id="relationshipGraph" width="100%" height="400">
+                    <!-- Populated by JavaScript -->
+                </svg>
+                <div class="graph-legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #4CAF50;"></div>
+                        <span>Friendly</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #FFB74D;"></div>
+                        <span>Neutral</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #F44336;"></div>
+                        <span>Hostile</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #9C27B0;"></div>
+                        <span>Romantic</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #2196F3;"></div>
+                        <span>Professional</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="characters-grid">
+            <div class="character-card">
+                <div class="character-header">
+                    <div class="character-avatar">🧙</div>
+                    <div class="character-info">
+                        <h5>Village Elder</h5>
+                        <div class="character-role">Quest Giver</div>
+                    </div>
+                </div>
+
+                <div class="character-description">
+                    A wise and ancient keeper of village secrets. Known for cryptic advice and deep knowledge of local
+                    history.
+                </div>
+
+                <div class="character-traits">
+                    <h6>Personality Traits</h6>
+                    <div class="traits-list">
+                        <span class="trait-tag">Wise</span>
+                        <span class="trait-tag">Mysterious</span>
+                        <span class="trait-tag">Patient</span>
+                        <span class="trait-tag">Knowledgeable</span>
+                    </div>
+                </div>
+
+                <div class="character-relationships">
+                    <h6>Relationships</h6>
+                    <div class="relationship-item">
+                        <span class="relationship-target">Merchant</span>
+                        <span class="relationship-type friendly">friendly</span>
+                    </div>
+                    <div class="relationship-item">
+                        <span class="relationship-target">Guard</span>
+                        <span class="relationship-type professional">professional</span>
+                    </div>
+                </div>
+
+                <div class="character-dialogue-stats">
+                    <div class="dialogue-stat">
+                        <div class="dialogue-stat-number">156</div>
+                        <div class="dialogue-stat-label">Dialogue Lines</div>
+                    </div>
+                    <div class="dialogue-stat">
+                        <div class="dialogue-stat-number">3</div>
+                        <div class="dialogue-stat-label">Quest Involvement</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <div class="character-header">
+                    <div class="character-avatar">👨‍💼</div>
+                    <div class="character-info">
+                        <h5>Traveling Merchant</h5>
+                        <div class="character-role">Trader</div>
+                    </div>
+                </div>
+
+                <div class="character-description">
+                    A shrewd but fair trader who brings exotic goods and news from distant lands.
+                </div>
+
+                <div class="character-traits">
+                    <h6>Personality Traits</h6>
+                    <div class="traits-list">
+                        <span class="trait-tag">Charismatic</span>
+                        <span class="trait-tag">Cunning</span>
+                        <span class="trait-tag">Greedy</span>
+                        <span class="trait-tag">Well-traveled</span>
+                    </div>
+                </div>
+
+                <div class="character-relationships">
+                    <h6>Relationships</h6>
+                    <div class="relationship-item">
+                        <span class="relationship-target">Elder</span>
+                        <span class="relationship-type friendly">friendly</span>
+                    </div>
+                    <div class="relationship-item">
+                        <span class="relationship-target">Blacksmith</span>
+                        <span class="relationship-type professional">professional</span>
+                    </div>
+                </div>
+
+                <div class="character-dialogue-stats">
+                    <div class="dialogue-stat">
+                        <div class="dialogue-stat-number">198</div>
+                        <div class="dialogue-stat-label">Dialogue Lines</div>
+                    </div>
+                    <div class="dialogue-stat">
+                        <div class="dialogue-stat-number">2</div>
+                        <div class="dialogue-stat-label">Quest Involvement</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <div class="character-header">
+                    <div class="character-avatar">👮</div>
+                    <div class="character-info">
+                        <h5>Captain of Guards</h5>
+                        <div class="character-role">Protector</div>
+                    </div>
+                </div>
+
+                <div class="character-description">
+                    A stern but honorable defender of the village, haunted by past failures.
+                </div>
+
+                <div class="character-traits">
+                    <h6>Personality Traits</h6>
+                    <div class="traits-list">
+                        <span class="trait-tag">Honorable</span>
+                        <span class="trait-tag">Strict</span>
+                        <span class="trait-tag">Protective</span>
+                        <span class="trait-tag">Haunted</span>
+                    </div>
+                </div>
+
+                <div class="character-relationships">
+                    <h6>Relationships</h6>
+                    <div class="relationship-item">
+                        <span class="relationship-target">Elder</span>
+                        <span class="relationship-type professional">professional</span>
+                    </div>
+                    <div class="relationship-item">
+                        <span class="relationship-target">Blacksmith</span>
+                        <span class="relationship-type friendly">friendly</span>
+                    </div>
+                </div>
+
+                <div class="character-dialogue-stats">
+                    <div class="dialogue-stat">
+                        <div class="dialogue-stat-number">167</div>
+                        <div class="dialogue-stat-label">Dialogue Lines</div>
+                    </div>
+                    <div class="dialogue-stat">
+                        <div class="dialogue-stat-number">4</div>
+                        <div class="dialogue-stat-label">Quest Involvement</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <div class="character-header">
+                    <div class="character-avatar">⚒️</div>
+                    <div class="character-info">
+                        <h5>Master Blacksmith</h5>
+                        <div class="character-role">Craftsman</div>
+                    </div>
+                </div>
+
+                <div class="character-description">
+                    A skilled artisan with a fiery temper and unmatched skill in metalworking.
+                </div>
+
+                <div class="character-traits">
+                    <h6>Personality Traits</h6>
+                    <div class="traits-list">
+                        <span class="trait-tag">Skilled</span>
+                        <span class="trait-tag">Hot-tempered</span>
+                        <span class="trait-tag">Perfectionist</span>
+                        <span class="trait-tag">Loyal</span>
+                    </div>
+                </div>
+
+                <div class="character-relationships">
+                    <h6>Relationships</h6>
+                    <div class="relationship-item">
+                        <span class="relationship-target">Merchant</span>
+                        <span class="relationship-type professional">professional</span>
+                    </div>
+                    <div class="relationship-item">
+                        <span class="relationship-target">Guard</span>
+                        <span class="relationship-type friendly">friendly</span>
+                    </div>
+                </div>
+
+                <div class="character-dialogue-stats">
+                    <div class="dialogue-stat">
+                        <div class="dialogue-stat-number">143</div>
+                        <div class="dialogue-stat-label">Dialogue Lines</div>
+                    </div>
+                    <div class="dialogue-stat">
+                        <div class="dialogue-stat-number">2</div>
+                        <div class="dialogue-stat-label">Quest Involvement</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <div class="character-header">
+                    <div class="character-avatar">🧙‍♀️</div>
+                    <div class="character-info">
+                        <h5>Forest Herbalist</h5>
+                        <div class="character-role">Healer</div>
+                    </div>
+                </div>
+
+                <div class="character-description">
+                    A reclusive healer who lives on the forest edge, keeper of ancient botanical knowledge.
+                </div>
+
+                <div class="character-traits">
+                    <h6>Personality Traits</h6>
+                    <div class="traits-list">
+                        <span class="trait-tag">Reclusive</span>
+                        <span class="trait-tag">Knowledgeable</span>
+                        <span class="trait-tag">Gentle</span>
+                        <span class="trait-tag">Spiritual</span>
+                    </div>
+                </div>
+
+                <div class="character-relationships">
+                    <h6>Relationships</h6>
+                    <div class="relationship-item">
+                        <span class="relationship-target">Elder</span>
+                        <span class="relationship-type neutral">neutral</span>
+                    </div>
+                </div>
+
+                <div class="character-dialogue-stats">
+                    <div class="dialogue-stat">
+                        <div class="dialogue-stat-number">183</div>
+                        <div class="dialogue-stat-label">Dialogue Lines</div>
+                    </div>
+                    <div class="dialogue-stat">
+                        <div class="dialogue-stat-number">3</div>
+                        <div class="dialogue-stat-label">Quest Involvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="personality-matrix">
+            <h4>🧠 Personality Distribution Matrix</h4>
+            <div class="personality-chart">
+                <canvas id="personalityChart" width="400" height="300"></canvas>
+            </div>
+        </div>
+
+        <div class="character-files-section">
+            <h4>📁 Character System Files</h4>
+            <div class="file-tree">
+                <div class="file-category">
+                    <span class="folder-icon">📂</span>
+                    <span class="folder-name">characters/</span>
+                    <ul class="file-list">
+                        <li><span class="file-icon">👥</span> characters.json</li>
+                        <li><span class="file-icon">💬</span> dialogue_trees.json</li>
+                        <li><span class="file-icon">🧠</span> personality_data.json</li>
+                        <li><span class="file-icon">🕸️</span> relationships.json</li>
+                        <li><span class="file-icon">🎭</span> character_animations.tres</li>
+                    </ul>
+                </div>
+                <div class="file-category">
+                    <span class="folder-icon">📂</span>
+                    <span class="folder-name">scripts/</span>
+                    <ul class="file-list">
+                        <li><span class="file-icon">🔧</span> NPCController.gd</li>
+                        <li><span class="file-icon">🔧</span> DialogueSystem.gd</li>
+                        <li><span class="file-icon">🔧</span> RelationshipManager.gd</li>
+                        <li><span class="file-icon">🔧</span> CharacterAI.gd</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

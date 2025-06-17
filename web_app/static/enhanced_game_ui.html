@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Medieval Game Content UI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2c3e50 0%, #3a4d63 100%);
+            color: #ecf0f1;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #f39c12, #e74c3c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.2rem;
+        }
+
+        .error {
+            background: rgba(231, 76, 60, 0.2);
+            border: 1px solid #e74c3c;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .success-banner {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .download-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .content-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-right: 15px;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .card-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 5px;
+        }
+
+        .content-list {
+            list-style: none;
+            margin: 15px 0;
+        }
+
+        .content-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .list-item-main {
+            font-weight: 600;
+        }
+
+        .list-item-detail {
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #3498db;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 5px;
+        }
+
+        .loading-spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="/" class="back-btn">← Back to Main</a>
+
+        <div class="header">
+            <h1 id="game-title">🏰 Loading Game World...</h1>
+            <p id="game-subtitle">Fetching generated content from your files...</p>
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="loading-spinner"></div>
+            <div>📁 Reading generated game files...</div>
+            <div>🔍 Analyzing world specification...</div>
+            <div>👥 Loading character data...</div>
+            <div>📜 Processing quest information...</div>
+        </div>
+
+        <div id="error-container"></div>
+
+        <div id="success-banner" class="success-banner" style="display: none;">
+            <h2>🎉 Your Godot Game Is Ready!</h2>
+            <p id="generation-summary">Complete game package generated</p>
+            <a href="#" class="download-btn" id="download-btn">⬇️ DOWNLOAD GODOT PROJECT</a>
+        </div>
+
+        <div id="content-grid" class="content-grid" style="display: none;">
+            <!-- Content will be dynamically generated here -->
+        </div>
+    </div>
+
+    <script>
+        // Game data variables
+        let gameData = {
+            world: null,
+            characters: null,
+            quests: null
+        };
+
+        async function loadGameData() {
+            try {
+                // Load data from Flask API endpoint
+                const response = await fetch('/api/game-data');
+                const data = await response.json();
+
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+
+                gameData = data;
+
+                // Hide loading and show content
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('success-banner').style.display = 'block';
+                document.getElementById('content-grid').style.display = 'grid';
+
+                // Update header
+                const theme = gameData.world?.theme || 'Generated';
+                document.getElementById('game-title').textContent = `🏰 Your ${theme.charAt(0).toUpperCase() + theme.slice(1)} Game World`;
+                document.getElementById('game-subtitle').textContent = 'Complete game package generated with AI-powered multi-agent pipeline';
+
+                // Generate content cards
+                generateContentCards();
+
+            } catch (error) {
+                console.error('Error loading game data:', error);
+                showError('Failed to load game data from server. ' + error.message);
+            }
+        }
+
+        function generateContentCards() {
+            const contentGrid = document.getElementById('content-grid');
+            contentGrid.innerHTML = '';
+
+            // Generate World Card
+            contentGrid.appendChild(createWorldCard());
+
+            // Generate Characters Card  
+            contentGrid.appendChild(createCharactersCard());
+
+            // Generate Quests Card
+            contentGrid.appendChild(createQuestsCard());
+
+            // Generate Summary Card
+            contentGrid.appendChild(createSummaryCard());
+        }
+
+        function createWorldCard() {
+            const card = document.createElement('div');
+            card.className = 'content-card';
+
+            const world = gameData.world || {};
+            const buildings = world.buildings || [];
+            const size = world.size || [40, 40];
+
+            card.innerHTML = `
+                <div class="card-header">
+                    <div class="card-icon">🌍</div>
+                    <div>
+                        <div class="card-title">Complete World</div>
+                        <div class="card-subtitle">Fully designed environment with terrain and buildings</div>
+                    </div>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                    <span><strong>Theme:</strong> ${world.theme || 'Generated'}</span>
+                    <span>${size[0]}x${size[1]} world</span>
+                </div>
+
+                <ul class="content-list">
+                    ${generateBuildingsList(buildings)}
+                </ul>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">${buildings.length}</span>
+                        <div class="stat-label">Buildings</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">${world.natural_features?.length || 0}</span>
+                        <div class="stat-label">Features</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">${size[0] * size[1]}</span>
+                        <div class="stat-label">Tiles</div>
+                    </div>
+                </div>
+            `;
+
+            return card;
+        }
+
+        function createCharactersCard() {
+            const card = document.createElement('div');
+            card.className = 'content-card';
+
+            const characters = gameData.characters?.characters || [];
+
+            card.innerHTML = `
+                <div class="card-header">
+                    <div class="card-icon">👥</div>
+                    <div>
+                        <div class="card-title">AI-Generated NPCs</div>
+                        <div class="card-subtitle">${characters.length} unique characters with personalities</div>
+                    </div>
+                </div>
+
+                <ul class="content-list">
+                    ${generateCharactersList(characters)}
+                </ul>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">${characters.length}</span>
+                        <div class="stat-label">NPCs</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">${calculateRelationships(characters)}</span>
+                        <div class="stat-label">Relations</div>
+                    </div>
+                </div>
+            `;
+
+            return card;
+        }
+
+        function createQuestsCard() {
+            const card = document.createElement('div');
+            card.className = 'content-card';
+
+            const quests = gameData.quests?.quests || [];
+
+            card.innerHTML = `
+                <div class="card-header">
+                    <div class="card-icon">📜</div>
+                    <div>
+                        <div class="card-title">Interconnected Quests</div>
+                        <div class="card-subtitle">${quests.length} storylines with objectives</div>
+                    </div>
+                </div>
+
+                <ul class="content-list">
+                    ${generateQuestsList(quests)}
+                </ul>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">${quests.filter(q => q.quest_type === 'main').length}</span>
+                        <div class="stat-label">Main</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">${quests.filter(q => q.quest_type === 'side').length}</span>
+                        <div class="stat-label">Side</div>
+                    </div>
+                </div>
+            `;
+
+            return card;
+        }
+
+        function createSummaryCard() {
+            const card = document.createElement('div');
+            card.className = 'content-card';
+
+            card.innerHTML = `
+                <div class="card-header">
+                    <div class="card-icon">📊</div>
+                    <div>
+                        <div class="card-title">Generation Summary</div>
+                        <div class="card-subtitle">Complete content package overview</div>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">✅</span>
+                        <div class="stat-label">World Ready</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">✅</span>
+                        <div class="stat-label">NPCs Ready</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">✅</span>
+                        <div class="stat-label">Quests Ready</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">🎮</span>
+                        <div class="stat-label">Godot Ready</div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 20px; padding: 15px; background: rgba(46, 204, 113, 0.2); border-radius: 10px; border-left: 4px solid #2ecc71;">
+                    <strong>🎉 Game Package Complete!</strong><br>
+                    <small>Your medieval game world is ready for Godot import</small>
+                </div>
+            `;
+
+            return card;
+        }
+
+        // Helper functions
+        function generateBuildingsList(buildings) {
+            if (!buildings || buildings.length === 0) {
+                return '<li><div class="list-item-main">No buildings data available</div></li>';
+            }
+
+            return buildings.slice(0, 4).map(building => `
+                <li>
+                    <div>
+                        <div class="list-item-main">${getBuildingIcon(building.type)} ${formatBuildingName(building.type)}</div>
+                        <div class="list-item-detail">Position: (${Math.round(building.position?.x || 0)}, ${Math.round(building.position?.y || 0)})</div>
+                    </div>
+                </li>
+            `).join('') + (buildings.length > 4 ? `<li><div class="list-item-main">... and ${buildings.length - 4} more</div></li>` : '');
+        }
+
+        function generateCharactersList(characters) {
+            if (!characters || characters.length === 0) {
+                return '<li><div class="list-item-main">No character data available</div></li>';
+            }
+
+            return characters.map(char => `
+                <li>
+                    <div>
+                        <div class="list-item-main">${char.name}</div>
+                        <div class="list-item-detail">${char.role} • Age ${char.age || 'Unknown'}</div>
+                    </div>
+                </li>
+            `).join('');
+        }
+
+        function generateQuestsList(quests) {
+            if (!quests || quests.length === 0) {
+                return '<li><div class="list-item-main">No quest data available</div></li>';
+            }
+
+            return quests.map(quest => `
+                <li>
+                    <div>
+                        <div class="list-item-main">${quest.title}</div>
+                        <div class="list-item-detail">${quest.quest_type?.toUpperCase()} • ${quest.objectives?.length || 0} objectives</div>
+                    </div>
+                </li>
+            `).join('');
+        }
+
+        function getBuildingIcon(type) {
+            const icons = {
+                'market': '🏪',
+                'tavern': '🍺',
+                'blacksmith': '⚒️',
+                'house': '🏠',
+                'church': '⛪'
+            };
+            return icons[type] || '🏗️';
+        }
+
+        function formatBuildingName(type) {
+            return type.charAt(0).toUpperCase() + type.slice(1);
+        }
+
+        function calculateRelationships(characters) {
+            if (!characters) return 0;
+            return characters.reduce((total, char) => {
+                return total + (char.relationships?.length || 0);
+            }, 0);
+        }
+
+        function showError(message) {
+            const errorContainer = document.getElementById('error-container');
+            errorContainer.innerHTML = `
+                <div class="error">
+                    <h3>⚠️ Error Loading Game Data</h3>
+                    <p>${message}</p>
+                    <p>The system will try to load available data or show mock content.</p>
+                </div>
+            `;
+            document.getElementById('loading').style.display = 'none';
+        }
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log('Initializing dynamic game content UI...');
+            loadGameData();
+        });
+    </script>
+</body>
+
+</html>

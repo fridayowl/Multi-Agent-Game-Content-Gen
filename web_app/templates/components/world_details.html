@@ -1,0 +1,119 @@
+<!-- File: web_app/templates/components/world_details.html -->
+<div class="detail-card world-card">
+    <div class="card-header" onclick="toggleDetailCard('world-details-full')">
+        <h3><span class="icon">🌍</span> World Details</h3>
+        <div class="expand-btn">▼</div>
+    </div>
+
+    <div class="card-content collapsed" id="world-details-full">
+        <div class="world-overview">
+            <div class="world-preview">
+                <div class="world-thumbnail"></div>
+                <div class="world-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Terrain Size:</span>
+                        <span class="stat-value" id="terrainSize">100x100 units</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Biome Type:</span>
+                        <span class="stat-value" id="biomeType">Fantasy Forest</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Elevation Range:</span>
+                        <span class="stat-value" id="elevationRange">0-25m</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Climate:</span>
+                        <span class="stat-value" id="climate">Temperate</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="world-description">
+                <h4>🗺️ World Description</h4>
+                <p id="worldDescription">A mystical forest realm with ancient trees, crystal streams, and hidden magical
+                    clearings. The world features varied terrain including dense woodlands, open meadows, and mysterious
+                    caves.</p>
+            </div>
+        </div>
+
+        <div class="world-sections">
+            <div class="section">
+                <h4>🏗️ Structures & Buildings</h4>
+                <div class="structure-grid" id="structureGrid">
+                    <div class="structure-item">
+                        <span class="structure-icon">🏠</span>
+                        <div class="structure-name">Village Tavern</div>
+                        <div class="structure-details">Central gathering place with NPCs</div>
+                    </div>
+                    <div class="structure-item">
+                        <span class="structure-icon">⚒️</span>
+                        <div class="structure-name">Blacksmith Shop</div>
+                        <div class="structure-details">Weapon and tool crafting station</div>
+                    </div>
+                    <div class="structure-item">
+                        <span class="structure-icon">🏪</span>
+                        <div class="structure-name">Market Square</div>
+                        <div class="structure-details">Trading hub with merchants</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h4>🌿 Environment Features</h4>
+                <div class="environment-features" id="environmentFeatures">
+                    <span class="environment-tag">Ancient Trees</span>
+                    <span class="environment-tag">Crystal Streams</span>
+                    <span class="environment-tag">Magical Clearings</span>
+                    <span class="environment-tag">Hidden Caves</span>
+                    <span class="environment-tag">Stone Paths</span>
+                    <span class="environment-tag">Fairy Circles</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h4>📁 Generated Files</h4>
+                <div class="file-tree">
+                    <div class="file-category">
+                        <span class="folder-icon">📂</span>
+                        <span class="folder-name">world_layout/</span>
+                        <ul class="file-list">
+                            <li><span class="file-icon">🗺️</span> terrain_heightmap.png</li>
+                            <li><span class="file-icon">🎨</span> world_textures.blend</li>
+                            <li><span class="file-icon">📊</span> world_specification.json</li>
+                            <li><span class="file-icon">🌍</span> World.tscn</li>
+                            <li><span class="file-icon">🔧</span> WorldManager.gd</li>
+                        </ul>
+                    </div>
+                    <div class="file-category">
+                        <span class="folder-icon">📂</span>
+                        <span class="folder-name">environment/</span>
+                        <ul class="file-list">
+                            <li><span class="file-icon">🌳</span> trees_collection.blend</li>
+                            <li><span class="file-icon">🪨</span> rocks_props.blend</li>
+                            <li><span class="file-icon">💧</span> water_materials.tres</li>
+                            <li><span class="file-icon">☀️</span> lighting_setup.tres</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h4>🎮 Godot Integration</h4>
+                <div class="godot-info">
+                    <div class="godot-scene">
+                        <strong>Main Scene:</strong> World.tscn
+                        <br><strong>Script:</strong> WorldManager.gd
+                        <br><strong>Nodes:</strong> Environment, Terrain, Lighting, Spawns
+                    </div>
+                    <div class="godot-features">
+                        <span class="feature-tag">✅ Collision Meshes</span>
+                        <span class="feature-tag">✅ LOD System</span>
+                        <span class="feature-tag">✅ Occlusion Culling</span>
+                        <span class="feature-tag">✅ Dynamic Weather</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

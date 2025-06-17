@@ -1,0 +1,280 @@
+<!-- File: web_app/templates/components/assets_details.html -->
+<div class="detail-card assets-card">
+    <div class="card-header" onclick="toggleDetailCard('assets-details-full')">
+        <h3><span class="icon">🎨</span> Generated Assets</h3>
+        <div class="expand-btn">▼</div>
+    </div>
+
+    <div class="card-content collapsed" id="assets-details-full">
+        <div class="assets-overview">
+            <div class="asset-stats">
+                <div class="stat-box">
+                    <div class="stat-number">47</div>
+                    <div class="stat-label">Total Assets</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Blender Files</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">23</div>
+                    <div class="stat-label">Textures</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Materials</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="asset-categories">
+            <div class="category-tab-bar">
+                <button class="category-tab active" data-category="buildings-full"
+                    onclick="switchAssetCategory('buildings-full')">
+                    🏗️ Buildings
+                </button>
+                <button class="category-tab" data-category="props-full" onclick="switchAssetCategory('props-full')">
+                    📦 Props
+                </button>
+                <button class="category-tab" data-category="environment-full"
+                    onclick="switchAssetCategory('environment-full')">
+                    🌿 Environment
+                </button>
+                <button class="category-tab" data-category="characters-assets"
+                    onclick="switchAssetCategory('characters-assets')">
+                    👥 Characters
+                </button>
+            </div>
+
+            <div class="category-content">
+                <!-- Buildings Category -->
+                <div class="asset-category active" id="buildings-full">
+                    <div class="asset-grid">
+                        <div class="asset-item">
+                            <div class="asset-preview">🏠</div>
+                            <div class="asset-info">
+                                <div class="asset-name">Village Tavern</div>
+                                <div class="asset-type">Building</div>
+                                <div class="asset-files">
+                                    <a href="#" class="file-link">tavern.blend</a>
+                                    <a href="#" class="file-link">tavern.glb</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="asset-item">
+                            <div class="asset-preview">⚒️</div>
+                            <div class="asset-info">
+                                <div class="asset-name">Blacksmith</div>
+                                <div class="asset-type">Building</div>
+                                <div class="asset-files">
+                                    <a href="#" class="file-link">blacksmith.blend</a>
+                                    <a href="#" class="file-link">blacksmith.glb</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="asset-item">
+                            <div class="asset-preview">🗼</div>
+                            <div class="asset-info">
+                                <div class="asset-name">Guard Tower</div>
+                                <div class="asset-type">Building</div>
+                                <div class="asset-files">
+                                    <a href="#" class="file-link">tower.blend</a>
+                                    <a href="#" class="file-link">tower.glb</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Props Category -->
+                <div class="asset-category" id="props-full">
+                    <div class="asset-grid">
+                        <div class="asset-item">
+                            <div class="asset-preview">🛢️</div>
+                            <div class="asset-info">
+                                <div class="asset-name">Wooden Barrel</div>
+                                <div class="asset-type">Prop</div>
+                                <div class="asset-files">
+                                    <a href="#" class="file-link">barrel.blend</a>
+                                    <a href="#" class="file-link">barrel.glb</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="asset-item">
+                            <div class="asset-preview">📦</div>
+                            <div class="asset-info">
+                                <div class="asset-name">Treasure Chest</div>
+                                <div class="asset-type">Prop</div>
+                                <div class="asset-files">
+                                    <a href="#" class="file-link">chest.blend</a>
+                                    <a href="#" class="file-link">chest.glb</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="asset-item">
+                            <div class="asset-preview">🏪</div>
+                            <div class="asset-info">
+                                <div class="asset-name">Market Stall</div>
+                                <div class="asset-type">Prop</div>
+                                <div class="asset-files">
+                                    <a href="#" class="file-link">stall.blend</a>
+                                    <a href="#" class="file-link">stall.glb</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Environment Category -->
+                <div class="asset-category" id="environment-full">
+                    <div class="asset-grid">
+                        <div class="asset-item">
+                            <div class="asset-preview">🌳</div>
+                            <div class="asset-info">
+                                <div class="asset-name">Ancient Oak</div>
+                                <div class="asset-type">Tree</div>
+                                <div class="asset-files">
+                                    <a href="#" class="file-link">oak_tree.blend</a>
+                                    <a href="#" class="file-link">oak_tree.glb</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="asset-item">
+                            <div class="asset-preview">🛤️</div>
+                            <div class="asset-info">
+                                <div class="asset-name">Stone Path</div>
+                                <div class="asset-type">Terrain</div>
+                                <div class="asset-files">
+                                    <a href="#" class="file-link">stone_path.blend</a>
+                                    <a href="#" class="file-link">stone_path.glb</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="asset-item">
+                            <div class="asset-preview">💎</div>
+                            <div class="asset-info">
+                                <div class="asset-name">Crystal Formation</div>
+                                <div class="asset-type">Natural</div>
+                                <div class="asset-files">
+                                    <a href="#" class="file-link">crystals.blend</a>
+                                    <a href="#" class="file-link">crystals.glb</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Characters Category -->
+                <div class="asset-category" id="characters-assets">
+                    <div class="asset-grid">
+                        <div class="asset-item">
+                            <div class="asset-preview">🧙</div>
+                            <div class="asset-info">
+                                <div class="asset-name">Village Elder</div>
+                                <div class="asset-type">NPC</div>
+                                <div class="asset-files">
+                                    <a href="#" class="file-link">elder.blend</a>
+                                    <a href="#" class="file-link">elder.glb</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="asset-item">
+                            <div class="asset-preview">👨‍💼</div>
+                            <div class="asset-info">
+                                <div class="asset-name">Merchant</div>
+                                <div class="asset-type">NPC</div>
+                                <div class="asset-files">
+                                    <a href="#" class="file-link">merchant.blend</a>
+                                    <a href="#" class="file-link">merchant.glb</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="asset-item">
+                            <div class="asset-preview">👮</div>
+                            <div class="asset-info">
+                                <div class="asset-name">Guard</div>
+                                <div class="asset-type">NPC</div>
+                                <div class="asset-files">
+                                    <a href="#" class="file-link">guard.blend</a>
+                                    <a href="#" class="file-link">guard.glb</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blender-files-section">
+            <h4>🔨 Blender Project Files</h4>
+            <div class="blender-files-grid">
+                <div class="blender-file">
+                    <div class="blender-file-header">
+                        <span class="blender-icon">🔶</span>
+                        <span class="blender-file-name">buildings_collection.blend</span>
+                    </div>
+                    <div class="blender-file-details">
+                        <strong>Objects:</strong> 15<br>
+                        <strong>Scenes:</strong> 3<br>
+                        <strong>File Size:</strong> 12.4 MB
+                    </div>
+                    <div class="blender-objects">
+                        <span class="object-tag">Tavern</span>
+                        <span class="object-tag">Blacksmith</span>
+                        <span class="object-tag">Tower</span>
+                        <span class="object-tag">Houses</span>
+                        <span class="object-tag">Walls</span>
+                    </div>
+                </div>
+                <div class="blender-file">
+                    <div class="blender-file-header">
+                        <span class="blender-icon">🔶</span>
+                        <span class="blender-file-name">environment_assets.blend</span>
+                    </div>
+                    <div class="blender-file-details">
+                        <strong>Objects:</strong> 23<br>
+                        <strong>Scenes:</strong> 1<br>
+                        <strong>File Size:</strong> 8.7 MB
+                    </div>
+                    <div class="blender-objects">
+                        <span class="object-tag">Trees</span>
+                        <span class="object-tag">Rocks</span>
+                        <span class="object-tag">Plants</span>
+                        <span class="object-tag">Terrain</span>
+                        <span class="object-tag">Water</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="technical-specs">
+            <h4>⚙️ Technical Specifications</h4>
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <span class="spec-label">Polygon Budget:</span>
+                    <span class="spec-value">Mobile Optimized (&lt;10k tris)</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Texture Resolution:</span>
+                    <span class="spec-value">1024x1024 to 2048x2048</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">UV Mapping:</span>
+                    <span class="spec-value">Optimized for texture atlasing</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">LOD Levels:</span>
+                    <span class="spec-value">3 levels (High, Medium, Low)</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Godot Compatibility:</span>
+                    <span class="spec-value">4.3+ Native Support</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Export Format:</span>
+                    <span class="spec-value">.glb, .fbx, .obj with materials</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

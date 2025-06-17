@@ -1,0 +1,646 @@
+<!-- File: web_app/templates/components/scripts_summary.html -->
+<div class="detail-card scripts-card">
+    <div class="card-header" onclick="toggleDetailCard('scripts-details-full')">
+        <h3><span class="icon">🔧</span> Godot Scripts & Files</h3>
+        <div class="expand-btn">▼</div>
+    </div>
+
+    <div class="card-content collapsed" id="scripts-details-full">
+        <!-- Godot Project Overview -->
+        <div class="godot-overview">
+            <div class="godot-stats">
+                <div class="stat-box">
+                    <div class="stat-number">24</div>
+                    <div class="stat-label">GDScript Files</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">18</div>
+                    <div class="stat-label">Scene Files</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">31</div>
+                    <div class="stat-label">Resource Files</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">3247</div>
+                    <div class="stat-label">Lines of Code</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Script Categories -->
+        <div class="script-categories">
+            <div class="category-tab-bar">
+                <button class="category-tab active" data-category="core-scripts"
+                    onclick="switchScriptCategory('core-scripts')">
+                    🏗️ Core Systems
+                </button>
+                <button class="category-tab" data-category="gameplay-scripts"
+                    onclick="switchScriptCategory('gameplay-scripts')">
+                    🎮 Gameplay
+                </button>
+                <button class="category-tab" data-category="ui-scripts" onclick="switchScriptCategory('ui-scripts')">
+                    🖥️ User Interface
+                </button>
+                <button class="category-tab" data-category="data-scripts"
+                    onclick="switchScriptCategory('data-scripts')">
+                    📊 Data Files
+                </button>
+            </div>
+
+            <div class="category-content">
+                <!-- Core Systems -->
+                <div class="script-category active" id="core-scripts">
+                    <div class="scripts-grid">
+                        <div class="script-item">
+                            <div class="script-header">
+                                <span class="script-icon">🎮</span>
+                                <div class="script-info">
+                                    <h5>GameManager.gd</h5>
+                                    <div class="script-type">Core System</div>
+                                </div>
+                            </div>
+
+                            <div class="script-description">
+                                Central game management system handling game state, save/load, and scene transitions.
+                            </div>
+
+                            <div class="script-details">
+                                <div class="script-detail">
+                                    <span class="detail-label">Lines:</span>
+                                    <span class="detail-value">187</span>
+                                </div>
+                                <div class="script-detail">
+                                    <span class="detail-label">Functions:</span>
+                                    <span class="detail-value">5</span>
+                                </div>
+                            </div>
+
+                            <div class="script-functions">
+                                <h6>Key Functions</h6>
+                                <div class="function-tags">
+                                    <span class="function-tag">_ready()</span>
+                                    <span class="function-tag">save_game()</span>
+                                    <span class="function-tag">load_game()</span>
+                                    <span class="function-tag">change_scene()</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="script-item">
+                            <div class="script-header">
+                                <span class="script-icon">🌍</span>
+                                <div class="script-info">
+                                    <h5>WorldManager.gd</h5>
+                                    <div class="script-type">World System</div>
+                                </div>
+                            </div>
+
+                            <div class="script-description">
+                                Manages world state, environmental systems, and dynamic content loading.
+                            </div>
+
+                            <div class="script-details">
+                                <div class="script-detail">
+                                    <span class="detail-label">Lines:</span>
+                                    <span class="detail-value">142</span>
+                                </div>
+                                <div class="script-detail">
+                                    <span class="detail-label">Functions:</span>
+                                    <span class="detail-value">4</span>
+                                </div>
+                            </div>
+
+                            <div class="script-functions">
+                                <h6>Key Functions</h6>
+                                <div class="function-tags">
+                                    <span class="function-tag">initialize_world()</span>
+                                    <span class="function-tag">update_weather()</span>
+                                    <span class="function-tag">spawn_objects()</span>
+                                    <span class="function-tag">manage_lighting()</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="script-item">
+                            <div class="script-header">
+                                <span class="script-icon">📊</span>
+                                <div class="script-info">
+                                    <h5>DataManager.gd</h5>
+                                    <div class="script-type">Data System</div>
+                                </div>
+                            </div>
+
+                            <div class="script-description">
+                                Handles loading and management of JSON data files for characters, quests, and world
+                                data.
+                            </div>
+
+                            <div class="script-details">
+                                <div class="script-detail">
+                                    <span class="detail-label">Lines:</span>
+                                    <span class="detail-value">98</span>
+                                </div>
+                                <div class="script-detail">
+                                    <span class="detail-label">Functions:</span>
+                                    <span class="detail-value">4</span>
+                                </div>
+                            </div>
+
+                            <div class="script-functions">
+                                <h6>Key Functions</h6>
+                                <div class="function-tags">
+                                    <span class="function-tag">load_character_data()</span>
+                                    <span class="function-tag">load_quest_data()</span>
+                                    <span class="function-tag">parse_json()</span>
+                                    <span class="function-tag">validate_data()</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gameplay Scripts -->
+                <div class="script-category" id="gameplay-scripts">
+                    <div class="scripts-grid">
+                        <div class="script-item">
+                            <div class="script-header">
+                                <span class="script-icon">🎯</span>
+                                <div class="script-info">
+                                    <h5>PlayerController.gd</h5>
+                                    <div class="script-type">Player System</div>
+                                </div>
+                            </div>
+
+                            <div class="script-description">
+                                Complete player movement, interaction, and inventory management system.
+                            </div>
+
+                            <div class="script-details">
+                                <div class="script-detail">
+                                    <span class="detail-label">Lines:</span>
+                                    <span class="detail-value">234</span>
+                                </div>
+                                <div class="script-detail">
+                                    <span class="detail-label">Functions:</span>
+                                    <span class="detail-value">4</span>
+                                </div>
+                            </div>
+
+                            <div class="script-functions">
+                                <h6>Key Functions</h6>
+                                <div class="function-tags">
+                                    <span class="function-tag">_physics_process()</span>
+                                    <span class="function-tag">handle_input()</span>
+                                    <span class="function-tag">interact_with_npc()</span>
+                                    <span class="function-tag">manage_inventory()</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="script-item">
+                            <div class="script-header">
+                                <span class="script-icon">👥</span>
+                                <div class="script-info">
+                                    <h5>NPCController.gd</h5>
+                                    <div class="script-type">NPC System</div>
+                                </div>
+                            </div>
+
+                            <div class="script-description">
+                                AI-driven NPC behavior, dialogue trees, and relationship management.
+                            </div>
+
+                            <div class="script-details">
+                                <div class="script-detail">
+                                    <span class="detail-label">Lines:</span>
+                                    <span class="detail-value">298</span>
+                                </div>
+                                <div class="script-detail">
+                                    <span class="detail-label">Functions:</span>
+                                    <span class="detail-value">4</span>
+                                </div>
+                            </div>
+
+                            <div class="script-functions">
+                                <h6>Key Functions</h6>
+                                <div class="function-tags">
+                                    <span class="function-tag">_ready()</span>
+                                    <span class="function-tag">start_dialogue()</span>
+                                    <span class="function-tag">update_relationship()</span>
+                                    <span class="function-tag">ai_behavior_tree()</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="script-item">
+                            <div class="script-header">
+                                <span class="script-icon">📜</span>
+                                <div class="script-info">
+                                    <h5>QuestManager.gd</h5>
+                                    <div class="script-type">Quest System</div>
+                                </div>
+                            </div>
+
+                            <div class="script-description">
+                                Complete quest tracking, objective management, and progress persistence.
+                            </div>
+
+                            <div class="script-details">
+                                <div class="script-detail">
+                                    <span class="detail-label">Lines:</span>
+                                    <span class="detail-value">176</span>
+                                </div>
+                                <div class="script-detail">
+                                    <span class="detail-label">Functions:</span>
+                                    <span class="detail-value">4</span>
+                                </div>
+                            </div>
+
+                            <div class="script-functions">
+                                <h6>Key Functions</h6>
+                                <div class="function-tags">
+                                    <span class="function-tag">start_quest()</span>
+                                    <span class="function-tag">update_objective()</span>
+                                    <span class="function-tag">complete_quest()</span>
+                                    <span class="function-tag">check_dependencies()</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI Scripts -->
+                <div class="script-category" id="ui-scripts">
+                    <div class="scripts-grid">
+                        <div class="script-item">
+                            <div class="script-header">
+                                <span class="script-icon">🖥️</span>
+                                <div class="script-info">
+                                    <h5>MainMenu.gd</h5>
+                                    <div class="script-type">UI System</div>
+                                </div>
+                            </div>
+
+                            <div class="script-description">
+                                Main menu interface with game options and navigation.
+                            </div>
+
+                            <div class="script-details">
+                                <div class="script-detail">
+                                    <span class="detail-label">Lines:</span>
+                                    <span class="detail-value">67</span>
+                                </div>
+                                <div class="script-detail">
+                                    <span class="detail-label">Functions:</span>
+                                    <span class="detail-value">4</span>
+                                </div>
+                            </div>
+
+                            <div class="script-functions">
+                                <h6>Key Functions</h6>
+                                <div class="function-tags">
+                                    <span class="function-tag">_ready()</span>
+                                    <span class="function-tag">start_game()</span>
+                                    <span class="function-tag">show_options()</span>
+                                    <span class="function-tag">quit_game()</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="script-item">
+                            <div class="script-header">
+                                <span class="script-icon">💬</span>
+                                <div class="script-info">
+                                    <h5>DialogueUI.gd</h5>
+                                    <div class="script-type">UI System</div>
+                                </div>
+                            </div>
+
+                            <div class="script-description">
+                                Dynamic dialogue interface with character portraits and choice selection.
+                            </div>
+
+                            <div class="script-details">
+                                <div class="script-detail">
+                                    <span class="detail-label">Lines:</span>
+                                    <span class="detail-value">134</span>
+                                </div>
+                                <div class="script-detail">
+                                    <span class="detail-label">Functions:</span>
+                                    <span class="detail-value">4</span>
+                                </div>
+                            </div>
+
+                            <div class="script-functions">
+                                <h6>Key Functions</h6>
+                                <div class="function-tags">
+                                    <span class="function-tag">show_dialogue()</span>
+                                    <span class="function-tag">display_choices()</span>
+                                    <span class="function-tag">animate_text()</span>
+                                    <span class="function-tag">close_dialogue()</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="script-item">
+                            <div class="script-header">
+                                <span class="script-icon">📖</span>
+                                <div class="script-info">
+                                    <h5>QuestJournal.gd</h5>
+                                    <div class="script-type">UI System</div>
+                                </div>
+                            </div>
+
+                            <div class="script-description">
+                                Interactive quest journal with progress tracking and objective display.
+                            </div>
+
+                            <div class="script-details">
+                                <div class="script-detail">
+                                    <span class="detail-label">Lines:</span>
+                                    <span class="detail-value">89</span>
+                                </div>
+                                <div class="script-detail">
+                                    <span class="detail-label">Functions:</span>
+                                    <span class="detail-value">4</span>
+                                </div>
+                            </div>
+
+                            <div class="script-functions">
+                                <h6>Key Functions</h6>
+                                <div class="function-tags">
+                                    <span class="function-tag">update_journal()</span>
+                                    <span class="function-tag">show_quest_details()</span>
+                                    <span class="function-tag">filter_quests()</span>
+                                    <span class="function-tag">mark_completed()</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Files -->
+                <div class="script-category" id="data-scripts">
+                    <div class="scripts-grid">
+                        <div class="script-item">
+                            <div class="script-header">
+                                <span class="script-icon">📊</span>
+                                <div class="script-info">
+                                    <h5>characters.json</h5>
+                                    <div class="script-type">Data File</div>
+                                </div>
+                            </div>
+
+                            <div class="script-description">
+                                Complete character data including personalities, relationships, and dialogue trees.
+                            </div>
+
+                            <div class="script-details">
+                                <div class="script-detail">
+                                    <span class="detail-label">Lines:</span>
+                                    <span class="detail-value">847</span>
+                                </div>
+                                <div class="script-detail">
+                                    <span class="detail-label">Sections:</span>
+                                    <span class="detail-value">4</span>
+                                </div>
+                            </div>
+
+                            <div class="script-functions">
+                                <h6>Data Sections</h6>
+                                <div class="function-tags">
+                                    <span class="function-tag">Character definitions</span>
+                                    <span class="function-tag">Relationship mappings</span>
+                                    <span class="function-tag">Dialogue trees</span>
+                                    <span class="function-tag">Personality traits</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="script-item">
+                            <div class="script-header">
+                                <span class="script-icon">📊</span>
+                                <div class="script-info">
+                                    <h5>quests.json</h5>
+                                    <div class="script-type">Data File</div>
+                                </div>
+                            </div>
+
+                            <div class="script-description">
+                                Quest definitions with objectives, dependencies, and reward specifications.
+                            </div>
+
+                            <div class="script-details">
+                                <div class="script-detail">
+                                    <span class="detail-label">Lines:</span>
+                                    <span class="detail-value">623</span>
+                                </div>
+                                <div class="script-detail">
+                                    <span class="detail-label">Sections:</span>
+                                    <span class="detail-value">4</span>
+                                </div>
+                            </div>
+
+                            <div class="script-functions">
+                                <h6>Data Sections</h6>
+                                <div class="function-tags">
+                                    <span class="function-tag">Quest objectives</span>
+                                    <span class="function-tag">Dependency chains</span>
+                                    <span class="function-tag">Reward tables</span>
+                                    <span class="function-tag">Completion criteria</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="script-item">
+                            <div class="script-header">
+                                <span class="script-icon">📊</span>
+                                <div class="script-info">
+                                    <h5>world_config.json</h5>
+                                    <div class="script-type">Data File</div>
+                                </div>
+                            </div>
+
+                            <div class="script-description">
+                                World configuration including spawn points, interactive objects, and environment
+                                settings.
+                            </div>
+
+                            <div class="script-details">
+                                <div class="script-detail">
+                                    <span class="detail-label">Lines:</span>
+                                    <span class="detail-value">234</span>
+                                </div>
+                                <div class="script-detail">
+                                    <span class="detail-label">Sections:</span>
+                                    <span class="detail-value">4</span>
+                                </div>
+                            </div>
+
+                            <div class="script-functions">
+                                <h6>Data Sections</h6>
+                                <div class="function-tags">
+                                    <span class="function-tag">Spawn locations</span>
+                                    <span class="function-tag">Object definitions</span>
+                                    <span class="function-tag">Environment settings</span>
+                                    <span class="function-tag">Interaction points</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Structure -->
+        <div class="project-structure-section">
+            <h4>📁 Complete Project Structure</h4>
+            <div class="project-tree">
+                <div class="tree-container">
+                    <div class="tree-item folder">
+                        <span class="tree-icon">📂</span>
+                        <span class="tree-name">Generated_Game_Project/</span>
+                        <div class="tree-children">
+                            <div class="tree-item file">
+                                <span class="tree-icon">⚙️</span>
+                                <span class="tree-name">project.godot</span>
+                                <span class="file-size">2.1 KB</span>
+                            </div>
+                            <div class="tree-item folder">
+                                <span class="tree-icon">📂</span>
+                                <span class="tree-name">scenes/</span>
+                                <div class="tree-children">
+                                    <div class="tree-item file">
+                                        <span class="tree-icon">🎬</span>
+                                        <span class="tree-name">Main.tscn</span>
+                                        <span class="file-size">15.3 KB</span>
+                                    </div>
+                                    <div class="tree-item file">
+                                        <span class="tree-icon">🎬</span>
+                                        <span class="tree-name">World.tscn</span>
+                                        <span class="file-size">47.8 KB</span>
+                                    </div>
+                                    <div class="tree-item file">
+                                        <span class="tree-icon">🎬</span>
+                                        <span class="tree-name">Player.tscn</span>
+                                        <span class="file-size">8.7 KB</span>
+                                    </div>
+                                    <div class="tree-item folder">
+                                        <span class="tree-icon">📂</span>
+                                        <span class="tree-name">NPCs/</span>
+                                        <div class="tree-children">
+                                            <div class="tree-item file">
+                                                <span class="tree-icon">🎬</span>
+                                                <span class="tree-name">VillageElder.tscn</span>
+                                                <span class="file-size">12.4 KB</span>
+                                            </div>
+                                            <div class="tree-item file">
+                                                <span class="tree-icon">🎬</span>
+                                                <span class="tree-name">Merchant.tscn</span>
+                                                <span class="file-size">10.8 KB</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tree-item folder">
+                                <span class="tree-icon">📂</span>
+                                <span class="tree-name">scripts/</span>
+                                <div class="tree-children">
+                                    <div class="tree-item file">
+                                        <span class="tree-icon">🔧</span>
+                                        <span class="tree-name">GameManager.gd</span>
+                                        <span class="file-size">4.2 KB</span>
+                                    </div>
+                                    <div class="tree-item file">
+                                        <span class="tree-icon">🔧</span>
+                                        <span class="tree-name">PlayerController.gd</span>
+                                        <span class="file-size">6.8 KB</span>
+                                    </div>
+                                    <div class="tree-item file">
+                                        <span class="tree-icon">🔧</span>
+                                        <span class="tree-name">NPCController.gd</span>
+                                        <span class="file-size">8.3 KB</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tree-item folder">
+                                <span class="tree-icon">📂</span>
+                                <span class="tree-name">data/</span>
+                                <div class="tree-children">
+                                    <div class="tree-item file">
+                                        <span class="tree-icon">📊</span>
+                                        <span class="tree-name">characters.json</span>
+                                        <span class="file-size">23.7 KB</span>
+                                    </div>
+                                    <div class="tree-item file">
+                                        <span class="tree-icon">📊</span>
+                                        <span class="tree-name">quests.json</span>
+                                        <span class="file-size">18.4 KB</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tree-item folder">
+                                <span class="tree-icon">📂</span>
+                                <span class="tree-name">assets/</span>
+                                <div class="tree-children">
+                                    <div class="tree-item folder">
+                                        <span class="tree-icon">📂</span>
+                                        <span class="tree-name">models/</span>
+                                    </div>
+                                    <div class="tree-item folder">
+                                        <span class="tree-icon">📂</span>
+                                        <span class="tree-name">textures/</span>
+                                    </div>
+                                    <div class="tree-item folder">
+                                        <span class="tree-icon">📂</span>
+                                        <span class="tree-name">materials/</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code Documentation -->
+        <div class="documentation-section">
+            <h4>📚 Auto-Generated Documentation</h4>
+            <div class="doc-grid">
+                <div class="doc-item">
+                    <div class="doc-icon">📖</div>
+                    <div class="doc-content">
+                        <h5>Setup Guide</h5>
+                        <p>Complete instructions for importing and setting up the project in Godot 4.3+</p>
+                        <div class="doc-link">README.md</div>
+                    </div>
+                </div>
+                <div class="doc-item">
+                    <div class="doc-icon">🔧</div>
+                    <div class="doc-content">
+                        <h5>API Reference</h5>
+                        <p>Detailed documentation of all classes, methods, and properties</p>
+                        <div class="doc-link">API_Documentation.md</div>
+                    </div>
+                </div>
+                <div class="doc-item">
+                    <div class="doc-icon">🎮</div>
+                    <div class="doc-content">
+                        <h5>Gameplay Guide</h5>
+                        <p>How to customize quests, characters, and game mechanics</p>
+                        <div class="doc-link">Gameplay_Customization.md</div>
+                    </div>
+                </div>
+                <div class="doc-item">
+                    <div class="doc-icon">🚀</div>
+                    <div class="doc-content">
+                        <h5>Deployment Guide</h5>
+                        <p>Instructions for building and deploying your game to different platforms</p>
+                        <div class="doc-link">Deployment_Guide.md</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
