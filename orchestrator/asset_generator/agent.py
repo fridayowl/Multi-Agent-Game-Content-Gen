@@ -20,7 +20,7 @@ from google.adk.agents import Agent
 try:
     import google.generativeai as genai
     from google.cloud import aiplatform
-    AI_AVAILABLE = True
+    AI_AVAILABLE =False
 except ImportError:
     AI_AVAILABLE = False
 
@@ -46,7 +46,7 @@ class AICreativeAssetGenerator:
     def __init__(self, output_dir: str = "generated_assets"):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(exist_ok=True)
-        
+        self.logger = logging.getLogger(__name__)
         # Asset directories
         self.models_dir = self.output_dir / "models"
         self.textures_dir = self.output_dir / "ai_textures"
@@ -67,7 +67,7 @@ class AICreativeAssetGenerator:
             self._initialize_ai()
         
         logging.basicConfig(level=logging.INFO)
-        self.logger = logging.getLogger(__name__)
+        
     
     def _initialize_ai(self):
         """Initialize AI services for REAL creativity"""

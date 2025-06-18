@@ -1,3 +1,7 @@
-.game_content_pipeline/*
-.game_content_pipeline
-.complete_game_content/*
+.game_content_pipeline/
+.game_content_pipeline/
+.complete_game_content/
+.complete_game_content/
+.venv
+.generated_quests/
+.godot_exports/
