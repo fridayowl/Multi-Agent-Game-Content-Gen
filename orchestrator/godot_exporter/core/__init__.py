@@ -2,7 +2,7 @@
 Godot exporter core modules
 """
 
-from .exporter import GodotCodeExporter
+from .exporter import GodotExporter
 from .data_types import (
     GodotNode, 
     GodotScene, 
@@ -16,7 +16,7 @@ from .data_types import (
 )
 
 __all__ = [
-    'GodotCodeExporter',
+    'GodotExporter',
     'GodotNode',
     'GodotScene', 
     'GodotScript',
