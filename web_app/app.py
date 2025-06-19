@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Fixed AI Game Generator Web App - Works with your exact folder structure
-Properly handles async orchestrator calls in Flask threading context
+Fixed AI Game Generator Web App - Corrected folder paths and added asset downloads
+Now properly handles the actual folder structure from your orchestrator
 """
 
 import asyncio
@@ -29,16 +29,19 @@ print(f"📚 API Documentation: http://localhost:5001/api/docs")
 print(f"💚 Health Check: http://localhost:5001/health")
 print(f"📁 Project Root: {PROJECT_ROOT}")
 
-# Directory setup based on your folder structure
-GENERATED_FOLDER = PROJECT_ROOT / "generated_content"
+# CORRECTED Directory setup based on your actual folder structure
+COMPLETE_GAME_CONTENT_FOLDER = PROJECT_ROOT / "complete_game_content"  # This is where orchestrator saves
+GODOT_EXPORTS_FOLDER = PROJECT_ROOT / "godot_exports"  # This is where Godot packages are saved
 DOWNLOAD_FOLDER = PROJECT_ROOT / "web_app" / "downloads"
 TEMPLATES_FOLDER = PROJECT_ROOT / "web_app" / "templates"
 
-print(f"📁 Generated Content: {GENERATED_FOLDER}")
+print(f"📁 Complete Game Content: {COMPLETE_GAME_CONTENT_FOLDER}")
+print(f"📁 Godot Exports: {GODOT_EXPORTS_FOLDER}")
 print(f"📁 Templates Folder: {TEMPLATES_FOLDER}")
 
 # Create necessary directories
-GENERATED_FOLDER.mkdir(exist_ok=True)
+COMPLETE_GAME_CONTENT_FOLDER.mkdir(exist_ok=True)
+GODOT_EXPORTS_FOLDER.mkdir(exist_ok=True)
 DOWNLOAD_FOLDER.mkdir(exist_ok=True)
 TEMPLATES_FOLDER.mkdir(exist_ok=True)
 
@@ -57,7 +60,8 @@ class GenerationJob:
         self.message = 'Initializing...'
         self.error = None
         self.created_at = datetime.now()
-        self.download_url = None
+        self.godot_download_url = None
+        self.assets_download_url = None
         self.result_data = None
         
         # Individual agent tracking
@@ -77,23 +81,24 @@ class GenerationJob:
             'characters': None,
             'quests': None,
             'balance': None,
-            'package_info': None
+            'files': None,
+            'godot_project_info': None
         }
 
 def clear_existing_generated_content():
-    """Clear existing folders in generated_content directory"""
+    """Clear existing folders in complete_game_content directory"""
     try:
-        if not GENERATED_FOLDER.exists():
-            print("📁 Generated content folder doesn't exist, creating...")
-            GENERATED_FOLDER.mkdir(exist_ok=True)
+        if not COMPLETE_GAME_CONTENT_FOLDER.exists():
+            print("📁 Complete game content folder doesn't exist, creating...")
+            COMPLETE_GAME_CONTENT_FOLDER.mkdir(exist_ok=True)
             return
             
-        print("🧹 Clearing existing content in generated_content folder...")
+        print("🧹 Clearing existing content in complete_game_content folder...")
         
         # List all items before clearing
-        existing_items = list(GENERATED_FOLDER.iterdir())
+        existing_items = list(COMPLETE_GAME_CONTENT_FOLDER.iterdir())
         if not existing_items:
-            print("📂 Generated content folder is already empty")
+            print("📂 Complete game content folder is already empty")
             return
             
         print(f"🗑️ Found {len(existing_items)} existing items to clear:")
@@ -112,10 +117,10 @@ def clear_existing_generated_content():
             except Exception as e:
                 print(f"⚠️ Warning: Could not remove {item.name}: {e}")
         
-        print("🎉 Successfully cleared existing generated content!")
+        print("🎉 Successfully cleared existing complete game content!")
         
     except Exception as e:
-        print(f"❌ Error clearing generated content: {e}")
+        print(f"❌ Error clearing complete game content: {e}")
 
 def run_orchestrator_sync(prompt: str, job: GenerationJob):
     """
@@ -165,7 +170,7 @@ def run_orchestrator_sync(prompt: str, job: GenerationJob):
         result = run_async_in_thread()
         
         print(f"✅ Orchestrator completed!")
-        print(f"📊 Result: {result}")
+        #print(f"📊 Result: {result}")
         
         # Update agent statuses based on result
         if result and hasattr(result, 'status'):
@@ -245,13 +250,14 @@ def run_generation_pipeline(generation_id: str, prompt: str):
             job.message = 'Processing generated content...'
             
             # Load generation details if content was created
-            session_dirs = list(GENERATED_FOLDER.glob('*'))
+            # Look in COMPLETE_GAME_CONTENT_FOLDER (the correct folder)
+            session_dirs = list(COMPLETE_GAME_CONTENT_FOLDER.glob('*'))
             if session_dirs:
                 most_recent_session = max(session_dirs, key=lambda p: p.stat().st_mtime)
                 print(f"📂 Loading details from: {most_recent_session}")
                 load_generation_details(most_recent_session, job)
             else:
-                print("⚠️ No session directories found in generated_content")
+                print("⚠️ No session directories found in complete_game_content")
             
         finally:
             # Always change back to original directory
@@ -261,7 +267,8 @@ def run_generation_pipeline(generation_id: str, prompt: str):
         job.status = 'completed'
         job.progress = 100
         job.message = 'Real generation completed successfully!'
-        job.download_url = f'/api/download/{generation_id}'
+        job.godot_download_url = f'/api/download/{generation_id}/godot'
+        job.assets_download_url = f'/api/download/{generation_id}/assets'
         
         print(f"✅ Generation {generation_id} completed successfully!")
         
@@ -313,46 +320,120 @@ def load_generation_details(session_dir: Path, job: GenerationJob):
                 job.generation_details['balance'] = json.load(f)
             print(f"✅ Loaded balance report")
         
-        # Check for Godot project
-        godot_dir = session_dir / "godot_project"
-        if godot_dir.exists():
-            job.generation_details['package_info'] = {
-                'godot_project_exists': True,
-                'godot_project_path': str(godot_dir),
-                'files_count': len(list(godot_dir.rglob('*')))
-            }
-            print(f"✅ Found Godot project: {job.generation_details['package_info']['files_count']} files")
+        # Create file structure overview
+        job.generation_details['files'] = create_file_structure_overview(session_dir)
+        
+        # Check for Godot project info
+        godot_info_file = session_dir / "godot_export_info.json"
+        if godot_info_file.exists():
+            with open(godot_info_file, 'r') as f:
+                job.generation_details['godot_project_info'] = json.load(f)
+            print(f"✅ Found Godot project info")
         
     except Exception as e:
         print(f"⚠️ Error loading generation details: {e}")
 
+def create_file_structure_overview(session_dir: Path) -> Dict[str, Any]:
+    """Create a file structure overview for the UI"""
+    try:
+        def build_tree(path: Path, max_depth: int = 3, current_depth: int = 0) -> Dict:
+            if current_depth >= max_depth:
+                return {}
+            
+            tree = {}
+            try:
+                for item in sorted(path.iterdir()):
+                    if item.is_dir():
+                        tree[item.name] = build_tree(item, max_depth, current_depth + 1)
+                    else:
+                        tree[item.name] = f"file ({item.stat().st_size} bytes)"
+            except PermissionError:
+                tree["<access_denied>"] = "Permission denied"
+            return tree
+        
+        file_structure = build_tree(session_dir)
+        total_files = sum(1 for _ in session_dir.rglob('*') if _.is_file())
+        
+        return {
+            'file_structure': file_structure,
+            'total_files_generated': total_files,
+            'session_directory': str(session_dir)
+        }
+    except Exception as e:
+        print(f"⚠️ Error creating file structure overview: {e}")
+        return {'error': str(e)}
+
 def find_godot_package(generation_id: str) -> Optional[Path]:
     """Find the Godot package for a generation"""
     try:
+        print(f"🔍 Looking for Godot package for generation: {generation_id}")
+        
         # Look for pre-built packages in downloads folder
         for package in DOWNLOAD_FOLDER.glob(f'*{generation_id[:8]}*'):
-            if package.suffix.lower() == '.zip':
-                print(f"📦 Found existing package: {package}")
+            if package.suffix.lower() == '.zip' and 'godot' in package.name.lower():
+                print(f"📦 Found existing Godot package: {package}")
                 return package
         
-        # Look for Godot project directories to package
-        for session_dir in GENERATED_FOLDER.iterdir():
+        # Look for recent Godot exports in godot_exports folder
+        if GODOT_EXPORTS_FOLDER.exists():
+            godot_projects = list(GODOT_EXPORTS_FOLDER.glob('GodotProject_*'))
+            if godot_projects:
+                # Get most recent one
+                most_recent_godot = max(godot_projects, key=lambda p: p.stat().st_mtime)
+                print(f"📂 Found recent Godot project: {most_recent_godot}")
+                return create_godot_package(most_recent_godot, generation_id)
+        
+        # Look for Godot project directories in complete_game_content
+        for session_dir in COMPLETE_GAME_CONTENT_FOLDER.iterdir():
             if session_dir.is_dir():
-                godot_dir = session_dir / "godot_project"
-                if godot_dir.exists():
-                    print(f"📂 Found Godot project directory: {godot_dir}")
-                    return create_package_from_godot(godot_dir, generation_id)
+                # Look for Godot project reference
+                godot_info_file = session_dir / "godot_export_info.json"
+                if godot_info_file.exists():
+                    try:
+                        with open(godot_info_file, 'r') as f:
+                            godot_info = json.load(f)
+                        if 'project_path' in godot_info:
+                            godot_path = Path(godot_info['project_path'])
+                            if godot_path.exists():
+                                print(f"📂 Found Godot project from info: {godot_path}")
+                                return create_godot_package(godot_path, generation_id)
+                    except Exception as e:
+                        print(f"⚠️ Error reading Godot info: {e}")
         
         return None
         
     except Exception as e:
-        print(f"❌ Error finding package: {e}")
+        print(f"❌ Error finding Godot package: {e}")
         return None
 
-def create_package_from_godot(godot_dir: Path, generation_id: str) -> Path:
-    """Create a downloadable package from Godot project"""
+def find_assets_content(generation_id: str) -> Optional[Path]:
+    """Find the complete assets/content for a generation"""
     try:
-        package_name = f'GodotGameWorld_{generation_id[:8]}.zip'
+        print(f"🔍 Looking for assets content for generation: {generation_id}")
+        
+        # Look for pre-built assets packages in downloads folder
+        for package in DOWNLOAD_FOLDER.glob(f'*{generation_id[:8]}*'):
+            if package.suffix.lower() == '.zip' and 'assets' in package.name.lower():
+                print(f"📦 Found existing assets package: {package}")
+                return package
+        
+        # Look for complete content in complete_game_content folder
+        session_dirs = list(COMPLETE_GAME_CONTENT_FOLDER.glob('*'))
+        if session_dirs:
+            most_recent_session = max(session_dirs, key=lambda p: p.stat().st_mtime)
+            print(f"📂 Found complete content directory: {most_recent_session}")
+            return create_assets_package(most_recent_session, generation_id)
+        
+        return None
+        
+    except Exception as e:
+        print(f"❌ Error finding assets content: {e}")
+        return None
+
+def create_godot_package(godot_dir: Path, generation_id: str) -> Path:
+    """Create a downloadable Godot package"""
+    try:
+        package_name = f'GodotProject_{generation_id[:8]}.zip'
         package_path = DOWNLOAD_FOLDER / package_name
         
         print(f"📦 Creating Godot package from: {godot_dir}")
@@ -365,33 +446,33 @@ def create_package_from_godot(godot_dir: Path, generation_id: str) -> Path:
             print(f"✅ Godot package created: {package_path} ({size_mb:.2f} MB)")
             return package_path
         else:
-            print(f"❌ Package creation failed")
+            print(f"❌ Godot package creation failed")
             return None
         
     except Exception as e:
         print(f"❌ Error creating Godot package: {e}")
         return None
 
-def create_package_from_directory(content_dir: Path, generation_id: str) -> Path:
-    """Create a downloadable package from any content directory"""
+def create_assets_package(content_dir: Path, generation_id: str) -> Path:
+    """Create a downloadable assets package from complete content"""
     try:
-        package_name = f'AIGameWorld_{generation_id[:8]}.zip'
+        package_name = f'GameAssets_{generation_id[:8]}.zip'
         package_path = DOWNLOAD_FOLDER / package_name
         
-        print(f"📦 Creating package from: {content_dir}")
+        print(f"📦 Creating assets package from: {content_dir}")
         
         # Create zip file
         shutil.make_archive(str(package_path.with_suffix('')), 'zip', str(content_dir))
         
         if package_path.exists():
             size_mb = package_path.stat().st_size / (1024 * 1024)
-            print(f"✅ Package created: {package_path} ({size_mb:.2f} MB)")
+            print(f"✅ Assets package created: {package_path} ({size_mb:.2f} MB)")
             return package_path
         else:
             return None
         
     except Exception as e:
-        print(f"❌ Error creating package: {e}")
+        print(f"❌ Error creating assets package: {e}")
         return None
 
 # Routes
@@ -465,13 +546,14 @@ def get_progress(generation_id):
         'error': job.error,
         'agents': job.agents,
         'generation_details': job.generation_details,
-        'download_url': job.download_url,
+        'godot_download_url': job.godot_download_url,
+        'assets_download_url': job.assets_download_url,
         'created_at': job.created_at.isoformat()
     })
 
-@app.route('/api/download/<generation_id>')
-def download_package(generation_id):
-    """Download the generated package"""
+@app.route('/api/download/<generation_id>/<download_type>')
+def download_package(generation_id, download_type):
+    """Download the generated package - godot or assets"""
     job = generation_jobs.get(generation_id)
     
     if not job:
@@ -480,41 +562,36 @@ def download_package(generation_id):
     if job.status != 'completed':
         return jsonify({'error': f'Package not ready. Status: {job.status}'}), 400
     
-    print(f"🔍 Download request for generation: {generation_id}")
+    print(f"🔍 Download request for generation: {generation_id}, type: {download_type}")
     
-    # Find the package
-    package_path = find_godot_package(generation_id)
+    if download_type == 'godot':
+        # Find Godot package
+        package_path = find_godot_package(generation_id)
+        download_name = f'GodotProject_{generation_id[:8]}.zip'
+        
+    elif download_type == 'assets':
+        # Find assets package
+        package_path = find_assets_content(generation_id)
+        download_name = f'GameAssets_{generation_id[:8]}.zip'
+        
+    else:
+        return jsonify({'error': 'Invalid download type. Use "godot" or "assets"'}), 400
     
     if not package_path or not package_path.exists():
-        print(f"❌ No package found for generation {generation_id}")
-        
-        # Try to create a fallback package
-        try:
-            session_dirs = [d for d in GENERATED_FOLDER.iterdir() if d.is_dir()]
-            if session_dirs:
-                most_recent_session = max(session_dirs, key=lambda p: p.stat().st_mtime)
-                package_path = create_package_from_directory(most_recent_session, generation_id)
-                
-                if not package_path or not package_path.exists():
-                    return jsonify({'error': 'Could not create package from available content'}), 500
-            else:
-                return jsonify({'error': 'No content available for packaging'}), 500
-                
-        except Exception as fallback_error:
-            print(f"❌ Fallback package creation failed: {fallback_error}")
-            return jsonify({'error': 'Package file not found and fallback failed'}), 404
+        print(f"❌ No {download_type} package found for generation {generation_id}")
+        return jsonify({'error': f'No {download_type} package available'}), 404
     
-    print(f"✅ Sending package: {package_path}")
+    print(f"✅ Sending {download_type} package: {package_path}")
     
     try:
         return send_file(
             package_path,
             as_attachment=True,
-            download_name=f'GodotGameWorld_{generation_id[:8]}.zip'
+            download_name=download_name
         )
     except Exception as send_error:
         print(f"❌ Error sending file: {send_error}")
-        return jsonify({'error': 'Failed to send package file'}), 500
+        return jsonify({'error': f'Failed to send {download_type} package file'}), 500
 
 @app.route('/api/game-data')
 def get_game_data():
@@ -540,7 +617,10 @@ def get_game_data():
             'characters': latest_job.generation_details.get('characters'),
             'quests': latest_job.generation_details.get('quests'),
             'balance': latest_job.generation_details.get('balance'),
-            'package_info': latest_job.generation_details.get('package_info')
+            'files': latest_job.generation_details.get('files'),
+            'godot_project_info': latest_job.generation_details.get('godot_project_info'),
+            'godot_download_url': latest_job.godot_download_url,
+            'assets_download_url': latest_job.assets_download_url
         })
         
     except Exception as e:
@@ -560,20 +640,21 @@ def health_check():
     return jsonify({
         'status': 'healthy', 
         'timestamp': datetime.now().isoformat(),
-        'version': '2.1.0-thread-fixed',
+        'version': '2.2.0-fixed-paths-assets',
         'project_root': str(PROJECT_ROOT),
-        'generated_folder': str(GENERATED_FOLDER),
+        'complete_game_content_folder': str(COMPLETE_GAME_CONTENT_FOLDER),
+        'godot_exports_folder': str(GODOT_EXPORTS_FOLDER),
         'templates_folder': str(TEMPLATES_FOLDER),
         'orchestrator_status': orchestrator_status,
-        'mode': 'real_orchestrator_thread_fixed'
+        'mode': 'real_orchestrator_fixed_paths'
     })
 
 # API documentation endpoint
 @app.route('/api/docs')
 def api_docs():
     docs = {
-        'title': 'AI Game Generator API - Thread-Fixed Real Version',
-        'version': '2.1.0-thread-fixed',
+        'title': 'AI Game Generator API - Fixed Paths and Asset Downloads',
+        'version': '2.2.0-fixed-paths-assets',
         'description': 'Generate complete Godot game worlds from text descriptions',
         'working_test_command': 'python -c "import asyncio; from orchestrator.agent import CompleteGameContentOrchestrator; orchestrator = CompleteGameContentOrchestrator(); result = asyncio.run(orchestrator.generate_complete_game_content(\'test village\')); print(f\'Success: {result.status}\')"',
         'endpoints': {
@@ -590,34 +671,41 @@ def api_docs():
                     'message': 'string',
                     'agents': 'object (real agent statuses)',
                     'generation_details': 'object (actual generated content)',
-                    'download_url': 'string (when completed)'
+                    'godot_download_url': 'string (when completed)',
+                    'assets_download_url': 'string (when completed)'
                 }
             },
-            'GET /api/download/{id}': {
-                'description': 'Download the generated Godot package',
-                'response': 'ZIP file containing complete Godot project'
+            'GET /api/download/{id}/godot': {
+                'description': 'Download the Godot project package',
+                'response': 'ZIP file containing Godot project'
+            },
+            'GET /api/download/{id}/assets': {
+                'description': 'Download the complete assets package',
+                'response': 'ZIP file containing all generated content'
             }
         },
-        'fixes_in_v2_1_0': [
-            'Fixed async handling in threading context',
-            'Matches working Python command execution pattern',
-            'Proper event loop management per thread',
-            'Enhanced error logging and debugging'
+        'fixes_in_v2_2_0': [
+            'Fixed folder paths to use complete_game_content and godot_exports',
+            'Added separate asset download functionality',
+            'Enhanced file structure overview',
+            'Better package detection and creation'
         ]
     }
     return jsonify(docs)
 
 if __name__ == '__main__':
     print(f"{'='*80}")
-    print(f"🎨 AI Game Generator - Thread-Fixed Version 2.1.0")
+    print(f"🎨 AI Game Generator - Fixed Paths & Asset Downloads v2.2.0")
     print(f"{'='*80}")
     print(f"🏗️ REAL ORCHESTRATOR: Direct calls, matching working command")
-    print(f"🧵 THREAD-SAFE: Proper async handling in Flask context")
+    print(f"📁 FIXED PATHS: Using correct complete_game_content and godot_exports folders")
+    print(f"📦 DUAL DOWNLOADS: Separate Godot project and assets packages")
     print(f"📁 Project structure detected:")
     print(f"   📂 {PROJECT_ROOT}")
     print(f"   ├── orchestrator/")
     print(f"   ├── web_app/")
-    print(f"   └── generated_content/")
+    print(f"   ├── complete_game_content/")
+    print(f"   └── godot_exports/")
     
     # Test orchestrator import
     try:
@@ -636,8 +724,14 @@ if __name__ == '__main__':
         print(f"⚠️ HTML template missing: {template_path}")
         print(f"💡 Save your HTML content as: {template_path}")
     
-    print(f"🎮 Ready to generate Godot game worlds!")
-    print(f"💡 This version matches your working Python command execution")
+    # Check folder structure
+    print(f"📁 Checking folder structure:")
+    print(f"   Complete Game Content: {'✅' if COMPLETE_GAME_CONTENT_FOLDER.exists() else '❌'} {COMPLETE_GAME_CONTENT_FOLDER}")
+    print(f"   Godot Exports: {'✅' if GODOT_EXPORTS_FOLDER.exists() else '❌'} {GODOT_EXPORTS_FOLDER}")
+    print(f"   Downloads: {'✅' if DOWNLOAD_FOLDER.exists() else '❌'} {DOWNLOAD_FOLDER}")
+    
+    print(f"🎮 Ready to generate Godot game worlds with dual download options!")
+    print(f"💡 This version uses the correct folder paths from your orchestrator")
     
     # Run Flask app
     app.run(host='0.0.0.0', port=5001, debug=True)
