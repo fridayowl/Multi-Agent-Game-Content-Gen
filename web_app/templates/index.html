@@ -116,1371 +116,6 @@
         }
 
         @keyframes floatShape {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            25% { transform: translateY(-30px) rotate(90deg); }
-            50% { transform: translateY(-15px) rotate(180deg); }
-            75% { transform: translateY(-40px) rotate(270deg); }
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 32px 24px;
-            position: relative;
-            z-index: 10;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 48px;
-            position: relative;
-        }
-
-        .godot-logo {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 24px;
-            background: var(--gradient-primary);
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 36px;
-            font-weight: 700;
-            color: white;
-            box-shadow: var(--shadow-medium), 0 0 0 4px rgba(139, 92, 246, 0.1);
-            animation: logoFloat 6s ease-in-out infinite;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .godot-logo::before {
-            content: "G";
-            font-family: 'JetBrains Mono', monospace;
-            position: relative;
-            z-index: 2;
-        }
-
-        @keyframes logoFloat {
-            0%, 100% { transform: translateY(0px); box-shadow: var(--shadow-medium), 0 0 0 4px rgba(139, 92, 246, 0.1); }
-            50% { transform: translateY(-8px); box-shadow: var(--shadow-strong), 0 0 0 6px rgba(139, 92, 246, 0.15); }
-        }
-
-        .header h1 {
-            font-family: 'Inter', sans-serif;
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 16px;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: -0.02em;
-        }
-
-        .header .subtitle {
-            font-size: 1.25rem;
-            color: var(--text-secondary);
-            font-weight: 400;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .main-content {
-            background: var(--bg-primary);
-            border-radius: 24px;
-            padding: 48px;
-            box-shadow: var(--shadow-strong);
-            margin-bottom: 40px;
-            border: 2px solid var(--border-light);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .main-content::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--gradient-gaming);
-            background-size: 300% 300%;
-            animation: gradientMove 8s ease infinite;
-        }
-
-        @keyframes gradientMove {
-            0%, 100% { background-position: 0% 50%; }
-            25% { background-position: 100% 50%; }
-            50% { background-position: 200% 50%; }
-            75% { background-position: 300% 50%; }
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section:last-child {
-            margin-bottom: 0;
-        }
-
-        .section-title {
-            color: var(--text-primary);
-            margin-bottom: 20px;
-            font-size: 1.75rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .section-icon {
-            font-size: 1.5rem;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .prompt-input {
-            width: 100%;
-            min-height: 160px;
-            padding: 24px;
-            border: 2px solid var(--border-light);
-            border-radius: 20px;
-            font-size: 16px;
-            resize: vertical;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            background: var(--bg-secondary);
-            color: var(--text-primary);
-            font-family: 'Inter', sans-serif;
-            outline: none;
-            box-shadow: var(--shadow-soft);
-        }
-
-        .prompt-input:focus {
-            border-color: var(--primary-purple);
-            box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1), var(--shadow-medium);
-            background: var(--bg-primary);
-            transform: translateY(-2px);
-        }
-
-        .prompt-input::placeholder {
-            color: var(--text-muted);
-            font-style: italic;
-        }
-
-        .examples {
-            margin-top: 32px;
-        }
-
-        .examples-label {
-            margin-bottom: 20px;
-            color: var(--text-secondary);
-            font-weight: 600;
-            font-size: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .examples-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 16px;
-        }
-
-        .example-tag {
-            background: var(--bg-secondary);
-            border: 2px solid var(--border-light);
-            padding: 20px 24px;
-            border-radius: 16px;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            font-size: 15px;
-            font-weight: 500;
-            position: relative;
-            overflow: hidden;
-            text-align: left;
-            box-shadow: var(--shadow-soft);
-        }
-
-        .example-tag:hover {
-            background: var(--bg-accent);
-            border-color: var(--primary-purple);
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-medium);
-        }
-
-        .generate-section {
-            text-align: center;
-            margin: 56px 0;
-        }
-
-        .button-group {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-            border-radius: 16px;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: none;
-            outline: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-            font-size: 16px;
-            position: relative;
-            overflow: hidden;
-            box-shadow: var(--shadow-soft);
-        }
-
-        .btn-primary {
-            background: var(--gradient-primary);
-            color: white;
-            padding: 18px 36px;
-            font-size: 18px;
-            font-weight: 700;
-            box-shadow: var(--shadow-medium);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-strong);
-        }
-
-        .btn-primary:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            transform: none;
-        }
-
-        .btn-secondary {
-            background: var(--bg-secondary);
-            color: var(--text-primary);
-            border: 2px solid var(--border-medium);
-            padding: 14px 28px;
-        }
-
-        .btn-secondary:hover {
-            background: var(--bg-accent);
-            border-color: var(--primary-purple);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-medium);
-        }
-
-        .progress-section {
-            display: none;
-            margin: 56px 0;
-            background: var(--bg-secondary);
-            border-radius: 24px;
-            padding: 40px;
-            border: 2px solid var(--border-light);
-            box-shadow: var(--shadow-soft);
-        }
-
-        .progress-header {
-            text-align: center;
-            margin-bottom: 32px;
-        }
-
-        .progress-title {
-            color: var(--text-primary);
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .progress-bar {
-            width: 100%;
-            height: 12px;
-            background: var(--bg-tertiary);
-            border-radius: 12px;
-            overflow: hidden;
-            margin-bottom: 20px;
-            border: 2px solid var(--border-light);
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: var(--gradient-primary);
-            transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            border-radius: 10px;
-            position: relative;
-            box-shadow: 0 0 10px rgba(139, 92, 246, 0.3);
-        }
-
-        .progress-text {
-            text-align: center;
-            color: var(--text-secondary);
-            font-weight: 600;
-            font-size: 1rem;
-        }
-
-        .agent-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 24px;
-            margin-top: 40px;
-        }
-
-        .agent-card {
-            background: var(--bg-primary);
-            padding: 28px;
-            border-radius: 20px;
-            border-left: 5px solid var(--border-medium);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 2px solid var(--border-light);
-            position: relative;
-            overflow: hidden;
-            box-shadow: var(--shadow-soft);
-        }
-
-        .agent-card.active {
-            border-left-color: var(--accent-orange);
-            background: var(--bg-accent);
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-medium);
-        }
-
-        .agent-card.completed {
-            border-left-color: var(--success-green);
-            background: rgba(16, 185, 129, 0.05);
-            box-shadow: var(--shadow-medium);
-        }
-
-        .agent-card.failed {
-            border-left-color: #EF4444;
-            background: rgba(239, 68, 68, 0.05);
-            box-shadow: var(--shadow-medium);
-        }
-
-        .agent-header {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            margin-bottom: 16px;
-        }
-
-        .agent-icon {
-            font-size: 1.5rem;
-            width: 48px;
-            height: 48px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--bg-secondary);
-            border-radius: 12px;
-            border: 2px solid var(--border-light);
-        }
-
-        .agent-title {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--text-primary);
-        }
-
-        .agent-description {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        .generation-details {
-            display: none;
-            margin-top: 48px;
-            background: var(--bg-secondary);
-            border-radius: 24px;
-            padding: 40px;
-            border: 2px solid var(--border-light);
-            box-shadow: var(--shadow-soft);
-        }
-
-        .details-header {
-            margin-bottom: 32px;
-            text-align: center;
-        }
-
-        .details-title {
-            color: var(--text-primary);
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .tabs {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 32px;
-            flex-wrap: wrap;
-            border-bottom: 2px solid var(--border-light);
-            padding-bottom: 20px;
-            justify-content: center;
-        }
-
-        .tab-button {
-            background: var(--bg-primary);
-            border: 2px solid var(--border-light);
-            color: var(--text-secondary);
-            padding: 14px 24px;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-            font-size: 0.95rem;
-            position: relative;
-            box-shadow: var(--shadow-soft);
-        }
-
-        .tab-button.active {
-            background: var(--gradient-primary);
-            color: white;
-            border-color: transparent;
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-medium);
-        }
-
-        .tab-button:hover:not(.active) {
-            background: var(--bg-accent);
-            border-color: var(--primary-purple);
-            color: var(--text-primary);
-            transform: translateY(-1px);
-        }
-
-        .tab-content {
-            display: none;
-            background: var(--bg-primary);
-            border-radius: 20px;
-            padding: 32px;
-            border: 2px solid var(--border-light);
-            box-shadow: var(--shadow-soft);
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        .detail-card {
-            background: var(--bg-secondary);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 20px;
-            border: 2px solid var(--border-light);
-            box-shadow: var(--shadow-soft);
-        }
-
-        .detail-card:last-child {
-            margin-bottom: 0;
-        }
-
-        .detail-card h4 {
-            color: var(--primary-purple);
-            margin-bottom: 16px;
-            font-size: 1.3rem;
-            font-weight: 700;
-        }
-
-        .detail-card h5 {
-            color: var(--primary-purple);
-            margin-bottom: 12px;
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-
-        .detail-card p {
-            color: var(--text-secondary);
-            line-height: 1.7;
-            margin-bottom: 12px;
-            font-size: 0.95rem;
-        }
-
-        .results-section {
-            display: none;
-            margin-top: 56px;
-        }
-
-        .download-card {
-            background: var(--gradient-primary);
-            color: white;
-            padding: 56px;
-            border-radius: 28px;
-            text-align: center;
-            margin-bottom: 40px;
-            box-shadow: var(--shadow-strong);
-            position: relative;
-            overflow: hidden;
-            border: 4px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .download-card h3 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            position: relative;
-            z-index: 2;
-            font-weight: 800;
-        }
-
-        .download-card p {
-            font-size: 1.25rem;
-            margin-bottom: 32px;
-            position: relative;
-            z-index: 2;
-            opacity: 0.95;
-        }
-
-        .download-btn {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: 3px solid rgba(255, 255, 255, 0.4);
-            padding: 18px 36px;
-            border-radius: 16px;
-            font-size: 18px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-            z-index: 2;
-            backdrop-filter: blur(10px);
-        }
-
-        .download-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-            border-color: rgba(255, 255, 255, 0.6);
-            transform: translateY(-3px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-        }
-
-        .success-state {
-            background: linear-gradient(135deg, var(--success-green), #34D399);
-            color: white;
-        }
-
-        .hud-element {
-            position: fixed;
-            z-index: 1000;
-            font-family: 'JetBrains Mono', monospace;
-            color: var(--primary-purple);
-            font-size: 0.85rem;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 10px 16px;
-            border-radius: 12px;
-            border: 2px solid var(--border-light);
-            backdrop-filter: blur(20px);
-            box-shadow: var(--shadow-soft);
-            font-weight: 600;
-        }
-
-        .fps-counter {
-            top: 24px;
-            right: 24px;
-        }
-
-        .version-info {
-            bottom: 24px;
-            left: 24px;
-            color: var(--text-muted);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container { padding: 24px 16px; }
-            .main-content { padding: 32px 24px; }
-            .header h1 { font-size: 2.5rem; }
-            .agent-grid { grid-template-columns: 1fr; }
-            .tabs { flex-direction: column; }
-            .button-group { flex-direction: column; align-items: stretch; }
-            .examples-grid { grid-template-columns: 1fr; }
-            .hud-element { font-size: 0.75rem; padding: 8px 12px; }
-            .download-card { padding: 40px 24px; }
-            .download-card h3 { font-size: 2rem; }
-        }
-    </style>
-</head>
-
-<body>
-    <!-- Gaming-themed background shapes -->
-    <div class="gaming-shapes" id="gamingShapes"></div>
-
-    <!-- HUD Elements -->
-    <div class="hud-element fps-counter" id="fpsCounter">REAL MODE</div>
-    <div class="hud-element version-info">v2.1.0 | Flask API</div>
-
-    <div class="container">
-        <div class="header">
-            <div class="godot-logo"></div>
-            <h1>AI GAME GENERATOR</h1>
-            <p class="subtitle">Create complete Godot game worlds from simple text descriptions using advanced AI agents</p>
-        </div>
-
-        <div class="main-content">
-            <div class="section">
-                <h2 class="section-title">
-                    <span class="section-icon">🎮</span>
-                    Describe Your Game World
-                </h2>
-                <textarea class="prompt-input" id="gamePrompt"
-                    placeholder="Describe the game world you want to create... For example: 'Create a spooky Halloween village with 5 NPCs and 3 interconnected quests about solving mysterious disappearances in an ancient forest'"></textarea>
-
-                <div class="examples">
-                    <p class="examples-label">✨ Example Gaming Worlds:</p>
-                    <div class="examples-grid">
-                        <div class="example-tag" onclick="setPrompt('Create a spooky Halloween village with 5 NPCs and 3 interconnected quests about solving mysterious disappearances')">
-                            🎃 Haunted Village Mystery</div>
-                        <div class="example-tag" onclick="setPrompt('Generate a cyberpunk neon city with hackers, corporate agents, and underground rebels fighting for digital freedom')">
-                            🌆 Cyberpunk Uprising</div>
-                        <div class="example-tag" onclick="setPrompt('Build a medieval castle town with a blacksmith, tavern keeper, royal guard, and ancient dragon threatening the kingdom')">
-                            🏰 Dragon's Kingdom</div>
-                        <div class="example-tag" onclick="setPrompt('Design a space station with alien traders, smugglers, and scientists discovering an ancient artifact')">
-                            🚀 Cosmic Discovery</div>
-                        <div class="example-tag" onclick="setPrompt('Create a mystical forest realm with fairy NPCs, tree spirits, and magical quests to restore nature balance')">
-                            🧚 Enchanted Sanctuary</div>
-                        <div class="example-tag" onclick="setPrompt('Generate an underwater atlantis with merfolk, treasure hunters, and ancient sea temple mysteries')">
-                            🌊 Atlantis Depths</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="generate-section">
-                <div class="button-group">
-                    <button class="btn btn-primary" id="generateBtn" onclick="startGeneration()">
-                        ⚡ GENERATE GODOT GAME PACKAGE
-                    </button>
-                    <button class="btn btn-secondary" id="loadDataBtn" onclick="loadExistingGameData()">
-                        📊 LOAD LATEST GAME DATA
-                    </button>
-                </div>
-            </div>
-
-            <div class="progress-section" id="progressSection">
-                <div class="progress-header">
-                    <h3 class="progress-title">🤖 Multi-Agent Generation Pipeline</h3>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
-                </div>
-                <p class="progress-text" id="progressText">Ready to start generation...</p>
-
-                <div class="agent-grid">
-                    <div class="agent-card" id="agent-world">
-                        <div class="agent-header">
-                            <div class="agent-icon">🌍</div>
-                            <h4 class="agent-title">World Designer Agent</h4>
-                        </div>
-                        <p class="agent-description">Creating detailed terrain layout, environment design, and world architecture...</p>
-                    </div>
-                    <div class="agent-card" id="agent-assets">
-                        <div class="agent-header">
-                            <div class="agent-icon">🎨</div>
-                            <h4 class="agent-title">Asset Generator Agent</h4>
-                        </div>
-                        <p class="agent-description">Generating unique 3D models, textures, materials, and visual assets...</p>
-                    </div>
-                    <div class="agent-card" id="agent-characters">
-                        <div class="agent-header">
-                            <div class="agent-icon">👥</div>
-                            <h4 class="agent-title">Character Creator Agent</h4>
-                        </div>
-                        <p class="agent-description">Creating NPCs with unique personalities, backstories, and relationships...</p>
-                    </div>
-                    <div class="agent-card" id="agent-quests">
-                        <div class="agent-header">
-                            <div class="agent-icon">📜</div>
-                            <h4 class="agent-title">Quest Writer Agent</h4>
-                        </div>
-                        <p class="agent-description">Writing interconnected storylines, dialogue, and character-driven narratives...</p>
-                    </div>
-                    <div class="agent-card" id="agent-balance">
-                        <div class="agent-header">
-                            <div class="agent-icon">⚖️</div>
-                            <h4 class="agent-title">Balance Validator Agent</h4>
-                        </div>
-                        <p class="agent-description">Analyzing difficulty progression, player engagement, and gameplay balance...</p>
-                    </div>
-                    <div class="agent-card" id="agent-export">
-                        <div class="agent-header">
-                            <div class="agent-icon">📦</div>
-                            <h4 class="agent-title">Godot Exporter Agent</h4>
-                        </div>
-                        <p class="agent-description">Creating complete Godot project with GDScript files and scene structure...</p>
-                    </div>
-                </div>
-
-                <div class="generation-details" id="generationDetails">
-                    <div class="details-header">
-                        <h3 class="details-title">📋 Generation Details</h3>
-                    </div>
-                    <div class="tabs">
-                        <button class="tab-button active" onclick="showTab('world')">🌍 World</button>
-                        <button class="tab-button" onclick="showTab('assets')">🎨 Assets</button>
-                        <button class="tab-button" onclick="showTab('characters')">👥 Characters</button>
-                        <button class="tab-button" onclick="showTab('quests')">📜 Quests</button>
-                        <button class="tab-button" onclick="showTab('files')">📁 Files</button>
-                    </div>
-
-                    <div id="tab-world" class="tab-content active">
-                        <div class="detail-card">
-                            <h4>🌍 World Overview</h4>
-                            <div id="worldOverview">
-                                <p>World information will appear here once generation begins...</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="tab-assets" class="tab-content">
-                        <div class="detail-card">
-                            <h4>🎨 Generated Assets</h4>
-                            <div id="assetsOverview">
-                                <p>Asset information will appear here once generation begins...</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="tab-characters" class="tab-content">
-                        <div class="detail-card">
-                            <h4>👥 NPC Characters</h4>
-                            <div id="charactersOverview">
-                                <p>Character information will appear here once generation begins...</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="tab-quests" class="tab-content">
-                        <div class="detail-card">
-                            <h4>📜 Quest System</h4>
-                            <div id="questsOverview">
-                                <p>Quest information will appear here once generation begins...</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="tab-files" class="tab-content">
-                        <div class="detail-card">
-                            <h4>📁 Generated Files</h4>
-                            <div id="filesOverview">
-                                <p>File structure will appear here once generation begins...</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="results-section" id="resultsSection">
-                <div class="download-card">
-                    <h3>🎉 Your Godot Game Is Ready!</h3>
-                    <p>Complete game package generated with multi-agent AI pipeline</p>
-                    <button class="download-btn" id="downloadBtn" onclick="downloadPackage()">
-                        📥 DOWNLOAD GODOT PROJECT
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-         
-
-        // Initialize gaming shapes
-        function createGamingShapes() {
-            const shapesContainer = document.getElementById('gamingShapes');
-            const shapeTypes = ['triangle', 'square', 'circle', 'diamond'];
-            const shapeCount = 15;
-
-            for (let i = 0; i < shapeCount; i++) {
-                const shape = document.createElement('div');
-                const shapeType = shapeTypes[Math.floor(Math.random() * shapeTypes.length)];
-                shape.className = `shape ${shapeType}`;
-                shape.style.left = Math.random() * 100 + '%';
-                shape.style.top = Math.random() * 100 + '%';
-                shape.style.animationDelay = Math.random() * 15 + 's';
-                shape.style.animationDuration = (Math.random() * 10 + 10) + 's';
-                shapesContainer.appendChild(shape);
-            }
-        }
-
-        function setPrompt(text) {
-            document.getElementById('gamePrompt').value = text;
-            const input = document.getElementById('gamePrompt');
-            input.focus();
-            input.setSelectionRange(text.length, text.length);
-        }
-
-        function showTab(tabName) {
-            // Hide all tab contents
-            document.querySelectorAll('.tab-content').forEach(tab => {
-                tab.classList.remove('active');
-            });
-
-            // Remove active class from all tab buttons
-            document.querySelectorAll('.tab-button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-
-            // Show selected tab content
-            document.getElementById(`tab-${tabName}`).classList.add('active');
-
-            // Add active class to clicked button
-            event.target.classList.add('active');
-        }
-
-        // REAL FLASK API INTEGRATION
-        async function startGeneration() {
-            const prompt = document.getElementById('gamePrompt').value.trim();
-
-            if (!prompt) {
-                alert('Please describe your game world first!');
-                return;
-            }
-
-            if (generationInProgress) {
-                console.log('Generation already in progress...');
-                return;
-            }
-
-            generationInProgress = true;
-            console.log('🚀 Starting REAL generation with prompt:', prompt);
-
-            // Update UI
-            const generateBtn = document.getElementById('generateBtn');
-            generateBtn.disabled = true;
-            generateBtn.textContent = '⚡ GENERATING...';
-
-            // Show progress section
-            document.getElementById('progressSection').style.display = 'block';
-            document.getElementById('resultsSection').style.display = 'none';
-
-            try {
-                // Call REAL Flask API
-                const response = await fetch('/api/generate', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ prompt: prompt })
-                });
-
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                }
-
-                const data = await response.json();
-                console.log('✅ Generation started:', data);
-
-                if (data.error) {
-                    throw new Error(data.error);
-                }
-
-                currentGenerationId = data.generation_id;
-                
-                // Start polling for progress updates
-                startProgressPolling();
-
-            } catch (error) {
-                console.error('❌ Generation failed:', error);
-                alert('Generation failed: ' + error.message);
-                
-                generateBtn.disabled = false;
-                generateBtn.textContent = '⚡ GENERATE GODOT GAME PACKAGE';
-                generationInProgress = false;
-            }
-        }
-
-        function startProgressPolling() {
-            if (!currentGenerationId) return;
-
-            console.log('📊 Starting progress polling for:', currentGenerationId);
-
-            currentProgressInterval = setInterval(async () => {
-                try {
-                    const response = await fetch(`/api/progress/${currentGenerationId}`);
-                    
-                    if (!response.ok) {
-                        console.error('Progress fetch failed:', response.status);
-                        return;
-                    }
-
-                    const progress = await response.json();
-                    console.log('📈 Progress update:', progress);
-
-                    updateProgressUI(progress);
-
-                    // Check if completed or failed
-                    if (progress.status === 'completed') {
-                        console.log('✅ Generation completed!');
-                        stopProgressPolling();
-                        showCompletionResults(progress);
-                    } else if (progress.status === 'failed') {
-                        console.log('❌ Generation failed!');
-                        stopProgressPolling();
-                        showFailureResults(progress);
-                    }
-
-                } catch (error) {
-                    console.error('Progress polling error:', error);
-                    // Don't stop polling on temporary errors
-                }
-            }, 2000); // Poll every 2 seconds
-        }
-
-        function stopProgressPolling() {
-            if (currentProgressInterval) {
-                clearInterval(currentProgressInterval);
-                currentProgressInterval = null;
-            }
-        }
-
-        function updateProgressUI(progress) {
-            // Update progress bar
-            document.getElementById('progressFill').style.width = progress.progress + '%';
-            document.getElementById('progressText').textContent = progress.message || 'Processing...';
-
-            // Update agent statuses
-            if (progress.agents) {
-                Object.entries(progress.agents).forEach(([agentKey, agentData]) => {
-                    const agentCard = document.getElementById(`agent-${agentKey}`);
-                    if (agentCard) {
-                        // Remove all status classes
-                        agentCard.classList.remove('active', 'completed', 'failed');
-                        
-                        // Add appropriate status class
-                        if (agentData.status === 'active') {
-                            agentCard.classList.add('active');
-                        } else if (agentData.status === 'completed') {
-                            agentCard.classList.add('completed');
-                        } else if (agentData.status === 'failed') {
-                            agentCard.classList.add('failed');
-                        }
-
-                        // Update agent description with current message
-                        const description = agentCard.querySelector('.agent-description');
-                        if (description && agentData.message) {
-                            description.textContent = agentData.message;
-                        }
-                    }
-                });
-            }
-
-            // Show generation details if available
-            if (progress.generation_details && Object.keys(progress.generation_details).some(key => progress.generation_details[key])) {
-                document.getElementById('generationDetails').style.display = 'block';
-                updateGenerationDetails(progress.generation_details);
-            }
-        }
-
-        function showCompletionResults(progress) {
-            generationInProgress = false;
-
-            // Update generate button
-            const generateBtn = document.getElementById('generateBtn');
-            generateBtn.disabled = false;
-            generateBtn.textContent = '✅ GENERATION COMPLETE';
-            generateBtn.classList.add('success-state');
-
-            // Show results section
-            document.getElementById('resultsSection').style.display = 'block';
-
-            // Set download URL if available
-            if (progress.download_url) {
-                const downloadBtn = document.getElementById('downloadBtn');
-                downloadBtn.onclick = () => downloadPackageReal(progress.download_url);
-            }
-
-            // Reset button after 3 seconds
-            setTimeout(() => {
-                generateBtn.textContent = '⚡ GENERATE GODOT GAME PACKAGE';
-                generateBtn.classList.remove('success-state');
-            }, 3000);
-        }
-
-        function showFailureResults(progress) {
-            generationInProgress = false;
-
-            // Update generate button
-            const generateBtn = document.getElementById('generateBtn');
-            generateBtn.disabled = false;
-            generateBtn.textContent = '❌ GENERATION FAILED';
-
-            // Show error message
-            alert('Generation failed: ' + (progress.error || 'Unknown error occurred'));
-
-            // Reset button after 3 seconds
-            setTimeout(() => {
-                generateBtn.textContent = '⚡ GENERATE GODOT GAME PACKAGE';
-            }, 3000);
-        }
-
-        async function downloadPackageReal(downloadUrl) {
-            try {
-                console.log('📥 Starting download from:', downloadUrl);
-                
-                // Create download link and trigger
-                const link = document.createElement('a');
-                link.href = downloadUrl;
-                link.download = 'GodotGameWorld.zip';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-
-                // Show download success
-                const btn = document.getElementById('downloadBtn');
-                const originalText = btn.textContent;
-                btn.textContent = '✅ DOWNLOAD STARTED';
-                btn.classList.add('success-state');
-
-                setTimeout(() => {
-                    btn.textContent = originalText;
-                    btn.classList.remove('success-state');
-                }, 3000);
-
-            } catch (error) {
-                console.error('❌ Download failed:', error);
-                alert('Download failed: ' + error.message);
-            }
-        }
-
-        async function loadExistingGameData() {
-            console.log('🔍 Loading existing game data...');
-
-            try {
-                const response = await fetch('/api/game-data');
-
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                }
-
-                const data = await response.json();
-                console.log('📊 Loaded game data:', data);
-
-                if (data.error) {
-                    alert('No existing game data found: ' + data.error);
-                    return;
-                }
-
-                // Show the generation details section
-                document.getElementById('progressSection').style.display = 'block';
-                document.getElementById('generationDetails').style.display = 'block';
-
-                // Update all sections with loaded data
-                updateGenerationDetails(data);
-
-                // Show success message
-                const btn = document.getElementById('loadDataBtn');
-                const originalText = btn.textContent;
-                btn.textContent = '✅ DATA LOADED';
-                btn.classList.add('success-state');
-
-                setTimeout(() => {
-                    btn.textContent = originalText;
-                    btn.classList.remove('success-state');
-                }, 3000);
-
-            } catch (error) {
-                console.error('❌ Error loading game data:', error);
-                alert(`Failed to load game data: ${error.message}`);
-            }
-        }
-
-        function updateGenerationDetails(details) {
-            if (!details) return;
-
-            console.log('🔄 Updating generation details:', details);
-
-            // Update each tab with real data
-            updateWorldDetails(details.world);
-            updateAssetsDetails(details.assets);
-            updateCharactersDetails(details.characters);
-            updateQuestsDetails(details.quests);
-            updateFilesDetails(details.files);
-        }
-
-        function updateWorldDetails(worldData) {
-            const container = document.getElementById('worldOverview');
-            if (!worldData) {
-                container.innerHTML = '<p>No world data available yet. Generation in progress...</p>';
-                return;
-            }
-
-            let html = '<div class="detail-card">';
-            html += '<h5>🌍 World Information</h5>';
-            
-            if (worldData.theme) html += `<p><strong>Theme:</strong> ${worldData.theme}</p>`;
-            if (worldData.description) html += `<p><strong>Description:</strong> ${worldData.description}</p>`;
-            if (worldData.size) html += `<p><strong>Size:</strong> ${Array.isArray(worldData.size) ? worldData.size.join(' x ') : worldData.size}</p>`;
-            if (worldData.environment_type) html += `<p><strong>Environment:</strong> ${worldData.environment_type}</p>`;
-            
-            if (worldData.buildings && Array.isArray(worldData.buildings)) {
-                html += `<p><strong>Buildings:</strong> ${worldData.buildings.length} structures</p>`;
-                html += '<div style="margin-top: 10px;">';
-                worldData.buildings.slice(0, 8).forEach(building => {
-                    const name = typeof building === 'object' ? building.name : building;
-                    html += `<span style="display: inline-block; background: var(--bg-accent); color: var(--primary-purple); padding: 4px 12px; border-radius: 12px; margin: 2px; font-size: 0.8rem;">${name}</span>`;
-                });
-                html += '</div>';
-            }
-
-            html += '</div>';
-            container.innerHTML = html;
-        }
-
-        function updateAssetsDetails(assetsData) {
-            const container = document.getElementById('assetsOverview');
-            if (!assetsData) {
-                container.innerHTML = '<p>No assets data available yet. Generation in progress...</p>';
-                return;
-            }
-
-            let html = '<div class="detail-card">';
-            html += '<h5>🎨 Generated Assets</h5>';
-            
-            if (assetsData.generation_summary) {
-                const summary = assetsData.generation_summary;
-                if (summary.total_creative_assets) {
-                    html += `<p><strong>Total Assets:</strong> ${summary.total_creative_assets}</p>`;
-                }
-                if (summary.unique_buildings) {
-                    html += `<p><strong>Buildings:</strong> ${summary.unique_buildings}</p>`;
-                }
-                if (summary.environmental_props) {
-                    html += `<p><strong>Props:</strong> ${summary.environmental_props}</p>`;
-                }
-            }
-
-            if (assetsData.categories) {
-                Object.entries(assetsData.categories).forEach(([category, items]) => {
-                    if (Array.isArray(items) && items.length > 0) {
-                        html += `<p><strong>${category.charAt(0).toUpperCase() + category.slice(1)}:</strong> ${items.length} items</p>`;
-                    }
-                });
-            }
-
-            html += '</div>';
-            container.innerHTML = html;
-        }
-
-        function updateCharactersDetails(charactersData) {
-            const container = document.getElementById('charactersOverview');
-            if (!charactersData) {
-                container.innerHTML = '<p>No characters data available yet. Generation in progress...</p>';
-                return;
-            }
-
-            let html = '<div class="detail-card">';
-            html += '<h5>👥 NPC Characters</h5>';
-
-            if (charactersData.characters && Array.isArray(charactersData.characters)) {
-                html += `<p><strong>Total NPCs:</strong> ${charactersData.characters.length}</p>`;
-                
-                charactersData.characters.forEach(character => {
-                    html += '<div style="background: var(--bg-primary); border-radius: 12px; padding: 16px; margin: 12px 0; border: 2px solid var(--border-light);">';
-                    html += `<h6 style="color: var(--secondary-blue); margin-bottom: 8px;">${character.name || 'Unknown NPC'}</h6>`;
-                    if (character.role) html += `<p><strong>Role:</strong> ${character.role}</p>`;
-                    if (character.personality) html += `<p><strong>Personality:</strong> ${character.personality}</p>`;
-                    if (character.background) html += `<p><strong>Background:</strong> ${character.background}</p>`;
-                    html += '</div>';
-                });
-            }
-
-            html += '</div>';
-            container.innerHTML = html;
-        }
-
-        function updateQuestsDetails(questsData) {
-            const container = document.getElementById('questsOverview');
-            if (!questsData) {
-                container.innerHTML = '<p>No quests data available yet. Generation in progress...</p>';
-                return;
-            }
-
-            let html = '<div class="detail-card">';
-            html += '<h5>📜 Quest System</h5>';
-
-            if (questsData.quests && Array.isArray(questsData.quests)) {
-                html += `<p><strong>Total Quests:</strong> ${questsData.quests.length}</p>`;
-                
-                questsData.quests.forEach(quest => {
-                    html += '<div style="background: var(--bg-primary); border-radius: 12px; padding: 16px; margin: 12px 0; border: 2px solid var(--border-light);">';
-                    html += `<h6 style="color: var(--accent-pink); margin-bottom: 8px;">${quest.title || 'Untitled Quest'}</h6>`;
-                    if (quest.type) html += `<span style="background: var(--bg-accent); color: var(--primary-purple); padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; text-transform: uppercase;">${quest.type}</span>`;
-                    if (quest.giver) html += `<p><strong>Quest Giver:</strong> ${quest.giver}</p>`;
-                    if (quest.description) html += `<p><strong>Description:</strong> ${quest.description}</p>`;
-                    html += '</div>';
-                });
-            }
-
-            html += '</div>';
-            container.innerHTML = html;
-        }
-
-        function updateFilesDetails(filesData) {
-            const container = document.getElementById('filesOverview');
-            if (!filesData) {
-                container.innerHTML = '<p>No files data available yet. Generation in progress...</p>';
-                return;
-            }
-
-            let html = '<div class="detail-card">';
-            html += '<h5>📁 Generated Files</h5>';
-            html += '<p>File structure and generated content will be shown here after completion.</p>';
-            html += '</div>';
-            
-            container.innerHTML = html;
-        }
-
-        // Initialize everything when page loads
-        document.addEventListener('DOMContentLoaded', function () {
-            console.log('🚀 AI Game Generator UI Loaded - REAL MODE');
-            createGamingShapes();
-
-            // Add keyboard shortcut
-            document.addEventListener('keydown', function (e) {
-                if (e.ctrlKey && e.key === 'Enter') {
-                    startGeneration();
-                }
-            });
-        });
-
-        // Clean up on page unload
-        window.addEventListener('beforeunload', function() {
-            stopProgressPolling();
-        });
-    </script>
-</body>
-
-</html><!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Game Generator - Create Godot Games from Text</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
-
-        :root {
-            --primary-purple: #8B5CF6;
-            --primary-purple-light: #A78BFA;
-            --primary-purple-dark: #7C3AED;
-            --secondary-blue: #3B82F6;
-            --secondary-cyan: #06B6D4;
-            --accent-pink: #EC4899;
-            --accent-orange: #F59E0B;
-            --success-green: #10B981;
-            --bg-primary: #FFFFFF;
-            --bg-secondary: #F8FAFC;
-            --bg-tertiary: #F1F5F9;
-            --bg-accent: #EEF2FF;
-            --text-primary: #1E293B;
-            --text-secondary: #475569;
-            --text-muted: #64748B;
-            --border-light: #E2E8F0;
-            --border-medium: #CBD5E1;
-            --border-accent: #C7D2FE;
-            --shadow-soft: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-            --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.12);
-            --shadow-strong: 0 8px 32px rgba(0, 0, 0, 0.15);
-            --gradient-primary: linear-gradient(135deg, var(--primary-purple) 0%, var(--secondary-blue) 100%);
-            --gradient-secondary: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-orange) 100%);
-            --gradient-gaming: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4, #FFEAA7, #DDA0DD);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--bg-primary);
-            min-height: 100vh;
-            color: var(--text-primary);
-            overflow-x: hidden;
-            line-height: 1.6;
-            font-weight: 400;
-            position: relative;
-        }
-
-        /* Gaming-themed background pattern */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background:
-                radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.03) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
-                radial-gradient(circle at 40% 60%, rgba(236, 72, 153, 0.02) 0%, transparent 50%);
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .gaming-shapes {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 2;
-            overflow: hidden;
-        }
-
-        .shape {
-            position: absolute;
-            opacity: 0.08;
-            animation: floatShape 15s ease-in-out infinite;
-        }
-
-        .shape.triangle {
-            width: 0;
-            height: 0;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-bottom: 25px solid var(--primary-purple);
-        }
-
-        .shape.square {
-            width: 20px;
-            height: 20px;
-            background: var(--secondary-blue);
-            transform: rotate(45deg);
-        }
-
-        .shape.circle {
-            width: 18px;
-            height: 18px;
-            background: var(--accent-pink);
-            border-radius: 50%;
-        }
-
-        .shape.diamond {
-            width: 16px;
-            height: 16px;
-            background: var(--accent-orange);
-            transform: rotate(45deg);
-            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-        }
-
-        @keyframes floatShape {
 
             0%,
             100% {
@@ -2046,6 +681,15 @@
             opacity: 0.95;
         }
 
+        .download-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 32px;
+        }
+
         .download-btn {
             background: rgba(255, 255, 255, 0.2);
             color: white;
@@ -2059,6 +703,10 @@
             position: relative;
             z-index: 2;
             backdrop-filter: blur(10px);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .download-btn:hover {
@@ -2066,6 +714,16 @@
             border-color: rgba(255, 255, 255, 0.6);
             transform: translateY(-3px);
             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .download-btn.assets {
+            background: rgba(245, 158, 11, 0.2);
+            border-color: rgba(245, 158, 11, 0.4);
+        }
+
+        .download-btn.assets:hover {
+            background: rgba(245, 158, 11, 0.3);
+            border-color: rgba(245, 158, 11, 0.6);
         }
 
         .success-state {
@@ -2122,6 +780,11 @@
             }
 
             .button-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .download-buttons {
                 flex-direction: column;
                 align-items: stretch;
             }
@@ -2243,150 +906,135 @@
                     </div>
                     <div class="agent-card" id="agent-quests">
                         <div class="agent-header">
-                            <div class="agent-icon">📜</div>
-                            <h4 class="agent-title">Quest Writer Agent</h4>
+                            <div class="agent-icon">🗡️</div>
+                            <h4 class="agent-title">Quest Designer Agent</h4>
                         </div>
-                        <p class="agent-description">Writing interconnected storylines, dialogue, and character-driven
-                            narratives...</p>
+                        <p class="agent-description">Designing interconnected quests, storylines, and gameplay
+                            mechanics...</p>
                     </div>
-                    <div class="agent-card" id="agent-balance">
+                    <div class="agent-card" id="agent-scripts">
                         <div class="agent-header">
-                            <div class="agent-icon">⚖️</div>
-                            <h4 class="agent-title">Balance Validator Agent</h4>
+                            <div class="agent-icon">⚙️</div>
+                            <h4 class="agent-title">Script Generator Agent</h4>
                         </div>
-                        <p class="agent-description">Analyzing difficulty progression, player engagement, and gameplay
-                            balance...</p>
+                        <p class="agent-description">Writing GDScript code for gameplay mechanics, AI behaviors, and
+                            interactions...</p>
                     </div>
-                    <div class="agent-card" id="agent-export">
+                    <div class="agent-card" id="agent-integration">
                         <div class="agent-header">
-                            <div class="agent-icon">📦</div>
-                            <h4 class="agent-title">Godot Exporter Agent</h4>
+                            <div class="agent-icon">🔧</div>
+                            <h4 class="agent-title">Integration Agent</h4>
                         </div>
-                        <p class="agent-description">Creating complete Godot project with GDScript files and scene
-                            structure...</p>
+                        <p class="agent-description">Assembling all components into a complete, playable Godot
+                            project...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="generation-details" id="generationDetails">
+                <div class="details-header">
+                    <h3 class="details-title">📋 Generation Details</h3>
+                </div>
+
+                <div class="tabs">
+                    <button class="tab-button active" onclick="switchTab('world')">🌍 World Design</button>
+                    <button class="tab-button" onclick="switchTab('characters')">👥 Characters</button>
+                    <button class="tab-button" onclick="switchTab('quests')">🗡️ Quests</button>
+                    <button class="tab-button" onclick="switchTab('assets')">🎨 Assets</button>
+                    <button class="tab-button" onclick="switchTab('scripts')">⚙️ Scripts</button>
+                </div>
+
+                <div class="tab-content active" id="world-content">
+                    <div class="detail-card">
+                        <h4>Environment Overview</h4>
+                        <p id="world-overview">Detailed world description will appear here...</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>Terrain & Layout</h4>
+                        <p id="world-terrain">Terrain information will be populated during generation...</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>Atmosphere & Mood</h4>
+                        <p id="world-atmosphere">Atmospheric details will be shown here...</p>
                     </div>
                 </div>
 
-                <div class="generation-details" id="generationDetails">
-                    <div class="details-header">
-                        <h3 class="details-title">📋 Generation Details</h3>
+                <div class="tab-content" id="characters-content">
+                    <div class="detail-card">
+                        <h4>NPC Roster</h4>
+                        <div id="characters-list">Character details will populate here...</div>
                     </div>
-                    <div class="tabs">
-                        <button class="tab-button active" onclick="showTab('world')">🌍 World</button>
-                        <button class="tab-button" onclick="showTab('assets')">🎨 Assets</button>
-                        <button class="tab-button" onclick="showTab('characters')">👥 Characters</button>
-                        <button class="tab-button" onclick="showTab('quests')">📜 Quests</button>
-                        <button class="tab-button" onclick="showTab('files')">📁 Files</button>
-                    </div>
+                </div>
 
-                    <div id="tab-world" class="tab-content active">
-                        <div class="detail-card">
-                            <h4>🌍 World Overview</h4>
-                            <div id="worldOverview">
-                                <p>World information will appear here once generation begins...</p>
-                            </div>
-                        </div>
+                <div class="tab-content" id="quests-content">
+                    <div class="detail-card">
+                        <h4>Quest Network</h4>
+                        <div id="quests-list">Quest information will be generated here...</div>
                     </div>
+                </div>
 
-                    <div id="tab-assets" class="tab-content">
-                        <div class="detail-card">
-                            <h4>🎨 Generated Assets</h4>
-                            <div id="assetsOverview">
-                                <p>Asset information will appear here once generation begins...</p>
-                            </div>
-                        </div>
+                <div class="tab-content" id="assets-content">
+                    <div class="detail-card">
+                        <h4>Generated Assets</h4>
+                        <div id="assets-list">Asset inventory will appear here...</div>
                     </div>
+                </div>
 
-                    <div id="tab-characters" class="tab-content">
-                        <div class="detail-card">
-                            <h4>👥 NPC Characters</h4>
-                            <div id="charactersOverview">
-                                <p>Character information will appear here once generation begins...</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="tab-quests" class="tab-content">
-                        <div class="detail-card">
-                            <h4>📜 Quest System</h4>
-                            <div id="questsOverview">
-                                <p>Quest information will appear here once generation begins...</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="tab-files" class="tab-content">
-                        <div class="detail-card">
-                            <h4>📁 Generated Files</h4>
-                            <div id="filesOverview">
-                                <p>File structure will appear here once generation begins...</p>
-                            </div>
-                        </div>
+                <div class="tab-content" id="scripts-content">
+                    <div class="detail-card">
+                        <h4>GDScript Components</h4>
+                        <div id="scripts-list">Script details will be populated here...</div>
                     </div>
                 </div>
             </div>
 
             <div class="results-section" id="resultsSection">
                 <div class="download-card">
-                    <h3>🎉 Your Godot Game Is Ready!</h3>
-                    <p>Complete game package generated with multi-agent AI pipeline</p>
-                    <button class="download-btn" id="downloadBtn" onclick="downloadPackage()">
-                        📥 DOWNLOAD GODOT PROJECT
-                    </button>
+                    <h3>🎉 Your Game is Ready!</h3>
+                    <p>Complete Godot project package with all assets, scripts, and worlds</p>
+
+                    <div class="download-buttons">
+                        <a href="#" class="download-btn" id="downloadProject">
+                            📦 DOWNLOAD GODOT PROJECT
+                        </a>
+                        <a href="#" class="download-btn assets" id="downloadAssets">
+                            🎨 DOWNLOAD ASSETS ONLY
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
+        // Global variables
+        let currentGameData = null;
         let generationInProgress = false;
-        let currentGenerationId = null;
-        let currentProgressInterval = null;
+        let currentStep = 0;
+        const totalSteps = 6;
 
-        // Initialize gaming shapes
-        function createGamingShapes() {
-            const shapesContainer = document.getElementById('gamingShapes');
-            const shapeTypes = ['triangle', 'square', 'circle', 'diamond'];
-            const shapeCount = 15;
+        // Initialize background shapes
+        function initializeBackgroundShapes() {
+            const container = document.getElementById('gamingShapes');
+            const shapes = ['triangle', 'square', 'circle', 'diamond'];
 
-            for (let i = 0; i < shapeCount; i++) {
+            for (let i = 0; i < 20; i++) {
                 const shape = document.createElement('div');
-                const shapeType = shapeTypes[Math.floor(Math.random() * shapeTypes.length)];
-                shape.className = `shape ${shapeType}`;
+                shape.className = `shape ${shapes[Math.floor(Math.random() * shapes.length)]}`;
                 shape.style.left = Math.random() * 100 + '%';
                 shape.style.top = Math.random() * 100 + '%';
                 shape.style.animationDelay = Math.random() * 15 + 's';
-                shape.style.animationDuration = (Math.random() * 10 + 10) + 's';
-                shapesContainer.appendChild(shape);
+                container.appendChild(shape);
             }
         }
 
-        function setPrompt(text) {
-            document.getElementById('gamePrompt').value = text;
-            const input = document.getElementById('gamePrompt');
-            input.focus();
-            input.setSelectionRange(text.length, text.length);
+        // Set example prompt
+        function setPrompt(prompt) {
+            document.getElementById('gamePrompt').value = prompt;
+            document.getElementById('gamePrompt').focus();
         }
 
-        function showTab(tabName) {
-            // Hide all tab contents
-            document.querySelectorAll('.tab-content').forEach(tab => {
-                tab.classList.remove('active');
-            });
-
-            // Remove active class from all tab buttons
-            document.querySelectorAll('.tab-button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-
-            // Show selected tab content
-            document.getElementById(`tab-${tabName}`).classList.add('active');
-
-            // Add active class to clicked button
-            event.target.classList.add('active');
-        }
-
-        // REAL FLASK API INTEGRATION
+        // Start generation process
         async function startGeneration() {
             const prompt = document.getElementById('gamePrompt').value.trim();
 
@@ -2396,415 +1044,187 @@
             }
 
             if (generationInProgress) {
-                console.log('Generation already in progress...');
+                alert('Generation already in progress!');
                 return;
             }
 
             generationInProgress = true;
-            console.log('🚀 Starting REAL generation with prompt:', prompt);
+            currentStep = 0;
 
-            // Update UI
+            // Show progress section
+            document.getElementById('progressSection').style.display = 'block';
+            document.getElementById('generationDetails').style.display = 'block';
+            document.getElementById('resultsSection').style.display = 'none';
+
+            // Disable generate button
             const generateBtn = document.getElementById('generateBtn');
             generateBtn.disabled = true;
             generateBtn.textContent = '⚡ GENERATING...';
 
-            // Show progress section
-            document.getElementById('progressSection').style.display = 'block';
-            document.getElementById('resultsSection').style.display = 'none';
-
             try {
-                // Call REAL Flask API
-                const response = await fetch('/api/generate', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ prompt: prompt })
-                });
+                // Simulate the generation process
+                await simulateGeneration(prompt);
 
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                }
-
-                const data = await response.json();
-                console.log('✅ Generation started:', data);
-
-                if (data.error) {
-                    throw new Error(data.error);
-                }
-
-                currentGenerationId = data.generation_id;
-
-                // Start polling for progress updates
-                startProgressPolling();
+                // Show results
+                showResults();
 
             } catch (error) {
-                console.error('❌ Generation failed:', error);
-                alert('Generation failed: ' + error.message);
-
+                console.error('Generation failed:', error);
+                alert('Generation failed. Please try again.');
+            } finally {
+                generationInProgress = false;
                 generateBtn.disabled = false;
                 generateBtn.textContent = '⚡ GENERATE GODOT GAME PACKAGE';
-                generationInProgress = false;
             }
         }
 
-        function startProgressPolling() {
-            if (!currentGenerationId) return;
+        // Simulate generation process
+        async function simulateGeneration(prompt) {
+            const agents = [
+                { id: 'agent-world', name: 'World Designer', duration: 3000 },
+                { id: 'agent-assets', name: 'Asset Generator', duration: 4000 },
+                { id: 'agent-characters', name: 'Character Creator', duration: 3500 },
+                { id: 'agent-quests', name: 'Quest Designer', duration: 3000 },
+                { id: 'agent-scripts', name: 'Script Generator', duration: 4500 },
+                { id: 'agent-integration', name: 'Integration', duration: 2000 }
+            ];
 
-            console.log('📊 Starting progress polling for:', currentGenerationId);
+            for (let i = 0; i < agents.length; i++) {
+                const agent = agents[i];
 
-            currentProgressInterval = setInterval(async () => {
-                try {
-                    const response = await fetch(`/api/progress/${currentGenerationId}`);
+                // Activate current agent
+                document.getElementById(agent.id).classList.add('active');
+                updateProgress(i + 1, `${agent.name} Agent working...`);
 
-                    if (!response.ok) {
-                        console.error('Progress fetch failed:', response.status);
-                        return;
-                    }
+                // Simulate work
+                await new Promise(resolve => setTimeout(resolve, agent.duration));
 
-                    const progress = await response.json();
-                    console.log('📈 Progress update:', progress);
+                // Complete current agent
+                document.getElementById(agent.id).classList.remove('active');
+                document.getElementById(agent.id).classList.add('completed');
 
-                    updateProgressUI(progress);
+                // Update content based on agent
+                updateContentForAgent(agent.id, prompt);
+            }
 
-                    // Check if completed or failed
-                    if (progress.status === 'completed') {
-                        console.log('✅ Generation completed!');
-                        stopProgressPolling();
-                        showCompletionResults(progress);
-                    } else if (progress.status === 'failed') {
-                        console.log('❌ Generation failed!');
-                        stopProgressPolling();
-                        showFailureResults(progress);
-                    }
-
-                } catch (error) {
-                    console.error('Progress polling error:', error);
-                    // Don't stop polling on temporary errors
-                }
-            }, 2000); // Poll every 2 seconds
+            updateProgress(totalSteps, 'Generation complete!');
         }
 
-        function stopProgressPolling() {
-            if (currentProgressInterval) {
-                clearInterval(currentProgressInterval);
-                currentProgressInterval = null;
+        // Update progress bar and text
+        function updateProgress(step, text) {
+            const progress = (step / totalSteps) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+            document.getElementById('progressText').textContent = text;
+        }
+
+        // Update content for specific agent
+        function updateContentForAgent(agentId, prompt) {
+            switch (agentId) {
+                case 'agent-world':
+                    document.getElementById('world-overview').textContent =
+                        `Generated immersive world based on: "${prompt}". Created detailed environment with proper lighting, terrain features, and atmospheric elements.`;
+                    document.getElementById('world-terrain').textContent =
+                        'Procedurally generated terrain with varied elevations, natural formations, and strategic placement of interactive elements.';
+                    document.getElementById('world-atmosphere').textContent =
+                        'Dynamic lighting system with day/night cycles, weather effects, and mood-appropriate ambient sounds.';
+                    break;
+
+                case 'agent-characters':
+                    document.getElementById('characters-list').innerHTML = `
+                        <h5>Primary NPCs (5 Generated)</h5>
+                        <p>• Village Elder - Wise quest giver with ancient knowledge</p>
+                        <p>• Mysterious Trader - Provides essential items and hints</p>
+                        <p>• Local Guardian - Protects the area from threats</p>
+                        <p>• Young Apprentice - Eager helper with side quests</p>
+                        <p>• Ancient Spirit - Holds key to the main mystery</p>
+                    `;
+                    break;
+
+                case 'agent-quests':
+                    document.getElementById('quests-list').innerHTML = `
+                        <h5>Main Quest Chain (3 Interconnected)</h5>
+                        <p>• The Disappearance Investigation - Uncover the initial mystery</p>
+                        <p>• Secrets of the Forest - Explore deeper into the ancient woods</p>
+                        <p>• The Final Revelation - Confront the source of the disappearances</p>
+                        <h5>Side Quests (6 Additional)</h5>
+                        <p>Various optional objectives that enhance the main storyline</p>
+                    `;
+                    break;
+
+                case 'agent-assets':
+                    document.getElementById('assets-list').innerHTML = `
+                        <h5>3D Models Generated</h5>
+                        <p>• Environment: Buildings, trees, rocks, props (45 models)</p>
+                        <p>• Characters: NPCs with animations (5 character models)</p>
+                        <p>• Items: Tools, collectibles, quest objects (23 items)</p>
+                        <h5>Textures & Materials</h5>
+                        <p>• High-quality PBR materials for all surfaces</p>
+                        <p>• Custom texture atlas for optimal performance</p>
+                    `;
+                    break;
+
+                case 'agent-scripts':
+                    document.getElementById('scripts-list').innerHTML = `
+                        <h5>Core Game Scripts</h5>
+                        <p>• Player controller with movement and interaction</p>
+                        <p>• NPC AI with dialogue and behavior systems</p>
+                        <p>• Quest management and progression tracking</p>
+                        <p>• Inventory and item interaction systems</p>
+                        <p>• Save/load game state functionality</p>
+                        <h5>Total: 127 GDScript files generated</h5>
+                    `;
+                    break;
             }
         }
 
-        function updateProgressUI(progress) {
-            // Update progress bar
-            document.getElementById('progressFill').style.width = progress.progress + '%';
-            document.getElementById('progressText').textContent = progress.message || 'Processing...';
-
-            // Update agent statuses
-            if (progress.agents) {
-                Object.entries(progress.agents).forEach(([agentKey, agentData]) => {
-                    const agentCard = document.getElementById(`agent-${agentKey}`);
-                    if (agentCard) {
-                        // Remove all status classes
-                        agentCard.classList.remove('active', 'completed', 'failed');
-
-                        // Add appropriate status class
-                        if (agentData.status === 'active') {
-                            agentCard.classList.add('active');
-                        } else if (agentData.status === 'completed') {
-                            agentCard.classList.add('completed');
-                        } else if (agentData.status === 'failed') {
-                            agentCard.classList.add('failed');
-                        }
-
-                        // Update agent description with current message
-                        const description = agentCard.querySelector('.agent-description');
-                        if (description && agentData.message) {
-                            description.textContent = agentData.message;
-                        }
-                    }
-                });
-            }
-
-            // Show generation details if available
-            if (progress.generation_details && Object.keys(progress.generation_details).some(key => progress.generation_details[key])) {
-                document.getElementById('generationDetails').style.display = 'block';
-                updateGenerationDetails(progress.generation_details);
-            }
-        }
-
-        function showCompletionResults(progress) {
-            generationInProgress = false;
-
-            // Update generate button
-            const generateBtn = document.getElementById('generateBtn');
-            generateBtn.disabled = false;
-            generateBtn.textContent = '✅ GENERATION COMPLETE';
-            generateBtn.classList.add('success-state');
-
-            // Show results section
+        // Show final results
+        function showResults() {
             document.getElementById('resultsSection').style.display = 'block';
 
-            // Set download URL if available
-            if (progress.download_url) {
-                const downloadBtn = document.getElementById('downloadBtn');
-                downloadBtn.onclick = () => downloadPackageReal(progress.download_url);
-            }
+            // Add success styling to download card
+            const downloadCard = document.querySelector('.download-card');
+            downloadCard.classList.add('success-state');
 
-            // Reset button after 3 seconds
-            setTimeout(() => {
-                generateBtn.textContent = '⚡ GENERATE GODOT GAME PACKAGE';
-                generateBtn.classList.remove('success-state');
-            }, 3000);
+            // Set up download links (these would be real URLs in production)
+            document.getElementById('downloadProject').href = '#godot-project-download';
+            document.getElementById('downloadAssets').href = '#assets-download';
         }
 
-        function showFailureResults(progress) {
-            generationInProgress = false;
+        // Switch between detail tabs
+        function switchTab(tabName) {
+            // Remove active class from all tabs and content
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
 
-            // Update generate button
-            const generateBtn = document.getElementById('generateBtn');
-            generateBtn.disabled = false;
-            generateBtn.textContent = '❌ GENERATION FAILED';
-
-            // Show error message
-            alert('Generation failed: ' + (progress.error || 'Unknown error occurred'));
-
-            // Reset button after 3 seconds
-            setTimeout(() => {
-                generateBtn.textContent = '⚡ GENERATE GODOT GAME PACKAGE';
-            }, 3000);
+            // Add active class to selected tab and content
+            event.target.classList.add('active');
+            document.getElementById(tabName + '-content').classList.add('active');
         }
 
-        async function downloadPackageReal(downloadUrl) {
-            try {
-                console.log('📥 Starting download from:', downloadUrl);
-
-                // Create download link and trigger
-                const link = document.createElement('a');
-                link.href = downloadUrl;
-                link.download = 'GodotGameWorld.zip';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-
-                // Show download success
-                const btn = document.getElementById('downloadBtn');
-                const originalText = btn.textContent;
-                btn.textContent = '✅ DOWNLOAD STARTED';
-                btn.classList.add('success-state');
-
-                setTimeout(() => {
-                    btn.textContent = originalText;
-                    btn.classList.remove('success-state');
-                }, 3000);
-
-            } catch (error) {
-                console.error('❌ Download failed:', error);
-                alert('Download failed: ' + error.message);
-            }
+        // Load existing game data (placeholder)
+        function loadExistingGameData() {
+            alert('Loading latest game data... (This would connect to your saved projects)');
         }
 
-        async function loadExistingGameData() {
-            console.log('🔍 Loading existing game data...');
-
-            try {
-                const response = await fetch('/api/game-data');
-
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                }
-
-                const data = await response.json();
-                console.log('📊 Loaded game data:', data);
-
-                if (data.error) {
-                    alert('No existing game data found: ' + data.error);
-                    return;
-                }
-
-                // Show the generation details section
-                document.getElementById('progressSection').style.display = 'block';
-                document.getElementById('generationDetails').style.display = 'block';
-
-                // Update all sections with loaded data
-                updateGenerationDetails(data);
-
-                // Show success message
-                const btn = document.getElementById('loadDataBtn');
-                const originalText = btn.textContent;
-                btn.textContent = '✅ DATA LOADED';
-                btn.classList.add('success-state');
-
-                setTimeout(() => {
-                    btn.textContent = originalText;
-                    btn.classList.remove('success-state');
-                }, 3000);
-
-            } catch (error) {
-                console.error('❌ Error loading game data:', error);
-                alert(`Failed to load game data: ${error.message}`);
-            }
-        }
-
-        function updateGenerationDetails(details) {
-            if (!details) return;
-
-            console.log('🔄 Updating generation details:', details);
-
-            // Update each tab with real data
-            updateWorldDetails(details.world);
-            updateAssetsDetails(details.assets);
-            updateCharactersDetails(details.characters);
-            updateQuestsDetails(details.quests);
-            updateFilesDetails(details.files);
-        }
-
-        function updateWorldDetails(worldData) {
-            const container = document.getElementById('worldOverview');
-            if (!worldData) {
-                container.innerHTML = '<p>No world data available yet. Generation in progress...</p>';
-                return;
-            }
-
-            let html = '<div class="detail-card">';
-            html += '<h5>🌍 World Information</h5>';
-
-            if (worldData.theme) html += `<p><strong>Theme:</strong> ${worldData.theme}</p>`;
-            if (worldData.description) html += `<p><strong>Description:</strong> ${worldData.description}</p>`;
-            if (worldData.size) html += `<p><strong>Size:</strong> ${Array.isArray(worldData.size) ? worldData.size.join(' x ') : worldData.size}</p>`;
-            if (worldData.environment_type) html += `<p><strong>Environment:</strong> ${worldData.environment_type}</p>`;
-
-            if (worldData.buildings && Array.isArray(worldData.buildings)) {
-                html += `<p><strong>Buildings:</strong> ${worldData.buildings.length} structures</p>`;
-                html += '<div style="margin-top: 10px;">';
-                worldData.buildings.slice(0, 8).forEach(building => {
-                    const name = typeof building === 'object' ? building.name : building;
-                    html += `<span style="display: inline-block; background: var(--bg-accent); color: var(--primary-purple); padding: 4px 12px; border-radius: 12px; margin: 2px; font-size: 0.8rem;">${name}</span>`;
-                });
-                html += '</div>';
-            }
-
-            html += '</div>';
-            container.innerHTML = html;
-        }
-
-        function updateAssetsDetails(assetsData) {
-            const container = document.getElementById('assetsOverview');
-            if (!assetsData) {
-                container.innerHTML = '<p>No assets data available yet. Generation in progress...</p>';
-                return;
-            }
-
-            let html = '<div class="detail-card">';
-            html += '<h5>🎨 Generated Assets</h5>';
-
-            if (assetsData.generation_summary) {
-                const summary = assetsData.generation_summary;
-                if (summary.total_creative_assets) {
-                    html += `<p><strong>Total Assets:</strong> ${summary.total_creative_assets}</p>`;
-                }
-                if (summary.unique_buildings) {
-                    html += `<p><strong>Buildings:</strong> ${summary.unique_buildings}</p>`;
-                }
-                if (summary.environmental_props) {
-                    html += `<p><strong>Props:</strong> ${summary.environmental_props}</p>`;
-                }
-            }
-
-            if (assetsData.categories) {
-                Object.entries(assetsData.categories).forEach(([category, items]) => {
-                    if (Array.isArray(items) && items.length > 0) {
-                        html += `<p><strong>${category.charAt(0).toUpperCase() + category.slice(1)}:</strong> ${items.length} items</p>`;
-                    }
-                });
-            }
-
-            html += '</div>';
-            container.innerHTML = html;
-        }
-
-        function updateCharactersDetails(charactersData) {
-            const container = document.getElementById('charactersOverview');
-            if (!charactersData) {
-                container.innerHTML = '<p>No characters data available yet. Generation in progress...</p>';
-                return;
-            }
-
-            let html = '<div class="detail-card">';
-            html += '<h5>👥 NPC Characters</h5>';
-
-            if (charactersData.characters && Array.isArray(charactersData.characters)) {
-                html += `<p><strong>Total NPCs:</strong> ${charactersData.characters.length}</p>`;
-
-                charactersData.characters.forEach(character => {
-                    html += '<div style="background: var(--bg-primary); border-radius: 12px; padding: 16px; margin: 12px 0; border: 2px solid var(--border-light);">';
-                    html += `<h6 style="color: var(--secondary-blue); margin-bottom: 8px;">${character.name || 'Unknown NPC'}</h6>`;
-                    if (character.role) html += `<p><strong>Role:</strong> ${character.role}</p>`;
-                    if (character.personality) html += `<p><strong>Personality:</strong> ${character.personality}</p>`;
-                    if (character.background) html += `<p><strong>Background:</strong> ${character.background}</p>`;
-                    html += '</div>';
-                });
-            }
-
-            html += '</div>';
-            container.innerHTML = html;
-        }
-
-        function updateQuestsDetails(questsData) {
-            const container = document.getElementById('questsOverview');
-            if (!questsData) {
-                container.innerHTML = '<p>No quests data available yet. Generation in progress...</p>';
-                return;
-            }
-
-            let html = '<div class="detail-card">';
-            html += '<h5>📜 Quest System</h5>';
-
-            if (questsData.quests && Array.isArray(questsData.quests)) {
-                html += `<p><strong>Total Quests:</strong> ${questsData.quests.length}</p>`;
-
-                questsData.quests.forEach(quest => {
-                    html += '<div style="background: var(--bg-primary); border-radius: 12px; padding: 16px; margin: 12px 0; border: 2px solid var(--border-light);">';
-                    html += `<h6 style="color: var(--accent-pink); margin-bottom: 8px;">${quest.title || 'Untitled Quest'}</h6>`;
-                    if (quest.type) html += `<span style="background: var(--bg-accent); color: var(--primary-purple); padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; text-transform: uppercase;">${quest.type}</span>`;
-                    if (quest.giver) html += `<p><strong>Quest Giver:</strong> ${quest.giver}</p>`;
-                    if (quest.description) html += `<p><strong>Description:</strong> ${quest.description}</p>`;
-                    html += '</div>';
-                });
-            }
-
-            html += '</div>';
-            container.innerHTML = html;
-        }
-
-        function updateFilesDetails(filesData) {
-            const container = document.getElementById('filesOverview');
-            if (!filesData) {
-                container.innerHTML = '<p>No files data available yet. Generation in progress...</p>';
-                return;
-            }
-
-            let html = '<div class="detail-card">';
-            html += '<h5>📁 Generated Files</h5>';
-            html += '<p>File structure and generated content will be shown here after completion.</p>';
-            html += '</div>';
-
-            container.innerHTML = html;
-        }
-
-        // Initialize everything when page loads
+        // Initialize the application
         document.addEventListener('DOMContentLoaded', function () {
-            console.log('🚀 AI Game Generator UI Loaded - REAL MODE');
-            createGamingShapes();
+            initializeBackgroundShapes();
 
-            // Add keyboard shortcut
-            document.addEventListener('keydown', function (e) {
-                if (e.ctrlKey && e.key === 'Enter') {
-                    startGeneration();
-                }
-            });
+            // Add some dynamic effects
+            setInterval(() => {
+                const fpsCounter = document.getElementById('fpsCounter');
+                const modes = ['REAL MODE', 'DEV MODE', 'AI MODE'];
+                const currentMode = fpsCounter.textContent;
+                const nextIndex = (modes.indexOf(currentMode) + 1) % modes.length;
+                fpsCounter.textContent = modes[nextIndex];
+            }, 5000);
         });
 
-        // Clean up on page unload
-        window.addEventListener('beforeunload', function () {
-            stopProgressPolling();
+        // Add keyboard shortcuts
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && e.key === 'Enter') {
+                startGeneration();
+            }
         });
     </script>
 </body>
