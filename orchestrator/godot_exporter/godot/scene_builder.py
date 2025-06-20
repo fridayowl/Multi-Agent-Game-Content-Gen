@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 """
-COMPLETELY FIXED Godot scene builder
-Properly assembles ALL orchestrator data into working World.tscn
+COMPLETE FIXED Godot scene builder
+Properly assembles ALL orchestrator data into working World.tscn with NPCs
 """
 
 import logging
 import re
 import json
+import math
 from pathlib import Path
 from typing import Dict, Any, List
 
 class GodotSceneBuilder:
-    """Handles Godot scene creation with PROPER data assembly from orchestrator"""
+    """Handles Godot scene creation with COMPLETE data assembly from orchestrator"""
     
     def __init__(self, dirs: Dict[str, Path], logger: logging.Logger):
         self.dirs = dirs
@@ -52,8 +53,10 @@ class GodotSceneBuilder:
         try:
             # DEBUG: Log what data we received
             self.logger.info("🔍 === ORCHESTRATOR DATA RECEIVED ===")
-            self.logger.info(f"🌍 World spec: {world_spec}")
-            self.logger.info(f"👥 Characters: {characters}")
+            self.logger.info(f"🌍 World spec keys: {list(world_spec.keys()) if world_spec else 'None'}")
+            self.logger.info(f"🌍 Buildings count: {len(world_spec.get('buildings', []))}")
+            self.logger.info(f"👥 Characters keys: {list(characters.keys()) if characters else 'None'}")
+            self.logger.info(f"👥 Characters count: {len(characters.get('characters', []))}")
             self.logger.info("==========================================")
             
             # Ensure scenes directory exists
@@ -66,34 +69,35 @@ class GodotSceneBuilder:
                 self.logger.info("✅ Created player scene")
             except Exception as e:
                 self.logger.error(f"❌ Failed to create player scene: {e}")
-                # Don't continue without Player scene
                 raise Exception("Cannot create World without Player scene")
             
-            # Create main world scene WITH GUARANTEED Player and Buildings
+            # Create NPC scenes BEFORE main world scene
+            npc_scenes_created = 0
+            if characters and 'characters' in characters:
+                for i, character in enumerate(characters['characters']):
+                    try:
+                        npc_scene = await self._create_npc_scene(character, i)
+                        scene_files.append(npc_scene)
+                        npc_scenes_created += 1
+                        self.logger.info(f"✅ Created NPC scene for {character.get('name', f'NPC_{i}')}")
+                    except Exception as e:
+                        self.logger.error(f"Failed to create NPC scene {i}: {e}")
+            
+            # Create main world scene WITH GUARANTEED Player, Buildings, and NPCs
             try:
                 world_scene = await self._create_complete_world_scene(world_spec, characters)
                 scene_files.append(world_scene)
-                self.logger.info("✅ Created COMPLETE world scene with Player, Buildings, and NPCs")
+                self.logger.info(f"✅ Created COMPLETE world scene with Player, {len(world_spec.get('buildings', []))} Buildings, and {npc_scenes_created} NPCs")
             except Exception as e:
                 self.logger.error(f"❌ Failed to create complete world scene: {e}")
                 # Create emergency working scene
                 try:
                     emergency_scene = await self._create_emergency_working_scene()
                     scene_files.append(emergency_scene)
-                    self.logger.warning("⚠️ Created emergency working scene with Player")
+                    self.logger.warning("⚠️ Created emergency working scene with Player and test buildings")
                 except Exception as e2:
                     self.logger.error(f"❌ Even emergency scene failed: {e2}")
                     raise Exception("Complete scene generation failure")
-            
-            # Create NPC scenes if characters exist
-            if characters and 'characters' in characters:
-                for i, character in enumerate(characters['characters']):
-                    try:
-                        npc_scene = await self._create_npc_scene(character, i)
-                        scene_files.append(npc_scene)
-                        self.logger.info(f"✅ Created NPC scene for {character.get('name', f'NPC_{i}')}")
-                    except Exception as e:
-                        self.logger.error(f"Failed to create NPC scene {i}: {e}")
             
             self.logger.info(f"🎮 === FINAL RESULT: {len(scene_files)} scenes created ===")
             return scene_files
@@ -103,54 +107,59 @@ class GodotSceneBuilder:
             return scene_files
     
     async def _create_complete_world_scene(self, world_spec: Dict[str, Any], characters: Dict[str, Any]) -> str:
-        """Create COMPLETE world scene using ALL orchestrator data"""
+        """Create COMPLETE world scene with ACTUAL NPC instantiation"""
         
-        self.logger.info("🔧 Building COMPLETE world scene...")
+        self.logger.info("🔧 Building COMPLETE world scene with NPCs...")
         
-        # Process buildings data
+        # Validate and process input data
         buildings = world_spec.get('buildings', [])
         if not buildings:
-            self.logger.warning("⚠️ No buildings data found, creating test buildings")
-            buildings = [
-                {"type": "house", "position": [10, 0, 10]},
-                {"type": "tavern", "position": [-10, 0, 10]},
-                {"type": "blacksmith", "position": [0, 0, -15]}
-            ]
+            self.logger.warning("⚠️ No buildings in world_spec, creating defaults")
+            buildings = self._create_default_buildings()
         
-        # Ensure buildings have positions
-        positioned_buildings = self._ensure_building_positions(buildings)
-        
-        # Process character spawn points
-        character_spawns = []
+        character_list = []
         if characters and 'characters' in characters:
-            for i, char in enumerate(characters['characters']):
-                spawn_pos = char.get('position', [0, 0, 0])
-                if spawn_pos == [0, 0, 0]:  # Generate position if missing
-                    angle = (i / len(characters['characters'])) * 2 * 3.14159
-                    x = 25 * cos(angle) if 'cos' in dir() else (i * 8 - 16)
-                    z = 25 * sin(angle) if 'sin' in dir() else (i * 6 - 12)
-                    spawn_pos = [x, 0, z]
-                character_spawns.append({
-                    'name': char.get('name', f'NPC_{i}'),
-                    'position': spawn_pos
-                })
+            character_list = characters['characters']
+        else:
+            self.logger.warning("⚠️ No characters provided, creating defaults")
+            character_list = self._create_default_characters()
         
-        # Get world theme
-        theme = world_spec.get('theme', 'default')
-        spawn_point = world_spec.get('spawn_point', [0, 2, 0])
+        # Log what we're working with
+        self.logger.info(f"🏗️ Processing {len(buildings)} buildings and {len(character_list)} characters")
         
-        self.logger.info(f"🏗️ Building world with {len(positioned_buildings)} buildings, {len(character_spawns)} NPCs")
+        # Ensure all data has proper positions
+        positioned_buildings = self._ensure_building_positions(buildings)
+        positioned_characters = self._ensure_character_positions(character_list)
         
-        # Build the complete scene
-        scene_content = self._build_world_scene_content(positioned_buildings, character_spawns, theme, spawn_point)
+        # Build the scene content
+        scene_content = self._build_complete_scene_content(positioned_buildings, positioned_characters, world_spec)
         
         # Write the scene file
         world_scene_file = self.scenes_dir / "World.tscn"
         with open(world_scene_file, 'w', encoding='utf-8') as f:
             f.write(scene_content)
         
-        self.logger.info("🎮 COMPLETE World.tscn created with ALL orchestrator data!")
+        self.logger.info("🎮 COMPLETE World.tscn created with buildings AND instantiated NPCs!")
         return "World.tscn"
+    
+    def _create_default_buildings(self) -> List[Dict[str, Any]]:
+        """Create default buildings if none provided"""
+        return [
+            {"type": "house", "position": [15, 0, 15], "id": "house_0"},
+            {"type": "tavern", "position": [-15, 0, 15], "id": "tavern_1"},
+            {"type": "blacksmith", "position": [15, 0, -15], "id": "blacksmith_2"},
+            {"type": "church", "position": [-15, 0, -15], "id": "church_3"},
+            {"type": "shop", "position": [0, 0, 25], "id": "shop_4"}
+        ]
+    
+    def _create_default_characters(self) -> List[Dict[str, Any]]:
+        """Create default characters if none provided"""
+        return [
+            {"name": "Village_Elder", "position": [5, 0, 5], "id": "npc_0"},
+            {"name": "Merchant", "position": [-5, 0, 5], "id": "npc_1"},
+            {"name": "Blacksmith_NPC", "position": [10, 0, -10], "id": "npc_2"},
+            {"name": "Priest", "position": [-10, 0, -10], "id": "npc_3"}
+        ]
     
     def _ensure_building_positions(self, buildings: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Ensure all buildings have proper positions"""
@@ -161,7 +170,6 @@ class GodotSceneBuilder:
         for i, building in enumerate(buildings):
             positioned_building = building.copy()
             
-            # Check if building has valid position
             pos = building.get('position', [0, 0, 0])
             if not pos or pos == [0, 0, 0] or (len(pos) >= 2 and pos[0] == 0 and pos[2] == 0):
                 # Generate grid position
@@ -178,22 +186,81 @@ class GodotSceneBuilder:
         
         return positioned_buildings
     
-    def _build_world_scene_content(self, buildings: List[Dict[str, Any]], character_spawns: List[Dict[str, Any]], theme: str, spawn_point: List[float]) -> str:
-        """Build the complete World.tscn content"""
+    def _ensure_character_positions(self, characters: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Ensure all characters have proper positions"""
+        positioned_characters = []
         
-        # Calculate resources needed
+        for i, character in enumerate(characters):
+            positioned_char = character.copy()
+            
+            pos = character.get('position', [0, 0, 0])
+            if not pos or pos == [0, 0, 0]:
+                # Generate circular positions around spawn point
+                angle = (i / len(characters)) * 2 * math.pi
+                radius = 20
+                x = radius * math.cos(angle)
+                z = radius * math.sin(angle)
+                positioned_char['position'] = [x, 0, z]
+                self.logger.info(f"🎯 Generated position for {character.get('name', f'NPC_{i}')}: [{x:.1f}, 0, {z:.1f}]")
+            else:
+                self.logger.info(f"🎯 Using existing position for {character.get('name', f'NPC_{i}')}: {pos}")
+            
+            positioned_characters.append(positioned_char)
+        
+        return positioned_characters
+    
+    def _build_complete_scene_content(self, buildings: List[Dict[str, Any]], characters: List[Dict[str, Any]], world_spec: Dict[str, Any]) -> str:
+        """Build complete scene content with NPCs instantiated"""
+        
+        # Calculate resources
         building_count = len(buildings)
-        load_steps = 4 + (building_count * 3)  # Base + buildings
+        character_count = len(characters)
+        load_steps = 4 + (building_count * 3) + character_count  # Base + buildings + NPC scenes
         
         # Scene header
         content = f'[gd_scene load_steps={load_steps} format=3 uid="uid://world_main"]\n\n'
         
         # External resources
         content += '[ext_resource type="Script" path="res://scripts/WorldManager.gd" id="1"]\n'
-        content += '[ext_resource type="PackedScene" uid="uid://player_scene" path="res://scenes/Player.tscn" id="2"]\n\n'
+        content += '[ext_resource type="PackedScene" uid="uid://player_scene" path="res://scenes/Player.tscn" id="2"]\n'
         
-        # Sub-resources
-        content += '''[sub_resource type="Environment" id="Environment_1"]
+        # Add NPC scene references
+        npc_ext_id = 3
+        for i, character in enumerate(characters):
+            char_name = self._sanitize_node_name(character.get('name', f'NPC_{i}'), f'NPC_{i}')
+            scene_path = f"res://scenes/{char_name}.tscn"
+            content += f'[ext_resource type="PackedScene" path="{scene_path}" id="{npc_ext_id + i}"]\n'
+        
+        content += '\n'
+        
+        # Sub-resources (environment, ground, buildings)
+        content += self._build_sub_resources(buildings)
+        
+        # Main world nodes
+        spawn_point = world_spec.get('spawn_point', [0, 2, 0])
+        content += self._build_world_nodes(spawn_point)
+        
+        # Buildings
+        content += self._build_buildings_nodes(buildings)
+        
+        # NPCs - ACTUALLY INSTANTIATE THEM
+        content += '[node name="NPCs" type="Node3D" parent="."]\n\n'
+        
+        for i, character in enumerate(characters):
+            char_name = self._sanitize_node_name(character.get('name', f'NPC_{i}'), f'NPC_{i}')
+            position = character.get('position', [0, 0, 0])
+            
+            content += f'''[node name="{char_name}" parent="NPCs" instance=ExtResource("{npc_ext_id + i}")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, {position[0]}, 0, {position[2]})
+
+'''
+            self.logger.info(f"✅ Added NPC {char_name} at position {position}")
+        
+        return content
+    
+    def _build_sub_resources(self, buildings: List[Dict[str, Any]]) -> str:
+        """Build sub-resources section"""
+        content = '''[sub_resource type="Environment" id="Environment_1"]
 background_mode = 1
 background_color = Color(0.4, 0.6, 1, 1)
 ambient_light_source = 2
@@ -227,8 +294,11 @@ albedo_color = Color{color}
 
 '''
         
-        # Main nodes
-        content += '''[node name="World" type="Node3D"]
+        return content
+    
+    def _build_world_nodes(self, spawn_point: List[float]) -> str:
+        """Build main world nodes"""
+        return f'''[node name="World" type="Node3D"]
 script = ExtResource("1")
 
 [node name="Environment" type="Node3D" parent="."]
@@ -247,22 +317,24 @@ surface_material_override/0 = SubResource("StandardMaterial3D_1")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Ground"]
 shape = SubResource("PlaneShape_1")
 
+[node name="Player" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, {spawn_point[0]}, {spawn_point[1]}, {spawn_point[2]})
+
 '''
+    
+    def _build_buildings_nodes(self, buildings: List[Dict[str, Any]]) -> str:
+        """Build buildings nodes"""
+        if not buildings:
+            return ""
         
-        # GUARANTEED Player instantiation
-        content += f'[node name="Player" parent="." instance=ExtResource("2")]\n'
-        content += f'transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, {spawn_point[0]}, {spawn_point[1]}, {spawn_point[2]})\n\n'
+        content = '[node name="Buildings" type="Node3D" parent="."]\n\n'
         
-        # Buildings
-        if buildings:
-            content += '[node name="Buildings" type="Node3D" parent="."]\n\n'
+        for i, building in enumerate(buildings):
+            building_type = building.get('type', 'generic')
+            position = building.get('position', [0, 0, 0])
+            building_name = f"{building_type}_{i}"
             
-            for i, building in enumerate(buildings):
-                building_type = building.get('type', 'generic')
-                position = building.get('position', [0, 0, 0])
-                building_name = f"{building_type}_{i}"
-                
-                content += f'''[node name="{building_name}" type="StaticBody3D" parent="Buildings"]
+            content += f'''[node name="{building_name}" type="StaticBody3D" parent="Buildings"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, {position[0]}, 1.5, {position[2]})
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/{building_name}"]
@@ -280,18 +352,7 @@ collision_mask = 2
 shape = SubResource("BoxShape_{i+1}")
 
 '''
-        
-        # NPCs container
-        content += '[node name="NPCs" type="Node3D" parent="."]\n'
-        
-        # Add NPC spawn points as markers
-        for spawn in character_spawns:
-            name = self._sanitize_node_name(spawn['name'], "NPC")
-            pos = spawn['position']
-            content += f'''
-[node name="{name}_SpawnPoint" type="Marker3D" parent="NPCs"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, {pos[0]}, 0, {pos[2]})
-'''
+            self.logger.info(f"✅ Added building {building_name} at position {position}")
         
         return content
     
@@ -409,6 +470,7 @@ shape = SubResource("CapsuleShape3D_1")
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
 fov = 75.0
+current = true
 
 [node name="InteractionRay" type="RayCast3D" parent="Camera3D"]
 target_position = Vector3(0, 0, -3)
