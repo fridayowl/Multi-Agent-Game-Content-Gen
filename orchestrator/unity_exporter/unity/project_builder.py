@@ -70,7 +70,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: AI Game Studio
+  companyName: Oyun Studio
   productName: {project_name}
   defaultCursor: {{fileID: 0}}
   cursorHotspot: {{x: 0, y: 0}}

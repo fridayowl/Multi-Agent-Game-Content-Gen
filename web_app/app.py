@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Fixed AI Game Generator Web App - Corrected folder paths and added asset downloads
+Fixed Oyun Generator Web App - Corrected folder paths and added asset downloads
 Now properly handles the actual folder structure from your orchestrator
 """
 
@@ -22,7 +22,7 @@ from flask import Flask, render_template, request, jsonify, send_file
 PROJECT_ROOT = Path(__file__).parent.parent.absolute()
 sys.path.insert(0, str(PROJECT_ROOT))
 
-print(f"🚀 AI Game Generator Web App Starting...")
+print(f"🚀 Oyun Generator Web App Starting...")
 print(f"{'='*60}")
 print(f"🌐 Web Interface: http://localhost:5001")
 print(f"📚 API Documentation: http://localhost:5001/api/docs")
@@ -483,7 +483,7 @@ def index():
         return render_template('index.html')
     except Exception as e:
         return f"""
-        <h1>AI Game Generator</h1>
+        <h1>Oyun Generator</h1>
         <p>Template not found. Please save your HTML as {TEMPLATES_FOLDER}/index.html</p>
         <p>Error: {e}</p>
         <p><a href="/health">Health Check</a> | <a href="/api/docs">API Docs</a></p>
@@ -653,7 +653,7 @@ def health_check():
 @app.route('/api/docs')
 def api_docs():
     docs = {
-        'title': 'AI Game Generator API - Fixed Paths and Asset Downloads',
+        'title': 'Oyun Generator API - Fixed Paths and Asset Downloads',
         'version': '2.2.0-fixed-paths-assets',
         'description': 'Generate complete Godot game worlds from text descriptions',
         'working_test_command': 'python -c "import asyncio; from orchestrator.agent import CompleteGameContentOrchestrator; orchestrator = CompleteGameContentOrchestrator(); result = asyncio.run(orchestrator.generate_complete_game_content(\'test village\')); print(f\'Success: {result.status}\')"',
@@ -695,7 +695,7 @@ def api_docs():
 
 if __name__ == '__main__':
     print(f"{'='*80}")
-    print(f"🎨 AI Game Generator - Fixed Paths & Asset Downloads v2.2.0")
+    print(f"🎨 Oyun Generator - Fixed Paths & Asset Downloads v2.2.0")
     print(f"{'='*80}")
     print(f"🏗️ REAL ORCHESTRATOR: Direct calls, matching working command")
     print(f"📁 FIXED PATHS: Using correct complete_game_content and godot_exports folders")
