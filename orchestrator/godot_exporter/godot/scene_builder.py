@@ -9,7 +9,6 @@ import re
 import json
 from pathlib import Path
 from typing import Dict, Any, List
-from ..core.data_types import GodotScene, GodotNode, GODOT_NODE_TEMPLATES
 
 class GodotSceneBuilder:
     """Handles Godot scene creation with robust error handling"""
@@ -89,19 +88,26 @@ class GodotSceneBuilder:
             return scene_files
     
     async def _create_main_world_scene(self, world_spec: Dict[str, Any]) -> str:
-        """Create the main world scene with safe data handling"""
+        """Create the main world scene with safe data handling - FIXED VERSION"""
         
         try:
+            # Count buildings to calculate load_steps correctly
+            building_count = 0
+            if world_spec and 'buildings' in world_spec:
+                building_count = len(world_spec['buildings'])
+            
+            # Calculate total load steps (base resources + 2 per building)
+            load_steps = 5 + (building_count * 2)  # Each building needs BoxMesh and BoxShape3D
+            
             # Start building the scene content
-            scene_content = '[gd_scene load_steps=5 format=3]\n\n'
+            scene_content = f'[gd_scene load_steps={load_steps} format=3 uid="uid://world_main"]\n\n'
             
             # External resources
             scene_content += '[ext_resource type="Script" path="res://scripts/WorldManager.gd" id="1"]\n'
-            scene_content += '[ext_resource type="PackedScene" path="res://scenes/Player.tscn" id="2"]\n'
+            scene_content += '[ext_resource type="Script" path="res://scripts/Player.gd" id="2"]\n\n'
             
             # Sub-resources for environment
-            scene_content += '''
-[sub_resource type="Environment" id="Environment_1"]
+            scene_content += '''[sub_resource type="Environment" id="Environment_1"]
 background_mode = 1
 background_color = Color(0.4, 0.6, 1, 1)
 ambient_light_source = 2
@@ -113,6 +119,22 @@ size = Vector2(100, 100)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1"]
 albedo_color = Color(0.2, 0.8, 0.2, 1)
+
+'''
+            
+            # Add sub-resources for each building
+            if world_spec and 'buildings' in world_spec:
+                for i, building in enumerate(world_spec['buildings']):
+                    building_type = building.get('type', 'generic')
+                    
+                    # Create unique materials based on building type
+                    color = self._get_building_color(building_type)
+                    
+                    scene_content += f'''[sub_resource type="BoxMesh" id="BoxMesh_{i+1}"]
+size = Vector3(4, 3, 4)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_{i+2}"]
+albedo_color = Color{color}
 
 '''
             
@@ -129,13 +151,31 @@ albedo_color = Color(0.2, 0.8, 0.2, 1)
             scene_content += 'shadow_enabled = true\n\n'
             
             # Ground plane
-            scene_content += '[node name="Ground" type="MeshInstance3D" parent="Environment"]\n'
+            scene_content += '[node name="Ground" type="StaticBody3D" parent="Environment"]\n\n'
+            
+            scene_content += '[node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Ground"]\n'
             scene_content += 'mesh = SubResource("PlaneMesh_1")\n'
             scene_content += 'surface_material_override/0 = SubResource("StandardMaterial3D_1")\n\n'
             
+            scene_content += '[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Ground"]\n'
+            scene_content += 'shape = SubResource("PlaneMesh_1")\n\n'
+            
             # Player
-            scene_content += '[node name="Player" parent="." instance=ExtResource("2")]\n'
-            scene_content += 'transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)\n\n'
+            scene_content += '[node name="Player" type="CharacterBody3D" parent="."]\n'
+            scene_content += 'transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)\n'
+            scene_content += 'script = ExtResource("2")\n\n'
+            
+            # Add basic player mesh and collision
+            scene_content += '''[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
+mesh = preload("res://addons/godot/primitives/CapsuleMesh.tres")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+shape = preload("res://addons/godot/primitives/CapsuleShape3D.tres")
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+
+'''
             
             # Buildings container
             scene_content += '[node name="Buildings" type="Node3D" parent="."]\n\n'
@@ -150,23 +190,29 @@ albedo_color = Color(0.2, 0.8, 0.2, 1)
                             position = [0, 0]
                         
                         building_type = building.get('type', 'generic')
+                        building_name = building.get('name', f'{building_type}_{i}')
                         
-                        # FIXED: Properly format building data as JSON string
-                        building_data_str = json.dumps(building).replace('"', '\\"')
+                        # FIXED: Use safe node name
+                        safe_building_name = self._sanitize_node_name(building_name, f"Building_{i}")
                         
-                        scene_content += f'[node name="Building_{i}" type="StaticBody3D" parent="Buildings"]\n'
-                        scene_content += f'transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, {position[0]}, 0, {position[1]})\n'
-                        scene_content += f'metadata/building_type = "{building_type}"\n'
-                        scene_content += f'metadata/building_data = "{building_data_str}"\n\n'
+                        # FIXED: Use separate nodes instead of complex metadata
+                        scene_content += f'[node name="{safe_building_name}" type="StaticBody3D" parent="Buildings"]\n'
+                        scene_content += f'transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, {position[0]}, 1.5, {len(position) > 1 and position[1] or 0})\n\n'
                         
-                        # FIXED: Use built-in meshes instead of missing assets
-                        scene_content += f'[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/Building_{i}"]\n'
-                        scene_content += f'transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)\n'
-                        scene_content += 'mesh = preload("res://assets/basic_cube.tres")\n\n'
+                        # FIXED: Use built-in sub-resources instead of missing assets
+                        scene_content += f'[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/{safe_building_name}"]\n'
+                        scene_content += f'mesh = SubResource("BoxMesh_{i+1}")\n'
+                        scene_content += f'surface_material_override/0 = SubResource("StandardMaterial3D_{i+2}")\n\n'
                         
-                        scene_content += f'[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/Building_{i}"]\n'
-                        scene_content += f'transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)\n'
-                        scene_content += 'shape = preload("res://assets/basic_cube_shape.tres")\n\n'
+                        # FIXED: Use simple box shape
+                        scene_content += f'[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/{safe_building_name}"]\n'
+                        scene_content += f'shape = SubResource("BoxMesh_{i+1}")\n\n'
+                        
+                        # Add interaction area
+                        scene_content += f'[node name="InteractionArea" type="Area3D" parent="Buildings/{safe_building_name}"]\n\n'
+                        
+                        scene_content += f'[node name="InteractionCollision" type="CollisionShape3D" parent="Buildings/{safe_building_name}/InteractionArea"]\n'
+                        scene_content += f'shape = SubResource("BoxMesh_{i+1}")\n\n'
                         
                     except Exception as e:
                         self.logger.warning(f"Skipping malformed building {i}: {e}")
@@ -186,13 +232,29 @@ albedo_color = Color(0.2, 0.8, 0.2, 1)
             # Create minimal fallback scene
             return await self._create_fallback_world_scene()
     
+    def _get_building_color(self, building_type: str) -> str:
+        """Get color based on building type"""
+        colors = {
+            'house': '(0.8, 0.6, 0.4, 1)',
+            'shop': '(0.6, 0.8, 0.6, 1)', 
+            'tavern': '(0.8, 0.8, 0.4, 1)',
+            'blacksmith': '(0.4, 0.4, 0.4, 1)',
+            'church': '(0.9, 0.9, 0.9, 1)',
+            'market': '(0.9, 0.7, 0.5, 1)',
+            'generic': '(0.7, 0.7, 0.7, 1)'
+        }
+        return colors.get(building_type, colors['generic'])
+    
     async def _create_fallback_world_scene(self) -> str:
         """Create minimal fallback world scene"""
-        fallback_content = '''[gd_scene load_steps=2 format=3]
+        fallback_content = '''[gd_scene load_steps=3 format=3 uid="uid://world_fallback"]
 
 [sub_resource type="Environment" id="Environment_1"]
 background_mode = 1
 background_color = Color(0.4, 0.6, 1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_1"]
+size = Vector2(50, 50)
 
 [node name="World" type="Node3D"]
 
@@ -200,6 +262,14 @@ background_color = Color(0.4, 0.6, 1, 1)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment"]
 transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 10, 0)
+
+[node name="Ground" type="StaticBody3D" parent="Environment"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Ground"]
+mesh = SubResource("PlaneMesh_1")
+
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 '''
         
         world_scene_file = self.scenes_dir / "World.tscn"
@@ -209,9 +279,9 @@ transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 10, 0)
         return "World.tscn"
     
     async def _create_player_scene(self) -> str:
-        """Create player character scene"""
+        """Create player character scene - FIXED VERSION"""
         
-        scene_content = '''[gd_scene load_steps=4 format=3]
+        scene_content = '''[gd_scene load_steps=4 format=3 uid="uid://player_scene"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1"]
 
@@ -237,7 +307,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
 
 [node name="InteractionRay" type="RayCast3D" parent="Camera3D"]
 target_position = Vector3(0, 0, -3)
-collision_mask = 28
+collision_mask = 4
 '''
         
         player_scene_file = self.scenes_dir / "Player.tscn"
@@ -247,15 +317,13 @@ collision_mask = 28
         return "Player.tscn"
     
     async def _create_building_scene(self, building: Dict[str, Any], index: int) -> str:
-        """Create individual building scene with safe data handling"""
+        """Create individual building scene with safe data handling - FIXED VERSION"""
         
         building_type = building.get('type', 'generic')
         building_name = f"Building_{index}"
+        color = self._get_building_color(building_type)
         
-        # FIXED: Properly format building data as JSON
-        building_data_str = json.dumps(building).replace('"', '\\"')
-        
-        scene_content = f'''[gd_scene load_steps=4 format=3]
+        scene_content = f'''[gd_scene load_steps=5 format=3 uid="uid://building_{index}"]
 
 [ext_resource type="Script" path="res://scripts/Building.gd" id="1"]
 
@@ -265,17 +333,25 @@ size = Vector3(4, 3, 4)
 [sub_resource type="BoxShape3D" id="BoxShape3D_1"]
 size = Vector3(4, 3, 4)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1"]
+albedo_color = Color{color}
+
 [node name="{building_name}" type="StaticBody3D"]
 script = ExtResource("1")
-building_type = "{building_type}"
-building_data = "{building_data_str}"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 mesh = SubResource("BoxMesh_1")
+surface_material_override/0 = SubResource("StandardMaterial3D_1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_1")
+
+[node name="InteractionArea" type="Area3D" parent="."]
+
+[node name="InteractionCollision" type="CollisionShape3D" parent="InteractionArea"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 1.5, 0)
 shape = SubResource("BoxShape3D_1")
 '''
         
@@ -286,17 +362,14 @@ shape = SubResource("BoxShape3D_1")
         return f"{building_name}.tscn"
     
     async def _create_npc_scene(self, character: Dict[str, Any], index: int) -> str:
-        """Create NPC character scene with safe name handling"""
+        """Create NPC character scene with safe name handling - FIXED VERSION"""
         
         character_name = character.get('name', f'NPC_{index}')
         
         # FIXED: Proper character name sanitization
         safe_name = self._sanitize_node_name(character_name, f"NPC_{index}")
         
-        # FIXED: Properly format character data as JSON
-        character_data_str = json.dumps(character).replace('"', '\\"')
-        
-        scene_content = f'''[gd_scene load_steps=4 format=3]
+        scene_content = f'''[gd_scene load_steps=4 format=3 uid="uid://npc_{index}"]
 
 [ext_resource type="Script" path="res://scripts/NPC.gd" id="1"]
 
@@ -310,8 +383,6 @@ height = 1.8
 
 [node name="{safe_name}" type="CharacterBody3D" groups=["npcs"]]
 script = ExtResource("1")
-character_name = "{character_name}"
-character_data = "{character_data_str}"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_1")
@@ -322,6 +393,7 @@ shape = SubResource("CapsuleShape3D_1")
 [node name="InteractionArea" type="Area3D" parent="."]
 
 [node name="InteractionCollision" type="CollisionShape3D" parent="InteractionArea"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_1")
 '''
         
