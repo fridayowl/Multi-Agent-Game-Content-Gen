@@ -89,25 +89,21 @@ class GodotSceneBuilder:
     
     async def _create_main_world_scene(self, world_spec: Dict[str, Any]) -> str:
         """Create the main world scene with safe data handling - FIXED VERSION"""
-        
+
         try:
-            # Count buildings to calculate load_steps correctly
-            building_count = 0
-            if world_spec and 'buildings' in world_spec:
-                building_count = len(world_spec['buildings'])
-            
-            # Calculate total load steps (base resources + 2 per building)
-            load_steps = 5 + (building_count * 2)  # Each building needs BoxMesh and BoxShape3D
-            
-            # Start building the scene content
-            scene_content = f'[gd_scene load_steps={load_steps} format=3 uid="uid://world_main"]\n\n'
-            
-            # External resources
-            scene_content += '[ext_resource type="Script" path="res://scripts/WorldManager.gd" id="1"]\n'
-            scene_content += '[ext_resource type="Script" path="res://scripts/Player.gd" id="2"]\n\n'
-            
-            # Sub-resources for environment
-            scene_content += '''[sub_resource type="Environment" id="Environment_1"]
+            building_count = len(world_spec.get('buildings', [])) if world_spec else 0
+            base_resource_count = 6  # Environment, PlaneMesh, PlaneShape, GroundMaterial, PlayerMesh, PlayerShape
+            building_resource_count = building_count * 3  # BoxMesh, BoxShape, Material per building
+            total_resources = base_resource_count + building_resource_count
+            load_steps = total_resources
+
+            scene_header = f'[gd_scene load_steps={load_steps} format=3 uid="uid://world_main"]\n\n'
+
+            ext_resources = '''[ext_resource type="Script" path="res://scripts/WorldManager.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/Player.gd" id="2"]\n\n'''
+
+            # Static sub-resources (environment, ground, player)
+            sub_resources = '''[sub_resource type="Environment" id="Environment_1"]
 background_mode = 1
 background_color = Color(0.4, 0.6, 1, 1)
 ambient_light_source = 2
@@ -117,119 +113,114 @@ ambient_light_energy = 0.3
 [sub_resource type="PlaneMesh" id="PlaneMesh_1"]
 size = Vector2(100, 100)
 
+[sub_resource type="BoxShape3D" id="PlaneShape_1"]
+size = Vector3(100, 0.1, 100)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1"]
 albedo_color = Color(0.2, 0.8, 0.2, 1)
 
+[sub_resource type="CapsuleMesh" id="PlayerMesh_1"]
+radius = 0.5
+height = 2.0
+
+[sub_resource type="CapsuleShape3D" id="PlayerShape_1"]
+radius = 0.5
+height = 2.0
+
 '''
-            
-            # Add sub-resources for each building
-            if world_spec and 'buildings' in world_spec:
-                for i, building in enumerate(world_spec['buildings']):
-                    building_type = building.get('type', 'generic')
-                    
-                    # Create unique materials based on building type
-                    color = self._get_building_color(building_type)
-                    
-                    scene_content += f'''[sub_resource type="BoxMesh" id="BoxMesh_{i+1}"]
+
+            # Building sub-resources
+            for i, building in enumerate(world_spec.get('buildings', [])):
+                building_type = building.get('type', 'generic')
+                color = self._get_building_color(building_type)
+
+                sub_resources += f'''[sub_resource type="BoxMesh" id="BoxMesh_{i+1}"]
+size = Vector3(4, 3, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape_{i+1}"]
 size = Vector3(4, 3, 4)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_{i+2}"]
 albedo_color = Color{color}
 
 '''
-            
-            # Main world node
-            scene_content += '[node name="World" type="Node3D"]\n'
-            scene_content += 'script = ExtResource("1")\n\n'
-            
-            # Environment setup
-            scene_content += '[node name="Environment" type="Node3D" parent="."]\n\n'
-            
-            scene_content += '[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment"]\n'
-            scene_content += 'transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 0, 10, 0)\n'
-            scene_content += 'light_energy = 1.0\n'
-            scene_content += 'shadow_enabled = true\n\n'
-            
-            # Ground plane
-            scene_content += '[node name="Ground" type="StaticBody3D" parent="Environment"]\n\n'
-            
-            scene_content += '[node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Ground"]\n'
-            scene_content += 'mesh = SubResource("PlaneMesh_1")\n'
-            scene_content += 'surface_material_override/0 = SubResource("StandardMaterial3D_1")\n\n'
-            
-            scene_content += '[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Ground"]\n'
-            scene_content += 'shape = SubResource("PlaneMesh_1")\n\n'
-            
-            # Player
-            scene_content += '[node name="Player" type="CharacterBody3D" parent="."]\n'
-            scene_content += 'transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)\n'
-            scene_content += 'script = ExtResource("2")\n\n'
-            
-            # Add basic player mesh and collision
-            scene_content += '''[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
-mesh = preload("res://addons/godot/primitives/CapsuleMesh.tres")
+
+            # Nodes
+            node_blocks = '''[node name="World" type="Node3D"]
+script = ExtResource("1")
+
+[node name="Environment" type="Node3D" parent="."]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment"]
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 0, 10, 0)
+light_energy = 1.0
+shadow_enabled = true
+
+[node name="Ground" type="StaticBody3D" parent="Environment"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Ground"]
+mesh = SubResource("PlaneMesh_1")
+surface_material_override/0 = SubResource("StandardMaterial3D_1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Ground"]
+shape = SubResource("PlaneShape_1")
+
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+script = ExtResource("2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
+mesh = SubResource("PlayerMesh_1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
-shape = preload("res://addons/godot/primitives/CapsuleShape3D.tres")
+shape = SubResource("PlayerShape_1")
 
 [node name="Camera3D" type="Camera3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
 
+[node name="Buildings" type="Node3D" parent="."]\n
 '''
-            
-            # Buildings container
-            scene_content += '[node name="Buildings" type="Node3D" parent="."]\n\n'
-            
-            # Add buildings if they exist - FIXED VERSION
-            if world_spec and 'buildings' in world_spec:
-                for i, building in enumerate(world_spec['buildings']):
-                    try:
-                        position = building.get('position', [0, 0])
-                        # Ensure position is valid
-                        if not isinstance(position, list) or len(position) < 2:
-                            position = [0, 0]
-                        
-                        building_type = building.get('type', 'generic')
-                        building_name = building.get('name', f'{building_type}_{i}')
-                        
-                        # FIXED: Use safe node name
-                        safe_building_name = self._sanitize_node_name(building_name, f"Building_{i}")
-                        
-                        # FIXED: Use separate nodes instead of complex metadata
-                        scene_content += f'[node name="{safe_building_name}" type="StaticBody3D" parent="Buildings"]\n'
-                        scene_content += f'transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, {position[0]}, 1.5, {len(position) > 1 and position[1] or 0})\n\n'
-                        
-                        # FIXED: Use built-in sub-resources instead of missing assets
-                        scene_content += f'[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/{safe_building_name}"]\n'
-                        scene_content += f'mesh = SubResource("BoxMesh_{i+1}")\n'
-                        scene_content += f'surface_material_override/0 = SubResource("StandardMaterial3D_{i+2}")\n\n'
-                        
-                        # FIXED: Use simple box shape
-                        scene_content += f'[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/{safe_building_name}"]\n'
-                        scene_content += f'shape = SubResource("BoxMesh_{i+1}")\n\n'
-                        
-                        # Add interaction area
-                        scene_content += f'[node name="InteractionArea" type="Area3D" parent="Buildings/{safe_building_name}"]\n\n'
-                        
-                        scene_content += f'[node name="InteractionCollision" type="CollisionShape3D" parent="Buildings/{safe_building_name}/InteractionArea"]\n'
-                        scene_content += f'shape = SubResource("BoxMesh_{i+1}")\n\n'
-                        
-                    except Exception as e:
-                        self.logger.warning(f"Skipping malformed building {i}: {e}")
-            
-            # NPCs container
-            scene_content += '[node name="NPCs" type="Node3D" parent="."]\n\n'
-            
-            # Write the scene file safely
+
+            for i, building in enumerate(world_spec.get('buildings', [])):
+                position = building.get('position', [0, 0])
+                if not isinstance(position, list) or len(position) < 2:
+                    position = [0, 0]
+                building_type = building.get('type', 'generic')
+                building_name = building.get('name', f'{building_type}_{i}')
+                safe_name = self._sanitize_node_name(building_name, f"Building_{i}")
+
+                node_blocks += f'''[node name="{safe_name}" type="StaticBody3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, {position[0]}, 1.5, {position[1]})
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Buildings/{safe_name}"]
+mesh = SubResource("BoxMesh_{i+1}")
+surface_material_override/0 = SubResource("StandardMaterial3D_{i+2}")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buildings/{safe_name}"]
+shape = SubResource("BoxShape_{i+1}")
+
+[node name="InteractionArea" type="Area3D" parent="Buildings/{safe_name}"]
+
+[node name="InteractionCollision" type="CollisionShape3D" parent="Buildings/{safe_name}/InteractionArea"]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
+shape = SubResource("BoxShape_{i+1}")
+
+'''
+
+            node_blocks += '[node name="NPCs" type="Node3D" parent="."]\n\n'
+
+            # Final scene content
+            scene_content = scene_header + ext_resources + sub_resources + node_blocks
+
+            # Write to file
             world_scene_file = self.scenes_dir / "World.tscn"
             with open(world_scene_file, 'w', encoding='utf-8') as f:
                 f.write(scene_content)
-            
+
             return "World.tscn"
-            
+
         except Exception as e:
             self.logger.error(f"Failed to create main world scene: {e}")
-            # Create minimal fallback scene
             return await self._create_fallback_world_scene()
     
     def _get_building_color(self, building_type: str) -> str:
@@ -246,8 +237,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
         return colors.get(building_type, colors['generic'])
     
     async def _create_fallback_world_scene(self) -> str:
-        """Create minimal fallback world scene"""
-        fallback_content = '''[gd_scene load_steps=3 format=3 uid="uid://world_fallback"]
+        """Create minimal fallback world scene - FIXED VERSION"""
+        fallback_content = '''[gd_scene load_steps=5 format=3 uid="uid://world_fallback"]
 
 [sub_resource type="Environment" id="Environment_1"]
 background_mode = 1
@@ -255,6 +246,13 @@ background_color = Color(0.4, 0.6, 1, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_1"]
 size = Vector2(50, 50)
+
+[sub_resource type="BoxShape3D" id="PlaneShape_1"]
+size = Vector3(50, 0.1, 50)
+
+[sub_resource type="CapsuleShape3D" id="PlayerShape_1"]
+radius = 0.5
+height = 2.0
 
 [node name="World" type="Node3D"]
 
@@ -268,8 +266,14 @@ transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 10, 0)
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Ground"]
 mesh = SubResource("PlaneMesh_1")
 
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Ground"]
+shape = SubResource("PlaneShape_1")
+
 [node name="Player" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+shape = SubResource("PlayerShape_1")
 '''
         
         world_scene_file = self.scenes_dir / "World.tscn"
