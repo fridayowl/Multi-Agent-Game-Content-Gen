@@ -1,0 +1,66 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/CharacterData.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_name = "Brother Aldric"
+personality = {
+    "primary_trait": "Compassionate",
+    "secondary_trait": "Patient",
+    "motivation": "To find adventure",
+    "fear": "Failure",
+    "quirk": "Collects unusual items",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+}
+dialogue_lines = []
+relationships = [
+    {
+    "target_character": "Sir Edwin",
+    "relationship_type": "Friend",
+    "relationship_strength": 3,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+},
+    {
+    "target_character": "Brother Cedric",
+    "relationship_type": "Friend",
+    "relationship_strength": 3,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+},
+    {
+    "target_character": "Master Aldric",
+    "relationship_type": "Rival",
+    "relationship_strength": 8,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+},
+    {
+    "target_character": "Lady Hilda",
+    "relationship_type": "Ally",
+    "relationship_strength": 3,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+}
+]
+stats = {
+    "level": 5,
+    "health": 75,
+    "strength": 12,
+    "intelligence": 16,
+    "charisma": 13,
+    "dexterity": 12,
+    "wisdom": 14,
+    "constitution": 12
+}
+inventory = [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+]
+location = "house"

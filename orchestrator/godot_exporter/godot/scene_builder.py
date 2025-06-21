@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
-FIXED Godot Scene Builder - Now creates all buildings properly
-This fixes the issue where only 2 buildings were appearing in Godot
+COMPLETE FIXED Godot Scene Builder - Buildings Now Positioned on Ground
+File: orchestrator/godot_exporter/godot/scene_builder.py
+
+This fixes the floating buildings issue by properly mapping world coordinates to Godot 3D space
 """
 
 import logging
@@ -10,7 +12,7 @@ from pathlib import Path
 from typing import Dict, Any, List
 
 class GodotSceneBuilder:
-    """Fixed Godot scene builder that creates ALL buildings from world_spec"""
+    """Fixed Godot scene builder that places buildings on the ground"""
     
     def __init__(self, dirs: Dict[str, Path], logger: logging.Logger):
         self.dirs = dirs
@@ -18,14 +20,14 @@ class GodotSceneBuilder:
         self.scenes_dir = dirs['scenes_dir']
     
     async def create_main_scenes(self, world_spec: Dict[str, Any], characters: Dict[str, Any]) -> List[str]:
-        """Create main game scenes with ALL buildings properly included"""
+        """Create main game scenes with ALL buildings properly positioned on ground"""
         scene_files = []
         
         try:
             # Ensure scenes directory exists
             self.scenes_dir.mkdir(parents=True, exist_ok=True)
             
-            # Create main world scene with ALL buildings
+            # Create main world scene with ALL buildings on ground
             world_scene = await self._create_world_scene_with_all_buildings(world_spec, characters)
             scene_files.append(world_scene)
             
@@ -45,7 +47,7 @@ class GodotSceneBuilder:
                     npc_scene = await self._create_npc_scene(character, i)
                     scene_files.append(npc_scene)
             
-            self.logger.info(f"✅ Created {len(scene_files)} scenes including {len(world_spec.get('buildings', []))} buildings")
+            self.logger.info(f"✅ Created {len(scene_files)} scenes including {len(world_spec.get('buildings', []))} buildings ON GROUND")
             return scene_files
             
         except Exception as e:
@@ -53,7 +55,7 @@ class GodotSceneBuilder:
             return []
     
     async def _create_world_scene_with_all_buildings(self, world_spec: Dict[str, Any], characters: Dict[str, Any]) -> str:
-        """Create the main world scene with ALL buildings properly positioned"""
+        """Create the main world scene with ALL buildings properly positioned ON THE GROUND"""
         
         buildings = world_spec.get('buildings', [])
         characters_list = characters.get('characters', []) if characters else []
@@ -61,7 +63,7 @@ class GodotSceneBuilder:
         # Calculate how many sub-resources we need
         building_count = len(buildings)
         character_count = len(characters_list)
-        total_load_steps = 6 + (building_count * 2) + character_count  # Base + (mesh+material per building) + NPCs
+        total_load_steps = 6 + (building_count * 2) + character_count
         
         # Create sub-resources section
         sub_resources = self._generate_building_subresources(buildings)
@@ -111,17 +113,17 @@ target_position = Vector3(0, 0, -3)
 
 '''
         
-        # Add ALL buildings to the scene
+        # Add ALL buildings to the scene - NOW WITH GROUND POSITIONING
         for i, building in enumerate(buildings):
-            building_node = self._create_building_node(building, i)
+            building_node = self._create_building_node_on_ground(building, i)
             scene_content += building_node
         
         # Add NPCs section
         scene_content += '[node name="NPCs" type="Node3D" parent="."]\n\n'
         
-        # Add ALL NPCs to the scene
+        # Add ALL NPCs to the scene - also on ground
         for i, character in enumerate(characters_list):
-            npc_node = self._create_npc_node(character, i)
+            npc_node = self._create_npc_node_on_ground(character, i)
             scene_content += npc_node
         
         # Write the complete scene file
@@ -129,7 +131,7 @@ target_position = Vector3(0, 0, -3)
         with open(world_scene_file, 'w', encoding='utf-8') as f:
             f.write(scene_content)
         
-        self.logger.info(f"Created main world scene with {building_count} buildings and {character_count} NPCs")
+        self.logger.info(f"Created main world scene with {building_count} buildings ON GROUND and {character_count} NPCs")
         return "World.tscn"
     
     def _generate_building_subresources(self, buildings: List[Dict[str, Any]]) -> str:
@@ -155,7 +157,7 @@ height = 2.0
             color = self._get_building_color(building_type)
             scale = building.get('scale', 1.0)
             
-            # Create unique mesh for each building
+            # Create unique mesh for each building with proper size
             mesh_size = f"Vector3({4 * scale}, {3 * scale}, {4 * scale})"
             
             sub_resources += f'''[sub_resource type="BoxMesh" id="BuildingMesh_{i}"]
@@ -173,8 +175,8 @@ metallic = 0.1
         
         return sub_resources
     
-    def _create_building_node(self, building: Dict[str, Any], index: int) -> str:
-        """Create a building node with proper positioning and properties"""
+    def _create_building_node_on_ground(self, building: Dict[str, Any], index: int) -> str:
+        """Create a building node positioned ON THE GROUND - FIXED VERSION"""
         
         # Get building properties
         building_id = building.get('id', f'building_{index}')
@@ -183,23 +185,40 @@ metallic = 0.1
         rotation = building.get('rotation', 0)
         scale = building.get('scale', 1.0)
         
-        # Handle different position formats
+        # Handle different position formats from world_spec
         if isinstance(position, dict):
-            x, y, z = position.get('x', 0), position.get('y', 0), position.get('z', 0)
+            world_x, world_y, world_z = position.get('x', 0), position.get('y', 0), position.get('z', 0)
         elif isinstance(position, list) and len(position) >= 2:
-            x, z = position[0], position[1]
-            y = position[2] if len(position) > 2 else 0
+            world_x, world_y = position[0], position[1]
+            world_z = position[2] if len(position) > 2 else 0
         else:
-            x, y, z = 0, 0, 0
+            world_x, world_y, world_z = 0, 0, 0
+        
+        # CRITICAL FIX: Proper coordinate mapping for ground placement
+        # In your world_spec: position.x and position.y are 2D map coordinates
+        # In Godot 3D: X = left/right, Y = up/down (height), Z = forward/back (depth)
+        
+        godot_x = world_x           # World X maps to Godot X (left/right)
+        godot_y = 1.5 * scale       # Always place on ground (building center at half-height)
+        godot_z = world_y           # World Y maps to Godot Z (forward/back depth)
         
         # Convert rotation to radians if needed
         rotation_rad = rotation * 3.14159 / 180 if rotation else 0
+        
+        # Create rotation transform if there's rotation
+        if rotation != 0:
+            # Simple Y-axis rotation for now
+            cos_r = cos(rotation_rad) if 'cos' in dir() else 1
+            sin_r = sin(rotation_rad) if 'sin' in dir() else 0
+            rotation_matrix = f"{cos_r * scale}, 0, {sin_r * scale}, 0, {scale}, 0, {-sin_r * scale}, 0, {cos_r * scale}"
+        else:
+            rotation_matrix = f"{scale}, 0, 0, 0, {scale}, 0, 0, 0, {scale}"
         
         # Sanitize building name for Godot
         safe_name = self._sanitize_node_name(building_id, f"Building_{index}")
         
         building_node = f'''[node name="{safe_name}" type="StaticBody3D" parent="Buildings"]
-transform = Transform3D({scale}, 0, 0, 0, {scale}, 0, 0, 0, {scale}, {x}, {y + 1.5 * scale}, {z})
+transform = Transform3D({rotation_matrix}, {godot_x}, {godot_y}, {godot_z})
 
 [node name="BuildingMesh" type="MeshInstance3D" parent="Buildings/{safe_name}"]
 mesh = SubResource("BuildingMesh_{index}")
@@ -218,28 +237,26 @@ shape = SubResource("BuildingShape_{index}")
         
         return building_node
     
-    def _create_npc_node(self, character: Dict[str, Any], index: int) -> str:
-        """Create an NPC node in the world scene"""
+    def _create_npc_node_on_ground(self, character: Dict[str, Any], index: int) -> str:
+        """Create an NPC node positioned on the ground"""
         
         character_name = character.get('name', f'NPC_{index}')
         location = character.get('location', 'house')
         
-        # Try to find a building with matching location/type
-        # For now, place NPCs at default positions, but this could be improved
-        # to actually place them near relevant buildings
+        # Place NPCs at reasonable ground positions
         spawn_positions = {
-            'house': (10, 0, 10),
-            'church': (14, 0, 30),
-            'tower': (14, 0, 10),
-            'tavern': (20, 0, 20),
-            'shop': (25, 0, 15)
+            'house': (10, 1, 10),
+            'church': (14, 1, 30),
+            'tower': (14, 1, 10),
+            'tavern': (20, 1, 20),
+            'shop': (25, 1, 15)
         }
         
-        x, y, z = spawn_positions.get(location, (5 + index * 3, 0, 5))
+        x, y, z = spawn_positions.get(location, (5 + index * 3, 1, 5))
         safe_name = self._sanitize_node_name(character_name, f"NPC_{index}")
         
         npc_node = f'''[node name="{safe_name}" type="CharacterBody3D" parent="NPCs"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, {x}, {y + 1}, {z})
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, {x}, {y}, {z})
 
 [node name="NPCMesh" type="MeshInstance3D" parent="NPCs/{safe_name}"]
 mesh = SubResource("PlayerMesh_1")

@@ -420,10 +420,10 @@ func load_json_file(file_path: String) -> Dictionary:
         print("Could not open file: ", file_path)
         return {}
 
-func get_character_by_name(name: String) -> Dictionary:
+func get_character_by_name(chname: String) -> Dictionary:
     if character_data.has("characters"):
         for character in character_data["characters"]:
-            if character.get("name") == name:
+            if character.get("name") == chname:
                 return character
     return {}
 

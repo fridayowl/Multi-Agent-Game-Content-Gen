@@ -1,0 +1,68 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/CharacterData.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_name = "Sir Edwin"
+personality = {
+    "primary_trait": "Gentle",
+    "secondary_trait": "Witty",
+    "motivation": "To build something lasting",
+    "fear": "Failure",
+    "quirk": "Collects unusual items",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+}
+dialogue_lines = []
+relationships = [
+    {
+    "target_character": "Brother Cedric",
+    "relationship_type": "Acquaintance",
+    "relationship_strength": 5,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+},
+    {
+    "target_character": "Master Aldric",
+    "relationship_type": "Rival",
+    "relationship_strength": 6,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+},
+    {
+    "target_character": "Brother Aldric",
+    "relationship_type": "Friend",
+    "relationship_strength": 3,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+},
+    {
+    "target_character": "Lady Hilda",
+    "relationship_type": "Neighbor",
+    "relationship_strength": 5,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+}
+]
+stats = {
+    "level": 2,
+    "health": 66,
+    "strength": 11,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 14,
+    "constitution": 12
+}
+inventory = [
+    "Personal belongings",
+    "Holy symbol",
+    "Prayer book",
+    "Healing herbs",
+    "Leather pouch"
+]
+location = "church"

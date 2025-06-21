@@ -1,0 +1,548 @@
+{
+  "status": "success",
+  "character_count": 5,
+  "output_directory": "generated_characters",
+  "manifest_file": "generated_characters/character_manifest.json",
+  "unique_personalities": 5,
+  "total_relationships": 20,
+  "total_dialogue_nodes": 10,
+  "characters": [
+    {
+      "id": "sir_edwin_0dc6395b_0",
+      "name": "Sir Edwin",
+      "title": "The Gentle Priest",
+      "description": "A distinctive 57-year-old Priest.",
+      "backstory": "Sir Edwin has lived an interesting life as a Priest.",
+      "personality": {
+        "primary_trait": "Gentle",
+        "secondary_trait": "Witty",
+        "motivation": "To build something lasting",
+        "fear": "Failure",
+        "quirk": "Collects unusual items",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 2,
+        "health": 66,
+        "strength": 11,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 14,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Brother Cedric",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Master Aldric",
+          "relationship_type": "Rival",
+          "relationship_strength": 6,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Brother Aldric",
+          "relationship_type": "Friend",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Hilda",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "sir edwin_greeting",
+          "text": "Greetings! I'm Sir Edwin, the local Priest.",
+          "speaker": "Sir Edwin",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "sir edwin_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "sir edwin_role",
+          "text": "As a Priest, I to build something lasting.",
+          "speaker": "Sir Edwin",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Holy symbol",
+        "Prayer book",
+        "Healing herbs",
+        "Leather pouch"
+      ],
+      "location": "church",
+      "role": "Priest",
+      "quest_involvement": [],
+      "age": 57,
+      "appearance": "Distinctive appearance fitting a spooky character.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "9851de44-e292-4b93-8b39-40fdd1151100"
+    },
+    {
+      "id": "brother_cedric_0dc6395b_1",
+      "name": "Brother Cedric",
+      "title": "The Clever Noble",
+      "description": "A distinctive 29-year-old Noble.",
+      "backstory": "Brother Cedric has lived an interesting life as a Noble.",
+      "personality": {
+        "primary_trait": "Clever",
+        "secondary_trait": "Curious",
+        "motivation": "To build something lasting",
+        "fear": "Being alone",
+        "quirk": "Collects unusual items",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 2,
+        "health": 66,
+        "strength": 12,
+        "intelligence": 14,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Sir Edwin",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Master Aldric",
+          "relationship_type": "Colleague",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Brother Aldric",
+          "relationship_type": "Friend",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Hilda",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "brother cedric_greeting",
+          "text": "Greetings! I'm Brother Cedric, the local Noble.",
+          "speaker": "Brother Cedric",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "brother cedric_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "brother cedric_role",
+          "text": "As a Noble, I to build something lasting.",
+          "speaker": "Brother Cedric",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "house",
+      "role": "Noble",
+      "quest_involvement": [],
+      "age": 29,
+      "appearance": "Distinctive appearance fitting a spooky character.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "79427c54-5543-4a7d-a2fd-f44809b7cad4"
+    },
+    {
+      "id": "master_aldric_0dc6395b_2",
+      "name": "Master Aldric",
+      "title": "The Brave Servant",
+      "description": "A distinctive 25-year-old Servant.",
+      "backstory": "Master Aldric has lived an interesting life as a Servant.",
+      "personality": {
+        "primary_trait": "Brave",
+        "secondary_trait": "Mysterious",
+        "motivation": "To build something lasting",
+        "fear": "The unknown",
+        "quirk": "Always carries a lucky charm",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 3,
+        "health": 69,
+        "strength": 14,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Sir Edwin",
+          "relationship_type": "Rival",
+          "relationship_strength": 6,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Brother Cedric",
+          "relationship_type": "Colleague",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Brother Aldric",
+          "relationship_type": "Rival",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Hilda",
+          "relationship_type": "Ally",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "master aldric_greeting",
+          "text": "Greetings! I'm Master Aldric, the local Servant.",
+          "speaker": "Master Aldric",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "master aldric_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "master aldric_role",
+          "text": "As a Servant, I to build something lasting.",
+          "speaker": "Master Aldric",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "tower",
+      "role": "Servant",
+      "quest_involvement": [],
+      "age": 25,
+      "appearance": "Distinctive appearance fitting a spooky character.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "2baf6c2c-b2a3-4bcb-8257-7f900e9f384f"
+    },
+    {
+      "id": "brother_aldric_0dc6395b_3",
+      "name": "Brother Aldric",
+      "title": "The Compassionate Mage",
+      "description": "A distinctive 30-year-old Mage.",
+      "backstory": "Brother Aldric has lived an interesting life as a Mage.",
+      "personality": {
+        "primary_trait": "Compassionate",
+        "secondary_trait": "Patient",
+        "motivation": "To find adventure",
+        "fear": "Failure",
+        "quirk": "Collects unusual items",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 5,
+        "health": 75,
+        "strength": 12,
+        "intelligence": 16,
+        "charisma": 13,
+        "dexterity": 12,
+        "wisdom": 14,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Sir Edwin",
+          "relationship_type": "Friend",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Brother Cedric",
+          "relationship_type": "Friend",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Master Aldric",
+          "relationship_type": "Rival",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Hilda",
+          "relationship_type": "Ally",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "brother aldric_greeting",
+          "text": "Greetings! I'm Brother Aldric, the local Mage.",
+          "speaker": "Brother Aldric",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "brother aldric_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "brother aldric_role",
+          "text": "As a Mage, I to find adventure.",
+          "speaker": "Brother Aldric",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "house",
+      "role": "Mage",
+      "quest_involvement": [],
+      "age": 30,
+      "appearance": "Distinctive appearance fitting a spooky character.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "76cb2358-81d7-4e5a-bb0c-3d5da759bdb2"
+    },
+    {
+      "id": "lady_hilda_0dc6395b_4",
+      "name": "Lady Hilda",
+      "title": "The Determined Family Head",
+      "description": "A distinctive 32-year-old Family Head.",
+      "backstory": "Lady Hilda has lived an interesting life as a Family Head.",
+      "personality": {
+        "primary_trait": "Determined",
+        "secondary_trait": "Practical",
+        "motivation": "To find adventure",
+        "fear": "The unknown",
+        "quirk": "Never sits still",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 3,
+        "health": 69,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Sir Edwin",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Brother Cedric",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Master Aldric",
+          "relationship_type": "Ally",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Brother Aldric",
+          "relationship_type": "Ally",
+          "relationship_strength": 3,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "lady hilda_greeting",
+          "text": "Greetings! I'm Lady Hilda, the local Family Head.",
+          "speaker": "Lady Hilda",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "lady hilda_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "lady hilda_role",
+          "text": "As a Family Head, I to find adventure.",
+          "speaker": "Lady Hilda",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "church",
+      "role": "Family Head",
+      "quest_involvement": [],
+      "age": 32,
+      "appearance": "Distinctive appearance fitting a spooky character.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "a22e6641-de9e-4bef-a4ec-f7c6e8da9f77"
+    }
+  ]
+}

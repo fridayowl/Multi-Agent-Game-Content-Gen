@@ -1,0 +1,57 @@
+extends NPC
+
+# Specific script for Brother Aldric
+
+func _ready():
+    super._ready()
+    character_name = "Brother Aldric"
+    setup_specific_behavior()
+
+func setup_specific_behavior():
+    # Specific dialogue - FIXED SYNTAX  
+    var dialogue_array = []
+    for line in dialogue_array:
+        add_dialogue_line(str(line))
+    
+    # Specific relationships - FIXED SYNTAX
+    relationships = [
+    {
+    "target_character": "Sir Edwin",
+    "relationship_type": "Friend",
+    "relationship_strength": 3,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+},
+    {
+    "target_character": "Brother Cedric",
+    "relationship_type": "Friend",
+    "relationship_strength": 3,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+},
+    {
+    "target_character": "Master Aldric",
+    "relationship_type": "Rival",
+    "relationship_strength": 8,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+},
+    {
+    "target_character": "Lady Hilda",
+    "relationship_type": "Ally",
+    "relationship_strength": 3,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+}
+]
+
+func interact(player: Variant):
+    # Custom interaction for Brother Aldric
+    super.interact(player)
+    
+    # Add specific behavior here
+    print("Brother Aldric nods at you.")
+
+func get_current_mood() -> String:
+    # Simple mood system without personality traits
+    return "neutral"
