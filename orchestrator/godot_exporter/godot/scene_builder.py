@@ -5,6 +5,7 @@ File: orchestrator/godot_exporter/godot/scene_builder.py
 
 This fixes the floating buildings issue by properly mapping world coordinates to Godot 3D space
 PLUS fixes NPC script attachment issue
+PLUS fixes ground collision with proper BoxShape3D
 """
 
 import logging
@@ -13,7 +14,7 @@ from pathlib import Path
 from typing import Dict, Any, List
 
 class GodotSceneBuilder:
-    """Fixed Godot scene builder that places buildings on the ground AND properly attaches NPC scripts"""
+    """Fixed Godot scene builder that places buildings on the ground AND properly attaches NPC scripts AND has proper ground collision"""
     
     def __init__(self, dirs: Dict[str, Path], logger: logging.Logger):
         self.dirs = dirs
@@ -48,7 +49,7 @@ class GodotSceneBuilder:
                     npc_scene = await self._create_npc_scene(character, i)
                     scene_files.append(npc_scene)
             
-            self.logger.info(f"✅ Created {len(scene_files)} scenes including {len(world_spec.get('buildings', []))} buildings ON GROUND")
+            self.logger.info(f"✅ Created {len(scene_files)} scenes including {len(world_spec.get('buildings', []))} buildings ON GROUND with proper ground collision")
             return scene_files
             
         except Exception as e:
@@ -78,7 +79,7 @@ class GodotSceneBuilder:
         # FIXED: Generate ExtResource headers for ALL NPC scripts
         ext_resources = self._generate_npc_ext_resources(characters_list)
         
-        # Create sub-resources section
+        # Create sub-resources section with PROPER ground collision
         sub_resources = self._generate_building_subresources(buildings)
         
         # Create the scene header with FIXED ExtResource references
@@ -105,7 +106,7 @@ light_energy = 1.0
 mesh = SubResource("PlaneMesh_1")
 
 [node name="GroundCollision" type="CollisionShape3D" parent="Environment/Ground"]
-shape = SubResource("PlaneShape_1")
+shape = SubResource("GroundShape_1")
 
 [node name="Player" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
@@ -145,7 +146,7 @@ target_position = Vector3(0, 0, -3)
         with open(world_scene_file, 'w', encoding='utf-8') as f:
             f.write(scene_content)
         
-        self.logger.info(f"✅ Created main world scene with {building_count} buildings ON GROUND and {character_count} NPCs WITH SCRIPTS")
+        self.logger.info(f"✅ Created main world scene with {building_count} buildings ON GROUND and {character_count} NPCs WITH SCRIPTS and proper ground collision")
         return "World.tscn"
     
     def _generate_npc_ext_resources(self, characters_list: List[Dict[str, Any]]) -> str:
@@ -162,11 +163,12 @@ target_position = Vector3(0, 0, -3)
         return ext_resources
     
     def _generate_building_subresources(self, buildings: List[Dict[str, Any]]) -> str:
-        """Generate all sub-resources needed for buildings"""
+        """Generate all sub-resources needed for buildings with PROPER GROUND COLLISION"""
         sub_resources = '''[sub_resource type="PlaneMesh" id="PlaneMesh_1"]
 size = Vector2(100, 100)
 
-[sub_resource type="PlaneShape3D" id="PlaneShape_1"]
+[sub_resource type="BoxShape3D" id="GroundShape_1"]
+size = Vector3(100, 0.1, 100)
 
 [sub_resource type="CapsuleMesh" id="PlayerMesh_1"]
 radius = 0.5
@@ -230,13 +232,14 @@ metallic = 0.1
         godot_z = world_y           # World Y maps to Godot Z (forward/back depth)
         
         # Convert rotation to radians if needed
-        rotation_rad = rotation * 3.14159 / 180 if rotation else 0
+        import math
+        rotation_rad = rotation * math.pi / 180 if rotation else 0
         
         # Create rotation transform if there's rotation
         if rotation != 0:
             # Simple Y-axis rotation for now
-            cos_r = cos(rotation_rad) if 'cos' in dir() else 1
-            sin_r = sin(rotation_rad) if 'sin' in dir() else 0
+            cos_r = math.cos(rotation_rad)
+            sin_r = math.sin(rotation_rad)
             rotation_matrix = f"{cos_r * scale}, 0, {sin_r * scale}, 0, {scale}, 0, {-sin_r * scale}, 0, {cos_r * scale}"
         else:
             rotation_matrix = f"{scale}, 0, 0, 0, {scale}, 0, 0, 0, {scale}"
