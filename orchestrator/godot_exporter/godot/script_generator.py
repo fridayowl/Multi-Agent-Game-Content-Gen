@@ -10,7 +10,7 @@ import re
 from pathlib import Path
 from typing import Dict, Any, List
 
-# Define GDSCRIPT_TEMPLATES with FIXED NPC base class
+# Define GDSCRIPT_TEMPLATES with FIXED NPC base class and ENHANCED player controller
 GDSCRIPT_TEMPLATES = {
     'world_manager': '''extends Node
 
@@ -83,6 +83,54 @@ func load_character_data():
         var dialogue_array = character_data["dialogue"]
         for line in dialogue_array:
             add_dialogue_line(str(line))
+''',
+
+    # ENHANCED: Player controller with camera rotation controls
+    'player_controller': '''extends CharacterBody3D
+
+class_name Player
+
+const SPEED = 5.0
+const JUMP_VELOCITY = 4.5
+var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+
+@onready var camera = $Camera3D
+var mouse_sensitivity = 0.002
+
+func _ready():
+    add_to_group("player")
+    Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
+func _input(event):
+    if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+        rotate_y(-event.relative.x * mouse_sensitivity)
+        camera.rotate_x(-event.relative.y * mouse_sensitivity)
+        camera.rotation.x = clamp(camera.rotation.x, -PI/2, PI/2)
+    
+    # Handle escape to free/capture mouse
+    if event.is_action_pressed("ui_cancel"):
+        if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+            Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+        else:
+            Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
+func _physics_process(delta):
+    if not is_on_floor():
+        velocity.y -= gravity * delta
+    
+    if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+        velocity.y = JUMP_VELOCITY
+    
+    var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
+    var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+    if direction:
+        velocity.x = direction.x * SPEED
+        velocity.z = direction.z * SPEED
+    else:
+        velocity.x = move_toward(velocity.x, 0, SPEED)
+        velocity.z = move_toward(velocity.z, 0, SPEED)
+
+    move_and_slide()
 '''
 }
 
@@ -500,41 +548,9 @@ func setup_default_atmosphere():
         return "WorldManager.gd"
     
     async def _create_player_script(self) -> str:
-        """Create player controller script"""
+        """Create player controller script with enhanced camera controls"""
         
-        content = '''extends CharacterBody3D
-
-class_name Player
-
-@export var speed: float = 5.0
-@export var jump_velocity: float = 4.5
-
-var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
-
-func _ready():
-    add_to_group("player")
-
-func _physics_process(delta):
-    # Add gravity
-    if not is_on_floor():
-        velocity.y -= gravity * delta
-
-    # Handle jump
-    if Input.is_action_just_pressed("jump") and is_on_floor():
-        velocity.y = jump_velocity
-
-    # Handle movement
-    var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
-    var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-    if direction:
-        velocity.x = direction.x * speed
-        velocity.z = direction.z * speed
-    else:
-        velocity.x = move_toward(velocity.x, 0, speed)
-        velocity.z = move_toward(velocity.z, 0, speed)
-
-    move_and_slide()
-'''
+        content = GDSCRIPT_TEMPLATES['player_controller']
         
         script_file = self.scripts_dir / "Player.gd"
         with open(script_file, 'w', encoding='utf-8') as f:
