@@ -4,6 +4,7 @@ COMPLETE FIXED Godot Scene Builder - Buildings Now Positioned on Ground
 File: orchestrator/godot_exporter/godot/scene_builder.py
 
 This fixes the floating buildings issue by properly mapping world coordinates to Godot 3D space
+PLUS fixes NPC script attachment issue
 """
 
 import logging
@@ -12,7 +13,7 @@ from pathlib import Path
 from typing import Dict, Any, List
 
 class GodotSceneBuilder:
-    """Fixed Godot scene builder that places buildings on the ground"""
+    """Fixed Godot scene builder that places buildings on the ground AND properly attaches NPC scripts"""
     
     def __init__(self, dirs: Dict[str, Path], logger: logging.Logger):
         self.dirs = dirs
@@ -60,19 +61,32 @@ class GodotSceneBuilder:
         buildings = world_spec.get('buildings', [])
         characters_list = characters.get('characters', []) if characters else []
         
-        # Calculate how many sub-resources we need
+        # Calculate how many sub-resources and ExtResources we need
         building_count = len(buildings)
         character_count = len(characters_list)
-        total_load_steps = 6 + (building_count * 2) + character_count
+        
+        # FIXED: Calculate proper load_steps including NPC scripts
+        # Base: 2 (WorldManager + Player scripts) + characters scripts + subresources
+        base_ext_resources = 2  # WorldManager.gd + Player.gd
+        npc_ext_resources = character_count  # One script per NPC
+        total_ext_resources = base_ext_resources + npc_ext_resources
+        
+        # SubResources: 2 (ground) + 2 (player) + (buildings * 3: mesh, shape, material)
+        total_subresources = 4 + (building_count * 3)
+        total_load_steps = total_ext_resources + total_subresources
+        
+        # FIXED: Generate ExtResource headers for ALL NPC scripts
+        ext_resources = self._generate_npc_ext_resources(characters_list)
         
         # Create sub-resources section
         sub_resources = self._generate_building_subresources(buildings)
         
-        # Create the scene header
+        # Create the scene header with FIXED ExtResource references
         scene_content = f'''[gd_scene load_steps={total_load_steps} format=3 uid="uid://world_main"]
 
 [ext_resource type="Script" path="res://scripts/WorldManager.gd" id="1"]
 [ext_resource type="Script" path="res://scripts/Player.gd" id="2"]
+{ext_resources}
 
 {sub_resources}
 
@@ -121,9 +135,9 @@ target_position = Vector3(0, 0, -3)
         # Add NPCs section
         scene_content += '[node name="NPCs" type="Node3D" parent="."]\n\n'
         
-        # Add ALL NPCs to the scene - also on ground
+        # Add ALL NPCs to the scene - FIXED: WITH PROPER SCRIPT REFERENCES
         for i, character in enumerate(characters_list):
-            npc_node = self._create_npc_node_on_ground(character, i)
+            npc_node = self._create_npc_node_on_ground_with_script(character, i)
             scene_content += npc_node
         
         # Write the complete scene file
@@ -131,8 +145,21 @@ target_position = Vector3(0, 0, -3)
         with open(world_scene_file, 'w', encoding='utf-8') as f:
             f.write(scene_content)
         
-        self.logger.info(f"Created main world scene with {building_count} buildings ON GROUND and {character_count} NPCs")
+        self.logger.info(f"✅ Created main world scene with {building_count} buildings ON GROUND and {character_count} NPCs WITH SCRIPTS")
         return "World.tscn"
+    
+    def _generate_npc_ext_resources(self, characters_list: List[Dict[str, Any]]) -> str:
+        """FIXED: Generate ExtResource entries for all NPC scripts"""
+        ext_resources = ""
+        
+        for i, character in enumerate(characters_list):
+            character_name = character.get('name', f'NPC_{i}')
+            safe_name = self._sanitize_node_name(character_name, f"NPC_{i}")
+            ext_resource_id = i + 3  # Start from 3 (1=WorldManager, 2=Player)
+            
+            ext_resources += f'[ext_resource type="Script" path="res://scripts/{safe_name}.gd" id="{ext_resource_id}"]\n'
+        
+        return ext_resources
     
     def _generate_building_subresources(self, buildings: List[Dict[str, Any]]) -> str:
         """Generate all sub-resources needed for buildings"""
@@ -237,8 +264,44 @@ shape = SubResource("BuildingShape_{index}")
         
         return building_node
     
+    def _create_npc_node_on_ground_with_script(self, character: Dict[str, Any], index: int) -> str:
+        """FIXED: Create an NPC node positioned on the ground WITH proper script reference"""
+        
+        character_name = character.get('name', f'NPC_{index}')
+        location = character.get('location', 'house')
+        safe_name = self._sanitize_node_name(character_name, f"NPC_{index}")
+        
+        # FIXED: Calculate correct ExtResource ID (3+ because 1=WorldManager, 2=Player)
+        script_ext_resource_id = index + 3
+        
+        # Place NPCs at reasonable ground positions
+        spawn_positions = {
+            'house': (10, 1, 10),
+            'church': (14, 1, 30),
+            'tower': (14, 1, 10),
+            'tavern': (20, 1, 20),
+            'shop': (25, 1, 15)
+        }
+        
+        x, y, z = spawn_positions.get(location, (5 + index * 3, 1, 5))
+        
+        # FIXED: Include script reference in the node definition
+        npc_node = f'''[node name="{safe_name}" type="CharacterBody3D" parent="NPCs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, {x}, {y}, {z})
+script = ExtResource("{script_ext_resource_id}")
+
+[node name="NPCMesh" type="MeshInstance3D" parent="NPCs/{safe_name}"]
+mesh = SubResource("PlayerMesh_1")
+
+[node name="NPCCollision" type="CollisionShape3D" parent="NPCs/{safe_name}"]
+shape = SubResource("PlayerShape_1")
+
+'''
+        
+        return npc_node
+    
     def _create_npc_node_on_ground(self, character: Dict[str, Any], index: int) -> str:
-        """Create an NPC node positioned on the ground"""
+        """Create an NPC node positioned on the ground - ORIGINAL METHOD KEPT FOR COMPATIBILITY"""
         
         character_name = character.get('name', f'NPC_{index}')
         location = character.get('location', 'house')

@@ -1,110 +1,107 @@
-[gd_scene load_steps=27 format=3 uid="uid://world_main"]
+[gd_scene load_steps=35 format=3 uid="uid://bty8lkdj8cc7p"]
 
-[ext_resource type="Script" path="res://scripts/WorldManager.gd" id="1"]
-[ext_resource type="Script" path="res://scripts/Player.gd" id="2"]
+[ext_resource type="Script" uid="uid://boc2tsvcvobvs" path="res://scripts/WorldManager.gd" id="1"]
+[ext_resource type="Script" uid="uid://yddw1vdsfu4r" path="res://scripts/Player.gd" id="2"]
+[ext_resource type="Script" uid="uid://b4mhwyl7jobcn" path="res://scripts/Sir_Edwin.gd" id="3"]
+[ext_resource type="Script" uid="uid://c1uok0d8sx7j6" path="res://scripts/Brother_Cedric.gd" id="4"]
+[ext_resource type="Script" uid="uid://dg40x64jtjb5o" path="res://scripts/Master_Aldric.gd" id="5"]
+[ext_resource type="Script" uid="uid://c14wsn1dvq37y" path="res://scripts/Brother_Aldric.gd" id="6"]
+[ext_resource type="Script" uid="uid://ba5tamjbdy6po" path="res://scripts/Lady_Hilda.gd" id="7"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_1"]
 size = Vector2(100, 100)
 
-[sub_resource type="PlaneShape3D" id="PlaneShape_1"]
-
 [sub_resource type="CapsuleMesh" id="PlayerMesh_1"]
-radius = 0.5
-height = 2.0
 
 [sub_resource type="CapsuleShape3D" id="PlayerShape_1"]
-radius = 0.5
-height = 2.0
 
 [sub_resource type="BoxMesh" id="BuildingMesh_0"]
-size = Vector3(4.0, 3.0, 4.0)
-
-[sub_resource type="BoxShape3D" id="BuildingShape_0"]
-size = Vector3(4.0, 3.0, 4.0)
+size = Vector3(4, 3, 4)
 
 [sub_resource type="StandardMaterial3D" id="BuildingMaterial_0"]
 albedo_color = Color(0.8, 0.6, 0.4, 1)
-roughness = 0.7
 metallic = 0.1
+roughness = 0.7
+
+[sub_resource type="BoxShape3D" id="BuildingShape_0"]
+size = Vector3(4, 3, 4)
 
 [sub_resource type="BoxMesh" id="BuildingMesh_1"]
-size = Vector3(4.0, 3.0, 4.0)
-
-[sub_resource type="BoxShape3D" id="BuildingShape_1"]
-size = Vector3(4.0, 3.0, 4.0)
+size = Vector3(4, 3, 4)
 
 [sub_resource type="StandardMaterial3D" id="BuildingMaterial_1"]
 albedo_color = Color(0.9, 0.9, 0.9, 1)
-roughness = 0.7
 metallic = 0.1
+roughness = 0.7
+
+[sub_resource type="BoxShape3D" id="BuildingShape_1"]
+size = Vector3(4, 3, 4)
 
 [sub_resource type="BoxMesh" id="BuildingMesh_2"]
-size = Vector3(4.0, 3.0, 4.0)
-
-[sub_resource type="BoxShape3D" id="BuildingShape_2"]
-size = Vector3(4.0, 3.0, 4.0)
+size = Vector3(4, 3, 4)
 
 [sub_resource type="StandardMaterial3D" id="BuildingMaterial_2"]
 albedo_color = Color(0.5, 0.5, 0.5, 1)
-roughness = 0.7
 metallic = 0.1
+roughness = 0.7
+
+[sub_resource type="BoxShape3D" id="BuildingShape_2"]
+size = Vector3(4, 3, 4)
 
 [sub_resource type="BoxMesh" id="BuildingMesh_3"]
-size = Vector3(3.6176110627892077, 2.7132082970919056, 3.6176110627892077)
-
-[sub_resource type="BoxShape3D" id="BuildingShape_3"]
-size = Vector3(3.6176110627892077, 2.7132082970919056, 3.6176110627892077)
+size = Vector3(3.61761, 2.71321, 3.61761)
 
 [sub_resource type="StandardMaterial3D" id="BuildingMaterial_3"]
 albedo_color = Color(0.8, 0.6, 0.4, 1)
-roughness = 0.7
 metallic = 0.1
+roughness = 0.7
+
+[sub_resource type="BoxShape3D" id="BuildingShape_3"]
+size = Vector3(3.61761, 2.71321, 3.61761)
 
 [sub_resource type="BoxMesh" id="BuildingMesh_4"]
-size = Vector3(4.456552496944283, 3.3424143727082125, 4.456552496944283)
-
-[sub_resource type="BoxShape3D" id="BuildingShape_4"]
-size = Vector3(4.456552496944283, 3.3424143727082125, 4.456552496944283)
+size = Vector3(4.45655, 3.34241, 4.45655)
 
 [sub_resource type="StandardMaterial3D" id="BuildingMaterial_4"]
 albedo_color = Color(0.8, 0.6, 0.4, 1)
-roughness = 0.7
 metallic = 0.1
+roughness = 0.7
+
+[sub_resource type="BoxShape3D" id="BuildingShape_4"]
+size = Vector3(4.45655, 3.34241, 4.45655)
 
 [sub_resource type="BoxMesh" id="BuildingMesh_5"]
-size = Vector3(4.40919793258071, 3.3068984494355327, 4.40919793258071)
-
-[sub_resource type="BoxShape3D" id="BuildingShape_5"]
-size = Vector3(4.40919793258071, 3.3068984494355327, 4.40919793258071)
+size = Vector3(4.4092, 3.3069, 4.4092)
 
 [sub_resource type="StandardMaterial3D" id="BuildingMaterial_5"]
 albedo_color = Color(0.8, 0.6, 0.4, 1)
-roughness = 0.7
 metallic = 0.1
+roughness = 0.7
+
+[sub_resource type="BoxShape3D" id="BuildingShape_5"]
+size = Vector3(4.4092, 3.3069, 4.4092)
 
 [sub_resource type="BoxMesh" id="BuildingMesh_6"]
-size = Vector3(3.668182987877954, 2.7511372409084656, 3.668182987877954)
-
-[sub_resource type="BoxShape3D" id="BuildingShape_6"]
-size = Vector3(3.668182987877954, 2.7511372409084656, 3.668182987877954)
+size = Vector3(3.66818, 2.75114, 3.66818)
 
 [sub_resource type="StandardMaterial3D" id="BuildingMaterial_6"]
 albedo_color = Color(0.8, 0.6, 0.4, 1)
-roughness = 0.7
 metallic = 0.1
+roughness = 0.7
+
+[sub_resource type="BoxShape3D" id="BuildingShape_6"]
+size = Vector3(3.66818, 2.75114, 3.66818)
 
 [sub_resource type="BoxMesh" id="BuildingMesh_7"]
-size = Vector3(3.661900523643371, 2.746425392732528, 3.661900523643371)
-
-[sub_resource type="BoxShape3D" id="BuildingShape_7"]
-size = Vector3(3.661900523643371, 2.746425392732528, 3.661900523643371)
+size = Vector3(3.6619, 2.74643, 3.6619)
 
 [sub_resource type="StandardMaterial3D" id="BuildingMaterial_7"]
 albedo_color = Color(0.8, 0.6, 0.4, 1)
-roughness = 0.7
 metallic = 0.1
+roughness = 0.7
 
-
+[sub_resource type="BoxShape3D" id="BuildingShape_7"]
+size = Vector3(3.6619, 2.74643, 3.6619)
 
 [node name="World" type="Node3D"]
 script = ExtResource("1")
@@ -113,15 +110,11 @@ script = ExtResource("1")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment"]
 transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 0, 10, 0)
-light_energy = 1.0
 
 [node name="Ground" type="StaticBody3D" parent="Environment"]
 
 [node name="GroundMesh" type="MeshInstance3D" parent="Environment/Ground"]
 mesh = SubResource("PlaneMesh_1")
-
-[node name="GroundCollision" type="CollisionShape3D" parent="Environment/Ground"]
-shape = SubResource("PlaneShape_1")
 
 [node name="Player" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
@@ -142,7 +135,7 @@ target_position = Vector3(0, 0, -3)
 [node name="Buildings" type="Node3D" parent="."]
 
 [node name="building_0" type="StaticBody3D" parent="Buildings"]
-transform = Transform3D(1.0, 0, 0.0, 0, 1.0, 0, 0.0, 0, 1.0, 32.0, 1.5, 20.0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 1.5, 20)
 
 [node name="BuildingMesh" type="MeshInstance3D" parent="Buildings/building_0"]
 mesh = SubResource("BuildingMesh_0")
@@ -158,7 +151,7 @@ transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
 shape = SubResource("BuildingShape_0")
 
 [node name="building_1" type="StaticBody3D" parent="Buildings"]
-transform = Transform3D(1.0, 0, 0.0, 0, 1.0, 0, 0.0, 0, 1.0, 14.000000000000002, 1.5, 30.392304845413264)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1.5, 30.3923)
 
 [node name="BuildingMesh" type="MeshInstance3D" parent="Buildings/building_1"]
 mesh = SubResource("BuildingMesh_1")
@@ -174,7 +167,7 @@ transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
 shape = SubResource("BuildingShape_1")
 
 [node name="building_2" type="StaticBody3D" parent="Buildings"]
-transform = Transform3D(1.0, 0, 0.0, 0, 1.0, 0, 0.0, 0, 1.0, 13.999999999999995, 1.5, 9.60769515458674)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1.5, 9.6077)
 
 [node name="BuildingMesh" type="MeshInstance3D" parent="Buildings/building_2"]
 mesh = SubResource("BuildingMesh_2")
@@ -190,7 +183,7 @@ transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
 shape = SubResource("BuildingShape_2")
 
 [node name="house_0" type="StaticBody3D" parent="Buildings"]
-transform = Transform3D(0.9044027656973019, 0, 0.0, 0, 0.9044027656973019, 0, 0.0, 0, 0.9044027656973019, 33.543279104913566, 1.3566041485459528, 28.766275663530678)
+transform = Transform3D(0.904403, 0, 0, 0, 0.904403, 0, 0, 0, 0.904403, 33.5433, 1.3566, 28.7663)
 
 [node name="BuildingMesh" type="MeshInstance3D" parent="Buildings/house_0"]
 mesh = SubResource("BuildingMesh_3")
@@ -206,7 +199,7 @@ transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
 shape = SubResource("BuildingShape_3")
 
 [node name="house_1" type="StaticBody3D" parent="Buildings"]
-transform = Transform3D(1.1141381242360708, 0, 0.0, 0, 1.1141381242360708, 0, 0.0, 0, 1.1141381242360708, 28.406898978089338, 1.6712071863541063, 7.223108074487714)
+transform = Transform3D(1.11414, 0, 0, 0, 1.11414, 0, 0, 0, 1.11414, 28.4069, 1.67121, 7.22311)
 
 [node name="BuildingMesh" type="MeshInstance3D" parent="Buildings/house_1"]
 mesh = SubResource("BuildingMesh_4")
@@ -222,7 +215,7 @@ transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
 shape = SubResource("BuildingShape_4")
 
 [node name="house_2" type="StaticBody3D" parent="Buildings"]
-transform = Transform3D(1.1022994831451776, 0, 0.0, 0, 1.1022994831451776, 0, 0.0, 0, 1.1022994831451776, 34.90432001638419, 1.6534492247177663, 13.512930791790525)
+transform = Transform3D(1.1023, 0, 0, 0, 1.1023, 0, 0, 0, 1.1023, 34.9043, 1.65345, 13.5129)
 
 [node name="BuildingMesh" type="MeshInstance3D" parent="Buildings/house_2"]
 mesh = SubResource("BuildingMesh_5")
@@ -238,7 +231,7 @@ transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
 shape = SubResource("BuildingShape_5")
 
 [node name="house_3" type="StaticBody3D" parent="Buildings"]
-transform = Transform3D(0.9170457469694885, 0, 0.0, 0, 0.9170457469694885, 0, 0.0, 0, 0.9170457469694885, 5.183889640420881, 1.3755686204542328, 5.123282419914564)
+transform = Transform3D(0.917046, 0, 0, 0, 0.917046, 0, 0, 0, 0.917046, 5.18389, 1.37557, 5.12328)
 
 [node name="BuildingMesh" type="MeshInstance3D" parent="Buildings/house_3"]
 mesh = SubResource("BuildingMesh_6")
@@ -254,7 +247,7 @@ transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0)
 shape = SubResource("BuildingShape_6")
 
 [node name="house_4" type="StaticBody3D" parent="Buildings"]
-transform = Transform3D(0.9154751309108428, 0, 0.0, 0, 0.9154751309108428, 0, 0.0, 0, 0.9154751309108428, 30.5572832772513, 1.373212696366264, 9.766026147215607)
+transform = Transform3D(0.915475, 0, 0, 0, 0.915475, 0, 0, 0, 0.915475, 30.5573, 1.37321, 9.76603)
 
 [node name="BuildingMesh" type="MeshInstance3D" parent="Buildings/house_4"]
 mesh = SubResource("BuildingMesh_7")
@@ -273,6 +266,7 @@ shape = SubResource("BuildingShape_7")
 
 [node name="Sir_Edwin" type="CharacterBody3D" parent="NPCs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 30)
+script = ExtResource("3")
 
 [node name="NPCMesh" type="MeshInstance3D" parent="NPCs/Sir_Edwin"]
 mesh = SubResource("PlayerMesh_1")
@@ -282,6 +276,7 @@ shape = SubResource("PlayerShape_1")
 
 [node name="Brother_Cedric" type="CharacterBody3D" parent="NPCs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, 10)
+script = ExtResource("4")
 
 [node name="NPCMesh" type="MeshInstance3D" parent="NPCs/Brother_Cedric"]
 mesh = SubResource("PlayerMesh_1")
@@ -291,6 +286,7 @@ shape = SubResource("PlayerShape_1")
 
 [node name="Master_Aldric" type="CharacterBody3D" parent="NPCs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 10)
+script = ExtResource("5")
 
 [node name="NPCMesh" type="MeshInstance3D" parent="NPCs/Master_Aldric"]
 mesh = SubResource("PlayerMesh_1")
@@ -300,6 +296,7 @@ shape = SubResource("PlayerShape_1")
 
 [node name="Brother_Aldric" type="CharacterBody3D" parent="NPCs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, 10)
+script = ExtResource("6")
 
 [node name="NPCMesh" type="MeshInstance3D" parent="NPCs/Brother_Aldric"]
 mesh = SubResource("PlayerMesh_1")
@@ -309,10 +306,10 @@ shape = SubResource("PlayerShape_1")
 
 [node name="Lady_Hilda" type="CharacterBody3D" parent="NPCs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 1, 30)
+script = ExtResource("7")
 
 [node name="NPCMesh" type="MeshInstance3D" parent="NPCs/Lady_Hilda"]
 mesh = SubResource("PlayerMesh_1")
 
 [node name="NPCCollision" type="CollisionShape3D" parent="NPCs/Lady_Hilda"]
 shape = SubResource("PlayerShape_1")
-
