@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Fixed Godot exporter core with proper error handling
+Fixed Godot exporter core with proper error handling and documentation generation
 Fixes the manifest creation and JSON serialization issues
 """
 
@@ -18,8 +18,11 @@ from ..godot.scene_builder import GodotSceneBuilder
 from ..godot.script_generator import GodotScriptGenerator
 from ..godot.resource_exporter import GodotResourceExporter
 
+# ADD THIS IMPORT FOR DOCUMENTATION GENERATION
+from .dynamic_game_report_generator import generate_complete_game_documentation
+
 class GodotExporter:
-    """Fixed Godot project exporter with robust error handling"""
+    """Fixed Godot project exporter with robust error handling and documentation generation"""
     
     def __init__(self, output_dir: Path, logger: logging.Logger = None):
         self.output_dir = output_dir
@@ -34,10 +37,13 @@ class GodotExporter:
         # Directory structure
         self.dirs = {}
     
+    # MODIFIED METHOD SIGNATURE - ADDED balance_report and pipeline_log parameters
     async def export_project(self, project_name: str, world_spec: Dict[str, Any], 
                             assets: Dict[str, Any] = None, characters: Dict[str, Any] = None, 
-                            quests: Dict[str, Any] = None) -> Dict[str, Any]:
-        """Export complete Godot project with comprehensive error handling"""
+                            quests: Dict[str, Any] = None,
+                            balance_report: Dict[str, Any] = None,
+                            pipeline_log: Dict[str, Any] = None) -> Dict[str, Any]:
+        """Export complete Godot project with comprehensive error handling and documentation"""
         
         self.logger.info(f"🎮 Starting Godot export for: {project_name}")
         
@@ -148,17 +154,17 @@ class GodotExporter:
                 manifest = self._create_minimal_manifest(project_name)
                 self.logger.info("⚠️ Using minimal fallback manifest")
             
-            # Step 9: Create documentation
+            # Step 9: Create basic documentation
             try:
-                self.logger.info("📝 Step 9: Creating documentation...")
+                self.logger.info("📝 Step 9: Creating basic documentation...")
                 await self._create_documentation_safe(manifest, project_name)
-                self.logger.info("✅ Step 9: Documentation completed")
+                self.logger.info("✅ Step 9: Basic documentation completed")
             except Exception as e:
                 self.logger.error(f"❌ Step 9 failed: {e}")
                 await self._create_minimal_documentation(project_name)
                 self.logger.info("⚠️ Created minimal documentation")
             
-            # Create successful result
+            # Create successful result first
             result = GodotExportResult(
                 status="success",
                 project_name=project_name,
@@ -175,8 +181,53 @@ class GodotExporter:
                 }
             )
             
-            self.logger.info("✅ Godot project export completed successfully!")
-            return self._safe_dict_conversion(result)
+            # NEW STEP 10: Generate comprehensive game documentation
+            try:
+                self.logger.info("📋 Step 10: Generating comprehensive game documentation...")
+                
+                # Prepare data for documentation
+                godot_export_data = {
+                    'project_path': str(self.dirs['project_dir']),
+                    'import_ready': True,
+                    'export_timestamp': datetime.now().isoformat(),
+                    'file_counts': {
+                        'scripts': len(self.exported_scripts),
+                        'scenes': len(self.exported_scenes),
+                        'resources': len(self.exported_resources),
+                        'assets': len(self.exported_assets)
+                    }
+                }
+                
+                # Generate comprehensive documentation
+                documentation_path = await generate_complete_game_documentation(
+                    output_dir=self.dirs['project_dir'],
+                    world_spec=world_spec or {},
+                    assets=assets or {},
+                    characters=characters or {},
+                    quests=quests or {},
+                    balance_report=balance_report or {},
+                    pipeline_log=pipeline_log or {},
+                    godot_export_data=godot_export_data,
+                    logger=self.logger
+                )
+                
+                self.logger.info(f"✅ Step 10: Complete Game Documentation Generated")
+                self.logger.info(f"📋 Documentation: {Path(documentation_path).name}")
+                
+                # Add documentation path to result
+                result_dict = self._safe_dict_conversion(result)
+                result_dict['documentation_path'] = documentation_path
+                
+                self.logger.info("✅ Godot project export completed successfully!")
+                return result_dict
+                
+            except Exception as e:
+                self.logger.error(f"❌ Step 10 failed: {e}")
+                self.logger.info("⚠️ Continuing without comprehensive documentation - game export still successful")
+                # Don't fail the entire export if documentation fails
+                
+                self.logger.info("✅ Godot project export completed successfully!")
+                return self._safe_dict_conversion(result)
             
         except Exception as e:
             self.logger.error(f"❌ Export failed: {str(e)}")

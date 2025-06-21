@@ -14,6 +14,7 @@ from .data_types import (
     GODOT_NODE_TEMPLATES,
     GDSCRIPT_TEMPLATES
 )
+from .dynamic_game_report_generator import generate_complete_game_documentation
 
 __all__ = [
     'GodotExporter',
