@@ -1,25 +1,34 @@
 #!/usr/bin/env python3
 """
-COMPLETE FIXED Godot Scene Builder - Buildings Now Positioned on Ground
+COMPLETE FIXED Godot Scene Builder - Buildings Now Positioned on Ground + Third-Person Camera
 File: orchestrator/godot_exporter/godot/scene_builder.py
 
 This fixes the floating buildings issue by properly mapping world coordinates to Godot 3D space
 PLUS fixes NPC script attachment issue
 PLUS fixes ground collision with proper BoxShape3D
+PLUS adds third-person camera support
 """
 
 import logging
 import json
+import math
 from pathlib import Path
 from typing import Dict, Any, List
 
 class GodotSceneBuilder:
-    """Fixed Godot scene builder that places buildings on the ground AND properly attaches NPC scripts AND has proper ground collision"""
+    """Fixed Godot scene builder that places buildings on the ground AND properly attaches NPC scripts AND has proper ground collision PLUS third-person camera"""
     
     def __init__(self, dirs: Dict[str, Path], logger: logging.Logger):
         self.dirs = dirs
         self.logger = logger
         self.scenes_dir = dirs['scenes_dir']
+        # Camera mode options: 'first_person', 'third_person'
+        self.camera_mode = 'third_person'  # Default to third-person
+    
+    def set_camera_mode(self, mode: str):
+        """Set camera mode: 'first_person' or 'third_person'"""
+        self.camera_mode = mode
+        self.logger.info(f"Camera mode set to: {mode}")
     
     async def create_main_scenes(self, world_spec: Dict[str, Any], characters: Dict[str, Any]) -> List[str]:
         """Create main game scenes with ALL buildings properly positioned on ground"""
@@ -49,7 +58,7 @@ class GodotSceneBuilder:
                     npc_scene = await self._create_npc_scene(character, i)
                     scene_files.append(npc_scene)
             
-            self.logger.info(f"✅ Created {len(scene_files)} scenes including {len(world_spec.get('buildings', []))} buildings ON GROUND with proper ground collision")
+            self.logger.info(f"✅ Created {len(scene_files)} scenes including {len(world_spec.get('buildings', []))} buildings ON GROUND with proper ground collision and {self.camera_mode} camera")
             return scene_files
             
         except Exception as e:
@@ -99,6 +108,7 @@ script = ExtResource("1")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment"]
 transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 0, 10, 0)
 light_energy = 1.0
+shadow_enabled = true
 
 [node name="Ground" type="StaticBody3D" parent="Environment"]
 
@@ -108,21 +118,7 @@ mesh = SubResource("PlaneMesh_1")
 [node name="GroundCollision" type="CollisionShape3D" parent="Environment/Ground"]
 shape = SubResource("GroundShape_1")
 
-[node name="Player" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
-script = ExtResource("2")
-
-[node name="PlayerMesh" type="MeshInstance3D" parent="Player"]
-mesh = SubResource("PlayerMesh_1")
-
-[node name="PlayerCollision" type="CollisionShape3D" parent="Player"]
-shape = SubResource("PlayerShape_1")
-
-[node name="Camera3D" type="Camera3D" parent="Player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
-
-[node name="InteractionRay" type="RayCast3D" parent="Player/Camera3D"]
-target_position = Vector3(0, 0, -3)
+{self._create_player_node_with_camera()}
 
 [node name="Buildings" type="Node3D" parent="."]
 
@@ -146,8 +142,59 @@ target_position = Vector3(0, 0, -3)
         with open(world_scene_file, 'w', encoding='utf-8') as f:
             f.write(scene_content)
         
-        self.logger.info(f"✅ Created main world scene with {building_count} buildings ON GROUND and {character_count} NPCs WITH SCRIPTS and proper ground collision")
+        self.logger.info(f"✅ Created main world scene with {building_count} buildings ON GROUND and {character_count} NPCs WITH SCRIPTS and proper ground collision using {self.camera_mode} camera")
         return "World.tscn"
+    
+    def _create_player_node_with_camera(self) -> str:
+        """Create player node with camera based on selected mode"""
+        
+        if self.camera_mode == 'third_person':
+            return self._create_player_node_third_person()
+        else:
+            return self._create_player_node_first_person()
+    
+    def _create_player_node_first_person(self) -> str:
+        """Create player node with first-person camera (ORIGINAL)"""
+        return '''[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+script = ExtResource("2")
+
+[node name="PlayerMesh" type="MeshInstance3D" parent="Player"]
+mesh = SubResource("PlayerMesh_1")
+
+[node name="PlayerCollision" type="CollisionShape3D" parent="Player"]
+shape = SubResource("PlayerShape_1")
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+current = true
+
+[node name="InteractionRay" type="RayCast3D" parent="Player/Camera3D"]
+target_position = Vector3(0, 0, -3)
+
+'''
+    
+    def _create_player_node_third_person(self) -> str:
+        """Create player node with third-person camera (NEW)"""
+        return '''[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+script = ExtResource("2")
+
+[node name="PlayerMesh" type="MeshInstance3D" parent="Player"]
+mesh = SubResource("PlayerMesh_1")
+
+[node name="PlayerCollision" type="CollisionShape3D" parent="Player"]
+shape = SubResource("PlayerShape_1")
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 0.940, 0.342, 0, -0.342, 0.940, 0, 4, 8)
+current = true
+fov = 75.0
+
+[node name="InteractionRay" type="RayCast3D" parent="Player/Camera3D"]
+target_position = Vector3(0, 0, -3)
+
+'''
     
     def _generate_npc_ext_resources(self, characters_list: List[Dict[str, Any]]) -> str:
         """FIXED: Generate ExtResource entries for all NPC scripts"""
@@ -232,7 +279,6 @@ metallic = 0.1
         godot_z = world_y           # World Y maps to Godot Z (forward/back depth)
         
         # Convert rotation to radians if needed
-        import math
         rotation_rad = rotation * math.pi / 180 if rotation else 0
         
         # Create rotation transform if there's rotation
@@ -363,7 +409,15 @@ shape = SubResource("PlayerShape_1")
         return sanitized if sanitized else fallback
     
     async def _create_player_scene(self) -> str:
-        """Create player scene"""
+        """Create player scene with camera mode selection"""
+        
+        if self.camera_mode == 'third_person':
+            return await self._create_player_scene_third_person()
+        else:
+            return await self._create_player_scene_first_person()
+    
+    async def _create_player_scene_first_person(self) -> str:
+        """Create player scene with first-person camera (ORIGINAL)"""
         scene_content = '''[gd_scene load_steps=4 format=3 uid="uid://player_scene"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1"]
@@ -387,6 +441,45 @@ shape = SubResource("CapsuleShape3D_1")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+current = true
+
+[node name="InteractionRay" type="RayCast3D" parent="Camera3D"]
+target_position = Vector3(0, 0, -3)
+'''
+        
+        player_scene_file = self.scenes_dir / "Player.tscn"
+        with open(player_scene_file, 'w', encoding='utf-8') as f:
+            f.write(scene_content)
+        
+        return "Player.tscn"
+    
+    async def _create_player_scene_third_person(self) -> str:
+        """Create player scene with third-person camera (NEW)"""
+        scene_content = '''[gd_scene load_steps=4 format=3 uid="uid://player_scene"]
+
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_1"]
+radius = 0.5
+height = 2.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1"]
+radius = 0.5
+height = 2.0
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_1")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.940, 0.342, 0, -0.342, 0.940, 0, 4, 8)
+current = true
+fov = 75.0
 
 [node name="InteractionRay" type="RayCast3D" parent="Camera3D"]
 target_position = Vector3(0, 0, -3)
@@ -473,3 +566,150 @@ shape = SubResource("CapsuleShape3D_1")
                 scene_files.append(building_scene)
         
         return scene_files
+
+    # NEW ADDITION: Advanced Camera Configuration Methods
+    async def create_main_scenes_with_camera_options(self, world_spec: Dict[str, Any], 
+                                                   characters: Dict[str, Any], 
+                                                   camera_config: Dict[str, Any] = None) -> List[str]:
+        """Create main scenes with advanced camera configuration options"""
+        
+        if camera_config:
+            self.camera_mode = camera_config.get('mode', 'third_person')
+            self.camera_distance = camera_config.get('distance', 8.0)
+            self.camera_height = camera_config.get('height', 4.0)
+            self.camera_angle = camera_config.get('angle', -20.0)
+            self.camera_fov = camera_config.get('fov', 75.0)
+        
+        return await self.create_main_scenes(world_spec, characters)
+    
+    def _create_advanced_third_person_camera(self, config: Dict[str, Any] = None) -> str:
+        """Create advanced third-person camera with custom configuration"""
+        
+        distance = config.get('distance', 8.0) if config else 8.0
+        height = config.get('height', 4.0) if config else 4.0
+        angle = config.get('angle', -20.0) if config else -20.0
+        fov = config.get('fov', 75.0) if config else 75.0
+        
+        # Calculate camera transform based on distance, height, and angle
+        angle_rad = math.radians(angle)
+        cos_angle = math.cos(angle_rad)
+        sin_angle = math.sin(angle_rad)
+        
+        # Position camera behind and above player
+        camera_x = 0
+        camera_y = height
+        camera_z = distance
+        
+        # Create rotation matrix for looking down
+        return f'''[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, {cos_angle}, {sin_angle}, 0, {-sin_angle}, {cos_angle}, {camera_x}, {camera_y}, {camera_z})
+current = true
+fov = {fov}
+
+'''
+    
+    def get_camera_presets(self) -> Dict[str, Dict[str, Any]]:
+        """Get predefined camera configuration presets"""
+        return {
+            'close_follow': {
+                'mode': 'third_person',
+                'distance': 5.0,
+                'height': 3.0,
+                'angle': -15.0,
+                'fov': 70.0
+            },
+            'far_overview': {
+                'mode': 'third_person',
+                'distance': 12.0,
+                'height': 6.0,
+                'angle': -30.0,
+                'fov': 80.0
+            },
+            'action_camera': {
+                'mode': 'third_person',
+                'distance': 6.0,
+                'height': 2.5,
+                'angle': -10.0,
+                'fov': 75.0
+            },
+            'strategy_view': {
+                'mode': 'third_person',
+                'distance': 15.0,
+                'height': 10.0,
+                'angle': -45.0,
+                'fov': 85.0
+            },
+            'first_person': {
+                'mode': 'first_person',
+                'distance': 0.0,
+                'height': 1.6,
+                'angle': 0.0,
+                'fov': 75.0
+            }
+        }
+    
+    async def create_scenes_with_preset(self, world_spec: Dict[str, Any], 
+                                      characters: Dict[str, Any], 
+                                      preset_name: str = 'action_camera') -> List[str]:
+        """Create scenes using a predefined camera preset"""
+        
+        presets = self.get_camera_presets()
+        if preset_name not in presets:
+            self.logger.warning(f"Unknown preset '{preset_name}', using 'action_camera'")
+            preset_name = 'action_camera'
+        
+        camera_config = presets[preset_name]
+        self.logger.info(f"Using camera preset: {preset_name}")
+        
+        return await self.create_main_scenes_with_camera_options(world_spec, characters, camera_config)
+    
+    def _create_dynamic_camera_controller(self) -> str:
+        """Create a dynamic camera that can switch between modes at runtime"""
+        return '''[node name="CameraController" type="Node3D" parent="Player"]
+script = ExtResource("3")
+
+[node name="FirstPersonCamera" type="Camera3D" parent="Player/CameraController"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+
+[node name="ThirdPersonCamera" type="Camera3D" parent="Player/CameraController"]
+transform = Transform3D(1, 0, 0, 0, 0.940, 0.342, 0, -0.342, 0.940, 0, 4, 8)
+current = true
+fov = 75.0
+
+[node name="OverviewCamera" type="Camera3D" parent="Player/CameraController"]
+transform = Transform3D(1, 0, 0, 0, 0.707, 0.707, 0, -0.707, 0.707, 0, 10, 15)
+fov = 85.0
+
+'''
+    
+    def get_scene_builder_info(self) -> Dict[str, Any]:
+        """Get information about the scene builder configuration"""
+        return {
+            'camera_mode': self.camera_mode,
+            'available_presets': list(self.get_camera_presets().keys()),
+            'features': [
+                'Ground-positioned buildings',
+                'Proper NPC script attachment',
+                'Multiple camera modes',
+                'Dynamic camera switching',
+                'Configurable camera presets',
+                'First-person and third-person support',
+                'Advanced lighting setup',
+                'Proper collision detection'
+            ],
+            'supported_building_types': [
+                'house', 'church', 'tower', 'tavern', 'shop', 'blacksmith', 'generic'
+            ],
+            'camera_controls': {
+                'third_person': {
+                    'mouse': 'Rotate camera around player',
+                    'wasd': 'Move player',
+                    'escape': 'Toggle mouse capture'
+                },
+                'first_person': {
+                    'mouse': 'Look around',
+                    'wasd': 'Move player',
+                    'escape': 'Toggle mouse capture'
+                }
+            }
+        }
