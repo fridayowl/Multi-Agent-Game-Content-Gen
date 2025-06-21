@@ -1,0 +1,68 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/CharacterData.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_name = "Lady Dara"
+personality = {
+    "primary_trait": "Jovial",
+    "secondary_trait": "Energetic",
+    "motivation": "To protect others",
+    "fear": "Being alone",
+    "quirk": "Collects unusual items",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+}
+dialogue_lines = []
+relationships = [
+    {
+    "target_character": "Master Brenna",
+    "relationship_type": "Neighbor",
+    "relationship_strength": 8,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+},
+    {
+    "target_character": "Sir Aldric",
+    "relationship_type": "Acquaintance",
+    "relationship_strength": 8,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+},
+    {
+    "target_character": "Sister Brenna",
+    "relationship_type": "Friend",
+    "relationship_strength": 5,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+},
+    {
+    "target_character": "Master Aldric",
+    "relationship_type": "Neighbor",
+    "relationship_strength": 4,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+}
+]
+stats = {
+    "level": 4,
+    "health": 72,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+}
+inventory = [
+    "Personal belongings",
+    "Holy symbol",
+    "Prayer book",
+    "Healing herbs",
+    "Leather pouch"
+]
+location = "church"

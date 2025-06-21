@@ -1,0 +1,66 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3]
+
+[ext_resource type="Script" path="res://scripts/CharacterData.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_name = "Master Brenna"
+personality = {
+    "primary_trait": "Eccentric",
+    "secondary_trait": "Patient",
+    "motivation": "To protect others",
+    "fear": "The unknown",
+    "quirk": "Always hums while working",
+    "speech_pattern": "Speaks with confidence",
+    "alignment": "Neutral Good",
+    "mood": "Generally positive",
+    "secret": "Has an interesting past",
+    "life_goal": "To live meaningfully"
+}
+dialogue_lines = []
+relationships = [
+    {
+    "target_character": "Sir Aldric",
+    "relationship_type": "Colleague",
+    "relationship_strength": 7,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+},
+    {
+    "target_character": "Lady Dara",
+    "relationship_type": "Neighbor",
+    "relationship_strength": 8,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+},
+    {
+    "target_character": "Sister Brenna",
+    "relationship_type": "Acquaintance",
+    "relationship_strength": 5,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+},
+    {
+    "target_character": "Master Aldric",
+    "relationship_type": "Colleague",
+    "relationship_strength": 6,
+    "history": "They know each other through their work in town",
+    "current_status": "Neutral"
+}
+]
+stats = {
+    "level": 10,
+    "health": 90,
+    "strength": 12,
+    "intelligence": 12,
+    "charisma": 12,
+    "dexterity": 12,
+    "wisdom": 12,
+    "constitution": 12
+}
+inventory = [
+    "Personal belongings",
+    "Leather pouch",
+    "Simple clothes"
+]
+location = "house"

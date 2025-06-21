@@ -1,0 +1,550 @@
+{
+  "status": "success",
+  "character_count": 5,
+  "output_directory": "generated_characters",
+  "manifest_file": "generated_characters/character_manifest.json",
+  "unique_personalities": 5,
+  "total_relationships": 20,
+  "total_dialogue_nodes": 10,
+  "characters": [
+    {
+      "id": "master_brenna_3942f4b1_0",
+      "name": "Master Brenna",
+      "title": "The Eccentric Knight",
+      "description": "A distinctive 37-year-old Knight.",
+      "backstory": "Master Brenna has lived an interesting life as a Knight.",
+      "personality": {
+        "primary_trait": "Eccentric",
+        "secondary_trait": "Patient",
+        "motivation": "To protect others",
+        "fear": "The unknown",
+        "quirk": "Always hums while working",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 10,
+        "health": 90,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Sir Aldric",
+          "relationship_type": "Colleague",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Dara",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sister Brenna",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Master Aldric",
+          "relationship_type": "Colleague",
+          "relationship_strength": 6,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "master brenna_greeting",
+          "text": "Greetings! I'm Master Brenna, the local Knight.",
+          "speaker": "Master Brenna",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "master brenna_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "master brenna_role",
+          "text": "As a Knight, I to protect others.",
+          "speaker": "Master Brenna",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "house",
+      "role": "Knight",
+      "quest_involvement": [],
+      "age": 37,
+      "appearance": "Distinctive appearance fitting a spooky character.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "3ee512ad-840e-451b-a8c2-6b15dc10cdcc"
+    },
+    {
+      "id": "sir_aldric_3942f4b1_1",
+      "name": "Sir Aldric",
+      "title": "The Compassionate Temple Guard",
+      "description": "A distinctive 34-year-old Temple Guard.",
+      "backstory": "Sir Aldric has lived an interesting life as a Temple Guard.",
+      "personality": {
+        "primary_trait": "Compassionate",
+        "secondary_trait": "Mysterious",
+        "motivation": "To build something lasting",
+        "fear": "Losing control",
+        "quirk": "Always carries a lucky charm",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 7,
+        "health": 81,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Master Brenna",
+          "relationship_type": "Colleague",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Dara",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sister Brenna",
+          "relationship_type": "Friend",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Master Aldric",
+          "relationship_type": "Ally",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "sir aldric_greeting",
+          "text": "Greetings! I'm Sir Aldric, the local Temple Guard.",
+          "speaker": "Sir Aldric",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "sir aldric_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "sir aldric_role",
+          "text": "As a Temple Guard, I to build something lasting.",
+          "speaker": "Sir Aldric",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Sword",
+        "Shield",
+        "City watch badge",
+        "Leather pouch"
+      ],
+      "location": "church",
+      "role": "Temple Guard",
+      "quest_involvement": [],
+      "age": 34,
+      "appearance": "Distinctive appearance fitting a spooky character.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "a57285ed-be42-48a0-9207-0021647eade8"
+    },
+    {
+      "id": "lady_dara_3942f4b1_2",
+      "name": "Lady Dara",
+      "title": "The Jovial Priest",
+      "description": "A distinctive 45-year-old Priest.",
+      "backstory": "Lady Dara has lived an interesting life as a Priest.",
+      "personality": {
+        "primary_trait": "Jovial",
+        "secondary_trait": "Energetic",
+        "motivation": "To protect others",
+        "fear": "Being alone",
+        "quirk": "Collects unusual items",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 4,
+        "health": 72,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Master Brenna",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sir Aldric",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sister Brenna",
+          "relationship_type": "Friend",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Master Aldric",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 4,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "lady dara_greeting",
+          "text": "Greetings! I'm Lady Dara, the local Priest.",
+          "speaker": "Lady Dara",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "lady dara_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "lady dara_role",
+          "text": "As a Priest, I to protect others.",
+          "speaker": "Lady Dara",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Holy symbol",
+        "Prayer book",
+        "Healing herbs",
+        "Leather pouch"
+      ],
+      "location": "church",
+      "role": "Priest",
+      "quest_involvement": [],
+      "age": 45,
+      "appearance": "Distinctive appearance fitting a spooky character.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "ca05edd3-b7fe-494f-a22f-9d949cc0e438"
+    },
+    {
+      "id": "sister_brenna_3942f4b1_3",
+      "name": "Sister Brenna",
+      "title": "The Brave Resident",
+      "description": "A distinctive 27-year-old Resident.",
+      "backstory": "Sister Brenna has lived an interesting life as a Resident.",
+      "personality": {
+        "primary_trait": "Brave",
+        "secondary_trait": "Mysterious",
+        "motivation": "To find adventure",
+        "fear": "Losing control",
+        "quirk": "Always hums while working",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 5,
+        "health": 75,
+        "strength": 14,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Master Brenna",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sir Aldric",
+          "relationship_type": "Friend",
+          "relationship_strength": 8,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Dara",
+          "relationship_type": "Friend",
+          "relationship_strength": 5,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Master Aldric",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 6,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "sister brenna_greeting",
+          "text": "Greetings! I'm Sister Brenna, the local Resident.",
+          "speaker": "Sister Brenna",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "sister brenna_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "sister brenna_role",
+          "text": "As a Resident, I to find adventure.",
+          "speaker": "Sister Brenna",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "house",
+      "role": "Resident",
+      "quest_involvement": [],
+      "age": 27,
+      "appearance": "Distinctive appearance fitting a spooky character.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "733b631e-b412-45bc-bbe8-f271144d38ce"
+    },
+    {
+      "id": "master_aldric_3942f4b1_4",
+      "name": "Master Aldric",
+      "title": "The Gentle Servant",
+      "description": "A distinctive 39-year-old Servant.",
+      "backstory": "Master Aldric has lived an interesting life as a Servant.",
+      "personality": {
+        "primary_trait": "Gentle",
+        "secondary_trait": "Loyal",
+        "motivation": "To discover truth",
+        "fear": "Losing control",
+        "quirk": "Always hums while working",
+        "speech_pattern": "Speaks with confidence",
+        "alignment": "Neutral Good",
+        "mood": "Generally positive",
+        "secret": "Has an interesting past",
+        "life_goal": "To live meaningfully"
+      },
+      "stats": {
+        "level": 5,
+        "health": 75,
+        "strength": 12,
+        "intelligence": 12,
+        "charisma": 12,
+        "dexterity": 12,
+        "wisdom": 12,
+        "constitution": 12
+      },
+      "relationships": [
+        {
+          "target_character": "Master Brenna",
+          "relationship_type": "Colleague",
+          "relationship_strength": 6,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sir Aldric",
+          "relationship_type": "Ally",
+          "relationship_strength": 7,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Lady Dara",
+          "relationship_type": "Neighbor",
+          "relationship_strength": 4,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        },
+        {
+          "target_character": "Sister Brenna",
+          "relationship_type": "Acquaintance",
+          "relationship_strength": 6,
+          "history": "They know each other through their work in town",
+          "current_status": "Neutral"
+        }
+      ],
+      "dialogue_tree": [
+        {
+          "id": "master aldric_greeting",
+          "text": "Greetings! I'm Master Aldric, the local Servant.",
+          "speaker": "Master Aldric",
+          "options": [
+            {
+              "id": "greeting_continue",
+              "text": "Tell me about your work",
+              "next_node_id": "master aldric_role",
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": true,
+          "is_farewell": false,
+          "quest_related": false
+        },
+        {
+          "id": "master aldric_role",
+          "text": "As a Servant, I to discover truth.",
+          "speaker": "Master Aldric",
+          "options": [
+            {
+              "id": "role_continue",
+              "text": "That's interesting",
+              "next_node_id": null,
+              "conditions": [],
+              "effects": []
+            }
+          ],
+          "is_greeting": false,
+          "is_farewell": false,
+          "quest_related": false
+        }
+      ],
+      "inventory": [
+        "Personal belongings",
+        "Leather pouch",
+        "Simple clothes"
+      ],
+      "location": "tower",
+      "role": "Servant",
+      "quest_involvement": [],
+      "age": 39,
+      "appearance": "Distinctive appearance fitting a spooky character.",
+      "voice_description": "Speaks with confidence",
+      "unique_id": "99e207f8-ad39-4f07-88eb-5c00c29ef62c"
+    }
+  ]
+}
