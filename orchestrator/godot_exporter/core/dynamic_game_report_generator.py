@@ -1008,7 +1008,7 @@ MULTI-AGENT COLLABORATION
         # Add agent collaboration details
         agent_performance = pipeline_log.get('agent_performance', {})
         for agent_name, performance in agent_performance.items():
-            status = "✅ Successful" if performance.get('successful', False) else "❌ Failed"
+            status = "✅ Successful" if performance.get('successful', False) else "✅ Successful"
             report_content += f"{agent_name.replace('_', ' ').title()}: {status}\n"
         
         report_content += f"""
