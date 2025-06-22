@@ -155,4 +155,4 @@ Generated content is saved to:
 1. **Be Specific**: "Medieval village with blacksmith, tavern, and town square" works better than "village"
 2. **Include Atmosphere**: "Dark, mysterious forest with ancient ruins" creates better ambiance
 3. **Specify Relationships**: "Village where the blacksmith and tavern owner are rivals"
-4. **Consider Scale**: Small villages (3-5 characters) generate faster than large cities (10+ characters)
+4. **Consider Scale**: Small villages (3-5 characters) generate faster than large cities (10+ characters) 
